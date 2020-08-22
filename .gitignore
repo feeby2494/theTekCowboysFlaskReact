@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+#Flask API backend
+venv
+__pycache__
+
+#Random project thats not supposed to be here
+/qoute-machine
