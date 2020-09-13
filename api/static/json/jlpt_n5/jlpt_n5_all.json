@@ -1,0 +1,2516 @@
+[
+  {
+      "id": "1",
+      "kanji": "",
+      "kana": "\u3042\u3063\u3061",
+      "eng": "over there"
+  },
+  {
+      "id": "2",
+      "kanji": "",
+      "kana": "\u3042\u3061\u3089",
+      "eng": "there"
+  },
+  {
+      "id": "3",
+      "kanji": "\u8d64",
+      "kana": "\u3042\u304b",
+      "eng": "red"
+  },
+  {
+      "id": "4",
+      "kanji": "\u79cb",
+      "kana": "\u3042\u304d",
+      "eng": "autumn"
+  },
+  {
+      "id": "5",
+      "kanji": "\u98f4",
+      "kana": "\u3042\u3081",
+      "eng": "candy"
+  },
+  {
+      "id": "6",
+      "kanji": "\u96e8",
+      "kana": "\u3042\u3081",
+      "eng": "rain"
+  },
+  {
+      "id": "7",
+      "kanji": "",
+      "kana": "\u3042\u306a\u305f",
+      "eng": "you"
+  },
+  {
+      "id": "8",
+      "kanji": "\u59c9",
+      "kana": "\u3042\u306d",
+      "eng": "older sister"
+  },
+  {
+      "id": "9",
+      "kanji": "\u5144",
+      "kana": "\u3042\u306b",
+      "eng": "elder brother"
+  },
+  {
+      "id": "10",
+      "kanji": "",
+      "kana": "\u3042\u306e",
+      "eng": "that"
+  },
+  {
+      "id": "11",
+      "kanji": "\u9752",
+      "kana": "\u3042\u304a",
+      "eng": "blue"
+  },
+  {
+      "id": "12",
+      "kanji": "",
+      "kana": "\u30a2\u30d1\u30fc\u30c8",
+      "eng": "apartment"
+  },
+  {
+      "id": "13",
+      "kanji": "",
+      "kana": "\u3042\u308c",
+      "eng": "that"
+  },
+  {
+      "id": "14",
+      "kanji": "\u671d",
+      "kana": "\u3042\u3055",
+      "eng": "morning"
+  },
+  {
+      "id": "15",
+      "kanji": "\u671d\u3054\u98ef",
+      "kana": "\u3042\u3055\u3054\u306f\u3093",
+      "eng": "breakfast"
+  },
+  {
+      "id": "16",
+      "kanji": "\u660e\u5f8c\u65e5",
+      "kana": "\u3042\u3055\u3063\u3066",
+      "eng": "day after tomorrow"
+  },
+  {
+      "id": "17",
+      "kanji": "\u8db3",
+      "kana": "\u3042\u3057",
+      "eng": "foot"
+  },
+  {
+      "id": "18",
+      "kanji": "\u660e\u65e5",
+      "kana": "\u3042\u3057\u305f",
+      "eng": "tomorrow"
+  },
+  {
+      "id": "19",
+      "kanji": "",
+      "kana": "\u3042\u305d\u3053",
+      "eng": "over there"
+  },
+  {
+      "id": "20",
+      "kanji": "\u982d",
+      "kana": "\u3042\u305f\u307e",
+      "eng": "head"
+  },
+  {
+      "id": "21",
+      "kanji": "\u5f8c",
+      "kana": "\u3042\u3068",
+      "eng": "behind"
+  },
+  {
+      "id": "22",
+      "kanji": "\u6669\u3054\u98ef",
+      "kana": "\u3070\u3093\u3054\u306f\u3093",
+      "eng": "dinner"
+  },
+  {
+      "id": "23",
+      "kanji": "\u756a\u53f7",
+      "kana": "\u3070\u3093\u3054\u3046",
+      "eng": "number"
+  },
+  {
+      "id": "24",
+      "kanji": "",
+      "kana": "\u30d0\u30b9",
+      "eng": "bus"
+  },
+  {
+      "id": "25",
+      "kanji": "",
+      "kana": "\u30d0\u30bf\u30fc",
+      "eng": "butter"
+  },
+  {
+      "id": "26",
+      "kanji": "",
+      "kana": "\u30d9\u30c3\u30c9",
+      "eng": "bed"
+  },
+  {
+      "id": "27",
+      "kanji": "\u52c9\u5f37",
+      "kana": "\u3079\u3093\u304d\u3087\u3046",
+      "eng": "to study"
+  },
+  {
+      "id": "28",
+      "kanji": "",
+      "kana": "\u30dc\u30fc\u30eb\u30da\u30f3",
+      "eng": "ball-point pen"
+  },
+  {
+      "id": "29",
+      "kanji": "",
+      "kana": "\u30dc\u30bf\u30f3",
+      "eng": "button"
+  },
+  {
+      "id": "30",
+      "kanji": "\u5e3d\u5b50",
+      "kana": "\u307c\u3046\u3057",
+      "eng": "hat"
+  },
+  {
+      "id": "31",
+      "kanji": "\u6587\u7ae0",
+      "kana": "\u3076\u3093\u3057\u3087\u3046",
+      "eng": "sentence"
+  },
+  {
+      "id": "32",
+      "kanji": "\u8c5a\u8089",
+      "kana": "\u3076\u305f\u306b\u304f",
+      "eng": "pork"
+  },
+  {
+      "id": "33",
+      "kanji": "\u75c5\u9662",
+      "kana": "\u3073\u3087\u3046\u3044\u3093",
+      "eng": "hospital"
+  },
+  {
+      "id": "34",
+      "kanji": "\u75c5\u6c17",
+      "kana": "\u3073\u3087\u3046\u304d",
+      "eng": "illness"
+  },
+  {
+      "id": "35",
+      "kanji": "\u8336\u8272",
+      "kana": "\u3061\u3083\u3044\u308d",
+      "eng": "brown"
+  },
+  {
+      "id": "36",
+      "kanji": "\u8336\u7897",
+      "kana": "\u3061\u3083\u308f\u3093",
+      "eng": "rice bowl"
+  },
+  {
+      "id": "37",
+      "kanji": "\u7236",
+      "kana": "\u3061\u3061",
+      "eng": "father"
+  },
+  {
+      "id": "38",
+      "kanji": "\u5c0f\u3055\u306a",
+      "kana": "\u3061\u3044\u3055\u306a",
+      "eng": "small"
+  },
+  {
+      "id": "39",
+      "kanji": "\u5730\u4e0b\u9244",
+      "kana": "\u3061\u304b\u3066\u3064",
+      "eng": "subway"
+  },
+  {
+      "id": "40",
+      "kanji": "\u5730\u56f3",
+      "kana": "\u3061\u305a",
+      "eng": "map"
+  },
+  {
+      "id": "41",
+      "kanji": "\u53f0\u6240",
+      "kana": "\u3060\u3044\u3069\u3053\u308d",
+      "eng": "kitchen"
+  },
+  {
+      "id": "42",
+      "kanji": "\u5927\u5b66",
+      "kana": "\u3060\u3044\u304c\u304f",
+      "eng": "university"
+  },
+  {
+      "id": "43",
+      "kanji": "\u8ab0",
+      "kana": "\u3060\u308c",
+      "eng": "who"
+  },
+  {
+      "id": "44",
+      "kanji": "\u8ab0\u304b",
+      "kana": "\u3060\u308c\u304b",
+      "eng": "someone"
+  },
+  {
+      "id": "45",
+      "kanji": "\u51fa\u53e3",
+      "kana": "\u3067\u3050\u3061",
+      "eng": "exit"
+  },
+  {
+      "id": "46",
+      "kanji": "\u96fb\u6c17",
+      "kana": "\u3067\u3093\u304d",
+      "eng": "electricity"
+  },
+  {
+      "id": "47",
+      "kanji": "\u96fb\u8eca",
+      "kana": "\u3067\u3093\u3057\u3083",
+      "eng": "train"
+  },
+  {
+      "id": "48",
+      "kanji": "\u96fb\u8a71",
+      "kana": "\u3067\u3093\u308f",
+      "eng": "telephone (call / device)l"
+  },
+  {
+      "id": "49",
+      "kanji": "",
+      "kana": "\u30c7\u30d1\u30fc\u30c8",
+      "eng": "department store"
+  },
+  {
+      "id": "50",
+      "kanji": "",
+      "kana": "\u30c9\u30a2",
+      "eng": "door"
+  },
+  {
+      "id": "51",
+      "kanji": "",
+      "kana": "\u3069\u3063\u3061",
+      "eng": "which"
+  },
+  {
+      "id": "52",
+      "kanji": "",
+      "kana": "\u3069\u3061\u3089",
+      "eng": "which of two"
+  },
+  {
+      "id": "53",
+      "kanji": "",
+      "kana": "\u3069\u3053",
+      "eng": "where"
+  },
+  {
+      "id": "54",
+      "kanji": "",
+      "kana": "\u3069\u306a\u305f",
+      "eng": "who"
+  },
+  {
+      "id": "55",
+      "kanji": "",
+      "kana": "\u3069\u306e",
+      "eng": "which"
+  },
+  {
+      "id": "56",
+      "kanji": "",
+      "kana": "\u3069\u308c",
+      "eng": "which (of three or more)"
+  },
+  {
+      "id": "57",
+      "kanji": "\u52d5\u7269",
+      "kana": "\u3069\u3046\u3076\u3064",
+      "eng": "animal"
+  },
+  {
+      "id": "58",
+      "kanji": "\u571f\u66dc\u65e5",
+      "kana": "\u3069\u3088\u3046\u3073",
+      "eng": "Saturday"
+  },
+  {
+      "id": "59",
+      "kanji": "\u7d75",
+      "kana": "\u3048",
+      "eng": "picture"
+  },
+  {
+      "id": "60",
+      "kanji": "",
+      "kana": "\u3048\u3048",
+      "eng": "yes"
+  },
+  {
+      "id": "61",
+      "kanji": "\u6620\u753b",
+      "kana": "\u3048\u3044\u304c",
+      "eng": "movie"
+  },
+  {
+      "id": "62",
+      "kanji": "\u6620\u753b\u9928",
+      "kana": "\u3048\u3044\u304c\u304b\u3093",
+      "eng": "movie theater"
+  },
+  {
+      "id": "63",
+      "kanji": "\u82f1\u8a9e",
+      "kana": "\u3048\u3044\u3054",
+      "eng": "English language"
+  },
+  {
+      "id": "64",
+      "kanji": "\u99c5",
+      "kana": "\u3048\u304d",
+      "eng": "station"
+  },
+  {
+      "id": "65",
+      "kanji": "\u925b\u7b46",
+      "kana": "\u3048\u3093\u3074\u3064",
+      "eng": "pencil"
+  },
+  {
+      "id": "66",
+      "kanji": "",
+      "kana": "\u30a8\u30ec\u30d9\u30fc\u30bf\u30fc",
+      "eng": "elevator"
+  },
+  {
+      "id": "67",
+      "kanji": "",
+      "kana": "\u30d5\u30a3\u30eb\u30e0",
+      "eng": "film"
+  },
+  {
+      "id": "68",
+      "kanji": "",
+      "kana": "\u30d5\u30a9\u30fc\u30af",
+      "eng": "fork"
+  },
+  {
+      "id": "69",
+      "kanji": "\u670d",
+      "kana": "\u3075\u304f",
+      "eng": "clothes"
+  },
+  {
+      "id": "70",
+      "kanji": "\u4e8c\u4eba",
+      "kana": "\u3075\u305f\u308a",
+      "eng": "two people"
+  },
+  {
+      "id": "71",
+      "kanji": "\u4e8c\u3064",
+      "kana": "\u3075\u305f\u3064",
+      "eng": "two"
+  },
+  {
+      "id": "72",
+      "kanji": "\u4e8c\u65e5",
+      "kana": "\u3075\u3064\u304b",
+      "eng": "the second day of the month / 2 days"
+  },
+  {
+      "id": "73",
+      "kanji": "\u5c01\u7b52",
+      "kana": "\u3075\u3046\u3068\u3046",
+      "eng": "envelope"
+  },
+  {
+      "id": "74",
+      "kanji": "\u51ac",
+      "kana": "\u3075\u3086",
+      "eng": "winter"
+  },
+  {
+      "id": "75",
+      "kanji": "\u5916\u56fd",
+      "kana": "\u304c\u3044\u3053\u304f",
+      "eng": "foreign country"
+  },
+  {
+      "id": "76",
+      "kanji": "\u5916\u56fd\u4eba",
+      "kana": "\u304c\u3044\u3053\u304f\u3058\u3093",
+      "eng": "foreigner"
+  },
+  {
+      "id": "77",
+      "kanji": "\u5b66\u6821",
+      "kana": "\u304c\u3063\u3053\u3046",
+      "eng": "school"
+  },
+  {
+      "id": "78",
+      "kanji": "\u5b66\u751f",
+      "kana": "\u304c\u304f\u305b\u3044",
+      "eng": "student"
+  },
+  {
+      "id": "79",
+      "kanji": "\u7384\u95a2",
+      "kana": "\u3052\u3093\u304b\u3093",
+      "eng": "entrance"
+  },
+  {
+      "id": "80",
+      "kanji": "\u5143\u6c17",
+      "kana": "\u3052\u3093\u304d",
+      "eng": "lively"
+  },
+  {
+      "id": "81",
+      "kanji": "\u6708\u66dc\u65e5",
+      "kana": "\u3052\u3064\u3088\u3046\u3073",
+      "eng": "Monday"
+  },
+  {
+      "id": "82",
+      "kanji": "\u9280\u884c",
+      "kana": "\u304e\u3093\u3053\u3046",
+      "eng": "bank"
+  },
+  {
+      "id": "83",
+      "kanji": "",
+      "kana": "\u30ae\u30bf\u30fc",
+      "eng": "guitar"
+  },
+  {
+      "id": "84",
+      "kanji": "\u4e94",
+      "kana": "\u3054",
+      "eng": "five"
+  },
+  {
+      "id": "85",
+      "kanji": "\u5348\u5f8c",
+      "kana": "\u3054\u3054",
+      "eng": "afternoon"
+  },
+  {
+      "id": "86",
+      "kanji": "\u3054\u98ef",
+      "kana": "\u3054\u306f\u3093",
+      "eng": "cooked rice, meal"
+  },
+  {
+      "id": "87",
+      "kanji": "\u5348\u524d",
+      "kana": "\u3054\u305c\u3093",
+      "eng": "morning"
+  },
+  {
+      "id": "88",
+      "kanji": "",
+      "kana": "\u30b0\u30e9\u30e0",
+      "eng": "gram"
+  },
+  {
+      "id": "89",
+      "kanji": "\u725b\u8089",
+      "kana": "\u304e\u3085\u3046\u306b\u304f",
+      "eng": "beef"
+  },
+  {
+      "id": "90",
+      "kanji": "\u725b\u4e73",
+      "kana": "\u304e\u3085\u3046\u306b\u3085\u3046",
+      "eng": "milk"
+  },
+  {
+      "id": "91",
+      "kanji": "\u6b6f",
+      "kana": "\u306f",
+      "eng": "tooth"
+  },
+  {
+      "id": "92",
+      "kanji": "\u516b",
+      "kana": "\u306f\u3061",
+      "eng": "eight: 8"
+  },
+  {
+      "id": "93",
+      "kanji": "\u8449\u66f8",
+      "kana": "\u306f\u304c\u304d",
+      "eng": "postcard"
+  },
+  {
+      "id": "94",
+      "kanji": "\u6bcd",
+      "kana": "\u306f\u306f",
+      "eng": "mother"
+  },
+  {
+      "id": "95",
+      "kanji": "",
+      "kana": "\u306f\u3044",
+      "eng": "yes"
+  },
+  {
+      "id": "96",
+      "kanji": "\u7070\u76bf",
+      "kana": "\u306f\u3044\u3056\u3089",
+      "eng": "ashtray"
+  },
+  {
+      "id": "97",
+      "kanji": "\u7bb1",
+      "kana": "\u306f\u3053",
+      "eng": "box"
+  },
+  {
+      "id": "98",
+      "kanji": "\u534a",
+      "kana": "\u306f\u3093",
+      "eng": "half"
+  },
+  {
+      "id": "99",
+      "kanji": "\u82b1",
+      "kana": "\u306f\u306a",
+      "eng": "flower"
+  },
+  {
+      "id": "100",
+      "kanji": "\u9f3b",
+      "kana": "\u306f\u306a",
+      "eng": "nose"
+  },
+  {
+      "id": "101",
+      "kanji": "\u8a71",
+      "kana": "\u306f\u306a\u3057",
+      "eng": "talk"
+  },
+  {
+      "id": "102",
+      "kanji": "\u534a\u5206",
+      "kana": "\u306f\u3093\u3076\u3093",
+      "eng": "half"
+  },
+  {
+      "id": "103",
+      "kanji": "",
+      "kana": "\u30cf\u30f3\u30ab\u30c1",
+      "eng": "handkerchief"
+  },
+  {
+      "id": "104",
+      "kanji": "\u6674\u308c",
+      "kana": "\u306f\u308c",
+      "eng": "clear weather"
+  },
+  {
+      "id": "105",
+      "kanji": "\u6625",
+      "kana": "\u306f\u308b",
+      "eng": "spring"
+  },
+  {
+      "id": "106",
+      "kanji": "\u7bb8",
+      "kana": "\u306f\u3057",
+      "eng": "chopsticks"
+  },
+  {
+      "id": "107",
+      "kanji": "\u6a4b",
+      "kana": "\u306f\u3057",
+      "eng": "bridge"
+  },
+  {
+      "id": "108",
+      "kanji": "\u4e8c\u5341\u6b73",
+      "kana": "\u306f\u305f\u3061",
+      "eng": "20 years old"
+  },
+  {
+      "id": "109",
+      "kanji": "\u4e8c\u5341\u65e5",
+      "kana": "\u306f\u3064\u304b",
+      "eng": "twentieth day of the month / 20 days"
+  },
+  {
+      "id": "110",
+      "kanji": "\u8fba",
+      "kana": "\u3078\u3093",
+      "eng": "area"
+  },
+  {
+      "id": "111",
+      "kanji": "\u4e0b\u624b",
+      "kana": "\u3078\u305f",
+      "eng": "unskillful"
+  },
+  {
+      "id": "112",
+      "kanji": "\u90e8\u5c4b",
+      "kana": "\u3078\u3084",
+      "eng": "room"
+  },
+  {
+      "id": "113",
+      "kanji": "\u5de6",
+      "kana": "\u3072\u3060\u308a",
+      "eng": "left"
+  },
+  {
+      "id": "114",
+      "kanji": "\u6771",
+      "kana": "\u3072\u304c\u3057",
+      "eng": "east"
+  },
+  {
+      "id": "115",
+      "kanji": "\u98db\u884c\u6a5f",
+      "kana": "\u3072\u3053\u3046\u304d",
+      "eng": "airplane"
+  },
+  {
+      "id": "116",
+      "kanji": "\u6687",
+      "kana": "\u3072\u307e",
+      "eng": "free time"
+  },
+  {
+      "id": "117",
+      "kanji": "\u663c",
+      "kana": "\u3072\u308b",
+      "eng": "noon"
+  },
+  {
+      "id": "118",
+      "kanji": "\u663c\u3054\u98ef",
+      "kana": "\u3072\u308b\u3054\u306f\u3093",
+      "eng": "lunch"
+  },
+  {
+      "id": "119",
+      "kanji": "\u4eba",
+      "kana": "\u3072\u3068",
+      "eng": "person"
+  },
+  {
+      "id": "120",
+      "kanji": "\u4e00\u4eba",
+      "kana": "\u3072\u3068\u308a",
+      "eng": "one person "
+  },
+  {
+      "id": "121",
+      "kanji": "\u4e00\u3064",
+      "kana": "\u3072\u3068\u3064",
+      "eng": "one thing"
+  },
+  {
+      "id": "122",
+      "kanji": "",
+      "kana": "\u307b\u304b",
+      "eng": "other (place, thing, person); the rest"
+  },
+  {
+      "id": "123",
+      "kanji": "\u672c",
+      "kana": "\u307b\u3093",
+      "eng": "book"
+  },
+  {
+      "id": "124",
+      "kanji": "\u672c\u68da",
+      "kana": "\u307b\u3093\u3060\u306a",
+      "eng": "bookshelf"
+  },
+  {
+      "id": "125",
+      "kanji": "\u672c\u5f53",
+      "kana": "\u307b\u3093\u3068\u3046",
+      "eng": "truth"
+  },
+  {
+      "id": "126",
+      "kanji": "",
+      "kana": "\u30db\u30c6\u30eb",
+      "eng": "hotel"
+  },
+  {
+      "id": "127",
+      "kanji": "\u767e",
+      "kana": "\u3072\u3083\u304f",
+      "eng": "100"
+  },
+  {
+      "id": "128",
+      "kanji": "\u4e00",
+      "kana": "\u3044\u3061",
+      "eng": "one"
+  },
+  {
+      "id": "129",
+      "kanji": "\u4e00\u756a",
+      "kana": "\u3044\u3061\u3070\u3093",
+      "eng": "number one; first; 1st, first place ; best; most"
+  },
+  {
+      "id": "130",
+      "kanji": "\u4e00\u65e5",
+      "kana": "\u3044\u3061\u306b\u3061",
+      "eng": "one day, all day"
+  },
+  {
+      "id": "131",
+      "kanji": "\u5bb6",
+      "kana": "\u3044\u3048",
+      "eng": "house, residence, family"
+  },
+  {
+      "id": "132",
+      "kanji": "\u6c60",
+      "kana": "\u3044\u3051",
+      "eng": "pond"
+  },
+  {
+      "id": "133",
+      "kanji": "",
+      "kana": "\u3044\u304f\u3089",
+      "eng": "how much?"
+  },
+  {
+      "id": "134",
+      "kanji": "\u4eca",
+      "kana": "\u3044\u307e",
+      "eng": "now"
+  },
+  {
+      "id": "135",
+      "kanji": "\u610f\u5473",
+      "kana": "\u3044\u307f",
+      "eng": "meaning"
+  },
+  {
+      "id": "136",
+      "kanji": "\u59b9",
+      "kana": "\u3044\u3082\u3046\u3068",
+      "eng": "younger sister"
+  },
+  {
+      "id": "137",
+      "kanji": "\u72ac",
+      "kana": "\u3044\u306c",
+      "eng": "dog"
+  },
+  {
+      "id": "138",
+      "kanji": "\u5165\u53e3",
+      "kana": "\u3044\u308a\u3050\u3061",
+      "eng": "entrance"
+  },
+  {
+      "id": "139",
+      "kanji": "\u8272",
+      "kana": "\u3044\u308d",
+      "eng": "color"
+  },
+  {
+      "id": "140",
+      "kanji": "\u8272\u3005",
+      "kana": "\u3044\u308d\u3044\u308d",
+      "eng": "various"
+  },
+  {
+      "id": "141",
+      "kanji": "\u533b\u8005",
+      "kana": "\u3044\u3057\u3083",
+      "eng": "(medical) doctor"
+  },
+  {
+      "id": "142",
+      "kanji": "\u4e00\u7dd2",
+      "kana": "\u3044\u3063\u3057\u3087",
+      "eng": "together"
+  },
+  {
+      "id": "143",
+      "kanji": "\u6905\u5b50",
+      "kana": "\u3044\u3059",
+      "eng": "chair"
+  },
+  {
+      "id": "144",
+      "kanji": "",
+      "kana": "\u3044\u3064",
+      "eng": "when"
+  },
+  {
+      "id": "145",
+      "kanji": "\u4e94\u65e5",
+      "kana": "\u3044\u3064\u304b",
+      "eng": "the fifth day of the month / 5 days"
+  },
+  {
+      "id": "146",
+      "kanji": "\u4e94\u3064",
+      "kana": "\u3044\u3064\u3064",
+      "eng": "five"
+  },
+  {
+      "id": "147",
+      "kanji": "\u5acc",
+      "kana": "\u3044\u3084",
+      "eng": "unpleasant"
+  },
+  {
+      "id": "148",
+      "kanji": "\u5b57\u5f15",
+      "kana": "\u3058\u3073\u304d",
+      "eng": "dictionary"
+  },
+  {
+      "id": "149",
+      "kanji": "\u81ea\u5206",
+      "kana": "\u3058\u3076\u3093",
+      "eng": "myself"
+  },
+  {
+      "id": "150",
+      "kanji": "\u81ea\u52d5\u8eca",
+      "kana": "\u3058\u3069\u3046\u3057\u3083",
+      "eng": "automobile"
+  },
+  {
+      "id": "151",
+      "kanji": "\u6642\u9593",
+      "kana": "\u3058\u304b\u3093",
+      "eng": "time"
+  },
+  {
+      "id": "152",
+      "kanji": "\u8f9e\u66f8",
+      "kana": "\u3058\u3057\u3087",
+      "eng": "dictionary"
+  },
+  {
+      "id": "153",
+      "kanji": "\u81ea\u8ee2\u8eca",
+      "kana": "\u3058\u3066\u3093\u3057\u3083",
+      "eng": "bicycle"
+  },
+  {
+      "id": "154",
+      "kanji": "\u4e0a\u624b",
+      "kana": "\u3058\u3087\u3046\u305a",
+      "eng": "skillful"
+  },
+  {
+      "id": "155",
+      "kanji": "\u6388\u696d",
+      "kana": "\u3058\u3085\u304e\u3087\u3046",
+      "eng": "lesson"
+  },
+  {
+      "id": "156",
+      "kanji": "\u5341",
+      "kana": "\u3058\u3085\u3046",
+      "eng": "ten"
+  },
+  {
+      "id": "157",
+      "kanji": "",
+      "kana": "\u304b\u3070\u3093",
+      "eng": "bag"
+  },
+  {
+      "id": "158",
+      "kanji": "\u82b1\u74f6",
+      "kana": "\u304b\u3073\u3093",
+      "eng": "a vase"
+  },
+  {
+      "id": "159",
+      "kanji": "\u89d2",
+      "kana": "\u304b\u3069",
+      "eng": "a corner"
+  },
+  {
+      "id": "160",
+      "kanji": "\u9375",
+      "kana": "\u304b\u304e",
+      "eng": "key"
+  },
+  {
+      "id": "161",
+      "kanji": "\u968e\u6bb5",
+      "kana": "\u304b\u3044\u3060\u3093",
+      "eng": "stairs"
+  },
+  {
+      "id": "162",
+      "kanji": "\u8cb7\u3044\u7269",
+      "kana": "\u304b\u3044\u3082\u306e",
+      "eng": "shopping"
+  },
+  {
+      "id": "163",
+      "kanji": "\u4f1a\u793e",
+      "kana": "\u304b\u3044\u3057\u3083",
+      "eng": "company"
+  },
+  {
+      "id": "164",
+      "kanji": "",
+      "kana": "\u30ab\u30e1\u30e9",
+      "eng": "camera"
+  },
+  {
+      "id": "165",
+      "kanji": "\u7d19",
+      "kana": "\u304b\u307f",
+      "eng": "paper"
+  },
+  {
+      "id": "166",
+      "kanji": "\u6f22\u5b57",
+      "kana": "\u304b\u3093\u3058",
+      "eng": "kanji"
+  },
+  {
+      "id": "167",
+      "kanji": "",
+      "kana": "\u30ab\u30c3\u30d7",
+      "eng": "cup"
+  },
+  {
+      "id": "168",
+      "kanji": "\u4f53",
+      "kana": "\u304b\u3089\u3060",
+      "eng": "body"
+  },
+  {
+      "id": "169",
+      "kanji": "\u30ab\u30ec\u30fc",
+      "kana": "karee",
+      "eng": "curry"
+  },
+  {
+      "id": "170",
+      "kanji": "\u30ab\u30ec\u30f3\u30c0\u30fc",
+      "kana": "karendaa",
+      "eng": "calendar"
+  },
+  {
+      "id": "171",
+      "kanji": "\u5098",
+      "kana": "\u304b\u3055",
+      "eng": "umbrella"
+  },
+  {
+      "id": "172",
+      "kanji": "\u65b9",
+      "kana": "\u304b\u305f",
+      "eng": "way of doing something"
+  },
+  {
+      "id": "173",
+      "kanji": "\u5bb6\u5ead",
+      "kana": "\u304b\u3066\u3044",
+      "eng": "household"
+  },
+  {
+      "id": "174",
+      "kanji": "\u5ddd",
+      "kana": "\u304b\u308f",
+      "eng": "river"
+  },
+  {
+      "id": "175",
+      "kanji": "\u706b\u66dc\u65e5",
+      "kana": "\u304b\u3088\u3046\u3073",
+      "eng": "Tuesday"
+  },
+  {
+      "id": "176",
+      "kanji": "\u98a8\u90aa",
+      "kana": "\u304b\u305c",
+      "eng": "a cold"
+  },
+  {
+      "id": "177",
+      "kanji": "\u98a8",
+      "kana": "\u304b\u305c",
+      "eng": "wind"
+  },
+  {
+      "id": "178",
+      "kanji": "\u5bb6\u65cf",
+      "kana": "\u304b\u305e\u304f",
+      "eng": "family"
+  },
+  {
+      "id": "179",
+      "kanji": "\u8b66\u5b98",
+      "kana": "\u3051\u3044\u304b\u3093",
+      "eng": "policeman"
+  },
+  {
+      "id": "180",
+      "kanji": "\u7d50\u5a5a",
+      "kana": "\u3051\u3063\u3053\u3093",
+      "eng": "marriage"
+  },
+  {
+      "id": "181",
+      "kanji": "\u7d50\u69cb",
+      "kana": "\u3051\u3063\u3053\u3046",
+      "eng": "splendid, enough"
+  },
+  {
+      "id": "182",
+      "kanji": "\u4eca\u671d",
+      "kana": "\u3051\u3055",
+      "eng": "this morning"
+  },
+  {
+      "id": "183",
+      "kanji": "\u6728",
+      "kana": "\u304d",
+      "eng": "tree"
+  },
+  {
+      "id": "184",
+      "kanji": "\u6628\u65e5",
+      "kana": "\u304d\u306e\u3046",
+      "eng": "yesterday"
+  },
+  {
+      "id": "185",
+      "kanji": "\u91d1\u66dc\u65e5",
+      "kana": "\u304d\u3093\u3088\u3046\u3073",
+      "eng": "Friday"
+  },
+  {
+      "id": "186",
+      "kanji": "\u5207\u7b26",
+      "kana": "\u304d\u3063\u3077",
+      "eng": "ticket"
+  },
+  {
+      "id": "187",
+      "kanji": "\u5acc\u3044",
+      "kana": "\u304d\u3089\u3044",
+      "eng": "hate"
+  },
+  {
+      "id": "188",
+      "kanji": "",
+      "kana": "\u30ad\u30ed\u30b0\u30e9\u30e0",
+      "eng": "kilogram"
+  },
+  {
+      "id": "189",
+      "kanji": "",
+      "kana": "\u30ad\u30ed\u30e1\u30fc\u30c8\u30eb",
+      "eng": "kilometer"
+  },
+  {
+      "id": "190",
+      "kanji": "\u55ab\u8336\u5e97",
+      "kana": "\u304d\u3063\u3055\u3066\u3093",
+      "eng": "coffee shop"
+  },
+  {
+      "id": "191",
+      "kanji": "\u5317",
+      "kana": "\u304d\u305f",
+      "eng": "north"
+  },
+  {
+      "id": "192",
+      "kanji": "\u5207\u624b",
+      "kana": "\u304d\u3063\u3066",
+      "eng": "stamp (postage)"
+  },
+  {
+      "id": "193",
+      "kanji": "",
+      "kana": "\u3053\u3063\u3061",
+      "eng": "this person or way"
+  },
+  {
+      "id": "194",
+      "kanji": "",
+      "kana": "\u3053\u3061\u3089",
+      "eng": "this way"
+  },
+  {
+      "id": "195",
+      "kanji": "\u5b50\u4f9b",
+      "kana": "\u3053\u3069\u3082",
+      "eng": "child"
+  },
+  {
+      "id": "196",
+      "kanji": "\u58f0",
+      "kana": "\u3053\u3048",
+      "eng": "voice"
+  },
+  {
+      "id": "197",
+      "kanji": "",
+      "kana": "\u3053\u3053",
+      "eng": "here"
+  },
+  {
+      "id": "198",
+      "kanji": "\u4e5d\u65e5",
+      "kana": "\u3053\u3053\u306e\u304b",
+      "eng": "ninth day of the month / 9 days"
+  },
+  {
+      "id": "199",
+      "kanji": "\u4e5d\u3064",
+      "kana": "\u3053\u3053\u306e\u3064",
+      "eng": "nine"
+  },
+  {
+      "id": "200",
+      "kanji": "\u4eca\u6669",
+      "kana": "\u3053\u3093\u3070\u3093",
+      "eng": "tonight"
+  },
+  {
+      "id": "201",
+      "kanji": "\u4eca\u6708",
+      "kana": "\u3053\u3093\u3052\u3064",
+      "eng": "this month"
+  },
+  {
+      "id": "202",
+      "kanji": "\u3053\u3093\u306a",
+      "kana": "konna",
+      "eng": "such"
+  },
+  {
+      "id": "203",
+      "kanji": "\u3053\u306e",
+      "kana": "kono",
+      "eng": "this"
+  },
+  {
+      "id": "204",
+      "kanji": "\u4eca\u9031",
+      "kana": "\u3053\u3093\u3057\u3085\u3046",
+      "eng": "this week"
+  },
+  {
+      "id": "205",
+      "kanji": "",
+      "kana": "\u30b3\u30fc\u30d2\u30fc",
+      "eng": "Coffee"
+  },
+  {
+      "id": "206",
+      "kanji": "",
+      "kana": "\u30b3\u30fc\u30c8",
+      "eng": "coat"
+  },
+  {
+      "id": "207",
+      "kanji": "",
+      "kana": "\u30b3\u30d4\u30fc",
+      "eng": "copy"
+  },
+  {
+      "id": "208",
+      "kanji": "",
+      "kana": "\u30b3\u30c3\u30d7",
+      "eng": "glass (drinking vessel)"
+  },
+  {
+      "id": "209",
+      "kanji": "",
+      "kana": "\u3053\u308c",
+      "eng": "this"
+  },
+  {
+      "id": "210",
+      "kanji": "\u8a00\u8449",
+      "kana": "\u3053\u3068\u3070",
+      "eng": "word"
+  },
+  {
+      "id": "211",
+      "kanji": "\u4eca\u5e74",
+      "kana": "\u3053\u3068\u3057",
+      "eng": "this year"
+  },
+  {
+      "id": "212",
+      "kanji": "\u4ea4\u756a",
+      "kana": "\u3053\u3046\u3070\u3093",
+      "eng": "police box"
+  },
+  {
+      "id": "213",
+      "kanji": "\u7d05\u8336",
+      "kana": "\u3053\u3046\u3061\u3083",
+      "eng": "black tea"
+  },
+  {
+      "id": "214",
+      "kanji": "\u516c\u5712",
+      "kana": "\u3053\u3046\u3048\u3093",
+      "eng": "park"
+  },
+  {
+      "id": "215",
+      "kanji": "\u4ea4\u5dee\u70b9",
+      "kana": "\u3053\u3046\u3055\u3066\u3093",
+      "eng": "intersection"
+  },
+  {
+      "id": "216",
+      "kanji": "\u53e3",
+      "kana": "\u304f\u3061",
+      "eng": "mouth, opening"
+  },
+  {
+      "id": "217",
+      "kanji": "\u679c\u7269",
+      "kana": "\u304f\u3060\u3082\u306e",
+      "eng": "fruit"
+  },
+  {
+      "id": "218",
+      "kanji": "\u66c7\u308a",
+      "kana": "\u304f\u3082\u308a",
+      "eng": "cloudiness"
+  },
+  {
+      "id": "219",
+      "kanji": "\u56fd",
+      "kana": "\u304f\u306b",
+      "eng": "country"
+  },
+  {
+      "id": "220",
+      "kanji": "",
+      "kana": "\u30af\u30e9\u30b9",
+      "eng": "class"
+  },
+  {
+      "id": "221",
+      "kanji": "\u9ed2",
+      "kana": "\u304f\u308d",
+      "eng": "black"
+  },
+  {
+      "id": "222",
+      "kanji": "\u8eca",
+      "kana": "\u304f\u308b\u307e",
+      "eng": "car"
+  },
+  {
+      "id": "223",
+      "kanji": "\u85ac",
+      "kana": "\u304f\u3059\u308a",
+      "eng": "medicine"
+  },
+  {
+      "id": "224",
+      "kanji": "\u9774",
+      "kana": "\u304f\u3064",
+      "eng": "shoes"
+  },
+  {
+      "id": "225",
+      "kanji": "\u9774\u4e0b",
+      "kana": "\u304f\u3064\u3057\u305f",
+      "eng": "socks"
+  },
+  {
+      "id": "226",
+      "kanji": "\u53bb\u5e74",
+      "kana": "\u304d\u3087\u306d\u3093",
+      "eng": "last year"
+  },
+  {
+      "id": "227",
+      "kanji": "\u4eca\u65e5",
+      "kana": "\u304d\u3087\u3046",
+      "eng": "today"
+  },
+  {
+      "id": "228",
+      "kanji": "\u5144\u5f1f",
+      "kana": "\u304d\u3087\u3046\u3060\u3044",
+      "eng": "siblings"
+  },
+  {
+      "id": "229",
+      "kanji": "\u6559\u5ba4",
+      "kana": "\u304d\u3087\u3046\u3057\u3064",
+      "eng": "classroom"
+  },
+  {
+      "id": "230",
+      "kanji": "\u4e5d",
+      "kana": "\u304d\u3085\u3046",
+      "eng": "nine"
+  },
+  {
+      "id": "231",
+      "kanji": "",
+      "kana": "\u30de\u30c3\u30c1",
+      "eng": "match"
+  },
+  {
+      "id": "232",
+      "kanji": "\u753a",
+      "kana": "\u307e\u3061",
+      "eng": "town"
+  },
+  {
+      "id": "233",
+      "kanji": "\u7a93",
+      "kana": "\u307e\u3069",
+      "eng": "window"
+  },
+  {
+      "id": "234",
+      "kanji": "\u524d",
+      "kana": "\u307e\u3048",
+      "eng": "previous"
+  },
+  {
+      "id": "235",
+      "kanji": "\u6bce\u671d",
+      "kana": "\u307e\u3044\u3042\u3055",
+      "eng": "every morning"
+  },
+  {
+      "id": "236",
+      "kanji": "\u6bce\u6669",
+      "kana": "\u307e\u3044\u3070\u3093",
+      "eng": "every night"
+  },
+  {
+      "id": "237",
+      "kanji": "\u6bce\u65e5",
+      "kana": "\u307e\u3044\u306b\u3061",
+      "eng": "every day"
+  },
+  {
+      "id": "238",
+      "kanji": "\u6bce\u9031",
+      "kana": "\u307e\u3044\u3057\u3085\u3046",
+      "eng": "every week"
+  },
+  {
+      "id": "239",
+      "kanji": "\u6bce\u5e74",
+      "kana": "\u307e\u3044\u3068\u3057/ \u307e\u3044\u306d\u3093",
+      "eng": "every year"
+  },
+  {
+      "id": "240",
+      "kanji": "\u6bce\u6708",
+      "kana": "\u307e\u3044\u3064\u304d",
+      "eng": "every month"
+  },
+  {
+      "id": "241",
+      "kanji": "\u4e07",
+      "kana": "\u307e\u3093",
+      "eng": "10,000; ten thousand"
+  },
+  {
+      "id": "242",
+      "kanji": "\u4e07\u5e74\u7b46",
+      "kana": "\u307e\u3093\u306d\u3093\u3072\u3064",
+      "eng": "fountain pen"
+  },
+  {
+      "id": "243",
+      "kanji": "\u771f\u3063\u76f4\u3050",
+      "kana": "\u307e\u3063\u3059\u3050",
+      "eng": "straight ahead,direct"
+  },
+  {
+      "id": "244",
+      "kanji": "\u76ee",
+      "kana": "\u3081",
+      "eng": "eye"
+  },
+  {
+      "id": "245",
+      "kanji": "",
+      "kana": "\u30e1\u30fc\u30c8\u30eb",
+      "eng": "metre"
+  },
+  {
+      "id": "246",
+      "kanji": "\u773c\u93e1",
+      "kana": "\u3081\u304c\u306d",
+      "eng": "glasses"
+  },
+  {
+      "id": "247",
+      "kanji": "\u9053",
+      "kana": "\u307f\u3061",
+      "eng": "road"
+  },
+  {
+      "id": "248",
+      "kanji": "\u7dd1",
+      "kana": "\u307f\u3069\u308a",
+      "eng": "green"
+  },
+  {
+      "id": "249",
+      "kanji": "\u53f3",
+      "kana": "\u307f\u304e",
+      "eng": "right"
+  },
+  {
+      "id": "250",
+      "kanji": "\u4e09\u65e5",
+      "kana": "\u307f\u3063\u304b",
+      "eng": "the third day of the month / 3 days"
+  },
+  {
+      "id": "251",
+      "kanji": "\u8033",
+      "kana": "\u307f\u307f",
+      "eng": "ear"
+  },
+  {
+      "id": "252",
+      "kanji": "\u5357",
+      "kana": "\u307f\u306a\u307f",
+      "eng": "south"
+  },
+  {
+      "id": "253",
+      "kanji": "\u7686\u3055\u3093",
+      "kana": "\u307f\u306a\u3055\u3093",
+      "eng": "everyone"
+  },
+  {
+      "id": "254",
+      "kanji": "",
+      "kana": "\u307f\u3093\u306a",
+      "eng": "all"
+  },
+  {
+      "id": "255",
+      "kanji": "\u5e97",
+      "kana": "\u307f\u305b",
+      "eng": "store"
+  },
+  {
+      "id": "256",
+      "kanji": "\u4e09\u3064",
+      "kana": "\u307f\u3064",
+      "eng": "three"
+  },
+  {
+      "id": "257",
+      "kanji": "\u6c34",
+      "kana": "\u307f\u305a",
+      "eng": "water"
+  },
+  {
+      "id": "258",
+      "kanji": "\u6728\u66dc\u65e5",
+      "kana": "\u3082\u304f\u3088\u3046\u3073",
+      "eng": "Thursday"
+  },
+  {
+      "id": "259",
+      "kanji": "\u9580",
+      "kana": "\u3082\u3093",
+      "eng": "gate"
+  },
+  {
+      "id": "260",
+      "kanji": "\u554f\u984c",
+      "kana": "\u3082\u3093\u3060\u3044",
+      "eng": "problem"
+  },
+  {
+      "id": "261",
+      "kanji": "\u7269",
+      "kana": "\u3082\u306e",
+      "eng": "thing"
+  },
+  {
+      "id": "262",
+      "kanji": "\u516d\u65e5",
+      "kana": "\u3080\u3044\u304b",
+      "eng": "sixth day of the month / 6 days"
+  },
+  {
+      "id": "263",
+      "kanji": "\u5411\u3053\u3046",
+      "kana": "\u3080\u3053\u3046",
+      "eng": "over there"
+  },
+  {
+      "id": "264",
+      "kanji": "\u6751",
+      "kana": "\u3080\u3089",
+      "eng": "village"
+  },
+  {
+      "id": "265",
+      "kanji": "\u516d\u3064",
+      "kana": "\u3080\u3063\u3064",
+      "eng": "six"
+  },
+  {
+      "id": "266",
+      "kanji": "",
+      "kana": "\u30ca\u30a4\u30d5",
+      "eng": "knife"
+  },
+  {
+      "id": "267",
+      "kanji": "\u4e2d",
+      "kana": "\u306a\u304b",
+      "eng": "inside"
+  },
+  {
+      "id": "268",
+      "kanji": "\u540d\u524d",
+      "kana": "\u306a\u307e\u3048",
+      "eng": "name"
+  },
+  {
+      "id": "269",
+      "kanji": "\u4e03\u3064",
+      "kana": "\u306a\u306a\u3064",
+      "eng": "seven"
+  },
+  {
+      "id": "270",
+      "kanji": "\u4f55",
+      "kana": "\u306a\u306b",
+      "eng": "what"
+  },
+  {
+      "id": "271",
+      "kanji": "\u4e03\u65e5",
+      "kana": "\u306a\u306e\u304b",
+      "eng": "seventh day of the month / 7 days"
+  },
+  {
+      "id": "272",
+      "kanji": "\u590f",
+      "kana": "\u306a\u3064",
+      "eng": "summer"
+  },
+  {
+      "id": "273",
+      "kanji": "\u590f\u4f11\u307f",
+      "kana": "\u306a\u3064\u3084\u3059\u307f",
+      "eng": "summer vacation"
+  },
+  {
+      "id": "274",
+      "kanji": "\u732b",
+      "kana": "\u306d\u3053",
+      "eng": "cat"
+  },
+  {
+      "id": "275",
+      "kanji": "",
+      "kana": "\u30cd\u30af\u30bf\u30a4",
+      "eng": "tie"
+  },
+  {
+      "id": "276",
+      "kanji": "\u4e8c",
+      "kana": "\u306b",
+      "eng": "two"
+  },
+  {
+      "id": "277",
+      "kanji": "\u65e5\u66dc\u65e5",
+      "kana": "\u306b\u3061\u3088\u3046\u3073",
+      "eng": "Sunday"
+  },
+  {
+      "id": "278",
+      "kanji": "\u65e5\u8a18",
+      "kana": "\u306b\u3063\u304d",
+      "eng": "diary"
+  },
+  {
+      "id": "279",
+      "kanji": "\u8089",
+      "kana": "\u306b\u304f",
+      "eng": "meat"
+  },
+  {
+      "id": "280",
+      "kanji": "\u8377\u7269",
+      "kana": "\u306b\u3082\u3064",
+      "eng": "luggage"
+  },
+  {
+      "id": "281",
+      "kanji": "\u897f",
+      "kana": "\u306b\u3057",
+      "eng": "west"
+  },
+  {
+      "id": "282",
+      "kanji": "\u5ead",
+      "kana": "\u306b\u308f",
+      "eng": "garden"
+  },
+  {
+      "id": "283",
+      "kanji": "\u98f2\u307f\u7269",
+      "kana": "\u306e\u307f\u3082\u306e",
+      "eng": "drink"
+  },
+  {
+      "id": "284",
+      "kanji": "",
+      "kana": "\u30ce\u30fc\u30c8",
+      "eng": "notebook"
+  },
+  {
+      "id": "285",
+      "kanji": "",
+      "kana": "\u30cb\u30e5\u30fc\u30b9",
+      "eng": "news"
+  },
+  {
+      "id": "286",
+      "kanji": "",
+      "kana": "\u304a\u3070\u3042\u3055\u3093",
+      "eng": "grandmother"
+  },
+  {
+      "id": "287",
+      "kanji": "\u4f2f\u6bcd\u3055\u3093",
+      "kana": "\u304a\u3070\u3055\u3093",
+      "eng": "aunt"
+  },
+  {
+      "id": "288",
+      "kanji": "\u304a\u5f01\u5f53",
+      "kana": "\u304a\u3079\u3093\u3068\u3046",
+      "eng": "lunch box"
+  },
+  {
+      "id": "289",
+      "kanji": "\u304a\u8336",
+      "kana": "\u304a\u3061\u3083",
+      "eng": "tea"
+  },
+  {
+      "id": "290",
+      "kanji": "\u304a\u98a8\u5442",
+      "kana": "\u304a\u3075\u308d",
+      "eng": "bath"
+  },
+  {
+      "id": "291",
+      "kanji": "\u4f2f\u7236\u3055\u3093",
+      "kana": "\u304a\u3058\u3055\u3093",
+      "eng": "uncle"
+  },
+  {
+      "id": "292",
+      "kanji": "\u304a\u6bcd\u3055\u3093",
+      "kana": "\u304a\u304b\u3042\u3055\u3093",
+      "eng": "mother"
+  },
+  {
+      "id": "293",
+      "kanji": "\u304a\u91d1",
+      "kana": "\u304a\u304b\u306d",
+      "eng": "money"
+  },
+  {
+      "id": "294",
+      "kanji": "\u304a\u83d3\u5b50",
+      "kana": "\u304a\u304b\u3057",
+      "eng": "candy"
+  },
+  {
+      "id": "295",
+      "kanji": "\u5965\u3055\u3093",
+      "kana": "\u304a\u304f\u3055\u3093",
+      "eng": "wife"
+  },
+  {
+      "id": "296",
+      "kanji": "\u304a\u5de1\u308a\u3055\u3093",
+      "kana": "\u304a\u307e\u308f\u308a\u3055\u3093",
+      "eng": "police officer (friendly term for policeman)"
+  },
+  {
+      "id": "297",
+      "kanji": "\u540c\u3058",
+      "kana": "\u304a\u306a\u3058",
+      "eng": "same"
+  },
+  {
+      "id": "298",
+      "kanji": "\u304a\u8179",
+      "kana": "\u304a\u306a\u304b",
+      "eng": "stomach"
+  },
+  {
+      "id": "299",
+      "kanji": "\u304a\u59c9\u3055\u3093",
+      "kana": "\u304a\u306d\u3048\u3055\u3093",
+      "eng": "elder sister"
+  },
+  {
+      "id": "300",
+      "kanji": "\u97f3\u697d",
+      "kana": "\u304a\u3093\u304c\u304f",
+      "eng": "music"
+  },
+  {
+      "id": "301",
+      "kanji": "\u304a\u5144\u3055\u3093",
+      "kana": "\u304a\u306b\u3044\u3055\u3093",
+      "eng": "older brother"
+  },
+  {
+      "id": "302",
+      "kanji": "\u5973",
+      "kana": "\u304a\u3093\u306a",
+      "eng": "woman"
+  },
+  {
+      "id": "303",
+      "kanji": "\u5973\u306e\u5b50",
+      "kana": "\u304a\u3093\u306a\u306e\u3053",
+      "eng": "girl"
+  },
+  {
+      "id": "304",
+      "kanji": "\u5927\u304d\u306a",
+      "kana": "\u304a\u304a\u304d\u306a",
+      "eng": "big"
+  },
+  {
+      "id": "305",
+      "kanji": "\u5927\u52e2",
+      "kana": "\u304a\u304a\u305c\u3044",
+      "eng": "crowd of people"
+  },
+  {
+      "id": "306",
+      "kanji": "\u304a\u9152",
+      "kana": "\u304a\u3055\u3051",
+      "eng": "alcohol"
+  },
+  {
+      "id": "307",
+      "kanji": "\u304a\u76bf",
+      "kana": "\u304a\u3055\u3089",
+      "eng": "plate, dish"
+  },
+  {
+      "id": "308",
+      "kanji": "\u304a\u624b\u6d17\u3044",
+      "kana": "\u304a\u3066\u3042\u3089\u3044",
+      "eng": "toilet"
+  },
+  {
+      "id": "309",
+      "kanji": "\u7537",
+      "kana": "\u304a\u3068\u3053",
+      "eng": "man"
+  },
+  {
+      "id": "310",
+      "kanji": "\u7537\u306e\u5b50",
+      "kana": "\u304a\u3068\u3053\u306e\u3053",
+      "eng": "boy"
+  },
+  {
+      "id": "311",
+      "kanji": "\u5927\u4eba",
+      "kana": "\u304a\u3068\u306a",
+      "eng": "adult"
+  },
+  {
+      "id": "312",
+      "kanji": "\u4e00\u6628\u65e5",
+      "kana": "\u304a\u3068\u3068\u3044",
+      "eng": "day before yesterday"
+  },
+  {
+      "id": "313",
+      "kanji": "\u4e00\u6628\u5e74",
+      "kana": "\u304a\u3068\u3068\u3057",
+      "eng": "year before last"
+  },
+  {
+      "id": "314",
+      "kanji": "\u304a\u7236\u3055\u3093",
+      "kana": "\u304a\u3068\u3046\u3055\u3093",
+      "eng": "father"
+  },
+  {
+      "id": "315",
+      "kanji": "\u5f1f",
+      "kana": "\u304a\u3068\u3046\u3068",
+      "eng": "younger brother"
+  },
+  {
+      "id": "316",
+      "kanji": "",
+      "kana": "\u30d1\u30fc\u30c6\u30a3\u30fc",
+      "eng": "party"
+  },
+  {
+      "id": "317",
+      "kanji": "",
+      "kana": "\u30d1\u30f3",
+      "eng": "bread"
+  },
+  {
+      "id": "318",
+      "kanji": "",
+      "kana": "\u30da\u30fc\u30b8",
+      "eng": "page"
+  },
+  {
+      "id": "319",
+      "kanji": "",
+      "kana": "\u30da\u30f3",
+      "eng": "pen"
+  },
+  {
+      "id": "320",
+      "kanji": "",
+      "kana": "\u30da\u30c3\u30c8",
+      "eng": "pet"
+  },
+  {
+      "id": "321",
+      "kanji": "",
+      "kana": "\u30dd\u30b1\u30c3\u30c8",
+      "eng": "pocket"
+  },
+  {
+      "id": "322",
+      "kanji": "",
+      "kana": "\u30dd\u30b9\u30c8",
+      "eng": "post"
+  },
+  {
+      "id": "323",
+      "kanji": "",
+      "kana": "\u30d7\u30fc\u30eb",
+      "eng": "swimming pool"
+  },
+  {
+      "id": "324",
+      "kanji": "\u6765\u6708",
+      "kana": "\u3089\u3044\u3052\u3064",
+      "eng": "next month"
+  },
+  {
+      "id": "325",
+      "kanji": "\u6765\u5e74",
+      "kana": "\u3089\u3044\u306d\u3093",
+      "eng": "next year"
+  },
+  {
+      "id": "326",
+      "kanji": "\u6765\u9031",
+      "kana": "\u3089\u3044\u3057\u3085\u3046",
+      "eng": "next week"
+  },
+  {
+      "id": "327",
+      "kanji": "",
+      "kana": "\u30e9\u30b8\u30aa",
+      "eng": "radio"
+  },
+  {
+      "id": "328",
+      "kanji": "\u96f6",
+      "kana": "\u308c\u3044",
+      "eng": "zero"
+  },
+  {
+      "id": "329",
+      "kanji": "\u51b7\u8535\u5eab",
+      "kana": "\u308c\u3044\u305e\u3046\u3053",
+      "eng": "refrigerator"
+  },
+  {
+      "id": "330",
+      "kanji": "",
+      "kana": "\u30ec\u30b3\u30fc\u30c9",
+      "eng": "record"
+  },
+  {
+      "id": "331",
+      "kanji": "\u7df4\u7fd2",
+      "kana": "\u308c\u3093\u3057\u3085\u3046",
+      "eng": "practice"
+  },
+  {
+      "id": "332",
+      "kanji": "",
+      "kana": "\u30ec\u30b9\u30c8\u30e9\u30f3",
+      "eng": "restaurant"
+  },
+  {
+      "id": "333",
+      "kanji": "\u516d",
+      "kana": "\u308d\u304f",
+      "eng": "six"
+  },
+  {
+      "id": "334",
+      "kanji": "\u5eca\u4e0b",
+      "kana": "\u308d\u3046\u304b",
+      "eng": "corridor"
+  },
+  {
+      "id": "335",
+      "kanji": "\u65c5\u884c",
+      "kana": "\u308a\u3087\u3053\u3046",
+      "eng": "travel"
+  },
+  {
+      "id": "336",
+      "kanji": "\u6599\u7406",
+      "kana": "\u308a\u3087\u3046\u308a",
+      "eng": "cuisine"
+  },
+  {
+      "id": "337",
+      "kanji": "\u4e21\u89aa",
+      "kana": "\u308a\u3087\u3046\u3057\u3093",
+      "eng": "parents"
+  },
+  {
+      "id": "338",
+      "kanji": "\u7559\u5b66\u751f",
+      "kana": "\u308a\u3085\u3046\u304c\u304f\u305b\u3044",
+      "eng": "overseas student"
+  },
+  {
+      "id": "339",
+      "kanji": "\u8ca1\u5e03",
+      "kana": "\u3055\u3044\u3075",
+      "eng": "purse"
+  },
+  {
+      "id": "340",
+      "kanji": "\u9b5a",
+      "kana": "\u3055\u304b\u306a",
+      "eng": "fish"
+  },
+  {
+      "id": "341",
+      "kanji": "\u5148",
+      "kana": "\u3055\u304d",
+      "eng": "previous"
+  },
+  {
+      "id": "342",
+      "kanji": "\u4f5c\u6587",
+      "kana": "\u3055\u304f\u3076\u3093",
+      "eng": "writing"
+  },
+  {
+      "id": "343",
+      "kanji": "\u4e09",
+      "kana": "\u3055\u3093",
+      "eng": "three"
+  },
+  {
+      "id": "344",
+      "kanji": "\u6563\u6b69",
+      "kana": "\u3055\u3093\u307d",
+      "eng": "walk"
+  },
+  {
+      "id": "345",
+      "kanji": "\u518d\u6765\u5e74",
+      "kana": "\u3055\u3089\u3044\u306d\u3093",
+      "eng": "year after next"
+  },
+  {
+      "id": "346",
+      "kanji": "\u7802\u7cd6",
+      "kana": "\u3055\u3068\u3046",
+      "eng": "sugar"
+  },
+  {
+      "id": "347",
+      "kanji": "\u80cc",
+      "kana": "\u305b",
+      "eng": "height"
+  },
+  {
+      "id": "348",
+      "kanji": "\u80cc\u5e83",
+      "kana": "\u305b\u3073\u308d",
+      "eng": "business suit"
+  },
+  {
+      "id": "349",
+      "kanji": "",
+      "kana": "\u30bb\u30fc\u30bf\u30fc",
+      "eng": "sweater"
+  },
+  {
+      "id": "350",
+      "kanji": "\u751f\u5f92",
+      "kana": "\u305b\u3044\u3068",
+      "eng": "pupil"
+  },
+  {
+      "id": "351",
+      "kanji": "\u77f3\u9e7c",
+      "kana": "\u305b\u3063\u3051\u3093",
+      "eng": "soap"
+  },
+  {
+      "id": "352",
+      "kanji": "\u5343",
+      "kana": "\u305b\u3093",
+      "eng": "1,000; thousand"
+  },
+  {
+      "id": "353",
+      "kanji": "\u5148\u6708",
+      "kana": "\u305b\u3093\u3052\u3064",
+      "eng": "last month"
+  },
+  {
+      "id": "354",
+      "kanji": "\u5148\u751f",
+      "kana": "\u305b\u3093\u305b\u3044",
+      "eng": "teacher"
+  },
+  {
+      "id": "355",
+      "kanji": "\u5148\u9031",
+      "kana": "\u305b\u3093\u3057\u3085\u3046",
+      "eng": "last week"
+  },
+  {
+      "id": "356",
+      "kanji": "\u6d17\u6fef",
+      "kana": "\u305b\u3093\u305f\u304f",
+      "eng": "washing"
+  },
+  {
+      "id": "357",
+      "kanji": "\u5199\u771f",
+      "kana": "\u3057\u3083\u3057\u3093",
+      "eng": "photograph"
+  },
+  {
+      "id": "358",
+      "kanji": "",
+      "kana": "\u30b7\u30e3\u30c4",
+      "eng": "shirt"
+  },
+  {
+      "id": "359",
+      "kanji": "",
+      "kana": "\u30b7\u30e3\u30ef\u30fc",
+      "eng": "shower"
+  },
+  {
+      "id": "360",
+      "kanji": "\u56db",
+      "kana": "\u3057",
+      "eng": "four"
+  },
+  {
+      "id": "361",
+      "kanji": "\u4e03",
+      "kana": "\u3057\u3061",
+      "eng": "seven"
+  },
+  {
+      "id": "362",
+      "kanji": "\u4ed5\u4e8b",
+      "kana": "\u3057\u3054\u3068",
+      "eng": "work"
+  },
+  {
+      "id": "363",
+      "kanji": "\u65b0\u805e",
+      "kana": "\u3057\u3093\u3076\u3093",
+      "eng": "newspaper"
+  },
+  {
+      "id": "364",
+      "kanji": "\u5869",
+      "kana": "\u3057\u304a",
+      "eng": "salt"
+  },
+  {
+      "id": "365",
+      "kanji": "\u767d",
+      "kana": "\u3057\u308d",
+      "eng": "white"
+  },
+  {
+      "id": "366",
+      "kanji": "\u4e0b",
+      "kana": "\u3057\u305f",
+      "eng": "below"
+  },
+  {
+      "id": "367",
+      "kanji": "\u8cea\u554f",
+      "kana": "\u3057\u3064\u3082\u3093",
+      "eng": "question"
+  },
+  {
+      "id": "368",
+      "kanji": "\u98df\u5802",
+      "kana": "\u3057\u3087\u304f\u3069\u3046",
+      "eng": "cafeteria"
+  },
+  {
+      "id": "369",
+      "kanji": "\u91ac\u6cb9",
+      "kana": "\u3057\u3087\u3046\u3086",
+      "eng": "soy sauce"
+  },
+  {
+      "id": "370",
+      "kanji": "\u5bbf\u984c",
+      "kana": "\u3057\u3085\u304f\u3060\u3044",
+      "eng": "homework"
+  },
+  {
+      "id": "371",
+      "kanji": "",
+      "kana": "\u305d\u3070",
+      "eng": "near"
+  },
+  {
+      "id": "372",
+      "kanji": "",
+      "kana": "\u305d\u3063\u3061",
+      "eng": "that way"
+  },
+  {
+      "id": "373",
+      "kanji": "",
+      "kana": "\u305d\u3061\u3089",
+      "eng": "that way (distant from speaker, close to listener); you; your family"
+  },
+  {
+      "id": "374",
+      "kanji": "",
+      "kana": "\u305d\u3053",
+      "eng": "that place "
+  },
+  {
+      "id": "375",
+      "kanji": "",
+      "kana": "\u305d\u306e",
+      "eng": "that"
+  },
+  {
+      "id": "376",
+      "kanji": "\u7a7a",
+      "kana": "\u305d\u3089",
+      "eng": "sky"
+  },
+  {
+      "id": "377",
+      "kanji": "",
+      "kana": "\u305d\u308c",
+      "eng": "that"
+  },
+  {
+      "id": "378",
+      "kanji": "\u5916",
+      "kana": "\u305d\u3068",
+      "eng": "outside"
+  },
+  {
+      "id": "379",
+      "kanji": "\u6383\u9664",
+      "kana": "\u305d\u3046\u3058",
+      "eng": "to clean, to sweep"
+  },
+  {
+      "id": "380",
+      "kanji": "\u6c34\u66dc\u65e5",
+      "kana": "\u3059\u3044\u3088\u3046\u3073",
+      "eng": "Wednesday"
+  },
+  {
+      "id": "381",
+      "kanji": "",
+      "kana": "\u30b9\u30ab\u30fc\u30c8",
+      "eng": "skirt"
+  },
+  {
+      "id": "382",
+      "kanji": "\u597d\u304d",
+      "kana": "\u3059\u304d",
+      "eng": "like"
+  },
+  {
+      "id": "383",
+      "kanji": "\u5c11\u3057",
+      "kana": "\u3059\u3053\u3057",
+      "eng": "a little (bit)"
+  },
+  {
+      "id": "384",
+      "kanji": "",
+      "kana": "\u30b9\u30dd\u30fc\u30c4",
+      "eng": "sport"
+  },
+  {
+      "id": "385",
+      "kanji": "",
+      "kana": "\u30b9\u30d7\u30fc\u30f3",
+      "eng": "spoon"
+  },
+  {
+      "id": "386",
+      "kanji": "",
+      "kana": "\u30b9\u30ea\u30c3\u30d1",
+      "eng": "slipper"
+  },
+  {
+      "id": "387",
+      "kanji": "",
+      "kana": "\u30b9\u30c8\u30fc\u30d6",
+      "eng": "heater"
+  },
+  {
+      "id": "388",
+      "kanji": "",
+      "kana": "\u305f\u3070\u3053",
+      "eng": "tobacco"
+  },
+  {
+      "id": "389",
+      "kanji": "\u5927\u5909",
+      "kana": "\u305f\u3044\u3078\u3093",
+      "eng": "very"
+  },
+  {
+      "id": "390",
+      "kanji": "\u5927\u5207",
+      "kana": "\u305f\u3044\u305b\u3064",
+      "eng": "important"
+  },
+  {
+      "id": "391",
+      "kanji": "\u5927\u4f7f\u9928",
+      "kana": "\u305f\u3044\u3057\u304b\u3093",
+      "eng": "embassy"
+  },
+  {
+      "id": "392",
+      "kanji": "\u6ca2\u5c71",
+      "kana": "\u305f\u304f\u3055\u3093",
+      "eng": "many"
+  },
+  {
+      "id": "393",
+      "kanji": "",
+      "kana": "\u30bf\u30af\u30b7\u30fc",
+      "eng": "taxi"
+  },
+  {
+      "id": "394",
+      "kanji": "\u5375",
+      "kana": "\u305f\u307e\u3054",
+      "eng": "eggs"
+  },
+  {
+      "id": "395",
+      "kanji": "\u8a95\u751f\u65e5",
+      "kana": "\u305f\u3093\u3058\u3087\u3046\u3073",
+      "eng": "birthday"
+  },
+  {
+      "id": "396",
+      "kanji": "\u7e26",
+      "kana": "\u305f\u3066",
+      "eng": "length,height"
+  },
+  {
+      "id": "397",
+      "kanji": "\u5efa\u7269",
+      "kana": "\u305f\u3066\u3082\u306e",
+      "eng": "building"
+  },
+  {
+      "id": "398",
+      "kanji": "\u624b",
+      "kana": "\u3066",
+      "eng": "hand"
+  },
+  {
+      "id": "399",
+      "kanji": "",
+      "kana": "\u30c6\u30fc\u30d6\u30eb",
+      "eng": "table"
+  },
+  {
+      "id": "400",
+      "kanji": "",
+      "kana": "\u30c6\u30fc\u30d7",
+      "eng": "tape"
+  },
+  {
+      "id": "401",
+      "kanji": "",
+      "kana": "\u30c6\u30fc\u30d7\u30ec\u30b3\u30fc\u30c0\u30fc",
+      "eng": "tape recorder"
+  },
+  {
+      "id": "402",
+      "kanji": "\u624b\u7d19",
+      "kana": "\u3066\u304c\u307f",
+      "eng": "Letter (message)"
+  },
+  {
+      "id": "403",
+      "kanji": "\u5929\u6c17",
+      "kana": "\u3066\u3093\u304d",
+      "eng": "weather"
+  },
+  {
+      "id": "404",
+      "kanji": "",
+      "kana": "\u30c6\u30ec\u30d3",
+      "eng": "television"
+  },
+  {
+      "id": "405",
+      "kanji": "",
+      "kana": "\u30c6\u30b9\u30c8",
+      "eng": "examination"
+  },
+  {
+      "id": "406",
+      "kanji": "\u6238",
+      "kana": "\u3068",
+      "eng": "Japanese style door"
+  },
+  {
+      "id": "407",
+      "kanji": "",
+      "kana": "\u30c8\u30a4\u30ec",
+      "eng": "toilet"
+  },
+  {
+      "id": "408",
+      "kanji": "\u6642\u8a08",
+      "kana": "\u3068\u3051\u3044",
+      "eng": "watch"
+  },
+  {
+      "id": "409",
+      "kanji": "\u6642",
+      "kana": "\u3068\u304d",
+      "eng": "time"
+  },
+  {
+      "id": "410",
+      "kanji": "\u6642\u3005",
+      "kana": "\u3068\u304d\u3069\u304d",
+      "eng": "sometimes"
+  },
+  {
+      "id": "411",
+      "kanji": "\u6240",
+      "kana": "\u3068\u3053\u308d",
+      "eng": "place"
+  },
+  {
+      "id": "412",
+      "kanji": "\u53cb\u9054",
+      "kana": "\u3068\u3082\u3060\u3061",
+      "eng": "friend"
+  },
+  {
+      "id": "413",
+      "kanji": "\u96a3",
+      "kana": "\u3068\u306a\u308a",
+      "eng": "next door to"
+  },
+  {
+      "id": "414",
+      "kanji": "\u5341\u65e5",
+      "kana": "\u3068\u304a\u304b",
+      "eng": "tenth day of the month / 10 days"
+  },
+  {
+      "id": "415",
+      "kanji": "\u9ce5",
+      "kana": "\u3068\u308a",
+      "eng": "bird"
+  },
+  {
+      "id": "416",
+      "kanji": "\u9d8f\u8089",
+      "kana": "\u3068\u308a\u306b\u304f",
+      "eng": "chicken meat"
+  },
+  {
+      "id": "417",
+      "kanji": "\u5e74",
+      "kana": "\u3068\u3057",
+      "eng": "year"
+  },
+  {
+      "id": "418",
+      "kanji": "\u56f3\u66f8\u9928",
+      "kana": "\u3068\u3057\u3087\u304b\u3093",
+      "eng": "library"
+  },
+  {
+      "id": "419",
+      "kanji": "\u6b21",
+      "kana": "\u3064\u304e",
+      "eng": "next"
+  }
+]

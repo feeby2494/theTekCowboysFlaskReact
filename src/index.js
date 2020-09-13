@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import FlashCardSpace from './FlashCardSpace';
+import Navigation from './Navigation'
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <Navigation />
     <FlashCardSpace />
   </React.StrictMode>,
   document.getElementById('root')
