@@ -15,6 +15,7 @@ import * as wanakana from 'wanakana';
 class FlashCardSpace extends React.Component {
   constructor(props){
     super(props);
+    this.inputFocus = React.createRef();
     this.state = {
       japaneseCard: [
         {
@@ -64,6 +65,7 @@ class FlashCardSpace extends React.Component {
     this.handleLevelChange = this.handleLevelChange.bind(this);
     this.handleLessonChange = this.handleLessonChange.bind(this);
     this.showList = this.showList.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
   showList(event) {
     this.setState({
@@ -131,11 +133,17 @@ class FlashCardSpace extends React.Component {
   }
 
 
-  checkAnswer(event) {
-    const cards = this.state.japaneseCard;
-    let idIsZero = (this.state.questionId === 0);
-    let onlyOneLeft = (cards.length === 1);
-    const randomNumber = this.state.randomNumber;
+  checkAnswer(event, clicked = true) {
+  
+    if(clicked === true){
+      console.log('I was submited by clicking');
+      this.inputFocus.current.focus();
+    } else {
+      console.log('I was submited by pressing enter key');
+    }
+    // if(this.inputFocus && this.inputFocus.current.focus()) {
+    //   this.inputFocus.current.focus();
+    // };
 
     if(this.state.nextIndex === this.state.cardOrder[18]) {
       this.setState({
@@ -280,6 +288,12 @@ class FlashCardSpace extends React.Component {
     // Will get flashcards from API; Might have buttons with eventhandlers change flashcards too
     //this.getFlashCards;
   }
+  handleKeyPress(event){
+    if (event.key === 'Enter') {
+      console.log('Pressed enter key');
+      this.checkAnswer(event, false);
+    }
+  }
   render() {
     const noKanji = <h3>{ this.state.answerKana }</h3>;
     const hasKanji = <h3>{ this.state.answerKanji }</h3>;
@@ -295,11 +309,11 @@ class FlashCardSpace extends React.Component {
               <p className="text-center">Score: { this.state.score }</p>
               <h2 className="text-center">{ this.state.finished ? finished : this.state.answerKanji ? hasKanji : noKanji }</h2>
 
-              <JapaneseInputWindow kanji={this.state.answerKanji} checkAnswer={this.checkAnswer} handleKanji={this.handleKanji} handleKana={this.handleKana} input={this.state.input}/>
+              <JapaneseInputWindow handleKeyPress={this.handleKeyPress} inputFocus={this.inputFocus} kanji={this.state.answerKanji} checkAnswer={this.checkAnswer} handleKanji={this.handleKanji} handleKana={this.handleKana} input={this.state.input}/>
               {
                 this.state.answerKanji && <p>You need a Japanese keyboard for this.</p>
               }
-              <Button onClick={this.getFlashCards}> Restart Quiz </Button>
+              { this.state.finished && <Button onClick={this.getFlashCards}> Restart Quiz </Button> }
             </Jumbotron>
           </Col>
         </Row>

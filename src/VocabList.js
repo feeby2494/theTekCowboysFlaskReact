@@ -1,19 +1,12 @@
 import React from 'react';
 import './App.css';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 class VocabList extends React.Component {
-  constructor(props){
-    super(props);
-  }
   render() {
-    const hideVocabList = <div> <Button variant="primary" onClick={ this.props.showList } > Hide Cards </Button>
-    <p>Hello, I'm a list of vocab cards</p> </div>
-    const showVocabList = <Button variant="primary" onClick={ this.props.showList } > Show Cards </Button>
 
     return (
       <div id='card-list'>

@@ -2,17 +2,11 @@ import React from 'react';
 import './App.css';
 import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 class CardLinks extends React.Component {
-  constructor(props){
-    super(props);
-  }
   render() {
     return (
       <div id='card-links'>

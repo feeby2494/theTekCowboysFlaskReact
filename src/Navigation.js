@@ -3,14 +3,8 @@ import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
 
 class Navigation extends React.Component {
-  constructor(props){
-    super(props);
-  }
   render(){
     return (
       <Navbar bg="light" expand="lg">
