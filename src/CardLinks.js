@@ -18,8 +18,8 @@ class CardLinks extends React.Component {
                   <Form.Label for="japanese-level">Choose your level of Japanese Study</Form.Label>
                   <Form.Control as="select" onChange={this.props.handleLevelChange}>
                     <option value="">Select an Option</option>
-                    <option value="jlptn5">JLPT N5</option>
-                    <option value="jlptn4">JLPT N4</option>
+                    <option value="jlpt_n5">JLPT N5</option>
+                    <option value="topik_I">Topik Level I</option>
                   </Form.Control>
                 </Form.Group>
                 {

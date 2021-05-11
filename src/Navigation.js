@@ -5,7 +5,11 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 
 class Navigation extends React.Component {
+
   render(){
+
+
+
     return (
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="/">Seolynn</Navbar.Brand>
@@ -13,10 +17,13 @@ class Navigation extends React.Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#link">About Us</Nav.Link>
+
+            <Nav.Link href="/about">About Us</Nav.Link>
+
+
             <NavDropdown title="Travel Preparation" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Learn Korean</NavDropdown.Item>
-              <NavDropdown.Item href="/flashcards">Learn Japanese</NavDropdown.Item>
+
+              <NavDropdown.Item href="/flashcards">Learn Japanese or Korean Vocab</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Work and Study Opportunities</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Living in Korea</NavDropdown.Item>
@@ -27,6 +34,18 @@ class Navigation extends React.Component {
               <NavDropdown.Divider />
 
             </NavDropdown>
+            <NavDropdown title="Services" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/device_repair">Device Repair</NavDropdown.Item>
+              <NavDropdown.Item href="/language_tutoring">Language Tutoring</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/web_project">Web Projects</NavDropdown.Item>
+            </NavDropdown>
+            {
+              localStorage.getItem('token') ?
+              <Nav.Link href="/logout">logout</Nav.Link>
+              :
+              <Nav.Link href="/login">Login</Nav.Link>
+            }
           </Nav>
         </Navbar.Collapse>
       </Navbar>

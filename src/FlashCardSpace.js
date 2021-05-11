@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import VocabList from './VocabList';
 import JapaneseInputWindow from './JapaneseInputWindow';
@@ -17,6 +17,7 @@ class FlashCardSpace extends React.Component {
     super(props);
     this.inputFocus = React.createRef();
     this.state = {
+
       japaneseCard: [
         {
           id: 0,
@@ -125,7 +126,8 @@ class FlashCardSpace extends React.Component {
 
   }
   setQuizCardOrder(event) {
-    let cardOrder = this.state.cardOrder;
+    let cardOrder = Array.from(Array(this.state.japaneseCard.length).keys());
+    console.log(cardOrder)
     cardOrder = this.shuffleQuizOrder(cardOrder);
     this.setState({
       cardOrder: cardOrder
@@ -134,7 +136,7 @@ class FlashCardSpace extends React.Component {
 
 
   checkAnswer(event, clicked = true) {
-  
+
     if(clicked === true){
       console.log('I was submited by clicking');
       this.inputFocus.current.focus();
@@ -145,7 +147,7 @@ class FlashCardSpace extends React.Component {
     //   this.inputFocus.current.focus();
     // };
 
-    if(this.state.nextIndex === this.state.cardOrder[18]) {
+    if(this.state.nextIndex === this.state.cardOrder[this.state.japaneseCard.length -2]) {
       this.setState({
           finished: true,
           cardOrderCounter: 0,
@@ -222,11 +224,18 @@ class FlashCardSpace extends React.Component {
       }
     }
   }
+
+
+
   handleLevelChange(event) {
     this.setState({
       level: event.target.value
     }, () => {
-      fetch('/api/japanese/' + this.state.level + '/info')
+
+      fetch('/api/japanese/' + this.state.level + '/info', {
+        method:'GET',
+        headers: {'x-access-token': localStorage.getItem('token')}
+      })
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
@@ -234,7 +243,7 @@ class FlashCardSpace extends React.Component {
             numberOfLessons: data
           });
         }
-      )
+      );
     });
   }
 
@@ -250,7 +259,11 @@ class FlashCardSpace extends React.Component {
     // first get info
 
       // use fetch to fetch cards from API
-      fetch('/api/japanese/' + this.state.level + '/' + this.state.lesson)
+
+      fetch('/api/japanese/' + this.state.level + '/' + this.state.lesson, {
+        method:'GET',
+        headers: {'x-access-token': localStorage.getItem('token')}
+      })
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
@@ -260,15 +273,19 @@ class FlashCardSpace extends React.Component {
             input: '',
             score: 0
           }, () => {
+            cardOrder: this.setQuizCardOrder();
             this.setState({
               questionId: this.state.japaneseCard[0].id,
               answerKana: this.state.japaneseCard[0].kana,
               answerKanji: this.state.japaneseCard[0].kanji,
               answerEng: this.state.japaneseCard[0].eng
+
             });
           });
         }
       );
+
+
 
     // Will get cards from API running on flask or node
     // flask api will have jwt
@@ -300,11 +317,12 @@ class FlashCardSpace extends React.Component {
     const finished = <h1> Finished! </h1>;
 
     return (
-      <Container>
+      <Container className="mb-5 clearfix">
         <VocabList displayList={this.state.displayList} showList={this.showList} cardList={this.state.japaneseCard}/>
         <Row >
           <Col className="mt-4">
             <h2 className="text-center">Japanese Quizes</h2>
+            {  }
             <Jumbotron>
               <p className="text-center">Score: { this.state.score }</p>
               <h2 className="text-center">{ this.state.finished ? finished : this.state.answerKanji ? hasKanji : noKanji }</h2>
