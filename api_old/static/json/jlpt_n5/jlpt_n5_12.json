@@ -1,0 +1,122 @@
+[
+  {
+      "id": "221",
+      "kanji": "\u9ed2",
+      "kana": "\u304f\u308d",
+      "eng": "black"
+  },
+  {
+      "id": "222",
+      "kanji": "\u8eca",
+      "kana": "\u304f\u308b\u307e",
+      "eng": "car"
+  },
+  {
+      "id": "223",
+      "kanji": "\u85ac",
+      "kana": "\u304f\u3059\u308a",
+      "eng": "medicine"
+  },
+  {
+      "id": "224",
+      "kanji": "\u9774",
+      "kana": "\u304f\u3064",
+      "eng": "shoes"
+  },
+  {
+      "id": "225",
+      "kanji": "\u9774\u4e0b",
+      "kana": "\u304f\u3064\u3057\u305f",
+      "eng": "socks"
+  },
+  {
+      "id": "226",
+      "kanji": "\u53bb\u5e74",
+      "kana": "\u304d\u3087\u306d\u3093",
+      "eng": "last year"
+  },
+  {
+      "id": "227",
+      "kanji": "\u4eca\u65e5",
+      "kana": "\u304d\u3087\u3046",
+      "eng": "today"
+  },
+  {
+      "id": "228",
+      "kanji": "\u5144\u5f1f",
+      "kana": "\u304d\u3087\u3046\u3060\u3044",
+      "eng": "siblings"
+  },
+  {
+      "id": "229",
+      "kanji": "\u6559\u5ba4",
+      "kana": "\u304d\u3087\u3046\u3057\u3064",
+      "eng": "classroom"
+  },
+  {
+      "id": "230",
+      "kanji": "\u4e5d",
+      "kana": "\u304d\u3085\u3046",
+      "eng": "nine"
+  },
+  {
+      "id": "231",
+      "kanji": "",
+      "kana": "\u30de\u30c3\u30c1",
+      "eng": "match"
+  },
+  {
+      "id": "232",
+      "kanji": "\u753a",
+      "kana": "\u307e\u3061",
+      "eng": "town"
+  },
+  {
+      "id": "233",
+      "kanji": "\u7a93",
+      "kana": "\u307e\u3069",
+      "eng": "window"
+  },
+  {
+      "id": "234",
+      "kanji": "\u524d",
+      "kana": "\u307e\u3048",
+      "eng": "previous"
+  },
+  {
+      "id": "235",
+      "kanji": "\u6bce\u671d",
+      "kana": "\u307e\u3044\u3042\u3055",
+      "eng": "every morning"
+  },
+  {
+      "id": "236",
+      "kanji": "\u6bce\u6669",
+      "kana": "\u307e\u3044\u3070\u3093",
+      "eng": "every night"
+  },
+  {
+      "id": "237",
+      "kanji": "\u6bce\u65e5",
+      "kana": "\u307e\u3044\u306b\u3061",
+      "eng": "every day"
+  },
+  {
+      "id": "238",
+      "kanji": "\u6bce\u9031",
+      "kana": "\u307e\u3044\u3057\u3085\u3046",
+      "eng": "every week"
+  },
+  {
+      "id": "239",
+      "kanji": "\u6bce\u5e74",
+      "kana": "\u307e\u3044\u3068\u3057/ \u307e\u3044\u306d\u3093",
+      "eng": "every year"
+  },
+  {
+      "id": "240",
+      "kanji": "\u6bce\u6708",
+      "kana": "\u307e\u3044\u3064\u304d",
+      "eng": "every month"
+  }
+]

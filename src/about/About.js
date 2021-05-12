@@ -15,8 +15,8 @@ export default class About extends Component {
             <Container>
               <Row className="mt-3">
                 <Col>
-                  <h5>This is Seolynn. Our names are: Jamie and Sumi.</h5>
-
+                  <h5>This is Seolynn.</h5>
+                  <p>Our names are: Jamie and Sumi.</p>
                   <p>Our main goal is to offer motivation to online students learning Japanese, Korean, and web development through remote means to help learners grow and develop.
                   Learning without motivation is impossible.
                   </p>

@@ -1,0 +1,661 @@
+id,hanja,hangul,eng,type
+0,,가격,price,noun
+1,,가구,furniture,noun
+2,,가방,bag,noun
+3,,가을,"fall, autumn",noun
+4,,가족,family,noun
+5,,값,price,noun
+6,,강,river,noun
+7,,거리,distance,noun
+8,,걱정,anxiety,noun
+9,,결혼식,wedding,noun
+10,,경주,race; run,noun
+11,,경험,experience,noun
+12,,계절,season,noun
+13,,계획,plan,noun
+14,,고민,worry,noun
+15,,고양이,cat,noun
+16,,고향,hometown,noun
+17,,곳,place,noun
+18,,공연,performance,noun
+19,,공원,park,noun
+20,,공책,note book,noun
+21,,공항,airport,noun
+22,,과일,fruit,noun
+23,,과자,snack,noun
+24,,관심,interest,noun
+25,,교통사고,car accident,noun
+26,,구두,dress shoe,noun
+27,,구입,purchase,noun
+28,,그림,"drawing, painting",noun
+29,,극장,theater,noun
+30,,근처,near,noun
+31,,글자,letter,noun
+32,,금년,this year,noun
+33,,기간,period,noun
+34,,기분,"Feeling, Mood",noun
+35,,김치,Kimchi,noun
+36,,까만색,black,noun
+37,,꽃,flower,noun
+38,,꽃집,flower shop,noun
+39,,나라,country,noun
+40,,나무,tree,noun
+41,,날,day,noun
+42,,날씨,weather,noun
+43,,남산,Namsan Mountain,noun
+44,,내년,next year,noun
+45,,내용,content,noun
+46,,내일,tomorrow,noun
+47,,냉면,cold noodles,noun
+48,,냉장고,refrigerator,noun
+49,,년,year,noun
+50,,노래,song,noun
+51,,누나,older sister (for male),noun
+52,,눈물,tears,noun
+53,, 느낌,feeling,noun
+54,,다음,next,noun
+55,,다음달,next month,noun
+56,,단어,word,noun
+57,,달,month,noun
+58,,댁,home (honorific form of 집),noun
+59,,도서관,library,noun
+60,,돈,money,noun
+61,,동대문,Dongdaemun,noun
+62,,동생,younger sibling,noun
+63,, 뒤,back,noun
+64,,드라마,drama,noun
+65,,등산,hike,noun
+66,,등산화,hiking shoes,noun
+67,,라디오,radio,noun
+68,,러시아,Russia,noun
+69,, 맞은편,across from,noun
+70,,머리,head,noun
+71,,모습,appearance,noun
+72,,모자,"hat, cap",noun
+73,,무게,weight,noun
+74,,문,door,noun
+75,,문구점,stationary store,noun
+76,,문제,problem,noun
+77,,문화,culture,noun
+78,,물건,thing,noun
+79,,미국,USA,noun
+80,,밑,under,noun
+81,,바지,pants,noun
+82,,박물관,museum,noun
+83,,밖,outside,noun
+84,,반(수업),class,noun
+85,,방,room,noun
+86,,방법,method,noun
+87,,방송국,broadcasting station,noun
+88,,배,ship,noun
+89,,배2,pear,noun
+90,,배우,actor,noun
+91,,백화점,department store,noun
+92,, 버스,bus,noun
+93,, 번호,number,noun
+94,, 병원,hospital,noun
+95,,볼펜,ball point pen,noun
+96,,봄,spring,noun
+97,,부모,parent,noun
+98,,부모님,parents,noun
+99,,부분,part,noun
+100,,부탁,request,noun
+101,,분위기,atmosphere,noun
+102,,불고기,Bulgogi,noun
+103,,비,rain,noun
+104,,비행기,airplane,noun
+105,,빵,bread,noun
+106,,사과,apple,noun
+107,,사람,person,noun
+108,,사무실,office,noun
+109,,사은품,freebie,noun
+110,,사전,dictionary,noun
+111,,사진,photo,noun
+112,,산,mountain,noun
+113,,색,color,noun
+114,,색깔,colors,noun
+115,,생각,"thinking, thought",noun
+116,,생일,birthday,noun
+117,,생활,life,noun
+118,,서울,Seoul,noun
+119,,서울역,Seoul Station,noun
+120,,서점,Bookstore,noun
+121,,선물,"present, gift",noun
+122,,선생님,teacher,noun
+123,,설명,explanation,noun
+124,, 설악산,Seoraksan,noun
+125,,성격,character,noun
+126,,소개,introduction,noun
+127,,소식,news,noun
+128,,손,hand,noun
+129,,손님,customer,noun
+130,,수업,class,noun
+131,,수첩,pocket book,noun
+132,,시간,time,noun
+133,,시계,watch,noun
+134,,시장,market,noun
+135,,시청,city hall,noun
+136,,시험,test,noun
+137,,식당,resturant,noun
+138,,식사,meal,noun
+139,,신문,newspaper,noun
+140,,신발,shoe,noun
+141,,아기,baby,noun
+142,,아래,below,noun
+143,,아버지,father,noun
+144,,아이스크림,ice cream,noun
+145,,아저씨,"sir, uncle",noun
+146,,아주머니,"ma’am, aunt",noun
+147,,아침,morning,noun
+148,,아침,breakfast,noun
+149,,아파트,apartment,noun
+150,,안,in,noun
+151,,안경,"eye glasses, specs",noun
+152,,안내,information,noun
+153,,앞,in front of,noun
+154,,야구,baseball,noun
+155,,약,medicine,noun
+156,,약국,pharmacy,noun
+157,,약속,appointment,noun
+158,,어머니,mother,noun
+159,,어제,yesterday,noun
+160,,얼굴,face,noun
+161,,옛날,old,noun
+162,,여자,girl,noun
+163,,여행,trip,noun
+164,,역사,history,noun
+165,,연락,contact,noun
+166,,연필,pencil,noun
+167,,영수증,receipt,noun
+168,,영어,English,noun
+169,,영화,movie,noun
+170,,옆,beside,noun
+171,,오래간만,after a long time,noun
+172,,오랜만,after a long time,noun
+173,,오른쪽,right (direction),noun
+174,,오후,afternoon,noun
+175,,올해,this year,noun
+176,,옷,clothes,noun
+177,,외국인,foreigner,noun
+178,,요리사,chef,noun
+179,,요즘,these days,noun
+180,,우산,umbrella,noun
+181,,우유,milk,noun
+182,,운동,exersise,noun
+183,,웬일,what matter,noun
+184,,위,upper part,noun
+185,,유학,study abroad,noun
+186,,은행,bank,noun
+187,,음료수,drink,noun
+188,,음식,food,noun
+189,,음악회,concert,noun
+190,,의미,meaning,noun
+191,,의자,chair,noun
+192,,이름,name,noun
+193,,이번,this (ex. this year),noun
+194,,이상,strange,noun
+195,,인터넷,internet,noun
+196,,일,work,noun
+197,,일본,Japan,noun
+198,,일본어,Japanese,noun
+199,,일요일,Sunday,noun
+200,,자동차,car,noun
+201,,자리,seat,noun
+202,,자전거,bicycle,noun
+203,,작년,last year,noun
+204,,잡지,magazine,noun
+205,,장소,place,noun
+206,,저녁,evening,noun
+207,,전자사전,electronic dictonary,noun
+208,,전화번호,phone number,noun
+209,,점심,lunch,noun
+210,,정리,arrangement,noun
+211,,제주도,Jeju Island,noun
+212,,졸업,graduate,noun
+213,,주,week,noun
+214,,주말,weekend,noun
+215,,주소,address,noun
+216,,주인,owner,noun
+217,,준비,prepare,noun
+218,,중국,china,noun
+219,,지갑,wallet,noun
+220,,지난주,last week,noun
+221,,지난해,last year,noun
+222,,지하철,subway,noun
+223,,집,house,noun
+224,,찻값,a tea charge,noun
+225,,창문,Window,noun
+226,,책,book,noun
+227,,책상,desk,noun
+228,,청소,clean,noun
+229,,축구,football (soccer),noun
+230,,취미,hobby,noun
+231,,취직,getting a job,noun
+232,,치마,skirt,noun
+233,,친구,friend,noun
+234,,침대,bed,noun
+235,,카메라,camera,noun
+236,,캐나다,Canada,noun
+237,,커피,coffee,noun
+238,,컴퓨터,computer,noun
+239,,큰형,male’s oldest brother,noun
+240,,테니스장,tennis court,noun
+241,,토요일,saturday,noun
+242,,통장,bankbook,noun
+243,,파란 색,blue,noun
+244,,파티,party,noun
+245,,편지,letter,noun
+246,,평일,weekday,noun
+247,,포도,grape,noun
+248,,표,ticket,noun
+249,,품목,"goods, items",noun
+250,,피아노,piano,noun
+251,,필요,need,noun
+252,,하숙집,boarding house,noun
+253,,학원,"academy, coaching center",noun
+254,,한국,Korea,noun
+255,,한국말,Korean language,noun
+256,,한국 어,Korean language,noun
+257,,한복,Hanbok (traditional Korean Cloth),noun
+258,,한식집,Korean restaurant,noun
+259,,할머니,grandmother,noun
+260,,할아버지,grandfather,noun
+261,,할인,discount,noun
+262,,행사,event,noun
+263,,형,male’s older brother,noun
+264,,호,room number,noun
+265,,호선,subway line,noun
+266,,회사,company,noun
+267,,회사원,a company employee,noun
+268,,회의,meeting,noun
+269,,후,after,noun
+270,,휴일,holiday,noun
+271,,희망,hope,noun
+272,,힘,effort,noun
+273,,개,general things,counter
+274,,권,books,counter
+275,,대,machines,counter
+276,,마리,animals,counter
+277,,명,people,counter
+278,,번,"times (ex, 3 times)",counter
+279,,병,bottles,counter
+280,,분,people (Honorific form of 명/사람),counter
+281,,사람,people,counter
+282,,살,age,counter
+283,,송이,bunch (of fruit),counter
+284,,인분,a serving of food,counter
+285,,잔,glass,counter
+286,,장,paper,counter
+287,,층,floor,counter
+288,,통,package,counter
+289,,가다,go,verb
+290,,가져가다,bring,verb
+291,,가지고 가다,go with something,verb
+292,,갈아타다,transfer/change (subway line),verb
+293,,감기에 걸리다,catch a cold,verb
+294,,갔다오다,go and come,verb
+295,,갖다,have/Carry,verb
+296,,걱정하다,worry,verb
+297,,건너가다,cross (a road),verb
+298,,걸리다,"To take (time), To get caught",verb
+299,,경험하다,experience,verb
+300,,계획을 세우다,make a plan,verb
+301,,계획하다,plan,verb
+302,,고르다,choose,verb
+303,,고장이 나다,get out of order(machines),verb
+304,,구경하다,"watch (scenery, landscape etc.), Sightseeing",verb
+305,,구하다,rescue,verb
+306,,그리다,draw a picture,verb
+307,,기다리다,wait,verb
+308,,기억을 하다,remember,verb
+309,,기억이 나다,remember,verb
+310,,길이 막히다,"blocked pathway, traffic jam",verb
+311,,깎다,trim,verb
+312,,꺼내다,take out,verb
+313,,끄다,turn off,verb
+314,,끊다,cut,verb
+315,,끝나다,To end/finish (itself),verb
+316,,끝내다,To end/finish something,verb
+317,,끼다,put on,verb
+318,,나가다,go out,verb
+319,,나오다,come out,verb
+320,,내다(돈),pay money,verb
+321,,내리다,To get off (a vehicle),verb
+322,,넣다,Put (in),verb
+323,,노래 부르다,sing a song,verb
+324,,노래하다,sing,verb
+325,,노력하다,make effort,verb
+326,,놀다,"play, hang out, have fun",verb
+327,,농구하다,play basketball,verb
+328,,눈물이 나다,"cry, tears flowing",verb
+329,,다녀오다,to go and come back,verb
+330,,다니다,attend,verb
+331,,닫다,close,verb
+332,,대답하다,answer,verb
+333,,도착하다,arrive,verb
+334,,돈이들다,cost money,verb
+335,,돌아오다,return,verb
+336,,되다,become,verb
+337,,드리다,give (to older person),verb
+338,,드시다,eat (honorific of 먹다),verb
+339,,듣다,listen,verb
+340,,들다,hold,verb
+341,,들어가다,enter,verb
+342,,떠나다,leave,verb
+343,,마시다,drink,verb
+344,,마음에 들다,like,verb
+345,,마치다,finish,verb
+346,,만나다,meet,verb
+347,,만들다,make,verb
+348,,말씀 드리다,speak to (older person),verb
+349,,말씀하시다,speak,verb
+350,,말하다,speak,verb
+351,,먹다,eat,verb
+352,,모르다,do not know,verb
+353,,모으다,gather,verb
+354,,모자라다,insufficient,verb
+355,,목욕하다,take a bath,verb
+356,,묻다,ask question,verb
+357,,물어보다,ask question,verb
+358,,받다,receive,verb
+359,,밥 먹다,eat food,verb
+360,,배우다,learn,verb
+361,,벗다,take off,verb
+362,,보내다,send,verb
+363,,보다,see,verb
+364,,부르다,full,verb
+365,,부치다,send mail,verb
+366,,부탁하다,request,verb
+367,,빌려주다,lend,verb
+368,,빌리다,borrow,verb
+369,,빼다,"subtract, remove",verb
+370,,사고,accident,verb
+371,,나다,be,verb
+372,,사다,buy,verb
+373,,사용하다,use,verb
+374,,사진을 찍다,take a photo,verb
+375,,산책하다,take a walk,verb
+376,,살다,live,verb
+377,,서다,stand,verb
+378,,설거지하다,wash dishes,verb
+379,,설명하다,explain,verb
+380,,소개하다,introduce,verb
+381,,수영하다,swim,verb
+382,,쉬다,rest,verb
+383,,시작되다,begin/start (itself),verb
+384,,시작하다,start something,verb
+385,,시키다,order,verb
+386,,식사하다,have a meal,verb
+387,,신다,wear (footwear),verb
+388,,싫어하다,dislike,verb
+389,,쓰다,"write, use",verb
+390,,쓰다(모자),wear (hat),verb
+391,,씻다,wash (face),verb
+392,,앉다,sit,verb
+393,,알다,know,verb
+394,,알아듣다,understand (after listening),verb
+395,,어울리다,"match, suit something",verb
+396,,여행하다,travel,verb
+397,,연락하다,connect,verb
+398,,연습하다,practice,verb
+399,,열이나다,Get fever,verb
+400,,예약하다,make a reservation,verb
+401,,오다,come,verb
+402,,오르다,rise,verb
+403,,올라오다,"come up, climb",verb
+404,,우산을 쓰다,use an umbrella,verb
+405,,운동하다,exercise,verb
+406,,운전하다,drive,verb
+407,,웃다,laugh,verb
+408,,이사가다,move to other place,verb
+409,,이사하다,move to other place,verb
+410,,이야기하다,converse/talk,verb
+411,,이용하다,use,verb
+412,,이해하다,understand,verb
+413,,일어나다,wake up,verb
+414,,읽다,read,verb
+415,,잃다,lose,verb
+416,,잃어버리다,lose,verb
+417,,입다,wear,verb
+418,,잊다,forget,verb
+419,,잘 되다,turn out well,verb
+420,,잘하다,do well,verb
+421,,잠이 오다,become sleepy,verb
+422,,잡수시다,eat (honorific form of 먹다),verb
+423,,전하다,"transmit, tell information to someone",verb
+424,,전화(를) 걸다,call (telephone),verb
+425,,전화를 바꿔주다,To give the phone to someone else,verb
+426,,전화를 받다,receive a call,verb
+427,,전화를 하다,call,verb
+428,,전화하다,call,verb
+429,,조심하다,be careful,verb
+430,,좋아하다,to like,verb
+431,,주다,give,verb
+432,,주무시다,sleep (honorific form of 자다),verb
+433,,주문하다,order (food etc.),verb
+434,,준비하다,prepare,verb
+435,,지나다,pass,verb
+436,,지내다,"spend, live",verb
+437,,질문하다,ask a question,verb
+438,,짓다,build,verb
+439,,찾다,search for,verb
+440,,찾아가다,visit,verb
+441,,청소하다,clean,verb
+442,,초대하다,invite,verb
+443,,축구를 하다,play football,verb
+444,,출발하다,depart,verb
+445,,취직하다,get a job,verb
+446,,켜다,switch on,verb
+447,,콧물이 나다,have a runny nose,verb
+448,,타다,ride,verb
+449,,테니스 치다,play tennis,verb
+450,,틀리다,incorrect,verb
+451,,푹 자다,sleep deeply,verb
+452,,피아노를 치다,play piano,verb
+453,,하다,do,verb
+454,,화나다,get angry,verb
+455,,회의하다,have a meeting,verb
+456,,,,verb
+457,,,Adjectives: 72 Words,verb
+458,,가볍다,light,verb
+459,,감사하다,thank,verb
+460,,계시다,"be, exist (Hon. form of 있다)",verb
+461,,고맙다,thank,verb
+462,,공기가 맑다,Clean and Fresh air,verb
+463,,괜찮다,to be okay,verb
+464,,기분이 좋다,"feel happy, have good mood",verb
+465,,길다,long,verb
+466,,깊다,deep,verb
+467,,깨끗하다,clean,verb
+468,,나쁘다,bad,verb
+469,,적다,less,verb
+470,,낮다,low,verb
+471,,넓다,wide,verb
+472,, 높다,high,verb
+473,,다르다,different,verb
+474,,더럽다,dirty,verb
+475,,덥다,hot,verb
+476,,따뜻하다,Warm,verb
+477,, 많다,many,verb
+478,,맑다,clear,verb
+479,,맛없다,"tastes bad, tasteless",verb
+480,,맛있다,"tastes good, tasty",verb
+481,,멋있다,"cool, handsome (a cool person)",verb
+482,,무섭다,scary,verb
+483,,미안하다,sorry,verb
+484,,반갑다,glad,verb
+485,,밝다,bright,verb
+486,,배가 고프다,hungry,verb
+487,,배가 부르다,full,verb
+488,,배가 아프다,Have stomachache,verb
+489,,복잡하다,complicated,verb
+490,,부지런하다,diligent,verb
+491,,불편하다,inconvenient,verb
+492,,비슷하다,similar,verb
+493,,비싸다,expensive,verb
+494,,새롭다,new,verb
+495,,쉽다,easy,verb
+496,,슬프다,sad,verb
+497,,싫다,hate,verb
+498,,싸다,cheap,verb
+499,, 아름답다,beautiful,verb
+500,,아프다,painful,verb
+501,,어둡다,dark,verb
+502,,어리다,young,verb
+503,,없다,not have,verb
+504,,예쁘다,pretty,verb
+505,,위험하다,dangerous,verb
+506,,유명하다,famous,verb
+507,,이상하다,strange,verb
+508,,있다,have,verb
+509,,작다,small,verb
+510,,재미있다,interesting/fun,verb
+511,,적다,less,verb
+512,,조용하다,quiet,verb
+513,,좁다,narrow,verb
+514,,좋다,like,verb
+515,,죄송하다,sorry,verb
+516,,중요하다,important,verb
+517,,즐겁다,merry,verb
+518,,짧다,short,verb
+519,,춥다,cold,verb
+520,,친절하다,kind,verb
+521,,크다,big,verb
+522,,키가 크다,tall,verb
+523,,편리하다,convenient,verb
+524,,편안하다,comfortable,verb
+525,,편하다,easy,verb
+526,,피곤하다,tired,verb
+527,,필요하다,needed,verb
+528,,한가하다,free,verb
+529,,힘들다,difficult,verb
+530,,가까이,near,adverb
+531,,가끔,sometimes,adverb
+532,,가장,most,adverb
+533,,갑자기,suddenly,adverb
+534,,같이,"like, together",adverb
+535,,거의,almost,adverb
+536,,계속,continuously,adverb
+537,,곧,soon,adverb
+538,,그냥,just,adverb
+539,,금방,soon,adverb
+540,,꼭,surely,adverb
+541,,나중에,later,adverb
+542,,날마다(날+마다)=매일,everyday,adverb
+543,,너무,too,adverb
+544,,늦게,late,adverb
+545,,다,all,adverb
+546,,더,more,adverb
+547,,따로,separately,adverb
+548,,또,"and, moreover",adverb
+549,,똑바로,straight,adverb
+550,,마침내,at last,adverb
+551,,많이,a lot of,adverb
+552,,매우,very,adverb
+553,,매일,daily,adverb
+554,,먼저,ahead,adverb
+555,,모두,all,adverb
+556,,못,cannot,adverb
+557,,미리,in advance,adverb
+558,,바로,straight,adverb
+559,,방금,right now,adverb
+560,,벌써,already,adverb
+561,,별로,very,adverb
+562,,보통,normally,adverb
+563,,빨리,quickly,adverb
+564,,새로,new,adverb
+565,,서로,each other,adverb
+566,,아까,some time ago,adverb
+567,,아마,perhaps,adverb
+568,,아주,very,adverb
+569,,아직,yet,adverb
+570,,어서,"quick,",adverb
+571,,안,not,adverb
+572,,언제나,always,adverb
+573,,열심히,hard,adverb
+574,,오래,long,adverb
+575,,오래간만에,in a long time,adverb
+576,,오랜만에,for a long time,adverb
+577,,요즘,these days,adverb
+578,,이따가,later,adverb
+579,,이제,now,adverb
+580,,일찍,early,adverb
+581,,자주,often,adverb
+582,,잘,well,adverb
+583,,잠깐,wait,adverb
+584,,잠시,moment,adverb
+585,,전혀,not at all,adverb
+586,,정말,really,adverb
+587,,제일,best,adverb
+588,,조금,a little,adverb
+589,,조용히,quietly,adverb
+590,,좀,some,adverb
+591,,지금,now,adverb
+592,,직접,directly,adverb
+593,,참,really,adverb
+594,,처음,first,adverb
+595,,천천히,slowly,adverb
+596,,크게,largely,adverb
+597,,별히,particularly,adverb
+598,,특히,especially,adverb
+599,,푹,well,adverb
+600,,함께,together,adverb
+601,,항상,always,adverb
+602,,혼자,alone,adverb
+603,,혼자서,alone,adverb
+604,,그래서,"so, therefore",conjunction
+605,,그러나,but,conjunction
+606,,그러니까,that’s why,conjunction
+607,,그러면,in that case,conjunction
+608,,그럼,Then,conjunction
+609,,그런데,but,conjunction
+610,,그리고,and,conjunction
+611,,누구,who,question
+612,,무엇,what,question
+613,,뭐,what,question
+614,,어디,where,question
+615,,어떻게,how,question
+616,,언제,when,question
+617,,얼마나,how much,question
+618,,왜,why,question
+619,,어느,which,question
+620,,몇,how many,question
+621,,무슨,"what, which",question
+622,,세,3,number
+623,,십삼,13,number
+624,,십이,12,number
+625,,아홉,9,number
+626,,여섯,6,number
+627,,열두,12,number
+628,,열셋,13,number
+629,,한,1,number
+630,,스물/스무,20,number
+631,,글쎄요,well,interjection
+632,,네,yes,interjection
+633,,아니요,no,interjection
+634,,여보세요,hello (on phone),interjection
+635,,예/네,yes,interjection
+636,,그,the,determiners
+637,,네,4,determiners
+638,,두,2,determiners
+639,,새,new,determiners
+640,,세,3,determiners
+641,,스무,20,determiners
+642,,아무데나,Wherever,determiners
+643,,여러,several,determiners
+644,,이,this,determiners
+645,,저,that,determiners
+646,,한,One,determiners
+647,,거기,there,pronouns
+648,,그,"that, he, she, it",pronouns
+649,,그것/그거,that thing,pronouns
+650,,아무거나,Anything,pronouns
+651,,여기,here,pronouns
+652,,여러분,everyone,pronouns
+653,,우리,our,pronouns
+654,,이,this,pronouns
+655,,이것/이거,"this, this thing",pronouns
+656,,저,that,pronouns
+657,,저것/저거,that thing,pronouns
+658,,저기,there,pronouns
+659,,저희,we,pronouns
