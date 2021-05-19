@@ -14,24 +14,28 @@ export default class Footer extends Component {
 
     render(){
         return(
-          <Navbar  bg="light" fixed="bottom" className=" mt-4">
+          <Navbar  bg="light" className="fixed-bottom mt-md-3">
             {/* <!-- Footer -->*/}
-            <Container className=" pt-4">
+            <Container className=" pt-2">
               {/* <!-- Footer Links -->*/}
               <Row className="container-fluid text-center text-md-left">
                 {/* <!-- Grid row -->*/}
-                <Col>
+                <Col >
                   {/* <!-- Grid column -->*/}
-                  <div className="col-md-6 mt-md-0 mt-3">
-
                     {/* <!-- Content -->*/}
                     <h5 className="text-uppercase">Seolynn</h5>
-                    <p></p>
-
-                  </div>
                   {/* <!-- Grid column -->*/}
 
-                  <hr className="clearfix w-100 d-md-none pb-3" />
+
+                </Col>
+                <Col >
+                  {/* <!-- Grid column -->*/}
+                    {/* <!-- Content -->*/}
+
+                    <hr className="d-md-none  pb-2" />
+                  {/* <!-- Grid column -->*/}
+
+
                 </Col>
               </Row>
             </Container>

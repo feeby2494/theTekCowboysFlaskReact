@@ -72,7 +72,7 @@ class App extends Component {
 
        <Switch>
 
-          <Route path="/flashcards" exact component={withAuth(FlashCardSpace)} />
+          <Route path="/flashcards" exact component={FlashCardSpace} />
           <Route path="/" exact component={Home} />
           <Route path="/secret" component={withAuth(Secret)} />
           <Route path="/login" >

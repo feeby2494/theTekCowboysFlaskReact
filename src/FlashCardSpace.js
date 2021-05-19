@@ -321,7 +321,7 @@ class FlashCardSpace extends React.Component {
         <VocabList displayList={this.state.displayList} showList={this.showList} cardList={this.state.japaneseCard}/>
         <Row >
           <Col className="mt-4">
-            <h2 className="text-center">Japanese Quizes</h2>
+            <h2 className="text-center">Japanese and Korean Quizes</h2>
             {  }
             <Jumbotron>
               <p className="text-center">Score: { this.state.score }</p>
