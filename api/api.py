@@ -716,7 +716,7 @@ def delete_stock(inventory_id):
 ################################################################################################################
 
 @app.route('/api/japanese/<level>/all')
-@token_required
+
 def get_all_json(currentUser, level):
     json_for_all = open(os.path.join( app.static_folder, f'json/{level}', f"{level}_all.json"), "r")
     data = json.load(json_for_all)
@@ -724,7 +724,7 @@ def get_all_json(currentUser, level):
     return Response(json.dumps(data), mimetype='application/json')
 
 @app.route('/api/japanese/<level>/info')
-@token_required
+
 def get_json_info(currentUser, level):
     data = [
                 'all',
@@ -754,7 +754,7 @@ def get_json_info(currentUser, level):
     return Response(json.dumps(data), mimetype='application/json')
 
 @app.route('/api/japanese/<level>/<id>')
-@token_required
+
 def get_json_one_lesson(currentUser, level, id):
     json_one_lesson = open(os.path.join( app.static_folder, f'json/{level}', f"{level}_" + id + ".json"), "r")
     data = json.load(json_one_lesson)
