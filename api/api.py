@@ -717,7 +717,7 @@ def delete_stock(inventory_id):
 
 @app.route('/api/japanese/<level>/all')
 
-def get_all_json(currentUser, level):
+def get_all_json( level):
     json_for_all = open(os.path.join( app.static_folder, f'json/{level}', f"{level}_all.json"), "r")
     data = json.load(json_for_all)
     print(data)
@@ -725,7 +725,7 @@ def get_all_json(currentUser, level):
 
 @app.route('/api/japanese/<level>/info')
 
-def get_json_info(currentUser, level):
+def get_json_info( level):
     data = [
                 'all',
                 '01',
@@ -755,7 +755,7 @@ def get_json_info(currentUser, level):
 
 @app.route('/api/japanese/<level>/<id>')
 
-def get_json_one_lesson(currentUser, level, id):
+def get_json_one_lesson( level, id):
     json_one_lesson = open(os.path.join( app.static_folder, f'json/{level}', f"{level}_" + id + ".json"), "r")
     data = json.load(json_one_lesson)
     return Response(json.dumps(data), mimetype='application/json')
