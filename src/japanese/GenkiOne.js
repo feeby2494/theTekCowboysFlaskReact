@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Modal from 'react-bootstrap/Modal';
 import NumberModal from './NumberModal';
+import HourModal from './HourModal';
 
 export default class GenkiOne extends Component {
   constructor(props){
@@ -168,20 +169,25 @@ export default class GenkiOne extends Component {
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
                     <div className="card-header text-center">数字（すいじ）Numbers</div>
-                    <div className="card-body text-info">
+                    <div className="card-body text-info text-center">
                       <li class="list-group-item list-group-item-info">0 ゼロ／れい</li>
                       <li class="list-group-item list-group-item-light">1 いち 一</li>
                       <li class="list-group-item list-group-item-info">2 に 二</li>
-                      {/* Button trigger modal for numbers */}
-                      <NumberModal />
+                    </div>
+                    <div className="card-footer text-info">
+                    {/* Button trigger modal for numbers */}
+                    <NumberModal />
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
                     <div className="card-header text-center">字間（じかん）Time</div>
-                    <div className="card-body text-info">
-                      <li className="list-group-item list-group-item-info">0 ゼロ／れい</li>
-                      <li className="list-group-item list-group-item-light">1 いち 一</li>
-                      <li className="list-group-item list-group-item-info">2 に 二</li>
+                    <div className="card-body text-info text-center">
+                      <li className="list-group-item list-group-item-info">1:00 いちじ 一時</li>
+                      <li className="list-group-item list-group-item-light">2:00 にじ 二時</li>
+                      <li className="list-group-item list-group-item-info">3:00 さんじ 三時</li>
+                    </div>
+                    <div className="card-footer text-info">
+                      <HourModal />
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
@@ -193,7 +199,7 @@ export default class GenkiOne extends Component {
                 </div>
 
 
-                  
+
               </Container>
 
             )}

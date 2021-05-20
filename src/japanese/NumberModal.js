@@ -11,14 +11,14 @@ function NumberModal() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+        See All Numbers
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>数字（すいじ）Numbers</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="text-center">
           <li className="list-group-item list-group-item-info">0   ゼロ／れい</li>
           <li className="list-group-item list-group-item-light">1   いち  一</li>
           <li className="list-group-item list-group-item-info">2   に   二</li>
