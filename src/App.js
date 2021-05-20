@@ -15,6 +15,8 @@ import About from './about/About';
 import RepairService from './services/device_repair/RepairService';
 import TutoringLanguageService from './services/language_tutoring/TutoringLanguageService';
 import WebProjectService from './services/web_project/WebProjectService';
+import GenkiOne from './japanese/GenkiOne';
+import GenkiOneSpecificPoint from './japanese/GenkiOneSpecificPoint';
 
 
 // Need to go mod all the services to get the right things from API
@@ -84,7 +86,10 @@ class App extends Component {
           <Route path="/device_repair" exact component={RepairService} />
           <Route path="/language_tutoring" exact component={TutoringLanguageService} />
           <Route path="/web_project" exact component={WebProjectService} />
+          <Route path="/genki_one" component ={GenkiOne}/>
+          <Route path="/genki_one/:id" component ={GenkiOneSpecificPoint}/>
           <Route path="/:personId" component ={UserHome}/>
+
 
 
        </Switch>

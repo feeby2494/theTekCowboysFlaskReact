@@ -24,6 +24,7 @@ class Navigation extends React.Component {
             <NavDropdown title="Travel Preparation" id="basic-nav-dropdown">
 
               <NavDropdown.Item href="/flashcards">Learn Japanese or Korean Vocab</NavDropdown.Item>
+              <NavDropdown.Item href="/genki_one">Genki I Grammar Study</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">Work and Study Opportunities</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Living in Korea</NavDropdown.Item>
