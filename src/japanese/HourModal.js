@@ -11,7 +11,7 @@ function HourModal() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        See All Numbers
+        See All Hours
       </Button>
 
       <Modal show={show} onHide={handleClose}>

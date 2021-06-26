@@ -9,6 +9,10 @@ import Nav from 'react-bootstrap/Nav';
 import Modal from 'react-bootstrap/Modal';
 import NumberModal from './NumberModal';
 import HourModal from './HourModal';
+import MinutesModal from './MinutesModal';
+import AgeModal from './AgeModal';
+import CountingDaysModal from './CountingDaysModal';
+import BigNumbersModal from './BigNumbersModal';
 
 export default class GenkiOne extends Component {
   constructor(props){
@@ -191,7 +195,70 @@ export default class GenkiOne extends Component {
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
+                    <div className="card-header text-center">分間 （ふんかん）Minutes</div>
+                    <div className="card-body text-info">
+                      <li className="list-group-item list-group-item-info">一分 いっぷん</li>
+                      <li className="list-group-item list-group-item-light">二分 にふん</li>
+                      <li className="list-group-item list-group-item-info">三分 さんぷん</li>
+                    </div>
+                    <div className="card-footer text-info">
+                      <MinutesModal />
+                    </div>
+                  </div>
+                  <div className="card border-info mb-3 col-md-6 col-xl-4">
+                    <div className="card-header text-center">｡｡｡歳です。I'm ... years old.</div>
+                    <div className="card-body text-info">
+                      <h5 className="card-title text-center">〜さいです。＝＞ years old</h5>
+                      <hr />
+                      <p className="card-text">なんさいですか。おいくつですか。</p>
+                      <p className="card-text">さんじゅうよんさいです。</p>
+                    </div>
+                    <div className="card-footer text-info">
+                      <AgeModal />
+                    </div>
+                  </div>
+                  <div className="card border-info mb-3 col-md-6 col-xl-4">
+                    <div className="card-header text-center">日 ＝＞ Counting in days</div>
+                    <div className="card-body text-info">
+                      <li className="list-group-item list-group-item-info">
+                        <div className="row">
+                          <p className="col-6">
+                            一日
+                          </p>
+                          <p className="col-6">
+                            いちにち (ついたち/いっぴ)
+                          </p>
+                        </div>
+                      </li>
+                      <li className="list-group-item list-group-item-light">
+                        <div className="row">
+                          <p className="col-6">
+                            二日
+                          </p>
+                          <p className="col-6">
+                            ふつか
+                          </p>
+                        </div>
+                      </li>
+                    </div>
+                    <div className="card-footer text-info">
+                      <CountingDaysModal />
+                    </div>
+                  </div>
+                  <div className="card border-info mb-3 col-md-6 col-xl-4">
+                    <div className="card-header text-center">｡｡｡年｡｡｡月｡｡｡日 ＝＞ The date</div>
+                    <div className="card-body text-info">
+
+                    </div>
+                  </div>
+                  <div className="card border-info mb-3 col-md-6 col-xl-4">
                     <div className="card-header text-center">表現ノート（ひょうげんノート）Expression Notes</div>
+                    <div className="card-body text-info">
+
+                    </div>
+                  </div>
+                  <div className="card border-info mb-3 col-md-6 col-xl-4">
+                    <div className="card-header text-center">Extra Links</div>
                     <div className="card-body text-info">
 
                     </div>
@@ -208,22 +275,27 @@ export default class GenkiOne extends Component {
                 <h3>Chapter 1</h3>
                 <div className="row">
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">X は Y です。 </div>
+                    <div className="card-header text-center">これ それ あれ どれ</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title text-center">〜です。 It is...</h5>
-                      <h5 className="card-title text-center">XはYです。 X is Y. As for X, it is Y.</h5>
+                      <p className="card-title text-center">これは｡｡｡ This is... (this thing here)</p>
+                      <p className="card-title text-center">それは｡｡｡ This is... (that thing infront of you)</p>
+                      <p className="card-title text-center">あれは｡｡｡ That is... (that one over there)</p>
+                      <p className="card-title text-center">どれは｡｡｡ Which one...</p>
                       <hr />
-                      <p className="card-text">学生（がくせい）です。</p>
-                      <p className="card-text">私（わたし）はスー・キムです。</p>
+                      <p className="card-text">これはいくらですか。</p>
+                      <p className="card-text">それはさんぜんえんです。</p>
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">{'Making Questions => か。'}</div>
+                    <div className="card-header text-center">この／その／あの／どの ＋ Noun</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title text-center">……か。 What is... Who is/are... Are you... etc...</h5>
+                    <p className="card-title text-center">このとけいは｡｡｡ This watch... (this watch here)</p>
+                    <p className="card-title text-center">そのとけいは｡｡｡ This is... (that watch infront of you)</p>
+                    <p className="card-title text-center">あのとけいは｡｡｡ That is... (that watch over there)</p>
+                    <p className="card-title text-center">どのとけいは｡｡｡ Which watch...</p>
                       <hr />
-                      <p className="card-text">留学生（りゅうがくせい）ですか。</p>
-                      <p className="card-text">はい、留学生です。 Or ええい、留学生じゃないです。</p>
+                      <p className="card-text">このとけいはいくらですか。</p>
+                      <p className="card-text">そのとけいはさんぜんえんです。</p>
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
@@ -236,24 +308,81 @@ export default class GenkiOne extends Component {
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">数字（すいじ）Numbers</div>
+                    <div className="card-header text-center">ここ／そこ／あそこ／どこ</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title">Info card title</h5>
-                      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <p className="card-title text-center">ここ ＝＞ here, near me</p>
+                      <p className="card-title text-center">そこ ＝＞ there, near you</p>
+                      <p className="card-title text-center">あそこ ＝＞ over there</p>
+                      <p className="card-title text-center">どこ ＝＞ where</p>
+                      <hr />
+                      <p className="card-text">すみません。郵便局（ゆうびんきょく）はどこですか。</p>
+                      <p className="card-text">あそこです。</p>
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">字間（じかん）Time</div>
+                    <div className="card-header text-center">だれの noun</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title">Info card title</h5>
-                      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="card-title text-center">だれ ＝＞ who</p>
+                    <p className="card-title text-center">だれの ＝＞ whose</p>
+                    <hr />
+                    <p className="card-text">これはだれのかばんですか。</p>
+                    <p className="card-text">それはスーさんのかばんです。</p>
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">表現ノート（ひょうげんノート）Expression Notes</div>
+                    <div className="card-header text-center">noun も</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title">Info card title</h5>
-                      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p className="card-title text-center">A は X です。 A is X.</p>
+                    <p className="card-title text-center">B も X です。 B too is X.</p>
+                    <hr />
+                    <p className="card-text">たけしさんは車（くるま）が好きです（すきです）。</p>
+                    <p className="card-text">私（わたし）も車（くるま）が好きです（すきです）。</p>
+                    </div>
+                  </div>
+                  <div className="card border-info mb-3 col-md-6 col-xl-4">
+                    <div className="card-header text-center">noun じゃないです。</div>
+                    <div className="card-body text-info">
+                    <p className="card-title text-center">X は Y です。 X is Y.</p>
+                    <p className="card-title text-center">X は Y じゃないです。 X is not Y.</p>
+                    <p className="card-title text-center">X は Y じゃありません。 X is not Y. （more conservative speech style）</p>
+                    <p className="card-title text-center">X は Y ではありません。 X is not Y. （formal, appropriate for writing）</p>
+                    <hr />
+                    <p className="card-text">私（わたし）は学生（がくせい）じゃないです。</p>
+                    <p className="card-text">私（わたし）は学生（がくせい）じゃありません。</p>
+                    </div>
+                  </div>
+                  <div className="card border-info mb-3 col-md-6 col-xl-4">
+                    <div className="card-header text-center">〜ね／〜よ</div>
+                    <div className="card-body text-info">
+                    <p className="card-title text-center">If speaker seeks the listener's confirmation or agreement, then 〜ね is added to end of sentence. </p>
+                    <p className="card-title text-center">If speaker seeks to assure the listener of what has been said (authoritative decree), then 〜よ is added to end of sentence.</p>
+                    <hr />
+                    <p className="card-text">彼（かれ）はばかですね。</p>
+                    <p className="card-text">とんかつはさかなじゃないですよ。</p>
+                    </div>
+                  </div>
+                  <div className="card border-info mb-3 col-md-6 col-xl-4">
+                    <div className="card-header text-center">すうじ</div>
+                    <div className="card-body text-info">
+                    <p className="card-title text-center"></p>
+                    <p className="card-title text-center"></p>
+                    <hr />
+                    <p className="card-text"></p>
+
+                    </div>
+                    <div className="card-footer text-info">
+                    {/* Button trigger modal for numbers */}
+                    <BigNumbersModal />
+                    </div>
+                  </div>
+                  <div className="card border-info mb-3 col-md-6 col-xl-4">
+                    <div className="card-header text-center">表現（ひょうげん）ノート</div>
+                    <div className="card-body text-info">
+                    <p className="card-title text-center"></p>
+                    <p className="card-title text-center"></p>
+                    <hr />
+                    <p className="card-text"></p>
+
                     </div>
                   </div>
                 </div>
