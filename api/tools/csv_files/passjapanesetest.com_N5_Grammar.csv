@@ -1,0 +1,229 @@
+grammar,usage,meaning,examples
+～です,"～が～です。
+～は～です。",～ is/am/are ～,"これは私の携帯です。
+This is my phone.
+彼のお姉さんは20歳です。
+His older sister is 20 years old."
+も,,too; also,"来月のライブに行きたい！僕も行きたい！
+I want to go to the concert next month.  I also want to go.
+うどんが好きです。ラーメンも好きです。
+I like ramen.  I also like udon."
+で,,"marks the place where an action takes place.
+Marks the means by which you do something.","食堂で昼ご飯を食べました。
+I ate lunch at the cafeteria
+電車で学校に行きます。
+I go to school by train."
+"～に/へ行く
+～に/へ来る","Placeに/へ行く
+Placeに/へ来る","go to ～
+come to ～","駅に行きます。
+I will go the the station.
+明日友達の家へ行きます。
+I will go to my friend’s house tomorrow."
+"～に乗る
+～を降りる",,"ride on ～; get on ～
+Get off ～","渋谷から電車に乗る。
+I will ride the train from Shibuya.
+駅でバスを降りてください。
+Please get off the bus at the station."
+"～に上げる
+～にもらう",,"give to ～
+Receive from ～","子供に本を上げました。
+I gave the book to the child.
+友達にプレゼントをもらいました。
+I received a present from my friend."
+Timeに,,"at, during, etc.","7時に起きました。
+I woke up at 7:00.
+冬に雪が降ります。
+It snows during winter."
+を,,marks the direct object,"中華料理を食べましょう！
+Let’s eat chinese food!
+金曜日までにレポートを出してください。
+Please turn in your report by Friday."
+～ませんか？,,Won't you ～?  the speaker is making an invitation to ～,"一緒に映画を見に行きませんか？
+Won’t you go see a movie together?
+この後食事に行かない？
+Want to go have a meal after this?"
+は,,marks the subject,"宿題は明日までに出してください。
+As for your homework, please turn it in by tomorrow."
+～があります,（Placeに）～があります,～ exists.  There is ～ (at/on/in ～).,"机の上にペンがあります。
+There is a pen on the desk.
+どこにりんごがありますか？
+Where are the apples?"
+～がいます,（Placeに）～がいます,～ exists.  There is ～ (at/on/in ～).,"母が家にいます。
+My mother is at home.
+さっき教室にジョンがいました。
+John was in the classroom a little while ago."
+～と～,,～ and ～,"トムとジョンが教室にいます。
+Tom and John are in the classroom.
+昼ご飯にパンと肉を食べました。
+I ate bread and meat for lunch."
+～と,,with ～,"友達と映画を見ます。
+I will see the movie with a friend."
+～ましょう,V-Stemましょう,I’ll ～.  Let’s ～.  Polite volitional form of the verb.,"あのレストランで晩ご飯を食べましょうか？
+Shall we have dinner at that restaurant?
+これが終わってから、休憩しましょう。
+Let’s take a break after this is done."
+～てください,V-てください,Please ～.,"あそこで待ってください。
+Please wait over there.
+空港に着いたら、連絡してください。
+Please contact me when you arrive at the airport."
+～ないでください,V-ないでください,Please do not ～,"熱いから触らないでください。
+It is hot so please do not touch it.
+ちょうど8時に始めるので、遅れないでください。
+We will start exactly at 8:00, so don’t be late."
+～てもいいです,V-てもいいです,You may ～,"この牛乳を飲んでもいいですか？
+May I drink this milk?
+試験でノートを見てもいいです。
+You may look at your notes during the test."
+～てはいけません,V-てはいけません,You must not ～,"ここに車を止めてはいけません。
+You must not park your car here.
+ゴミをポイ捨てはいけません。
+You must not litter."
+～から～まで,,From ～ to ～,"金曜日の仕事は9時から18時までです。
+Work on Friday is from 9:00 to 18:00.
+毎日学校は8時半からです。
+School is from 8:30 everyday."
+～ている,V-ている,～ing.  Progressive form of a verb.,"今妹が勉強しています。
+My younger sister is studying now.
+ジョンが電話で話しているので、終わるまで待ちましょう。
+Jon is talking on the phone now, so let’s wait until he’s done."
+"～に行く
+～に来る","V-Stemに行く
+V-Stemに来る","To go ～
+To come ～","卵を買いに行くね。
+I will go and buy eggs.
+家に遊びに来る？
+Will you come to play at my place?"
+～のが好きです。,V-るのが好きです。,I like ～,"服を買うのが好きです。
+I like to buy clothes.
+どんな食べ物が好きですか？辛いのが好きです。
+What kind of food do you like?  I like spicy food."
+"～のが上手です。
+～のが下手です。","V-るのが上手です。
+V-るのが下手です。","I am good/skillful at ～
+I am bad/unskillful at ～","日本語を読むのが下手です。
+I am not good at reading Japanese.
+ジョンは映画を作るのが上手です。
+John is good at making movies."
+まだ～ていません,まだV-ていません,Still have not ～,"まだレポートを書いていない。
+I still haven’t written the report.
+まだジョンは銀行に行っていません。
+John still has not gone to the bank."
+～の方が～より～です,,～ is more ～ than ～,"この時計の方がその時計より高いです。
+This watch is more expensive than that one.
+ジョンの方は英語が上手です。
+Jon is better at English."
+～の中で～が一番～です,,"Out of ～, ～ is the most ～","東京の中でこのラーメンが一番美味しいです。
+This ramen is the most delicious in Tokyo.
+あのチームの中で田中さんが一番速いです。
+Out of that team, Tanaka is the fastest."
+～つもりです,,Intend to ～,"来週新しい映画を見に行くつもりです。
+I intend to go and see the new movie next week.
+図書館に借りた本が終わったから、明日返すつもりです。
+I finished the book I borrowed from the library, so I intend to return it tomorrow."
+"～になる
+～くなる","na-adjになる
+i-adjくなる",To become ～,"6月から暑くなるよ。
+It will become hot from June.
+ジョンよりベースボールが上手になりたい。
+I want to become better than John at baseball."
+～たいです,V-Stemたいです,Want to ～,"フランス料理が食べたいです。
+I want to eat French food.
+父は新しいテレビが買いたいです。
+My father wants to buy a new TV."
+～たり～たりする,V-たり、V-たりする,Doing things like ～ and ～,"休みの日に本を読んだり、喫茶店に行ったりします。
+On my days off, I do things like read and go to coffee shops.
+本を読んだり、テレビを見たりするのが好きです。
+I like doing things like reading books and watching TV."
+～たことがあります,V-たことがあります,Have done ～,"この曲を聞いたことがあります。
+I have heard this song.
+彼はヨーロッパに行ったことがないです。
+He has never been to Europe."
+～や～や,,Like ～ and/or ～.  Indicates a list.,"いつも朝にりんごやオレンジを食べます。
+I always eat things like apples and oranges in the morning.
+トムはパソコンやエアコンの電気製品が好きです。
+Tom likes electronics like computers and air conditioners."
+"～んです
+～のです",,Indicates an explanation or implies a request.,"明日映画を見に行きませんか？ごめん、明日は仕事が忙しいんです。
+Won’t you go see a movie tomorrow?  Sorry, I’m busy with work tomorrow.
+黒い靴を探しているんですが。
+I am looking for black shoes.  (This is something you might say at a store. You are implying the question of do you sell black shoes? / where are the black shoes?)"
+～すぎる,,Too ～,"ズボンが大きすぎるからベルトがないと落ちます。
+These pants are too big so they will fall down without a belt.
+今夜のパーティでお酒を飲みすぎないでね。
+Don’t drink too much alcohol at tonight’s party."
+～た方がいい,V-た方がいい,"It is better to ～
+You should ～","明日忙しいから今日買い物した方が良いよ。
+We’re busy tomorrow, so it’s better if you do your shopping today.
+大事な発表なので、練習した方がいいですね。
+You should practice because it is an important presentation."
+～から～,,"Because ～, ～.  ～, so ～","さっき食べたから、あまりお腹が空いていない。
+I just ate, so I’m not really hungry now."
+～ので～,,"Because ～, ～.  ～, so ～","アマゾンの方が安いので、注文しましょう。
+Amazon is cheaper, so let’s order it.
+今日は雨なので、傘を忘れないでね。
+Today is rain, so don’t forget your umbrella."
+～なくちゃいけない,,You must ～,"テレビを見る前に宿題をやらなくちゃいけない。
+You must do homework before you watch TV.
+野菜も食べなくちゃいけない。
+You must also eat vegetables."
+～でしょう,,"Probably ～
+As a question: Won’t you?  Isn’t it? (often rhetorical)","これは美味しいでしょう？
+This is delicious, isn’t it?"
+～前に,,Before ～,"食べる前に手を洗ってください。
+Please wash your hands before you eat."
+～た後で,V-た後で,After ～,"運動した後でシャワーします。
+I will shower after exercising.
+昼ご飯を食べた後で行きましょう。
+Let’s go after eating lunch."
+～てから,V-てから,After ～.  Usually this means “right/just after”.,"肉を焼いてから野菜を入れてください。
+Put the vegetables in after cooking the meat.
+食べてから走らない方が良いですよ。
+You should not run just after eating."
+～のです,,Indicates possession or a modifying phrase.,"この本は私のです。
+This book is mine.
+あのスーツはイタリアのです。
+That suit is Italian."
+～ました,,Verb past tense form,"昨日サッカー試合を見ました。
+I watched the soccer game yesterday.
+今朝8時に起きました。
+I woke up at 8 this morning."
+もう～ました,,I already ～,"あの映画を先週にもう見ました。
+I already saw that movie last week.
+もう食べましたか？
+Have you already eaten?"
+"～にする
+～くする","na-adjにする
+i-adjくする",To (purposefully) make it ～,"この部屋が暗いので、電気を明るくしてください。
+This room is dark so please make the lights brighter.
+いつもラーメンを食べているから今日はうどんにする。
+I am always eating ramen, so today I will have udon."
+～ながら,V-Stemながら,While ～.  Used when two actions occur at the same time.,"音楽を聞きながら日本語を勉強します。
+I study Japanese while listening to music.
+ジョンはアイスクリームを食べながら歩いています。
+Jon is walking while eating ice cream."
+"誰か
+何か
+どこか
+いつか",,"Someone
+Something
+Somewhere
+Sometime","授業の後どこかに行くつもりですか？
+Do you intend to go somewhere after class?
+何かを食べましたか？
+Did you eat something?"
+"何も
+誰も",,"Nothing
+No one; nobody","あの箱に何もないよ。
+There is nothing in that box.
+まだ早いから誰も来ていないです。
+It is still early, so no one has come yet."
+どこにも,,Nowhere; not anywhere,"授業の後どこにも行かないです。
+I will not go anywhere after class.
+探しましたが、私の鞄はどこにもありません。
+I searched, but my bag was nowhere"
+～ですね？,,"～, right? ～ isn’t it?  Used to confirm something.","明日の授業は9時からですね？
+Tomorrow’s class is from 9, right?
+あの店に美味しい日本料理がありますね？
+There is delicious Japanese food at that restaurant, right?"

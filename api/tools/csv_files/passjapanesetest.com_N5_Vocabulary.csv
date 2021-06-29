@@ -1,0 +1,1375 @@
+Kanji,Kana,POS,Meaning,Example
+～か月,～かげつ,ctr,period of months,"2か月前に日本に来ました。
+I came to Japan 2 months ago."
+～人 ,～にん,ctr,counter for people,"彼女は五人の兄がいる。
+She has five older brothers."
+～個,～こ,ctr,counter for small objects,"ハンバーガーを二個注文した。
+I ordered two hamburgers."
+～冊,～さつ,ctr,counter for bound objects (ex. Books),"鞄に一冊が入っています。
+There is one book in the bag."
+～分,～ぷん,"n,ctr",minutes (unit of time) | counter for minutes,"駅まで１０分かかります。
+It takes 10 minutes to the station."
+～匹,～ひき,ctr,counter for small animals,"家に２匹の犬がいる。
+We have two dogs."
+～台,～だい,ctr,"counter for large objects (esp. devices such as refrigerators, cars)","家にテレビが２台ある。
+We have 2 TVs at home."
+～回,～かい,ctr,counter for number of times,"先月あの映画を3回見ました。
+I saw that movie 3 times last month."
+～年,～ねん,"n,ctr",year (unit of time) | counter for years,"今年は2018年です。
+This year is 2018."
+～度,～ど,ctr,counter for number of times,"私は富士山に３度登ったことがある。
+I have climbed Mt. Fuji three times."
+～日,～にち,ctr,day of the month | counter for days,"３月１５日で学校は終わりです。
+School will end on March 15."
+～時,～じ,n,hours (unit of time),"毎日6時に起きます。
+I wake up at 6 'oclock everyday."
+～時間,～じかん,ctr,period of hours,"毎日8時間寝ます。
+I sleep for 8 hours everyday."
+～月,～がつ,n,month (unit of time),"5月5日は子供の日だよ。
+May 5th is Children's Day."
+～本,～ほん,ctr,counter for cylidrical objects,"ここに五本の鉛筆がある。
+There are 5 pencils here."
+～杯,～はい,ctr,counter for cups (of liquid),"紅茶2杯をお願いします。
+2 cups of tea, please."
+～枚,～まい,ctr,counter for flat objects (ex. sheets of paper),"チケットは1枚500円です。
+One ticket is 500 yen."
+～歳,～さい,ctr,~ years old,"来年二十歳になります。
+I will be twenty next year."
+～番,～ばん,n,number (in a series),"２番のバスに乗って、京都駅で降りなさい。
+Take the number 2 bus and get off at Kyoto Station."
+～週間,～しゅうかん,ctr,period of weeks,"一週間の旅行です。
+It is a one week trip."
+～階,～かい,ctr,counter for floors in a building,"英語の教室はあの建物の6階にあります。
+The English classroom is on the 6th floor of that building."
+あそこ,あそこ,"pn,adj-no",over there; that place,"あそこに喫茶店があります。
+There is a coffee shop over there."
+あちら,あちら,"pn,adj-no",that way; over there,"あちらに富士山が見えます。
+You can see Mt. Fuji over there."
+あっち,あっち,"pn,adj-no",that way; over there,"あっちにエレベーターがあるよ。
+There is an elevator over there."
+あなた,あなた,"pn,adj-no",you,"この靴はあなたのですか？
+Are these shoes yours?"
+あの,あの,adj-pn,That over there,"あの青い車は私のです。
+That blue car over there is mine."
+アパート,アパート,n,(abbr) apartment,"東京でアパートを借りています。
+I am renting an apartment in Tokyo."
+あまり,あまり,adv,not very,"この本はあまり面白くないですね。
+This book isn't very interesting it is."
+ある,ある,"v5r-i,vi",to be; to exist,"テーブルの上にジュースが3杯あります。
+There are 3 cups of juice on the table."
+あれ,あれ,n,that thing; something understood without naming it directly,"あれは何ですか？
+What is that?"
+いいえ,いいえ,int,no,"
+"
+いかが,いかが,adv,how; how about,"味はいかがですか？
+How does it taste?"
+いくつ,いくつ,adv,how many? | how old?,"妹さんはおいくつですか？
+How old is you little sister?"
+いくら,いくら,"adv,n",how much?; how many?,"この弁当はいくらですか？
+How much is this bento?"
+いつ,いつ,"n-adv,pn",when,"いつまで東京にいますか？
+Until when will you be in Tokyo?"
+いつも,いつも,"adv,n",always,"彼女は仕事が多くて、いつも忙しいです。
+She always busy because she has a lot of work."
+いる,いる,"v1,vi",to be (living things); to exist | verb indicating continuing action or state,"今彼は寝ている。
+He is sleeping now."
+ええ,ええ,int,yes; that is correct; right,"
+"
+エレベーター,エレベーター,n,elevator,"エレベーターが故障しています。
+The elevator is out of order."
+おじいさん,おじいさん,n,grandfather,"おじいさんの世話をする。
+I take care of my grandfather."
+おばあさん,おばあさん,n,grandmother,"彼のおばあさんは今年90歳です。
+His grandmonther will be 90 this year."
+お兄さん,おにいさん,n,older brother,"お兄さんは何歳ですか？
+How old is your older brother?"
+お姉さん,おねえさん,n,elder sister,"彼のお姉さんは20歳です。
+His older sister is 20 years old."
+お手洗い,おてあらい,n,toilet; restroom,"お手洗いはどこですか。
+Where is the bathroom?"
+お母さん,おかあさん,n,mother,"お母さんは料理が上手ですか？
+Is your mother good at cooking."
+お父さん,おとうさん,n,father,"お父さんは何の仕事をしていますか？
+What kind of work does your father do?"
+お腹,おなか,n,abdomen; stomach,"お腹が空いていますか？
+Are you hungry?"
+お茶,おちゃ,n,tea (usu. Green),"レストランのお茶の方が自動販売機のお茶より美味しいです。
+Tea at the restaurant is more delicous that tea from the vending machine."
+お菓子,おかし,n,confections; sweets; candy,"デパートの地下にお菓子を売っている店がたくさんあります。
+There are many stores that sell sweets in the basement of the department store."
+お金,おかね,n,money,"財布にお金が入っています。
+The money is in my wallet."
+かかる,かかる,"v5r,vi","to take (a resource, e.g. time or money)","飛行機で韓国まで何時間かかりますか？
+How many hours does it take until Korea by plane?"
+カメラ,カメラ,n,camera,"私のカメラは黄色い鞄の中にあります。
+My camera is in the yellow bag."
+カレー,カレー,n,curry,"辛いカレーはあまり好きじゃないです。
+I don't really like spicy curry."
+カレンダー,カレンダー,n,calendar,"来週の予定をカレンダーに書きました。
+I wrote my plans for next week in the calendar."
+ギター,ギター,n,guitar,"先週の月曜日にギターを弾きました。
+I played guitar last week Monday."
+キログラム,キログラム,n,kilogram,"私の体重は60キログラムです。
+My weight is 60 kg."
+キロメートル,キロメートル,n,kilometer,"ここから川まで3キロメートルくらいです。
+It is about 3 km from here to the river."
+クラス,クラス,n,class,"僕のクラスの友達だよ。
+She's my classmate."
+グラム,グラム,n,gram (unit of measure),"次、ボールに200グラムの水と200グラムの砂糖を入れます。
+Next, put 200g of water and 200g of sugar in the bowl."
+コート,コート,n,"coat | court (i.e. tennis, basketball, etc.)","このコートは暖かい。
+This coat is warm."
+コーヒー,コーヒー,"n,adj-no",cofee,"あの喫茶店に色々なコーヒーがあります。
+There are various kids of coffee at that coffee shop."
+ここ,ここ,n,here,"ここはあなたの机です。
+This is your desk."
+こちら,こちら,"pn,adj-no",this way; this direction,"こちらが食堂で、そちらはトイレです。
+This way is the caffeteria, that way is the toilet."
+こっち,こっち,"pn,adj-no",this way; this direction,"こっちが食堂で、そっちはトイレ。
+This way is the caffeteria, that way is the toilet."
+コップ,コップ,n,cup; glass,"コップにお茶を入れました。
+I put tea in the glass."
+この,この,adj-pn,this (something or someone close to the speaker),"この人は同じクラスのトムです。
+This is Tom, from my class."
+コピー,コピー,"n,vs",copy; photocopy,"この10枚のレポートをコピーしてください。
+Please copy this 10 page report."
+これ,これ,pn,this,"これは何ですか？
+What is this?"
+こんな,こんな,adj-pn,such ; like this,"パリにこんな美味しいラーメンがあると思わなかった。
+I didn't think there was ramen this delicious in Paris."
+ご主人,ごしゅじん,n,(hon) your husband,"今日ご主人は休みですか？
+Is your husband off (from work) today?"
+さあ,さあ,"conj,int",come along; go on | well; who knows,"さあ、行こう！
+Well, let's go!"
+しかし,しかし,conj,however; but,"この店が高いです。しかし、製品の質が良いです。
+This store is expensive.  But, the goods are of high quality."
+じゃ、じゃあ,じゃ、じゃあ,"conj,int",then; well; so; well then,"「中華があまり好きじゃない。」「じゃ、タイにしよう。」
+""I don't really like chinese.""  ""Well then, let's do Italian."""
+シャツ,シャツ,n,shirt; under shirt,"トムは白いシャツを着た。
+Tom put on a white shirt."
+シャワー,シャワー,n,shower,"何時にシャワーを浴びますか？
+What time will you take a shower?"
+スカート,スカート,n,skirt,"白いスカートより黒いのが好きです。
+I like the black skirt better than the white one."
+すぐに,すぐに,adv,immediately; right away,"すぐに戻ります。
+I'll be right back."
+ストーブ,ストーブ,n,(room) heater; stove,"冬に古いストーブで部屋を暖めます。
+I heat my room using an old stove during winter."
+スプーン,スプーン,n,spoon,"スプーンでスープを食べる。
+To eat soup with a spoon"
+スポーツ,スポーツ,"n,adj-no",sport; sports,"スポーツをやるのが好きですけど、見るのはあまり好きじゃないです。
+I enjoy playing sports, but not really watching them."
+ズボン,ズボン,n,trousers; pants,"このズボンがちょっと小さい。
+These pants are a bit small."
+スリッパ,スリッパ,n,slipper; slippers,"スリッパを脱いで、風呂に入って。
+Take off your slippers then go into the bath."
+する,する,vs-i,to do,"天気が良い日に洗濯をします。
+I will do the laundry on a day with good weather."
+セーター,セーター,n,sweater; jumper,"このセーターは暖かい。
+This sweater is warm."
+ゼロ,ゼロ,"n,adj-no",zero,"一の前はゼロです。
+Zero comes before one."
+そうして,そうして,conj,and; like that,"頭が痛かったです。そうして、熱も出ました。
+My head was sore.  Then I had a fever."
+そうです,そうです,exp,that is so; that is right,"
+"
+そこ,そこ,n,there (place),"そこにいて。
+Stay there."
+そして,そして,conj,and; and then; thus,"頭が痛かったです。そして、熱も出ました。
+My head was sore.  Then I had a fever."
+そちら,そちら,"pn,adj-no",that way; that direction,"そちらの天気はどうですか。
+How's the weather there?"
+そっち,そっち,"pn,adj-no",that way; that direction,"そっちの天気は？
+How's the weather there?"
+その,その,adj-pn,that (something or someone distant from the speaker but close to the listener),"どうしてその服がほしいですか？
+Why do you want those clothes?"
+それ,それ,"pn,adj-no",that,"それは私のです。
+That is mine."
+それから,それから,exp,and then; after that,"それから1週間後彼に会いました。
+I met him 1 week after that."
+それでは,それでは,exp,well then ... | in that situation,"「イタリアン料理はあまり好きじゃないです。」「それでは、フランス料理を食べましょう。」
+""I don't really like Italian food.""  ""Well then, let's eat French."""
+たいてい,たいてい,"adj-na,adv,n",mostly; ordinarily; usually; generally,"たいてい遅くまで寝ます。
+I usually sleep late."
+タクシー,タクシー,n,taxi,"タクシーに乗りました。
+I rode the taxi."
+タバコ,タバコ,n,tobacco; cigarette,"タバコを吸う
+To smoke a cigarette"
+だんだん,だんだん,"adv,adv-to",more and more; increasingly,"だんだん暖かくなります。
+It will get warmer and warmer."
+ちょうど,ちょうど,adv,exactly; precisely,"ちょうど12時半です。
+It is exactly 12:30."
+ちょっと,ちょっと,adv,just a little,"ちょっといいですか。
+Do you have a minute?"
+つける,つける,"v1,vt",to turn on; to switch on,"電気をつける
+To turn on the lights"
+テープ,テープ,n,tape,"このテープはくっつかない。
+This tape doesn't stick."
+テーブル,テーブル,"n,adj-no",table,"テーブルの下にあります。
+It is under the table."
+テスト,テスト,"n,vs",test,"明日はテストがあります。
+We have a test tomorrow."
+では,では,"conj,int",then; well; so; well then,"では、試験を始めます。
+So, begin the test."
+デパート,デパート,n,(abbr) department store,"デパートの果物が高い。
+Fruits at the department store are expensive."
+でも,でも,conj,but; however; though; nevertheless,"コーラはあまり好きじゃない。でも、飲む。
+I don't really like cola.  But I will drink it."
+テレビ,テレビ,n,(abbr) television,"毎日テレビを見ます。
+I watch TV everyday."
+ドア,ドア,n,door,"ドアを閉めましょうか？
+Shall I close the door?"
+トイレ,トイレ,n,(abbr) toilet; restroom; bathroom; lavatory,"トイレはどこですか？
+Where is the toilet?"
+どう,どう,adv,how; in what way; how about,"どうしましょうか？
+What should we do?"
+どうして,どうして,"adv,int",why?,"どうしてその服がほしいですか？
+Why do you want those clothes?"
+どうぞ,どうぞ,adv,please; kindly | by all means; feel free | here you are,"どうぞ、食べてください。
+Please eat."
+どうも,どうも,int,(abbr) thanks,"
+"
+どこ,どこ,"pn,adj-no",where,"トイレはどこですか？
+Where is the toilet?"
+どちら,どちら,"pn,adj-no",which one (esp. of two alternatives),"出口はどちらですか。
+Which is the way out?"
+どっち,どっち,"pn,adj-no",which one (esp. of two alternatives),"どっちの方が美味しいかしら。
+I wonder which one tastes better."
+とても,とても,adv,very,"金のペンがとても高いです。
+The gold pen is very expensive."
+どなた,どなた,n,(hon) who?,"どなたですか？
+Who is it?"
+どの,どの,adj-pn,which; what (way),"どのくらい泊まりましたか？
+How long did you stay?"
+どれ,どれ,"pn,adj-no",which (of three or more),"どれが良いですか？
+Which one is good?"
+どんな,どんな,adj-pn,what; what kind of,"トムはどんな人ですか？
+What kind of person is Tom?"
+ナイフ,ナイフ,n,knife,"台所にナイフがありますか。
+Is there a knife in the kitchen?"
+なぜ,なぜ,adv,why; how,"なぜ先生になったの？
+Why did you become a teacher?"
+など,など,prt,etc.; and the like; and so forth,"ロックやブルースなど好きです。
+I like rock, blues, etc."
+なる,なる,"v5r,vi",to become; to get,"悲しくなる
+To become sad"
+ニュース,ニュース,n,news,"今朝のニュースを見ましたか？
+Did you see the news this morning?"
+ネクタイ,ネクタイ,n,tie; necktie,"ネクタイは必要ですか。
+Do I need a tie?"
+ノート,ノート,"n,vs",(abbr) notebook | (to take) notes | notebook PC,"日本語の授業のノートを借りてもいいですか？
+May I borrow you notes form Japanese class?"
+パーティー,パーティー,n,party,"今晩パーティーをします。
+We're having a party this evening."
+はい,はい,int,yes; that is correct | understood; I see; OK; okay | present; here,"
+"
+バス,バス,n,bus,"バスに乗りますか？
+Will you ride the bus?"
+バター,バター,n,butter,"ケーキにバターが必要。
+Butter is necessary for cake."
+パン,パン,n,bread (por:); pastries (e.g. croissants),"毎朝パンを食べますか？
+Do you eat bread every morning?"
+ハンカチ,ハンカチ,n,(abbr) handkerchief,"このハンカチはいくらですか。
+How much is this handkerchief?"
+フィルム,フィルム,n,film,"フィルムがなくなった。
+My film has run out."
+プール,プール,n,(swimming) pool,"夏にプールでよく泳ぎます。
+I often swim in the pool during summer."
+フォーク,フォーク,n,fork,"フォークをいただけますか？
+Could we have a fork?"
+ページ,ページ,n,page,"15ページから始めます。
+I will start from page 15."
+ベッド,ベッド,n,bed,"ベッドに横になっていた。
+He lay on the bed."
+ペット,ペット,n,pet,"ペット飼ったことある？
+Have you ever had a pet?"
+ペン,ペン,n,pen,"黒いペンを持っていますか？
+Do you have a black pen?"
+ボールペン,ボールペン,n,ball-point pen,"ボールペンで書いてください。
+Please write with a ballpoint pen."
+ポケット,ポケット,n,pocket,"このコートにはポケットがない。
+The coat doesn't have any pockets."
+ポスト,ポスト,"n,vs",postbox; mail box,"今朝手紙をポストに入れました。
+I put the letter in the mail box this morning."
+ボタン,ボタン,n,button,"ボタンを押しましたか。
+Did you push the button?"
+ホテル,ホテル,n,hotel,"このホテルはあのホテルより良い。
+This hotel is better than that hotel."
+まずい,まずい,adj-i,unappetising; unpleasant | unskillful; awkward,"そのミルクはまずかった。
+The milk tasted bad."
+また,また,"adv,conj,pref",again,"また会いましょうね。
+Let's meet again."
+まだ,まだ,adv,still,"トムがまだ来ていません。
+Tom hasn't come yet."
+まっすぐ,まっすぐ,"adj-na,adv,n",straight ahead | honest; frank,"この道をまっすぐ行きなさい。
+Go straight along this street."
+マッチ,マッチ,vs,to match with; to go well with | match (tool to light a fire),"彼はマッチをすった。
+He struck a match."
+メートル,メートル,n,meter (unit of measure),"その池は３メートルの深さです。
+That pond is 3 meters deep."
+もう,もう,adv,already | soon; shortly,"もう食べましたか？
+Did you already eat?"
+もう一度,もういちど,exp,once more; again,"もう一度言ってください。
+Please say it again."
+もしもし,もしもし,int,hello (e.g. on phone),"
+"
+もちろん,もちろん,adv,of course,"もちろん、お家に来ていいよ。
+Of course you can come over (to our place)."
+もっと,もっと,adv,(some) more; longer; further,"もっと安いのはありますか。
+Is there anything cheaper?"
+やる,やる,"v5r,vt",to do,"やることはいっぱいあります。
+There are many things to do."
+ゆっくりと,ゆっくりと,0,slowly,"ゆっくり歩いて。
+Please walk slowly."
+よく,よく,adv,well; skillfully | frequently; often,"ラーメンをよく食べますか？
+Do you eat ramen often?"
+ラジオ,ラジオ,n,radio,"ラジオを聞いています。
+I'm listening to the radio."
+レコード,レコード,n,record (e.g. LP) | record (e.g. in sports),"彼はレコードを買います。
+He will buy a record."
+レストラン,レストラン,n,restaurant,"あの建物の39階にレストランがあります。
+There is a restaurant on the 39th floor of that building."
+ワイシャツ,ワイシャツ,n,dress shirt (button down shirt),"デートだからワイシャツを着る。
+I will wear a dress shirt because it is a date."
+一,いち,num,one,"
+"
+一つ,ひとつ,ctr,one (general counter),"
+"
+一人,ひとり,n,one person,"
+"
+一日,ついたち,n,first day of the month,"1月一日は正月です。
+January 1st is New Year's Day."
+一昨年,おととし,"n-adv,n-t",year before last,"一昨年日本に行きました。
+I went to Japan the year before last."
+一昨日,おととい,"n-adv,n-t",day before yesterday,"一昨日成田に着きました。
+I arrived at Narita the day before yesterday."
+一月,いちがつ,n-adv,January,"一月は雪が降る。
+It snows in January."
+一番,いちばん,"n,adj-no",first | best; most,"これは東京で一番おいしい寿司です。
+This is the most delicious sushi in Tokyo."
+一緒,いっしょ,"n-adv,n,adj-no",together | at the same time,"宿題を一緒にしよう。
+Let's do the homework together."
+七,しち,num,seven,"
+"
+七つ,ななつ,ctr,seven (general counter),"
+"
+七日,なのか,n-adv,the seventh day of the month,"
+"
+万,まん,num,"10,000; ten thousand","あのアパートは10万円ぐらいです。
+That apartment is about 100,000 yen."
+丈夫,じょうぶ,adj-na,healthy; robust; solid; durable,"この縄は丈夫だ。
+This rope is sturdy."
+三,さん,num,three,"
+"
+三つ,みっつ,ctr,three (general counter),"
+"
+三日,みっか,n,the third day of the month,"
+"
+上,うえ,"n,adj-no,n-adv,n-suf",above; up; over | elder (e.g. daughter),"机の上にあります。
+It is on the desk."
+上げる,あげる,"v1,vt","to raise; to elevate | to increase (price, quality, status, etc.)","答えが分かる人、手を上げてください。
+People who know the answer, raise your hand."
+上手,じょうず,"adj-na,n",skillful; proficient; good (at),"料理が上手ですね。
+You are a good cook."
+上着,うわぎ,n,coat; tunic; jacket; outer garment,"彼女は上着を脱いだ。
+She took off her coat."
+下,した,"n,adj-no",beneath; underneath | younger (e.g. daughter),"椅子の下にあります。
+It is under the chair."
+下手,へた,"adj-na,n",unskillful; poor; awkward,"僕は水泳が下手です。
+I'm not good at swimming."
+両親,りょうしん,n,both parents,"彼女の両親が若いです。
+Her parents are young."
+並ぶ,ならぶ,"v5b,vi",to line up; to stand in a line,"並んでお待ちください。
+Please wait in line."
+並べる,ならべる,"v1,vt",to line up; to arrange in a line,"彼女はＣＤを棚に１列に並べた。
+She put her CDs in a row on the shelf."
+中,なか,n,inside; in | center (centre); middle | during; while,"教室の中に机と椅子があります。
+There are desks and chairs in the classroom."
+丸い,まるい,adj-i,round,"ボールは丸い。
+Balls are round."
+乗る,のる,"v5r,vi","to get on (train, plane, bus, ship, etc.); to ride; to board","地下鉄に乗ろう。
+Let's take the subway."
+九,く、きゅう,num,nine,"
+"
+九つ,ここのつ,ctr,nine (general counter),"
+"
+九日,ここのか,n,the ninth day of the month,"
+"
+二,に,num,two,"
+"
+二つ,ふたつ,ctr,two (general counter),"
+"
+二人,ふたり,n,two people; pair; couple,"
+"
+二十日,はつか,n,twentieth day of the month,"
+"
+二十歳,はたち,n,20 years old,"
+"
+二日,ふつか,n,second day of the month,"
+"
+五,ご,num,five,"
+"
+五つ,いつつ,ctr,five (general counter),"
+"
+五日,いつか,n,the fifth day of the month,"
+"
+交差点,こうさてん,n,crossing; intersection,"交差点で事故があった。
+There was an accident at the intersection."
+交番,こうばん,"n,vs",police box; small neighborhood police station,"交番の周りに人がたくさんいた。
+I saw many people around the police box."
+人,ひと,n,human being; person,"あの人は誰ですか？
+Who is that person?"
+今,いま,"n-adv,n",now; immediately,"今忙しんですが、昼御飯を一緒に食べましょう。
+I am busy now, but let's eat lunch together."
+今年,ことし,"n-adv,n-t",this year,"私は今年二十歳です。
+I will be twenty this year."
+今日,きょう,n-t,today,"今日の朝御飯は味噌汁と魚です。
+Today's breakfast is miso soup and fish."
+今晩,こんばん,"n-adv,n-t",tonight,"今晩暇かな？
+Are you free tonight?"
+今月,こんげつ,"n-adv,n-t",this month,"今月は給料が多かった。
+My salary was high this month."
+今朝,けさ,n-t,this morning,"今朝地震があった。
+There was an earthquake this morning."
+今週,こんしゅう,"n-adv,n-t",this week,"私は今週はお休みです。
+I am on holiday this week."
+仕事,しごと,"n,vs,adj-no",work; job; business,"明日お仕事ですか？
+Is tomorrow work?"
+他,ほか,"n,adj-no,n-adv","other (place, thing, person)","他のまくらはないですか？
+Is there any other pillow?"
+休み,やすみ,n,rest | vacation; holiday,"土曜日と日曜日は休みです。
+Saturday and Sunday are holidays."
+休む,やすむ,"v5m,vi",to take a day off | to rest; to have a break,"金曜日に休みます。
+I will be off on Friday."
+会う,あう,"v5u,vi",to meet,"また会おうね！
+Let's meet again!"
+会社,かいしゃ,n,company,"会社で働く
+To work at a company"
+低い,ひくい,adj-i,"low (rank, volumn, etc.) | short (height); low (position)","トムの声が低い。
+Tom's voice is low-pitched."
+住む,すむ,"v5m,vi",to live; to reside; to inhabit,"どこに住んでいますか？
+Where do you live?"
+体,からだ,"n,adj-no",body,"タバコは体に悪い。
+Smoking is not good for you."
+何,なに、なん,"pn,adj-no",what,"この鞄に何が入っていますか？
+What is in this bag?"
+作る,つくる,"v5r,vt",to make; to produce; to manufacture,"晩御飯を作りましょうか。
+Shall I cook dinner?"
+作文,さくぶん,"n,vs",writing; composition,"この作文には誤りが少しある。
+There are a few mistakes in this composition."
+使う,つかう,"v5u,vt",to use,"この傘を使ってもいいですか？
+May I use this umbrella?"
+便利,べんり,adj-na,convenient; handy; useful,"私の家は駅に近いから便利です。
+My house is convenient because it is close to the station."
+借りる,かりる,"v1,vt",to borrow; to have a loan | to rent,"東京でアパートを借りています。
+I am renting an apartment in Tokyo."
+側,そば,n,beside; proximity; besides,"彼女の側に座った。
+I sat beside her."
+傘,かさ,n,umbrella,"雨の日に傘を持った方がいい。
+It is better to take an umbrella on rainy days."
+働く,はたらく,"v5k,vi",to work; to labor,"毎週の日曜日に働いています。
+I am working every Sunday."
+元気,げんき,"adj-na,n",healthy; well; lively,"元気がないですね。
+You don't look so well."
+兄,あに,n,(hum) older brother,"兄が2歳上です。
+My elder brother is 2 years older than me."
+兄弟,きょうだい,n,siblings; brothers and sisters,"兄弟はいません。
+I don't have any siblings."
+先,さき,"n,adj-no,n-suf,pref",previous; former | ahead of,"先に行ってください。
+Please go ahead (without me)."
+先月,せんげつ,"n-adv,n-t",last month,"先月引っ越しました。
+I moved (residence) last month."
+先生,せんせい,n,teacher; doctor,"スミス先生は英語の先生ですか？
+Is Miss Smith an English teacher?"
+先週,せんしゅう,"n-adv,n-t",last week,"先週買いました。
+I bought it last week."
+入る,はいる,"v5r,vi",to enter; to go into | to join; to enroll,"部屋に入る
+To enter the room"
+入れる,いれる,"v1,vt",to put in; to insert,"りんごを鞄に入れた。
+I put the apple in the bag."
+入口,いりぐち,"n,adj-no",entrance; entry,"入口の側で立った。
+He stood by the entrance."
+全部,ぜんぶ,"n-adv,n-t,adj-no",all; entire; whole,"これが全部ですか？
+Is this everything?"
+八,はち,num,eight,"
+"
+八つ,やっつ,cnt,eight (general counter),"
+"
+八日,ようか,n,the eighth day of the month,"
+"
+八百屋,やおや,n,greengrocer,"八百屋がデパートより安いです。
+The greengrocer is cheaper than the department store."
+公園,こうえん,n,park,"公園を散歩しています。
+I'm taking a walk in a park."
+六,ろく,num,six,"
+"
+六つ,むっつ,cnt,six (general counter),"
+"
+六日,むいか,n,sixth day of the month,"
+"
+再来年,さらいねん,"n-adv,n-t",year after next,"再来年は東京オリンピックです。
+The Tokyo Olympics is the year after next."
+写真,しゃしん,n,photograph; photo; picture,"写真を撮ってインスタグラムにアップしようよ。
+Let's take a picture and upload it to instagram."
+冬,ふゆ,"n-adv,n-t",winter,"2月は冬の一番寒い月です。
+February is the coldest month in winter."
+冷たい,つめたい,adj-i,cold (to the touch),"冷たいものは飲みたくない。
+I don't want to drink anything cold."
+冷蔵庫,れいぞうこ,n,refrigerator,"冷蔵庫に入っているりんごを食べてもいいですか？
+May I eat the apple that is in the refrigerator?"
+出かける,でかける,"v1,vi",to go out (ex. on an outing); to set out,"午後2時に出かけましょうか？
+Shall we go out at 2 pm?"
+出す,だす,"v5s,vt",to take out; to get out | to submit (e.g. thesis) | to send (e.g. letter),"宿題を出した。
+I submitted my homework."
+出る,でる,"v1,vi",to leave; to exit; to go out;,"部屋を午前8時に出た。
+I left my room at 8 am."
+出口,でぐち,n,exit,"出口はどちらですか。
+Where is the exit?"
+出来る,できる,"v1,vi",to be able to do,"こんなにうるさい部屋で勉強が出来ないです。
+I can't study in a room as noisy as this."
+分かる,わかる,"v5r,vi",to understand; to comprehend,"分かっている言葉を勉強しなくていいでしょう。
+You probably don't need to study words you already know."
+切る,きる,"v5r,vt",to cut | to turn off (e.g. the light),"料理しているときナイフで指を切った。
+I cut my finger with a knife while cooking."
+切手,きって,n,stamp (postage),"封筒に切手を貼ってください。
+Please put a  stamp on the envelope."
+切符,きっぷ,n,ticket,"コンサートに行きたいので、切符を買うつもりです。
+I want to go to the concert so I intend to buy a ticket."
+初めて,はじめて,"adv,adj-no",for the first time,"日本は初めてですか？
+Is this your first time in Japan?"
+初めに,はじめに,exp,first; at the beginning,"初めにひらがなを覚えたり、簡単な文章を作ったりします。
+At first you will learn hiragana and create simple sentences."
+前,まえ,"n-adv,n-t",before; previously | in front (of),"店の前の看板に何時から何時まで開いていると書いてある？
+Does the sign in front of the store say from what time to what time they are open?"
+勉強,べんきょう,"n,vs",study,"カタカナを勉強する前にひらがなを習う。
+Study hiragana before learning katakana"
+動物,どうぶつ,n,animal,"ここから一番近い動物園にはたくさんの動物がいますか？
+Are there many animals in the zoo closest to here?"
+勤める,つとめる,"v1,vt",to work (for); to be employed (at),"父は銀行に勤めています。
+My father works for a bank."
+北,きた,n,north,"北海道は本州の北にある。
+Hokkaido is to the north of Honshu."
+医者,いしゃ,n,doctor,"僕は医者になりたいので、大学に行くつもりです。
+I intend to go to the university because I want to become a doctor."
+十,じゅう,num,ten,"
+"
+十日,とおか,n,the tenth day of the month,"
+"
+千,せん,num,1000,"
+"
+午前,ごぜん,"n-adv,n-t",morning; a.m.,"毎日の午前9時に仕事のミーティングがあります。
+I have a work meeting everyday at 9 am."
+午後,ごご,"n-adv,n-t",afternoon; p.m.,"午後、雨が降るから傘を持って出かけた方がいいよ。
+It will rain in the afternoon so you should take an umbrella with you."
+半,はん,"n,n-pref",half; semi-,"牛肉を半キロください。
+Please give me half a kilo of beef."
+半分,はんぶん,"n-adv,n",half,"今日の授業が半分終わりました。
+Today's class is half over."
+南,みなみ,n,south,"南ターミナルはどこですか？
+Where is the south terminal?"
+危ない,あぶない,adj-i,dangerous; risky; hazardous,"あそこで遊ぶのが危ないから気を付けて。
+Playing over there is dangerous, so be careful."
+卵,たまご,n,eggs; egg,"今日のケーキを作るので、店で卵を買ってから帰ってね。
+I'm going to make cake today, so buy eggs and then come home."
+厚い,あつい,adj-i,thick; deep,"この豚肉は4cmの厚さです。
+This pork is 4 cm thick."
+去年,きょねん,"n-adv,n-t",last year,"彼女は去年結婚した。
+She got married last year."
+友達,ともだち,n,friend; companion,"今晩、友達と一緒にパーティに行く。
+I will go to a party tonight with my friends."
+取る,とる,"v5r,vt",to take; to pick up | to steal,"新聞を取って。
+Can you get that newspaper?"
+口,くち,n,mouth | opening; hole,"子供が口を大きく開けて、食べ物を入れました。
+The child opened his mouth wide and put food in."
+古い,ふるい,adj-i,old (not person); aged; stale,"図書館に古い本がたくさんあります。
+There are many old books at the library."
+可愛い,かわいい,adj-i,cute; adorable; charming,"可愛い赤ちゃんですね！
+What a cute baby!"
+台所,だいどころ,"n,adj-no",kitchen,"今日料理していないので、台所はまだ綺麗です。
+I haven't cooked today so the kitchen is still clean."
+右,みぎ,n,right; right hand side,"あの角で右に曲がって。
+Turn right at that corner."
+同じ,おなじ,"adj-f,n",same; identical; equivalent,"大きさが同じですが、色は違います。
+The size is the same, but the color is different."
+名前,なまえ,n,name | given name; first name,"お名前は何ですか
+What is your name?"
+向こう,むこう,n,opposite side; other side; opposite direction,"道の向こうにある店の方が安いです。
+The store on the other side of the street is cheaper."
+吸う,すう,"v5u,vt",to smoke; to breathe in | to suck,"タバコを吸う
+To smoke cigarettes"
+吹く,ふく,"v5k,vt,vi",to blow (e.g. wind) | to play a wind instrument,"風が吹いている。
+The wind is blowing."
+呼ぶ,よぶ,"v5b,vt",to call out (to); to call,"タクシーを呼びましょうか？
+Would you like me to call a taxi?"
+咲く,さく,"v5k,vi",to bloom,"桜が咲いてから花見をしましょう。
+Let's see the flowers after the cherry blossoms bloom."
+問題,もんだい,n,question (e.g. on a test); problem,"試験の問題が多すぎたから全部出来ませんでした。
+There were too many test problems so I couldn't do them all."
+喫茶店,きっさてん,n,coffee shop; cafe,"毎日日本語を喫茶店で二時間勉強しています。
+I am studying Japanese at a coffee shop for 2 hours everyday."
+四,よん、し,num,four,"
+"
+四つ,よっつ,ctr,four (general counter),"
+"
+四日,よっか,n,fourth day of the month,"
+"
+困る,こまる,"v5r,vi",to be troubled; to be bothered,"仕事がないからお金に困っている。
+I'm not working so I am strapped for money."
+図書館,としょかん,n,library,"図書館に古い本がたくさんあります。
+There are many old books at the library."
+国,くに,n,country; state,"他の国に行きますか？
+Will you go to any other countries?"
+土曜日,どようび,"n-adv,n-t",Saturday,"いつも土曜日に遅くまで寝ます。
+I always sleep late on Saturday."
+地下鉄,ちかてつ,n,subway,"地下鉄の地図がありますか？
+Do you have a subway map?"
+地図,ちず,n,map,"地下鉄の地図がありますか？
+Do you have a subway map?"
+塩,しお,n,salt,"料理で塩をあまり使わない方が良いですよ。
+It is better not to use too much salt in your cooking."
+声,こえ,n,voice,"トムの声が大きいから聞きやすいです。
+Tom's voice is loud so he is easily heard."
+売る,うる,"v5r,vt",to sell,"電池も売っていますか。
+Do you also sell batteries?"
+夏,なつ,"n-adv,n-t",summer,"夏にビーチに来る人が多くなる。
+During summer the number of people that come to the beach becomes big."
+夏休み,なつやすみ,n,summer vacation,"夏休みに旅行に行きたいです。
+I want to go on a trip during summer vacation."
+夕方,ゆうがた,"n-adv,n-t",evening; dusk,"夕方の便はありますか？
+Is there a flight in the evening?"
+夕飯,ゆうめし、ゆうはん,n,evening meal,"夕飯の時間ですよ。
+It's time for dinner."
+外,そと,n,outside; exterior,"外へ出たい。
+I want to go outside."
+外国,がいこく,"n,adj-no",foreign country,"外国へ行ったことがありますか？
+Have you been abroad?"
+外国人,がいこくじん,n,foreigner; foreign citizen,"外国人は面白いですね。
+Foreign people are interesting."
+多い,おおい,adj-i,many; a lot | large quantity,"花見する人が多いので行くのは嫌だね。
+Many people will be going to see the cheery blossoms, so I don't want to."
+多分,たぶん,adv,perhaps; probably,"あまり勉強しなかったので、多分落ちると思う。
+I didn't study very much, so I think I'll fail."
+夜,よる,"n-adv,n-t",evening; night,"夜になる前に帰ってね。
+Come home before it becomes night."
+大きい,おおきい,adj-i,big; large,"子供が大きくなったね。
+Your child's gotten big."
+大きな,おおきな,adj-pn,big; large,"大きな看板があります。
+There's a big sign."
+大丈夫,だいじょうぶ,adj-na,safe; all right; alright; OK,"ピザでも大丈夫ですか？
+Is pizza OK?"
+大人,おとな,"n,adj-no",adult,"大人になったら何になりたい？
+What do you want to be when you grow up?"
+大使館,たいしかん,n,embassy,"東京の英国大使館
+The British embassy in Tokyo"
+大切,たいせつ,"adj-na,n",important; necessary,"友達より大切なものはない。
+Nothing is more important than your friends are."
+大勢,おおぜい,"n,adj-no",many people,"日本には友達が大勢いますか。
+Do you have many friends here in Japan?"
+大変,たいへん,"adj-na,n",very; terribly | difficult; hard,"この大きい本をクラスまで持って行くのは大変だった。
+I had a hard time carrying this big book to class."
+大好き,だいすき,adj-na,loveable; like very much,"ラーメンが大好きです。
+I love ramen."
+大学,だいがく,n,university; college,"大学で日本語を専攻しました。
+I majored in Japanese at the university."
+天気,てんき,n,weather,"今日のお天気はまあまあ。
+The weather today is so-so."
+太い,ふとい,adj-i,fat; thick | deep (of a voice),"このロープが太いから丈夫だと思います。
+I think this rope is strong because it is thick."
+奥さん,おくさん,n,(hon) wife; your wife,"奥さんはお元気ですか？
+How is the wife?"
+女,おんな,"n,n-pref",female; woman,"女の兄弟がいますか？
+Do you have any sisters?"
+女の子,おんなのこ,"exp,n",girl; young woman,"男の子ですか女の子ですか？
+Is it a boy or a girl?"
+好き,すき,"adj-na,n",like; likable,"醤油ラーメンが好きです。
+I like shoyu-based ramen."
+妹,いもうと,n,(hum) younger sister,"妹が学校で日本語を勉強しています。
+My younger sister is studying Japanese in shool."
+姉,あね,n,(hum) older sister,"姉が東京で働いています。
+My older sister is working in Tokyo."
+始まる,はじまる,"v5r,vi",to begin; to start,"日本語の勉強を始めした。
+I started Japanese studies."
+嫌,いや,"adj-na,n",disagreeable; detestable; unpleasant,"とても蒸し暑いので、一番嫌な天気は夏の雨です。
+The worst weather is rain during summer because it is very muggy."
+嫌い,きらい,"adj-na,n",dislike; hate,"納豆が嫌い。
+I dislike natto."
+子供,こども,n,child; children,"来月子供が生まれます。
+We are going to have a baby next month."
+字引き,じびき,n,dictionary,"あの言葉を字引きで調べた方が良いです。
+You should look up that word in the dictionary."
+学校,がっこう,n,school,"学校は好きじゃない。
+I don't like school."
+学生,がくせい,n,student,"彼女は大学の学生だ。
+She is a university student."
+安い,やすい,adj-i,cheap; inexpensive,"このスーパーで野菜は安いです。
+Vegetables at this grocery store are cheap."
+家,いえ、うち,n,house; residence; dwelling,"家にはいない。
+He's not at home."
+家庭,かてい,"n,adj-no",household; family,"トムの奥さんとお子さんが優しくて、温かい家庭です。
+Tom's wife and children are kind so he has a warm (loving) household."
+家族,かぞく,"n,adj-no",family; members of a family,"この家族は何人家族ですか。
+How many people are there in this family?"
+宿題,しゅくだい,n,homework; assignment,"宿題がたくさんあります。
+I have lots of homework."
+寒い,さむい,adj-i,cold (e.g. weather),"冬は寒いです。
+Winter is cold."
+寝る,ねる,"v1,vi",to lie down | to go to bed; to sleep,"昨日8時間に寝ました。
+I slept for 8 hours yesterday."
+封筒,ふうとう,n,envelope,"手紙を封筒に入れました。
+I put the letter in an envelope."
+小さい,ちいさい,adj-i,small; little; tiny,"小さすぎる。
+It's too small."
+小さな,ちいさな,adj-pn,small; little; tiny,"家には小さな庭があります。
+We have a small garden at home."
+少し,すこし,"adv,n",small quantity; little; few,"駅まで時間が少しかかります。
+It will take a little bit of time until the station."
+少ない,すくない,adj-i,few; a little,"ピンクのスーツケースは少ない。
+There are few pink suitcases."
+履く,はく,"v5k,vt",to put on (or wear),"靴を履いて。
+Put on your shoes."
+山,やま,"n,ctr",mountain; hill,"来年の夏に富士山に登る。
+Next summer I will climb Mt Fuji."
+左,ひだり,"n,adj-no",left; left hand side,"左に曲がって。
+Turn left."
+差す,さす,"v5s,vt","to hold up (an umbrella, etc.); to put up; to raise","他人を指で差すのは失礼なことです。
+It's not polite to point at others."
+帰る,かえる,"v5r,vi",to return; to come home,"授業が終わったら帰ります。
+I will go home after class is done."
+帽子,ぼうし,n,hat,"帽子を被る
+To wear a hat"
+平仮名,ひらがな,n,hiragana,"
+"
+年,とし,n,year,"あっという間にこの年になった。
+I became this age before I knew it."
+広い,ひろい,adj-i,spacious; wide,"妹の部屋より私の部屋の方が広いです。
+My room is wider than my little sister's."
+店,みせ,n,store; shop,"あの店はハンバーガーの店です。
+That shop is a hamburger shop."
+座る,すわる,"v5r,vi",to sit; to squat,"自分の席に座りなさい！
+Sit in your chair!"
+庭,にわ,n,garden; yard,"家の前に小さい庭があります。
+There is a small garden in front of my house."
+廊下,ろうか,n,corridor; hallway,"廊下で走らないで。
+Don't run in the hallway."
+建物,たてもの,n,building,"あの建物の39階にレストランがあります。
+There is a restaurant on the 39th floor of that building."
+弁当,べんとう,n,bento; Japanese box lunch,"これは母が作った弁当です。
+This is the bento my mother made."
+引く,ひく,"v5k,vi,vt",to pull,"綱を引く
+To pull on a rope"
+弟,おとうと,n,(hum) younger brother,"数学を弟に教えた。
+I taught by little brother math."
+弱い,よわい,adj-i,weak; frail,"火を弱くして。
+Please turn the flame down low."
+強い,つよい,adj-i,strong; powerful,"風が強くなった。
+The wind grew stronger."
+弾く,ひく,"v5k,vt",to play (string instrument),"彼はギターを弾いて、彼女はピアノを弾いた。
+He played the guitar and she played the piano."
+待つ,まつ,"v5t,vt,vi",to wait,"廊下で待ってください。
+Please wait in the hall."
+後,あと,"n,adj-no,n-adv",behind | after; later | more (e.g. five more minutes),"後でやります。
+I'll do it later."
+後ろ,うしろ,"n,adj-no",back; behind; rear,"彼の後ろにいる。
+I'm behind him."
+御飯,ごはん,n,cooked rice | meal,"おいしい晩御飯、ありがとうございました。
+Thank you for the wonderful dinner."
+忘れる,わすれる,"v1,vt",to forget,"傘を忘れないでください。
+Don't forget your umbrella."
+忙しい,いそがしい,adj-i,busy; occupied,"母は料理で忙しい。
+My mother is busy cooking."
+悪い,わるい,adj-i,bad; poor; inferior | evil; sinful,"このワインは悪くない。
+This wine isn't bad."
+意味,いみ,"n,vs",meaning,"この単語の意味は何ですか。
+What does this word mean?"
+戸,と,n,door,"戸を閉めて。
+Shut the door."
+所,ところ,"n,suf",place; spot,"タバコが売っている所がありますか？
+Is there somewhere that sells cigarettes?"
+手,て,n,hand; arm,"コップを右の手で上げてください。
+Please lift the cup with your right hand."
+手紙,てがみ,n,letter,"手紙を書きました。
+I wrote a letter."
+押す,おす,"v5s,vt",to push; to press,"危ないから押さないで！
+Don't push because it is dangerous."
+持つ,もつ,v5t,to hold | to possess; to have,"赤い看板を持っている男の人
+The man who is holding the red sign."
+掃除,そうじ,"n,vs",cleaning,"部屋を掃除してください。
+Please clean the room."
+授業,じゅぎょう,"n,vs",lesson; class work,"明日授業があります。
+I have class tomorrow."
+掛ける,かける,"v1,vt",to make a call (e.g. phone); to put on (e.g. glasses),"電話を掛ける
+To make a phone call"
+撮る,とる,"v5r,vt","to take (a photo) | to record (video, audio, etc.)","写真を撮ってくれますか？
+Would you take a picture?"
+教える,おしえる,"v1,vt",to teach; to instruct,"数学を弟に教えた。
+I taught by little brother math."
+教室,きょうしつ,n,classroom,"子供達はこの教室を掃除しました。
+The children cleaned this classroom."
+散歩,さんぽ,"n,vs",walk; stroll,"東京駅に近い公園で散歩しましょうか？
+Shall we take a walk at the park near Tokyo Station?"
+文章,ぶんしょう,n,writing; composition | sentence,"この文章は長くて難しいです。
+This sentence is long and hard."
+料理,りょうり,"n,vs",cooking; cuisine,"毎日料理しますか？
+Do you cook everyday?"
+新しい,あたらしい,adj-i,new,"新しいパソコンがほしいです。
+I want a new computer."
+新聞,しんぶん,"n,adj-no",newspaper,"日本語の新聞がありますか？
+Do you have Japanese newspapers?"
+方,かた,n,(hon) person,"あの方は誰ですか？
+Who is that person?"
+旅行,りょこう,"n,vs",trip,"旅行の準備はできていますか？
+Are you ready for the trip?"
+日曜日,にちようび,"n-adv,n-t",Sunday,"日曜日でも働きます。
+I work even on Sunday."
+早い,はやい,adj-i,early; fast; quick,"明日早く起きます。
+I will wake up early tomorrow."
+明るい,あかるい,adj-i,bright; colourful,"電球を変えたからこの部屋が明るくなった。
+This room has become bright because I changed the light bulb."
+明日,あした,n-t,tomorrow,"明日早く起きます。
+I will wake up early tomorrow."
+易しい,やさしい,adj-i,easy; plain; simple,"その本は易しい。
+The book is easy."
+映画,えいが,"n,adj-no",movie; film,"映画は良かったですか？
+Was the movie good?"
+映画館,えいがかん,n,movie theatre,"近くに映画館はありますか？
+Are there any movie theaters near here?"
+春,はる,"n-adv,n-t",spring,"春になると外で遊びましょう。
+Let's play outside when it becomes spring."
+昨夜,ゆうべ,"n-adv,n-t",last night,"昨夜は大雨だった。
+There was a heavy rain last night."
+昨日,きのう,"n-adv,n-t",yesterday,"昨日は木曜日だった。
+Yesterday was Thursday."
+昼,ひる,n,noon,"夏になると昼に出かけたくない。
+I don't want to go out at noon during summer."
+昼御飯,ひるごはん,n,lunch,"昼御飯はいつも弁当です。
+My lunch is always a bento."
+時々,ときどき,"adv,n,adj-no",sometimes,"時々映画を見に行きます。
+I sometimes go to see a movie."
+時計,とけい,n,watch; clock,"私の時計はあなたの時計より高くないです。
+My watch is less expensive than yours."
+時間,じかん,n,time,"時間がありますか。
+Do you have some time?"
+晩,ばん,"n-adv,n-t",evening,"明日の晩までにまた連絡します。
+I'll contact you again by tomorrow evening."
+晩御飯,ばんごはん,n,dinner,"母は晩御飯の支度で忙しいです。
+Mother is busy cooking the dinner."
+晴れ,はれ,"n,adj-no",clear weather; fine weather,"今日は晴れだから散歩しましょう。
+Let's take a walk because it's clear today."
+晴れる,はれる,"v1,vi",to clear up; to be sunny,"明日までに晴れる。
+It will clear up by tomorrow."
+暇,ひま,"adj-na,n",spare time; free time,"今晩暇かな？
+Are you free tonight?"
+暑い,あつい,adj-i,"hot (weather, etc.); warm","今年の夏は暑いですね。
+This summer is hot, isn't it."
+暖かい,あたたかい,adj-i,warm; mild; genial,"5月は暖かいから好きです。
+I like May because it is warm."
+暗い,くらい,adj-i,dark; gloomy,"橋の下は暗かった。
+It was dark under the bridge."
+曇り,くもり,n,cloudiness; cloudy weather,"明日は曇りになるでしょう。
+It will be cloudy tomorrow."
+曇る,くもる,"v5r,vi",to get cloudy; to become overcast,"さっきは晴れだったけど、曇ってきた。
+It was clear just a little while ago, but has become cloudy."
+曲る,まがる,"v5r,vi",to turn; to bend,"父が生まれた家はすぐ角を曲ったところにある。
+The house where my father was born is just around the corner."
+書く,かく,"v5k,vt",to write,"この文章を書いたら、宿題が終わります。
+My homework will be finished after I write this sentence."
+月曜日,げつようび,"n-adv,n-t",Monday,"仕事は月曜日からです。
+I have work from Monday."
+有名,ゆうめい,adj-na,famous,"あの番組でいつも有名な俳優が出ている。
+Famour actors are always appearing on that program."
+服,ふく,"n,n-suf",clothes,"服を着ましたか？
+Have you finished dressing?"
+朝,あさ,"n-adv,n-t",morning,"毎日の朝は早く起きます。
+I wake up early every morning."
+朝御飯,あさごはん,n,breakfast,"今日の朝御飯は味噌汁と魚です。
+Today's breakfast is miso soup and fish."
+木,き,n,tree,"その机は木です。
+That desk is wood."
+木曜日,もくようび,"n-adv,n-t",Thursday,"木曜日に映画に行きませんか？
+Would you like to go to a movie on Thursday?"
+本,ほん,"n,suf,ctr",book | counter for long cylindrical things,"白ワインを5本買いました。
+I bought 5 bottles of white wine."
+本当,ほんとう,"adj-no,adj-na,adv,n",truth; reality; actuality,"本当にパーティーに行かないですか？
+You really will not go to the party?"
+本棚,ほんだな,n,bookshelvese,"本棚に英和辞典がありますか？
+Is there an English-Japanese dictionary on the bookshelf?"
+机,つくえ,n,desk,"その机は木です。
+That desk is wood."
+村,むら,n,village,"この村では、私の村より物が安い。
+The things in this village are cheaper than our village."
+来る,くる,"vk,vi",to come; to approach,"明日の12時頃この教室に来てください。
+Please come to this classroom about 12 'oclock tomorrow."
+来年,らいねん,"n-adv,n-t",next year,"来年また会いましょう。
+Let's meet again next year."
+来月,らいげつ,"n-adv,n-t",next month,"来月子供が生まれます。
+We are going to have a child next month."
+来週,らいしゅう,"n-adv,n-t",next week,"来週にテストがあります。
+I have a test next week."
+東,ひがし,n,east,"風は東から吹いている。
+The wind is blowing from the east."
+果物,くだもの,n,fruit,"子供は果物が好きです。
+My child likes fruits."
+椅子,いす,n,chair,"猫は椅子の上にいますか、椅子の下にいますか？
+Is the cat on the chair or under the chair?"
+楽しい,たのしい,adj-i,enjoyable; fun,"パーティは楽しかった。
+The party was fun."
+横,よこ,n,horizontal (as opposed to vertical); lying down,"ベッドに横になっていた。
+He lay on the bed."
+橋,はし,n,bridge,"この橋は世界中で一番長い橋だ。
+This is the longest bridge in the world."
+次,つぎ,"n,adj-no",next; following,"上野駅は次の次です。
+Ueno is the station after next."
+欲しい,ほしい,adj-i,wanted; desired,"クリスマスに黒い鞄が欲しいよ。
+I want a black bag for Christmas."
+歌,うた,n,song,"あの歌を歌いたい！
+I want to sing that song."
+歌う,うたう,"v5u,vt,vi",to sing | to recite a poem,"あの歌を歌いたいです！
+I want to sing that song."
+止まる,とまる,"v5r,vi",to stop,"涙が止まりません。
+The tears won't stop."
+歩く,あるく,"v5k,vi",to walk,"速く歩いたら、駅まで5分かかります。
+If you walk quickly it is 5 minutes to the station."
+歯,は,n,tooth,"歯を磨きましたか？
+Did you brush your teeth?"
+死ぬ,しぬ,"v5n,vn,vi",to die; to pass away,"部屋が暗いので花が死んでいます。
+The room is dark so the flowers are dead."
+母,はは,n,(hum) mother,"母は毎日うちにいます。
+Mother stays at home every day."
+毎年,まいとし,n-t,every year; annually,"毎年のクリスマスに弟の家族と一緒にご飯を食べます。
+I eat a meal with my younger brother's family every Christmas."
+毎日,まいにち,"n-adv,n-t",every day,"母は毎日うちにいます。
+Mother stays at home every day."
+毎晩,まいばん,"n-adv,n-t",every night,"毎晩12時までに寝ます。
+I sleep by 12 every night."
+毎月,まいつき,"n-adv,n",every month,"この雑誌は毎月出る。
+This magazine is issued every month."
+毎朝,まいあさ,"n-adv,n-t",every morning,"毎朝ジョギングをしています。
+I go jogging every morning."
+毎週,まいしゅう,"n-adv,n-t",every week,"毎週日曜日に教会に行きます。
+I go to church every Sunday."
+水,みず,n,"water (esp. cool water, e.g. drinking water)","水が飲みたい。
+I want to drink water."
+水曜日,すいようび,"n-adv,n-t",Wednesday,"水曜日の夜のテレビ番組は面白いと思います。
+I think that Wednesday evening TV programs are interesting."
+汚い,きたない,adj-i,dirty; unclean | disordered; messy,"シャツが汚いから洗濯して。
+That shirt is dirty so wash it."
+池,いけ,n,pond,"池に魚がいます。
+There are fish in the pond."
+沢山,たくさん,"adj-no,adj-na,n,n-adv",a lot; many; a large number,"することが沢山ある。
+We have a lot to do."
+泣く,なく,v5k,to cry; to weep,"とても悲しかったから昨日いっぱい泣きました。
+I cried a lot yesterday because I was very sad."
+泳ぐ,およぐ,"v5g,vi",to swim,"これから毎週二回以上プールで泳ぐつもりです。
+I intend to swim at least twice a week at the pool from now on."
+洋服,ようふく,n,Western-style clothes,"とてもお似合いの洋服ですね。
+Those clothes suit you well."
+洗う,あらう,"v5u,vt",to wash; to cleanse,"皿が汚いので洗います。
+I'll clean the dishes because they're dirty."
+洗濯,せんたく,"n,vs",washing; laundry,"シャツが汚いから洗濯して。
+That shirt is dirty so wash it."
+浴びる,あびる,"v1,vt",to take a shower,"運動の後にシャワーを浴びます。
+I will take a shower after working out."
+海,うみ,n,sea; ocean,"海で泳ぎますか？
+Will you swim in the ocean?"
+消える,きえる,"v1,vi",to go out; to disappear,"火が消えた。
+The fire went out."
+消す,けす,"v5s,vt",to erase; to delete | to turn off power,"帰る前に電気を消してください。
+Please turn off the lights before you go home."
+涼しい,すずしい,adj-i,cool; refreshing,"木陰は涼しかった。
+It was cool in the shade of the trees."
+渡す,わたす,"v5s,vt",to hand over; to transfer,"塩を渡してもらえませんか。
+Would you pass the salt?"
+渡る,わたる,"v5r,vi",to cross over,"道を渡ろう。
+Let's cross the street."
+温い,ぬるい,adj-i,lukewarm; tepid,"温いコーヒーが美味しくない。
+Lukewarm coffee is not delicious."
+漢字,かんじ,n,Chinese characters; kanji,"漢字を読むのが難しい。
+Kanji are difficult to read."
+火曜日,かようび,"n-adv,n-t",Tuesday,"来週の火曜日までに手紙を出してね。
+Be sure to mail the letter by next week Tuesday."
+灰皿,はいざら,n,ashtray,"テーブルに灰皿がないです。
+There is no ashtray at the table."
+無くす,なくす,"v5s,vt",to lose something,"財布を無くした！
+I lost my wallet!"
+煩い,うるさい,adj-i,noisy; loud,"煩くて眠れないです。
+We can't sleep because of the noise."
+熱い,あつい,adj-i,"hot (thing) | passionate (feelings, etc.); ardent","このコーヒーが熱いから気を付けてください。
+Please be careful because this coffee is hot."
+父,ちち,n,(hum) father,"今日父が休みだから家にいるよ。
+My father is off from work today so he's at home."
+片仮名,かたかな,n,katakana,"カタカナがひらがなより難しいと思います。
+I think that katakana is more difficult than hiragana."
+牛乳,ぎゅうにゅう,n,(cow's) milk,"牛乳がないので店に行きましょうか？
+There's no milk so shall we go to the store?"
+牛肉,ぎゅうにく,n,beef,"この牛肉は柔らかい。
+This beef is tender."
+物,もの,n,thing; object | possessions; property,"これは私の物ではない。
+These aren't mine."
+犬,いぬ,n,dog,"この犬より大きな犬はいません。
+There are no dogs bigger than this one."
+狭い,せまい,adj-i,narrow,"東京にはたくさんの狭い道があります。
+There are many narrows roads in Tokyo."
+猫,ねこ,n,cat,"彼女の猫が白です。
+Her cat is white."
+玄関,げんかん,"n,adj-no",entranceway; front door,"玄関の鍵を閉めてください。
+Please lock the front door."
+甘い,あまい,adj-i,sweet; sugary,"桃は甘い。
+Peaches are sweet."
+生まれる,うまれる,"v1,vi",to be born,"赤ちゃんがいつ生まれますか？
+When will your baby be born?"
+生徒,せいと,n,student,"来年に高校の生徒になります。
+I will become a highschool student next year."
+男,おとこ,"n,n-pref",man; male,"ジョンのお子さんは男です。
+John's child is a male."
+男の子,おとこのこ,"exp,n",boy,"男の子は静かにしていた。
+The boy kept quiet."
+町,まち,n,town,"なんてキレイな町なんだ！
+What a beautiful town!"
+留学生,りゅうがくせい,n,exchange student,"留学生もサークルに入れますか？
+Can foreign students be in the club?"
+番号,ばんごう,n,number,"私の部屋番号は505です。
+My room number is 505."
+疲れる,つかれる,"v1,vi",to get tired; to tire | to be worn out,"昨日の夜遅くまで働いたので、今日疲れています。
+I'm tired today because I worked until late last night."
+病気,びょうき,"n,adj-no,vs",illness; disease,"病気なので、今日学校を休んで病院に行きます。
+Because I am sick I will take a break from school and go to the hospital today."
+病院,びょういん,"n,adj-no",hospital,"病気なので、今日学校を休んで病院に行きます。
+Because I am sick I will take a break from school and go to the hospital today."
+痛い,いたい,adj-i,painful; sore,"頭が痛いとき薬を飲む。
+I take medicine when my head hurts."
+登る,のぼる,"v5r,vi",to ascend; to climb,"去年富士山に登りました。
+I climed Mt. Fuji last year."
+白,しろ,n,white,"白ワインを5本買いました。
+I bought 5 bottles of white wine."
+白い,しろい,adj-i,white,"トムは白いシャツを着た。
+Tom put on a white shirt."
+百,ひゃく,num,100,"コンビニで買ったら百円だよ。
+It is 100 yen if you buy it at the convenience store."
+皆,みんな、みな,"adv,n",all; everyone,"皆は楽しかった。
+Everybody had a good time."
+皆さん,みなさん,n,all; everyone,"皆さんはお元気ですか？
+How is everyone?"
+皿,さら,n,plate; dish,"汚いからこの皿を洗う。
+I will wash this plate because it is dirty."
+目,め,n,eye; eyeball,"目が痛いです。
+My eyes are sore."
+眼鏡,めがね,n,spectacles; glasses,"彼は眼鏡を外した。
+He took off his glasses."
+着く,つく,"v5k,vi",to arrive at; to reach,"一昨日成田に着きました。
+I arrived at Narita the day before yesterday."
+着る,きる,"v1,vt",to wear; to put on,"デートでワイシャツを着る。
+I will wear a dress shirt on the date."
+知る,しる,"v5r,vt",to know,"この歌知っていますか？
+Do you know this song."
+短い,みじかい,adj-i,short,"これは短すぎます。
+This is too short."
+石けん,せっけん,n,soap,"石けんで手を洗いなさい。
+Wash your hands with soap."
+砂糖,さとう,n,sugar,"次、ボールに200グラムの水と200グラムの砂糖を入れます。
+Next, put 200g of water and 200g of sugar in the bowl."
+磨く,みがく,"v5k,vt",to polish,"もう歯を磨いた。
+I brushed my teeth already."
+私,わたし,"pn,adj-no",I; me,"それは私のです。
+That is mine."
+秋,あき,n-t,autumn; fall,"葉は秋に黄色くなる。
+Leaves turn yellow in the fall."
+空,そら,n,sky,"空は青い。
+The sky is blue."
+窓,まど,n,window,"暑いから窓を開けて。
+It's hot so open the window."
+立つ,たつ,"v5t,vi",to stand; to rise,"立って下さい。
+Stand up, please."
+立派,りっぱ,adj-na,splendid; fine,"ジョンは優しくて立派な紳士です。
+John is a kind, fine gentleman."
+答える,こたえる,"v1,vi",to answer; to reply,"数学が得意ではないから質問を答えなかった。
+I'm not good at math so I didn't answer the question."
+箱,はこ,n,box; case; chest,"箱を開けて。
+Open the box."
+箸,はし,n,chopsticks,"お箸の使い方が分かりません。
+I don't know how to use chopsticks."
+紅茶,こうちゃ,n,black tea,"紅茶を一杯飲みたい。
+I want to drink a cup of tea."
+紙,かみ,n,paper,"ノート忘れたから紙が一枚ほしい。
+I forgot my notebook so I want a piece of paper."
+細い,ほそい,adj-i,thin; slender,"彼女は細いです。
+She is slender."
+終わる,おわる,"v5r,vi,aux-v",to end; to finish,"この質問を答えたら宿題が終わります。
+My homework will be finished after I answer this question."
+結婚,けっこん,"n,adj-no,vs",marriage,"ジョンは去年結婚しました。
+John got married last year."
+結構,けっこう,"expr,adj-na",no thank you | quite; fairly,"水だけで結構です。
+I am fine with just water."
+絵,え,"n,n-suf",picture; drawing; painting,"絵を描くことは趣味です。
+Painting is my hobby."
+綺麗,きれい,adj-na,pretty; beautiful | clean; clear,"掃除したから部屋が綺麗だよ。
+This room is clean because I cleaned it."
+緑,みどり,"adj-no,n",green,"彼は緑が一番好きだ。
+He likes green the best."
+締める,しめる,"v1,vt",to tie; to tighten,"シートベルトをお締めください。
+Please fasten your seat belt."
+練習,れんしゅう,"n,vs",practice,"来週に試合があるので今週一所懸命に練習します。
+I have a game next week so I will practice hard this week."
+縦,たて,n,the vertical; height,"このカーペットの大きさは縦１２０センチ横１６０センチです。
+The size of the carpet is 120 by 160 centimeters."
+置く,おく,"v5k,vt",to put; to place,"荷物をベッドの隣に置いて。
+Put your luggage next to the bed."
+美味しい,おいしい,adj-i,delicious; tasty,"とても美味しいですよ。
+It's really good."
+習う,ならう,"v5u,vt",to learn,"授業でひらがなもカタカナも習う。
+We will learn both hiragana and katakana in class."
+耳,みみ,n,ear,"コンサートがうるさすぎたから耳が痛い。
+My ears hurt because the concert was loud."
+聞く,きく,"v5k,vt",to hear; to listen | to ask,"あの外国人に出身を聞きましょう。
+Let's that foreigner where they are from."
+肉,にく,n,flesh | meat,"この肉は腐っている。
+This meat is spoiled."
+背,せい,n,height,"父の方が僕より背が高いです。
+My father is taller than me."
+脱ぐ,ぬぐ,"v5g,vt","to take off (clothes, shoes, etc.); to undress","コートを脱ぎますか？
+Will you take off your coat?"
+自分,じぶん,"pn,adj-no",myself; oneself,"娘がもう20歳になったので、自分で車を買うと言った。
+My daughter said she would buy the car herself because she is already 20 years old."
+自動車,じどうしゃ,n,automobile,"自動車を運転して仕事に行く。
+I drive my car and go to work."
+自転車,じてんしゃ,n,bicycle,"自転車に乗って学校に来ます。
+I ride my bike and come to school."
+良い,いい、よい,adj-i,good,"試験に受かって良かったですね。
+It was good that you passed the test."
+色,いろ,n,color,"好きな色は何色ですか？
+What's your favorite color?"
+色々,いろいろ,"adj-na,adj-no,adv,adv-to,n",various,"あの喫茶店に色々なコーヒーがあります。
+There are various kinds of coffee at that coffee shop."
+花,はな,n,flower,"母の日に母に花をあげるつもりです。
+I intend to give flowers to my mother on Mother's Day."
+花瓶,かびん,n,(flower) vase,"花を赤い花瓶に入れてください。
+Please put the flowers in the red vase."
+若い,わかい,adj-i,young; youthful,"若いから何でもすぐ習ってくるよね。
+You learn anything quickly because you're young."
+英語,えいご,"n,adj-no",English,"英語が話せますか？
+Can you speak English?"
+茶わん,ちゃわん,n,rice bowl,"もうちょっと食べたいからご飯を茶わんに入れてもいいですか？
+I want to eat a little more so may I put rice in my rice bowl?"
+茶色,ちゃいろ,"n,adj-no",brown,"彼女の目が茶色です。
+Her eyes are brown."
+荷物,にもつ,n,luggage; package,"荷物が3つあります。
+I have three pieces of baggage."
+葉書,はがき,n,postcard,"ポストに葉書を入れました。
+I put the postcard in the mailbox."
+薄い,うすい,adj-i,"thin | weak (taste, etc.)","この薄い本は私のです。
+This thin book is mine."
+薬,くすり,n,medicine; pharmaceuticals,"アレルギーの薬を飲んだ。
+I took allergy medicine."
+行く,いく,"v5k-s,vi",to go; to head (towards),"何時に学校に行くの？
+What time will you go to school?"
+被る,かぶる,"v5r,vt",to wear (on one's head),"彼女は帽子を被っていた。
+She was wearing a hat."
+西,にし,n,west,"日は西に沈む。
+The sun sets in the west."
+要る,いる,"v5r,vi",to be needed; to be wanted,"道が分からないので、地図が要ります。
+I need a map because I don't know the way."
+見せる,みせる,"v1,vt",to show; to display,"レポートを印刷する前に見せてね。
+Show me the report before you print it."
+見る,みる,"v1,vt",to see; to look,"映画を見てからショッピングしよう。
+Let's go shopping after we see the movie."
+覚える,おぼえる,"v1,vt",to memorize; to remember,"皆の名前をまだ全部覚えていません。
+I still do not remember everyone's names."
+角,かど,n,corner,"彼はその角を曲がった。
+He turned that corner."
+言う,いう,v5u,to say; to utter,"誰にも言わないで。
+Don't tell anyone."
+言葉,ことば,n,word; phrase,"難しい言葉です。
+It is a difficult word."
+つまらない,つまらない,adj-i,dull; uninteresting; boring,"このビデオはつまらないよ。
+This video is boring."
+話,はなし,n,story; conversation,"知らない人とお金の話をしない。
+Do no talk to strangers about money."
+話す,はなす,"v5s,vt",to talk; to speak; to converse,"あの人と話したことないです。
+I have never spoken with that person."
+誕生日,たんじょうび,n,birthday,"誕生日はいつですか。
+When is your birthday?"
+読む,よむ,"v5m,vt",to read,"去年本を50冊以上読みました。
+I read over 50 books last year."
+誰,だれ,"pn,adj-no",who,"あの人は誰ですか？
+Who is that person?"
+誰か,だれか,pn,someone,"誰かがエアコンをつけた。
+Someone turned on the air conditioner."
+警官,けいかん,n,police officer,"ジョンは警官になった。
+John became a policeman."
+豚肉,ぶたにく,n,pork,"このデパートで豚肉が高いです。
+The pork at this department store is expensive."
+財布,さいふ,n,purse; wallet,"財布をなくした。
+I lost my wallet."
+買い物,かいもの,"n,adj-no",shopping; purchased goods,"毎朝買い物をします。
+I go shopping every morning."
+買う,かう,"v5u,vt",to buy,"果物をデパートで買いました。
+I bought fruits at the department store."
+貸す,かす,"v5s,vt",to lend,"お金を貸してください。
+Please lend me some money."
+貼る,はる,"v5r,vt",to stick; to paste,"その封筒に切手を貼りましたか？
+Did you put a stamp on the envelope?"
+賑やか,にぎやか,adj-na,bustling; lively,"賑やかなパーティーでした。
+It was a lively party."
+質問,しつもん,"n,vs,adj-no",question; inquiry,"先生に質問を聞きました。
+I asked the teacher a question."
+赤,あか,n,red; crimson; scarlet,"信号は赤です。
+The traffic light is red."
+赤い,あかい,adj-i,red,"彼女は赤くなった。
+She turned red (blushed)."
+走る,はしる,"v5r,vi",to run,"木曜日に20キロを走りました。
+I ran 20 kilometers on Thursday."
+起きる,おきる,"v1,vi",to get up; to wake up,"起きろ！
+Get up."
+足,あし,n,foot | leg,"あなたの足より私の足が小さいです。
+My feet are smaller than your feet."
+車,くるま,n,car; automobile,"車で病院に行きました。
+I went to the hospital by car."
+軽い,かるい,adj-i,light (i.e. not heavy),"この椅子は軽い。
+This chair is light."
+辛い,からい,adj-i,spicy; hot | salty,"このチリソースが辛い。
+This chili sauce is spicy."
+辞書,じしょ,n,dictionary,"この辞書はあの辞書と同じくらい役に立つ。
+This dictionary is about as useful as that one."
+辺,へん,n,area; vicinity,"その辺にホチキスがありますか？
+Is there a stapler around there?"
+近い,ちかい,adj-i,near; close,"近いうちにまたお会いしましょう。
+Let's meet again soon."
+近く,ちかく,"n,adj-no,n-adv",near,"近くに病院がある。
+There is a hospital nearby."
+返す,かえす,"v5s,vt",to return (something),"明日までに本を返さなければならない。
+I must return the book by tomorrow."
+速い,はやい,adj-i,fast; quick,"ジョンはいつも食べるのは速いです。
+John always eats quickly."
+遅い,おそい,adj-i,"slow | late (e.g. ""late at night"")","遅くなります。
+I'll be late."
+遊ぶ,あそぶ,"v5b,vi",to play; to have a good time,"彼は公園で遊びました。
+He played at the park."
+道,みち,n,road; street,"道を渡ろう。
+Let's cross the street."
+違う,ちがう,"v5u,vi",to differ (from),"大きさが同じですが、色は違います。
+The size is the same, but the color is different."
+遠い,とおい,adj-i,far; distant,"駅はここから遠い。
+The station is far from here."
+部屋,へや,n,room,"後で部屋を片づけます。
+I'll clean the room up later."
+郵便局,ゆうびんきょく,n,post office,"郵便局は図書館の隣にある。
+The post office is next to the library."
+酒,さけ,n,alcohol; sake,"昨日酒を飲み過ぎました。
+I drank too much alcohol yesterday."
+醤油,しょうゆ,n,soy sauce; shoyu,"醤油をかけて、食べた。
+I put shoyu on it and ate it."
+重い,おもい,adj-i,heavy; weighty,"この本は重い。
+This book is heavy."
+野菜,やさい,"n,adj-no",vegetable,"家の子供は野菜が嫌いです。
+Our child doesn't like vegetables"
+金曜日,きんようび,"n-adv,n-t",Friday,"やっと金曜日だ。
+Finally, it's Friday."
+鉛筆,えんぴつ,n,pencil,"鉛筆を持っていますか？
+Do you have a pencil."
+銀行,ぎんこう,"n,adj-no",bank,"祝日に銀行があいていません。
+The bank is not open on holidays."
+鍵,かぎ,n,key | lock,"部屋に鍵を忘れました。
+I left the key in my room."
+長い,ながい,adj-i,long (distance or time),"トムが長い髪の男の子だよ。
+Tom is the boy with long hair."
+門,もん,"n,n-suf",gate,"門を閉める時間だ。
+It is time to shut the gate."
+閉まる,しまる,"v5r,vi",to be shut; to close,"このデパートは今日閉まっている。
+This department store is closed today."
+閉める,しめる,"v1,vt",to close; to shut,"窓を閉めて。
+Close the window."
+開く,あく,"v5k,vi",to open (e.g. doors),"ドアが開いています。
+The door is open."
+開ける,あける,"v1,vt","to open (a door, etc.); to unwrap; to unlock","窓を開けないでください。
+Please do not open the window."
+降りる,おりる,"v1,vi",to descend (e.g. a mountain) | to get off; to dismount,"ここでバスを降ります。
+I'll get off the bus here."
+降る,ふる,"v5r,vi",to precipitate; to fall (e.g. rain),"今日雨が降りますか？
+Will it rain today?"
+階段,かいだん,n,stairs; staircase,"階段を上がる。
+Go up the stairs."
+隣,となり,"n,adj-no",neighbor; next to (esp. living next door to),"隣の部屋がうるさいです。
+It's noisy next door."
+雑誌,ざっし,n,journal; magazine; periodical,"この雑誌を読みたいですか？
+Do you want to read this magazine?"
+難しい,むずかしい,adj-i,difficult; hard; troublesome,"宿題が難しい。
+The homework is difficult."
+雨,あめ,n,rain,"雨が降っています。
+It is raining."
+雪,ゆき,n,snow,"雪が降っています。
+It is snowing."
+零,れい,"n,adj-no",zero; nought,"昨日の夜零度以下に下がった。
+The temperature fell below zero last night."
+電気,でんき,n,electricity | (electric) light,"電気をつける
+To turn on the lights"
+電気ストーブ,でんきストーブ,n,electric heater,"彼女は部屋に新しい電気ストーブを取り付けた。
+She installed a new electric stove in the room."
+電話,でんわ,"n,vs,adj-no",phone call | telephone (device),"携帯電話から電話しています。
+I'm calling from a cell phone."
+電車,でんしゃ,n,train,"電車に乗りました。
+I took the train."
+青,あお,"n,adj-no,adj-na",blue; green,"信号が青になった。
+The traffic signal turned green."
+青い,あおい,adj-i,blue; green,"空は青い。
+The sky is blue."
+静か,しずか,adj-na,quiet; silent,"静かにしなさい！
+Be quite!"
+面白い,おもしろい,adj-i,interesting; fascinating,"それは面白い話ですね。
+That's an interesting story."
+靴,くつ,n,shoes; footwear,"靴を履いて。
+Put on your shoes."
+靴下,くつした,n,socks,"トムは靴下を脱いだ。
+Tom took his socks off."
+鞄,かばん,n,bag; briefcase,"これは私の鞄ではない。
+This isn't my bag."
+音楽,おんがく,n,music,"夜に音楽を聴きます。
+I listen to music at night."
+頭,あたま,n,head,"頭が痛い。
+My head hurts."
+頼む,たのむ,"v5m,vt",to request,"田中さんにあのタスクを頼みました。
+I asked Mr. Tanaka to do that task."
+顔,かお,n,face | look; expression,"あなたの顔が赤いですよ。
+Your face is red."
+風,かぜ,n,wind; breeze,"風が強くなりました。
+The wind became strong."
+風呂,ふろ,n,bath; bathhouse,"風呂に入ったか？
+Did you take a bath?"
+風邪,かぜ,n,common cold,"風邪をひきました。
+I caught a cold."
+飛ぶ,とぶ,"v5b,vi",to fly | to jump,"飛ぶ魚もいる。
+Some fish fly."
+飛行機,ひこうき,n,airplane,"飛行機は無事に着陸した。
+The airplane landed safely."
+食べる,たべる,"v1,vt",to eat,"映画館でポップコーンを食べました。
+I ate popcorn at the theatre."
+食べ物,たべもの,n,food,"冷蔵庫に食べ物がありません。
+There is no food in the refrigerator."
+食堂,しょくどう,n,cafeteria,"食堂はあいていますか。
+Is the cafeteria open now?"
+飲み物,のみもの,n,drink; beverage,"飲み物はいかかですか？
+Would you like something to drink?"
+飲む,のむ,"v5m,vt",to drink; to swallow; to take (medicine),"また酒を飲んだのか？
+You drank alcohol again? "
+飴,あめ,n,(hard) candy; toffee,"飴がほしい。
+I want some candy."
+駅,えき,n,station,"駅まで走った。
+I ran to the station."
+高い,たかい,adj-i,high; tall | expensive,"高い木を登らないで。
+Don't climb the tall tree."
+魚,さかな,n,fish,"大きい魚は小さい魚を食べます。
+The big fish eat the small ones."
+鳥,とり,n,bird,"それは鳥ですか？
+Is that a bird?"
+鳴く,なく,"v5k,vi",to chirp; to bark,"鳥は鳴いています。
+Birds are singing."
+鶏肉,とりにく,n,chicken meat,"僕は鶏肉が好きです。
+I like chicken."
+黄色,きいろ,"adj-na,n",yellow,"バナナは黄色です。
+Bananas are yellow."
+黄色い,きいろい,adj-i,yellow,"黄色いバラがあります。
+There is a yellow rose."
+黒,くろ,n,black,"黒がよくお似合いですね。
+Black looks good on you."
+黒い,くろい,adj-i,black,"あの黒いのは私のです。
+That black one is mine."
+鼻,はな,n,nose,"鼻が詰まっています。
+My nose is stuffed up."

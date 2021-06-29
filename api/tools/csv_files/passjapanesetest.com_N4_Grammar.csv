@@ -1,0 +1,328 @@
+grammar,usage,meaning,examples
+～し,"V-るし
+i-adj-いし
+na-adjだし
+Nだし","1) Gives a reason
+2) ～し～し strings together two similar/compounding factors
+3) ～し～し strings together two opposing factors","雨も降るし強い風が吹くし、ひどい天気ですね。
+It rains and strong wind blows, the weather is rough.
+授業があるし、台風も来るし、今日どうしよう。
+I have class today, but a typhoon will come, what should I do?"
+～そうです,"V-Stemそうです
+i-adj-Stemそうです
+na-adjそうです","It seems that ～.
+Usually based on first-hand information.","今日降らなさそうですね。
+It seems like it will not rain today.  (Probably said while looking at the sky.)
+分からない単語がいっぱいなので、難しそうです。
+It seems difficult because there are many words I do not know."
+～ようです,"V-るようです
+i-adj-いようです
+na-adjなようです
+Nのようです","It seems that ～.
+Can be based on first-hand information or hearsay.","午後から降るようですよ。
+It seems that it will rain this afternoon.  (I heard the weather report this morning)"
+～らしいです,"V-るらしいです
+i-adj-いらしいです
+na-adjらしいです
+Nらしいです","It seems that ～.
+Usually based on hearsay.","あの店は美味しいらしいですよ。
+That store seems delicious.  (I heard this from someone)"
+～てみる,V-てみる,Try to ～,"明日新しいレストランに行ってみますか？
+Will you try and go to the new restaurant tomorrow?
+先週わさびを初めて食べてみたけど、辛くて好きじゃない。
+I tried to eat wasabi for the first time last week, but it is spicy and I don't like it."
+～なら,"V-るなら
+i-adj-いなら
+na-adjなら
+Nなら","If ～.  Often used to express an opinion, desire, advice.","日本語が上手になりたいなら、毎日使った方が良いですよ。
+If you want to become good at Japanese, you should use it everyday.
+中国に行くなら美味しいお茶を買ってほしい。
+If you will go to China, I want you to buy me some delicious tea."
+Period of TimeにFrequency,,～ times a ～,"1週間に3回日本語授業があります。
+There is Japanese class 3 times a week.
+年に1回以上旅行に行きたい。
+I want to go on a trip at least once a year."
+～が欲しい,Nがほしい,To want ～,"旅行に行く時間が欲しいです。
+I want time to go on a trip.
+新しいiPhoneがほしい。
+I want a new iPhone."
+～がる,"i-adj-Stemがる
+na-adjがる",Used to convey another person's feelings or desires.  These feelings or desires are outwardly displayed.,"田中さんはいつも自分にはない物がほしがっている。
+Tanaka always wants things he does not have.
+彼はピザが食べたがっている。
+He wants to eat pizza."
+～かもしれない,,"May/Might ～
+Probably ～","今週の土曜日は仕事になるかもしれない。
+This week Saturday may become work.
+明日は雨かもしれないですね。
+It might raing tomorrow."
+～たらどうですか？,V-たらどうですか,"How about ～?
+Maybe you should ～.","「明日昼に会議があるんですけど。」「昼の前に昼ご飯を食べたらどうですか？」
+""I have a meeting during lunch tomorrow…""  ""Maybe you should eat lunch before the meeting.""
+持って行ったらどうですか？
+How about if you take it with you?"
+Number/Timesも,,As many/much as ～.  Conveys that this is a lot.,"昨日の夜3回も起きた。
+I woke up as many as 3 times last night.
+山田君はドーナツを5個も食べたよ。
+Yamada ate as many as 5 doughnuts."
+～しか～ない,～しかV-ない,Only ～.  Implies a that ～ is not enough.,"財布に1000円しか入っていないから居酒屋に行けないです。
+There is only 1000 yen in my wallet, so I can't go to the izakaya.
+100個の漢字しか読めないので、N4は難しい。
+I can only read 100 kanji, so the N4 is difficult."
+～ておく,V-ておく,To ～ in advance,"寝る前に明日着る服を準備しておきます。
+I will prepare the clothes I will wear tomorrow before I sleep.
+人気だからレストランを予約しておいて。
+It is popular, so make a reservation for the restaurant in advance."
+V-よう,,Plain volitional form of a verb.  ,"映画を見に行こうか？
+Shall we go to see a movie?
+疲れたから帰ろう。
+I'm tired so let's go home."
+～てあげる,V-てあげる,To ～ (as a favor for someone),"山田さんに作り方を教えてあげます。
+I will teach Mr. Yamada how to make it.
+「クラスに行けなかったからノートを貸してくれる？」「うん、貸してあげるよ。」
+""I couldn't go to class today, so will you lend me your notes?""  ""Yeah, I'll lend them to you."""
+～てくれる,V-てくれる,To ～ (as a favor for me),"美味しかったから作り方を教えてくれますか？
+It was delicious, so will you teach me how to make it?
+「クラスに行けなかったからノートを貸してくれる？」「うん、貸してあげるよ。」
+""I couldn't go to class today, so will you lend me your notes?""  ""Yeah, I'll lend them to you."""
+～てもらえる,V-てもらえる,To ～ (as a favor for me),"美味しかったから作り方を教えてもらえますか？
+It was delicious, so will you teach me how to make it?
+「クラスに行けなかったからノートを貸してもらえる？」「うん、貸してあげるよ。」
+""I couldn't go to class today, so will you lend me your notes?""  ""Yeah, I'll lend them to you."""
+～てもらう,V-てもらう,To have someone ～,"ジョンに宿題を見せてもらう。
+I will have John show me his homework.
+会議室を準備してもらっていいですか？
+Can I have you prepare the conference room?"
+～て頂ける,V-て頂ける,To ～ (as a favor for me) (polite),"この言葉の意味を教えて頂けますか？
+Will you teach me the meaning of this word?
+田中さんのお母さんが弁当を作って頂けました。
+Mrs. Tanaka's mother made me a bento."
+～て頂く,V-て頂く,To have someone ～ (polite),"この漢字の読み方を教えて頂いても良いですか？
+Can I have you teach me how to read this kanji?
+田中さんのお母さんに弁当を作って頂きました。
+I had Mrs. Tanaka's mother make my bento."
+～といいです,"V-るといいです
+i-adj-いといいです
+na-adjだといいです
+Nだといいです",I hope ～.  It would be nice if ～.  Used to express one's desire or expectation.,"病気がなおって、元気だといいです。
+It would be nice if you get well and are healthy.
+今日のライブに人がいっぱい来てくれるといいですね。
+I hope many people come to our live today."
+～てすみません,V-てすみません,Sorry for ～.  Sorry that I ～.,"今日遅れてすみません。
+Sorry for being late today.
+早めに伝えなくてすみません。
+Sorry that I did not tell you earlier."
+V-させる,,"Causitive verb form.
+To let someone ～.  To make someone ～.","今日体調が悪いので、休ませてください。
+I do not feel well today so please let me have the day off.
+仕事が多いから21時まで働かせた。
+There was a lot of work, so I made him work until 21:00."
+V-させられる,,To be made to ～.  Usually has a negative connotation.,"仕事が多いから21時まで働かせられた。
+There was a lot of work, so I was made to work until 21:00.
+母に勉強させられた。
+I was forced to study by my mother."
+V-なさい,,"Do ～.
+Gives an order/command.","晩ご飯を全部食べなさい。
+Eat all your dinner.
+集中しているから静かにしなさい。
+I am concentrating so be quite."
+～ば,"V-れば
+i-adj-Stemければ
+na-adjであれば
+Nであれば",If ～,"薬を飲めば風邪が早く治るよ。
+If you take medicine, your cold will heal quickly.
+行きたければ、先に宿題をやってください。
+If you want to go, do your homework first."
+～ても,"V-ても
+i-adjくても
+na-adjでも
+Nでも",Eventhough ～.  Although ～.,"子供に言っても聞かない。
+Eventhough I say it to my child, he does not listen.
+静かな図書館でも集中できないです。
+I cannot concentrate even at the quiet library."
+～たら,"V-たら
+i-adjかったら
+na-adjだったら
+Nだったら",If ～.,"値段が高かったら、買いません。
+If the price is high, I will not buy it.
+日本に行ったら、旅館に泊まりたいです。
+We want to stay at a ryokan if we go to Japan."
+～なくてもいい,,You do not have to ～.  It is OK if you do not ～.,"今日学校に行かなくてもいい。
+You do not have to go to school today.
+サービスですから払わなくてもいいです。
+You do not have to pay because it is free."
+～みたい,"V-るみたい
+i-adj-いみたい
+na-adjみたい
+Nみたい",It seems ～.,"明日は晴れるみたいです。
+It seems tomorrow will be sunny.
+日本語能力試験は難しいみたいですよ。
+The JLPT seems difficult."
+～てしまう,V-てしまう,"End up ～.
+Conveys that one did something regrettably.","怒ったから子供を叱ってしまった。
+I scolded the child because I was angry.
+ダイエットしているのにケーキを食べてしまいました。
+I ate cake eventhough I am on a diet."
+～と,"V-ると
+i-adj-いと
+na-adjだと
+Nだと","If ～.
+Used for habitual actions.","食べ過ぎると太るよ。
+You'll become fat if you eat too much.
+収入が高くなると税金も高くなる。
+If your income goes up, your taxes also go up."
+～ながら,V-Stemながら,While ～.  Used when two actions occur at the same time.,"音楽を聞きながら日本語を勉強します。
+I study Japanese while listening to music.
+ジョンはアイスクリームを食べながら歩いています。
+Jon is walking while eating ice cream."
+V-れば良かった,V-れば良かった,I should have ～.  I Wish I had ～.,"難しいテストだったから先週勉強すれば良かった。
+The test was difficult, so I should have studied last week.
+買えば良かった。
+I wish I had bought it."
+～てくれてありがとう,V-てくれてありがとう,Thank you for ～,"引っ越しを手伝ってくれてありがとう。
+Thank you for helping me move.
+日本語を直してくれてありがとうございます。
+Thank you for fixing my Japanese."
+～て良かった,V-て良かった,I am glad I could ～.  It was good to ～.,"面白い本を読んで良かったです。
+It was good to read the interesting book.
+長く会っていない友達としゃべって良かった。
+I am glad I talked with my friend who I have not met in a long time."
+～はずです,"V-るはず
+i-adj-いはず
+na-adjなはず
+Nなはず",Should be ～.  Should have ～.,"皆が会議に参加するはずです。
+Everyone should participate in the conference.
+美味しいレストランなはずだったのに、まあまあでした。
+It was supposed to be a delicious restaurant, but it was so-so."
+～ないで,V-ないで,"Please do not ～.
+Plain form of ～ないでください。
+","まだ読んでいるから本を片付けないで。
+I'm still reading, so please don't put away the book.
+明日お客さんが来るので、遅れないでね。
+Do not be late tomorrow because the customer will come."
+～かどうか,"Vかどうか
+i-adj-いかどうか
+na-adjかどうか
+Nかどうか","Whether or not ～, If ～ or not","明日山田さんが来るかどうか分かりますか？
+Do you know if Mrs. Yamada is coming tomorrow or not?
+あの店が開いているかどうか聞いてくれますか？
+Can you ask if that store is open or not?"
+～という,～というN,"Modifying phrase meaning ""called ～"", ""the so called ～""","ワンピースという漫画が好きです。
+I like the manga called One Piece.
+ナンというインドのパンが有名です。
+Indian bread called naan is famouse."
+Vやすい,V-Stemやすい,Easy to ～,"このパンが柔らかくて食べやすいです。
+This bread is soft and easy to eat.
+あの先生のしゃべり方が分かりやすいです。
+That teacher's way of speaking is easy to understand."
+Vにくい,V-Stemにくい,Difficult to ～,"このパンが硬くて食べにくいです。
+This bread is hard and difficult to eat.
+あの人の話し方は早くて分かりにくいです。
+That person's way of talking is fast and difficult to understand."
+～える,V-える,Potential form of a verb.,"食べ物じゃないので食べられません。
+It is not food, so you cannot eat it.
+この椅子が重くて運べません。
+I can't carry this chair because it is heavey."
+（～に）～られる,（Personに）V-られる,Passive form of a verb.,"ケーキが誰かに食べられました。
+The cake was eaten by someone.
+ここにあった椅子が運ばれました。
+The chair that was here was carried away."
+～てある,V-てある,～ has been done.,"説明書に書いてあることを注意してください。
+Please be careful of the things that have been written in the directions.
+野菜が切ってあるから焼くだけだよ。
+The vegetables have already been cut so you only fry them."
+～ている間に,V-ている間に,While ～.,"寝ている間に雪が降りました。
+Snow fell while I was sleeping.
+話している間に携帯がなった。
+My phone rang while I was talking."
+～てほしい,（Personに）V-てほしい,I want (Person) to ～.,"田中さんにもっと練習してほしいです。
+I want Mr. Tanaka to practice more.
+ハワイに行ったらサーフィンしてほしい。
+I want you to go surfing if you go to Hawaii."
+のに,,"although, eventhough, but","行きたいのに仕事がある。
+Although I want to go, I have work.
+眠いのにレポートを書かないといけない。
+Although I am sleepy, I must write the report."
+～のような,～のようなN,"As if ～.  Like ～.
+This is a modifier for a noun.","叱ると母のような声です。
+When you scold me, you sound like my mother.
+彼はくまのような強さがあります。
+He has strength like a bear."
+～のように,,"As if ～.  Like ～.
+This is an adverbial phrase.","母のように叱らないでください。
+Please do not scold me like my mother.
+のりのようにねばねばしている。
+It is sticky like glue."
+～ことにする,,To decide to ～,"今度の休みに旅行に行くことにしました。
+I decided to go on vacation during the next holiday.
+前失敗したから今回毎日勉強することにした。
+Since I failed before, I decided to study everyday this time."
+～ことになる,,"It has been decided that ～.  
+Something was determined outside of one's own power.","来月から大阪で働くことになりました。
+It has been decided that I will work in Osaka from next month."
+～方,V-Stem方,"Way of ～, How to ～","料理の作り方を教えてくれますか？
+Would you teach me how to make this dish?
+この漢字の書き方が分かりません。
+I do not know the way of writing this kanji."
+～ことができる,,"Able to ～, Can ～","山本さんはマラソンを走ることができますよ。
+Mrs. Yamamoto can run a marathon.
+ピザを作ることができますか？
+Are you able to make a pizza?"
+"～て
+（～てください）",V-て,"Please ～.  This is a request for someone to do something.
+Plain form of ～てください","寒いからドアを閉めて。
+It is cold so close the door.
+財布を忘れたんだけど、お金を貸して。
+I forgot my wallet; lend me some money."
+"～なければなりません
+～なければいけません",,Must (be) ～.,"全員が会議に行かなければなりません。
+Eveyrone must go to the meeting.
+金曜日までに宿題を出さなければいけません。
+You must turn in your homework by Friday."
+～ことがある,V-たことがある,"have (the experience of) ～, have ～ before","日本に行ったことがありますか？
+Have you gone to Japan before?
+この曲を聞いたことがある？
+Have you heard this song before?"
+～より～,,More ～ than ～,"静岡は東京より小さいです。
+Shizuoka is smaller than Tokyo.
+私はトムより強いです。
+I am stronger than Tom."
+～か分かります,"Question-Phraseか分かります
+Question-Phrase must contain a question word such as だれ、どんな、どこ
+Can also be used with verbs such as <ruby>聞<rt>き</rt></ruby>く、<ruby>言<rt>い</rt></ruby>う、<ruby>知<rt>し</rt></ruby>る",か normalized the preceeding question phrase into a noun.,"店がどこにあるか分かりますか？
+Do you know where the store is?
+どんな服を着ればいいか聞きましたか？
+Did you hear what kind of clothes we should wear?"
+"～こと
+～の",,こと and の normalize the preceeding phrase so that it is a noun.,"歩くのが好きです。
+I like to walk.
+遠いから家から学校まで歩くことは時間がかかります。
+Walking from my house to school takes time because it is far."
+～がする,Nがする,Expresses that the speaker can perceive ～.,"このカレーははちみつの味がします。
+This curry has the taste of honey.
+ピアノの音がします。
+I can hear the sound of a piano."
+"～んじゃないですか？
+～んではないですか？",,"I think ～.  Isn't ～?
+This is used to express the speaker's opinion.","全部分かっているからもう勉強しなくていいんじゃない？
+You already know everything, so I think you don't need to study anymore.
+誰も来なければ、帰っていいんじゃないですか？
+If no one comes I think you can go home."
+"～と聞いた
+～って聞いた",Can be used with verbs such as 聞く、言う、伝える,I heard that ～,"来月試験があると聞きました。
+I heard that there will be a test next month.
+駅で待ってくださいって言われた。
+I was told to wait at the station."
+～ようになる,,"To become such that ～, to reach the point that ～","日本語のニュースが分かるようになりました。
+I have reached the point that I can understand Japanese news.
+頑張ったからギターを弾けるようになった。
+I have become able to play guitar because I tried hard."
+～さ,"i-adj-Stemさ
+na-adjさ","～ness, degree of ～","女性の強さ
+strength of a woman"
+～始める,V-Stem始める,"To start to ～, to begin to ～","来週から運動し始める予定です。
+I plan to start exercising from next week.
+まだ皆が来ていないのに遅いから食べ始めましょう。
+Eventhough everyone has not come yet, let's start to eat because it is late."
+～続ける,V-Stem続ける,To continue to ～,"面白くないのにこの本を最後まで読み続けます。
+Although it is not interesting, I will continue reading this book until the end."

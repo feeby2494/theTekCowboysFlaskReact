@@ -1,0 +1,4496 @@
+[
+  {
+    "id": 1,
+    "kanji": "\u301c\u500d",
+    "kana": "\u301c\u3070\u3044",
+    "eng": "\u301ctimes; \u301cfold",
+    "rei": "\u9ad8\u3044\u8eca\u304c\u5b89\u3044\u8eca\u306e10\u500d\u3067\u3059\u3002\nAn expensive car is 10X a cheap car."
+  },
+  {
+    "id": 2,
+    "kanji": "\u301c\u533a",
+    "kana": "\u301c\u304f",
+    "eng": "\u301c district",
+    "rei": "\u65b0\u5bbf\u533a\n(distinct of) Shinjuku"
+  },
+  {
+    "id": 3,
+    "kanji": "\u301c\u541b",
+    "kana": "\u301c\u304f\u3093",
+    "eng": "Mr. \u301c (used for someone of equal or lesser status)",
+    "rei": "\u7530\u4e2d\u541b\u306f\u5f8c\u3067\u6765\u308b\u3068\u601d\u3046\u3002\nI think (Mr.) Tanaka will come later."
+  },
+  {
+    "id": 4,
+    "kanji": "\u301c\u54e1",
+    "kana": "\u301c\u3044\u3093",
+    "eng": "member of \u301c",
+    "rei": "\u4f1a\u793e\u54e1\ncompany employee"
+  },
+  {
+    "id": 5,
+    "kanji": "\u301c\u5f0f",
+    "kana": "\u301c\u3057\u304d",
+    "eng": "a ceremony",
+    "rei": "\u5352\u696d\u5f0f\ngraduation ceremony"
+  },
+  {
+    "id": 6,
+    "kanji": "\u301c\u7573",
+    "kana": "\u301c\u3058\u3087\u3046",
+    "eng": "counter for tatami mats; measure of room size (in mat units)",
+    "rei": "\u79c1\u306e\u90e8\u5c4b\u306f6\u7573\u3067\u3059\u3002\nMy room is the size of 6 tatami mats."
+  },
+  {
+    "id": 7,
+    "kanji": "\u301c\u76ee",
+    "kana": "\u301c\u3081",
+    "eng": "number in a sequence",
+    "rei": "\u4eca\u65e5\u306f\u4e8c\u56de\u76ee\u3067\u3059\u3002\nToday is my second time."
+  },
+  {
+    "id": 8,
+    "kanji": "\u301c\u968e\u5efa\u3066",
+    "kana": "\u301c\u304b\u3044\u3060\u3066",
+    "eng": "\u301c-storied building",
+    "rei": "\u5bb6\u306f\u4e09\u968e\u5efa\u3066\u3067\u306f\u306a\u304f\u3066\u3001\u4e8c\u968e\u5efa\u3066\u3067\u3059\u3002\nMy house is not a three-storied building, but a two-storied building."
+  },
+  {
+    "id": 9,
+    "kanji": "\u30a2\u30af\u30bb\u30b5\u30ea\u30fc",
+    "kana": "\u30a2\u30af\u30bb\u30b5\u30ea\u30fc",
+    "eng": "accessory",
+    "rei": "\u3053\u306e\u9ed2\u3044\u670d\u306b\u306f\u9ec4\u8272\u3044\u30a2\u30af\u30bb\u30b5\u30ea\u30fc\u304c\u5408\u3046\u3068\u601d\u3046\uff1f\nDo you think yellow accessories will go well with this black dress?"
+  },
+  {
+    "id": 10,
+    "kanji": "\u30a2\u30b8\u30a2",
+    "kana": "\u30a2\u30b8\u30a2",
+    "eng": "Asia",
+    "rei": "\u30a2\u30b8\u30a2\u306b\u8272\u3005\u306a\u56fd\u304c\u3042\u308a\u307e\u3059\u3002\nThere are various countries in Asia."
+  },
+  {
+    "id": 11,
+    "kanji": "\u30a2\u30ca\u30a6\u30f3\u30b5\u30fc",
+    "kana": "\u30a2\u30ca\u30a6\u30f3\u30b5\u30fc",
+    "eng": "announcer; presenter",
+    "rei": "\u77e5\u308a\u5408\u3044\u306f\u3053\u306e\u30c6\u30ec\u30d3\u5c40\u3067\u30a2\u30ca\u30a6\u30f3\u30b5\u30fc\u306e\u4ed5\u4e8b\u3092\u3057\u3066\u3044\u307e\u3059\u3002\nMy acquaintance works as an announcer at this TV station."
+  },
+  {
+    "id": 12,
+    "kanji": "\u30a2\u30d5\u30ea\u30ab",
+    "kana": "\u30a2\u30d5\u30ea\u30ab",
+    "eng": "Africa",
+    "rei": "\u30a2\u30d5\u30ea\u30ab\u306b\u884c\u3063\u3066\u307f\u305f\u3044\u3067\u3059\u3002\nI want to try and go to Africa."
+  },
+  {
+    "id": 13,
+    "kanji": "\u30a2\u30e1\u30ea\u30ab",
+    "kana": "\u30a2\u30e1\u30ea\u30ab",
+    "eng": "America",
+    "rei": "\u30a2\u30e1\u30ea\u30ab\u3067\u7559\u5b66\u3057\u3066\u307f\u305f\u3044\u3002\nI want to try and study abroad in America."
+  },
+  {
+    "id": 14,
+    "kanji": "\u30a2\u30eb\u30b3\u30fc\u30eb",
+    "kana": "\u30a2\u30eb\u30b3\u30fc\u30eb",
+    "eng": "alcohol",
+    "rei": "\u30a2\u30eb\u30b3\u30fc\u30eb\u304c\u5165\u3063\u3066\u3044\u308b\u304b\u308920\u6b73\u306b\u306a\u3063\u3066\u304b\u3089\u3060\u306d\u3002\nThere is alcohol in it, so you can have some when you're 20 years old."
+  },
+  {
+    "id": 15,
+    "kanji": "\u30a2\u30eb\u30d0\u30a4\u30c8",
+    "kana": "\u30a2\u30eb\u30d0\u30a4\u30c8",
+    "eng": "part-time job",
+    "rei": "\u30ad\u30e0\u306e\u30a2\u30eb\u30d0\u30a4\u30c8\u306f\u30b3\u30f3\u30d3\u30cb\u306e\u5e97\u54e1\u3067\u3059\u3002\nKim's part time job is a convenience store clerk."
+  },
+  {
+    "id": 16,
+    "kanji": "\u3042\u3093\u306a",
+    "kana": "\u3042\u3093\u306a",
+    "eng": "such; like that",
+    "rei": "\u3042\u3093\u306a\u5206\u304b\u308a\u3084\u3059\u3044\u8cea\u554f\u3092\u9593\u9055\u3048\u305f\u3002\nI missed such an easy question."
+  },
+  {
+    "id": 17,
+    "kanji": "\u3044\u3058\u3081\u308b",
+    "kana": "\u3044\u3058\u3081\u308b",
+    "eng": "to bully; to tease",
+    "rei": "\u5916\u56fd\u304b\u3089\u6765\u305f\u4eba\u306f\u3044\u3058\u3081\u306a\u3044\u3088\u3046\u306b\u512a\u3057\u304f\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nAs for the person who came from a foreign country, please be kind and don't tease them."
+  },
+  {
+    "id": 18,
+    "kanji": "\u3044\u3063\u3071\u3044",
+    "kana": "\u3044\u3063\u3071\u3044",
+    "eng": "fully; to capacity; a lot",
+    "rei": "\u304a\u83d3\u5b50\u3092\u3044\u3063\u3071\u3044\u98df\u3079\u305f\u304b\u3089\u6669\u3054\u98ef\u306f\u98df\u3079\u3089\u308c\u306a\u304b\u3063\u305f\u3002\nI ate a lot of snacks, so I could not eat dinner."
+  },
+  {
+    "id": 19,
+    "kanji": "\u3044\u3089\u3063\u3057\u3083\u308b",
+    "kana": "\u3044\u3089\u3063\u3057\u3083\u308b",
+    "eng": "(hon) to come; to go; to be",
+    "rei": "\u5148\u751f\u304c\u3044\u3089\u3063\u3057\u3083\u3044\u307e\u3059\u304b\uff1f\nIs the teacher here?"
+  },
+  {
+    "id": 20,
+    "kanji": "\u3046\u3061",
+    "kana": "\u3046\u3061",
+    "eng": "inside; within",
+    "rei": "\u4eca\u5e74\u306e\u3046\u3061\nwithin this year"
+  },
+  {
+    "id": 21,
+    "kanji": "\u3046\u307e\u3044",
+    "kana": "\u3046\u307e\u3044",
+    "eng": "delicious",
+    "rei": "\u3053\u306e\u30b9\u30c6\u30fc\u30ad\u306f\u3046\u307e\u3044\uff01\nThis steak is delicious."
+  },
+  {
+    "id": 22,
+    "kanji": "\u3046\u3093",
+    "kana": "\u3046\u3093",
+    "eng": "yes; yeah",
+    "rei": "\u300c\u3082\u3046\u98df\u3079\u305f\uff1f\u300d\u300c\u3046\u3093\u3001\u98df\u3079\u305f\u300d\nDid you already eat?  Yeah, I ate."
+  },
+  {
+    "id": 23,
+    "kanji": "\u30a8\u30b9\u30ab\u30ec\u30fc\u30bf\u30fc",
+    "kana": "\u30a8\u30b9\u30ab\u30ec\u30fc\u30bf\u30fc",
+    "eng": "escalator",
+    "rei": "\u30a8\u30b9\u30ab\u30ec\u30fc\u30bf\u30fc\u306b\u4e57\u3063\u3066\u30013\u968e\u306b\u884c\u3053\u3046\u3002\nLet's ride the escaltor and go to the 3rd floor."
+  },
+  {
+    "id": 24,
+    "kanji": "\u30aa\u30fc\u30c8\u30d0\u30a4",
+    "kana": "\u30aa\u30fc\u30c8\u30d0\u30a4",
+    "eng": "motorcycle",
+    "rei": "\u30d8\u30eb\u30e1\u30c3\u30c8\u304c\u306a\u3051\u308c\u3070\u30aa\u30fc\u30c8\u30d0\u30a4\u306b\u4e57\u308b\u3053\u3068\u306f\u975e\u5e38\u306b\u5371\u306a\u3044\u3067\u3059\u3088\u3002\nIt is very dangerous to ride a motorcycle without a helmet."
+  },
+  {
+    "id": 25,
+    "kanji": "\u304a\u304b\u3052",
+    "kana": "\u304a\u304b\u3052",
+    "eng": "assistance; help; owing to",
+    "rei": "\u3053\u306e\u7d20\u6674\u3089\u3057\u3044\u70b9\u6570\u306f\u5148\u751f\u306e\u304a\u304b\u3052\u3067\u3059\u3002\nI owe this splendid score to the teacher."
+  },
+  {
+    "id": 26,
+    "kanji": "\u304a\u304b\u3052\u3055\u307e\u3067",
+    "kana": "\u304a\u304b\u3052\u3055\u307e\u3067",
+    "eng": "(I'm fine) thank you; thanks to you",
+    "rei": "\u300c\u304a\u5143\u6c17\u3067\u3059\u304b\uff1f\u300d\u300c\u306f\u3044\u3001\u304a\u304b\u3052\u3055\u307e\u3067\u5143\u6c17\u3067\u3059\u3002\u300d\n\"How are you?\"  \"I'm fine, thanks to you\""
+  },
+  {
+    "id": 27,
+    "kanji": "\u304a\u304b\u3057\u3044",
+    "kana": "\u304a\u304b\u3057\u3044",
+    "eng": "strange; odd; weird",
+    "rei": "\u3044\u3064\u3082\u8cd1\u308f\u3063\u3066\u3044\u308b\u5e97\u306b\u8ab0\u3082\u3044\u306a\u3044\u306e\u306f\u304a\u304b\u3057\u3044\u3067\u3059\u306d\u3002\nIt is strage that there is no one in the store that is always bustling."
+  },
+  {
+    "id": 28,
+    "kanji": "\u304a\u3063\u3057\u3083\u308b",
+    "kana": "\u304a\u3063\u3057\u3083\u308b",
+    "eng": "to speak; to say",
+    "rei": "\u5148\u751f\u304c\u826f\u3044\u8f9e\u66f8\u304c\u306a\u3044\u3068\u52c9\u5f37\u3057\u306b\u304f\u3044\u3068\u304a\u3063\u3057\u3083\u3063\u305f\u3002\nThe teacher told me that it is difficult to study without a good dictionary."
+  },
+  {
+    "id": 29,
+    "kanji": "\u304a\u3064\u308a",
+    "kana": "\u304a\u3064\u308a",
+    "eng": "change (for a purchase); small money (ex. coins)",
+    "rei": "800\u5186\u306e\u4f1a\u8a08\u3060\u304b\u3089\u304a\u3064\u308a\u306f200\u5186\u306a\u306f\u305a\u3060\u3063\u305f\u306e\u306b\u3001110\u5186\u3057\u304b\u3082\u3089\u3063\u3066\u3044\u306a\u3044\u3002\nIt was an 800 yen bill, so the change should have been 200 yen, but I only received 110 yen."
+  },
+  {
+    "id": 30,
+    "kanji": "\u304a\u3082\u3061\u3083",
+    "kana": "\u304a\u3082\u3061\u3083",
+    "eng": "toy",
+    "rei": "\u7247\u4ed8\u3051\u3066\u306a\u3044\u304b\u3089\u5b50\u4f9b\u306e\u304a\u3082\u3061\u3083\u3092\u8e0f\u3093\u3067\u3057\u307e\u3044\u307e\u3057\u305f\u3002\nYou did not clean up so I stepped on the child's toy."
+  },
+  {
+    "id": 31,
+    "kanji": "\u304a\u571f\u7523",
+    "kana": "\u304a\u307f\u3084\u3052",
+    "eng": "present; souvenir",
+    "rei": "\u30b8\u30e7\u30f3\u304c\u304a\u571f\u7523\u3092\u8cb7\u3063\u3066\u304f\u308c\u305f\u3002\nJohn bought me a souvenir."
+  },
+  {
+    "id": 32,
+    "kanji": "\u304a\u5b22\u3055\u3093",
+    "kana": "\u304a\u3058\u3087\u3046\u3055\u3093",
+    "eng": "(hon) daughter; young lady",
+    "rei": "\u304a\u5b22\u3055\u3093\u304c\u3044\u3089\u3063\u3057\u3083\u3044\u307e\u3059\u304b\uff1f\nIs your daughter home?"
+  },
+  {
+    "id": 33,
+    "kanji": "\u304a\u5b50\u3055\u3093",
+    "kana": "\u304a\u3053\u3055\u3093",
+    "eng": "(hon) (someone else's) child",
+    "rei": "\u304a\u5b50\u3055\u3093\u306f\u4f55\u6708\u751f\u307e\u308c\u3067\u3059\u304b\uff1f\nWhat month was your child born?"
+  },
+  {
+    "id": 34,
+    "kanji": "\u304a\u5b85",
+    "kana": "\u304a\u305f\u304f",
+    "eng": "(hon) your house; your home",
+    "rei": "\u304a\u5b85\u306e\u96fb\u8a71\u756a\u53f7\u3092\u6559\u3048\u3066\u9802\u3051\u307e\u3059\u304b\uff1f\nWill you give me your home phone number?"
+  },
+  {
+    "id": 35,
+    "kanji": "\u304a\u793c",
+    "kana": "\u304a\u308c\u3044",
+    "eng": "(pol) thanks; gratitude",
+    "rei": "\u7686\u3055\u3093\u306e\u304a\u304b\u3052\u3067\u3067\u304d\u307e\u3057\u305f\u306e\u3067\u3001\u304a\u793c\u3092\u8a00\u3044\u305f\u3044\u3067\u3059\u3002\nI want to express my gratitude because I was able to do it due to all of your efforts."
+  },
+  {
+    "id": 36,
+    "kanji": "\u304a\u795d\u3044",
+    "kana": "\u304a\u3044\u308f\u3044",
+    "eng": "congratulations; celebration; congratulatory gift",
+    "rei": "\u6628\u65e5\u79c1\u305f\u3061\u306f\u7d50\u5a5a\uff11\uff10\u5468\u5e74\u306e\u304a\u795d\u3044\u3092\u3057\u305f\u3002\nWe celebrated our tenth wedding anniversary yesterday."
+  },
+  {
+    "id": 37,
+    "kanji": "\u304a\u898b\u821e\u3044",
+    "kana": "\u304a\u307f\u307e\u3044",
+    "eng": "visiting/seeing someone who is ill",
+    "rei": "\u53cb\u9054\u304c\u5165\u9662\u3057\u3066\u3044\u308b\u304b\u3089\u304a\u898b\u821e\u3044\u306b\u884c\u304d\u307e\u3059\u3002\nMy friend is in the hospital, so I will go and see him."
+  },
+  {
+    "id": 38,
+    "kanji": "\u30ab\u30fc\u30c6\u30f3",
+    "kana": "\u30ab\u30fc\u30c6\u30f3",
+    "eng": "curtain",
+    "rei": "\u7729\u3057\u3044\u304b\u3089\u30ab\u30fc\u30c6\u30f3\u3092\u9589\u3081\u3066\u304f\u308c\u308b\uff1f\nIt is bright so would you close the curtains?"
+  },
+  {
+    "id": 39,
+    "kanji": "\u30ac\u30b9",
+    "kana": "\u30ac\u30b9",
+    "eng": "gas",
+    "rei": "\u30ac\u30b9\u306e\u65b9\u304c\u96fb\u6c17\u3088\u308a\u5b89\u3044\u3002\nGas is cheaper than electricity."
+  },
+  {
+    "id": 40,
+    "kanji": "\u30ac\u30bd\u30ea\u30f3",
+    "kana": "\u30ac\u30bd\u30ea\u30f3",
+    "eng": "gasoline",
+    "rei": "\u6700\u8fd1\u30ac\u30bd\u30ea\u30f3\u306e\u5024\u6bb5\u304c\u3069\u3093\u3069\u3093\u4e0a\u304c\u3063\u3066\u3044\u308b\u306d\u3002\nThe price of gasoline has been going up more and more recently."
+  },
+  {
+    "id": 41,
+    "kanji": "\u30ac\u30bd\u30ea\u30f3\u30b9\u30bf\u30f3\u30c9",
+    "kana": "\u30ac\u30bd\u30ea\u30f3\u30b9\u30bf\u30f3\u30c9",
+    "eng": "gas station",
+    "rei": "\u660e\u65e5\u9060\u304f\u30c9\u30e9\u30a4\u30d6\u3059\u308b\u306e\u3067\u3001\u4eca\u65e5\u30ac\u30bd\u30ea\u30f3\u30b9\u30bf\u30f3\u30c9\u306b\u884c\u3063\u3066\u304a\u304d\u307e\u3059\u3002\nTomorrow we're going for a long drive, so I will go to the gas station today."
+  },
+  {
+    "id": 42,
+    "kanji": "\u30ac\u30e9\u30b9",
+    "kana": "\u30ac\u30e9\u30b9",
+    "eng": "glass",
+    "rei": "\u30c6\u30fc\u30d6\u30eb\u306e\u4e0a\u306b\u3042\u308b\u30ac\u30e9\u30b9\u306e\u30b3\u30c3\u30d7\u304f\u3060\u3055\u3044\u3002\nPlease give me to glass cup on the table."
+  },
+  {
+    "id": 43,
+    "kanji": "\u304d\u3063\u3068",
+    "kana": "\u304d\u3063\u3068",
+    "eng": "surely; almost certainly",
+    "rei": "\u30b8\u30e7\u30f3\u306f\u65e5\u672c\u8a9e\u304c\u4e0a\u624b\u3060\u304b\u3089\u304d\u3063\u3068\u5408\u683c\u3057\u305f\u3068\u601d\u3044\u307e\u3059\u3002\nJohn is good at Japanese so I think he almost certainly passed."
+  },
+  {
+    "id": 44,
+    "kanji": "\u304f\u308c\u308b",
+    "kana": "\u304f\u308c\u308b",
+    "eng": "to give (to me)",
+    "rei": "\u304a\u6bcd\u3055\u3093\u304c\u30b7\u30e3\u30c4\u3092\u304f\u308c\u305f\u3002\nMy mom gave me a shirt."
+  },
+  {
+    "id": 45,
+    "kanji": "\u30b1\u30fc\u30ad",
+    "kana": "\u30b1\u30fc\u30ad",
+    "eng": "cake",
+    "rei": "\u8a95\u751f\u65e5\u306b\u30c1\u30e7\u30b3\u30b1\u30fc\u30ad\u304c\u6b32\u3057\u3044\u3002\nI want chocolate cake for my birthday."
+  },
+  {
+    "id": 46,
+    "kanji": "\u30b1\u30ac",
+    "kana": "\u3051\u304c",
+    "eng": "injury; hurt",
+    "rei": "\u30b1\u30ac\u3092\u3057\u306a\u3044\u3088\u3046\u306b\u6c17\u3092\u4ed8\u3051\u3066\u304f\u3060\u3055\u3044\u3002\nPlease be careful so as not to get hurt."
+  },
+  {
+    "id": 47,
+    "kanji": "\u3051\u308c\u3069",
+    "kana": "\u3051\u308c\u3069",
+    "eng": "but; however",
+    "rei": "\u98df\u3079\u306b\u884c\u304d\u305f\u3044\u3051\u308c\u3069\u3001\u4ed5\u4e8b\u304c\u3042\u308b\u3002\nI want to go and eat, but I have work"
+  },
+  {
+    "id": 48,
+    "kanji": "\u3051\u308c\u3069\u3082",
+    "kana": "\u3051\u308c\u3069\u3082",
+    "eng": "but; however",
+    "rei": "\u98df\u3079\u306b\u884c\u304d\u305f\u3044\u3051\u308c\u3069\u3082\u3001\u4ed5\u4e8b\u304c\u3042\u308b\u3002\nI want to go and eat, but I have work"
+  },
+  {
+    "id": 49,
+    "kanji": "\u3051\u3093\u304b",
+    "kana": "\u3051\u3093\u304b",
+    "eng": "fight; scuffle; argument",
+    "rei": "\u5b50\u4f9b\u306e\u3068\u304d\u5f1f\u3068\u6bce\u65e5\u3051\u3093\u304b\u3057\u307e\u3057\u305f\u3002\nI fought with my yonger brother everyday when I was a child."
+  },
+  {
+    "id": 50,
+    "kanji": "\u3053\u3046",
+    "kana": "\u3053\u3046",
+    "eng": "in this way",
+    "rei": "\u3053\u3046\u3084\u3063\u3066\u306b\u3093\u3058\u3093\u3092\u5207\u308a\u307e\u3059\u3002\nCut the carrots in this way."
+  },
+  {
+    "id": 51,
+    "kanji": "\u3054\u3061\u305d\u3046",
+    "kana": "\u3054\u3061\u305d\u3046",
+    "eng": "feast; to treat someone (to a meal, etc.)",
+    "rei": "\u4e0a\u53f8\u306e\u5bb6\u3092\u8a2a\u306d\u3066\u3001\u3059\u3054\u3044\u3054\u3061\u305d\u3046\u3067\u3057\u305f\u3002\nI went to the boss's house and it was a great feast."
+  },
+  {
+    "id": 52,
+    "kanji": "\u3053\u306e\u9593",
+    "kana": "\u3053\u306e\u3042\u3044\u3060",
+    "eng": "the other day; lately",
+    "rei": "\u3053\u306e\u9593\u624b\u4f1d\u3063\u3066\u304f\u308c\u3066\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\u3002\nThank you for helping me the other day."
+  },
+  {
+    "id": 53,
+    "kanji": "\u3053\u306e\u9803",
+    "kana": "\u3053\u306e\u3054\u308d",
+    "eng": "nowadays; these days",
+    "rei": "\u3053\u306e\u9803\u306e\u65c5\u884c\u306f\u9ad8\u3044\u3067\u3059\u3002\nNowadays, traveling is expensive."
+  },
+  {
+    "id": 54,
+    "kanji": "\u30b4\u30df",
+    "kana": "\u3054\u307f",
+    "eng": "trash; garbage",
+    "rei": "\u30b4\u30df\u3092\u3061\u3083\u3093\u3068\u5206\u3051\u3066\u304b\u3089\u6368\u3066\u3066\u304f\u3060\u3055\u3044\u3002\nPlease throw away the trash after properly separating it."
+  },
+  {
+    "id": 55,
+    "kanji": "\u3053\u308c\u304b\u3089",
+    "kana": "\u3053\u308c\u304b\u3089",
+    "eng": "after this; from here on",
+    "rei": "\u3053\u308c\u304b\u3089\u98df\u3079\u306b\u884c\u304d\u307e\u3059\u304b\uff1f\nWill you go and eat after this?"
+  },
+  {
+    "id": 56,
+    "kanji": "\u30b3\u30f3\u30b5\u30fc\u30c8",
+    "kana": "\u30b3\u30f3\u30b5\u30fc\u30c8",
+    "eng": "concert",
+    "rei": "\u30b3\u30f3\u30b5\u30fc\u30c8\u306e\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\u3092\u8abf\u3079\u3066\u304f\u308c\u308b\uff1f\nWould you look up the concert schedule for me?"
+  },
+  {
+    "id": 57,
+    "kanji": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc",
+    "kana": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc",
+    "eng": "computer",
+    "rei": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u304c\u58ca\u308c\u3066\u3044\u308b\u304b\u3089\u30c8\u30e0\u306b\u76f4\u3057\u3066\u3082\u3089\u3046\u3064\u3082\u308a\u3067\u3059\u3002\nMy computer is broken so I plan to have Tom fix it."
+  },
+  {
+    "id": 58,
+    "kanji": "\u3054\u5b58\u3058",
+    "kana": "\u3054\u305e\u3093\u3058",
+    "eng": "(hon) to know",
+    "rei": "\u3042\u306e\u4eba\u306f\u3054\u5b58\u77e5\u3067\u3059\u304b\uff1f\nDo you know that person?"
+  },
+  {
+    "id": 59,
+    "kanji": "\u3054\u89a7\u306b\u306a\u308b",
+    "kana": "\u3054\u3089\u3093\u306b\u306a\u308b",
+    "eng": "(hon) to see; to look; to watch",
+    "rei": "\u3053\u306e\u753b\u50cf\u3092\u3054\u89a7\u306b\u306a\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nPlease watch this short movie."
+  },
+  {
+    "id": 60,
+    "kanji": "\u3055\u3063\u304d",
+    "kana": "\u3055\u3063\u304d",
+    "eng": "a little while ago; just now",
+    "rei": "\u663c\u3054\u98ef\u3092\u98df\u3079\u306b\u884c\u304b\u306a\u3044\uff1f\u3054\u3081\u3093\u3001\u3055\u3063\u304d\u98df\u3079\u3066\u3057\u307e\u3063\u305f\u3002\nDo you want to go eat lunch?  Sorry, I just ate."
+  },
+  {
+    "id": 61,
+    "kanji": "\u30b5\u30e9\u30c0",
+    "kana": "\u30b5\u30e9\u30c0",
+    "eng": "salad",
+    "rei": "\u30b5\u30e9\u30c0\u304c\u3042\u308b\u306e\u306b\u3001\u30c9\u30ec\u30b7\u30f3\u30b0\u304c\u306a\u3044\u3002\nThere is salad, but no dressing."
+  },
+  {
+    "id": 62,
+    "kanji": "\u30b5\u30f3\u30c0\u30eb",
+    "kana": "\u30b5\u30f3\u30c0\u30eb",
+    "eng": "sandal",
+    "rei": "\u660e\u65e5\u6d77\u306b\u884c\u304f\u304b\u3089\u3001\u30d3\u30fc\u30c1\u30b5\u30f3\u30c0\u30eb\u3092\u6301\u3063\u305f\u65b9\u304c\u826f\u3044\u3002\nWe will go to the beach tomorrow, so you should bring beach sandals."
+  },
+  {
+    "id": 63,
+    "kanji": "\u30b5\u30f3\u30c9\u30a4\u30c3\u30c1",
+    "kana": "\u30b5\u30f3\u30c9\u30a4\u30c3\u30c1",
+    "eng": "sandwich",
+    "rei": "\u5f7c\u306f\u30b5\u30f3\u30c9\u30a4\u30c3\u30c1\u3092\u98df\u3079\u3066\u3044\u308b\u3002\nHe is eating a sandwich."
+  },
+  {
+    "id": 64,
+    "kanji": "\u3057\u3063\u304b\u308a",
+    "kana": "\u3057\u3063\u304b\u308a",
+    "eng": "firmly; securely; properly; well",
+    "rei": "\u8ab0\u3067\u3082\u5206\u304b\u308b\u3088\u3046\u306b\u3057\u3063\u304b\u308a\u66f8\u3044\u3066\u304f\u3060\u3055\u3044\u3002\nPlease write it well so that anyone can understand it."
+  },
+  {
+    "id": 65,
+    "kanji": "\u3057\u3070\u3089\u304f",
+    "kana": "\u3057\u3070\u3089\u304f",
+    "eng": "a moment; a little while; a while",
+    "rei": "\u304a\u304b\u3051\u306b\u306a\u3063\u3066\u3057\u3070\u3089\u304f\u304a\u5f85\u3061\u304f\u3060\u3055\u3044\u3002\nPlease have a seat and wait for a little while."
+  },
+  {
+    "id": 66,
+    "kanji": "\u3058\u3083\u307e",
+    "kana": "\u3058\u3083\u307e",
+    "eng": "hindrance; obstacle; nuisance",
+    "rei": "\u52c9\u5f37\u3057\u3066\u3044\u308b\u304b\u3089\u3058\u3083\u307e\u3057\u306a\u3044\u3088\u3046\u306b\u9759\u304b\u306b\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nI am studying, so please be quiet so as not to be a nuisance."
+  },
+  {
+    "id": 67,
+    "kanji": "\u30b8\u30e3\u30e0",
+    "kana": "\u30b8\u30e3\u30e0",
+    "eng": "jam",
+    "rei": "\u3053\u306e\u30b8\u30e3\u30e0\u304c\u67d4\u3089\u304b\u304f\u3066\u5857\u308a\u3084\u3059\u3044\u3067\u3059\u3002\nThis jam is soft so it is easy to spread."
+  },
+  {
+    "id": 68,
+    "kanji": "\u305a\u3044\u3076\u3093",
+    "kana": "\u305a\u3044\u3076\u3093",
+    "eng": "very; considerably",
+    "rei": "\u99c5\u304b\u308920\u5206\u6b69\u304b\u306a\u3044\u3068\u3044\u3051\u306a\u3044\u3053\u3068\u306f\u305a\u3044\u3076\u3093\u9060\u3044\u3067\u3059\u306d\u3002\nThat you need to walk 20 minutes from the station is very far."
+  },
+  {
+    "id": 69,
+    "kanji": "\u30b9\u30fc\u30c4",
+    "kana": "\u30b9\u30fc\u30c4",
+    "eng": "suit",
+    "rei": "\u767a\u8868\u3058\u3083\u306a\u3044\u304b\u3089\u30b9\u30fc\u30c4\u3092\u7740\u306a\u304f\u3066\u3082\u3044\u3044\u3068\u601d\u3044\u307e\u3059\u3002\nIt is not a presentation, so I think you do not need to wear a suit."
+  },
+  {
+    "id": 70,
+    "kanji": "\u30b9\u30fc\u30c4\u30b1\u30fc\u30b9",
+    "kana": "\u30b9\u30fc\u30c4\u30b1\u30fc\u30b9",
+    "eng": "suitcase",
+    "rei": "\u65c5\u884c\u306b\u3044\u3064\u3082\u884c\u3063\u3066\u3044\u308b\u30b8\u30e7\u30f3\u306f\u6708\u306b1\u56de\u30b9\u30fc\u30c4\u30b1\u30fc\u30b9\u3092\u4f7f\u3063\u3066\u3044\u307e\u3059\u3002\nJon, who is always going on trips, uses his suitcase once a month."
+  },
+  {
+    "id": 71,
+    "kanji": "\u30b9\u30fc\u30d1\u30fc",
+    "kana": "\u30b9\u30fc\u30d1\u30fc",
+    "eng": "supermarket; grocery store",
+    "rei": "\u6750\u6599\u304c\u306a\u3044\u304b\u3089\u30b9\u30fc\u30d1\u30fc\u306b\u884c\u3063\u3066\u304f\u308c\u308b\uff1f\nThere are no ingredients, so would you go to the supermarket?"
+  },
+  {
+    "id": 72,
+    "kanji": "\u3059\u3054\u3044",
+    "kana": "\u3059\u3054\u3044",
+    "eng": "amazing; terrific; terrible; vast (in numbers) | very",
+    "rei": "\u3042\u306e\u30b3\u30f3\u30b5\u30fc\u30c8\u306f\u3059\u3054\u304f\u6df7\u3093\u3067\u3044\u307e\u3057\u305f\u3002\nThat concert was very crowded."
+  },
+  {
+    "id": 73,
+    "kanji": "\u3059\u3063\u304b\u308a",
+    "kana": "\u3059\u3063\u304b\u308a",
+    "eng": "completely; totally; entirely",
+    "rei": "\u6628\u65e5\u5fd9\u3057\u304b\u3063\u305f\u306e\u3067\u3001\u5bbf\u984c\u3092\u3059\u3063\u304b\u308a\u5fd8\u308c\u3066\u3057\u307e\u3044\u307e\u3057\u305f\u3002\nI was busy yesterday, so I completely forgot my homework."
+  },
+  {
+    "id": 74,
+    "kanji": "\u3059\u3063\u3068",
+    "kana": "\u3059\u3063\u3068",
+    "eng": "directly; all of a sudden",
+    "rei": "\u4e21\u89aa\u3068\u8a71\u3057\u305f\u304f\u306a\u304b\u3063\u305f\u304b\u3089\u5e30\u3063\u305f\u3089\u3059\u3063\u3068\u81ea\u5206\u306e\u90e8\u5c4b\u306b\u884c\u3063\u305f\u3002\nI didn't want to talk with my parents, so I went directly to my room when I got home."
+  },
+  {
+    "id": 75,
+    "kanji": "\u305a\u3063\u3068",
+    "kana": "\u305a\u3063\u3068",
+    "eng": "the whole time; all the way",
+    "rei": "23\u6b73\u304b\u3089\u305a\u3063\u3068\u65e5\u672c\u306b\u4f4f\u3093\u3067\u3044\u307e\u3059\u3002\nI have been living in Japan the whole time since I was 23."
+  },
+  {
+    "id": 76,
+    "kanji": "\u30b9\u30c6\u30fc\u30ad",
+    "kana": "\u30b9\u30c6\u30fc\u30ad",
+    "eng": "steak",
+    "rei": "\u3042\u306e\u6709\u540d\u306a\u30ec\u30b9\u30c8\u30e9\u30f3\u306e\u30b9\u30c6\u30fc\u30ad\u304c\u98df\u3079\u3066\u307f\u305f\u3044\u3002\nI want to try eating the steak at that famous restaurant."
+  },
+  {
+    "id": 77,
+    "kanji": "\u3059\u308a",
+    "kana": "\u3059\u308a",
+    "eng": "pickpocket",
+    "rei": "\u8ca1\u5e03\u304c\u3059\u308a\u306b\u76d7\u307e\u308c\u305f\u3002\nMy wallet was stolen by a pickpocket."
+  },
+  {
+    "id": 78,
+    "kanji": "\u305d\u3046\u3067\u3059\u3002",
+    "kana": "\u305d\u3046\u3067\u3059\u3002",
+    "eng": "that's right",
+    "rei": "\n"
+  },
+  {
+    "id": 79,
+    "kanji": "\u30bd\u30d5\u30c8",
+    "kana": "\u30bd\u30d5\u30c8",
+    "eng": "software",
+    "rei": "\u65e5\u672c\u8a9e\u304b\u3089\u30d5\u30e9\u30f3\u30b9\u8a9e\u306b\u8a33\u305b\u308b\u30bd\u30d5\u30c8\u304c\u3042\u308a\u307e\u3059\u304b\uff1f\nDo you have software that can translate from Japanese to French?"
+  },
+  {
+    "id": 80,
+    "kanji": "\u305d\u308c\u3067",
+    "kana": "\u305d\u308c\u3067",
+    "eng": "and; because of that",
+    "rei": "\u300c\u6628\u65e5\u306e\u671d\u96fb\u8eca\u304c\u6b62\u307e\u3063\u3066\u3044\u3066\u3001\u4ed5\u4e8b\u304c\u9045\u308c\u305f\u3002\u300d\u300c\u305d\u308c\u3067\u3001\u30dc\u30b9\u304c\u6012\u3063\u305f\u306e\uff1f\u300d\n\"Yesterday morning the train stopped and I was late for work.\"  \"So was your boss angry because of that?\""
+  },
+  {
+    "id": 81,
+    "kanji": "\u305d\u308c\u306b",
+    "kana": "\u305d\u308c\u306b",
+    "eng": "besides; in addition; also",
+    "rei": "\u3053\u306e\u90e8\u5c4b\u304c\u72ed\u304f\u3066\u6697\u3044\u3067\u3059\u3002\u305d\u308c\u306b\u3001\u5916\u304c\u7169\u3044\u304b\u3089\u52c9\u5f37\u3057\u306b\u304f\u3044\u3067\u3059\u3002\nThis room is small and dark.  In addition it is noisy outside so it is difficult to study."
+  },
+  {
+    "id": 82,
+    "kanji": "\u305d\u308c\u307b\u3069",
+    "kana": "\u305d\u308c\u307b\u3069",
+    "eng": "to that extent",
+    "rei": "\u304a\u8179\u304c\u7a7a\u3044\u3066\u3044\u308b\u3093\u3067\u3059\u304c\u3001\u305d\u308c\u307b\u3069\u3067\u306f\u306a\u3044\u3067\u3059\u3002\nI am hungry, but not to that extent."
+  },
+  {
+    "id": 83,
+    "kanji": "\u305d\u308d\u305d\u308d",
+    "kana": "\u305d\u308d\u305d\u308d",
+    "eng": "soon; any time now",
+    "rei": "\u305d\u308d\u305d\u308d\u5e30\u308a\u307e\u3059\u3002\nI\u2019ll go home soon."
+  },
+  {
+    "id": 84,
+    "kanji": "\u305d\u3093\u306a",
+    "kana": "\u305d\u3093\u306a",
+    "eng": "such; like that",
+    "rei": "\u305d\u3093\u306a\u60b2\u3057\u3044\u3053\u3068\u3092\u8a00\u308f\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\nDon't say things that sad."
+  },
+  {
+    "id": 85,
+    "kanji": "\u305d\u3093\u306a\u306b",
+    "kana": "\u305d\u3093\u306a\u306b",
+    "eng": "so much; like that",
+    "rei": "\u30d1\u30ea\u306b\u305d\u3093\u306a\u306b\u7f8e\u5473\u3057\u3044\u30e9\u30fc\u30e1\u30f3\u304c\u3042\u308a\u307e\u3057\u305f\uff1f\nWas there ramen that delicious in Paris?"
+  },
+  {
+    "id": 86,
+    "kanji": "\u30bf\u30a4\u30d7",
+    "kana": "\u30bf\u30a4\u30d7",
+    "eng": "type; kind; style",
+    "rei": "\u5c71\u672c\u3055\u3093\u306f\u305d\u3093\u306a\u771f\u9762\u76ee\u306a\u30bf\u30a4\u30d7\u306e\u4eba\u3067\u3059\u306d\u3002\nMr. Yamamoto is that kind of serious person."
+  },
+  {
+    "id": 87,
+    "kanji": "\u3060\u304b\u3089",
+    "kana": "\u3060\u304b\u3089",
+    "eng": "so; therefore",
+    "rei": "\u6628\u65e5\u30c6\u30ec\u30d3\u3067\u3042\u306e\u5e97\u3092\u898b\u305f\u3002\u3060\u304b\u3089\u4eca\u65e5\u884c\u3063\u3066\u307f\u305f\u3044\u3002\nI saw that store on TV yesterday.  So, I wanted to try and go today."
+  },
+  {
+    "id": 88,
+    "kanji": "\u305f\u307e\u306b",
+    "kana": "\u305f\u307e\u306b",
+    "eng": "occasionally; once in a while",
+    "rei": "\u305f\u307e\u306b\u4e00\u65e5\u4e2d\u30cd\u30c3\u30c8\u30d5\u30a3\u30ea\u30c3\u30af\u30b9\u3092\u898b\u3066\u30ea\u30e9\u30c3\u30af\u30b9\u3059\u308b\u3002\nOnce in a while I watch Netflix all day and relax."
+  },
+  {
+    "id": 89,
+    "kanji": "\u30c0\u30e1",
+    "kana": "\u3060\u3081",
+    "eng": "no good",
+    "rei": "\u3082\u3063\u3068\u9811\u5f35\u3089\u306a\u3044\u3068\u30c0\u30e1\u3067\u3059\u3088\u3002\nIt is not good if you don't persevere harder."
+  },
+  {
+    "id": 90,
+    "kanji": "\u30c1\u30a7\u30c3\u30af",
+    "kana": "\u30c1\u30a7\u30c3\u30af",
+    "eng": "check; look over",
+    "rei": "\u9593\u9055\u3048\u304c\u306a\u3044\u3088\u3046\u306b\u30c1\u30a7\u30c3\u30af\u3057\u3066\u304f\u308c\u307e\u3059\u304b\uff1f\nWill you check this for me so there are no errors?"
+  },
+  {
+    "id": 91,
+    "kanji": "\u30c1\u30a7\u30c3\u30af\u3059\u308b",
+    "kana": "\u30c1\u30a7\u30c3\u30af\u3059\u308b",
+    "eng": "to check",
+    "rei": "\u6bce\u65e5\u5929\u6c17\u4e88\u5831\u3092\u30c1\u30a7\u30c3\u30af\u3057\u3066\u3044\u307e\u3059\u3002\nI check the weather report every day."
+  },
+  {
+    "id": 92,
+    "kanji": "\u3061\u3063\u3068\u3082",
+    "kana": "\u3061\u3063\u3068\u3082",
+    "eng": "not at all",
+    "rei": "\u3055\u3063\u304d\u8d77\u304d\u305f\u304b\u3089\u3061\u3063\u3068\u3082\u7720\u304f\u306a\u3044\u3002\nI just woke up so I am not at all sleepy."
+  },
+  {
+    "id": 93,
+    "kanji": "\u3061\u3083\u3093",
+    "kana": "\u3061\u3083\u3093",
+    "eng": "suffix for familiar person",
+    "rei": "\u3086\u304d\u3061\u3083\u3093\u3001\u3053\u3063\u3061\u6765\u3066\u3002\nYuki, come here."
+  },
+  {
+    "id": 94,
+    "kanji": "\u3064\u3082\u308a",
+    "kana": "\u3064\u3082\u308a",
+    "eng": "intention; plan",
+    "rei": "\u660e\u65e5\u306f\u5fd9\u3057\u3044\u304b\u3089\u30b8\u30e0\u306b\u884c\u304f\u3064\u3082\u308a\u304c\u306a\u3044\u3067\u3059\u3002\nI am busy tomorrow, so I have no intention of going to the gym."
+  },
+  {
+    "id": 95,
+    "kanji": "\u30c6\u30ad\u30b9\u30c8",
+    "kana": "\u30c6\u30ad\u30b9\u30c8",
+    "eng": "text; textbook",
+    "rei": "\u3053\u3093\u306a\u96e3\u3057\u3044\u30c6\u30ad\u30b9\u30c8\u304c\u3088\u304fN1\u306e\u8a66\u9a13\u306b\u3042\u308a\u307e\u3059\u3002\nThis kind of difficult text is often on the N1 test."
+  },
+  {
+    "id": 96,
+    "kanji": "\u30c6\u30cb\u30b9",
+    "kana": "\u30c6\u30cb\u30b9",
+    "eng": "tennis",
+    "rei": "\u4e00\u56de\u7530\u4e2d\u3055\u3093\u3068\u4e00\u7dd2\u306b\u30c6\u30cb\u30b9\u3092\u3084\u3063\u3066\u307f\u305f\u3044\u3002\nI want to try playing tennis with Tanaka-san once."
+  },
+  {
+    "id": 97,
+    "kanji": "\u3068\u3046\u3068\u3046",
+    "kana": "\u3068\u3046\u3068\u3046",
+    "eng": "finally; ultimately",
+    "rei": "\u4e00\u6240\u61f8\u547d\u306b\u9811\u5f35\u3063\u305f\u306e\u306b\u3001\u96e3\u3057\u3059\u304e\u3066\u3068\u3046\u3068\u3046\u6b62\u3081\u3066\u3057\u307e\u3063\u305f\u3002\nI tried as hard as I could, but it was too difficult and I finally stopped."
+  },
+  {
+    "id": 98,
+    "kanji": "\u3069\u3093\u3069\u3093",
+    "kana": "\u3069\u3093\u3069\u3093",
+    "eng": "rapidly; steadily | one after the other",
+    "rei": "\u53f0\u98a8\u304c\u8fd1\u3065\u3044\u305f\u3089\u3001\u98a8\u304c\u3069\u3093\u3069\u3093\u5f37\u304f\u306a\u308a\u307e\u3059\u3002\nWhen the taiphoon approaches, the wind will become steadily stronger."
+  },
+  {
+    "id": 99,
+    "kanji": "\u306a\u304b\u306a\u304b",
+    "kana": "\u306a\u304b\u306a\u304b",
+    "eng": "very; considerably",
+    "rei": "\u305d\u308c\u306f\u306a\u304b\u306a\u304b\u96e3\u3057\u3044\u8cea\u554f\u3067\u3059\u306d\u3002\nThat is a very difficult problem."
+  },
+  {
+    "id": 100,
+    "kanji": "\u306a\u3055\u308b",
+    "kana": "\u306a\u3055\u308b",
+    "eng": "(hon) to do",
+    "rei": "\u660e\u65e5\u3069\u3046\u306a\u3055\u3044\u307e\u3059\u304b\uff1f\nWhat will you do tomorrow?"
+  },
+  {
+    "id": 101,
+    "kanji": "\u306a\u308b\u3079\u304f",
+    "kana": "\u306a\u308b\u3079\u304f",
+    "eng": "as much as possible; if at all possible",
+    "rei": "\u5bbf\u984c\u3058\u3083\u306a\u3044\u3093\u3067\u3059\u304c\u3001\u5206\u304b\u3063\u3066\u307b\u3057\u3044\u3053\u3068\u306a\u306e\u3067\u6642\u9593\u304c\u3042\u308c\u3070\u306a\u308b\u3079\u304f\u8aad\u3093\u3067\u304f\u3060\u3055\u3044\u3002\nThis is not homework, but I want you to understand it, so read it as much as possible if you have time."
+  },
+  {
+    "id": 102,
+    "kanji": "\u306a\u308b\u307b\u3069",
+    "kana": "\u306a\u308b\u307b\u3069",
+    "eng": "I see; of course; that's right",
+    "rei": "\n"
+  },
+  {
+    "id": 103,
+    "kanji": "\u30d1\u30fc\u30c8",
+    "kana": "\u30d1\u30fc\u30c8",
+    "eng": "part-time (work)",
+    "rei": "\u30d1\u30fc\u30c8\u306e\u4ed5\u4e8b\u3092\u63a2\u3057\u307e\u3059\u3002\nI will look for part-time work."
+  },
+  {
+    "id": 104,
+    "kanji": "\u30d1\u30bd\u30b3\u30f3",
+    "kana": "\u30d1\u30bd\u30b3\u30f3",
+    "eng": "personal computer",
+    "rei": "\u30d1\u30b9\u30b3\u30f3\u304c\u53e4\u3044\u304b\u3089\u65b0\u3057\u3044\u306e\u306f\u6b32\u3057\u3044\u3002\nMy PC is old, so I want a new one."
+  },
+  {
+    "id": 105,
+    "kanji": "\u306f\u3063\u304d\u308a",
+    "kana": "\u306f\u3063\u304d\u308a",
+    "eng": "clearly; plainly | to be clear; to be definite",
+    "rei": "\u306f\u3063\u304d\u308a\u8a00\u3044\u306a\u3055\u3044\u3002\nSpeak clearly."
+  },
+  {
+    "id": 106,
+    "kanji": "\u30d1\u30d1",
+    "kana": "\u30d1\u30d1",
+    "eng": "Papa",
+    "rei": "\u30d1\u30d1\u3001\u304a\u8179\u304c\u7a7a\u3044\u305f\u3088\u3002\nPapa, I'm hungry."
+  },
+  {
+    "id": 107,
+    "kanji": "\u30cf\u30f3\u30c9\u30d0\u30c3\u30b0",
+    "kana": "\u30cf\u30f3\u30c9\u30d0\u30c3\u30b0",
+    "eng": "handbag; purse",
+    "rei": "\u5f7c\u5973\u306f\u9769\u88fd\u306e\u30cf\u30f3\u30c9\u30d0\u30c3\u30b0\u3092\u304f\u308c\u305f\u3002\nShe gave me a leather handbag."
+  },
+  {
+    "id": 108,
+    "kanji": "\u30cf\u30f3\u30d0\u30fc\u30b0",
+    "kana": "\u30cf\u30f3\u30d0\u30fc\u30b0",
+    "eng": "hamburger (refers to meat, not the bun); Hamburg steak",
+    "rei": "\u7f8e\u5473\u3057\u3044\u30cf\u30f3\u30d0\u30fc\u30b0\u304c\u98df\u3079\u3089\u308c\u308b\u5e97\u304c\u3054\u5b58\u77e5\u3067\u3059\u304b\uff1f\nDo you know a store where we can eat delicious hamburg steak?"
+  },
+  {
+    "id": 109,
+    "kanji": "\u30d4\u30a2\u30ce",
+    "kana": "\u30d4\u30a2\u30ce",
+    "eng": "piano",
+    "rei": "\u90e8\u5c4b\u304c\u72ed\u3044\u306e\u3067\u30d4\u30a2\u30ce\u3092\u8cb7\u3063\u3066\u3082\u7f6e\u304f\u5834\u6240\u304c\u306a\u3044\u3067\u3059\u3002\nMy room is small, so even if I buy a piano I have no place to put it."
+  },
+  {
+    "id": 110,
+    "kanji": "\u3072\u3052",
+    "kana": "\u3072\u3052",
+    "eng": "moustache; beard; facial hair",
+    "rei": "\u6bce\u671d\u3072\u3052\u3092\u5243\u308a\u307e\u3059\u3002\nI shave my beard every morning."
+  },
+  {
+    "id": 111,
+    "kanji": "\u3073\u3063\u304f\u308a",
+    "kana": "\u3073\u3063\u304f\u308a",
+    "eng": "to be surprised",
+    "rei": "\u3042\u306e\u4eba\u6c17\u306a\u5c45\u9152\u5c4b\u306b10\u4eba\u3057\u304b\u5165\u308c\u306a\u304f\u3066\u3073\u3063\u304f\u308a\u3057\u307e\u3057\u305f\u3002\nI was surprised because only 10 people could enter that popular izakaya."
+  },
+  {
+    "id": 112,
+    "kanji": "\u3072\u3069\u3044",
+    "kana": "\u3072\u3069\u3044",
+    "eng": "cruel; harsh; awful",
+    "rei": "\u5d50\u3060\u304b\u3089\u98a8\u304c\u3072\u3069\u304f\u5439\u304f\u3002\nIt is a storm so the wind will blow harshly."
+  },
+  {
+    "id": 113,
+    "kanji": "\u30d3\u30eb",
+    "kana": "\u30d3\u30eb",
+    "eng": "a building",
+    "rei": "\u5c71\u672c\u3055\u3093\u306e\u90e8\u5c4b\u306f\u3042\u306e\u30d3\u30eb\u306e\u4f55\u968e\u304b\u5206\u304b\u308a\u307e\u3059\u304b\uff1f\nDo you know what floor of that building Mrs. Yamamoto\u2019s room is?"
+  },
+  {
+    "id": 114,
+    "kanji": "\u30d5\u30a1\u30c3\u30af\u30b9",
+    "kana": "\u30d5\u30a1\u30c3\u30af\u30b9",
+    "eng": "FAX",
+    "rei": "\u30d5\u30a1\u30c3\u30af\u30b9\u3092\u4f7f\u3063\u3066\u3044\u308b\u4f1a\u793e\u304c\u5c11\u306a\u304f\u306a\u3063\u3066\u3044\u307e\u3059\u3002\nCompanies that use fax are becoming fewer."
+  },
+  {
+    "id": 115,
+    "kanji": "\u3076\u3069\u3046",
+    "kana": "\u3076\u3069\u3046",
+    "eng": "grape (fruit)",
+    "rei": "\u7a2e\u304c\u306a\u3044\u3076\u3069\u3046\u306f\u597d\u304d\u3067\u3059\u3002\nI like grapes without seeds."
+  },
+  {
+    "id": 116,
+    "kanji": "\u30d7\u30ec\u30bc\u30f3\u30c8",
+    "kana": "\u30d7\u30ec\u30bc\u30f3\u30c8",
+    "eng": "present; gift | to give a present",
+    "rei": "\u6bcd\u306b\u30d7\u30ec\u30bc\u30f3\u30c8\u3092\u3082\u3089\u3044\u307e\u3057\u305f\u3002\nI received a present from my mother."
+  },
+  {
+    "id": 117,
+    "kanji": "\u30d9\u30eb",
+    "kana": "\u30d9\u30eb",
+    "eng": "bell",
+    "rei": "\u6388\u696d\u304c\u59cb\u307e\u3063\u305f\u3089\u3001\u30d9\u30eb\u304c\u9cf4\u308a\u307e\u3059\u3002\nThe bell will ring when class begins."
+  },
+  {
+    "id": 118,
+    "kanji": "\u307b\u3068\u3093\u3069",
+    "kana": "\u307b\u3068\u3093\u3069",
+    "eng": "mostly; nearly; just about",
+    "rei": "\u30d1\u30fc\u30c6\u30a3\u306f\u307b\u3068\u3093\u3069\u5973\u6027\u3060\u3063\u305f\u3002\nThe party was mostly women."
+  },
+  {
+    "id": 119,
+    "kanji": "\u307e\u305a",
+    "kana": "\u307e\u305a",
+    "eng": "first (of all); to start with",
+    "rei": "\u307e\u305a\u4f55\u3092\u4f5c\u308b\u306e\u304b\u6c7a\u3081\u3066\u304b\u3089\u6750\u6599\u3092\u8cb7\u3044\u307e\u3057\u3087\u3046\u3002\nLet's first decide what to make, then let's buy ingredients."
+  },
+  {
+    "id": 120,
+    "kanji": "\u3082\u3046\u3059\u3050",
+    "kana": "\u3082\u3046\u3059\u3050",
+    "eng": "soon",
+    "rei": "\u3082\u3046\u3059\u3050\u96e8\u304c\u964d\u308a\u305d\u3046\u3067\u3059\u3002\nIt seems like it will rain soon."
+  },
+  {
+    "id": 121,
+    "kanji": "\u3082\u3057",
+    "kana": "\u3082\u3057",
+    "eng": "if; in case",
+    "rei": "\u3082\u3057\u9045\u308c\u305f\u3089\u3001\u9023\u7d61\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease contact me if you are going to be late."
+  },
+  {
+    "id": 122,
+    "kanji": "\u3082\u3089\u3046",
+    "kana": "\u3082\u3089\u3046",
+    "eng": "to receive",
+    "rei": "\u5f7c\u5973\u306f\u30d7\u30ec\u30bc\u30f3\u30c8\u3092\u3082\u3089\u3063\u305f\u3089\u5b09\u3057\u304f\u898b\u3048\u305f\u3002\nShe looked overjoyed when she received the present."
+  },
+  {
+    "id": 123,
+    "kanji": "\u3084\u3063\u3068",
+    "kana": "\u3084\u3063\u3068",
+    "eng": "at last; finally",
+    "rei": "\u4eca\u65e5\u305a\u3063\u3068\u7acb\u3063\u3066\u4ed5\u4e8b\u3057\u305f\u3093\u3067\u3059\u304c\u3001\u3084\u3063\u3068\u7d42\u308f\u308a\u307e\u3057\u305f\u3002\nI worked while standing today, but it is finally over."
+  },
+  {
+    "id": 124,
+    "kanji": "\u3084\u3063\u3071\u308a",
+    "kana": "\u3084\u3063\u3071\u308a",
+    "eng": "as expected; still; in spite of",
+    "rei": "\u7686\u304c\u30c0\u30e1\u3068\u8a00\u3044\u307e\u3057\u305f\u304c\u3001\u3084\u3063\u3071\u308a\u5f7c\u5973\u306f\u6b32\u3057\u3044\u304b\u3089\u8cb7\u3063\u3066\u3057\u307e\u3044\u307e\u3057\u305f\u3002\nEveryone said it was no good, but she wanted it so she bought it."
+  },
+  {
+    "id": 125,
+    "kanji": "\u3084\u306f\u308a",
+    "kana": "\u3084\u306f\u308a",
+    "eng": "as expected; still; in spite of",
+    "rei": "\u7686\u304c\u30c0\u30e1\u3068\u8a00\u3044\u307e\u3057\u305f\u304c\u3001\u3084\u306f\u308a\u5f7c\u5973\u306f\u6b32\u3057\u3044\u304b\u3089\u8cb7\u3063\u3066\u3057\u307e\u3044\u307e\u3057\u305f\u3002\nEveryone said it was no good, but she wanted it so she bought it."
+  },
+  {
+    "id": 126,
+    "kanji": "\u30ec\u30b8",
+    "kana": "\u30ec\u30b8",
+    "eng": "cash register",
+    "rei": "\u30ec\u30b8\u3067\u4f1a\u8a08\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease pay at the register."
+  },
+  {
+    "id": 127,
+    "kanji": "\u30ec\u30dd\u30fc\u30c8",
+    "kana": "\u30ec\u30dd\u30fc\u30c8",
+    "eng": "report; paper",
+    "rei": "\u91d1\u66dc\u65e5\u307e\u3067\u306b\u30ec\u30dd\u30fc\u30c8\u3092\u51fa\u3055\u306a\u3051\u308c\u3070\u3001\u6388\u696d\u3092\u5931\u6557\u3057\u307e\u3059\u3002\nIf I do not turn in the report by Friday, I will fail the class."
+  },
+  {
+    "id": 128,
+    "kanji": "\u30ef\u30fc\u30d7\u30ed",
+    "kana": "\u30ef\u30fc\u30d7\u30ed",
+    "eng": "word processor",
+    "rei": "\u30ef\u30fc\u30d7\u30ed\u3067\u624b\u7d19\u3092\u66f8\u304d\u307e\u3057\u305f\u3002\nI wrote a letter on the word processor."
+  },
+  {
+    "id": 129,
+    "kanji": "\u4e00\u5ea6",
+    "kana": "\u3044\u3061\u3069",
+    "eng": "once",
+    "rei": "1\u9031\u9593\u306b\u4e00\u5ea6\u6c34\u6cf3\u3092\u3057\u3066\u3044\u307e\u3059\u3002\nI am swimming once a week."
+  },
+  {
+    "id": 130,
+    "kanji": "\u4e00\u751f\u61f8\u547d",
+    "kana": "\u3044\u3063\u3057\u3087\u3046\u3051\u3093\u3081\u3044",
+    "eng": "with all one's might; very hard",
+    "rei": "\u8a66\u9a13\u3092\u5931\u6557\u3057\u306a\u3044\u3088\u3046\u306b\u4e00\u751f\u61f8\u547d\u52c9\u5f37\u3057\u306a\u3055\u3044\u3002\nStudy hard so you don't fail the test."
+  },
+  {
+    "id": 131,
+    "kanji": "\u4e01\u5be7",
+    "kana": "\u3066\u3044\u306d\u3044",
+    "eng": "polite; courteous | thorough; conscientious",
+    "rei": "\u304a\u5ba2\u69d8\u306b\u4e01\u5be7\u306b\u304a\u3058\u304e\u3092\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease bow politely to the customer."
+  },
+  {
+    "id": 132,
+    "kanji": "\u4e0a\u304c\u308b",
+    "kana": "\u3042\u304c\u308b",
+    "eng": "to rise; to ascend",
+    "rei": "\u6700\u8fd1\u30ac\u30bd\u30ea\u30f3\u306e\u5024\u6bb5\u304c\u3069\u3093\u3069\u3093\u4e0a\u304c\u3063\u3066\u3044\u308b\u306d\u3002\nThe price of gasoline has been going up more and more recently."
+  },
+  {
+    "id": 133,
+    "kanji": "\u4e0a\u3052\u308b",
+    "kana": "\u3042\u3052\u308b",
+    "eng": "to raise; to elevate | to increase (price, quality, status, etc.)",
+    "rei": "\u7b54\u3048\u304c\u5206\u304b\u308b\u4eba\u3001\u624b\u3092\u4e0a\u3052\u3066\u304f\u3060\u3055\u3044\u3002\nPeople who know the answer, raise your hand."
+  },
+  {
+    "id": 134,
+    "kanji": "\u4e0b\u304c\u308b",
+    "kana": "\u3055\u304c\u308b",
+    "eng": "to come down; to hang",
+    "rei": "\u6628\u65e5\u71b1\u304c\u3042\u3063\u305f\u3093\u3067\u3059\u3051\u3069\u3001\u4eca\u671d\u4e0b\u304c\u308a\u307e\u3057\u305f\u3002\nI had a fever yesterday, but it came down this morning."
+  },
+  {
+    "id": 135,
+    "kanji": "\u4e0b\u3052\u308b",
+    "kana": "\u3055\u3052\u308b",
+    "eng": "to hang | to lower",
+    "rei": "\u624b\u3092\u4e0b\u3052\u3066\u304f\u3060\u3055\u3044\u3002\nPlease lower your hand."
+  },
+  {
+    "id": 136,
+    "kanji": "\u4e0b\u3055\u308b",
+    "kana": "\u304f\u3060\u3055\u308b",
+    "eng": "(hon) to give (to me)",
+    "rei": "\u5148\u751f\u304c\u52c9\u5f37\u8cc7\u6599\u3092\u4e0b\u3055\u3063\u305f\u304b\u3089\u5408\u683c\u3057\u307e\u3057\u305f\u3002\nI passed because the teacher gave me study materials."
+  },
+  {
+    "id": 137,
+    "kanji": "\u4e0b\u308a\u308b",
+    "kana": "\u304a\u308a\u308b",
+    "eng": "to descend (e.g. a mountain); to go down",
+    "rei": "\u30b1\u30f3\u304c\u5c71\u304b\u3089\u4e0b\u308a\u3066\u304d\u305f\u3002\nKen climbed down from the mountain."
+  },
+  {
+    "id": 138,
+    "kanji": "\u4e0b\u308b",
+    "kana": "\u3055\u304c\u308b",
+    "eng": "to descend; to come down",
+    "rei": "\u5f7c\u306f\u81ea\u8ee2\u8eca\u3067\u5742\u3092\u4e0b\u308a\u307e\u3057\u305f\u3002\nHe came down the hill on a bicycle."
+  },
+  {
+    "id": 139,
+    "kanji": "\u4e0b\u5bbf",
+    "kana": "\u3052\u3057\u3085\u304f",
+    "eng": "lodging; boarding house",
+    "rei": "\u30db\u30c6\u30eb\u306b\u6cca\u307e\u3089\u306a\u304f\u3066\u3082\u3044\u3044\u306e\u3067\u3001\u4e0b\u5bbf\u3092\u63a2\u305d\u3046\u3002\nI\u2019m fine not staying at a hotel so let\u2019s look for lodging."
+  },
+  {
+    "id": 140,
+    "kanji": "\u4e0b\u7740",
+    "kana": "\u3057\u305f\u304e",
+    "eng": "underwear",
+    "rei": "\u4e0b\u7740\u30921\u3064\u3057\u304b\u6301\u3063\u3066\u6765\u3066\u3044\u306a\u3044\u306e\u3067\u3001\u5e97\u306b\u884c\u304b\u306a\u3044\u3068\u3044\u3051\u306a\u3044\u3067\u3059\u3002\nI only brought one pair of underwear, so I need to go to the store."
+  },
+  {
+    "id": 141,
+    "kanji": "\u4e0d\u4fbf",
+    "kana": "\u3075\u3079\u3093",
+    "eng": "inconvenience",
+    "rei": "\u96fb\u8a71\u304c\u306a\u3044\u3068\u4e0d\u4fbf\u3060\u306d\u3002\nIt\u2019s inconvenient not to have a phone."
+  },
+  {
+    "id": 142,
+    "kanji": "\u4e16\u754c",
+    "kana": "\u305b\u304b\u3044",
+    "eng": "world",
+    "rei": "\u4e16\u754c\u306b\u4e00\u756a\u9ad8\u3044\u30d3\u30eb\u306f\u3069\u3053\u3067\u3059\u304b\uff1f\nWhere is the tallest building in the world?"
+  },
+  {
+    "id": 143,
+    "kanji": "\u4e16\u8a71",
+    "kana": "\u305b\u308f",
+    "eng": "looking after",
+    "rei": "\u5f7c\u5973\u306f\u8d64\u3093\u574a\u306e\u4e16\u8a71\u3092\u3057\u305f\u3002\nShe looked after the baby."
+  },
+  {
+    "id": 144,
+    "kanji": "\u4e21\u65b9",
+    "kana": "\u308a\u3087\u3046\u307b\u3046",
+    "eng": "both; both sides",
+    "rei": "\u91ce\u83dc\u3068\u679c\u7269\u306e\u3069\u3061\u3089\u304c\u98df\u3079\u305f\u3044\u3067\u3059\u304b\uff1f\u4e21\u65b9\u304c\u98df\u3079\u305f\u3044\u3067\u3059\u3002\nWould you rather eat vegetables or fruits?  I want to eat both."
+  },
+  {
+    "id": 145,
+    "kanji": "\u4e2d\u5b66\u6821",
+    "kana": "\u3061\u3085\u3046\u304c\u3063\u3053\u3046",
+    "eng": "middle school",
+    "rei": "\u4e2d\u5b66\u6821\u3092\u5352\u696d\u3059\u308b\u3068\u3001\u9ad8\u6821\u306b\u884c\u304f\u3002\nWhen you graduate from middle school, you to go high school."
+  },
+  {
+    "id": 146,
+    "kanji": "\u4e45\u3057\u3076\u308a",
+    "kana": "\u3072\u3055\u3057\u3076\u308a",
+    "eng": "a long time; it's been a while",
+    "rei": "\u4e45\u3057\u3076\u308a\u3067\u3059\u3002\nLong time no see."
+  },
+  {
+    "id": 147,
+    "kanji": "\u4e57\u308a\u63db\u3048\u308b",
+    "kana": "\u306e\u308a\u304b\u3048\u308b",
+    "eng": "to transfer/change (bus, train)",
+    "rei": "\u6b21\u306e\u99c5\u3067\u4e57\u308a\u63db\u3048\u307e\u3059\u3002\nI will change trains at the next station."
+  },
+  {
+    "id": 148,
+    "kanji": "\u4e57\u308a\u7269",
+    "kana": "\u306e\u308a\u3082\u306e",
+    "eng": "vehicle",
+    "rei": "\u6771\u4eac\u306b\u8272\u3005\u306a\u4e57\u308a\u7269\u304c\u3042\u308a\u307e\u3059\u304c\u3001\u96fb\u8eca\u304c\u4e00\u756a\u4fbf\u5229\u3060\u3068\u601d\u3044\u307e\u3059\u3002\nThere are various vehicles in Tokyo, but I think the train is the most convenient."
+  },
+  {
+    "id": 149,
+    "kanji": "\u4e7e\u304f",
+    "kana": "\u304b\u308f\u304f",
+    "eng": "to get dry",
+    "rei": "\u4eca\u65e5\u306f\u6691\u3044\u304b\u3089\u6d17\u6fef\u7269\u304c\u3059\u3050\u4e7e\u304f\u3068\u601d\u3046\u3002\nToday is hot, so it think the laundry will dry quickly."
+  },
+  {
+    "id": 150,
+    "kanji": "\u4e88\u5b9a",
+    "kana": "\u3088\u3066\u3044",
+    "eng": "plans; schedule | expectation; estimate",
+    "rei": "\u5c71\u672c\u3055\u3093\u304c\u5225\u306e\u4e88\u5b9a\u304c\u3042\u308a\u305d\u3046\u3067\u3059\u3002\nYamamoto-san seems to have other plans."
+  },
+  {
+    "id": 151,
+    "kanji": "\u4e88\u7d04",
+    "kana": "\u3088\u3084\u304f",
+    "eng": "reservation; appointment",
+    "rei": "4\u6642\u306e\u4e88\u7d04\u306a\u306e\u3067\u30013\u6642\u307e\u3067\u306b\u51fa\u307e\u3059\u3002\nI have reservations at 4:00, so I will leave by 3:00."
+  },
+  {
+    "id": 152,
+    "kanji": "\u4e88\u7fd2",
+    "kana": "\u3088\u3057\u3085\u3046",
+    "eng": "preparation for a lesson",
+    "rei": "\u6388\u696d\u306e\u4e88\u7fd2\u3092\u3057\u306a\u3051\u308c\u3070\u3001\u5148\u751f\u304c\u6012\u308a\u307e\u3059\u3002\nIf I don\u2019t prepare for class, sensei will be angry."
+  },
+  {
+    "id": 153,
+    "kanji": "\u4e8b\u52d9\u6240",
+    "kana": "\u3058\u3080\u3057\u3087",
+    "eng": "office",
+    "rei": "\u66f8\u985e\u3092\u51fa\u3057\u3066\u304b\u3089\u4e8b\u52d9\u6240\u306b\u623b\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nPlease return to the office after you submit the papers."
+  },
+  {
+    "id": 154,
+    "kanji": "\u4e8b\u6545",
+    "kana": "\u3058\u3053",
+    "eng": "accident; incident; trouble",
+    "rei": "\u4e8b\u6545\u304c\u8d77\u304d\u306a\u3044\u3088\u3046\u306b\u6c17\u3092\u4ed8\u3051\u3066\u304f\u3060\u3055\u3044\u3002\nBe careful so as not to have an accident."
+  },
+  {
+    "id": 155,
+    "kanji": "\u4ea1\u304f\u306a\u308b",
+    "kana": "\u306a\u304f\u306a\u308b",
+    "eng": "to die; to pass away",
+    "rei": "\u77e5\u308a\u5408\u3044\u304c\u4ea4\u901a\u4e8b\u6545\u3067\u4ea1\u304f\u306a\u308a\u307e\u3057\u305f\u3002\nMy acquaintance passed away in a trafic accident."
+  },
+  {
+    "id": 156,
+    "kanji": "\u4ea4\u901a",
+    "kana": "\u3053\u3046\u3064\u3046",
+    "eng": "traffic; transportation; communication",
+    "rei": "\u77e5\u308a\u5408\u3044\u304c\u4ea4\u901a\u4e8b\u6545\u3067\u4ea1\u304f\u306a\u308a\u307e\u3057\u305f\u3002\nMy acquaintance passed away in a trafic accident."
+  },
+  {
+    "id": 157,
+    "kanji": "\u4eba\u53e3",
+    "kana": "\u3058\u3093\u3053\u3046",
+    "eng": "population",
+    "rei": "\u6771\u4eac\u306e\u4eba\u53e3\u306f\u3069\u306e\u304f\u3089\u3044\u3067\u3059\u304b\uff1f\nAbout how much is the population of Tokyo?"
+  },
+  {
+    "id": 158,
+    "kanji": "\u4eba\u5f62",
+    "kana": "\u306b\u3093\u304e\u3087\u3046",
+    "eng": "doll; puppet; figure",
+    "rei": "\u3042\u306e\u8d64\u3061\u3083\u3093\u306f\u4eba\u5f62\u306e\u3088\u3046\u306a\u5927\u304d\u3055\u3067\u3059\u306d\u3002\nThat baby is the size of a doll."
+  },
+  {
+    "id": 159,
+    "kanji": "\u4eca\u591c",
+    "kana": "\u3053\u3093\u3084",
+    "eng": "this evening; tonight",
+    "rei": "\u4eca\u591c\u306e\u30d1\u30fc\u30c6\u30a3\u3067\u304a\u9152\u3092\u98f2\u307f\u3059\u304e\u306a\u3044\u3067\u306d\u3002\nDon\u2019t drink too much alcohol at tonight\u2019s party."
+  },
+  {
+    "id": 160,
+    "kanji": "\u4eca\u5ea6",
+    "kana": "\u3053\u3093\u3069",
+    "eng": "next time; another time",
+    "rei": "\u4eca\u5ea6\u30ec\u30dd\u30fc\u30c8\u306b\u540d\u524d\u3092\u66f8\u304f\u3088\u3046\u306b\u6ce8\u610f\u3057\u3066\u304f\u3060\u3055\u3044\u306d\u3002\nPlease be careful to write your name on the report next time."
+  },
+  {
+    "id": 161,
+    "kanji": "\u4ed5\u65b9",
+    "kana": "\u3057\u304b\u305f",
+    "eng": "way; method; means",
+    "rei": "\u52c9\u5f37\u306e\u4ed5\u65b9\u304c\u826f\u304f\u306a\u3051\u308c\u3070\u3001\u3044\u304f\u3089\u9811\u5f35\u3063\u3066\u3082\u899a\u3048\u306a\u3044\u3067\u3059\u3002\nIf your way of studying is not good, no matter how hard to try you won't memorize it."
+  },
+  {
+    "id": 162,
+    "kanji": "\u4ed8\u304f",
+    "kana": "\u3064\u304f",
+    "eng": "to be attached; to stick",
+    "rei": "\u7d19\u304c\u58c1\u306b\u4ed8\u3044\u3066\u3044\u308b\u3002\nThe paper is stuck to the wall."
+  },
+  {
+    "id": 163,
+    "kanji": "\u4ee3\u308f\u308a",
+    "kana": "\u304b\u308f\u308a",
+    "eng": "substitute; replacement",
+    "rei": "\u79c1\u306f\u98a8\u90aa\u304c\u3042\u308b\u306e\u3067\u3001\u4ee3\u308f\u308a\u306b\u767a\u8868\u3057\u3066\u304f\u308c\u307e\u3059\u304b\uff1f\nI have a cold, so would make the presentation in place of me?"
+  },
+  {
+    "id": 164,
+    "kanji": "\u4ee5\u4e0a",
+    "kana": "\u3044\u3058\u3087\u3046",
+    "eng": "more than (or equal to); at least",
+    "rei": "1000\u4e07\u5186\u4ee5\u4e0a\u96c6\u3081\u306a\u3044\u3068\u4f1a\u793e\u304c\u4f5c\u308c\u306a\u3044\u3002\nWe can't create the company if we don't gather at least 10M yen."
+  },
+  {
+    "id": 165,
+    "kanji": "\u4ee5\u4e0b",
+    "kana": "\u3044\u304b",
+    "eng": "less than (or equal to); below",
+    "rei": "4\u4eba\u4ee5\u4e0b\u306e\u4e88\u7d04\u304c\u3067\u304d\u307e\u305b\u3093\u3002\nYou cannot make reservations for less than 4 people."
+  },
+  {
+    "id": 166,
+    "kanji": "\u4ee5\u5185",
+    "kana": "\u3044\u306a\u3044",
+    "eng": "within; up to; less than",
+    "rei": "\u6ce8\u6587\u3057\u3066\u304b\u30891\u9031\u9593\u4ee5\u5185\u5c4a\u304d\u307e\u3059\u3002\nIt will be delivered within 1 week of ordering."
+  },
+  {
+    "id": 167,
+    "kanji": "\u4ee5\u5916",
+    "kana": "\u3044\u304c\u3044",
+    "eng": "with the exception of; other than",
+    "rei": "\u5927\u5b66\u306e\u56f3\u66f8\u9928\u306b\u5b66\u751f\u3068\u5148\u751f\u4ee5\u5916\u306e\u4eba\u304c\u5165\u308c\u306a\u3044\u3067\u3059\u3002\nPeople other than students and teachers cannot enter the university library."
+  },
+  {
+    "id": 168,
+    "kanji": "\u4f1a\u5834",
+    "kana": "\u304b\u3044\u3058\u3087\u3046",
+    "eng": "assembly hall; venue",
+    "rei": "10\u6642\u306b\u4f1a\u5834\u304c\u958b\u304d\u307e\u3059\u3002\nThe assembly hall will open at 10:00."
+  },
+  {
+    "id": 169,
+    "kanji": "\u4f1a\u793e\u54e1",
+    "kana": "\u304b\u3044\u3057\u3083\u3044\u3093",
+    "eng": "company employee",
+    "rei": "\u7530\u4e2d\u3055\u3093\u306f\u4f1a\u793e\u54e1\u3067\u3059\u3002\nMr. Tanaka is a company employee (works for a company)."
+  },
+  {
+    "id": 170,
+    "kanji": "\u4f1a\u8a71",
+    "kana": "\u304b\u3044\u308f",
+    "eng": "conversation",
+    "rei": "\u30de\u30ea\u3068\u4f1a\u8a71\u3057\u305f\u3053\u3068\u304c\u306a\u3044\u3093\u3067\u3059\u304c\u3001\u9762\u767d\u305d\u3046\u306a\u4eba\u3067\u3059\u3002\nI have never spoken with Mari, but she seems like an interesting person."
+  },
+  {
+    "id": 171,
+    "kanji": "\u4f1a\u8b70",
+    "kana": "\u304b\u3044\u304e",
+    "eng": "meeting; conference",
+    "rei": "\u6d77\u5916\u306e\u4eba\u3068\u4f1a\u8b70\u3059\u308b\u306e\u3067\u3001\u3053\u306e\u8cc7\u6599\u3092\u82f1\u8a9e\u306b\u7ffb\u8a33\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease translate these documents to English because we will meet with people overseas."
+  },
+  {
+    "id": 172,
+    "kanji": "\u4f1a\u8b70\u5ba4",
+    "kana": "\u304b\u3044\u304e\u3057\u3064",
+    "eng": "conference room",
+    "rei": "\u4f1a\u8b70\u5ba4\u304c\u7a7a\u3044\u3066\u306a\u3044\u306e\u3067\u3001\u3053\u3053\u3067\u8a71\u3057\u307e\u3057\u3087\u3046\u3002\nThe conference room is not available, so let's talk here."
+  },
+  {
+    "id": 173,
+    "kanji": "\u4f1d\u3048\u308b",
+    "kana": "\u3064\u305f\u3048\u308b",
+    "eng": "to convey; to report; to tell",
+    "rei": "\u79c1\u306e\u65e5\u672c\u8a9e\u304c\u4e0a\u624b\u3058\u3083\u306a\u3044\u306e\u3067\u3001\u9811\u5f35\u3063\u3066\u3082\u4f1d\u3048\u3089\u308c\u306a\u3044\u3067\u3059\u3002\nMy Japanese is not good, so I cannot convey it even if I try."
+  },
+  {
+    "id": 174,
+    "kanji": "\u4f3c\u308b",
+    "kana": "\u306b\u308b",
+    "eng": "to resemble; to look like; to be similar",
+    "rei": "\u606f\u5b50\u304c\u50d5\u306b\u4f3c\u3066\u3044\u308b\u3002\nMy son looks like me."
+  },
+  {
+    "id": 175,
+    "kanji": "\u4f4f\u6240",
+    "kana": "\u3058\u3085\u3046\u3057\u3087",
+    "eng": "address (e.g. of house)",
+    "rei": "\u6f22\u5b57\u304c\u591a\u3044\u304b\u3089\u79c1\u306e\u4f4f\u6240\u304c\u66f8\u304d\u306b\u304f\u3044\u3088\u3002\nMy address is difficult to write become there are many kanji."
+  },
+  {
+    "id": 176,
+    "kanji": "\u4f8b\u3048\u3070",
+    "kana": "\u305f\u3068\u3048\u3070",
+    "eng": "for example; for instance",
+    "rei": "\u4f8b\u3048\u3070\u3001\u6599\u7406\u3068\u6383\u9664\u306f\u5bb6\u4e8b\u3067\u3059\u3002\nFor example, cooking and cleaning are housework."
+  },
+  {
+    "id": 177,
+    "kanji": "\u5012\u308c\u308b",
+    "kana": "\u305f\u304a\u308c\u308b",
+    "eng": "to fall; to collapse | to be ruined | to be defeated (in a game)",
+    "rei": "\u590f\u306b\u6691\u3055\u3067\u5012\u308c\u308b\u4eba\u304c\u3044\u307e\u3059\u3002\nThere are people who collapse due to heat during summer."
+  },
+  {
+    "id": 178,
+    "kanji": "\u5024\u6bb5",
+    "kana": "\u306d\u3060\u3093",
+    "eng": "price; cost",
+    "rei": "\u65b0\u3057\u3044\u30b9\u30de\u30db\u306e\u5024\u6bb5\u304c\u3068\u3066\u3082\u9ad8\u3044\u306e\u306b\u6b32\u3057\u3044\u3067\u3059\u3002\nThe price of a new smartphone is very high, but I want one."
+  },
+  {
+    "id": 179,
+    "kanji": "\u50d5",
+    "kana": "\u307c\u304f",
+    "eng": "(male) I; me",
+    "rei": "\u50d5\u306e\u30d0\u30c3\u30b0\u306f\u7dd1\u3067\u3059\u3002\nMy bag is green."
+  },
+  {
+    "id": 180,
+    "kanji": "\u5104",
+    "kana": "\u304a\u304f",
+    "eng": "100,000,000",
+    "rei": "\u4e16\u754c\u306e\u4eba\u53e3\u306f70\u5104\u4eba\u3067\u3059\u3002\nThe population of the world is 7 billion people."
+  },
+  {
+    "id": 181,
+    "kanji": "\u512a\u3057\u3044",
+    "kana": "\u3084\u3055\u3057\u3044",
+    "eng": "kind; gentle; amiable",
+    "rei": "\u30b8\u30e7\u30f3\u306f\u3044\u3064\u3082\u624b\u4f1d\u3063\u3066\u3044\u3066\u3001\u512a\u3057\u3044\u4eba\u3067\u3059\u3002\nJon is always helping me and a kind person."
+  },
+  {
+    "id": 182,
+    "kanji": "\u5148\u8f29",
+    "kana": "\u305b\u3093\u3071\u3044",
+    "eng": "senior; superior; elder",
+    "rei": "\u5148\u8f29\u306b\u826f\u3044\u65e5\u672c\u8a9e\u306e\u52c9\u5f37\u306e\u4ed5\u65b9\u3092\u7fd2\u3044\u307e\u3057\u305f\u3002\nI learned a good way of studying Japanese from my senior."
+  },
+  {
+    "id": 183,
+    "kanji": "\u5149",
+    "kana": "\u3072\u304b\u308a",
+    "eng": "light; illumination",
+    "rei": "\u5149\u304c\u306a\u3044\u3068\u898b\u3048\u306a\u3044\u3002\nI can\u2019t see if there is no light."
+  },
+  {
+    "id": 184,
+    "kanji": "\u5149\u308b",
+    "kana": "\u3072\u304b\u308b",
+    "eng": "to shine; to glitter",
+    "rei": "\u6708\u304c\u767d\u304f\u5149\u3063\u3066\u3044\u307e\u3059\u3002\nI moon is shining white."
+  },
+  {
+    "id": 185,
+    "kanji": "\u5165\u5b66",
+    "kana": "\u306b\u3085\u3046\u304c\u304f",
+    "eng": "entry to school (enrollment)",
+    "rei": "\u65e5\u672c\u8a9e\u3092\u52c9\u5f37\u3059\u308b\u305f\u3081\u306b\u5165\u5b66\u3057\u307e\u3057\u305f\u3002\nI enrolled to study Japanese."
+  },
+  {
+    "id": 186,
+    "kanji": "\u5165\u9662",
+    "kana": "\u306b\u3085\u3046\u3044\u3093",
+    "eng": "hospitalization",
+    "rei": "\u71b1\u304c\u4e0b\u304c\u3089\u306a\u3044\u304b\u3089\u5165\u9662\u3057\u307e\u3057\u305f\u3002\nI have been hospitalized because my fever does not come down."
+  },
+  {
+    "id": 187,
+    "kanji": "\u5168\u7136",
+    "kana": "\u305c\u3093\u305c\u3093",
+    "eng": "not at all (with neg. verb) | entirely; completely",
+    "rei": "\u30ab\u30b8\u30e5\u30a2\u30eb\u3060\u304b\u3089\u3042\u306e\u30b7\u30e3\u30c4\u3067\u3082\u5168\u7136\u5927\u4e08\u592b\u3060\u3088\u3002\nIt is casual, so even that shirt is completely OK."
+  },
+  {
+    "id": 188,
+    "kanji": "\u516c\u52d9\u54e1",
+    "kana": "\u3053\u3046\u3080\u3044\u3093",
+    "eng": "government worker",
+    "rei": "\u516c\u52d9\u54e1\u306e\u4ed5\u4e8b\u306f\u5b89\u5b9a\u3057\u307e\u3059\u3002\nA government worker\u2019s job is stable."
+  },
+  {
+    "id": 189,
+    "kanji": "\u5177\u5408",
+    "kana": "\u3050\u3042\u3044",
+    "eng": "condition; state; health",
+    "rei": "\u5177\u5408\u304c\u60aa\u3044\u306e\u3067\u5b66\u6821\u3092\u4f11\u307f\u305f\u3044\u3067\u3059\u3002\nI do not feel good, so I want to take a day off from school."
+  },
+  {
+    "id": 190,
+    "kanji": "\u5186",
+    "kana": "\u3048\u3093",
+    "eng": "Yen",
+    "rei": "100\u5186\n100 yen"
+  },
+  {
+    "id": 191,
+    "kanji": "\u518d\u6765\u6708",
+    "kana": "\u3055\u3089\u3044\u3052\u3064",
+    "eng": "month after next",
+    "rei": "\u518d\u6765\u6708\u306f\u4f11\u307f\u306a\u306e\u3067\u3001\u3069\u3053\u304b\u306b\u884c\u3053\u3046\u3002\nThe month after next is vacation, so let's go somewhere."
+  },
+  {
+    "id": 192,
+    "kanji": "\u518d\u6765\u9031",
+    "kana": "\u3055\u3089\u3044\u3057\u3085\u3046",
+    "eng": "week after next",
+    "rei": "\u518d\u6765\u9031\u306f\u4f11\u307f\u306a\u306e\u3067\u3001\u3069\u3053\u304b\u306b\u884c\u3053\u3046\u3002\nThe week after next is vacation, so let's go somewhere."
+  },
+  {
+    "id": 193,
+    "kanji": "\u5199\u3059",
+    "kana": "\u3046\u3064\u3059",
+    "eng": "to copy; to transcribe; to photograph",
+    "rei": "\u5148\u751f\u304c\u9ed2\u677f\u306b\u66f8\u3044\u305f\u3053\u3068\u3092\u5168\u90e8\u30ce\u30fc\u30c8\u306b\u5199\u3057\u305f\u3002\nI copied everything the teacher wrote on the blackboard into the notebook."
+  },
+  {
+    "id": 194,
+    "kanji": "\u51b7\u3048\u308b",
+    "kana": "\u3072\u3048\u308b",
+    "eng": "to cool down; to get cold",
+    "rei": "\u6599\u7406\u304c\u51b7\u3048\u308b\u524d\u306b\u98df\u3079\u305f\u65b9\u304c\u7f8e\u5473\u3057\u3044\u3067\u3059\u3088\u3002\nThe food is more delicious if you eat it before it cools down."
+  },
+  {
+    "id": 195,
+    "kanji": "\u51b7\u623f",
+    "kana": "\u308c\u3044\u307c\u3046",
+    "eng": "cooling; air-conditioner",
+    "rei": "\u51b7\u623f\u304c\u306a\u3051\u308c\u3070\u3001\u590f\u306f\u5927\u5909\u3060\u306d\u3002\nSummer is tough without an air-conditioner."
+  },
+  {
+    "id": 196,
+    "kanji": "\u51fa\u5e2d",
+    "kana": "\u3057\u3085\u3063\u305b\u304d",
+    "eng": "attendance; appearance",
+    "rei": "\u6708\u66dc\u65e5\u306e\u4f1a\u8b70\u306b\u51fa\u5e2d\u3057\u307e\u3059\u3002\nI will attend Monday's meeting."
+  },
+  {
+    "id": 197,
+    "kanji": "\u51fa\u6765\u308b\u3060\u3051",
+    "kana": "\u3067\u304d\u308b\u3060\u3051",
+    "eng": "as much as possible; if at all possible",
+    "rei": "\u51fa\u6765\u308b\u3060\u3051\u3053\u306e\u672c\u3092\u8aad\u3093\u3067\u304f\u3060\u3055\u3044\u3002\nRead this book as much as possible."
+  },
+  {
+    "id": 198,
+    "kanji": "\u51fa\u767a",
+    "kana": "\u3057\u3085\u3063\u3071\u3064",
+    "eng": "departure",
+    "rei": "\u3053\u306e\u96fb\u8eca\u306f18\u664215\u5206\u306b\u51fa\u767a\u3057\u307e\u3059\u3002\nThis train will depart at 18:15"
+  },
+  {
+    "id": 199,
+    "kanji": "\u5225",
+    "kana": "\u3079\u3064",
+    "eng": "different; another; separate",
+    "rei": "\u5c71\u672c\u3055\u3093\u304c\u5225\u306e\u4e88\u5b9a\u304c\u3042\u308a\u305d\u3046\u3067\u3059\u3002\nYamamoto-san seems to have other plans."
+  },
+  {
+    "id": 200,
+    "kanji": "\u5225\u308c\u308b",
+    "kana": "\u308f\u304b\u308c\u308b",
+    "eng": "to part from; to break up",
+    "rei": "\u30b8\u30e7\u30f3\u304c\u5f7c\u5973\u3068\u5225\u308c\u307e\u3057\u305f\u3002\nJohn broke up with his girlfriend."
+  },
+  {
+    "id": 201,
+    "kanji": "\u5229\u7528",
+    "kana": "\u308a\u3088\u3046",
+    "eng": "use; utilization",
+    "rei": "\u5b66\u751f\u3058\u3083\u306a\u3044\u3068\u3053\u306e\u56f3\u66f8\u9928\u3092\u5229\u7528\u3067\u304d\u307e\u305b\u3093\u3002\nYou cannot use this library if you are not a student."
+  },
+  {
+    "id": 202,
+    "kanji": "\u5272\u308c\u308b",
+    "kana": "\u308f\u308c\u308b",
+    "eng": "to break; to split; to be smashed",
+    "rei": "\u843d\u3068\u3057\u305f\u30b3\u30c3\u30d7\u304c\u5272\u308c\u307e\u3057\u305f\u3002\nThe cup I dropped broke."
+  },
+  {
+    "id": 203,
+    "kanji": "\u5272\u5408",
+    "kana": "\u308f\u308a\u3042\u3044",
+    "eng": "ratio; percentage",
+    "rei": "\u8a66\u9a13\u3092\u5408\u683c\u3059\u308b\u4eba\u306e\u5272\u5408\u306f1\u5bfe2\u3067\u3059\u3002\nThe ratio of people who pass the test is 1 in 2."
+  },
+  {
+    "id": 204,
+    "kanji": "\u529b",
+    "kana": "\u3061\u304b\u3089",
+    "eng": "strength; power; skill",
+    "rei": "\u30b8\u30e7\u30f3\u306f\u904b\u52d5\u3057\u3066\u3044\u308b\u306e\u3067\u529b\u304c\u3042\u308a\u307e\u3059\u3002\nJon exercises so he has strength."
+  },
+  {
+    "id": 205,
+    "kanji": "\u52d5\u304f",
+    "kana": "\u3046\u3054\u304f",
+    "eng": "to move",
+    "rei": "\u3053\u306e\u670d\u306f\u52d5\u304d\u3084\u3059\u3044\u304b\u3089\u30b9\u30dd\u30fc\u30c4\u306b\u306f\u826f\u3055\u305d\u3046\u3067\u3059\u306d\u3002\nAs for these clothes, it is easy for me to move so they seem good for sports."
+  },
+  {
+    "id": 206,
+    "kanji": "\u52d5\u7269\u5712",
+    "kana": "\u3069\u3046\u3076\u3064\u3048\u3093",
+    "eng": "zoo",
+    "rei": "\u9031\u672b\u306b\u30b5\u30eb\u3084\u8c61\u304c\u3044\u308b\u52d5\u7269\u5712\u306b\u884c\u304d\u307e\u3057\u305f\u3002\nI went to the zoo where there are monkeys and elephants on the weekend."
+  },
+  {
+    "id": 207,
+    "kanji": "\u52dd\u3064",
+    "kana": "\u304b\u3064",
+    "eng": "to win",
+    "rei": "\u8a66\u5408\u3092\u52dd\u3064\u3088\u3046\u306b\u6bce\u65e5\u7df4\u7fd2\u3057\u3066\u3044\u307e\u3059\u3002\nI am practicing everyday to win the game."
+  },
+  {
+    "id": 208,
+    "kanji": "\u5302\u3044",
+    "kana": "\u306b\u304a\u3044",
+    "eng": "smell; odor",
+    "rei": "\u3042\u305d\u3053\u306e\u5302\u3044\u304c\u826f\u304f\u306a\u304f\u3066\u3001\u982d\u304c\u75db\u3044\u3002\nThe smell over there is not good so my head is sore."
+  },
+  {
+    "id": 209,
+    "kanji": "\u5305\u3080",
+    "kana": "\u3064\u3064\u3080",
+    "eng": "to wrap up; to pack",
+    "rei": "\u30d7\u30ec\u30bc\u30f3\u30c8\u3092\u7dba\u9e97\u306b\u5305\u307f\u307e\u3057\u305f\u306d\u3002\nYou wrapped the present neatly."
+  },
+  {
+    "id": 210,
+    "kanji": "\u533b\u5b66",
+    "kana": "\u3044\u304c\u304f",
+    "eng": "medical science; medicine",
+    "rei": "\u533b\u5b66\u3092\u52c9\u5f37\u3057\u306a\u3044\u3068\u533b\u8005\u306b\u306a\u308c\u307e\u305b\u3093\u3002\nYou cannot become a doctor if you do not study medicine."
+  },
+  {
+    "id": 211,
+    "kanji": "\u5341\u5206",
+    "kana": "\u3058\u3085\u3046\u3076\u3093",
+    "eng": "sufficient; satisfactory; enough",
+    "rei": "1\u4e07\u5186\u306f\u5341\u5206\u3067\u3059\u3088\u3002\n10,000 Yen is enough."
+  },
+  {
+    "id": 212,
+    "kanji": "\u5352\u696d",
+    "kana": "\u305d\u3064\u304e\u3087\u3046",
+    "eng": "graduation",
+    "rei": "\u4e2d\u5b66\u6821\u3092\u5352\u696d\u3059\u308b\u3068\u3001\u9ad8\u6821\u306b\u884c\u304f\u3002\nWhen you graduate from middle school, you to go high school."
+  },
+  {
+    "id": 213,
+    "kanji": "\u5371\u967a",
+    "kana": "\u304d\u3051\u3093",
+    "eng": "danger; peril",
+    "rei": "\u6ce2\u304c\u5f37\u3044\u304b\u3089\u3053\u3053\u3067\u6cf3\u3050\u306e\u306f\u5371\u967a\u3067\u3059\u3002\nIt is dangerous to swim here because the waves are strong."
+  },
+  {
+    "id": 214,
+    "kanji": "\u539f\u56e0",
+    "kana": "\u3052\u3093\u3044\u3093",
+    "eng": "cause",
+    "rei": "\u53e4\u3044\u96fb\u7403\u306f\u706b\u4e8b\u306e\u539f\u56e0\u3067\u3057\u305f\u3002\nAn old lightbulb was the cause of the fire."
+  },
+  {
+    "id": 215,
+    "kanji": "\u53b3\u3057\u3044",
+    "kana": "\u304d\u3073\u3057\u3044",
+    "eng": "strict; harsh; tough",
+    "rei": "\u305d\u306e\u5148\u751f\u306f\u751f\u5f92\u306b\u53b3\u3057\u3044\u3002\nThat teacher is strict with his students."
+  },
+  {
+    "id": 216,
+    "kanji": "\u53c2\u308b",
+    "kana": "\u307e\u3044\u308b",
+    "eng": "(hum) to go; to come; to call",
+    "rei": "\u300c\u9234\u6728\u5148\u751f\u304c\u660e\u65e5\u307e\u3067\u3044\u306a\u3044\u3093\u3067\u3059\u304c\u3002\u300d\u300c\u3067\u306f\u3001\u660e\u5f8c\u65e5\u306b\u307e\u305f\u53c2\u308a\u307e\u3059\u3002\u300d\n\"Suzuki-sensei is absent until tomorrow.\"  \"Then I will come again the day after tomorrow.\""
+  },
+  {
+    "id": 217,
+    "kanji": "\u53c8\u306f",
+    "kana": "\u307e\u305f\u306f",
+    "eng": "or; otherwise",
+    "rei": "\u30d1\u30b9\u30dd\u30fc\u30c8\u53c8\u306f\u5916\u56fd\u4eba\u767b\u9332\u8a3c\u660e\u66f8\u3092\u6301\u3063\u3066\u304d\u3066\u304f\u3060\u3055\u3044\u3002\nPlease bring your passport or your foreigner registration card."
+  },
+  {
+    "id": 218,
+    "kanji": "\u53cd\u5bfe",
+    "kana": "\u306f\u3093\u305f\u3044",
+    "eng": "reverse; opposite | to object to; to oppose",
+    "rei": "\u6691\u3044\u306e\u53cd\u5bfe\u304c\u5bd2\u3044\u3002\nThe opposite of hot is cold."
+  },
+  {
+    "id": 219,
+    "kanji": "\u53d6\u308a\u66ff\u3048\u308b",
+    "kana": "\u3068\u308a\u304b\u3048\u308b",
+    "eng": "to exchange; to replace",
+    "rei": "\u3082\u3046\u305d\u308d\u305d\u308d\u53e4\u3044\u30bf\u30a4\u30e4\u3092\u53d6\u308a\u66ff\u3048\u306a\u3044\u3068\u3044\u3051\u306a\u3044\u3002\nIt's about time to replace the old tires."
+  },
+  {
+    "id": 220,
+    "kanji": "\u53d7\u3051\u308b",
+    "kana": "\u3046\u3051\u308b",
+    "eng": "to take (a test); to receive",
+    "rei": "12\u6708\u306b\u30c6\u30b9\u30c8\u3092\u53d7\u3051\u308b\u3053\u3068\u306b\u3057\u305f\u3002\nI decided to take the test in December."
+  },
+  {
+    "id": 221,
+    "kanji": "\u53d7\u4ed8",
+    "kana": "\u3046\u3051\u3064\u3051",
+    "eng": "reception; information desk",
+    "rei": "\u30c8\u30a4\u30ec\u304c\u3069\u3053\u306b\u3042\u308b\u304b\u53d7\u4ed8\u306b\u805e\u304d\u307e\u3057\u3087\u3046\u3002\nLet's ask where the toilet is at the information desk."
+  },
+  {
+    "id": 222,
+    "kanji": "\u53ec\u3057\u4e0a\u304c\u308b",
+    "kana": "\u3081\u3057\u3042\u304c\u308b",
+    "eng": "(hon) to eat; to drink",
+    "rei": "\u81ea\u7531\u306b\u53ec\u3057\u4e0a\u304c\u3063\u3066\u4e0b\u3055\u3044\u3002\nPlease eat anything you like."
+  },
+  {
+    "id": 223,
+    "kanji": "\u53f0\u98a8",
+    "kana": "\u305f\u3044\u3075\u3046",
+    "eng": "typhoon; hurricane",
+    "rei": "\u590f\u306b\u53f0\u98a8\u306e\u5b63\u7bc0\u304c\u3042\u308a\u307e\u3059\u3002\nTyphoon season is during summer."
+  },
+  {
+    "id": 224,
+    "kanji": "\u53f1\u308b",
+    "kana": "\u3057\u304b\u308b",
+    "eng": "to scold",
+    "rei": "\u5b50\u4f9b\u304c\u5148\u751f\u306b\u53f1\u3089\u308c\u307e\u3057\u305f\u3002\nThe child was scolded by the teacher."
+  },
+  {
+    "id": 225,
+    "kanji": "\u53f3\u5074",
+    "kana": "\u307f\u304e\u304c\u308f",
+    "eng": "right side",
+    "rei": "\u6905\u5b50\u306e\u53f3\u5074\u306b\u30c6\u30fc\u30d6\u30eb\u304c\u3042\u308a\u307e\u3059\u3002\nThere is a table on the right side of the chair."
+  },
+  {
+    "id": 226,
+    "kanji": "\u5408\u3046",
+    "kana": "\u3042\u3046",
+    "eng": "to meet | to match; to suit; to fit",
+    "rei": "\u3053\u306e\u670d\u304c\u3074\u3063\u305f\u308a\u5408\u3046\u3002\nThese clothes fit like a glove."
+  },
+  {
+    "id": 227,
+    "kanji": "\u5411\u3046",
+    "kana": "\u3080\u304b\u3046",
+    "eng": "to face; to go towards",
+    "rei": "\u99c5\u306b\u5411\u3063\u3066\u6b69\u3044\u305f\u3089\u3001\u826f\u3044\u5e97\u3092\u898b\u3064\u3051\u307e\u3057\u305f\u3002\nI found a good store when I walked towards the station."
+  },
+  {
+    "id": 228,
+    "kanji": "\u541b",
+    "kana": "\u304d\u307f",
+    "eng": "you",
+    "rei": "\u541b\u304c\u624b\u4f1d\u308f\u306a\u3051\u308c\u3070\u3067\u304d\u306a\u304b\u3063\u305f\u3002\nI couldn't have done it if you hadn't helped me."
+  },
+  {
+    "id": 229,
+    "kanji": "\u5468\u308a",
+    "kana": "\u307e\u308f\u308a",
+    "eng": "surroundings; vicinity",
+    "rei": "\u5f7c\u306f\u516c\u5712\u306e\u5468\u308a\u3092\u30b8\u30e7\u30ae\u30f3\u30b0\u3057\u3066\u3044\u308b\u304b\u3082\u3057\u308c\u307e\u305b\u3093\u3002\nHe is probably jogging around the park."
+  },
+  {
+    "id": 230,
+    "kanji": "\u5473",
+    "kana": "\u3042\u3058",
+    "eng": "flavor",
+    "rei": "\u3053\u306e\u30b3\u30fc\u30d2\u30fc\u306f\u82e6\u3044\u5473\u304c\u3057\u307e\u3059\u3002\nThis coffee tastes bitter."
+  },
+  {
+    "id": 231,
+    "kanji": "\u5473\u564c",
+    "kana": "\u307f\u305d",
+    "eng": "(food) miso",
+    "rei": "\u30ad\u30e5\u30a6\u30ea\u3092\u5473\u564c\u3068\u98df\u3079\u305f\u3089\u7f8e\u5473\u3057\u3044\u3088\u3002\nIf you eat cucumbers with miso it is delicious."
+  },
+  {
+    "id": 232,
+    "kanji": "\u54c1\u7269",
+    "kana": "\u3057\u306a\u3082\u306e",
+    "eng": "goods; article",
+    "rei": "\u30c7\u30d1\u30fc\u30c8\u306b\u9ad8\u3044\u54c1\u7269\u304c\u305f\u304f\u3055\u3093\u3042\u308a\u307e\u3059\u3002\nThere are many high priced goods at the department store."
+  },
+  {
+    "id": 233,
+    "kanji": "\u5589",
+    "kana": "\u306e\u3069",
+    "eng": "throat",
+    "rei": "\u5589\u304c\u75db\u3044\u304b\u3089\u6b4c\u3048\u306a\u3044\u3002\nMy throat is sore so I can't sing."
+  },
+  {
+    "id": 234,
+    "kanji": "\u559c\u3076",
+    "kana": "\u3088\u308d\u3053\u3076",
+    "eng": "to be happy",
+    "rei": "\u7236\u306b\u30d7\u30ec\u30bb\u30f3\u30c8\u4e0a\u3052\u305f\u3089\u3001\u559c\u3093\u3067\u3044\u307e\u3057\u305f\u3002\nMy father was happy when I gave him a present."
+  },
+  {
+    "id": 235,
+    "kanji": "\u5618",
+    "kana": "\u3046\u305d",
+    "eng": "lie; falsehood",
+    "rei": "\u5618\u3092\u3064\u304f\nto tell a lie"
+  },
+  {
+    "id": 236,
+    "kanji": "\u565b\u3080",
+    "kana": "\u304b\u3080",
+    "eng": "to bite; to chew",
+    "rei": "\u5f7c\u306e\u6b6f\u304c\u5f31\u3044\u306e\u3067\u3001\u786c\u3044\u98df\u3079\u7269\u3092\u565b\u3080\u306e\u306f\u75db\u3044\u3068\u8a00\u3044\u307e\u3057\u305f\u3002\nHe said that his teeth are weak, so it hurts when he bites hard food."
+  },
+  {
+    "id": 237,
+    "kanji": "\u56de\u308b",
+    "kana": "\u307e\u308f\u308b",
+    "eng": "to turn; to revolve; to go around",
+    "rei": "\u5730\u7403\u304c\u56de\u308b\u3002\nThe world turns."
+  },
+  {
+    "id": 238,
+    "kanji": "\u56fd\u969b",
+    "kana": "\u3053\u304f\u3055\u3044",
+    "eng": "international",
+    "rei": "\u6210\u7530\u56fd\u969b\u7a7a\u6e2f\nNarita International Airport"
+  },
+  {
+    "id": 239,
+    "kanji": "\u5730\u7406",
+    "kana": "\u3061\u308a",
+    "eng": "geography",
+    "rei": "\u5730\u7406\u3068\u6b74\u53f2\u304c\u4e0b\u624b\u3067\u3059\u3002\nI am not good at geography and history."
+  },
+  {
+    "id": 240,
+    "kanji": "\u5730\u9707",
+    "kana": "\u3058\u3057\u3093",
+    "eng": "earthquake",
+    "rei": "\u5730\u9707\u304c\u5f31\u304f\u3066\u826f\u304b\u3063\u305f\u3067\u3059\u3002\nIt was good that the earthquake was weak."
+  },
+  {
+    "id": 241,
+    "kanji": "\u5742",
+    "kana": "\u3055\u304b",
+    "eng": "slope; hill",
+    "rei": "\u5742\u306b\u767b\u308b\u3068\u753a\u304c\u3088\u304f\u898b\u3048\u307e\u3059\u3002\nYou can see the town clearly if you climb the hill."
+  },
+  {
+    "id": 242,
+    "kanji": "\u5834\u5408",
+    "kana": "\u3070\u3042\u3044",
+    "eng": "case; situation",
+    "rei": "\u4e8b\u6545\u304c\u3042\u308b\u5834\u5408\u3001\u3059\u3050\u306b\u96fb\u8a71\u304f\u3060\u3055\u3044\u3002\nPlease call immediately in the case there is an accident."
+  },
+  {
+    "id": 243,
+    "kanji": "\u5834\u6240",
+    "kana": "\u3070\u3057\u3087",
+    "eng": "place; location",
+    "rei": "\u30b8\u30e7\u30f3\u306b\u4f1a\u3063\u305f\u5834\u6240\u306f\u3042\u305d\u3053\u3067\u3059\u3002\nThe place I met John is over there."
+  },
+  {
+    "id": 244,
+    "kanji": "\u5857\u308b",
+    "kana": "\u306c\u308b",
+    "eng": "to paint; to spread",
+    "rei": "\u3053\u306e\u30b8\u30e3\u30e0\u304c\u67d4\u3089\u304b\u304f\u3066\u5857\u308a\u3084\u3059\u3044\u3067\u3059\u3002\nThis jam is soft so it is easy to spread."
+  },
+  {
+    "id": 245,
+    "kanji": "\u5897\u3048\u308b",
+    "kana": "\u3075\u3048\u308b",
+    "eng": "to increase; to multiply",
+    "rei": "\u6700\u8fd1\u4f53\u91cd\u304c\u5897\u3048\u305f\u304b\u3089\u30c0\u30a4\u30a8\u30c3\u30c8\u3057\u307e\u3059\u3002\nMy weight has increased recently, so I'll diet."
+  },
+  {
+    "id": 246,
+    "kanji": "\u58c1",
+    "kana": "\u304b\u3079",
+    "eng": "wall; partition; barrier",
+    "rei": "\u58c1\u306b\u66f8\u304b\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\nDon't write on the wall."
+  },
+  {
+    "id": 247,
+    "kanji": "\u58ca\u3059",
+    "kana": "\u3053\u308f\u3059",
+    "eng": "to break; to destroy",
+    "rei": "\u529b\u3092\u5165\u308c\u3059\u304e\u3066\u3001\u925b\u7b46\u3092\u58ca\u3057\u3066\u3059\u307f\u307e\u305b\u3093\u3002\nI am sorry for using too much power and breaking your pencil."
+  },
+  {
+    "id": 248,
+    "kanji": "\u58ca\u308c\u308b",
+    "kana": "\u3053\u308f\u308c\u308b",
+    "eng": "to be broken; to break",
+    "rei": "\u529b\u3092\u5165\u308c\u3059\u304e\u3066\u3001\u925b\u7b46\u304c\u58ca\u308c\u307e\u3057\u305f\u3002\nI used too much power and the pencil broke."
+  },
+  {
+    "id": 249,
+    "kanji": "\u58f2\u308a\u5834",
+    "kana": "\u3046\u308a\u3070",
+    "eng": "place where things are sold (sales counter, corner, etc.)",
+    "rei": "\u304a\u3082\u3061\u3083\u58f2\u308a\u5834\u306f5\u968e\u3067\u3059\u3002\nThe toy department is on the fifth floor."
+  },
+  {
+    "id": 250,
+    "kanji": "\u5909",
+    "kana": "\u3078\u3093",
+    "eng": "strange; odd; weird",
+    "rei": "\u3044\u3064\u3082\u8cd1\u308f\u3063\u3066\u3044\u308b\u5e97\u306b\u8ab0\u3082\u3044\u306a\u304f\u3066\u5909\u3067\u3059\u306d\u3002\nIt is strage that there is no one in the store that is always lively."
+  },
+  {
+    "id": 251,
+    "kanji": "\u5909\u3048\u308b",
+    "kana": "\u304b\u3048\u308b",
+    "eng": "to change; to alter",
+    "rei": "\u3053\u306e\u90e8\u5c4b\u306f\u81ed\u3044\u304b\u3089\u96a3\u306e\u90e8\u5c4b\u306b\u5909\u3048\u3066\u3082\u3044\u3044\u3067\u3059\u304b\uff1f\nThis room smells, so may I change to the room next door?"
+  },
+  {
+    "id": 252,
+    "kanji": "\u5909\u308f\u308b",
+    "kana": "\u304b\u308f\u308b",
+    "eng": "to change",
+    "rei": "\u6700\u8fd1\u5148\u751f\u304c\u5909\u308f\u3063\u3066\u3001\u6388\u696d\u304c\u53b3\u3057\u304f\u306a\u3063\u305f\u3002\nThe teacher has changed recently so the class has become strict."
+  },
+  {
+    "id": 253,
+    "kanji": "\u5922",
+    "kana": "\u3086\u3081",
+    "eng": "dream",
+    "rei": "\u6628\u65e5\u5909\u306a\u5922\u3092\u898b\u307e\u3057\u305f\u3002\nI had a weird dream last night."
+  },
+  {
+    "id": 254,
+    "kanji": "\u5927\u4e8b",
+    "kana": "\u3060\u3044\u3058",
+    "eng": "important; valuable",
+    "rei": "\u5927\u4e8b\u306a\u66f8\u985e\u306a\u306e\u3067\u3001\u5fd8\u308c\u306a\u3044\u3067\u306d\u3002\nDon't forget the document because it is important."
+  },
+  {
+    "id": 255,
+    "kanji": "\u5927\u4f53",
+    "kana": "\u3060\u3044\u305f\u3044",
+    "eng": "generally; approximately",
+    "rei": "\u3053\u306e\u9ad8\u6821\u3092\u5352\u696d\u3059\u308b\u4eba\u304c\u5927\u4f53\u5927\u5b66\u751f\u306b\u306a\u308a\u307e\u3059\u3002\nPeople who graduate from this high school generally become university students."
+  },
+  {
+    "id": 256,
+    "kanji": "\u5927\u5206",
+    "kana": "\u3060\u3044\u3076",
+    "eng": "considerably; greatly; a lot",
+    "rei": "\u7530\u4e2d\u3055\u3093\u304c\u4e00\u6240\u61f8\u547d\u306b\u52c9\u5f37\u3057\u305f\u306e\u3067\u3001\u6210\u7e3e\u304c\u5927\u5206\u4e0a\u304c\u308a\u307e\u3057\u305f\u3002\nTanaka studied hard so his grades greatly improved."
+  },
+  {
+    "id": 257,
+    "kanji": "\u5927\u5b66\u751f",
+    "kana": "\u3060\u3044\u304c\u304f\u305b\u3044",
+    "eng": "university student",
+    "rei": "\u3053\u306e\u9ad8\u6821\u3092\u5352\u696d\u3059\u308b\u4eba\u304c\u5927\u4f53\u5927\u5b66\u751f\u306b\u306a\u308a\u307e\u3059\u3002\nPeople who graduate from this high school generally become university students."
+  },
+  {
+    "id": 258,
+    "kanji": "\u5929\u6c17\u4e88\u5831",
+    "kana": "\u3066\u3093\u304d\u3088\u307b\u3046",
+    "eng": "weather forecast",
+    "rei": "\u6700\u8fd1\u306e10\u5e74\u306b\u5929\u6c17\u4e88\u5831\u304c\u826f\u304f\u306a\u308a\u307e\u3057\u305f\u3002\nThe weather forecast has become better in these past 10 years."
+  },
+  {
+    "id": 259,
+    "kanji": "\u592a\u308b",
+    "kana": "\u3075\u3068\u308b",
+    "eng": "to become fat",
+    "rei": "\u6700\u8fd1\u79c1\u306f\u98df\u3079\u904e\u304e\u3066\u592a\u308a\u307e\u3057\u305f\u3002\nRecently I have eaten too much and gotten fat."
+  },
+  {
+    "id": 260,
+    "kanji": "\u592b",
+    "kana": "\u304a\u3063\u3068",
+    "eng": "husband",
+    "rei": "\u4eca\u65e5\u592b\u304c\u30d0\u30a4\u30c8\u3057\u3066\u3044\u308b\u306e\u3067\u5bb6\u306b\u3044\u306a\u3044\u3067\u3059\u3002\nMy husband is working part-time today, so he is not home."
+  },
+  {
+    "id": 261,
+    "kanji": "\u5931\u6557",
+    "kana": "\u3057\u3063\u3071\u3044",
+    "eng": "failure",
+    "rei": "\u52c9\u5f37\u3057\u306a\u304b\u3063\u305f\u304b\u3089\u65e5\u672c\u8a9e\u80fd\u529b\u8a66\u9a13\u3092\u5931\u6557\u3057\u307e\u3057\u305f\u3002\nI failed the JLPT because I didn't study."
+  },
+  {
+    "id": 262,
+    "kanji": "\u5931\u793c",
+    "kana": "\u3057\u3064\u308c\u3044",
+    "eng": "impolite; rude | excuse me; I'm leaving",
+    "rei": "\u4e0a\u53f8\u3068\u8a71\u3057\u305f\u3089\u305d\u3093\u306a\u5931\u793c\u306a\u8a00\u3044\u65b9\u3092\u4f7f\u308f\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\nDon't use such a rude tone when speaking to your superior."
+  },
+  {
+    "id": 263,
+    "kanji": "\u5973\u6027",
+    "kana": "\u3058\u3087\u305b\u3044",
+    "eng": "woman; female",
+    "rei": "\u3086\u304d\u304c\u7d20\u6575\u306a\u5973\u6027\u3067\u3059\u3002\nYuki is a splendid woman."
+  },
+  {
+    "id": 264,
+    "kanji": "\u59bb",
+    "kana": "\u3064\u307e",
+    "eng": "wife",
+    "rei": "\u59bb\u304c\u5de5\u696d\u3067\u50cd\u3044\u3066\u3044\u307e\u3059\u3002\nMy wife works at a factory."
+  },
+  {
+    "id": 265,
+    "kanji": "\u59cb\u3081\u308b",
+    "kana": "\u306f\u3058\u3081\u308b",
+    "eng": "to start; to begin",
+    "rei": "\u6388\u696d\u3092\u59cb\u3081\u307e\u3059\u3002\nI will start class."
+  },
+  {
+    "id": 266,
+    "kanji": "\u5a18",
+    "kana": "\u3080\u3059\u3081",
+    "eng": "(my) daughter",
+    "rei": "\u4e0a\u306e\u5a18\u304c12\u6b73\u3067\u3059\u3002\nMy older daughter is 12 years old."
+  },
+  {
+    "id": 267,
+    "kanji": "\u5b09\u3057\u3044",
+    "kana": "\u3046\u308c\u3057\u3044",
+    "eng": "happy; glad",
+    "rei": "\u30d7\u30ec\u30bc\u30f3\u30c8\u3092\u3082\u3089\u3063\u305f\u304b\u3089\u5b09\u3057\u304b\u3063\u305f\u3067\u3059\u3002\nI was happy because I received a present."
+  },
+  {
+    "id": 268,
+    "kanji": "\u5b50",
+    "kana": "\u3053",
+    "eng": "child",
+    "rei": "\u3042\u306e\u5b50\u304c\u6642\u3005\u7169\u3044\u3051\u3069\u3001\u5927\u4f53\u512a\u3057\u3044\u3067\u3059\u3088\u3002\nThat child is sometimes noisy, but mostly kind."
+  },
+  {
+    "id": 269,
+    "kanji": "\u5b57",
+    "kana": "\u3058",
+    "eng": "character; letter | hand-writing",
+    "rei": "\u3053\u306e\u5b57\u306e\u8aad\u307f\u65b9\u304c\u5206\u304b\u308a\u307e\u3059\u304b\uff1f\nDo you know the reading for this character?"
+  },
+  {
+    "id": 270,
+    "kanji": "\u5b63\u7bc0",
+    "kana": "\u304d\u305b\u3064",
+    "eng": "season",
+    "rei": "\u96ea\u304c\u964d\u308b\u306e\u3067\u3001\u51ac\u304c\u4e00\u756a\u597d\u304d\u306a\u5b63\u7bc0\u3067\u3059\u3002\nWinter is my favorite season because it snows."
+  },
+  {
+    "id": 271,
+    "kanji": "\u5b89\u5168",
+    "kana": "\u3042\u3093\u305c\u3093",
+    "eng": "safety; security",
+    "rei": "\u5730\u9707\u304c\u3042\u3063\u3066\u3082\u3053\u3053\u306f\u5b89\u5168\u306a\u306e\u3067\u3001\u5b89\u5fc3\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nThis place is safe even if there is an earthquake, so have peack of mind"
+  },
+  {
+    "id": 272,
+    "kanji": "\u5b89\u5fc3",
+    "kana": "\u3042\u3093\u3057\u3093",
+    "eng": "relief; peace of mind",
+    "rei": "\u5730\u9707\u304c\u3042\u3063\u3066\u3082\u3053\u3053\u306f\u5b89\u5168\u306a\u306e\u3067\u3001\u5b89\u5fc3\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nThis place is safe even if there is an earthquake, so have peack of mind"
+  },
+  {
+    "id": 273,
+    "kanji": "\u5b9c\u3057\u3044",
+    "kana": "\u3088\u308d\u3057\u3044",
+    "eng": "good; OK",
+    "rei": "\u5b9c\u3057\u3051\u308c\u3070\u3001\u660e\u65e5\u306e15\u6642\u306b\u4f1a\u3063\u3066\u3044\u305f\u3060\u3051\u307e\u305b\u3093\u304b\uff1f\nIf it is OK, will you meet me at 15:00 tomorrow?"
+  },
+  {
+    "id": 274,
+    "kanji": "\u5ba2",
+    "kana": "\u304d\u3083\u304f",
+    "eng": "customer; visitor",
+    "rei": "\u304a\u5ba2\u3055\u3093\u304c\u6765\u3066\u3044\u308b\u306e\u3067\u3001\u304a\u8336\u3092\u5165\u308c\u307e\u3057\u3087\u3046\u3002\nThe customer has come, so let's make some tea."
+  },
+  {
+    "id": 275,
+    "kanji": "\u5bb6\u5185",
+    "kana": "\u304b\u306a\u3044",
+    "eng": "(hum) wife | one's family",
+    "rei": "\u5bb6\u5185\u306f\u533b\u5e2b\u3067\u3059\u3002\nMy wife is a doctor."
+  },
+  {
+    "id": 276,
+    "kanji": "\u5bc2\u3057\u3044",
+    "kana": "\u3055\u3073\u3057\u3044",
+    "eng": "lonely",
+    "rei": "\u53cb\u9054\u304c\u3044\u306a\u3044\u306e\u3067\u5bc2\u3057\u3044\u3002\nI am lonely because I have no friends."
+  },
+  {
+    "id": 277,
+    "kanji": "\u5bc4\u308b",
+    "kana": "\u3088\u308b",
+    "eng": "to drop by; to make a short visit",
+    "rei": "\u5e97\u306b\u5bc4\u3063\u3066\u304b\u3089\u5e30\u308a\u307e\u3059\u3002\nI will go home after dropping by the store."
+  },
+  {
+    "id": 278,
+    "kanji": "\u5bdd\u574a",
+    "kana": "\u306d\u307c\u3046",
+    "eng": "oversleeping",
+    "rei": "\u9045\u308c\u3066\u3059\u307f\u307e\u305b\u3093\u3002\u4eca\u65e5\u5bdd\u574a\u3057\u3066\u3057\u307e\u3044\u307e\u3057\u305f\u3002\nSorry I am late.  I overslept today."
+  },
+  {
+    "id": 279,
+    "kanji": "\u5bfa",
+    "kana": "\u3066\u3089",
+    "eng": "temple (Buddhist)",
+    "rei": "\u660e\u65e5\u5bfa\u306b\u884c\u304f\u3002\nI'll go to the temple tomorrow."
+  },
+  {
+    "id": 280,
+    "kanji": "\u5c02\u9580",
+    "kana": "\u305b\u3093\u3082\u3093",
+    "eng": "speciality; area of expertise",
+    "rei": "\u73cd\u3057\u3044\u75c5\u6c17\u306a\u306e\u3067\u3001\u3053\u306e\u75c5\u6c17\u3092\u5c02\u9580\u306b\u3057\u3066\u3044\u308b\u533b\u8005\u306e\u65b9\u304c\u826f\u3044\u3068\u601d\u3044\u307e\u3059\u3002\nThis is a rare disease, so I think a doctor who specializes in it is better."
+  },
+  {
+    "id": 281,
+    "kanji": "\u5c06\u6765",
+    "kana": "\u3057\u3087\u3046\u3089\u3044",
+    "eng": "future",
+    "rei": "\u5c06\u6765\u306b\u3069\u3093\u306a\u4ed5\u4e8b\u3092\u3084\u308a\u305f\u3044\u3067\u3059\u304b\uff1f\nWhat kind of work do you want to do in the future."
+  },
+  {
+    "id": 282,
+    "kanji": "\u5c0b\u306d\u308b",
+    "kana": "\u305f\u305a\u306d\u308b",
+    "eng": "to ask; to inquire; to investigate",
+    "rei": "\u8ff7\u3063\u3066\u3044\u308b\u3068\u304d\u8ab0\u304b\u306b\u9053\u3092\u5c0b\u306d\u3066\u304f\u3060\u3055\u3044\u3002\nPlease ask someone for directions when you are lost."
+  },
+  {
+    "id": 283,
+    "kanji": "\u5c0f\u5b66\u6821",
+    "kana": "\u3057\u3087\u3046\u304c\u3063\u3053\u3046",
+    "eng": "elementary school",
+    "rei": "\u5bb6\u306e\u5b50\u4f9b\u306f\u6765\u5e74\u5c0f\u5b66\u6821\u306b\u5165\u5b66\u3057\u307e\u3059\u3002\nMy child will enter elementary school next year."
+  },
+  {
+    "id": 284,
+    "kanji": "\u5c0f\u8aac",
+    "kana": "\u3057\u3087\u3046\u305b\u3064",
+    "eng": "novel; (short) story",
+    "rei": "\u5c0f\u8aac\u3092\u66f8\u304f\u306e\u304c\u8da3\u5473\u3067\u3059\u3002\nWriting short stories is my hobby."
+  },
+  {
+    "id": 285,
+    "kanji": "\u5c0f\u9ce5",
+    "kana": "\u3053\u3068\u308a",
+    "eng": "small bird",
+    "rei": "\u516c\u5712\u306b\u5c0f\u9ce5\u306e\u7a2e\u985e\u304c\u305f\u304f\u3055\u3093\u3044\u307e\u3059\u3002\nThere are many types of small birds at the park."
+  },
+  {
+    "id": 286,
+    "kanji": "\u5c4a\u3051\u308b",
+    "kana": "\u3068\u3069\u3051\u308b",
+    "eng": "to deliver",
+    "rei": "\u90f5\u4fbf\u5c40\u306e\u4eba\u306b10\u6642\u306b\u8377\u7269\u3092\u5c4a\u3051\u3066\u3082\u3089\u3044\u307e\u3057\u305f\u3002\nI had the person from the post office deliver my package at 10:00."
+  },
+  {
+    "id": 287,
+    "kanji": "\u5c4b\u4e0a",
+    "kana": "\u304a\u304f\u3058\u3087\u3046",
+    "eng": "rooftop",
+    "rei": "\u3042\u306e\u30d3\u30eb\u306e\u5c4b\u4e0a\u304b\u3089\u898b\u3048\u308b\u591c\u666f\u306f\u304d\u308c\u3044\u3067\u3059\u3088\u3002\nThe nighttime view from the rooftop of that building is beautiful."
+  },
+  {
+    "id": 288,
+    "kanji": "\u5c55\u89a7\u4f1a",
+    "kana": "\u3066\u3093\u3089\u3093\u304b\u3044",
+    "eng": "exhibition",
+    "rei": "\u6709\u540d\u306a\u7f8e\u8853\u5bb6\u306e\u5c55\u89a7\u4f1a\u3060\u304b\u3089\u884c\u3063\u3066\u307f\u305f\u3044\u3002\nI want to try going because it is that famous artist's exhibition."
+  },
+  {
+    "id": 289,
+    "kanji": "\u5cf6",
+    "kana": "\u3057\u307e",
+    "eng": "island",
+    "rei": "\u5c0f\u3055\u3044\u5cf6\u3060\u304b\u3089\u5e97\u304c1\u3064\u3057\u304b\u306a\u3044\u3002\nIt's a small island so there is only 1 store."
+  },
+  {
+    "id": 290,
+    "kanji": "\u5ddd",
+    "kana": "\u304b\u308f",
+    "eng": "river; stream",
+    "rei": "\u3053\u306e\u5ddd\u306b\u9b5a\u304c\u305f\u304f\u3055\u3093\u3044\u308b\u304b\u3089\u91e3\u308a\u306b\u306f\u826f\u3044\u3067\u3059\u3002\nThere are many fish in this river, so it is good for fishing."
+  },
+  {
+    "id": 291,
+    "kanji": "\u5de5\u5834",
+    "kana": "\u3053\u3046\u3058\u3087\u3046\u3001\u3053\u3046\u3070",
+    "eng": "factory; plant; mill; workshop",
+    "rei": "\u50cd\u3044\u3066\u3044\u308b\u4f1a\u793e\u306f\u65b0\u3057\u3044\u5de5\u5834\u3092\u30ed\u30b7\u30a2\u3067\u5efa\u3066\u308b\u3053\u3068\u306b\u3057\u305f\u3002\nThe company where I work decided to build a new factory in Russia."
+  },
+  {
+    "id": 292,
+    "kanji": "\u5de5\u696d",
+    "kana": "\u3053\u3046\u304e\u3087\u3046",
+    "eng": "industry; industrial",
+    "rei": "\u7e4a\u7dad\u5de5\u696d\ntextile industry"
+  },
+  {
+    "id": 293,
+    "kanji": "\u5de6\u5074",
+    "kana": "\u3072\u3060\u308a\u304c\u308f",
+    "eng": "left side",
+    "rei": "\u6905\u5b50\u306e\u5de6\u5074\u306b\u30c6\u30fc\u30d6\u30eb\u304c\u3042\u308a\u307e\u3059\u3002\nThere is a table on the left side of the chair."
+  },
+  {
+    "id": 294,
+    "kanji": "\u5dee\u3057\u4e0a\u3052\u308b",
+    "kana": "\u3055\u3057\u3042\u3052\u308b",
+    "eng": "(hum) to give; to offer | to raise",
+    "rei": "\u8ab0\u304b\u306b\u7269\u3092\u5dee\u3057\u4e0a\u3052\u308b\u3002\nTo give something to a someone."
+  },
+  {
+    "id": 295,
+    "kanji": "\u5e02",
+    "kana": "\u3057",
+    "eng": "city",
+    "rei": "\u3053\u306e\u5e02\u306b4\u3064\u306e\u5c0f\u5b66\u6821\u3057\u304b\u306a\u3044\u3067\u3059\u3002\nThere are only 4 elementary schools in this city."
+  },
+  {
+    "id": 296,
+    "kanji": "\u5e02\u6c11",
+    "kana": "\u3057\u307f\u3093",
+    "eng": "city resident; townspeople",
+    "rei": "\u5e02\u6c11\u306a\u3089\u5e02\u306b\u7a0e\u91d1\u3092\u6255\u308f\u306a\u3044\u3068\u3044\u3051\u307e\u305b\u3093\u3002\nIf you are a city resident you must pay taxes to the city."
+  },
+  {
+    "id": 297,
+    "kanji": "\u5e03\u56e3",
+    "kana": "\u3075\u3068\u3093",
+    "eng": "futon",
+    "rei": "\u671d\u5fa1\u98ef\u3092\u98df\u3079\u308b\u524d\u306b\u5e03\u56e3\u3092\u7247\u4ed8\u3051\u306a\u3055\u3044\u3002\nClean up the futon before you eat breakfast."
+  },
+  {
+    "id": 298,
+    "kanji": "\u5e2d",
+    "kana": "\u305b\u304d",
+    "eng": "seat",
+    "rei": "\u5e2d\u304c\u7a7a\u3044\u3066\u3044\u307e\u3059\u304b\uff1f\nAre any seats available?"
+  },
+  {
+    "id": 299,
+    "kanji": "\u5e30\u308a",
+    "kana": "\u304b\u3048\u308a",
+    "eng": "return; coming back",
+    "rei": "\u5e30\u308a\u3067\u5f01\u5f53\u3092\u8cb7\u3046\u3002\nI will buy a bento on the way home."
+  },
+  {
+    "id": 300,
+    "kanji": "\u5e97\u54e1",
+    "kana": "\u3066\u3093\u3044\u3093",
+    "eng": "clerk; salesperson",
+    "rei": "\u30ad\u30e0\u306e\u30a2\u30eb\u30d0\u30a4\u30c8\u306f\u30b3\u30f3\u30d3\u30cb\u306e\u5e97\u54e1\u3067\u3059\u3002\nKim's part time job is a convenience store clerk."
+  },
+  {
+    "id": 301,
+    "kanji": "\u5efa\u3066\u308b",
+    "kana": "\u305f\u3066\u308b",
+    "eng": "to build; to construct",
+    "rei": "\u50cd\u3044\u3066\u3044\u308b\u4f1a\u793e\u306f\u65b0\u3057\u3044\u5de5\u5834\u3092\u30ed\u30b7\u30a2\u3067\u5efa\u3066\u308b\u3053\u3068\u306b\u3057\u305f\u3002\nThe company where I work decided to build a new factory in Russia."
+  },
+  {
+    "id": 302,
+    "kanji": "\u5f15\u304d\u51fa\u3057",
+    "kana": "\u3072\u304d\u3060\u3057",
+    "eng": "drawer",
+    "rei": "\u9375\u304c\u5f15\u304d\u51fa\u3057\u306b\u5165\u3063\u3066\u3044\u308b\u3068\u601d\u3046\u3044\u307e\u3059\u3002\nI think the keys are in the drawer."
+  },
+  {
+    "id": 303,
+    "kanji": "\u5f15\u304d\u51fa\u3059",
+    "kana": "\u3072\u304d\u3060\u3059",
+    "eng": "to pull out; to bring out; to withdraw",
+    "rei": "\u9280\u884c\u53e3\u5ea7\u304b\u3089\u304a\u91d1\u3092\u5f15\u304d\u51fa\u3059\u3002\nI will withdraw money from the bank account."
+  },
+  {
+    "id": 304,
+    "kanji": "\u5f15\u3063\u8d8a\u3059",
+    "kana": "\u3072\u3063\u3053\u3059",
+    "eng": "to move; to change residence",
+    "rei": "10\u6708\u672b\u306b\u5f15\u3063\u8d8a\u3059\u3002\nI will move at the end of October."
+  },
+  {
+    "id": 305,
+    "kanji": "\u5f62",
+    "kana": "\u304b\u305f\u3061",
+    "eng": "form; shape",
+    "rei": "\u3053\u308c\u306f\u308a\u3093\u3054\u306e\u5f62\u306a\u306e\u306b\u3001\u30aa\u30ec\u30f3\u30b8\u306e\u5473\u304c\u3057\u307e\u3059\u3002\nThis has the shape of an apple, but tastes like an orange."
+  },
+  {
+    "id": 306,
+    "kanji": "\u5f79\u306b\u7acb\u3064",
+    "kana": "\u3084\u304f\u306b\u305f\u3064",
+    "eng": "to be useful",
+    "rei": "\u3053\u306e\u5358\u8a9e\u30ea\u30b9\u30c8\u304c\u5f79\u306b\u7acb\u3064\u3067\u3059\u306d\uff1f\nThis vocabulary list is useful, isn't it?"
+  },
+  {
+    "id": 307,
+    "kanji": "\u5f7c",
+    "kana": "\u304b\u308c",
+    "eng": "he; him",
+    "rei": "\u5f7c\u306f\u30b5\u30f3\u30c9\u30a4\u30c3\u30c1\u3092\u98df\u3079\u3066\u3044\u308b\u3002\nHe is eating a sandwich."
+  },
+  {
+    "id": 308,
+    "kanji": "\u5f7c\u3089",
+    "kana": "\u304b\u308c\u3089",
+    "eng": "they (usually male); them",
+    "rei": "\u5f7c\u3089\u306f\u5f37\u3044\u30e9\u30b0\u30d3\u30fc\u30c1\u30fc\u30e0\u306e\u9078\u624b\u3067\u3059\u3002\nThey are players on the strong rugby team."
+  },
+  {
+    "id": 309,
+    "kanji": "\u5f7c\u5973",
+    "kana": "\u304b\u306e\u3058\u3087",
+    "eng": "she; her | girlfriend",
+    "rei": "\u6ce5\u68d2\u304c\u5f7c\u5973\u306e\u8eca\u3092\u76d7\u3093\u3060\u3002\nThe robber stole her car."
+  },
+  {
+    "id": 310,
+    "kanji": "\u5fa1\u301c",
+    "kana": "\u304a\u3001\u3054",
+    "eng": "honorific prefix",
+    "rei": "\u5fa1\u5b22\u69d8\nMiss; your daughter"
+  },
+  {
+    "id": 311,
+    "kanji": "\u5fa9\u7fd2",
+    "kana": "\u3075\u304f\u3057\u3085\u3046",
+    "eng": "review",
+    "rei": "\u307e\u3060\u899a\u3048\u3066\u3044\u306a\u3044\u5358\u8a9e\u3092\u5fa9\u7fd2\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease review the vocabulary you have not yet memorized."
+  },
+  {
+    "id": 312,
+    "kanji": "\u5fc3",
+    "kana": "\u3053\u3053\u308d",
+    "eng": "mind; heart; spirit",
+    "rei": "\u3042\u306e\u5207\u306a\u3044\u8a71\u3092\u805e\u3044\u3066\u3001\u5fc3\u3092\u75db\u3081\u305f\u3002\nMy heart broke after hearing that sad story."
+  },
+  {
+    "id": 313,
+    "kanji": "\u5fc3\u914d",
+    "kana": "\u3057\u3093\u3071\u3044",
+    "eng": "worry; concern",
+    "rei": "\u4f55\u3092\u5fc3\u914d\u3057\u3066\u3044\u307e\u3059\u304b\uff1f\nWhat are you worried about?"
+  },
+  {
+    "id": 314,
+    "kanji": "\u5fc5\u305a",
+    "kana": "\u304b\u306a\u3089\u305a",
+    "eng": "certainly; without fail",
+    "rei": "\u51fa\u304b\u3051\u308b\u524d\u306b\u5fc5\u305a\u96fb\u706f\u3092\u6d88\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease turn the lights off without fail before you go out."
+  },
+  {
+    "id": 315,
+    "kanji": "\u5fc5\u8981",
+    "kana": "\u3072\u3064\u3088\u3046",
+    "eng": "necessary",
+    "rei": "\u5fc5\u8981\u306a\u66f8\u985e\u3092\u5fd8\u308c\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\nDon't forget the necessary documents."
+  },
+  {
+    "id": 316,
+    "kanji": "\u5fd8\u308c\u7269",
+    "kana": "\u308f\u3059\u308c\u3082\u306e",
+    "eng": "lost article; something forgotten",
+    "rei": "\u5fd8\u308c\u7269\u304c\u3042\u308b\nTo forget something"
+  },
+  {
+    "id": 317,
+    "kanji": "\u6012\u308b",
+    "kana": "\u304a\u3053\u308b",
+    "eng": "to get angry",
+    "rei": "\u305d\u3093\u306a\u60aa\u3044\u3053\u3068\u3092\u8a00\u3063\u305f\u3089\u5148\u751f\u304c\u6012\u308b\u3088\u3002\nSensei will get angry if you say sometime bad like that."
+  },
+  {
+    "id": 318,
+    "kanji": "\u6016\u3044",
+    "kana": "\u3053\u308f\u3044",
+    "eng": "scary; frightening",
+    "rei": "\u30b8\u30e7\u30f3\u304c\u6012\u308b\u3068\u6016\u3044\u3088\u3002\nJohn is scary when he gets angry."
+  },
+  {
+    "id": 319,
+    "kanji": "\u601d\u3044\u51fa\u3059",
+    "kana": "\u304a\u3082\u3044\u3060\u3059",
+    "eng": "to recall; to remember",
+    "rei": "\u3053\u306e\u5199\u771f\u3092\u898b\u3066\u3001\u5b66\u751f\u6642\u4ee3\u3092\u601d\u3044\u51fa\u3057\u307e\u3057\u305f\u3002\nI recalled my school days when I looked at this picture."
+  },
+  {
+    "id": 320,
+    "kanji": "\u601d\u3046",
+    "kana": "\u304a\u3082\u3046",
+    "eng": "to think",
+    "rei": "\u301c\u3068\u601d\u3046\nTo think that \u301c"
+  },
+  {
+    "id": 321,
+    "kanji": "\u6025",
+    "kana": "\u304d\u3085\u3046",
+    "eng": "sudden; unexpected; urget",
+    "rei": "\u96e8\u304c\u6025\u306b\u964d\u308a\u307e\u3057\u305f\u3002\nIt suddenly rained."
+  },
+  {
+    "id": 322,
+    "kanji": "\u6025\u3050",
+    "kana": "\u3044\u305d\u3050",
+    "eng": "to hurry; to rush",
+    "rei": "\u3082\u3046\u9045\u3044\u304b\u3089\u6025\u3044\u3067\u3002\nWe are already late, so hurry up."
+  },
+  {
+    "id": 323,
+    "kanji": "\u6025\u884c",
+    "kana": "\u304d\u3085\u3046\u3053\u3046",
+    "eng": "express (train)",
+    "rei": "\u6025\u884c\u306b\u4e57\u3063\u305f\u65b9\u304c\u65e9\u3044\u3067\u3059\u3088\u3002\nIt is faster to ride the express."
+  },
+  {
+    "id": 324,
+    "kanji": "\u6065\u305a\u304b\u3057\u3044",
+    "kana": "\u306f\u305a\u304b\u3057\u3044",
+    "eng": "embarrassed; shameful; shy",
+    "rei": "\u8a66\u9a13\u3092\u5931\u6557\u3059\u308b\u3053\u3068\u304c\u6065\u305a\u304b\u3057\u3044\u304b\u3089\u4e21\u89aa\u306b\u307e\u3060\u8a00\u3063\u3066\u3044\u306a\u3044\u3002\nFailing the test is embarrassing, so I haven't told my parents yet."
+  },
+  {
+    "id": 325,
+    "kanji": "\u606f\u5b50",
+    "kana": "\u3080\u3059\u3053",
+    "eng": "son",
+    "rei": "\u606f\u5b50\u306f\u6765\u5e742\u6b73\u306b\u306a\u308a\u307e\u3059\u3002\nMy son will be 2 years old next year."
+  },
+  {
+    "id": 326,
+    "kanji": "\u60b2\u3057\u3044",
+    "kana": "\u304b\u306a\u3057\u3044",
+    "eng": "sad",
+    "rei": "\u305d\u3093\u306a\u60b2\u3057\u3044\u3053\u3068\u3092\u8a00\u308f\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\nDon't say things that sad."
+  },
+  {
+    "id": 327,
+    "kanji": "\u610f\u898b",
+    "kana": "\u3044\u3051\u3093",
+    "eng": "opinion",
+    "rei": "\u81ea\u5206\u306e\u610f\u898b\u3092\u306f\u3063\u304d\u308a\u8a00\u308f\u306a\u3044\u3068\u8ab0\u3082\u5206\u304b\u308a\u307e\u305b\u3093\u3002\nIf you don't clearly state your opinion, no one will understand."
+  },
+  {
+    "id": 328,
+    "kanji": "\u6163\u308c\u308b",
+    "kana": "\u306a\u308c\u308b",
+    "eng": "to get used to",
+    "rei": "\u6700\u521d\u306f\u5927\u5909\u3060\u3063\u305f\u3093\u3067\u3059\u304c\u3001\u6bce\u65e5\u65e9\u304f\u8d77\u304d\u308b\u3053\u3068\u306b\u6163\u308c\u307e\u3057\u305f\u3002\nIt was tough at first, but I have gotten used to waking up early everyday."
+  },
+  {
+    "id": 329,
+    "kanji": "\u6226\u4e89",
+    "kana": "\u305b\u3093\u305d\u3046",
+    "eng": "war",
+    "rei": "\u304a\u3058\u3044\u3055\u3093\u304c\u6226\u4e89\u3067\u6b7b\u306b\u307e\u3057\u305f\u3002\nMy grandfather died in the war."
+  },
+  {
+    "id": 330,
+    "kanji": "\u623b\u308b",
+    "kana": "\u3082\u3069\u308b",
+    "eng": "to return; to go back",
+    "rei": "1\u6642\u9593\u5f8c\u623b\u308a\u307e\u3059\u3002\nI'll be back in 1 hour."
+  },
+  {
+    "id": 331,
+    "kanji": "\u624b\u4f1d\u3046",
+    "kana": "\u3066\u3064\u3060\u3046",
+    "eng": "to help; to assist",
+    "rei": "\u30b8\u30e7\u30f3\u306f\u3044\u3064\u3082\u624b\u4f1d\u3063\u3066\u3044\u3066\u3001\u512a\u3057\u3044\u4eba\u3067\u3059\u3002\nJon is always helping me and is a kind person."
+  },
+  {
+    "id": 332,
+    "kanji": "\u624b\u888b",
+    "kana": "\u3066\u3076\u304f\u308d",
+    "eng": "glove",
+    "rei": "\u51ac\u306b\u624b\u888b\u304c\u306a\u3044\u3068\u624b\u3092\u30dd\u30b1\u30c3\u30c8\u304b\u3089\u51fa\u305b\u306a\u3044\u3002\nDuring winter I can't take my hand out of my pocket if I don't have gloves."
+  },
+  {
+    "id": 333,
+    "kanji": "\u6253\u3064",
+    "kana": "\u3046\u3064",
+    "eng": "to hit; to strike",
+    "rei": "\u30dc\u30fc\u30eb\u3092\u6253\u3064\nhit a ball"
+  },
+  {
+    "id": 334,
+    "kanji": "\u6255\u3046",
+    "kana": "\u306f\u3089\u3046",
+    "eng": "to pay (e.g. money, bill)",
+    "rei": "\u4f1a\u8a08\u3092\u6255\u3063\u3066\u5e30\u308a\u307e\u3057\u3087\u3046\u3002\nLet's pay the bill and go home."
+  },
+  {
+    "id": 335,
+    "kanji": "\u627f\u77e5",
+    "kana": "\u3057\u3087\u3046\u3061",
+    "eng": "consent; acceptance",
+    "rei": "\u5f7c\u306f\u79c1\u304c\u983c\u3093\u3060\u3053\u3068\u3092\u627f\u77e5\u3057\u3066\u304f\u308c\u307e\u3057\u305f\u3002\nHe agreed to my request."
+  },
+  {
+    "id": 336,
+    "kanji": "\u6280\u8853",
+    "kana": "\u304e\u3058\u3085\u3064",
+    "eng": "technology; engineering | technique; skill",
+    "rei": "\u6700\u8fd1AI\u306e\u6280\u8853\u304c\u9032\u5316\u3057\u3066\u3044\u307e\u3059\u3002\nAI technology has been advancing recently."
+  },
+  {
+    "id": 337,
+    "kanji": "\u6295\u3052\u308b",
+    "kana": "\u306a\u3052\u308b",
+    "eng": "to throw",
+    "rei": "\u8d77\u3053\u3063\u3066\u3082\u305d\u308c\u3092\u6295\u3052\u3061\u3083\u30c0\u30e1\uff01\nDon't throw that even if you are angry!"
+  },
+  {
+    "id": 338,
+    "kanji": "\u6298\u308b",
+    "kana": "\u304a\u308b",
+    "eng": "to break; to fold",
+    "rei": "\u66f8\u985e\u3092\u6298\u3089\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\nPlease don't fold the documents."
+  },
+  {
+    "id": 339,
+    "kanji": "\u6298\u308c\u308b",
+    "kana": "\u304a\u308c\u308b",
+    "eng": "to be broken; to be folded",
+    "rei": "\u9ce5\u306e\u7ffc\u306f\u6298\u308c\u3066\u3044\u305f\u3002\nThe bird's wing was broken."
+  },
+  {
+    "id": 340,
+    "kanji": "\u62bc\u3057\u5165\u308c",
+    "kana": "\u304a\u3057\u3044\u308c",
+    "eng": "closet",
+    "rei": "\u4f7f\u3063\u3066\u3044\u306a\u3044\u670d\u306f\u62bc\u3057\u5165\u308c\u306e\u9685\u306b\u3042\u308b\u3002\nThe unused clothes are in the corner of the closet."
+  },
+  {
+    "id": 341,
+    "kanji": "\u62db\u5f85",
+    "kana": "\u3057\u3087\u3046\u305f\u3044",
+    "eng": "invitation",
+    "rei": "\u53cb\u9054\u3092\u30d1\u30fc\u30c6\u30a3\u306b\u62db\u5f85\u3057\u305f\u3002\nI invited my friend to the party."
+  },
+  {
+    "id": 342,
+    "kanji": "\u62dd\u898b",
+    "kana": "\u306f\u3044\u3051\u3093",
+    "eng": "(pol) to see; look at",
+    "rei": "\u30d1\u30b9\u30dd\u30fc\u30c8\u3092\u62dd\u898b\u3057\u3066\u3082\u3044\u3044\u3067\u3059\u304b\uff1f\nMay I see your passport?"
+  },
+  {
+    "id": 343,
+    "kanji": "\u62fe\u3046",
+    "kana": "\u3072\u308d\u3046",
+    "eng": "to pick up; to gather",
+    "rei": "\u843d\u3068\u3057\u305f\u30d1\u30f3\u3092\u62fe\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nPlease pick up the bread you dropped."
+  },
+  {
+    "id": 344,
+    "kanji": "\u6307",
+    "kana": "\u3086\u3073",
+    "eng": "finger; toe",
+    "rei": "\u6599\u7406\u3057\u3066\u3044\u308b\u3068\u304d\u6307\u3092\u5207\u3089\u306a\u3044\u3088\u3046\u306b\u6c17\u3092\u4ed8\u3051\u3066\u304f\u3060\u3055\u3044\u3002\nPlease be careful not to cut your finger while cooking."
+  },
+  {
+    "id": 345,
+    "kanji": "\u6307\u8f2a",
+    "kana": "\u3086\u3073\u308f",
+    "eng": "ring (jewlery)",
+    "rei": "\u30d7\u30ed\u30dd\u30fc\u30ba\u3059\u308b\u524d\u306b\u6307\u8f2a\u3092\u8cb7\u3044\u306b\u884c\u304f\u3002\nI will go to buy a ring before proposing."
+  },
+  {
+    "id": 346,
+    "kanji": "\u6328\u62f6",
+    "kana": "\u3042\u3044\u3055\u3064",
+    "eng": "greeting; salutation",
+    "rei": "\u4ed5\u4e8b\u306b\u7740\u3044\u305f\u3089\u3001\u7686\u306b\u3061\u3083\u3093\u3068\u6328\u62f6\u3057\u307e\u3059\u3002\nI properly greet everyone when I arrave at work."
+  },
+  {
+    "id": 347,
+    "kanji": "\u6355\u307e\u3048\u308b",
+    "kana": "\u3064\u304b\u307e\u3048\u308b",
+    "eng": "to catch; to arrest; to seize",
+    "rei": "\u8b66\u5bdf\u304c\u6ce5\u68d2\u3092\u6355\u307e\u3048\u305f\u3002\nThe police arrested the robber."
+  },
+  {
+    "id": 348,
+    "kanji": "\u6368\u3066\u308b",
+    "kana": "\u3059\u3066\u308b",
+    "eng": "to throw away",
+    "rei": "\u30b4\u30df\u7bb1\u306b\u6368\u3066\u3066\u304f\u3060\u3055\u3044\u3002\nPlease throw it away in the trash can."
+  },
+  {
+    "id": 349,
+    "kanji": "\u63a2\u3059",
+    "kana": "\u3055\u304c\u3059",
+    "eng": "to search for",
+    "rei": "\u9375\u309210\u5206\u3082\u63a2\u3057\u307e\u3057\u305f\u3002\nI search for the keys for 10 minutes."
+  },
+  {
+    "id": 350,
+    "kanji": "\u63fa\u308c\u308b",
+    "kana": "\u3086\u308c\u308b",
+    "eng": "to shake; to sway",
+    "rei": "\u5730\u9707\u3067\u5bb6\u304c\u5c11\u3057\u63fa\u308c\u307e\u3057\u305f\u3002\nThe house shook a bit from the earthquake."
+  },
+  {
+    "id": 351,
+    "kanji": "\u652f\u5ea6",
+    "kana": "\u3057\u305f\u304f",
+    "eng": "preparation; arrangements",
+    "rei": "\u65c5\u884c\u306e\u652f\u5ea6\u306f\u3082\u3046\u7d42\u308f\u308a\u307e\u3057\u305f\u304b\uff1f\nAre the preparations for the trip already finished?"
+  },
+  {
+    "id": 352,
+    "kanji": "\u653e\u9001",
+    "kana": "\u307b\u3046\u305d\u3046",
+    "eng": "broadcast",
+    "rei": "\u5915\u3079\u3042\u306e\u756a\u7d44\u304c\u653e\u9001\u3055\u308c\u307e\u3057\u305f\u3002\nThat program was broadcasted last night."
+  },
+  {
+    "id": 353,
+    "kanji": "\u653f\u6cbb",
+    "kana": "\u305b\u3044\u3058",
+    "eng": "politics; government",
+    "rei": "\u653f\u6cbb\u306b\u95a2\u3059\u308b\u610f\u898b\n(one's) political views"
+  },
+  {
+    "id": 354,
+    "kanji": "\u6545\u969c",
+    "kana": "\u3053\u3057\u3087\u3046",
+    "eng": "breakdown; failure; out of order",
+    "rei": "\u3053\u306e\u96fb\u8a71\u306f\u307e\u305f\u6545\u969c\u3057\u3066\u3044\u307e\u3059\u3002\nThis phone is broken again."
+  },
+  {
+    "id": 355,
+    "kanji": "\u6559\u4f1a",
+    "kana": "\u304d\u3087\u3046\u304b\u3044",
+    "eng": "church",
+    "rei": "\u6559\u4f1a\u3067\u7d50\u5a5a\u5f0f\u3092\u3057\u305f\u3044\u3067\u3059\u3002\nI want to have my wedding in a church."
+  },
+  {
+    "id": 356,
+    "kanji": "\u6559\u80b2",
+    "kana": "\u304d\u3087\u3046\u3044\u304f",
+    "eng": "education; schooling; training",
+    "rei": "\u5b50\u4f9b\u306e\u6559\u80b2\u304c\u30c9\u30f3\u30c9\u30f3\u9ad8\u304f\u306a\u3063\u3066\u3044\u307e\u3059\u3002\nEducation for children is becoming more and more expensive."
+  },
+  {
+    "id": 357,
+    "kanji": "\u6570\u5b66",
+    "kana": "\u3059\u3046\u304c\u304f",
+    "eng": "mathematics",
+    "rei": "\u6570\u5b66\u304c\u4e0b\u624b\u3067\u3059\u3002\nI am not good at math."
+  },
+  {
+    "id": 358,
+    "kanji": "\u6587\u5316",
+    "kana": "\u3076\u3093\u304b",
+    "eng": "culture",
+    "rei": "\u65e5\u672c\u306e\u6587\u5316\u306b\u8208\u5473\u304c\u3042\u308b\u306e\u3067\u3001\u7559\u5b66\u3057\u307e\u3057\u305f\u3002\nI am interested in Japanese culture, so I studied abroad."
+  },
+  {
+    "id": 359,
+    "kanji": "\u6587\u5b66",
+    "kana": "\u3076\u3093\u304c\u304f",
+    "eng": "literature",
+    "rei": "\u5927\u5b66\u3067\u30a2\u30e1\u30ea\u30ab\u6587\u5b66\u3092\u5c02\u653b\u3057\u307e\u3057\u305f\u3002\nI majored in American literature at college."
+  },
+  {
+    "id": 360,
+    "kanji": "\u6587\u6cd5",
+    "kana": "\u3076\u3093\u307d\u3046",
+    "eng": "grammar",
+    "rei": "\u826f\u3044\u6587\u6cd5\u306e\u672c\u3092\u77e5\u3063\u3066\u3044\u307e\u3059\u304b\uff1f\nDo you know a good grammar book?"
+  },
+  {
+    "id": 361,
+    "kanji": "\u65b0\u805e\u793e",
+    "kana": "\u3057\u3093\u3076\u3093\u3057\u3083",
+    "eng": "newspaper company",
+    "rei": "\u8aad\u58f2\u306f\u4e00\u756a\u5927\u304d\u3044\u65e5\u672c\u306e\u65b0\u805e\u793e\u3067\u3059\u3002\nThe Yomiuri is the biggest newspaper company in Japan."
+  },
+  {
+    "id": 362,
+    "kanji": "\u65c5\u9928",
+    "kana": "\u308a\u3087\u304b\u3093",
+    "eng": "Japanese-style lodging",
+    "rei": "\u4eac\u90fd\u306b\u884c\u3063\u305f\u3089\u3001\u99c5\u306b\u8fd1\u3044\u65c5\u9928\u306b\u6cca\u307e\u308a\u307e\u3059\u3002\nWhen I go to Kyoto, I stay at a ryokan near the station."
+  },
+  {
+    "id": 363,
+    "kanji": "\u65e5",
+    "kana": "\u3072\u3001\u306b\u3061",
+    "eng": "sun | day; counter for days",
+    "rei": "\u65e5\u304c\u6607\u308b\u3002\u65e5\u304c\u6c88\u3080\u3002\nThe sun rises.  The sun sets."
+  },
+  {
+    "id": 364,
+    "kanji": "\u65e5\u8a18",
+    "kana": "\u306b\u3063\u304d",
+    "eng": "diary; journal",
+    "rei": "\u6bce\u65e5\u65e5\u8a18\u3092\u66f8\u304f\u3088\u3046\u306b\u3057\u307e\u3057\u305f\u3002\nI decided to write a diary everyday."
+  },
+  {
+    "id": 365,
+    "kanji": "\u660e\u65e5",
+    "kana": "\u3042\u3057\u305f\u3001\u3042\u3059",
+    "eng": "tomorrow",
+    "rei": "\u660e\u65e5\u6d77\u306b\u884c\u304f\u304b\u3089\u3001\u30d3\u30fc\u30c1\u30b5\u30f3\u30c0\u30eb\u3092\u6301\u3063\u305f\u65b9\u304c\u826f\u3044\u3002\nWe will go to the beach tomorrow, so you should bring beach sandals."
+  },
+  {
+    "id": 366,
+    "kanji": "\u6614",
+    "kana": "\u3080\u304b\u3057",
+    "eng": "a long time ago",
+    "rei": "\u6614\u306e\u643a\u5e2f\u96fb\u8a71\u306f\u3068\u3066\u3082\u5927\u304d\u304b\u3063\u305f\u3088\u306d\u3002\nCell phones from long ago were really big."
+  },
+  {
+    "id": 367,
+    "kanji": "\u661f",
+    "kana": "\u307b\u3057",
+    "eng": "star",
+    "rei": "\u6771\u4eac\u306b\u3044\u305f\u3089\u898b\u3048\u306a\u3044\u3051\u3069\u3001\u7530\u820e\u306b\u884c\u3063\u305f\u3089\u661f\u304c\u3044\u3063\u3071\u3044\u898b\u3048\u307e\u3059\u3002\nWhen you are in Tokyo you can't see them, but if you go to the country side you can see many stars."
+  },
+  {
+    "id": 368,
+    "kanji": "\u662f\u975e",
+    "kana": "\u305c\u3072",
+    "eng": "certainly; definitely; without fail",
+    "rei": "\u65e5\u672c\u306b\u7559\u5b66\u3059\u308b\u6a5f\u4f1a\u304c\u3042\u308c\u3070\u3001\u662f\u975e\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nIf you have the opportunity to study abroad in Japan, definitely go."
+  },
+  {
+    "id": 369,
+    "kanji": "\u663c\u4f11\u307f",
+    "kana": "\u3072\u308b\u3084\u3059\u307f",
+    "eng": "lunch (noon) break;",
+    "rei": "\u30ad\u30e0\u304c\u75b2\u308c\u305f\u304b\u3089\u663c\u4f11\u307f\u306b\u5bdd\u305f\u305d\u3046\u3067\u3059\u3002\nIt seems Kim slept during lunch because she was tired."
+  },
+  {
+    "id": 370,
+    "kanji": "\u663c\u9593",
+    "kana": "\u3072\u308b\u307e",
+    "eng": "daytime; during the day",
+    "rei": "\u663c\u9593\u304c\u6691\u3044\u306e\u3067\u3001\u5915\u65b9\u307e\u3067\u5f85\u3063\u3066\u51fa\u304b\u3051\u307e\u3057\u3087\u3046\u3002\nIt is hot during the day, so let's wait until night and go out."
+  },
+  {
+    "id": 371,
+    "kanji": "\u6642\u4ee3",
+    "kana": "\u3058\u3060\u3044",
+    "eng": "period; era; times",
+    "rei": "\u9ad8\u6821\u6642\u4ee3\u306b\u30c6\u30cb\u30b9\u3092\u3084\u308a\u307e\u3057\u305f\u3002\nI played tennis when I was in high school."
+  },
+  {
+    "id": 372,
+    "kanji": "\u666e\u901a",
+    "kana": "\u3075\u3064\u3046",
+    "eng": "usual; ordinary",
+    "rei": "\u8a95\u751f\u65e5\u306a\u306e\u3067\u3001\u666e\u901a\u306e\u30ec\u30b9\u30c8\u30e9\u30f3\u3088\u308a\u826f\u3044\u306e\u306b\u884c\u304d\u305f\u3044\u3067\u3059\u3002\nIt is my birthday, so I want to go somewhere better than an ordinary restaurant."
+  },
+  {
+    "id": 373,
+    "kanji": "\u666f\u8272",
+    "kana": "\u3051\u3057\u304d",
+    "eng": "scenery; scene; landscape",
+    "rei": "\u65c5\u9928\u304b\u3089\u7f8e\u3057\u3044\u666f\u8272\u304c\u898b\u3048\u307e\u3059\u3002\nYou can see beautiful scenery from the ryokan."
+  },
+  {
+    "id": 374,
+    "kanji": "\u6696\u623f",
+    "kana": "\u3060\u3093\u307c\u3046",
+    "eng": "heating; heater",
+    "rei": "\u5bd2\u3044\u304b\u3089\u6696\u623f\u3092\u3064\u3051\u3066\u3082\u826f\u3044\u3067\u3059\u304b\uff1f\nIt is cold so may I turn on the heater?"
+  },
+  {
+    "id": 375,
+    "kanji": "\u66ae\u308c\u308b",
+    "kana": "\u304f\u308c\u308b",
+    "eng": "to get dark; to come to an end",
+    "rei": "\u65e5\u304c\u66ae\u308c\u308b\nto grow dark"
+  },
+  {
+    "id": 376,
+    "kanji": "\u6700\u3082",
+    "kana": "\u3082\u3063\u3068\u3082",
+    "eng": "most; extremely",
+    "rei": "\u6700\u3082\u826f\u3044\u672c\u306f\u3069\u308c\u3067\u3059\u304b\uff1f\nWhich is the best book?"
+  },
+  {
+    "id": 377,
+    "kanji": "\u6700\u521d",
+    "kana": "\u3055\u3044\u3057\u3087",
+    "eng": "beginning; first",
+    "rei": "\u4eca\u671d\u8ab0\u304c\u6700\u521d\u306b\u6765\u307e\u3057\u305f\u304b\uff1f\nWho came first this morning?"
+  },
+  {
+    "id": 378,
+    "kanji": "\u6700\u5f8c",
+    "kana": "\u3055\u3044\u3054",
+    "eng": "last; final",
+    "rei": "\u6628\u65e5\u6700\u5f8c\u5e30\u3063\u305f\u4eba\u306f\u8ab0\u3067\u3059\u304b\uff1f\nWho was the last to go home yesterday?"
+  },
+  {
+    "id": 379,
+    "kanji": "\u6700\u8fd1",
+    "kana": "\u3055\u3044\u304d\u3093",
+    "eng": "recently",
+    "rei": "\u6700\u8fd1\u51fa\u305f\u6620\u753b\nthe movie that came out recently"
+  },
+  {
+    "id": 380,
+    "kanji": "\u6708",
+    "kana": "\u3064\u304d",
+    "eng": "moon; (one) month",
+    "rei": "\u4eca\u65e5\u306e\u6708\u304c\u7f8e\u3057\u3044\u3067\u3059\u3002\nToday's moon is beautiful."
+  },
+  {
+    "id": 381,
+    "kanji": "\u6728\u7dbf",
+    "kana": "\u3082\u3081\u3093",
+    "eng": "cotton (material)",
+    "rei": "\u30b7\u30eb\u30af\u3088\u308a\u6728\u7dbf\u306e\u65b9\u304c\u5b89\u3044\u3067\u3059\u3002\nCotton is cheaper than silk."
+  },
+  {
+    "id": 382,
+    "kanji": "\u6797",
+    "kana": "\u306f\u3084\u3057",
+    "eng": "woods; thicket",
+    "rei": "\u6797\u306e\u4e2d\u3067\u866b\u306b\u3055\u3055\u308c\u305f\u3002\nI was bitten by insects in the woods."
+  },
+  {
+    "id": 383,
+    "kanji": "\u679d",
+    "kana": "\u3048\u3060",
+    "eng": "branch; twig",
+    "rei": "\u3053\u306e\u679d\u304c\u7d30\u3044\u304b\u3089\u6298\u308c\u3084\u3059\u3044\u3067\u3059\u3002\nThis branch is skinny so it is easily broken."
+  },
+  {
+    "id": 384,
+    "kanji": "\u67d4\u3089\u304b\u3044",
+    "kana": "\u3084\u308f\u3089\u304b\u3044",
+    "eng": "soft; tender",
+    "rei": "\u3053\u306e\u8089\u304c\u67d4\u3089\u304b\u304f\u3066\u7f8e\u5473\u3057\u3044\u3067\u3059\u3002\nThis meat is tender and delicious."
+  },
+  {
+    "id": 385,
+    "kanji": "\u67d4\u9053",
+    "kana": "\u3058\u3085\u3046\u3069\u3046",
+    "eng": "judo",
+    "rei": "\u5b50\u4f9b\u306e\u6642\u67d4\u9053\u3092\u3084\u308a\u307e\u3057\u305f\u3002\nI did judo when I was a child."
+  },
+  {
+    "id": 386,
+    "kanji": "\u6821\u9577",
+    "kana": "\u3053\u3046\u3061\u3087\u3046",
+    "eng": "principal; headmaster",
+    "rei": "\u3042\u306e\u5b66\u6821\u306730\u5e74\u50cd\u3044\u305f\u7530\u4e2d\u3055\u3093\u306f\u3084\u3063\u3068\u6821\u9577\u306b\u306a\u308a\u307e\u3057\u305f\u3002\nTanaka-san, who worked at that school for 30 years, finally became the principal."
+  },
+  {
+    "id": 387,
+    "kanji": "\u6848\u5185",
+    "kana": "\u3042\u3093\u306a\u3044",
+    "eng": "guidance; showing around",
+    "rei": "\u5927\u962a\u306b\u884c\u3063\u305f\u3089\u53cb\u9054\u304c\u6848\u5185\u3057\u3066\u304f\u308c\u307e\u3057\u305f\u3002\nMy friend showed us around when we went to Osaka."
+  },
+  {
+    "id": 388,
+    "kanji": "\u68da",
+    "kana": "\u305f\u306a",
+    "eng": "shelf; shelves",
+    "rei": "\u8aad\u307f\u7d42\u308f\u3063\u305f\u3089\u3001\u68da\u306b\u7f6e\u3044\u3066\u306d\u3002\nPut it on the shelf when you are done reading it."
+  },
+  {
+    "id": 389,
+    "kanji": "\u68ee",
+    "kana": "\u3082\u308a",
+    "eng": "forest",
+    "rei": "\u68ee\u306e\u4e2d\u306f\u6697\u304f\u3066\u6016\u3044\u3067\u3059\u3002\nInside the forest is dark and scary."
+  },
+  {
+    "id": 390,
+    "kanji": "\u690d\u3048\u308b",
+    "kana": "\u3046\u3048\u308b",
+    "eng": "to plant; to grow",
+    "rei": "\u6570\u5e74\u524d\u308a\u3093\u3054\u306e\u6728\u3092\u690d\u3048\u305f\u304c\u3001\u307e\u3060\u5c0f\u3055\u3044\u3002\nI planted an apple tree several years ago, but it is still small."
+  },
+  {
+    "id": 391,
+    "kanji": "\u697d\u3057\u307f",
+    "kana": "\u305f\u306e\u3057\u307f",
+    "eng": "enjoyment; pleasure",
+    "rei": "\u30d1\u30bd\u30b3\u30f3\u304c\u58ca\u308c\u3066\u3044\u308b\u304b\u3089\u30a2\u30cb\u30e1\u3092\u898b\u308b\u697d\u3057\u307f\u304c\u306a\u3044\u3002\nMy PC broke, so I don't have the enjoyment of watching anime."
+  },
+  {
+    "id": 392,
+    "kanji": "\u697d\u3057\u3080",
+    "kana": "\u305f\u306e\u3057\u3080",
+    "eng": "to enjoy oneself; to have fun",
+    "rei": "\u5b50\u4f9b\u9054\u304c\u4e00\u65e5\u4e2d\u5916\u3067\u904a\u3093\u3067\u697d\u3057\u3093\u3067\u3044\u305f\u3002\nThe children played outside all day and had fun."
+  },
+  {
+    "id": 393,
+    "kanji": "\u69cb\u3046",
+    "kana": "\u304b\u307e\u3046",
+    "eng": "to mind; to care about",
+    "rei": "\u8ab0\u3082\u4f7f\u3063\u3066\u3044\u306a\u3044\u306e\u3067\u3001\u3053\u306e\u90e8\u5c4b\u3067\u52c9\u5f37\u3057\u3066\u3082\u69cb\u3044\u307e\u305b\u3093\u3002\nNo one is using it, so I do not mind if you study in this room."
+  },
+  {
+    "id": 394,
+    "kanji": "\u69d8",
+    "kana": "\u3055\u307e",
+    "eng": "honorific title (Mr., Mrs., etc.)",
+    "rei": "\u7530\u4e2d\u69d8\u304c\u3044\u3089\u3063\u3057\u3083\u3044\u307e\u3059\u304b\uff1f\nIs Mr. Tanaka there?"
+  },
+  {
+    "id": 395,
+    "kanji": "\u6a5f\u4f1a",
+    "kana": "\u304d\u304b\u3044",
+    "eng": "chance; opportunity",
+    "rei": "\u65e5\u672c\u306b\u7559\u5b66\u3059\u308b\u6a5f\u4f1a\u304c\u3042\u308c\u3070\u3001\u662f\u975e\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nIf you have the opportunity to study abroad in Japan, definitely go."
+  },
+  {
+    "id": 396,
+    "kanji": "\u6b62\u3080",
+    "kana": "\u3084\u3080",
+    "eng": "to cease; to stop",
+    "rei": "\u96e8\u304c\u6b62\u3093\u3060\u304b\u3089\u51fa\u304b\u3051\u307e\u3057\u3087\u3046\u3002\nLet's go out because it stopped raining."
+  },
+  {
+    "id": 397,
+    "kanji": "\u6b62\u3081\u308b\uff08\u3068\u3081\u308b\uff09",
+    "kana": "\u3068\u3081\u308b",
+    "eng": "to stop; to turn off; to park",
+    "rei": "\u30ac\u30b9\u3092\u6b62\u3081\u3066\u304f\u3060\u3055\u3044\u3002\nPlease turn off the gas."
+  },
+  {
+    "id": 398,
+    "kanji": "\u6b62\u3081\u308b\uff08\u3084\u3081\u308b\uff09",
+    "kana": "\u3084\u3081\u308b",
+    "eng": "to stop (an activity); to quit",
+    "rei": "\u4f53\u306b\u60aa\u3044\u304b\u3089\u30bf\u30d0\u30b3\u3092\u6b62\u3081\u308b\u4e88\u5b9a\u3067\u3059\u3002\nSmoking is bad for my body, so I plan to stop."
+  },
+  {
+    "id": 399,
+    "kanji": "\u6b63\u3057\u3044",
+    "kana": "\u305f\u3060\u3057\u3044",
+    "eng": "right; correct",
+    "rei": "\u30b8\u30e7\u30f3\u306f\u6570\u5b66\u304c\u4e0b\u624b\u3060\u304b\u3089\u8cea\u554f\u3092\u6b63\u3057\u304f\u7b54\u3048\u3089\u308c\u306a\u304b\u3063\u305f\u3002\nJon is bad at math, so he couldn't answer the question correctly."
+  },
+  {
+    "id": 400,
+    "kanji": "\u6b63\u6708",
+    "kana": "\u3057\u3087\u3046\u304c\u3064",
+    "eng": "New Year (esp. the first few days); January",
+    "rei": "\u6b63\u6708\u306b\u65c5\u884c\u884c\u304d\u307e\u3059\u304b\uff1f\nWill you go on vacation during New Years?"
+  },
+  {
+    "id": 401,
+    "kanji": "\u6b6f\u533b\u8005",
+    "kana": "\u306f\u3044\u3057\u3083",
+    "eng": "dentist",
+    "rei": "\u6b6f\u533b\u8005\u306b\u884c\u304f\u524d\u306b\u6b6f\u3092\u78e8\u3044\u305f\u65b9\u304c\u826f\u3044\u3067\u3059\u3088\u3002\nYou should brush your teeth before you go to the dentist."
+  },
+  {
+    "id": 402,
+    "kanji": "\u6b74\u53f2",
+    "kana": "\u308c\u304d\u3057",
+    "eng": "history",
+    "rei": "\u6b74\u53f2\u306e\u8a66\u9a13\u3092\u5931\u6557\u3057\u307e\u3057\u305f\u3002\nI failed the history test."
+  },
+  {
+    "id": 403,
+    "kanji": "\u6b8b\u308b",
+    "kana": "\u306e\u3053\u308b",
+    "eng": "to remain",
+    "rei": "\u30af\u30c3\u30ad\u30fc\u304c\u4e00\u500b\u3057\u304b\u6b8b\u3063\u3066\u3044\u306a\u3044\u3002\nThere is only one cookie left."
+  },
+  {
+    "id": 404,
+    "kanji": "\u6b8b\u5ff5",
+    "kana": "\u3056\u3093\u306d\u3093",
+    "eng": "bad luck; regret",
+    "rei": "\u96e8\u304c\u964d\u3063\u3066\u52d5\u7269\u5712\u306b\u884c\u3051\u306a\u304f\u3066\u3001\u6b8b\u5ff5\u3060\u306d\u3002\nIt is regretable that it rained so we could not go to the zoo."
+  },
+  {
+    "id": 405,
+    "kanji": "\u6bd4\u3079\u308b",
+    "kana": "\u304f\u3089\u3079\u308b",
+    "eng": "to compare",
+    "rei": "\u3053\u306e\u8eca\u3068\u305d\u306e\u8eca\u3092\u6bd4\u3079\u3066\u304b\u3089\u6c7a\u3081\u307e\u3057\u3087\u3046\u3002\nLet's decide after we compare this car and that car."
+  },
+  {
+    "id": 406,
+    "kanji": "\u6bdb",
+    "kana": "\u3051",
+    "eng": "hair; fur; feathers",
+    "rei": "\u3053\u306e\u30a6\u30fc\u30eb\u304c\u7f8a\u306e\u6bdb\u304b\u3089\u4f5c\u308a\u307e\u3059\u3002\nThis wool is made from sheep fur."
+  },
+  {
+    "id": 407,
+    "kanji": "\u6c17",
+    "kana": "\u304d",
+    "eng": "spirit; nature; mood",
+    "rei": "\u6c17\u304c\u826f\u3044\nto be in a good mood"
+  },
+  {
+    "id": 408,
+    "kanji": "\u6c17\u5206",
+    "kana": "\u304d\u3076\u3093",
+    "eng": "feeling; mood",
+    "rei": "\u6c17\u5206\u304c\u60aa\u3051\u308c\u3070\u533b\u8005\u306b\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nPlease go to the doctor if you are feeling ill."
+  },
+  {
+    "id": 409,
+    "kanji": "\u6c17\u6301\u3061",
+    "kana": "\u304d\u3082\u3061",
+    "eng": "feeling; sensation; mood",
+    "rei": "\u30d7\u30ec\u30bc\u30f3\u30c8\u3092\u3082\u3089\u3063\u305f\u304b\u3089\u5b09\u3057\u3044\u6c17\u6301\u3061\u306b\u306a\u3063\u305f\u3002\nI was in a happy mood because I received a present."
+  },
+  {
+    "id": 410,
+    "kanji": "\u6c34\u6cf3",
+    "kana": "\u3059\u3044\u3048\u3044",
+    "eng": "swimming",
+    "rei": "\u5c0f\u5b66\u6821\u306e\u3068\u304d\u6c34\u6cf3\u3092\u3057\u307e\u3057\u305f\u3002\nI did swimming when I was in elementary school."
+  },
+  {
+    "id": 411,
+    "kanji": "\u6c34\u9053",
+    "kana": "\u3059\u3044\u3069\u3046",
+    "eng": "water supply; water works",
+    "rei": "\u3044\u3063\u3071\u3044\u4f7f\u3063\u305f\u304b\u3089\u4eca\u6708\u306e\u6c34\u9053\u306e\u6599\u91d1\u304c\u9ad8\u3044\u3002\nThis month's water bill is high because we used a lot."
+  },
+  {
+    "id": 412,
+    "kanji": "\u6c5a\u308c\u308b",
+    "kana": "\u3088\u3054\u308c\u308b",
+    "eng": "to become dirty",
+    "rei": "\u843d\u3068\u3057\u3066\u3057\u307e\u3063\u305f\u30bf\u30aa\u30eb\u304c\u6c5a\u308c\u305f\u3002\nThe towel I dropped became dirty."
+  },
+  {
+    "id": 413,
+    "kanji": "\u6c7a\u3057\u3066",
+    "kana": "\u3051\u3063\u3057\u3066",
+    "eng": "never; by no means",
+    "rei": "\u624b\u7d19\u3092\u51fa\u3059\u3053\u3068\u3092\u6c7a\u3057\u3066\u5fd8\u308c\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\nBy no means, forget to mail the letter.  (Be sure to mail the letter.)"
+  },
+  {
+    "id": 414,
+    "kanji": "\u6c7a\u307e\u308b",
+    "kana": "\u304d\u307e\u308b",
+    "eng": "to be decided",
+    "rei": "\u4ed5\u4e8b\u306e\u30b9\u30b1\u30b8\u30e5\u30fc\u30eb\u304c\u6c7a\u307e\u3063\u305f\u3089\u9023\u7d61\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease contact me when your work schedule is decided."
+  },
+  {
+    "id": 415,
+    "kanji": "\u6c7a\u3081\u308b",
+    "kana": "\u304d\u3081\u308b",
+    "eng": "to decide",
+    "rei": "\u3053\u306e\u8eca\u3068\u305d\u306e\u8eca\u3092\u6bd4\u3079\u3066\u304b\u3089\u6c7a\u3081\u307e\u3057\u3087\u3046\u3002\nLet's decide after we compare this car and that car."
+  },
+  {
+    "id": 416,
+    "kanji": "\u6cb8\u304b\u3059",
+    "kana": "\u308f\u304b\u3059",
+    "eng": "to boil",
+    "rei": "\u304a\u6e6f\u3092\u6cb8\u304b\u3059\nTo boil water"
+  },
+  {
+    "id": 417,
+    "kanji": "\u6cb8\u304f",
+    "kana": "\u308f\u304f",
+    "eng": "to boil",
+    "rei": "\u304a\u6e6f\u304c\u6cb8\u3044\u3066\u3044\u308b\u3088\u3002\nThe water is boiling."
+  },
+  {
+    "id": 418,
+    "kanji": "\u6cbb\u308b",
+    "kana": "\u306a\u304a\u308b",
+    "eng": "to be cured; to get well",
+    "rei": "\u98a8\u90aa\u304c\u3084\u3063\u3068\u6cbb\u308a\u307e\u3057\u305f\u3002\nMy cold finally got better."
+  },
+  {
+    "id": 419,
+    "kanji": "\u6cca\u307e\u308b",
+    "kana": "\u3068\u307e\u308b",
+    "eng": "to stay at (e.g. hotel)",
+    "rei": "\u7bb1\u6839\u306e\u65c5\u9928\u306b\u6cca\u307e\u308a\u305f\u3044\u3002\nI want to stay at a Hakone ryokan."
+  },
+  {
+    "id": 420,
+    "kanji": "\u6cd5\u5f8b",
+    "kana": "\u307b\u3046\u308a\u3064",
+    "eng": "law",
+    "rei": "\u65e5\u672c\u306e\u6cd5\u5f8b\u304c\u53b3\u3057\u3044\u3067\u3059\u3002\nJapanese laws are strict."
+  },
+  {
+    "id": 421,
+    "kanji": "\u6ce5\u68d2",
+    "kana": "\u3069\u308d\u307c\u3046",
+    "eng": "thief; burglar",
+    "rei": "\u8b66\u5bdf\u5b98\u304c\u6ce5\u68d2\u3092\u902e\u6355\u3057\u305f\u3002\nThe police arrested the thief."
+  },
+  {
+    "id": 422,
+    "kanji": "\u6ce8\u5c04",
+    "kana": "\u3061\u3085\u3046\u3057\u3083",
+    "eng": "injection; shot",
+    "rei": "\u533b\u8005\u304c\u6ce8\u5c04\u3092\u3057\u305f\u3002\nThe doctor gave an injection."
+  },
+  {
+    "id": 423,
+    "kanji": "\u6ce8\u610f",
+    "kana": "\u3061\u3085\u3046\u3044",
+    "eng": "caution; attention; warning",
+    "rei": "\u4eca\u5ea6\u30ec\u30dd\u30fc\u30c8\u306b\u540d\u524d\u3092\u66f8\u304f\u3088\u3046\u306b\u6ce8\u610f\u3057\u3066\u304f\u3060\u3055\u3044\u306d\u3002\nPlease be careful to write your name on the report next time."
+  },
+  {
+    "id": 424,
+    "kanji": "\u6d45\u3044",
+    "kana": "\u3042\u3055\u3044",
+    "eng": "shallow; superficial",
+    "rei": "\u3053\u306e\u6c60\u304c\u6d45\u3044\u304b\u3089\u7acb\u3066\u308b\u3088\u3002\nThis pond is shallow so you can stand."
+  },
+  {
+    "id": 425,
+    "kanji": "\u6d77\u5cb8",
+    "kana": "\u304b\u3044\u304c\u3093",
+    "eng": "coast; beach",
+    "rei": "\u6d77\u5cb8\u306b\u6cbf\u3063\u3066\u5f7c\u5973\u3068\u30c9\u30e9\u30a4\u30d6\u3057\u305f\u3002\nI drove along the coast with my girlfriend."
+  },
+  {
+    "id": 426,
+    "kanji": "\u6d88\u3057\u30b4\u30e0",
+    "kana": "\u3051\u3057\u3054\u3080",
+    "eng": "eraser",
+    "rei": "\u8a66\u9a13\u306b\u4e88\u5099\u306e\u6d88\u3057\u30b4\u30e0\u3092\u6301\u3063\u3066\u884c\u3051\u3070\u826f\u304b\u3063\u305f\u3002\nI should have taken a spare eraser to the test."
+  },
+  {
+    "id": 427,
+    "kanji": "\u6df1\u3044",
+    "kana": "\u3075\u304b\u3044",
+    "eng": "deep | profound",
+    "rei": "\u3053\u306e\u6e56\u304c\u6df1\u3044\u304b\u3089\u6c17\u3092\u4ed8\u3051\u3066\u306d\u3002\nThis lake is deep, so be careful."
+  },
+  {
+    "id": 428,
+    "kanji": "\u6df7\u3080",
+    "kana": "\u3053\u3080",
+    "eng": "to be crowded; to get packed",
+    "rei": "\u3042\u306e\u9053\u304c\u3044\u3064\u3082\u6df7\u3093\u3067\u3044\u308b\u306e\u3067\u3001\u671d\u901a\u3089\u306a\u3044\u3088\u3046\u306b\u3057\u3066\u3044\u307e\u3059\u3002\nThat street is always crowded, so I make a point of not going through it in the morning."
+  },
+  {
+    "id": 429,
+    "kanji": "\u6e08\u3080",
+    "kana": "\u3059\u3080",
+    "eng": "to finish; to end",
+    "rei": "\u65c5\u884c\u306e\u6e96\u5099\u306f\u6e08\u307f\u307e\u3057\u305f\u304b\uff1f\nHave you finished all the preparation for your trip?"
+  },
+  {
+    "id": 430,
+    "kanji": "\u6e29\u304b\u3044",
+    "kana": "\u3042\u305f\u305f\u304b\u3044",
+    "eng": "warm",
+    "rei": "\u5589\u304c\u75db\u3044\u3068\u304d\u6e29\u304b\u3044\u98f2\u307f\u7269\u304c\u6b32\u3057\u3044\u3067\u3059\u3002\nI want something warm to drink when my  throat is sore."
+  },
+  {
+    "id": 431,
+    "kanji": "\u6e2f",
+    "kana": "\u307f\u306a\u3068",
+    "eng": "harbor; port",
+    "rei": "\u8239\u304c\u6e2f\u306b\u5165\u308a\u307e\u3057\u305f\u3002\nThe boat entered the harbor."
+  },
+  {
+    "id": 432,
+    "kanji": "\u6e56",
+    "kana": "\u307f\u305a\u3046\u307f",
+    "eng": "lake",
+    "rei": "\u3053\u306e\u6e56\u304c\u6df1\u3044\u304b\u3089\u6c17\u3092\u4ed8\u3051\u3066\u306d\u3002\nThis lake is deep, so be careful."
+  },
+  {
+    "id": 433,
+    "kanji": "\u6e6f",
+    "kana": "\u3086",
+    "eng": "hot water",
+    "rei": "\u304a\u6e6f\u3092\u6cb8\u304b\u3059\nto boil water"
+  },
+  {
+    "id": 434,
+    "kanji": "\u6e96\u5099",
+    "kana": "\u3058\u3085\u3093\u3073",
+    "eng": "preparation; arrangements",
+    "rei": "\u3053\u308c\u304b\u3089\u6669\u3054\u98ef\u306e\u6e96\u5099\u3092\u3059\u308b\u306e\u3067\u3001\u3042\u305d\u3053\u3067\u30c6\u30ec\u30d3\u3092\u307f\u3066\u3002\nI will prepare dinner from now so watch TV over there."
+  },
+  {
+    "id": 435,
+    "kanji": "\u6ed1\u308b",
+    "kana": "\u3059\u3079\u308b",
+    "eng": "to slide; to slip",
+    "rei": "\u3053\u306e\u5eca\u4e0b\u306f\u6ed1\u308a\u3084\u3059\u3044\u306e\u3067\u3001\u6c17\u3092\u4ed8\u3051\u3066\u304f\u3060\u3055\u3044\u3002\nPlease be careful because this hallway is slippery."
+  },
+  {
+    "id": 436,
+    "kanji": "\u6f2b\u753b",
+    "kana": "\u307e\u3093\u304c",
+    "eng": "cartoon; comic",
+    "rei": "\u30c6\u30ec\u30d3\u304c\u58ca\u308c\u3066\u3044\u308b\u304b\u3089\u6bce\u6669\u6f2b\u753b\u3092\u8aad\u3093\u3067\u3044\u307e\u3059\u3002\nMy TV is broken, so I read cartoons every night."
+  },
+  {
+    "id": 437,
+    "kanji": "\u6f2c\u3051\u308b",
+    "kana": "\u3064\u3051\u308b",
+    "eng": "to pickle",
+    "rei": "\u5927\u6839\u3092\u6f2c\u3051\u308b\u3002\nI will pickel a radish"
+  },
+  {
+    "id": 438,
+    "kanji": "\u6fe1\u308c\u308b",
+    "kana": "\u306c\u308c\u308b",
+    "eng": "to get wet",
+    "rei": "\u96e8\u3067\u670d\u304c\u6fe1\u308c\u305f\u304b\u3089\u7740\u66ff\u3048\u305f\u3002\nI changed because my clothes got wet in the rain."
+  },
+  {
+    "id": 439,
+    "kanji": "\u706b",
+    "kana": "\u3072",
+    "eng": "fire; flame",
+    "rei": "\u5f31\u3044\u706b\u3067\u8089\u3092\u713c\u3044\u305f\u3089\u3001\u67d4\u3089\u304b\u304f\u306a\u308a\u307e\u3059\u3002\nIf you roast the meat on low heat, it will become soft."
+  },
+  {
+    "id": 440,
+    "kanji": "\u706b\u4e8b",
+    "kana": "\u304b\u3058",
+    "eng": "fire; conflagration",
+    "rei": "\u706b\u4e8b\u304c\u3042\u3063\u305f\u306e\u3067\u6d88\u9632\u8eca\u304c\u6765\u305f\u3002\nThere was a fire so the fire truck came."
+  },
+  {
+    "id": 441,
+    "kanji": "\u70b9",
+    "kana": "\u3066\u3093",
+    "eng": "spot; mark | score; points | number of points",
+    "rei": "\u3053\u306e\u5bbf\u984c\u306e\u91cd\u8981\u306a\u70b9\u306f\u6587\u6cd5\u3067\u3057\u305f\u3002\nThe important point of this homework was the grammar."
+  },
+  {
+    "id": 442,
+    "kanji": "\u7121\u304f\u306a\u308b",
+    "kana": "\u306a\u304f\u306a\u308b",
+    "eng": "to be lost (e.g. luggage); to be missing",
+    "rei": "\u925b\u7b46\u304c\u7121\u304f\u306a\u3063\u305f\u304b\u3089\u8cb8\u3057\u3066\u3002\nMy pencil is missing, so lend me yours."
+  },
+  {
+    "id": 443,
+    "kanji": "\u7121\u7406",
+    "kana": "\u3080\u308a",
+    "eng": "impossible",
+    "rei": "10\u5206\u30673\u30ad\u30ed\u306e\u30b9\u30c6\u30fc\u30ad\u3092\u98df\u3079\u308b\u306e\u306f\u7121\u7406\u3060\u3088\u3002\nIt is impossible to eat 3 kg of steak in 10 minutes."
+  },
+  {
+    "id": 444,
+    "kanji": "\u713c\u304f",
+    "kana": "\u3084\u304f",
+    "eng": "to burn | to roast; to grill",
+    "rei": "\u5f31\u3044\u706b\u3067\u8089\u3092\u713c\u3044\u305f\u3089\u3001\u67d4\u3089\u304b\u304f\u306a\u308a\u307e\u3059\u3002\nIf you roast the meat on low heat, it will become soft."
+  },
+  {
+    "id": 445,
+    "kanji": "\u713c\u3051\u308b",
+    "kana": "\u3084\u3051\u308b",
+    "eng": "to burn; to be roasted",
+    "rei": "\u8089\u304c\u3082\u3046\u713c\u3051\u305f\u304b\u3089\u706b\u3092\u6b62\u3081\u3066\u3002\nThe meat is already roasted, so please turn off the stove."
+  },
+  {
+    "id": 446,
+    "kanji": "\u71b1",
+    "kana": "\u306d\u3064",
+    "eng": "heat; fever; passion",
+    "rei": "\u98a8\u306e\u3068\u304d39\u5ea6\u306e\u71b1\u304c\u3042\u308a\u307e\u3057\u305f\u3002\nI had a 39 degree fever when I had a cold."
+  },
+  {
+    "id": 447,
+    "kanji": "\u71b1\u5fc3",
+    "kana": "\u306d\u3063\u3057\u3093",
+    "eng": "zeal; enthusiasm",
+    "rei": "\u71b1\u5fc3\u306b\u52c9\u5f37\u3059\u308b\nto study with zeal (to study hard)"
+  },
+  {
+    "id": 448,
+    "kanji": "\u7247\u4ed8\u3051\u308b",
+    "kana": "\u304b\u305f\u3065\u3051\u308b",
+    "eng": "to tidy up; to put away",
+    "rei": "\u7d42\u308f\u3063\u305f\u3089\u304a\u3082\u3061\u3083\u3092\u7247\u4ed8\u3051\u3066\u306d\u3002\nPut away your toys when you are done."
+  },
+  {
+    "id": 449,
+    "kanji": "\u7279\u306b",
+    "kana": "\u3068\u304f\u306b",
+    "eng": "particularly; especially",
+    "rei": "\u300c\u4ed6\u306b\u8cea\u554f\u3042\u308a\u307e\u3059\u304b\uff1f\u300d\u300c\u7279\u306b\u306a\u3044\u3067\u3059\u3002\u300d\nAre there any other questions?  Nothing in particular."
+  },
+  {
+    "id": 450,
+    "kanji": "\u7279\u5225",
+    "kana": "\u3068\u304f\u3079\u3064",
+    "eng": "special",
+    "rei": "\u8a95\u751f\u65e5\u3060\u304b\u3089\u7279\u5225\u306a\u65e5\u3060\u3088\u3002\nIt is a special day because it is my birthday."
+  },
+  {
+    "id": 451,
+    "kanji": "\u7279\u6025",
+    "kana": "\u3068\u3063\u304d\u3085\u3046",
+    "eng": "limited express (train, faster than an express)",
+    "rei": "\u7279\u6025\u304c\u4e00\u756a\u65e9\u3044\u306e\u3067\u4fbf\u5229\u3067\u3059\u3002\nThe special express is convenient because it is the fastest."
+  },
+  {
+    "id": 452,
+    "kanji": "\u73cd\u3057\u3044",
+    "kana": "\u3081\u305a\u3089\u3057\u3044",
+    "eng": "unusual; rare",
+    "rei": "\u3053\u3093\u306a\u9045\u304f\u5bdd\u308b\u306e\u306f\u73cd\u3057\u3044\u306e\u3067\u3001\u3068\u3066\u3082\u7720\u3044\u3067\u3059\u3002\nIt is rare for me to go to bed this late, so I am very sleepy."
+  },
+  {
+    "id": 453,
+    "kanji": "\u7406\u7531",
+    "kana": "\u308a\u3086\u3046",
+    "eng": "reason; motive",
+    "rei": "\u9045\u308c\u305f\u7406\u7531\u3092\u8aac\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease explain the reason you were late."
+  },
+  {
+    "id": 454,
+    "kanji": "\u751f\u304d\u308b",
+    "kana": "\u3044\u304d\u308b",
+    "eng": "to live; to exist",
+    "rei": "\u5bb6\u65cf\u304c\u4ea1\u304f\u306a\u308c\u3070\u3001\u751f\u304d\u308b\u7406\u7531\u304c\u306a\u304f\u306a\u308b\u3002\nIf my family dies, I will lose my reason for living."
+  },
+  {
+    "id": 455,
+    "kanji": "\u751f\u6d3b",
+    "kana": "\u305b\u3044\u304b\u3064",
+    "eng": "life (one's daily existence); livelihood",
+    "rei": "\u4ed5\u4e8b\u304c\u306a\u3051\u308c\u3070\u751f\u6d3b\u304c\u3067\u304d\u306a\u3044\u3002\nI can't make a living without a job."
+  },
+  {
+    "id": 456,
+    "kanji": "\u751f\u7523",
+    "kana": "\u305b\u3044\u3055\u3093",
+    "eng": "production; manufacture",
+    "rei": "\u305d\u306e\u5de5\u5834\u306f\u96fb\u6c17\u88fd\u54c1\u3092\u751f\u7523\u3059\u308b\u3002\nThe factory produces electronic goods."
+  },
+  {
+    "id": 457,
+    "kanji": "\u7523\u696d",
+    "kana": "\u3055\u3093\u304e\u3087\u3046",
+    "eng": "industry",
+    "rei": "\u7d4c\u6e08\u7523\u696d\u7701\nMinistry of Economy, Trade, and Industry"
+  },
+  {
+    "id": 458,
+    "kanji": "\u7528",
+    "kana": "\u3088\u3046",
+    "eng": "business; task | use; purpose",
+    "rei": "\u5b50\u4f9b\u7528\u306e\u88fd\u54c1\nproducts for children"
+  },
+  {
+    "id": 459,
+    "kanji": "\u7528\u4e8b",
+    "kana": "\u3088\u3046\u3058",
+    "eng": "things to do; errand; business (to take care of)",
+    "rei": "\u3054\u3081\u3093\u3001\u660e\u65e5\u306e\u5348\u5f8c\u306b\u7528\u4e8b\u304c\u3042\u308b\u304b\u3089\u884c\u3051\u306a\u3044\u3002\nSorry, I can't go because I have plans tomorrow afternoon."
+  },
+  {
+    "id": 460,
+    "kanji": "\u7528\u610f",
+    "kana": "\u3088\u3046\u3044",
+    "eng": "preparation; arrangements",
+    "rei": "\u5f7c\u306f\u7f8e\u5473\u3057\u305d\u3046\u306a\u98df\u4e8b\u3092\u7528\u610f\u3057\u3066\u304f\u308c\u307e\u3057\u305f\u3002\nHe prepared a delicious looking meal for me."
+  },
+  {
+    "id": 461,
+    "kanji": "\u7530\u820e",
+    "kana": "\u3044\u306a\u304b",
+    "eng": "rural area; countryside",
+    "rei": "\u6771\u4eac\u306b\u3044\u305f\u3089\u898b\u3048\u306a\u3044\u306e\u306b\u3001\u7530\u820e\u306b\u884c\u3063\u305f\u3089\u661f\u304c\u3044\u3063\u3071\u3044\u898b\u3048\u307e\u3059\u3002\nWhen you are in Tokyo you can't see them, but if you go to the country side you can see many stars."
+  },
+  {
+    "id": 462,
+    "kanji": "\u7533\u3057\u4e0a\u3052\u308b",
+    "kana": "\u3082\u3046\u3057\u3042\u3052\u308b",
+    "eng": "(hum) to say; to tell",
+    "rei": "\u304a\u5ba2\u3055\u3093\u306b\u539f\u56e0\u3092\u7533\u3057\u4e0a\u3052\u308b\nto explain the cause to the customer"
+  },
+  {
+    "id": 463,
+    "kanji": "\u7533\u3059",
+    "kana": "\u3082\u3046\u3059",
+    "eng": "(hum) to say; to be called",
+    "rei": "\u7530\u4e2d\u3068\u7533\u3057\u307e\u3059\u3002\nI am Tanaka."
+  },
+  {
+    "id": 464,
+    "kanji": "\u7537\u6027",
+    "kana": "\u3060\u3093\u305b\u3044",
+    "eng": "man; male",
+    "rei": "\u7537\u6027\u306e\u30c8\u30a4\u30ec\u306f\u3069\u3053\u3067\u3059\u304b\uff1f\nWhere is the men's toilet?"
+  },
+  {
+    "id": 465,
+    "kanji": "\u7559\u5b88",
+    "kana": "\u308b\u3059",
+    "eng": "absence; being away from home",
+    "rei": "\u7559\u5b88\u3057\u3066\u3044\u308b\u9593\u3001\u72ac\u306e\u4e16\u8a71\u3092\u304a\u9858\u3044\u3057\u307e\u3059\u306d\u3002\nPlease take care of my dog while I am away."
+  },
+  {
+    "id": 466,
+    "kanji": "\u756a\u7d44",
+    "kana": "\u3070\u3093\u3050\u307f",
+    "eng": "program (e.g. TV)",
+    "rei": "\u30c6\u30ec\u30d3\u304c\u58ca\u308c\u3066\u3044\u308b\u304b\u3089\u6628\u65e5\u306e\u756a\u7d44\u306f\u898b\u308c\u306a\u304b\u3063\u305f\u3002\nMy TV is broken, so I couldn't watch the program yesterday."
+  },
+  {
+    "id": 467,
+    "kanji": "\u7573",
+    "kana": "\u305f\u305f\u307f",
+    "eng": "tatami mat",
+    "rei": "\u548c\u5ba4\u306b\u7573\u304c\u3042\u308a\u307e\u3059\u3002\nThere is a tatami mat in the Japanese-style room."
+  },
+  {
+    "id": 468,
+    "kanji": "\u75e9\u305b\u308b",
+    "kana": "\u3084\u305b\u308b",
+    "eng": "to become thin; to lose weight",
+    "rei": "\u590f\u306b\u30c0\u30a4\u30a8\u30c3\u30c8\u3057\u30665\u30ad\u30ed\u4ee5\u4e0a\u75e9\u305b\u305f\u3044\u3067\u3059\u3002\nI want to diet during summer and lose at least 5 kg."
+  },
+  {
+    "id": 469,
+    "kanji": "\u767a\u97f3",
+    "kana": "\u306f\u3064\u304a\u3093",
+    "eng": "pronunciation",
+    "rei": "\u4e2d\u56fd\u8a9e\u306e\u767a\u97f3\u304c\u65e5\u672c\u8a9e\u3068\u5168\u7136\u9055\u3046\u3002\nChinese and Japanese pronunciations are completely different."
+  },
+  {
+    "id": 470,
+    "kanji": "\u7686",
+    "kana": "\u307f\u3093\u306a\u3001\u307f\u306a",
+    "eng": "everyone; everybody",
+    "rei": "\u7686\u304c\u805e\u3053\u3048\u308b\u3088\u3046\u306b\u5927\u304d\u306a\u58f0\u3067\u8a71\u3057\u306a\u3055\u3044\u3002\nSpeak loudly so that everyone can hear."
+  },
+  {
+    "id": 471,
+    "kanji": "\u76d7\u3080",
+    "kana": "\u306c\u3059\u3080",
+    "eng": "to steal",
+    "rei": "\u6ce5\u68d2\u304c\u5f7c\u5973\u306e\u8eca\u3092\u76d7\u3093\u3060\u3002\nThe robber stole her car."
+  },
+  {
+    "id": 472,
+    "kanji": "\u76db\u3093",
+    "kana": "\u3055\u304b\u3093",
+    "eng": "popular | energetic",
+    "rei": "\u65e5\u672c\u3067\u76f8\u64b2\u306f\u76db\u3093\u306a\u30b9\u30dd\u30fc\u30c4\u3067\u3059\u3002\nSumo is a popular sport in Japan."
+  },
+  {
+    "id": 473,
+    "kanji": "\u76f4\u3059",
+    "kana": "\u306a\u304a\u3059",
+    "eng": "to fix; to correct; to repair",
+    "rei": "\u30d1\u30bd\u30b3\u30f3\u304c\u58ca\u308c\u3066\u3044\u308b\u304b\u3089\u30c8\u30e0\u306b\u76f4\u3057\u3066\u3082\u3089\u3046\u3064\u3082\u308a\u3067\u3059\u3002\nMy PC is broken so I plan to have Tom fix it."
+  },
+  {
+    "id": 474,
+    "kanji": "\u76f4\u308b",
+    "kana": "\u306a\u304a\u308b",
+    "eng": "to be repaired; to be fixed",
+    "rei": "\u30d1\u30bd\u30b3\u30f3\u304c\u58ca\u308c\u3066\u3044\u305f\u3051\u3069\u3001\u30c8\u30e0\u304c\u624b\u4f1d\u3063\u3066\u304f\u308c\u3066\u76f4\u3063\u305f\u3002\nMy PC was broken, but Tom helped me and it is fixed."
+  },
+  {
+    "id": 475,
+    "kanji": "\u76f8\u8ac7",
+    "kana": "\u305d\u3046\u3060\u3093",
+    "eng": "consultation; discussion",
+    "rei": "\u6cd5\u5f8b\u306f\u5f01\u8b77\u58eb\u306b\u76f8\u8ac7\u3057\u305f\u65b9\u304c\u826f\u3044\u3067\u3059\u3002\nAs for the law, you should consult a lawyer."
+  },
+  {
+    "id": 476,
+    "kanji": "\u770b\u8b77\u5e2b",
+    "kana": "\u304b\u3093\u3054\u3057",
+    "eng": "nurse",
+    "rei": "\u9996\u304c\u75db\u3051\u308c\u3070\u3001\u770b\u8b77\u5e2b\u306b\u6795\u3092\u5909\u3048\u3066\u3082\u3089\u3063\u305f\u65b9\u304c\u826f\u3044\u3067\u3059\u3088\u3002\nIf your neck hurts, you should have the nurse change your pillow."
+  },
+  {
+    "id": 477,
+    "kanji": "\u771f\u4e2d",
+    "kana": "\u307e\u3093\u306a\u304b",
+    "eng": "middle; center",
+    "rei": "\u3058\u3083\u307e\u306a\u306e\u3067\u3001\u5eca\u4e0b\u306e\u771f\u3093\u4e2d\u306b\u7f6e\u304b\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\nIt is a hindrance, so don't put it in the middle of the hallway."
+  },
+  {
+    "id": 478,
+    "kanji": "\u771f\u9762\u76ee",
+    "kana": "\u307e\u3058\u3081",
+    "eng": "diligent; serious; honest",
+    "rei": "\u5c71\u672c\u3055\u3093\u306f\u305d\u3093\u306a\u771f\u9762\u76ee\u306a\u30bf\u30a4\u30d7\u306e\u4eba\u3067\u3059\u306d\u3002\nMr. Yamamoto is that kind of serious person."
+  },
+  {
+    "id": 479,
+    "kanji": "\u7720\u3044",
+    "kana": "\u306d\u3080\u3044",
+    "eng": "sleepy",
+    "rei": "\u3053\u3093\u306a\u9045\u304f\u5bdd\u308b\u306e\u306f\u73cd\u3057\u3044\u306e\u3067\u3001\u3068\u3066\u3082\u7720\u3044\u3067\u3059\u3002\nIt is rare for me to go to bed this late, so I am very sleepy."
+  },
+  {
+    "id": 480,
+    "kanji": "\u7720\u308b",
+    "kana": "\u306d\u3080\u308b",
+    "eng": "to sleep",
+    "rei": "\u5a18\u306e\u3053\u3068\u3092\u5fc3\u914d\u3057\u3066\u3044\u3066\u3001\u6628\u65e5\u7720\u308c\u306a\u304b\u3063\u305f\u3002\nI couldn't sleep last night because I was worrying about my daughter."
+  },
+  {
+    "id": 481,
+    "kanji": "\u7740\u7269",
+    "kana": "\u304d\u3082\u306e",
+    "eng": "kimono (or other trad. Japanese clothing)",
+    "rei": "\u7279\u5225\u306a\u30a4\u30d9\u30f3\u30c8\u306a\u306e\u3067\u7740\u7269\u3092\u7740\u3066\u304f\u3060\u3055\u3044\u3002\nPlease wear a kimono because it is a special event."
+  },
+  {
+    "id": 482,
+    "kanji": "\u77e5\u3089\u305b\u308b",
+    "kana": "\u3057\u3089\u305b\u308b",
+    "eng": "to notify; to inform",
+    "rei": "\u554f\u984c\u304c\u3042\u308c\u3070\u4e0a\u53f8\u306b\u3059\u3050\u77e5\u3089\u305b\u3066\u304f\u3060\u3055\u3044\u3002\nIf there is a problem, please notify your superior immediately."
+  },
+  {
+    "id": 483,
+    "kanji": "\u77f3",
+    "kana": "\u3044\u3057",
+    "eng": "stone; rock; gem",
+    "rei": "\u5371\u306a\u3044\u304b\u3089\u77f3\u3092\u6295\u3052\u306a\u3044\u3067\u3002\nDon't throw rocks because it is dangerous."
+  },
+  {
+    "id": 484,
+    "kanji": "\u7802",
+    "kana": "\u3059\u306a",
+    "eng": "sand",
+    "rei": "\u7802\u304c\u5acc\u3044\u306a\u306e\u3067\u3001\u30d3\u30fc\u30c1\u306b\u3042\u307e\u308a\u884c\u304b\u306a\u3044\u3002\nI hate sand, so I don't often go to the beach."
+  },
+  {
+    "id": 485,
+    "kanji": "\u7814\u7a76",
+    "kana": "\u3051\u3093\u304d\u3085\u3046",
+    "eng": "study; research",
+    "rei": "\u6570\u5b66\u306e\u7814\u7a76\u304c\u96e3\u3057\u3059\u304e\u308b\u3002\nMathematics research is too difficult."
+  },
+  {
+    "id": 486,
+    "kanji": "\u7814\u7a76\u5ba4",
+    "kana": "\u3051\u3093\u304d\u3085\u3046\u3057\u3064",
+    "eng": "laboratory",
+    "rei": "\u5148\u751f\u304c\u7814\u7a76\u5ba4\u306b\u3044\u308b\u3093\u3067\u3059\u304c\u3001\u5f8c\u3067\u30aa\u30d5\u30a3\u30b9\u306b\u623b\u308a\u307e\u3059\u3002\nThe teacher is in the laboratory now, but he will return to his office later."
+  },
+  {
+    "id": 487,
+    "kanji": "\u786c\u3044",
+    "kana": "\u304b\u305f\u3044",
+    "eng": "hard (opposite of soft: \u3084\u308f\u3089\u304b\u3044)",
+    "rei": "\u77f3\u304c\u786c\u3044\u304b\u3089\u6295\u3052\u306a\u3044\u3067\u3002\nThe rock is hard, so don't throw it."
+  },
+  {
+    "id": 488,
+    "kanji": "\u78ba\u304b",
+    "kana": "\u305f\u3057\u304b",
+    "eng": "sure; definite | true",
+    "rei": "\u3053\u306e\u6559\u79d1\u66f8\u304c\u9ad8\u3044\u306e\u306f\u78ba\u304b\u3067\u3059\u304c\u3001\u8aad\u307f\u3084\u3059\u3044\u304b\u3069\u3046\u304b\u308f\u304b\u308a\u307e\u305b\u3093\u3002\nThat this textbook is expensive is true, but I do not know if it is easy to read."
+  },
+  {
+    "id": 489,
+    "kanji": "\u793e\u4f1a",
+    "kana": "\u3057\u3083\u304b\u3044",
+    "eng": "society",
+    "rei": "\u3042\u306e\u6cd5\u5f8b\u306f\u793e\u4f1a\u306b\u3044\u3044\u3067\u3059\u3002\nThat law is good for society."
+  },
+  {
+    "id": 490,
+    "kanji": "\u793e\u9577",
+    "kana": "\u3057\u3083\u3061\u3087\u3046",
+    "eng": "company president",
+    "rei": "\u5927\u304d\u3044\u4f1a\u793e\u306e\u793e\u9577\u306b\u306a\u308a\u305f\u3044\u3002\nI want to become the president of a large company."
+  },
+  {
+    "id": 491,
+    "kanji": "\u7948\u308b",
+    "kana": "\u3044\u306e\u308b",
+    "eng": "to pray; to wish",
+    "rei": "\u5b9d\u304f\u3058\u304c\u5f53\u305f\u308b\u3088\u3046\u306b\u7948\u308a\u307e\u3059\u3002\nI pray that I will win the lottery."
+  },
+  {
+    "id": 492,
+    "kanji": "\u7956\u6bcd",
+    "kana": "\u305d\u307c",
+    "eng": "(my) grandmother",
+    "rei": "\u7956\u6bcd\u304c80\u6b73\u306a\u306e\u306b\u3001\u6bce\u65e5\u6c34\u6cf3\u3092\u3057\u3066\u3044\u307e\u3059\u3002\nMy grandmother is 80, but still swims everyday."
+  },
+  {
+    "id": 493,
+    "kanji": "\u7956\u7236",
+    "kana": "\u305d\u3075",
+    "eng": "(my) grandfather",
+    "rei": "\u7956\u7236\u304c80\u6b73\u3067\u4ea1\u304f\u306a\u308a\u307e\u3057\u305f\u3002\nMy grandfather died at 80."
+  },
+  {
+    "id": 494,
+    "kanji": "\u795e\u793e",
+    "kana": "\u3058\u3093\u3058\u3083",
+    "eng": "Shinto shrine",
+    "rei": "\u304a\u6b63\u6708\u306b\u795e\u793e\u306b\u884c\u304d\u307e\u3057\u305f\u3002\nI went to the shrine on New Year's Day."
+  },
+  {
+    "id": 495,
+    "kanji": "\u796d\u308a",
+    "kana": "\u307e\u3064\u308a",
+    "eng": "festival",
+    "rei": "\u4eca\u9031\u306e\u571f\u66dc\u65e5\u306b\u304a\u796d\u308a\u304c\u3042\u308a\u307e\u3059\u304c\u3001\u884c\u304d\u307e\u305b\u3093\u304b\uff1f\nThere is a festival this week Saturday, won't you go?"
+  },
+  {
+    "id": 496,
+    "kanji": "\u79d1\u5b66",
+    "kana": "\u304b\u304c\u304f",
+    "eng": "science",
+    "rei": "\u79d1\u5b66\u304c\u9762\u767d\u3044\u306e\u3067\u3001\u52c9\u5f37\u3057\u305f\u3044\u3067\u3059\u3002\nScience is interesting so I want to study it."
+  },
+  {
+    "id": 497,
+    "kanji": "\u79fb\u308b",
+    "kana": "\u3046\u3064\u308b",
+    "eng": "to move; to transfer",
+    "rei": "\u3053\u3053\u304c\u7a7a\u3044\u3066\u3044\u308b\u306e\u3067\u3001\u524d\u306e\u5e2d\u306b\u79fb\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nIt is empty here, so move to a seat in the front."
+  },
+  {
+    "id": 498,
+    "kanji": "\u7a7a\u304f (\u3042\u304f)",
+    "kana": "\u3042\u304f",
+    "eng": "to be open; to become empty",
+    "rei": "\u3053\u3053\u304c\u7a7a\u3044\u3066\u3044\u308b\u306e\u3067\u3001\u524d\u306e\u5e2d\u306b\u79fb\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nIt is empty here, so move to a seat in the front."
+  },
+  {
+    "id": 499,
+    "kanji": "\u7a7a\u304f (\u3059\u304f)",
+    "kana": "\u3059\u304f",
+    "eng": "to become less crowded; to get empty",
+    "rei": "\u7d42\u96fb\u306e\u6642\u9593\u306b\u306a\u3063\u3066\u3001\u3053\u306e\u5c45\u9152\u5c4b\u304c\u7a7a\u3044\u3066\u304d\u305f\u3002\nIt was time for the last train and this izakaya became less crowded."
+  },
+  {
+    "id": 500,
+    "kanji": "\u7a7a\u6c17",
+    "kana": "\u304f\u3046\u304d",
+    "eng": "air; atmosphere | mood; situation",
+    "rei": "\u30e1\u30ad\u30b7\u30b3\u5e02\u306e\u7a7a\u6c17\u304c\u6c5a\u304f\u3066\u3001\u606f\u3057\u306b\u304f\u3044\u3002\nThe air in Mexico City is polluted and it is difficult to breath."
+  },
+  {
+    "id": 501,
+    "kanji": "\u7a7a\u6e2f",
+    "kana": "\u304f\u3046\u3053\u3046",
+    "eng": "airport",
+    "rei": "\u7a7a\u6e2f\u306b\u7740\u3044\u305f\u3089\u3059\u3050\u306b\u9023\u7d61\u3057\u307e\u3059\u3002\nI'll contact you  as soon as I am at the airport."
+  },
+  {
+    "id": 502,
+    "kanji": "\u7acb\u3066\u308b",
+    "kana": "\u305f\u3066\u308b",
+    "eng": "to stand up; to erect",
+    "rei": "\u72ac\u306f\u8033\u3092\u7acb\u3066\u307e\u3057\u305f\u3002\nThe dog stood his ears up."
+  },
+  {
+    "id": 503,
+    "kanji": "\u7af6\u4e89",
+    "kana": "\u304d\u3087\u3046\u305d\u3046",
+    "eng": "competition; race",
+    "rei": "\u3042\u306e\u5efa\u7269\u307e\u3067\u7af6\u4e89\u3057\u3088\u3046\u3002\nLet's race to that building."
+  },
+  {
+    "id": 504,
+    "kanji": "\u7b11\u3046",
+    "kana": "\u308f\u3089\u3046",
+    "eng": "to laugh; to smile",
+    "rei": "\u9762\u767d\u3044\u304b\u3089\u7b11\u3063\u305f\u3002\nI laughed because it was funny."
+  },
+  {
+    "id": 505,
+    "kanji": "\u7b54",
+    "kana": "\u3053\u305f\u3048",
+    "eng": "answer; reply",
+    "rei": "\u3053\u306e\u7b54\u304c\u6b63\u3057\u3044\u304b\u3069\u3046\u304b\u5206\u304b\u308a\u307e\u305b\u3093\u3002\nI don't know if this answer is correct."
+  },
+  {
+    "id": 506,
+    "kanji": "\u7c21\u5358",
+    "kana": "\u304b\u3093\u305f\u3093",
+    "eng": "simple",
+    "rei": "\u7c21\u5358\u306a\u8cea\u554f\u306a\u306e\u306b\u3001\u7b54\u3048\u304c\u5206\u304b\u308a\u307e\u305b\u3093\u3002\nAlthough it is a simple question, I don't know the answer."
+  },
+  {
+    "id": 507,
+    "kanji": "\u7c73",
+    "kana": "\u3053\u3081",
+    "eng": "rice",
+    "rei": "\u6700\u8fd1\u3044\u3064\u3082\u7c73\u3092\u98df\u3079\u3066\u3044\u308b\u304b\u3089\u3001\u4eca\u65e5\u30d1\u30f3\u306b\u3057\u3088\u3046\u3002\nWe've been eating rice all the time recently, so let's have bread today."
+  },
+  {
+    "id": 508,
+    "kanji": "\u7cf8",
+    "kana": "\u3044\u3068",
+    "eng": "thread; string",
+    "rei": "\u3053\u306e\u30b7\u30e3\u30c4\u3092\u76f4\u3057\u305f\u3044\u3093\u3067\u3059\u304c\u3001\u7cf8\u304c\u3042\u308a\u307e\u3059\u304b\uff1f\nI want to fix this shirt, but do you have string?"
+  },
+  {
+    "id": 509,
+    "kanji": "\u7d04\u675f",
+    "kana": "\u3084\u304f\u305d\u304f",
+    "eng": "promise; agreement",
+    "rei": "\u6bcd\u306b\u904a\u3076\u524d\u306b\u5bbf\u984c\u3092\u3059\u308b\u3068\u7d04\u675f\u3057\u307e\u3057\u305f\u3002\nI promised my mother I would do my homework before playing."
+  },
+  {
+    "id": 510,
+    "kanji": "\u7d20\u6674\u3089\u3057\u3044",
+    "kana": "\u3059\u3070\u3089\u3057\u3044",
+    "eng": "wonderful; splendid",
+    "rei": "\u30db\u30c6\u30eb\u306e50\u968e\u304b\u3089\u306e\u666f\u8272\u306f\u7d20\u6674\u3089\u3057\u3044\u3067\u3059\u3002\nThe view from the 50th floor of the hotel is splendid."
+  },
+  {
+    "id": 511,
+    "kanji": "\u7d30\u304b\u3044",
+    "kana": "\u3053\u307e\u304b\u3044",
+    "eng": "small; minor",
+    "rei": "\u7d30\u304b\u3044\u96e8\u304c\u964d\u3063\u3066\u3044\u305f\u3002\nSmall rain (small raindrops) was falling."
+  },
+  {
+    "id": 512,
+    "kanji": "\u7d39\u4ecb",
+    "kana": "\u3057\u3087\u3046\u304b\u3044",
+    "eng": "introduction",
+    "rei": "\u30b8\u30e7\u30f3\u3092\u30b8\u30a7\u30fc\u30f3\u306b\u7d39\u4ecb\u3057\u3066\u3042\u3052\u307e\u3057\u305f\u3002\nI introduced John to Jane."
+  },
+  {
+    "id": 513,
+    "kanji": "\u7d42\u308f\u308a",
+    "kana": "\u304a\u308f\u308a",
+    "eng": "the end",
+    "rei": "\u3053\u308c\u3067\u7d42\u308f\u308a\u3067\u3059\u3002\nThis is the end."
+  },
+  {
+    "id": 514,
+    "kanji": "\u7d4c\u6e08",
+    "kana": "\u3051\u3044\u3056\u3044",
+    "eng": "economics",
+    "rei": "\u7d4c\u6e08\u5b66\nthe study of economics"
+  },
+  {
+    "id": 515,
+    "kanji": "\u7d4c\u9a13",
+    "kana": "\u3051\u3044\u3051\u3093",
+    "eng": "experience",
+    "rei": "\u5927\u304d\u3044\u5730\u9707\u3092\u7d4c\u9a13\u3057\u307e\u3057\u305f\u304b\uff1f\nHave you experienced a large earthquake?"
+  },
+  {
+    "id": 516,
+    "kanji": "\u7d79",
+    "kana": "\u304d\u306c",
+    "eng": "silk",
+    "rei": "\u7d79\u3067\u4f5c\u3063\u305f\u670d\u306f\u9ad8\u304f\u3066\u8cb7\u3048\u306a\u3044\u3067\u3059\u3002\nThe clothes made of silk are expensive and I can't buy them."
+  },
+  {
+    "id": 517,
+    "kanji": "\u7d9a\u304f",
+    "kana": "\u3064\u3065\u304f",
+    "eng": "to continue",
+    "rei": "\u6691\u3044\u65e5\u304c\u7d9a\u304f\u304b\u3089\u51b7\u623f\u3092\u8cb7\u304a\u3046\u3002\nHot days will continue, so let's buy an air conditioner."
+  },
+  {
+    "id": 518,
+    "kanji": "\u7d9a\u3051\u308b",
+    "kana": "\u3064\u3065\u3051\u308b",
+    "eng": "to continue",
+    "rei": "\u65e5\u672c\u8a9e\u306e\u52c9\u5f37\u3092\u7d9a\u3051\u307e\u3059\u3002\nI will continue to study Japanese."
+  },
+  {
+    "id": 519,
+    "kanji": "\u7dda",
+    "kana": "\u305b\u3093",
+    "eng": "line",
+    "rei": "\u9ed2\u3044\u7dda\u306e\u4e0a\u306b\u30b5\u30a4\u30f3\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease sign your name above the black line."
+  },
+  {
+    "id": 520,
+    "kanji": "\u7f8e\u3057\u3044",
+    "kana": "\u3046\u3064\u304f\u3057\u3044",
+    "eng": "beautiful; lovely",
+    "rei": "\u65c5\u9928\u304b\u3089\u7f8e\u3057\u3044\u666f\u8272\u304c\u898b\u3048\u307e\u3059\u3002\nYou can see beautiful scenery from the ryokan."
+  },
+  {
+    "id": 521,
+    "kanji": "\u7f8e\u8853\u9928",
+    "kana": "\u3073\u3058\u3085\u3064\u304b\u3093",
+    "eng": "art museum",
+    "rei": "\u30a2\u30fc\u30c8\u304c\u597d\u304d\u3060\u304b\u30891\u304b\u6708\u306b1\u56de\u7f8e\u8853\u9928\u306b\u884c\u304d\u307e\u3059\u3002\nI like art so I go to the museum once a month."
+  },
+  {
+    "id": 522,
+    "kanji": "\u7fd2\u6163",
+    "kana": "\u3057\u3085\u3046\u304b\u3093",
+    "eng": "habit; custom",
+    "rei": "\u6bce\u6669\u65e5\u672c\u8a9e\u3092\u52c9\u5f37\u3059\u308b\u7fd2\u6163\u306b\u3057\u3066\u3044\u307e\u3059\u3002\nI am making a habit of studying Japanese every night."
+  },
+  {
+    "id": 523,
+    "kanji": "\u7ffb\u8a33",
+    "kana": "\u307b\u3093\u3084\u304f",
+    "eng": "translation",
+    "rei": "\u82f1\u8a9e\u306e\u30c6\u30ad\u30b9\u30c8\u3092\u65e5\u672c\u8a9e\u306b\u7ffb\u8a33\u3057\u307e\u3057\u305f\u3002\nI translated the English text to Japanese."
+  },
+  {
+    "id": 524,
+    "kanji": "\u8003\u3048\u308b",
+    "kana": "\u304b\u3093\u304c\u3048\u308b",
+    "eng": "to think; to ponder",
+    "rei": "\u3055\u3063\u304d\u306e\u96e3\u3057\u3044\u554f\u984c\u3092\u8003\u3048\u3066\u3044\u307e\u3059\u3002\nI am thinking about the recent difficult problem."
+  },
+  {
+    "id": 525,
+    "kanji": "\u805e\u3053\u3048\u308b",
+    "kana": "\u304d\u3053\u3048\u308b",
+    "eng": "able to be heard",
+    "rei": "\u5f8c\u308d\u306e\u4eba\u306f\u805e\u3053\u3048\u307e\u3059\u304b\uff1f\nCan the people in the back hear me?"
+  },
+  {
+    "id": 526,
+    "kanji": "\u80b2\u3066\u308b",
+    "kana": "\u305d\u3060\u3066\u308b",
+    "eng": "to raise; to rear",
+    "rei": "\u5b50\u4f9b\u3092\u80b2\u3066\u308b\nto raise children"
+  },
+  {
+    "id": 527,
+    "kanji": "\u80cc\u4e2d",
+    "kana": "\u305b\u306a\u304b",
+    "eng": "back (of body)",
+    "rei": "\u6628\u65e5\u904b\u52d5\u3057\u3059\u304e\u305f\u304b\u3089\u80cc\u4e2d\u304c\u75db\u3044\u3002\nMy back hurts because I exercised too much yesterday."
+  },
+  {
+    "id": 528,
+    "kanji": "\u8155",
+    "kana": "\u3046\u3067",
+    "eng": "arm",
+    "rei": "\u6628\u65e5\u904b\u52d5\u3057\u3059\u304e\u305f\u304b\u3089\u8155\u304c\u75db\u3044\u3002\nMy arm hurts because I exercised too much yesterday."
+  },
+  {
+    "id": 529,
+    "kanji": "\u81ea\u7531",
+    "kana": "\u3058\u3086\u3046",
+    "eng": "freedom",
+    "rei": "\u30b5\u30f3\u30d7\u30eb\u3092\u81ea\u7531\u306b\u3068\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nPlease take the samples freely."
+  },
+  {
+    "id": 530,
+    "kanji": "\u81ed\u3044",
+    "kana": "\u306b\u304a\u3044",
+    "eng": "smell; scent",
+    "rei": "\u3053\u306e\u30e2\u30a4\u30b9\u30c1\u30e3\u30fc\u306f\u30d0\u30e9\u306e\u81ed\u3044\u3058\u3083\u306a\u3044\uff1f\nI think this moisturizer is the scent of roses."
+  },
+  {
+    "id": 531,
+    "kanji": "\u81f4\u3059",
+    "kana": "\u3044\u305f\u3059",
+    "eng": "(hum) to do",
+    "rei": "\u627f\u77e5\u81f4\u3057\u307e\u3057\u305f\u3002\nI understand and agree.  (Often used when addressing a customer)"
+  },
+  {
+    "id": 532,
+    "kanji": "\u8208\u5473",
+    "kana": "\u304d\u3087\u3046\u307f",
+    "eng": "interest (in something); curiosity",
+    "rei": "\u65e5\u672c\u306e\u6587\u5316\u306b\u8208\u5473\u304c\u3042\u308b\u306e\u3067\u3001\u7559\u5b66\u3057\u307e\u3057\u305f\u3002\nI am interested in Japanese culture, so I studied abroad."
+  },
+  {
+    "id": 533,
+    "kanji": "\u8239",
+    "kana": "\u3075\u306d",
+    "eng": "ship; boat",
+    "rei": "\u8239\u304c\u597d\u304d\u306a\u3089\u4e00\u56de\u30af\u30eb\u30fc\u30ba\u306b\u884c\u3063\u3066\u307b\u3057\u3044\u3067\u3059\u3002\nIf you like boats, I want you go to on a cruise once."
+  },
+  {
+    "id": 534,
+    "kanji": "\u82b1\u898b",
+    "kana": "\u306f\u306a\u307f",
+    "eng": "cherry blossom viewing",
+    "rei": "\u660e\u65e5\u5929\u6c17\u304c\u826f\u3044\u306e\u3067\u3001\u82b1\u898b\u3057\u306b\u884c\u3053\u3046\u3002\nTomorrow will be good weather, so let's go cherry blossom viewing."
+  },
+  {
+    "id": 535,
+    "kanji": "\u82e6\u3044",
+    "kana": "\u306b\u304c\u3044",
+    "eng": "bitter",
+    "rei": "\u82e6\u3044\u30b3\u30fc\u30d2\u30fc\u304c\u98f2\u307f\u306b\u304f\u3044\u3067\u3059\u3002\nBitter coffee is difficult to drink."
+  },
+  {
+    "id": 536,
+    "kanji": "\u8349",
+    "kana": "\u304f\u3055",
+    "eng": "grass; weed",
+    "rei": "\u725b\u306f\u8349\u3092\u98df\u3079\u308b\u3002\nCows eat grass."
+  },
+  {
+    "id": 537,
+    "kanji": "\u843d\u3059",
+    "kana": "\u304a\u3068\u3059",
+    "eng": "to drop",
+    "rei": "\u30ac\u30e9\u30b9\u306e\u30b3\u30c3\u30d7\u3092\u843d\u3055\u306a\u3044\u3088\u3046\u306b\u6c17\u3092\u4ed8\u3051\u3066\u304f\u3060\u3055\u3044\u3002\nPlease be careful not to drop the glass cup."
+  },
+  {
+    "id": 538,
+    "kanji": "\u843d\u3061\u308b",
+    "kana": "\u304a\u3061\u308b",
+    "eng": "to fall; to drop | to fail",
+    "rei": "\u5bd2\u304f\u306a\u308b\u3068\u7d05\u8449\u304c\u843d\u3061\u3066\u304f\u308b\u3002\nWhen it becomes cold, the autumn leaves will fall."
+  },
+  {
+    "id": 539,
+    "kanji": "\u8449",
+    "kana": "\u306f",
+    "eng": "leaf; blade (of grass)",
+    "rei": "\u79cb\u306b\u306a\u308b\u3068\u8449\u306f\u9ec4\u8272\u304f\u306a\u308a\u307e\u3059\u3002\nThe leaves turn yellow when it becomes autumn."
+  },
+  {
+    "id": 540,
+    "kanji": "\u866b",
+    "kana": "\u3080\u3057",
+    "eng": "insect; bug",
+    "rei": "\u6797\u306e\u4e2d\u3067\u866b\u306b\u3055\u3055\u308c\u305f\u3002\nI was bitten by insects in the woods."
+  },
+  {
+    "id": 541,
+    "kanji": "\u8840",
+    "kana": "\u3061",
+    "eng": "blood",
+    "rei": "\u8b66\u5bdf\u306f\u5e8a\u306b\u8840\u3092\u767a\u898b\u3057\u307e\u3057\u305f\u3002\nThe police found some blood on the floor."
+  },
+  {
+    "id": 542,
+    "kanji": "\u884c\u3046",
+    "kana": "\u304a\u3053\u306a\u3046",
+    "eng": "to conduct; to carry out",
+    "rei": "\u8abf\u67fb\u3092\u884c\u3046\nto carry out a survey"
+  },
+  {
+    "id": 543,
+    "kanji": "\u8868",
+    "kana": "\u304a\u3082\u3066",
+    "eng": "surface; face; front",
+    "rei": "\u514d\u8a31\u306e\u8868\u3068\u88cf\u3092\u30b9\u30ad\u30e3\u30f3\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease scan the front and back of your driver's license."
+  },
+  {
+    "id": 544,
+    "kanji": "\u88cf",
+    "kana": "\u3046\u3089",
+    "eng": "bottom; back",
+    "rei": "\u514d\u8a31\u306e\u8868\u3068\u88cf\u3092\u30b9\u30ad\u30e3\u30f3\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease scan the front and back of your driver's license."
+  },
+  {
+    "id": 545,
+    "kanji": "\u8907\u96d1",
+    "kana": "\u3075\u304f\u3056\u3064",
+    "eng": "complex; complicated",
+    "rei": "\u7d30\u304b\u3044\u70b9\u304c\u305f\u304f\u3055\u3093\u3042\u308b\u306e\u3067\u3001\u305d\u308c\u306f\u8907\u96d1\u306a\u554f\u984c\u3067\u3059\u306d\u3002\nThere are many small points, so that is a complicated problem."
+  },
+  {
+    "id": 546,
+    "kanji": "\u8912\u3081\u308b",
+    "kana": "\u307b\u3081\u308b",
+    "eng": "to praise",
+    "rei": "\u672c\u7530\u3055\u3093\u306f\u3042\u306a\u305f\u3092\u8912\u3081\u305f\u3088\u3002\nMr. Honda praised you."
+  },
+  {
+    "id": 547,
+    "kanji": "\u897f\u6d0b",
+    "kana": "\u305b\u3044\u3088\u3046",
+    "eng": "the west; Western countries",
+    "rei": "\u897f\u6d0b\u306e\u6587\u5316\u306f\u65e5\u672c\u306e\u6587\u5316\u3068\u9055\u3044\u307e\u3059\u3002\nThe culture of the west is different from Japanese culture."
+  },
+  {
+    "id": 548,
+    "kanji": "\u898b\u3048\u308b",
+    "kana": "\u307f\u3048\u308b",
+    "eng": "to be seen; to look",
+    "rei": "\u5f7c\u5973\u306f\u30d7\u30ec\u30bc\u30f3\u30c8\u3092\u3082\u3089\u3063\u305f\u3089\u5b09\u3057\u304f\u898b\u3048\u305f\u3002\nShe looked overjoyed when she received the present."
+  },
+  {
+    "id": 549,
+    "kanji": "\u898b\u3064\u304b\u308b",
+    "kana": "\u307f\u3064\u304b\u308b",
+    "eng": "to be found",
+    "rei": "\u3053\u306e\u9593\u5fd8\u308c\u305f\u5098\u304c\u898b\u3064\u304b\u308a\u307e\u3057\u305f\u304b\uff1f\nWas the umberella you said you forgot the other day found?"
+  },
+  {
+    "id": 550,
+    "kanji": "\u898b\u3064\u3051\u308b",
+    "kana": "\u307f\u3064\u3051\u308b",
+    "eng": "to find",
+    "rei": "\u3053\u306e\u9593\u5fd8\u308c\u305f\u5098\u3092\u898b\u3064\u3051\u307e\u3057\u305f\u3002\nI found the umberella I forgot the other day."
+  },
+  {
+    "id": 551,
+    "kanji": "\u898b\u7269",
+    "kana": "\u3051\u3093\u3076\u3064",
+    "eng": "sightseeing; watching",
+    "rei": "\u6b74\u53f2\u306e\u3042\u308b\u4eac\u90fd\u306b\u898b\u7269\u3057\u306b\u884c\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nPlease go sightseeing in Kyoto, where there is history."
+  },
+  {
+    "id": 552,
+    "kanji": "\u898f\u5247",
+    "kana": "\u304d\u305d\u304f",
+    "eng": "rule; regulation",
+    "rei": "\u5165\u5b66\u5f0f\u306e\u524d\u306b\u898f\u5247\u3092\u3088\u304f\u8aad\u3093\u3067\u304f\u3060\u3055\u3044\u3002\nPlease read the rules before the entrance ceremony."
+  },
+  {
+    "id": 553,
+    "kanji": "\u89aa",
+    "kana": "\u304a\u3084",
+    "eng": "parent(s)",
+    "rei": "\u89aa\u3068\u4e00\u7dd2\u306b\u6e29\u6cc9\u306b\u884c\u304d\u307e\u3057\u305f\u3002\nI went together with my parents to the hot spring."
+  },
+  {
+    "id": 554,
+    "kanji": "\u89aa\u5207",
+    "kana": "\u3057\u3093\u305b\u3064",
+    "eng": "kindness; gentleness",
+    "rei": "\u5f7c\u306f\u3044\u3064\u3082\u65e5\u672c\u8a9e\u3092\u6559\u3048\u3066\u304f\u308c\u3066\u3001\u89aa\u5207\u3067\u3059\u3002\nHe is kind because he is always teaching me Japanese."
+  },
+  {
+    "id": 555,
+    "kanji": "\u89e6\u308b",
+    "kana": "\u3055\u308f\u308b",
+    "eng": "to touch; to feel",
+    "rei": "\u71b1\u3044\u304b\u3089\u89e6\u3089\u306a\u3044\u3067\u306d\u3002\nDon't touch this because it's hot."
+  },
+  {
+    "id": 556,
+    "kanji": "\u8a08\u753b",
+    "kana": "\u3051\u3044\u304b\u304f",
+    "eng": "plan; schedule",
+    "rei": "\u3053\u306e\u8a08\u753b\u3067\u52c9\u5f37\u3059\u308b\u3068\u8a66\u9a13\u307e\u3067\u306b\u7d42\u308f\u3089\u306a\u3044\u3088\u3002\nIf you study with this plan, you won't finish by the test."
+  },
+  {
+    "id": 557,
+    "kanji": "\u8a2a\u306d\u308b",
+    "kana": "\u305f\u305a\u306d\u308b",
+    "eng": "to visit; to call on",
+    "rei": "\u53cb\u9054\u306e\u5bb6\u3092\u8a2a\u306d\u305f\u3002\nI visited my friend's home."
+  },
+  {
+    "id": 558,
+    "kanji": "\u8a66\u5408",
+    "kana": "\u3057\u3042\u3044",
+    "eng": "match; game",
+    "rei": "\u96e8\u304c\u3056\u3042\u3056\u3042\u964d\u3063\u305f\u304b\u3089\u8a66\u5408\u304c\u5ef6\u671f\u3055\u308c\u307e\u3057\u305f\u3002\nIt rained hard so the game was postponed."
+  },
+  {
+    "id": 559,
+    "kanji": "\u8a66\u9a13",
+    "kana": "\u3057\u3051\u3093",
+    "eng": "exam; test",
+    "rei": "\u52c9\u5f37\u3057\u306a\u304b\u3063\u305f\u304b\u3089\u65e5\u672c\u8a9e\u80fd\u529b\u8a66\u9a13\u3092\u5931\u6557\u3057\u307e\u3057\u305f\u3002\nI failed the JLPT because I didn't study."
+  },
+  {
+    "id": 560,
+    "kanji": "\u8aac\u660e",
+    "kana": "\u305b\u3064\u3081\u3044",
+    "eng": "explanation; exposition",
+    "rei": "\u9045\u308c\u305f\u7406\u7531\u3092\u8aac\u660e\u3057\u3066\u304f\u3060\u3055\u3044\u3002\nPlease explain the reason you were late."
+  },
+  {
+    "id": 561,
+    "kanji": "\u8ab2\u9577",
+    "kana": "\u304b\u3061\u3087\u3046",
+    "eng": "section manager; section chief",
+    "rei": "\u8ab2\u9577\u306e\u4e0a\u53f8\u306f\u90e8\u9577\u3067\u3059\u3002\nThe sction manager's superior is the department manager."
+  },
+  {
+    "id": 562,
+    "kanji": "\u8abf\u3079\u308b",
+    "kana": "\u3057\u3089\u3079\u308b",
+    "eng": "to investigate; to look up",
+    "rei": "\u77e5\u3089\u306a\u3044\u8a00\u8449\u306e\u610f\u5473\u3092\u8f9e\u66f8\u3067\u8abf\u3079\u3066\u304f\u3060\u3055\u3044\u3002\nPlease look up the words you don't know in a dictionary."
+  },
+  {
+    "id": 563,
+    "kanji": "\u8b1b\u5802",
+    "kana": "\u3053\u3046\u3069\u3046",
+    "eng": "auditorium; lecture hall",
+    "rei": "\u8b1b\u7fa9\u306f\u8b1b\u5802\u30671\u6642\u306b\u958b\u50ac\u3057\u307e\u3059\u3002\nWe will start the lecture in the auditorium at 1:00."
+  },
+  {
+    "id": 564,
+    "kanji": "\u8b1b\u7fa9",
+    "kana": "\u3053\u3046\u304e",
+    "eng": "lecture",
+    "rei": "\u8b1b\u7fa9\u306f\u8b1b\u5802\u30671\u6642\u306b\u958b\u50ac\u3057\u307e\u3059\u3002\nWe will start the lecture in the auditorium at 1:00."
+  },
+  {
+    "id": 565,
+    "kanji": "\u8b1d\u308b",
+    "kana": "\u3042\u3084\u307e\u308b",
+    "eng": "to apologize",
+    "rei": "\u60aa\u3044\u3053\u3068\u3092\u3084\u3063\u3066\u3044\u306a\u3044\u304b\u3089\u8b1d\u3089\u306a\u3044\u3002\nI won't apologize because I have not done anything wrong."
+  },
+  {
+    "id": 566,
+    "kanji": "\u8b66\u5bdf",
+    "kana": "\u3051\u3044\u3055\u3064",
+    "eng": "police; ploliceman",
+    "rei": "\u8b66\u5bdf\u304c\u6ce5\u68d2\u3092\u902e\u6355\u3057\u305f\u3002\nThe policeman arrested the thief."
+  },
+  {
+    "id": 567,
+    "kanji": "\u8ca0\u3051\u308b",
+    "kana": "\u307e\u3051\u308b",
+    "eng": "to lose; to be defeated",
+    "rei": "\u9811\u5f35\u3063\u305f\u306e\u306b\u3001\u5411\u3053\u3046\u306e\u30c1\u30fc\u30e0\u304c\u5f37\u304f\u3066\u8ca0\u3051\u307e\u3057\u305f\u3002\nWe tried hard, but the other team was strong and we lost."
+  },
+  {
+    "id": 568,
+    "kanji": "\u8cbf\u6613",
+    "kana": "\u307c\u3046\u3048\u304d",
+    "eng": "trade (economics)",
+    "rei": "\u65e5\u672c\u306f\u7c73\u56fd\u3068\u5927\u91cf\u306b\u8cbf\u6613\u3092\u3057\u3066\u3044\u308b\u3002\nJapan trades a lot with the United States."
+  },
+  {
+    "id": 569,
+    "kanji": "\u8d08\u308a\u7269",
+    "kana": "\u304a\u304f\u308a\u3082\u306e",
+    "eng": "present; gift",
+    "rei": "\u5a18\u3055\u3093\u306e\u8d08\u308a\u7269\u306f\u4f55\u306b\u3057\u307e\u3059\u304b\uff1f\nWhat will you do for your daughter's present?"
+  },
+  {
+    "id": 570,
+    "kanji": "\u8d64\u3061\u3083\u3093",
+    "kana": "\u3042\u304b\u3061\u3083\u3093",
+    "eng": "baby",
+    "rei": "\u3042\u306e\u8d64\u3061\u3083\u3093\u306f\u4eba\u5f62\u306e\u3088\u3046\u306a\u5927\u304d\u3055\u3067\u3059\u306d\u3002\nThat baby is the size of a doll."
+  },
+  {
+    "id": 571,
+    "kanji": "\u8d64\u3093\u574a",
+    "kana": "\u3042\u304b\u3093\u307c\u3046",
+    "eng": "baby; infant",
+    "rei": "\u533b\u8005\u306f\u8d64\u3093\u574a\u3092\u898b\u307e\u3057\u305f\u3002\nThe doctor looked at the baby."
+  },
+  {
+    "id": 572,
+    "kanji": "\u8d77\u3053\u3059",
+    "kana": "\u304a\u3053\u3059",
+    "eng": "to wake up",
+    "rei": "\u77ed\u3044\u663c\u5bdd\u3092\u3057\u305f\u3044\u306e\u3067\u300130\u5206\u5f8c\u8d77\u3053\u3057\u3066\u304f\u308c\u307e\u3059\u304b\uff1f\nI want to take a short nap, so could you wake me in 30 min?"
+  },
+  {
+    "id": 573,
+    "kanji": "\u8da3\u5473",
+    "kana": "\u3057\u3085\u307f",
+    "eng": "hobby",
+    "rei": "\u5c0f\u8aac\u3092\u66f8\u304f\u306e\u304c\u8da3\u5473\u3067\u3059\u3002\nWriting short stories is my hobby."
+  },
+  {
+    "id": 574,
+    "kanji": "\u8db3\u3059",
+    "kana": "\u305f\u3059",
+    "eng": "to add",
+    "rei": "\u7802\u7cd6\u304c\u8db3\u308a\u306a\u304b\u3063\u305f\u304b\u3089\u3061\u3087\u3063\u3068\u8db3\u3057\u307e\u3057\u305f\nThere wasn't enough sugar, so I added a little."
+  },
+  {
+    "id": 575,
+    "kanji": "\u8db3\u308a\u308b",
+    "kana": "\u305f\u308a\u308b",
+    "eng": "to be sufficient; to be enough",
+    "rei": "\u7802\u7cd6\u304c\u8db3\u308a\u306a\u304b\u3063\u305f\u304b\u3089\u3061\u3087\u3063\u3068\u8db3\u3057\u307e\u3057\u305f\nThere wasn't enough sugar, so I added a little."
+  },
+  {
+    "id": 576,
+    "kanji": "\u8e0a\u308a",
+    "kana": "\u304a\u3069\u308a",
+    "eng": "dance",
+    "rei": "\u76c6\u8e0a\u308a\nBon dance"
+  },
+  {
+    "id": 577,
+    "kanji": "\u8e0a\u308b",
+    "kana": "\u304a\u3069\u308b",
+    "eng": "to dance",
+    "rei": "\u8e0a\u308b\u306e\u304c\u597d\u304d\u3067\u3059\u3002\nI like dancing."
+  },
+  {
+    "id": 578,
+    "kanji": "\u8e0f\u3080",
+    "kana": "\u3075\u3080",
+    "eng": "to step on",
+    "rei": "\u7247\u4ed8\u3051\u3066\u306a\u3044\u304b\u3089\u5b50\u4f9b\u306e\u304a\u3082\u3061\u3083\u3092\u8e0f\u3093\u3067\u3057\u307e\u3044\u307e\u3057\u305f\u3002\nI did not clean up so I stepped on the child's toy."
+  },
+  {
+    "id": 579,
+    "kanji": "\u8f38\u5165",
+    "kana": "\u3086\u306b\u3085\u3046",
+    "eng": "import",
+    "rei": "\u30d5\u30e9\u30f3\u30b9\u304b\u3089\u8f38\u5165\u3055\u308c\u305f\u30ef\u30a4\u30f3\u304c\u7f8e\u5473\u3057\u3044\u3002\nThe wine imported from France is delicious."
+  },
+  {
+    "id": 580,
+    "kanji": "\u8f38\u51fa",
+    "kana": "\u3086\u3057\u3085\u3064",
+    "eng": "export",
+    "rei": "\u6700\u8fd1\u548c\u725b\u304c\u4eba\u6c17\u306b\u306a\u3063\u3066\u3044\u308b\u65e5\u672c\u306e\u8f38\u51fa\u3067\u3059\u3002\nRecently, Japanese beef is a Japanese export that is becoming popular."
+  },
+  {
+    "id": 581,
+    "kanji": "\u8f9e\u5178",
+    "kana": "\u3058\u3066\u3093",
+    "eng": "dictionary",
+    "rei": "\u672c\u68da\u306b\u82f1\u548c\u8f9e\u5178\u304c\u3042\u308a\u307e\u3059\u304b\u3002\nIs there an English-Japanese dictionary on the bookshelf?"
+  },
+  {
+    "id": 582,
+    "kanji": "\u8fbc\u3080",
+    "kana": "\u3053\u3080",
+    "eng": "to be crowded; to be packed",
+    "rei": "\u99c5\u304c\u975e\u5e38\u306b\u8fbc\u3093\u3067\u3044\u305f\u306e\u3067\u3001\u96fb\u8eca\u306b\u4e57\u308b\u307e\u3067\u6642\u9593\u304c\u304b\u304b\u308a\u307e\u3057\u305f\u3002\nThe station was very crowded, so it took time to get on the train."
+  },
+  {
+    "id": 583,
+    "kanji": "\u8fce\u3048\u308b",
+    "kana": "\u3080\u304b\u3048\u308b",
+    "eng": "to pickup; to greet; to receive",
+    "rei": "\u606f\u5b50\u3092\u8fce\u3048\u306b\u884c\u304f\u3002\nI will go to pickup my son."
+  },
+  {
+    "id": 584,
+    "kanji": "\u8fd1\u6240",
+    "kana": "\u304d\u3093\u3058\u3087",
+    "eng": "neighborhood",
+    "rei": "\u8fd1\u6240\u306e\u8ff7\u60d1\u306b\u306a\u308b\u306e\u3067\u3001\u9759\u304b\u306b\u3057\u306a\u3055\u3044\u3002\nIt is causing trouble for the neighborhood, so be quiet!"
+  },
+  {
+    "id": 585,
+    "kanji": "\u8fd4\u4e8b",
+    "kana": "\u3078\u3093\u3058",
+    "eng": "reply; response",
+    "rei": "\u8fd4\u4e8b\u304c\u6765\u308b\u307e\u3067\u5f85\u3064\u3002\nI will wait until a reply comes."
+  },
+  {
+    "id": 586,
+    "kanji": "\u9000\u9662",
+    "kana": "\u305f\u3044\u3044\u3093",
+    "eng": "discharge from hospital",
+    "rei": "\u5927\u5206\u6cbb\u3063\u3066\u3044\u308b\u306e\u3067\u3001\u5f8c\u4e8c\u9031\u9593\u3067\u9000\u9662\u3067\u304d\u308b\u3068\u601d\u3044\u307e\u3059\u3002\nYou have mostly healed, so I think you can be discharged in two weeks."
+  },
+  {
+    "id": 587,
+    "kanji": "\u9001\u308b",
+    "kana": "\u304a\u304f\u308b",
+    "eng": "to send; to dispatch | to escort",
+    "rei": "\u304a\u5ba2\u69d8\u306b\u30e1\u30fc\u30eb\u3092\u9001\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nPlease send an email to the customer."
+  },
+  {
+    "id": 588,
+    "kanji": "\u9003\u3052\u308b",
+    "kana": "\u306b\u3052\u308b",
+    "eng": "to escape; to run away",
+    "rei": "\u6ce5\u68d2\u304c\u9003\u3052\u307e\u3057\u305f\u3002\nThe thief ran away."
+  },
+  {
+    "id": 589,
+    "kanji": "\u9014\u4e2d",
+    "kana": "\u3068\u3061\u3085\u3046",
+    "eng": "on the way to; in the middle of",
+    "rei": "\u9014\u4e2d\u3067\u79c1\u306e\u8eca\u304c\u6545\u969c\u3057\u305f\u3002\nMy car broke down on the way."
+  },
+  {
+    "id": 590,
+    "kanji": "\u901a\u3046",
+    "kana": "\u304b\u3088\u3046",
+    "eng": "to go to (school, work, etc.); to commute",
+    "rei": "\u6bce\u65e5\u96fb\u8eca\u3067\u5b66\u6821\u306b\u901a\u3063\u3066\u3044\u307e\u3059\u3002\nI commute to school everyday by train."
+  },
+  {
+    "id": 591,
+    "kanji": "\u901a\u308a",
+    "kana": "\u3068\u304a\u308a",
+    "eng": "street; road",
+    "rei": "\u5371\u306a\u3044\u306e\u3067\u3001\u5927\u304d\u3044\u901a\u308a\u3067\u904a\u3070\u306a\u3044\u3067\u3002\nDon't play in the big street because it is dangerous."
+  },
+  {
+    "id": 592,
+    "kanji": "\u901a\u308b",
+    "kana": "\u3068\u304a\u308b",
+    "eng": "to pass by; to go through",
+    "rei": "\u3042\u306e\u9053\u304c\u3044\u3064\u3082\u6df7\u3093\u3067\u3044\u308b\u306e\u3067\u3001\u671d\u901a\u3089\u306a\u3044\u3088\u3046\u306b\u3057\u3066\u3044\u307e\u3059\u3002\nThat street is always crowded, so I make a point of not going through it in the morning."
+  },
+  {
+    "id": 593,
+    "kanji": "\u9023\u308c\u308b",
+    "kana": "\u3064\u308c\u308b",
+    "eng": "to bring along; to go with; to accompany",
+    "rei": "\u660e\u65e5\u30b8\u30e7\u30f3\u3092\u6620\u753b\u306b\u9023\u308c\u3066\u3044\u304f\u3002\nI will accompany John to the move tomorrow."
+  },
+  {
+    "id": 594,
+    "kanji": "\u9023\u7d61",
+    "kana": "\u308c\u3093\u3089\u304f",
+    "eng": "to contact; to get in touch",
+    "rei": "\u7a7a\u6e2f\u306b\u7740\u3044\u305f\u3089\u3059\u3050\u306b\u9023\u7d61\u3057\u307e\u3059\u3002\nI'll contact you  as soon as I am at the airport."
+  },
+  {
+    "id": 595,
+    "kanji": "\u9032\u3080",
+    "kana": "\u3059\u3059\u3080",
+    "eng": "to advance; to proceed",
+    "rei": "\u30c9\u30a2\u3092\u9589\u3081\u3089\u308c\u308b\u3088\u3046\u306b\u3001\u3082\u3046\u5c11\u3057\u524d\u306b\u9032\u3093\u3067\u3082\u3089\u3048\u307e\u3059\u304b\uff1f\nCould you move forward so we can close the door?"
+  },
+  {
+    "id": 596,
+    "kanji": "\u9045\u308c\u308b",
+    "kana": "\u304a\u304f\u308c\u308b",
+    "eng": "to be late",
+    "rei": "\u9045\u308c\u3066\u3059\u307f\u307e\u305b\u3093\u3002\u4eca\u65e5\u5bdd\u574a\u3057\u3066\u3057\u307e\u3044\u307e\u3057\u305f\u3002\nSorry I am late.  I overslept today."
+  },
+  {
+    "id": 597,
+    "kanji": "\u904a\u3073",
+    "kana": "\u3042\u305d\u3073",
+    "eng": "playing",
+    "rei": "\u904a\u3073\u3067\u306f\u306a\u304f\u3066\u4ed5\u4e8b\u3060\u304b\u3089\u771f\u9762\u76ee\u306b\u3084\u3063\u3066\u304f\u3060\u3055\u3044\u3002\nPlease do it seriously because it is work, not play."
+  },
+  {
+    "id": 598,
+    "kanji": "\u904b\u3076",
+    "kana": "\u306f\u3053\u3076",
+    "eng": "to carry",
+    "rei": "\u4e3b\u4eba\u306b\u91cd\u3044\u7bb1\u3092\u53f0\u6240\u307e\u3067\u904b\u3093\u3067\u3082\u3089\u3044\u307e\u3057\u305f\u3002\nI had my husband carry the heavy box to the kitchen."
+  },
+  {
+    "id": 599,
+    "kanji": "\u904b\u52d5",
+    "kana": "\u3046\u3093\u3069\u3046",
+    "eng": "exercise; physical training",
+    "rei": "\u30b8\u30e7\u30f3\u306f\u904b\u52d5\u3057\u3066\u3044\u308b\u306e\u3067\u529b\u304c\u3042\u308a\u307e\u3059\u3002\nJon exercises so he has strength."
+  },
+  {
+    "id": 600,
+    "kanji": "\u904b\u8ee2",
+    "kana": "\u3046\u3093\u3066\u3093",
+    "eng": "operation (of a machine, etc.); driving",
+    "rei": "\u30b9\u30de\u30db\u3092\u4f7f\u3044\u306a\u304c\u3089\u8eca\u3092\u904b\u8ee2\u3059\u308b\u306e\u306f\u3059\u3054\u304f\u5371\u306a\u3044\u3067\u3059\u3002\nDriving while using a smartphone is very dangerous."
+  },
+  {
+    "id": 601,
+    "kanji": "\u904b\u8ee2\u624b",
+    "kana": "\u3046\u3093\u3066\u3093\u3057\u3085",
+    "eng": "driver; chauffeur",
+    "rei": "\u30d0\u30b9\u306e\u904b\u8ee2\u624b\nbus driver"
+  },
+  {
+    "id": 602,
+    "kanji": "\u904e\u304e\u308b",
+    "kana": "\u3059\u304e\u308b",
+    "eng": "to pass by | to be too \u301c",
+    "rei": "\u30cd\u30c3\u30c8\u30d5\u30a3\u30ea\u30c3\u30af\u30b9\u3092\u898b\u305f\u3089\u6642\u9593\u304c\u30c9\u30f3\u30c9\u30f3\u904e\u304e\u308b\u3002\nTime passes rapidly when watching Netflix."
+  },
+  {
+    "id": 603,
+    "kanji": "\u9053\u5177",
+    "kana": "\u3069\u3046\u3050",
+    "eng": "tool; apparatus; device",
+    "rei": "\u3053\u306e\u5bb6\u5177\u3092\u7d44\u307f\u7acb\u3066\u308b\u306b\u306f\u30c9\u30e9\u30a4\u30d0\u30fc\u3068\u3044\u3046\u9053\u5177\u304c\u5fc5\u8981\u3067\u3059\u3002\nA tool called a screwdriver is necessary for putting together this furniture."
+  },
+  {
+    "id": 604,
+    "kanji": "\u9060\u304f",
+    "kana": "\u3068\u304a\u304f",
+    "eng": "far away; distant",
+    "rei": "\u5371\u306a\u3044\u304b\u3089\u9060\u304f\u884c\u304b\u306a\u3044\u3067\u306d\u3002\nDon't go far because it's dangerous."
+  },
+  {
+    "id": 605,
+    "kanji": "\u9060\u616e",
+    "kana": "\u3048\u3093\u308a\u3087",
+    "eng": "holding back (out of politeness)",
+    "rei": "\u9060\u616e\u3057\u306a\u3044\u3067\u3044\u3063\u3071\u3044\u98df\u3079\u3066\u304f\u3060\u3055\u3044\u3002\nPlease do not hold back and eat a lot."
+  },
+  {
+    "id": 606,
+    "kanji": "\u9069\u5f53",
+    "kana": "\u3066\u304d\u3068\u3046",
+    "eng": "suitable; appropriate",
+    "rei": "\u9069\u5f53\u306a\u7b54\u3048\u3092\u9078\u3073\u3001\u7a7a\u6b04\u306b\u66f8\u304d\u306a\u3055\u3044\u3002\nPlease choose a suitable answer and write it in the blank space."
+  },
+  {
+    "id": 607,
+    "kanji": "\u9078\u3076",
+    "kana": "\u3048\u3089\u3076",
+    "eng": "to choose",
+    "rei": "\u6b63\u3057\u3044\u7b54\u3048\u3092\u9078\u3093\u3067\u304f\u3060\u3055\u3044\u3002\nChoose the correct answer."
+  },
+  {
+    "id": 608,
+    "kanji": "\u90ca\u5916",
+    "kana": "\u3053\u3046\u304c\u3044",
+    "eng": "suburb; outskirts",
+    "rei": "\u5f7c\u306f\u30ed\u30f3\u30c9\u30f3\u306e\u90ca\u5916\u306b\u4f4f\u3093\u3067\u3044\u308b\u3002\nHe lives in the suburbs of London."
+  },
+  {
+    "id": 609,
+    "kanji": "\u90e8\u9577",
+    "kana": "\u3076\u3061\u3087\u3046",
+    "eng": "head of a department, team, or section",
+    "rei": "\u5f7c\u306f\u55b6\u696d\u90e8\u306e\u90e8\u9577\u3067\u3059\u3002\nHe is the manager of the sales department."
+  },
+  {
+    "id": 610,
+    "kanji": "\u90fd",
+    "kana": "\u3068",
+    "eng": "metropolis; city",
+    "rei": "\u90fd\u5185\u306e\u7269\u4fa1\u304c\u9ad8\u3044\u3002\nPrices in the city are high."
+  },
+  {
+    "id": 611,
+    "kanji": "\u90fd\u5408",
+    "kana": "\u3064\u3054\u3046",
+    "eng": "circumstances; condition | arrangement",
+    "rei": "\u90fd\u5408\u304c\u826f\u3051\u308c\u3070\u79c1\u306e\u30e9\u30a4\u30d6\u3092\u898b\u306b\u6765\u3066\u306d\u3002\nCome to see my live if circumstances permit."
+  },
+  {
+    "id": 612,
+    "kanji": "\u91d1\u6301\u3061",
+    "kana": "\u304b\u306d\u3082\u3061",
+    "eng": "rich person",
+    "rei": "\u304a\u91d1\u6301\u3061\u306b\u306a\u308a\u305f\u3044\u3002\nI want to become a rich person."
+  },
+  {
+    "id": 613,
+    "kanji": "\u91e3\u308b",
+    "kana": "\u3064\u308b",
+    "eng": "to fish; to catch",
+    "rei": "\u5f7c\u306f\u9b5a\u3092\uff13\u5339\u91e3\u3063\u305f\u3002\nHe caught three fish."
+  },
+  {
+    "id": 614,
+    "kanji": "\u93e1",
+    "kana": "\u304b\u304c\u307f",
+    "eng": "mirror",
+    "rei": "\u93e1\u3092\u4f7f\u3044\u305f\u3044\u3093\u3067\u3059\u3051\u3069\u3001\u304a\u624b\u6d17\u3044\u306f\u3069\u3053\u3067\u3059\u304b\uff1f\nI want to use a mirror; where is the restroom?"
+  },
+  {
+    "id": 615,
+    "kanji": "\u958b\u304f\uff08\u3072\u3089\u304f\uff09",
+    "kana": "\u3072\u3089\u304f",
+    "eng": "to open",
+    "rei": "\u65e5\u672c\u306b\u6765\u3066\u304b\u3089\u9280\u884c\u53e3\u5ea7\u3092\u958b\u304d\u307e\u3057\u305f\u3002\nI opened a bank account after coming to Japan."
+  },
+  {
+    "id": 616,
+    "kanji": "\u9593",
+    "kana": "\u3042\u3044\u3060",
+    "eng": "space (between); time (between); span",
+    "rei": "\u30c6\u30b9\u30c8\u306b\u7740\u3044\u3066\u304b\u3089\u5f85\u3063\u3066\u3044\u308b\u9593\u6f22\u5b57\u3092\u5fa9\u7fd2\u3057\u307e\u3059\u3002\nI will review kanji during the time I wait after arriving at the test."
+  },
+  {
+    "id": 617,
+    "kanji": "\u9593\u306b\u5408\u3046",
+    "kana": "\u307e\u306b\u3042\u3046",
+    "eng": "to be in time for",
+    "rei": "\u5915\u98df\u306b\u9593\u306b\u5408\u308f\u306a\u304b\u3063\u305f\u304b\u3089\u6bcd\u304c\u6012\u308a\u307e\u3057\u305f\u3002\nMy mother became angry because I was not in time for dinner."
+  },
+  {
+    "id": 618,
+    "kanji": "\u9593\u9055\u3048\u308b",
+    "kana": "\u307e\u3061\u304c\u3048\u308b",
+    "eng": "to make a mistake",
+    "rei": "\u3053\u306e\u6f22\u5b57\u306f\u9593\u9055\u3048\u3084\u3059\u3044\u3057\u3001\u899a\u3048\u306b\u304f\u3044\u3067\u3059\u3002\nIt is easy to make a mistake on this kanji and difficult to remember."
+  },
+  {
+    "id": 619,
+    "kanji": "\u95a2\u4fc2",
+    "kana": "\u304b\u3093\u3051\u3044",
+    "eng": "relationship; connection",
+    "rei": "\u79c1\u306f\u3082\u3046\u3042\u306e\u4f1a\u793e\u3068\u95a2\u4fc2\u304c\u306a\u3044\u306e\u3067\u3001\u884c\u304f\u3053\u3068\u306f\u3042\u308a\u307e\u305b\u3093\u3002\nI no longer have a connection to that company so I will not go there."
+  },
+  {
+    "id": 620,
+    "kanji": "\u964d\u308a\u51fa\u3059",
+    "kana": "\u3075\u308a\u3060\u3059",
+    "eng": "to start to rain (snow, etc.)",
+    "rei": "\u96e8\u304c\u964d\u308a\u51fa\u3057\u305f\u3002\nIt began to rain."
+  },
+  {
+    "id": 621,
+    "kanji": "\u9685",
+    "kana": "\u3059\u307f",
+    "eng": "corner",
+    "rei": "\u4e00\u6240\u61f8\u547d\u306b\u63a2\u3057\u305f\u3093\u3067\u3059\u3051\u3069\u3001\u9375\u306f\u7d50\u5c40\u9685\u306b\u3042\u308a\u307e\u3057\u305f\u3002\nI searched very hard for the keys, but they were in the corner."
+  },
+  {
+    "id": 622,
+    "kanji": "\u96c6\u307e\u308b",
+    "kana": "\u3042\u3064\u307e\u308b",
+    "eng": "to gather",
+    "rei": "\u79cb\u306b\u8449\u306f\u6728\u306e\u4e0b\u306b\u96c6\u307e\u308b\u3002\nLeaves gather under the tree in fall."
+  },
+  {
+    "id": 623,
+    "kanji": "\u96c6\u3081\u308b",
+    "kana": "\u3042\u3064\u3081\u308b",
+    "eng": "to collect; to assemble; to gather",
+    "rei": "1000\u4e07\u5186\u4ee5\u4e0a\u96c6\u3081\u306a\u3044\u3068\u4f1a\u793e\u304c\u4f5c\u308c\u306a\u3044\u3002\nWe can't create the company if we don't gather at least 10M yen."
+  },
+  {
+    "id": 624,
+    "kanji": "\u96f2",
+    "kana": "\u304f\u3082",
+    "eng": "cloud",
+    "rei": "\u96f2\u304c\u591a\u304f\u3066\u3001\u3082\u3046\u3059\u3050\u964d\u308a\u305d\u3046\u3067\u3059\u3002\nThere are many clouds so it looks like it will rain soon."
+  },
+  {
+    "id": 625,
+    "kanji": "\u96fb\u706f",
+    "kana": "\u3067\u3093\u3068\u3046",
+    "eng": "electric light",
+    "rei": "\u51fa\u304b\u3051\u308b\u524d\u306b\u306f\u5fc5\u305a\u96fb\u706f\u3092\u6d88\u3059\u3088\u3046\u306b\u3057\u306a\u3055\u3044\u3002\nMake sure that you turn the lights off before you leave."
+  },
+  {
+    "id": 626,
+    "kanji": "\u975e\u5e38\u306b",
+    "kana": "\u3072\u3058\u3087\u3046\u306b",
+    "eng": "very; extremely",
+    "rei": "\u99c5\u304c\u975e\u5e38\u306b\u6df7\u3093\u3067\u3044\u305f\u306e\u3067\u3001\u96fb\u8eca\u306b\u4e57\u308b\u307e\u3067\u6642\u9593\u304c\u304b\u304b\u308a\u307e\u3057\u305f\u3002\nThe station was very crowded, so it took time to get on the train."
+  },
+  {
+    "id": 627,
+    "kanji": "\u97f3",
+    "kana": "\u304a\u3068",
+    "eng": "sound; noise",
+    "rei": "\u52c9\u5f37\u3057\u305f\u3044\u304b\u3089\u30c6\u30ec\u30d3\u306e\u97f3\u3092\u5c0f\u3055\u304f\u3057\u3066\u304f\u308c\u307e\u305b\u3093\u304b\u3002\nWill you please turn down the TV because I want to study?"
+  },
+  {
+    "id": 628,
+    "kanji": "\u9802\u304f",
+    "kana": "\u3044\u305f\u3060\u304f",
+    "eng": "(hum) to receive",
+    "rei": "\u5148\u751f\u306b\u3053\u306e\u6559\u79d1\u66f8\u3092\u9802\u304d\u307e\u3057\u305f\u3002\nI received this textbook from the teacher."
+  },
+  {
+    "id": 629,
+    "kanji": "\u9811\u5f35\u308b",
+    "kana": "\u304c\u3093\u3070\u308b",
+    "eng": "to persevere; to persist",
+    "rei": "\u3082\u3063\u3068\u9811\u5f35\u3063\u3066\u65e5\u672c\u8a9e\u3092\u52c9\u5f37\u3057\u306a\u3044\u3068\u4e0a\u624b\u306b\u306a\u3089\u306a\u3044\u3002\nI won't become good if I don't persevere and study Japanese harder."
+  },
+  {
+    "id": 630,
+    "kanji": "\u98db\u884c\u5834",
+    "kana": "\u3072\u3053\u3046\u3058\u3087\u3046",
+    "eng": "airfield",
+    "rei": "\u672c\u5f53\u306e\u304a\u91d1\u6301\u3061\u306a\u3089\u30d7\u30e9\u30a4\u30d9\u30fc\u30c8\u98db\u884c\u5834\u3092\u6301\u3061\u307e\u3059\u3002\nIf you are really rich, you have your own private airfield."
+  },
+  {
+    "id": 631,
+    "kanji": "\u98df\u4e8b",
+    "kana": "\u3057\u3087\u304f\u3058",
+    "eng": "meal; to eat (a meal)",
+    "rei": "\u98df\u4e8b\u3057\u3066\u304b\u3089\u51fa\u304b\u3051\u307e\u3057\u3087\u3046\u3002\nLet's go out after eating."
+  },
+  {
+    "id": 632,
+    "kanji": "\u98df\u6599\u54c1",
+    "kana": "\u3057\u3087\u304f\u308a\u3087\u3046\u3072\u3093",
+    "eng": "foodstuff; groceries",
+    "rei": "\u3042\u306e\u5e97\u306f\u98df\u6599\u54c1\u3082\u96fb\u6c17\u88fd\u54c1\u3082\u58f2\u3063\u3066\u3044\u307e\u3059\u3002\nThat store sells both foodstuffs and electronics."
+  },
+  {
+    "id": 633,
+    "kanji": "\u98fe\u308b",
+    "kana": "\u304b\u3056\u308b",
+    "eng": "to decorate; to adorn",
+    "rei": "\u660e\u65e5\u306f\u30d1\u30fc\u30c6\u30a3\u3060\u304b\u3089\u3053\u306e\u90e8\u5c4b\u3092\u82b1\u3067\u98fe\u308a\u307e\u3057\u3087\u3046\u3002\nTomorrow is the party, so let's decorate this room with flowers."
+  },
+  {
+    "id": 634,
+    "kanji": "\u9996",
+    "kana": "\u304f\u3073",
+    "eng": "neck",
+    "rei": "\u9996\u304c\u56fa\u304f\u306a\u308b\u3068\u982d\u306f\u75db\u304f\u306a\u308b\u3053\u3068\u304c\u591a\u3044\u3002\nMy head often becomes sore when my neck becomes stiff."
+  },
+  {
+    "id": 635,
+    "kanji": "\u99d0\u8eca\u5834",
+    "kana": "\u3061\u3085\u3046\u3057\u3083\u3058\u3087\u3046",
+    "eng": "parking lot",
+    "rei": "\u99d0\u8eca\u5834\u306b\u8eca\u3092\u6b62\u3081\u308b\nto park the car in the parking lot"
+  },
+  {
+    "id": 636,
+    "kanji": "\u9a12\u3050",
+    "kana": "\u3055\u308f\u3050",
+    "eng": "to be noisy; to make a fuss",
+    "rei": "\u96a3\u306e\u90e8\u5c4b\u306e\u97f3\u304c\u805e\u3053\u3048\u308b\u306e\u3067\u3001\u9a12\u304c\u306a\u3044\u3067\u304f\u3060\u3055\u3044\u3002\nYou can hear sound from the next room, so don't be noisy."
+  },
+  {
+    "id": 637,
+    "kanji": "\u9a5a\u304f",
+    "kana": "\u304a\u3069\u308d\u304f",
+    "eng": "to be surprised",
+    "rei": "\u5927\u304d\u3044\u97f3\u304c\u6025\u306b\u51fa\u3066\u3001\u9a5a\u304d\u307e\u3057\u305f\u3002\nThere was a large sudden sound that surprised me."
+  },
+  {
+    "id": 638,
+    "kanji": "\u9ad8\u6821",
+    "kana": "\u3053\u3046\u3053\u3046",
+    "eng": "high school",
+    "rei": "\u9ad8\u6821\u3067\u4f55\u3092\u52c9\u5f37\u3057\u3066\u3044\u308b\uff1f\nWhat are you studying in high school?"
+  },
+  {
+    "id": 639,
+    "kanji": "\u9ad8\u6821\u751f",
+    "kana": "\u3053\u3046\u3053\u3046\u305b\u3044",
+    "eng": "high school student",
+    "rei": "\u30b8\u30e7\u30f3\u306e\u59b9\u306f\u9ad8\u6821\u751f\u3067\u3059\u3002\nJohn\u2019s little sister is a high school student."
+  },
+  {
+    "id": 640,
+    "kanji": "\u9ad8\u7b49\u5b66\u6821",
+    "kana": "\u3053\u3046\u3068\u3046\u304c\u3063\u3053\u3046",
+    "eng": "high school",
+    "rei": "\u9ad8\u7b49\u5b66\u6821\u3067\u4f55\u3092\u52c9\u5f37\u3057\u3066\u3044\u308b\uff1f\nWhat are you studying in high school?"
+  },
+  {
+    "id": 641,
+    "kanji": "\u9aea",
+    "kana": "\u304b\u307f",
+    "eng": "hair (on the head)",
+    "rei": "\u9aea\u304c\u9577\u3044\u304b\u3089\u4eca\u9031\u6728\u66dc\u65e5\u306b\u7f8e\u5bb9\u5ba4\u306b\u884c\u304f\u4e88\u5b9a\u3067\u3059\u3002\nI am planning on going to the beauty salon this Thursday because my hair is long."
+  },
+  {
+    "id": 642,
+    "kanji": "\u9cf4\u308b",
+    "kana": "\u306a\u308b",
+    "eng": "to sound; to ring",
+    "rei": "\u6bce\u671d\u30a2\u30e9\u30fc\u30e0\u304c6\u6642\u306b\u306a\u308b\u3088\u3046\u306b\u3057\u3066\u3044\u307e\u3059\u3002\nI am setting my alarm to ring at 6:00 every morning."
+  }
+]
