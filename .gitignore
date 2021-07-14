@@ -23,8 +23,11 @@ yarn-debug.log*
 yarn-error.log*
 
 #Flask API backend
-venv
-__pycache__
+./api/venv
+./api/__pycache__
+./api_old/__pycache__/
+./api_old/venv/
+./api_old
 
 #Random project thats not supposed to be here
 /qoute-machine
