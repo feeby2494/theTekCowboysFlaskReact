@@ -727,29 +727,13 @@ def get_all_json( level):
 
 def get_json_info( level):
     data = [
-                'all',
-                '01',
-                '02',
-                '03',
-                '04',
-                '05',
-                '06',
-                '07',
-                '08',
-                '09',
-                '10',
-                '11',
-                '12',
-                '13',
-                '14',
-                '15',
-                '16',
-                '17',
-                '18',
-                '19',
-                '20',
-                '21'
+                'all'
             ]
+    # After selection level, we need to get the "how many words"
+    # We must use this to limit the results from the sql query
+    # query(Model).filter(something).limit(5).all()
+    # Oh!!! We don't have a DB yet!!!
+
 
     return Response(json.dumps(data), mimetype='application/json')
 

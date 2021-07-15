@@ -54,7 +54,8 @@ class FlashCardSpace extends React.Component {
       displayList: false,
       cardOrder: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
       cardOrderCounter: 0,
-      nextIndex: 0
+      nextIndex: 0,
+      error: false
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleKanji = this.handleKanji.bind(this);
@@ -165,7 +166,13 @@ class FlashCardSpace extends React.Component {
 // }
       // No Kanji in question - use English as answer (answerEng)
       if(!this.state.answerKanji) {
-        if(this.state.input === this.state.answerEng) {
+
+        // This is where I need to use Regex match to make the matches easier; probably make new method for this.
+        let answer_matched = new RegExp(`\\b(${this.state.input})\\b`, "gi")
+        console.log()
+        console.log(`The input matches the answer: ${answer_matched.test(this.state.answerEng)} \n the regex is: ${answer_matched} \n the answer is: ${this.state.answerEng}`)
+        // if(this.state.input === this.state.answerEng) {
+        if(new RegExp(`\\b(${this.state.input})\\b`, "gi").test(this.state.answerEng)) {
           // Trying to get this to work in the order I want!!!
           this.setState({
             correctArray: this.state.correctArray.concat(this.state.japaneseCard[this.state.questionId]),
@@ -174,7 +181,8 @@ class FlashCardSpace extends React.Component {
             // PREVIOUS CODE: onlyOneLeft ? [] : idIsZero ? cards.slice(this.state.randomNumber + 1) : cards.slice(0, this.state.randomNumber).concat(cards.slice(this.state.randomNumber + 1)),
             this.setState({
               score: this.state.score + 1,
-              input: ''
+              input: '',
+              error: false
             }, () => {
               // Want this to update last, but want it to render and update card!!! Not the same card again...
               this.selectNextCard();
@@ -190,6 +198,7 @@ class FlashCardSpace extends React.Component {
           this.setState({
             wrongArray: this.state.wrongArray.concat(this.state.japaneseCard[this.state.questionId]),
             input: '',
+            error: true
           });
         }
       }
@@ -203,7 +212,8 @@ class FlashCardSpace extends React.Component {
             // Trying to get this to do so after this.state.correctArray is finished updating
             this.setState({
               score: this.state.score + 1,
-              input: ''
+              input: '',
+              error: false
             }, () => {
               // Want this to update last, but want it to render and update card!!! Not the same card again...
               this.selectNextCard();
@@ -219,6 +229,7 @@ class FlashCardSpace extends React.Component {
           this.setState({
               wrongArray: this.state.wrongArray.concat(this.state.japaneseCard[this.state.questionId]),
               input: '',
+              error: true
             });
         }
       }
@@ -327,7 +338,7 @@ class FlashCardSpace extends React.Component {
               <p className="text-center">Score: { this.state.score }</p>
               <h2 className="text-center">{ this.state.finished ? finished : this.state.answerKanji ? hasKanji : noKanji }</h2>
 
-              <JapaneseInputWindow handleKeyPress={this.handleKeyPress} inputFocus={this.inputFocus} kanji={this.state.answerKanji} checkAnswer={this.checkAnswer} handleKanji={this.handleKanji} handleKana={this.handleKana} input={this.state.input}/>
+              <JapaneseInputWindow error={this.state.error} handleKeyPress={this.handleKeyPress} inputFocus={this.inputFocus} kanji={this.state.answerKanji} checkAnswer={this.checkAnswer} handleKanji={this.handleKanji} handleKana={this.handleKana} input={this.state.input}/>
               {
                 this.state.answerKanji && <p>You need a Japanese keyboard for this.</p>
               }

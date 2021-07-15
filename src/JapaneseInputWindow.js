@@ -3,6 +3,7 @@ import './App.css';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
+import Alert from 'react-bootstrap/Alert';
 
 class JapaneseInputWindow extends React.Component {
   render() {
@@ -25,6 +26,11 @@ class JapaneseInputWindow extends React.Component {
               <FormControl onKeyPress={this.props.handleKeyPress} ref={this.props.inputFocus} onChange={this.props.handleKana} value={this.props.input} placeholder="Kana or Hangul present: use English" aria-describedby="basic-addon1" />
             </InputGroup>
 
+        }
+        {this.props.error &&
+          <Alert variant={'danger'}>
+            Error! Please Try again!
+          </Alert>
         }
       </div>
     );
