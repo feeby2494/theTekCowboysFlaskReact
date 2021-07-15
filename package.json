@@ -22,7 +22,11 @@
   "scripts": {
     "start": "react-scripts start",
     "start-api": "cd api && venv/bin/flask run --no-debugger",
+<<<<<<< HEAD
     "start-api-dev": "cd api && source ./venv/bin/activate && export FLASK_DEBUG=1 && export FLASK_APP=api.py && flask run --no-debugger",
+=======
+    "start-api-dev": "cd api && export FLASK_DEBUG=1 && export FLASK_APP=./api.py && ./venv/bin/flask run --no-debugger",
+>>>>>>> 2d7f55f7f353f264c8d89d17a70fe3728aebf26d
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

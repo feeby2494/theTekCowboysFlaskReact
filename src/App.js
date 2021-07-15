@@ -38,6 +38,7 @@ class App extends Component {
       showAdmin: false,
       currentUser: undefined,
       currentToken: localStorage.getItem('token'),
+      loggedIn: null
     }
 
   }
@@ -56,7 +57,7 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-        <Navigation/>
+        <Navigation loggedIn={this.state.currentToken}/>
        <div className="flex-container">
 
        {this.state.showAdmin && (
@@ -78,9 +79,11 @@ class App extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/secret" component={withAuth(Secret)} />
           <Route path="/login" >
-            <Login  history={this.props.history}/>
+            <Login  history={this.props.history} loggedIn={this.state.loggedIn}/>
           </Route>
-          <Route path="/logout" component ={Logout}/>
+          <Route path="/logout">
+              <Logout history={this.props.history} loggedIn={this.state.loggedIn}/>
+          </Route>
           <Route path="/register" component ={Register}/>
           <Route path="/about" exact component={About} />
           <Route path="/device_repair" exact component={RepairService} />
