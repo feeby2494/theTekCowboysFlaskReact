@@ -58,11 +58,12 @@ class Login extends Component {
 
           localStorage.setItem('token', data.token);
           localStorage.setItem('public_id', jwt_decode(data.token).public_id);
+          sessionStorage["test1"] = "Lorem ipsum";
  // I really hate Javascript, this shit deosn't make any sense
           let nextUrl = '/' + jwt_decode(data.token).public_id;
           console.log(nextUrl)
-
           console.log(this.props)
+          console.log(localStorage.getItem('token'))
           this.props.history.push(nextUrl);
           //return <Redirect to={'/' + jwt_decode(data.token).public_id}/>
 
@@ -104,7 +105,6 @@ class Login extends Component {
 
                     <Col style={{ display: 'flex', justifyContent: 'flex-end' }}>
                       <Button className="mr-4" onClick={this.onSubmit} type="submit" value="Login" variant="info">Login</Button> {' '}
-                      <Button type="button" value="Register" variant="info">Register</Button>
                     </Col>
                   </Row>
                 </Jumbotron>
