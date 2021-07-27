@@ -3,6 +3,7 @@ import './App.css';
 import VocabList from './VocabList';
 import JapaneseInputWindow from './JapaneseInputWindow';
 import CardLinks from './CardLinks';
+import Dictionary from './Dictionary';
 
 
 import Button from 'react-bootstrap/Button';
@@ -52,6 +53,7 @@ class FlashCardSpace extends React.Component {
       startingAgain: false,
       numberOfLessons: null,
       displayList: false,
+      displayDictionary: false,
       cardOrder: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
       cardOrderCounter: 0,
       nextIndex: 0,
@@ -67,11 +69,18 @@ class FlashCardSpace extends React.Component {
     this.handleLevelChange = this.handleLevelChange.bind(this);
     this.handleLessonChange = this.handleLessonChange.bind(this);
     this.showList = this.showList.bind(this);
+    this.showDictionary = this.showDictionary.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
+
   }
   showList(event) {
     this.setState({
       displayList: !this.state.displayList
+    });
+  }
+  showDictionary(event) {
+    this.setState({
+      displayDictionary: !this.state.displayDictionary
     });
   }
   handleChange(event) {
@@ -329,6 +338,7 @@ class FlashCardSpace extends React.Component {
 
     return (
       <Container className="mb-5 clearfix">
+        <Dictionary displayDictionary={this.state.displayDictionary} showDictionary={this.showDictionary} currentEnglish={this.state.answerEng} currentKana={this.state.answerKana} currentKanji={this.state.answerKanji}/>
         <VocabList displayList={this.state.displayList} showList={this.showList} cardList={this.state.japaneseCard}/>
         <Row >
           <Col className="mt-4">

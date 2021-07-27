@@ -62,7 +62,7 @@ export default class Login extends Component {
                       </Col>
                       <Col lg={4} className="">
                         <Form.Group controlId="email-input">
-                          <Form.Label for="email-input">Password:</Form.Label>
+                          <Form.Label for="email-input">Email:</Form.Label>
                           <Form.Control as="input" type="email"  autoComplete="true" name="email" placeholder="Enter email" value={this.state.email} onChange={this.handleInputChange}>
                           </Form.Control>
                         </Form.Group>
