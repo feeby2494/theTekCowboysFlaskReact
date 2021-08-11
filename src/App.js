@@ -17,6 +17,7 @@ import TutoringLanguageService from './services/language_tutoring/TutoringLangua
 import WebProjectService from './services/web_project/WebProjectService';
 import GenkiOne from './japanese/GenkiOne';
 import GenkiOneSpecificPoint from './japanese/GenkiOneSpecificPoint';
+import AllPoints from "points/AllPoints";
 
 
 // Need to go mod all the services to get the right things from API
@@ -92,6 +93,7 @@ class App extends Component {
           <Route path="/genki_one" component ={GenkiOne}/>
           <Route path="/genki_one/:id" component ={GenkiOneSpecificPoint}/>
           <Route path="/:personId" component ={UserHome}/>
+          <Route path="/points" component ={AllPoints}/>
 
 
 

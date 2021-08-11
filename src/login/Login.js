@@ -3,7 +3,7 @@ import jwt_decode from "jwt-decode";
 import { Redirect} from 'react-router-dom';
 import {withRouter} from 'react-router'; // OM!!! This gives me back history on this.props!!!!!
 import Button from 'react-bootstrap/Button';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+// import Jumbotron from 'react-bootstrap/Jumbotron';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -77,7 +77,7 @@ class Login extends Component {
             <Row >
               <Col md={2}></Col>
               <Col md={8} className="justify-content-lg-center">
-                <Jumbotron className="mr-5 ml-5 mt-5">
+                <div className="jumbotron mr-5 ml-5 mt-5">
                   <Row>
                     <Col>
                       <h1>Login</h1>
@@ -107,7 +107,7 @@ class Login extends Component {
                       <Button className="mr-4" onClick={this.onSubmit} type="submit" value="Login" variant="info">Login</Button> {' '}
                     </Col>
                   </Row>
-                </Jumbotron>
+                </div>
               </Col>
               <Col md={2}></Col>
             </Row>

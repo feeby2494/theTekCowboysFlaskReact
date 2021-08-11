@@ -6,7 +6,8 @@ import CardLinks from './CardLinks';
 
 
 import Button from 'react-bootstrap/Button';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+// Not in bootstrap 5!
+// import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -333,8 +334,8 @@ class FlashCardSpace extends React.Component {
         <Row >
           <Col className="mt-4">
             <h2 className="text-center">Japanese and Korean Quizes</h2>
-            {  }
-            <Jumbotron>
+
+            <div className="p-5 mb-4 bg-light rounded-3">
               <p className="text-center">Score: { this.state.score }</p>
               <h2 className="text-center">{ this.state.finished ? finished : this.state.answerKanji ? hasKanji : noKanji }</h2>
 
@@ -343,7 +344,7 @@ class FlashCardSpace extends React.Component {
                 this.state.answerKanji && <p>You need a Japanese keyboard for this.</p>
               }
               { this.state.finished && <Button onClick={this.getFlashCards}> Restart Quiz </Button> }
-            </Jumbotron>
+            </div>
           </Col>
         </Row>
         <CardLinks submitChanges={this.getFlashCards} handleLevelChange={this.handleLevelChange} handleLessonChange={this.handleLessonChange} level={this.state.level} numberOfLessons={this.state.numberOfLessons}/>

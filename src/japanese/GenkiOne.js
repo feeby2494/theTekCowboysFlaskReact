@@ -390,13 +390,13 @@ export default class GenkiOne extends Component {
             )}
             { this.state.showCh3 && (
               <Container>
-                <h3>Chapter 1</h3>
+                <h3>Chapter 3</h3>
                 <div className="row">
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">X は Y です。 </div>
+                    <div className="card-header text-center">Present Tense: Ru verbs or ichidann verbs</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title text-center">〜です。 It is...</h5>
-                      <h5 className="card-title text-center">XはYです。 X is Y. As for X, it is Y.</h5>
+                      <h5 className="card-title text-center">食べる　＝＞　食べます；　食べません</h5>
+                      <h5 className="card-title text-center"></h5>
                       <hr />
                       <p className="card-text">学生（がくせい）です。</p>
                       <p className="card-text">私（わたし）はスー・キムです。</p>

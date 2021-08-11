@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Button from 'react-bootstrap/Button';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+// import Jumbotron from 'react-bootstrap/Jumbotron';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,7 +12,7 @@ class CardLinks extends React.Component {
       <div id='card-links'>
         <Row>
           <Col>
-            <Jumbotron>
+            <div className="jumbotron">
               <Form>
                 <Form.Group controlId="japanese-level">
                   <Form.Label for="japanese-level">Choose your level of Japanese Study</Form.Label>
@@ -43,7 +43,7 @@ class CardLinks extends React.Component {
                   Submit
                 </Button>
               </Form>
-            </Jumbotron>
+            </div>
           </Col>
         </Row>
       </div>

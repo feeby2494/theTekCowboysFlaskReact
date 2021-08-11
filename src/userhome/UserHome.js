@@ -2,6 +2,7 @@ import React, { useState, useEffect, Component } from "react";
 import { Link, BrowserRouter as Router, Route } from "react-router-dom";
 
 
+
 class UserHome extends Component {
 
   constructor(props) {
@@ -15,6 +16,7 @@ class UserHome extends Component {
       username: '',
       email: '',
       public_id: '',
+      error: null
     }
     this.getUserInfo = this.getUserInfo.bind(this);
   }
@@ -33,7 +35,12 @@ class UserHome extends Component {
           public_id: response[personId].public_id
         });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        this.setState({
+          error: error
+        });
+      });
   }
 
   componentDidMount(){
@@ -50,6 +57,8 @@ class UserHome extends Component {
         <h1>username: {this.state.username}</h1>
         <h2>email: {this.state.email}</h2>
         <h2>public_id: {this.state.public_id}</h2>
+
+    
 
         <Link to="/">Back to homepage</Link>
 
