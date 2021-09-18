@@ -51,6 +51,7 @@ class User(db.Model):
     password = db.Column(db.String(80))
     admin = db.Column(db.Boolean)
     todos = db.relationship('Todo', backref='user', lazy=True)
+    points = db.relationship('Point', backref='user', lazy=True)
 
 ################################################## TODO ########################################################
 
@@ -120,7 +121,31 @@ class Inventory(db.Model):
     repair_id = db.Column(db.Integer, db.ForeignKey("repair.id"), nullable=False)
     model_id = db.Column(db.Integer, db.ForeignKey("model.id"), nullable=False)
 
+################################################## POINTS ######################################################
 
+class Point(db.Model):
+    __tablename__ = "point"
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String, nullable=False)
+    explanation = db.Column(db.String, nullable=False)
+    language = db.Column(db.String, nullable=False)
+    chapter = db.Column(db.String)
+    example1 = db.Column(db.String)
+    example2 = db.Column(db.String)
+    example3 = db.Column(db.String)
+    created_by = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    date_created = db.Column(db.Date,  nullable=False)
+    element_list = db.relationship('Element', backref='point', lazy=True)
+
+# Thinking that a table for elements with point_id as the foreign key will be better appoarch
+# Will keep this just in case I like it better
+
+class Element(db.Model):
+    __tablename__ = "element"
+    id = db.Column(db.Integer, primary_key=True)
+    point_id = db.Column(db.Integer, db.ForeignKey("point.id"), nullable=False)
+    text = db.Column(db.String, nullable=False)
+    type = db.Column(db.String, nullable=False)
 
 ################################################################################################################
 #
@@ -750,6 +775,39 @@ def get_json_one_lesson( level, id):
 #
 ################################################################################################################
 
+@app.route('/api/points', methods=['GET'])
+def get_all_points():
+
+    """
+        This route will get all the points for a certain language.
+    """
+
+    points_for_lang = db.session.query(Point).all()
+
+    # What I want is to get a string with ";" as the delimiter and use python to
+    # split up into multiple elements, so we can store multiple elements in one column inside one SQL Table
+    # point_elements_array = points_for_lang.elements.split(';')
+
+
+
+    points_object = {}
+    for point in points_for_lang:
+        points_object[point.title] = {}
+        points_object[point.title]["id"] = point.id
+        points_object[point.title]["explanation"] = point.explanation
+        points_object[point.title]["title"] = point.title
+        points_object[point.title]["elements"] = []
+        for element in point['element_list']:
+            points_object[point.title]["elements"].append({
+                id: element.id,
+                text: element.text,
+                type: element.type
+            })
+        points_object[point.title]["language"] = point.language
+        points_object[point.title]["chapter"] = point.chapter
+
+    return Response(json.dumps(points_object), mimetype='application/json')
+
 @app.route('/api/points_by_language', methods=['GET'])
 def get_all_points_by_language(language):
 
@@ -757,23 +815,29 @@ def get_all_points_by_language(language):
         This route will get all the points for a certain language.
     """
 
-    points_for_lang = db.session.query(Points).filter_by(language=language).all()
+    points_for_lang = db.session.query(Point).filter_by(language=language).all()
 
     # What I want is to get a string with ";" as the delimiter and use python to
     # split up into multiple elements, so we can store multiple elements in one column inside one SQL Table
-    point_elements_array = points_for_lang.elements.split(';')
+    # point_elements_array = points_for_lang.elements.split(';')
+
+
 
     points_object = {}
     for point in points_for_lang:
-        points_object[point.name] = {}
-        points_object[point.name]["id"] = point.id
-        points_object[point.name]["explanation"] = point.explanation
-        points_object[point.name]["title"] = point.title
-        points_object[point.name]["elements"] = []
-        for element in point_elements_array:
-            points_object[point.name]["elements"].append(element)
-        points_object[point.name]["language"] = point.language
-        points_object[point.name]["chapter"] = point.chapter
+        points_object[point.title] = {}
+        points_object[point.title]["id"] = point.id
+        points_object[point.title]["explanation"] = point.explanation
+        points_object[point.title]["title"] = point.title
+        points_object[point.title]["elements"] = []
+        for element in point['element_list']:
+            points_object[point.title]["elements"].append({
+                id: element.id,
+                text: element.text,
+                type: element.type
+            })
+        points_object[point.title]["language"] = point.language
+        points_object[point.title]["chapter"] = point.chapter
 
     return Response(json.dumps(points_object), mimetype='application/json')
 
@@ -784,23 +848,27 @@ def get_all_points_by_chapter(language, chapter):
         This route will get all the points for a certain language and chapter.
     """
 
-    points_for_lang = db.session.query(Points).filter_by(language=language, chapter=chapter).all()
+    points_for_lang = db.session.query(Point).filter_by(language=language, chapter=chapter).all()
 
     # What I want is to get a string with ";" as the delimiter and use python to
     # split up into multiple elements, so we can store multiple elements in one column inside one SQL Table
-    point_elements_array = points_for_lang.elements.split(';')
+    # point_elements_array = points_for_lang.elements.split(';')
 
     points_object = {}
     for point in points_for_lang:
-        points_object[point.name] = {}
-        points_object[point.name]["id"] = point.id
-        points_object[point.name]["explanation"] = point.explanation
-        points_object[point.name]["title"] = point.title
-        points_object[point.name]["elements"] = []
-        for element in point_elements_array:
-            points_object[point.name]["elements"].append(element)
-        points_object[point.name]["language"] = point.language
-        points_object[point.name]["chapter"] = point.chapter
+        points_object[point.title] = {}
+        points_object[point.title]["id"] = point.id
+        points_object[point.title]["explanation"] = point.explanation
+        points_object[point.title]["title"] = point.title
+        points_object[point.title]["elements"] = []
+        for element in point['element_list']:
+            points_object[point.title]["elements"].append({
+                id: element.id,
+                text: element.text,
+                type: element.type
+            })
+        points_object[point.title]["language"] = point.language
+        points_object[point.title]["chapter"] = point.chapter
 
     return Response(json.dumps(points_object), mimetype='application/json')
 
@@ -811,24 +879,30 @@ def get_one_point(point_id):
         This route will get only one specific point by point_id.
     """
 
-    point = db.session.query(Points).filter_by(point_id=point_id).first()
+    point = db.session.query(Point).filter_by(id=point_id).first()
 
     # What I want is to get a string with ";" as the delimiter and use python to
     # split up into multiple elements, so we can store multiple elements in one column inside one SQL Table
-    point_elements_array = points_for_lang.elements.split(';')
+    # point_elements_array = points_for_lang.elements.split(';')
 
-    points_object = {}
 
     # no loop here since we only get the first point from DB
-    points_object[point.name] = {}
-    points_object[point.name]["id"] = point.id
-    points_object[point.name]["explanation"] = point.explanation
-    points_object[point.name]["title"] = point.title
-    points_object[point.name]["elements"] = []
-    for element in point_elements_array:
-        points_object[point.name]["elements"].append(element)
-    points_object[point.name]["language"] = point.language
-    points_object[point.name]["chapter"] = point.chapter
+    points_object = {}
+
+    points_object[point.title] = {}
+    points_object[point.title]["id"] = point.id
+    points_object[point.title]["explanation"] = point.explanation
+    points_object[point.title]["title"] = point.title
+    points_object[point.title]["element_list"] = []
+    for element in point.element_list:
+        points_object[point.title]["element_list"].append({
+            "id": element.id,
+            "text": element.text,
+            "type": element.type
+        })
+
+    points_object[point.title]["language"] = point.language
+    points_object[point.title]["chapter"] = point.chapter
 
     return Response(json.dumps(points_object), mimetype='application/json')
 
@@ -841,24 +915,34 @@ def create_point(current_user):
     """
 
     # Check is user is Admin first:
-    if not current_user.admin:
-        return Response(json.dumps({'message' : 'Cannot perform this action. You are not an Admin'}), mimetype='application/json')
+    # if not current_user.admin:
+    #     return Response(json.dumps({'message' : 'Cannot perform this action. You are not an Admin'}), mimetype='application/json')
 
-    user_object = User.query.filter_by(public_id=current_user.public_id).first()
-    user_id = user_object.id
+
     data = request.get_json()
-    elements_array = ";".join(data["elements"])
-    date_created = datetime.date()
+    # elements_array = ";".join(data["elements"])
+    date_created = datetime.date.today()
 
     try:
-        new_point = Point(explanation=data['explanation'], title=data['title'], elements=elements_array, language=data['language'], chapter=data['chapter'], created_by=user_id, date_created=date_created)
+        new_point = Point(explanation=data['explanation'], title=data['title'], language=data['language'], chapter=data['chapter'], created_by=current_user.id, date_created=date_created)
+        # , author=user_id, date_created=date_created)
         db.session.add(new_point)
+        # Maybe better to do this after in another try, so I can make sure the point
+        # is made first and to catch errors relating to either point creation or element creation
         db.session.commit()
 
-        return Response(json.dumps({'message' : f"New point, {data['title']}, created by: {user_id} at {date_created}"}), mimetype='application/json')
     except exc.IntegrityError as e:
         db.session.rollback()
-        return Response(json.dumps({'message' : f"ERROR: Cannot create todo: {data['title']}. Due to ERROR: {e}"}), mimetype='application/json')
+        return Response(json.dumps({'message' : f"ERROR: Cannot create point: {data['title']}. Due to ERROR: {e}"}), mimetype='application/json')
+    try:
+        for element in data['element_list']:
+            new_element = Element(point_id=new_point.id, text=element['text'], type=element['type'])
+            db.session.add(new_element)
+            db.session.commit()
+        return Response(json.dumps({'message' : f"New point, {data['title']}, created by: {current_user.username} at {date_created}"}), mimetype='application/json')
+    except exc.IntegrityError as e:
+        db.session.rollback()
+        return Response(json.dumps({'message' : f"ERROR: Cannot create elements for: {data['title']}. Due to ERROR: {e}"}), mimetype='application/json')
 
 @app.route('/api/points/<point_id>', methods=['PATCH'])
 @token_required
@@ -869,57 +953,88 @@ def complete_point(current_user, point_id):
     """
 
     # Check is user is Admin first:
-    if not current_user.admin:
-        return Response(json.dumps({'message' : 'Cannot perform this action. You are not an Admin'}), mimetype='application/json')
+    # if not current_user.admin:
+    #     return Response(json.dumps({'message' : 'Cannot perform this action. You are not an Admin'}), mimetype='application/json')
 
-    specific_point = db.session.query(Point).filter_by(point_id=point_id).first()
+    specific_point = db.session.query(Point).filter_by(id=point_id).first()
 
-    user_object = User.query.filter_by(public_id=current_user.public_id).first()
-    last_edited_by = user_object.id
+    # user_object = User.query.filter_by(public_id=current_user.public_id).first()
+    # last_edited_by = user_object.id
     data = request.get_json()
-    elements_array = ";".join(data["elements"])
-    date_modified = datetime.date()
+    date_modified = datetime.date.today()
 
-    point_to_mod = Point.query.filter_by(point_id=point_id).first()
+
 
     try:
         # Actual update of point:
-        point_to_mod.explanation = data['explanation']
-        point_to_mod.title = data['title']
-        point_to_mod.elements = elements_array
-        point_to_mod.language = data['language']
-        point_to_mod.chapter = data['chapter']
-        point_to_mod.last_edited_by = last_edited_by
-        point_to_mod.last_modified = date_modified
+        specific_point.explanation = data['explanation']
+        specific_point.title = data['title']
+        specific_point.language = data['language']
+        specific_point.chapter = data['chapter']
+        # point_to_mod.last_edited_by = last_edited_by
+        # point_to_mod.last_modified = date_modified
         db.session.commit()
 
     except exc.IntegrityError as e:
         db.session.rollback()
         return Response(json.dumps({'message' : f"ERROR: Cannot modify: {data['title']}. Due to ERROR: {e}"}), mimetype='application/json')
 
+    # Need to take care of the new elements:
+    elements_for_point = db.session.query(Element).filter_by(point_id=point_id).all()
+
+    old_elements = []
+
+    for element in elements_for_point:
+
+        old_elements.append({"id": element.id, "type": element.type, "text": element.text})
+
+    try:
+        elements_for_point.clear()
+        elements_for_point = data['element_list']
+        #First add new stuff
+        # for element in data['element_list']:
+        #     elements_for_point.append(element)
+        # #remove the old stuff
+        # for item in elements_for_point:
+        #     if item not in data['element_list']:
+        #         elements_for_point.remove(item)
+
+        db.session.commit()
+
+    except exc.IntegrityError as e:
+        db.session.rollback()
+        return Response(json.dumps({'message' : f"ERROR: Cannot modify new Elements for: {data['title']}. Due to ERROR: {e}"}), mimetype='application/json')
+
+
     """
         Preform an updated GET after modifing Point:
         (Will make this into a function later on)
     """
 
-    point = db.session.query(Points).filter_by(point_id=point_id).first()
+    updated_point = db.session.query(Point).filter_by(id=point_id).first()
+    updated_elements = db.session.query(Element).filter_by(point_id=point_id).all()
 
     # What I want is to get a string with ";" as the delimiter and use python to
     # split up into multiple elements, so we can store multiple elements in one column inside one SQL Table
-    point_elements_array = points_for_lang.elements.split(';')
+    # point_elements_array = points_for_lang.elements.split(';')
 
-    points_object = {}
 
     # no loop here since we only get the first point from DB
-    points_object[point.name] = {}
-    points_object[point.name]["id"] = point.id
-    points_object[point.name]["explanation"] = point.explanation
-    points_object[point.name]["title"] = point.title
-    points_object[point.name]["elements"] = []
-    for element in point_elements_array:
-        points_object[point.name]["elements"].append(element)
-    points_object[point.name]["language"] = point.language
-    points_object[point.name]["chapter"] = point.chapter
+    points_object = {}
+
+    points_object[updated_point.title] = {}
+    points_object[updated_point.title]["id"] = updated_point.id
+    points_object[updated_point.title]["explanation"] = updated_point.explanation
+    points_object[updated_point.title]["title"] = updated_point.title
+    points_object[updated_point.title]["element_list"] = []
+    for element in updated_elements:
+        points_object[updated_point.title]["element_list"].append({
+            "id": element.id,
+            "text": element.text,
+            "type": element.type
+        })
+    points_object[updated_point.title]["language"] = updated_point.language
+    points_object[updated_point.title]["chapter"] = updated_point.chapter
 
     return Response(json.dumps(points_object), mimetype='application/json')
 
@@ -932,8 +1047,8 @@ def delete_point(current_user, point_id):
     """
 
     # Check is user is Admin first:
-    if not current_user.admin:
-        return Response(json.dumps({'message' : 'Cannot perform this action. You are not an Admin'}), mimetype='application/json')
+    # if not current_user.admin:
+    #     return Response(json.dumps({'message' : 'Cannot perform this action. You are not an Admin'}), mimetype='application/json')
 
     specific_point = db.session.query(Point).filter_by(point_id=point_id).first()
 

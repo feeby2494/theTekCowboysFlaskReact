@@ -393,49 +393,61 @@ export default class GenkiOne extends Component {
                 <h3>Chapter 3</h3>
                 <div className="row">
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">Present Tense: Ru verbs or ichidann verbs</div>
+                    <div className="card-header text-center">Verb Conjugation: Present Affirmative & Present Negative</div>
                     <div className="card-body text-info">
                       <h5 className="card-title text-center">食べる　＝＞　食べます；　食べません</h5>
-                      <h5 className="card-title text-center"></h5>
+                      <h5 className="card-title text-center">行く　＝＞　行きます；　行きません</h5>
                       <hr />
-                      <p className="card-text">学生（がくせい）です。</p>
-                      <p className="card-text">私（わたし）はスー・キムです。</p>
+                      <h5 className="card-title text-center">Irregular Verbs:</h5>
+                      <p className="card-text">する　＝＞　します；　しません</p>
+                      <p className="card-text">来る　＝＞　来ます；　来ません</p>
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">{'Making Questions => か。'}</div>
+                    <div className="card-header text-center">Verb Types and the "Present Tense"</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title text-center">……か。 What is... Who is/are... Are you... etc...</h5>
+                      <h5 className="card-title text-center">1。A person habitually or regularly engages in these activities。</h5>
+                      <h5 className="card-title text-center">2。A person will, or is planning to, perform these activities in the future.</h5>
                       <hr />
-                      <p className="card-text">留学生（りゅうがくせい）ですか。</p>
-                      <p className="card-text">はい、留学生です。 Or ええい、留学生じゃないです。</p>
+                      <p className="card-text">私はよく車を直します。　＝＞　I often work on my car.</p>
+                      <p className="card-text">ヤコブは時々朝ごはんを食べません。</p>
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">noun-1 の noun-2</div>
+                    <div className="card-header text-center">Particles</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title text-center">Noun1(further restriction) の Noun2(main ideal)</h5>
+                      <h5 className="card-title text-center"> を　＝＞　"direct object"; the kind of things that are directly involved in, or affected by, the event. </h5>
+                      <h5 className="card-title text-center"> で　＝＞　where the event descirbed by the verb takes place. </h5>
+                      <h5 className="card-title text-center"> に　＝＞　many meanings: (1) the goal toward which things move, (2) the time at which an event takes place. </h5>
+                      <h5 className="card-title text-center"> へ　＝＞　same meaning as に　for case 1: the goal toward which things move </h5>
                       <hr />
-                      <p className="card-text">たけしさんのお母さん（おかあさん）は高校（こうこう）の先生（せんせい）です。</p>
-                      <p className="card-text">日本語（にほんご）の学生（がくせい）</p>
+                      <p className="card-text"></p>
+                      <p className="card-text"></p>
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">数字（すいじ）Numbers</div>
+                    <div className="card-header text-center">Time Reference (Particles Required)</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title">Info card title</h5>
-                      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 className="card-title">　に　＝＞　(1) the days of the week like Sunday, (2) numerical time expressions like "at 3:00," and "in December."</h5>
+                      <hr />
+                      <p className="card-text">土曜日に教科書で勉強します。</p>
+
+                      <p className="card-text">9月に売った商品が届きます。</p>
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">字間（じかん）Time</div>
+                    <div className="card-header text-center">Time Reference (Particles Not Allowed)</div>
                     <div className="card-body text-info">
-                      <h5 className="card-title">Info card title</h5>
-                      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 className="card-title">Do not use "に"　in these situations: (1) time expressions defined relative to the present momment, such as "today" and "tomorrow."</h5>
+                      <h5 className="card-title">(2) expressions describing regular intervals, such as "every day."</h5>
+                      <h5 className="card-title">(3) the word for "when"</h5>
+                      <p className="card-text">明日遊びます。</p>
+                      <p className="card-text">毎日仕事に行くために七字十五分に起きます。</p>
+                      <p className="card-text">いつ来ますか。</p>
                     </div>
                   </div>
                   <div className="card border-info mb-3 col-md-6 col-xl-4">
-                    <div className="card-header text-center">表現ノート（ひょうげんノート）Expression Notes</div>
+                    <div className="card-header text-center">ime Reference (Particles Are Optional)</div>
                     <div className="card-body text-info">
                       <h5 className="card-title">Info card title</h5>
                       <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

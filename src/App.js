@@ -92,8 +92,9 @@ class App extends Component {
           <Route path="/web_project" exact component={WebProjectService} />
           <Route path="/genki_one" component ={GenkiOne}/>
           <Route path="/genki_one/:id" component ={GenkiOneSpecificPoint}/>
-          <Route path="/:personId" component ={UserHome}/>
           <Route path="/points" component ={AllPoints}/>
+          <Route path="/:personId" component ={UserHome}/>
+
 
 
 
