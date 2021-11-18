@@ -13,8 +13,9 @@
 #
 ################################################################################################################
 
-from flask import Flask, request, jsonify, Response, make_response
+from flask import Flask, request, jsonify, Response, make_response, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS, cross_origin
 from sqlalchemy import exc
 import uuid
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -25,6 +26,8 @@ import datetime
 from functools import wraps
 import os
 
+from flask_migrate import Migrate
+
 ################################################################################################################
 #
 #                                                  INITIALIZE APP AND DB
@@ -33,11 +36,17 @@ import os
 
 app = Flask(__name__)
 
+# Stupid CORS crap:
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+
 #Don't forget to change this SECRET_KEY and SQLALCHEMY_DATABASE_URI and put in sepearte file or .env file and have git ignore it
 app.config['SECRET_KEY'] = 'dkfi@%&*o49wr%^&p209fso4()903@$%$^4rwt3%^34t3#%^$&$%245g'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data/todo.db'
 
 db = SQLAlchemy(app)
+
+migrate = Migrate(app, db)
 
 #Defining DB tables
 
@@ -797,11 +806,19 @@ def get_all_points():
         points_object[point.title]["explanation"] = point.explanation
         points_object[point.title]["title"] = point.title
         points_object[point.title]["elements"] = []
-        for element in point['element_list']:
+        # There's some way to access the element_list for each point, but forgot how to do it
+        # for element in point['element_list']:
+        #     points_object[point.title]["elements"].append({
+        #         id: element.id,
+        #         text: element.text,
+        #         type: element.type
+        #     })
+        elements_for_this = db.session.query(Element).filter_by(point_id=point.id).all()
+        for element in elements_for_this:
             points_object[point.title]["elements"].append({
-                id: element.id,
-                text: element.text,
-                type: element.type
+                "id": element.id,
+                "text": element.text,
+                "type": element.type
             })
         points_object[point.title]["language"] = point.language
         points_object[point.title]["chapter"] = point.chapter
@@ -914,10 +931,11 @@ def create_point(current_user):
         Create a new point, must be logged in as Admin user
     """
 
-    # Check is user is Admin first:
+    # Check if user is Admin first:
     # if not current_user.admin:
     #     return Response(json.dumps({'message' : 'Cannot perform this action. You are not an Admin'}), mimetype='application/json')
-
+    #
+    # print(current_user)
 
     data = request.get_json()
     # elements_array = ";".join(data["elements"])
@@ -935,11 +953,13 @@ def create_point(current_user):
         db.session.rollback()
         return Response(json.dumps({'message' : f"ERROR: Cannot create point: {data['title']}. Due to ERROR: {e}"}), mimetype='application/json')
     try:
-        for element in data['element_list']:
-            new_element = Element(point_id=new_point.id, text=element['text'], type=element['type'])
+        for element in data['elements'].split(";"):
+            new_element = Element(point_id=new_point.id, text=element, type="p")
             db.session.add(new_element)
             db.session.commit()
-        return Response(json.dumps({'message' : f"New point, {data['title']}, created by: {current_user.username} at {date_created}"}), mimetype='application/json')
+        print(f"New point, {data['title']}, created by: {current_user.username} at {date_created}")
+        return redirect(url_for('get_all_points'))
+        #return Response(json.dumps({'message' : f"New point, {data['title']}, created by: {current_user.username} at {date_created}"}), mimetype='application/json')
     except exc.IntegrityError as e:
         db.session.rollback()
         return Response(json.dumps({'message' : f"ERROR: Cannot create elements for: {data['title']}. Due to ERROR: {e}"}), mimetype='application/json')
@@ -1050,12 +1070,28 @@ def delete_point(current_user, point_id):
     # if not current_user.admin:
     #     return Response(json.dumps({'message' : 'Cannot perform this action. You are not an Admin'}), mimetype='application/json')
 
-    specific_point = db.session.query(Point).filter_by(point_id=point_id).first()
+    # Delete all elements first:
+    element_for_this_point = db.session.query(Element).filter_by(point_id=point_id).all()
+    if element_for_this_point is not None:
+        for el in element_for_this_point:
+            db.session.delete(el)
+        # db.session.commit()
 
-    db.session.delete(specific_point)
-    db.session.commit()
+    specific_point = db.session.query(Point).filter_by(id=point_id).first()
 
-    return Response(json.dumps({'message' : f'{specific_point.title} is deleted.'}), mimetype='application/json')
+    try:
+        db.session.delete(specific_point)
+        db.session.commit()
+    except exc.IntegrityError as e:
+        db.session.rollback()
+        return Response(json.dumps({'message' : f"ERROR: Cannot modify new Elements for: {data['title']}. Due to ERROR: {e}"}), mimetype='application/json')
+
+
+    # update list of elements
+    print(f'{specific_point.title} is deleted.')
+    return redirect(url_for('get_all_points'))
+
+    #return Response(json.dumps({'message' : f'{specific_point.title} is deleted.'}), mimetype='application/json')
 
 
 

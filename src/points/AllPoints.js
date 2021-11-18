@@ -1,8 +1,11 @@
 import React,{Component} from 'react';
 import '../App.css';
 import AddPoint from './AddPoint';
-
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 
 class AllPoints extends React.Component {
@@ -29,6 +32,8 @@ class AllPoints extends React.Component {
     this.handleShow = this.handleShow.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.submitNewPoint = this.submitNewPoint.bind(this);
+    this.getPoints = this.getPoints.bind(this);
+    this.deletePoint = this.deletePoint.bind(this);
   }
 
   handleTabChange(event) {
@@ -76,28 +81,49 @@ class AllPoints extends React.Component {
           example3: this.state.example3
         }),
         headers:{
-            'Content-Type':'application/json'
+            'Content-Type':'application/json',
+            'x-access-token': localStorage.getItem('token')
         }
     })
     .then(res=>res.json())
-    .then(
+    .then((data) => {
       this.setState({
         title: '',
         explanation: '',
-        elements: [],
+        elements: '',
         language: '',
         chapter: '',
         example1: '',
         example2: '',
         example3: '',
+        japaneseCard: data
       })
-    )
+    })
 
   }
   getPoints = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     fetch('/api/points',{
         method:'GET',
+        headers:{
+            'Content-Type':'application/json',
+            'x-access-token': localStorage.getItem('token')
+        }
+    })
+    .then(res=>res.json())
+    .then((data) => {
+      console.log(data);
+      this.setState({
+        japaneseCard: data
+      })
+    })
+
+  }
+
+  deletePoint = (id) => {
+    // event.preventDefault();
+    fetch('/api/points/' + id,{
+        method:'DELETE',
         headers:{
             'Content-Type':'application/json',
             'x-access-token': localStorage.getItem('token')
@@ -119,9 +145,15 @@ class AllPoints extends React.Component {
           [name]:value
       });
   }
+
+  componentDidMount() {
+       this.getPoints();
+    }
+
     render(){
       return(
-        <>
+        <Container>
+          <Row>
           <AddPoint
             submitNewPoint={this.submitNewPoint}
             handleInputChange={this.handleInputChange}
@@ -134,8 +166,32 @@ class AllPoints extends React.Component {
             example2={this.state.example2}
             example3={this.state.example3}
           />
-
-        </>
+          </Row>
+          <Row>
+            { this.state.japaneseCard && Object.keys(this.state.japaneseCard).map((key, index) => {
+                return (
+                  <Col md={4} className="my-2">
+                  <Card bg='light'>
+                    <Card.Header as="h5">{this.state.japaneseCard[key].title}</Card.Header>
+                    <Card.Body>
+                      <Card.Title>{this.state.japaneseCard[key].explanation}</Card.Title>
+                      <Card.Text>
+                        {
+                          this.state.japaneseCard[key].elements.map((el) => {
+                            return (<Col>{el.text}</Col>);
+                          })
+                        }
+                      </Card.Text>
+                      <Button variant="primary">Modify Card</Button>
+                      <Button onClick={ () => this.deletePoint(this.state.japaneseCard[key].id)} id={this.state.japaneseCard[key].id} variant="primary">Delete Card</Button>
+                    </Card.Body>
+                    </Card>
+                  </Col>
+                );
+              })
+            }
+          </Row>
+        </Container>
       );
 
     }
