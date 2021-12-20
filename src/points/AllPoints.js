@@ -182,8 +182,8 @@ class AllPoints extends React.Component {
                           })
                         }
                       </Card.Text>
-                      <Button variant="primary">Modify Card</Button>
-                      <Button onClick={ () => this.deletePoint(this.state.japaneseCard[key].id)} id={this.state.japaneseCard[key].id} variant="primary">Delete Card</Button>
+                      <Button variant="primary">Modify Point</Button>
+                      <Button onClick={ () => this.deletePoint(this.state.japaneseCard[key].id)} id={this.state.japaneseCard[key].id} variant="primary">Delete Point</Button>
                     </Card.Body>
                     </Card>
                   </Col>

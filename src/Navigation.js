@@ -8,20 +8,24 @@ class Navigation extends React.Component {
   constructor(props){
       super(props);
       this.state = {
-        status : null
+        loggedIn : false,
       };
 
         this.handleLoggedIn = this.handleLoggedIn.bind(this);
   }
 
   componentDidMount() {
-        if (typeof window !== 'undefined') {
-            this.setState({status: localStorage.getItem('token') ? true : false})
+    setInterval(() => {
+      const token = localStorage.getItem('token') ? localStorage.getItem('token') : null;
+      if (token) {
+        this.setState({ loggedIn: true });
+      } else {
+        this.setState({ loggedIn: false });
+      }
+    }, 5000);
 
-            window.addEventListener('storage', this.localStorageUpdated)
-        }
+
     }
-
 
   handleLoggedIn =(e)=>{
 
@@ -30,17 +34,7 @@ class Navigation extends React.Component {
 
   }
 
-  localStorageUpdated(){
-        if (!localStorage.getItem('token')) {
-            this.updateState(false)
-        }
-        else if (!this.state.status) {
-            this.updateState(true)
-        }
-    }
-    updateState(value){
-        this.setState({status:value})
-    }
+
 
   render(){
 
@@ -62,7 +56,7 @@ class Navigation extends React.Component {
               <NavDropdown.Item href="/flashcards">Learn Japanese or Korean Vocab</NavDropdown.Item>
               <NavDropdown.Item href="/genki_one">Genki I Grammar Study</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/ponts">Points</NavDropdown.Item>
+              <NavDropdown.Item href="/points">Points</NavDropdown.Item>
               { /*
               <NavDropdown.Item href="#action/3.4">Work and Study Opportunities</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Living in Korea</NavDropdown.Item>
@@ -87,10 +81,16 @@ class Navigation extends React.Component {
             */}
 
             {
-              this.props.loggedIn ?
-              <Nav.Link onClick={this.handleLoggedIn} href="/logout">logout</Nav.Link>
+              this.state.loggedIn ?
+              <Nav.Link href="/logout">logout</Nav.Link>
               :
               <Nav.Link href="/login">Login</Nav.Link>
+            }
+
+            {
+              this.state.status &&
+              <p>{localStorage.getItem('token')}</p>
+
             }
             <Nav.Link href="/register">Register</Nav.Link>
           </Nav>

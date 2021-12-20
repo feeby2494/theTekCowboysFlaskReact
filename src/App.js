@@ -39,10 +39,13 @@ class App extends Component {
       showAdmin: false,
       currentUser: undefined,
       currentToken: localStorage.getItem('token'),
-      loggedIn: null
     }
 
   }
+
+
+
+
 // Can't use this hook in classes
 // useEffect(() => {
 //     window.addEventListener('storage', () => {
@@ -54,11 +57,15 @@ class App extends Component {
 
 // Where the hell did changeLoggedInStatus() go?
 
+
+
+
+
   render() {
     return (
       <div className="App">
         <BrowserRouter>
-        <Navigation loggedIn={this.state.currentToken}/>
+        <Navigation />
        <div className="flex-container">
 
        {this.state.showAdmin && (

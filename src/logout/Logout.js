@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
+import {withRouter} from 'react-router'; // OM!!! This gives me back history on this.props!!!!!
 
-export default class Logout extends Component {
+class Logout extends Component {
 
   constructor(){
     super();
@@ -30,3 +31,6 @@ export default class Logout extends Component {
         );
       }
 }
+
+
+export default withRouter(Logout)
