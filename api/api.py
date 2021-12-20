@@ -1089,7 +1089,43 @@ def delete_point(current_user, point_id):
 
     # update list of elements
     print(f'{specific_point.title} is deleted.')
-    return redirect(url_for('get_all_points'))
+    # return redirect(url_for('get_all_points'))
+
+    # Could not get redirect to work, resulted in HTTP Method not Allowed Error, so just copy and pasted from this route to get update list of points.
+
+    points_for_lang = db.session.query(Point).all()
+
+    # What I want is to get a string with ";" as the delimiter and use python to
+    # split up into multiple elements, so we can store multiple elements in one column inside one SQL Table
+    # point_elements_array = points_for_lang.elements.split(';')
+
+
+
+    points_object = {}
+    for point in points_for_lang:
+        points_object[point.title] = {}
+        points_object[point.title]["id"] = point.id
+        points_object[point.title]["explanation"] = point.explanation
+        points_object[point.title]["title"] = point.title
+        points_object[point.title]["elements"] = []
+        # There's some way to access the element_list for each point, but forgot how to do it
+        # for element in point['element_list']:
+        #     points_object[point.title]["elements"].append({
+        #         id: element.id,
+        #         text: element.text,
+        #         type: element.type
+        #     })
+        elements_for_this = db.session.query(Element).filter_by(point_id=point.id).all()
+        for element in elements_for_this:
+            points_object[point.title]["elements"].append({
+                "id": element.id,
+                "text": element.text,
+                "type": element.type
+            })
+        points_object[point.title]["language"] = point.language
+        points_object[point.title]["chapter"] = point.chapter
+
+    return Response(json.dumps(points_object), mimetype='application/json')
 
     #return Response(json.dumps({'message' : f'{specific_point.title} is deleted.'}), mimetype='application/json')
 
