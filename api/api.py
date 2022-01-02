@@ -145,6 +145,7 @@ class Point(db.Model):
     created_by = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
     date_created = db.Column(db.Date,  nullable=False)
     element_list = db.relationship('Element', backref='point', lazy=True)
+    # category_list = db.relationship('Category', backref='point', lazy=True)
 
 # Thinking that a table for elements with point_id as the foreign key will be better appoarch
 # Will keep this just in case I like it better
@@ -155,6 +156,12 @@ class Element(db.Model):
     point_id = db.Column(db.Integer, db.ForeignKey("point.id"), nullable=False)
     text = db.Column(db.String, nullable=False)
     type = db.Column(db.String, nullable=False)
+
+# class Category(db.Model):
+#     __tablename__ = 'category'
+#     id = db.Column(db.Integer, primary_key=True)
+#     point_id = db.Column(db.Integer, db.ForeignKey("point.id"), nullable=False)
+#     category = db.Column(db.String, nullable=False)
 
 ################################################################################################################
 #
@@ -784,19 +791,56 @@ def get_json_one_lesson( level, id):
 #
 ################################################################################################################
 
-@app.route('/api/points', methods=['GET'])
+@app.route('/api/points', methods=['GET', 'POST'])
 def get_all_points():
 
-    """
-        This route will get all the points for a certain language.
-    """
-
+    # Have to get all categories First
     points_for_lang = db.session.query(Point).all()
+    categories = []
+    for point in points_for_lang:
+        # add to our list of chapters/categories for each point
+        categories.append(point.chapter)
+
+    # Trying to convert categories list to set, to get rid of duplicates, then convert back to list
+    categories = set([x for x in categories])
+    categories = list(categories)
+
+    if request.method == 'POST':
+        data = request.get_json()
+        filter_category = data['filter_category']
+        filter_language = data['filter_language']
+
+        # Basically same as the GET method, no filtering
+        if filter_category == 'all' and filter_language == 'all':
+            # Already have the query for points_for_lang
+            pass
+
+        # only filter by language
+        if filter_category == 'all' and filter_language != 'all':
+            points_for_lang = db.session.query(Point).filter_by(language=filter_language).all()
+
+        # only filter by category
+        if filter_language == 'all' and filter_category != 'all':
+            points_for_lang = db.session.query(Point).filter_by(chapter=filter_category).all()
+
+        # if both are not set to 'all', then query with both filters
+        if filter_language != 'all' and filter_category != 'all':
+            points_for_lang = db.session.query(Point).filter_by(chapter=filter_category, language=filter_language).all()
+
+    # Remember we already defined points_for_lang inorder to get all the categories, so we just reuse it here
+    # This will pass on to the rest of the code to make a request object and takes care of the 'GET' and 'POST'
+    # with both filters set to 'all'
+    if request.method == 'GET':
+        """
+            This route will get all the points for a certain language.
+        """
+
+        # Already have the query for points_for_lang
+        pass
 
     # What I want is to get a string with ";" as the delimiter and use python to
     # split up into multiple elements, so we can store multiple elements in one column inside one SQL Table
     # point_elements_array = points_for_lang.elements.split(';')
-
 
 
     points_object = {}
@@ -823,7 +867,11 @@ def get_all_points():
         points_object[point.title]["language"] = point.language
         points_object[point.title]["chapter"] = point.chapter
 
-    return Response(json.dumps(points_object), mimetype='application/json')
+
+    languages = ["japanese", "Korean"]
+
+    return Response(json.dumps([points_object, categories, languages]), mimetype='application/json')
+
 
 @app.route('/api/points_by_language', methods=['GET'])
 def get_all_points_by_language(language):
@@ -923,7 +971,7 @@ def get_one_point(point_id):
 
     return Response(json.dumps(points_object), mimetype='application/json')
 
-@app.route('/api/points', methods=['POST'])
+@app.route('/api/post_points', methods=['POST'])
 @token_required
 def create_point(current_user):
 

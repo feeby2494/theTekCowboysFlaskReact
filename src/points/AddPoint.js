@@ -15,7 +15,7 @@ const AddPoint = (props) => {
 
 
   return (
-    <Col className="my-3">
+    <Col lg={3} className="my-2">
       <Button variant="primary" onClick={handleShow}>
         Add New Point
       </Button>

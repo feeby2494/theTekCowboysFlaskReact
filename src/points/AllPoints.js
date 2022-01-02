@@ -1,11 +1,13 @@
 import React,{Component} from 'react';
 import '../App.css';
 import AddPoint from './AddPoint';
+import AllPointsByFilter from './AllPointsByFilter';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 
 class AllPoints extends React.Component {
@@ -25,14 +27,21 @@ class AllPoints extends React.Component {
       example1: '',
       example2: '',
       example3: '',
-      data: null
+      data: null,
+      categoriesList: null,
+      languagesList: null,
+      filterLanguage: 'all',
+      filterCategory: 'all'
+
     }
     this.handleTabChange = this.handleTabChange.bind(this);
     this.handleClose = this.handleClose.bind(this);
     this.handleShow = this.handleShow.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.submitNewPoint = this.submitNewPoint.bind(this);
     this.getPoints = this.getPoints.bind(this);
+    this.getFilteredPoints = this.getFilteredPoints.bind(this);
     this.deletePoint = this.deletePoint.bind(this);
   }
 
@@ -66,9 +75,16 @@ class AllPoints extends React.Component {
     console.log(document.getElementById(`${event.target.id.toLowerCase()}Modal`))
   }
 
+  handleChange(event) {
+    let properyName = `${event.target.id}`;
+    this.setState({
+      [properyName]: event.target.value
+    });
+  }
+
   submitNewPoint = (event) => {
     event.preventDefault();
-    fetch('/api/points',{
+    fetch('/api/post_points',{
         method:'POST',
         body: JSON.stringify({
           title: this.state.title,
@@ -96,7 +112,9 @@ class AllPoints extends React.Component {
         example1: '',
         example2: '',
         example3: '',
-        japaneseCard: data
+        japaneseCard: data[0],
+        categoriesList: data[1],
+        languagesList: data[2]
       })
     })
 
@@ -114,7 +132,34 @@ class AllPoints extends React.Component {
     .then((data) => {
       console.log(data);
       this.setState({
-        japaneseCard: data
+        japaneseCard: data[0],
+        categoriesList: data[1],
+        languagesList: data[2]
+      });
+    })
+
+  }
+
+  getFilteredPoints = (event) => {
+    // event.preventDefault();
+    fetch('/api/points',{
+        method:'POST',
+        body: JSON.stringify({
+          filter_language: this.state.filterLanguage,
+          filter_category: this.state.filterCategory
+        }),
+        headers:{
+            'Content-Type':'application/json',
+            'x-access-token': localStorage.getItem('token')
+        }
+    })
+    .then(res=>res.json())
+    .then((data) => {
+      console.log(data);
+      this.setState({
+        japaneseCard: data[0],
+        categoriesList: data[1],
+        languagesList: data[2]
       })
     })
 
@@ -152,19 +197,26 @@ class AllPoints extends React.Component {
     render(){
       return(
         <Container>
-          <Row>
-          <AddPoint
-            submitNewPoint={this.submitNewPoint}
-            handleInputChange={this.handleInputChange}
-            title={this.state.title}
-            explanation={this.state.explanation}
-            elements={this.state.elements}
-            language={this.state.language}
-            chapter={this.state.chapter}
-            example1={this.state.example1}
-            example2={this.state.example2}
-            example3={this.state.example3}
-          />
+          <Row className="my-3">
+            <AddPoint
+              submitNewPoint={this.submitNewPoint}
+              handleInputChange={this.handleInputChange}
+              title={this.state.title}
+              explanation={this.state.explanation}
+              elements={this.state.elements}
+              language={this.state.language}
+              chapter={this.state.chapter}
+              example1={this.state.example1}
+              example2={this.state.example2}
+              example3={this.state.example3}
+            />
+            <AllPointsByFilter
+              japaneseCard={this.state.japaneseCard}
+              handleChange={this.handleChange}
+              languagesList={this.state.languagesList}
+              categoriesList={this.state.categoriesList}
+              getFilteredPoints={this.getFilteredPoints}
+            />
           </Row>
           <Row>
             { this.state.japaneseCard && Object.keys(this.state.japaneseCard).map((key, index) => {
