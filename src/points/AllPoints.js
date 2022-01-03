@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import '../App.css';
 import AddPoint from './AddPoint';
 import AllPointsByFilter from './AllPointsByFilter';
+import PointCardTemplate from './PointCardTemplate';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -219,28 +220,10 @@ class AllPoints extends React.Component {
             />
           </Row>
           <Row>
-            { this.state.japaneseCard && Object.keys(this.state.japaneseCard).map((key, index) => {
-                return (
-                  <Col md={4} className="my-2">
-                  <Card bg='light'>
-                    <Card.Header as="h5">{this.state.japaneseCard[key].title}</Card.Header>
-                    <Card.Body>
-                      <Card.Title>{this.state.japaneseCard[key].explanation}</Card.Title>
-                      <Card.Text>
-                        {
-                          this.state.japaneseCard[key].elements.map((el) => {
-                            return (<Col>{el.text}</Col>);
-                          })
-                        }
-                      </Card.Text>
-                      <Button variant="primary">Modify Point</Button>
-                      <Button onClick={ () => this.deletePoint(this.state.japaneseCard[key].id)} id={this.state.japaneseCard[key].id} variant="primary">Delete Point</Button>
-                    </Card.Body>
-                    </Card>
-                  </Col>
-                );
-              })
-            }
+            <PointCardTemplate
+              japaneseCard={this.state.japaneseCard}
+              deletePoint={this.deletePoint}
+            />
           </Row>
         </Container>
       );

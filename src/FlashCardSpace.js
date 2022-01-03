@@ -339,17 +339,42 @@ class FlashCardSpace extends React.Component {
 
     return (
       <Container className="mb-5 clearfix">
-        <Dictionary displayDictionary={this.state.displayDictionary} showDictionary={this.showDictionary} currentEnglish={this.state.answerEng} currentKana={this.state.answerKana} currentKanji={this.state.answerKanji}/>
-        <VocabList displayList={this.state.displayList} showList={this.showList} cardList={this.state.japaneseCard}/>
+        <Dictionary
+          displayDictionary={this.state.displayDictionary}
+          showDictionary={this.showDictionary}
+          currentEnglish={this.state.answerEng}
+          currentKana={this.state.answerKana}
+          currentKanji={this.state.answerKanji}
+        />
+        <VocabList
+          displayList={this.state.displayList}
+          showList={this.showList}
+          cardList={this.state.japaneseCard}
+        />
         <Row >
           <Col className="mt-4">
             <h2 className="text-center">Japanese and Korean Quizes</h2>
 
             <div className="p-5 mb-4 bg-light rounded-3">
-              <p className="text-center">Score: { this.state.score }</p>
-              <h2 className="text-center">{ this.state.finished ? finished : this.state.answerKanji ? hasKanji : noKanji }</h2>
+              <p
+                className="text-center">
+                  Score: { this.state.score }
+              </p>
+              <h2
+                className="text-center">
+                  { this.state.finished ? finished : this.state.answerKanji ? hasKanji : noKanji }
+              </h2>
 
-              <JapaneseInputWindow error={this.state.error} handleKeyPress={this.handleKeyPress} inputFocus={this.inputFocus} kanji={this.state.answerKanji} checkAnswer={this.checkAnswer} handleKanji={this.handleKanji} handleKana={this.handleKana} input={this.state.input}/>
+              <JapaneseInputWindow
+                error={this.state.error}
+                handleKeyPress={this.handleKeyPress}
+                inputFocus={this.inputFocus}
+                kanji={this.state.answerKanji}
+                checkAnswer={this.checkAnswer}
+                handleKanji={this.handleKanji}
+                handleKana={this.handleKana}
+                input={this.state.input}
+              />
               {
                 this.state.answerKanji && <p>You need a Japanese keyboard for this.</p>
               }
