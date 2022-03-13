@@ -11,7 +11,8 @@ export default class Login extends Component {
         this.state={
             username:'',
             email:'',
-            password:''
+            password:'',
+            name: ''
         };
     }
 
@@ -53,21 +54,28 @@ export default class Login extends Component {
                     </Row>
                     <Row>
 
-                      <Col lg={4} className="">
+                      <Col lg={3} className="">
                         <Form.Group controlId="username-input">
                           <Form.Label for="username-input">Username:</Form.Label>
                           <Form.Control as="input" type="username" autoComplete="true" name="username" placeholder="Enter username" value={this.state.username} onChange={this.handleInputChange}>
                           </Form.Control>
                         </Form.Group>
                       </Col>
-                      <Col lg={4} className="">
+                      <Col lg={3} className="">
                         <Form.Group controlId="email-input">
                           <Form.Label for="email-input">Email:</Form.Label>
                           <Form.Control as="input" type="email"  autoComplete="true" name="email" placeholder="Enter email" value={this.state.email} onChange={this.handleInputChange}>
                           </Form.Control>
                         </Form.Group>
                       </Col>
-                      <Col lg={4} className="">
+                      <Col lg={3} className="">
+                        <Form.Group controlId="name-input">
+                          <Form.Label for="name-input">Full Name:</Form.Label>
+                          <Form.Control as="input" type="name"  autoComplete="true" name="name" placeholder="Enter Full Name" value={this.state.name} onChange={this.handleInputChange}>
+                          </Form.Control>
+                        </Form.Group>
+                      </Col>
+                      <Col lg={3} className="">
                         <Form.Group controlId="password-input">
                           <Form.Label for="password-input">Password:</Form.Label>
                           <Form.Control as="input" type="password"  autoComplete="true" name="password" placeholder="Enter password" value={this.state.password} onChange={this.handleInputChange}>

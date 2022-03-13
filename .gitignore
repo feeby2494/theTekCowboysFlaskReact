@@ -28,6 +28,9 @@ yarn-error.log*
 ./api_old/__pycache__/
 ./api_old/venv/
 ./api_old
+./api/api/.env
+./api/api/data
+./api/api/data/*
 
 #Random project thats not supposed to be here
 /qoute-machine
