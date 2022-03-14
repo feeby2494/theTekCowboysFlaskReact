@@ -31,6 +31,7 @@ yarn-error.log*
 ./api/api/.env
 ./api/api/data
 ./api/api/data/*
+./api/api/data/todo.db
 
 #Random project thats not supposed to be here
 /qoute-machine

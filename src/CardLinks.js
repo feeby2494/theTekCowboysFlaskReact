@@ -14,30 +14,48 @@ class CardLinks extends React.Component {
           <Col>
             <div className="jumbotron">
               <Form>
-                <Form.Group controlId="japanese-level">
-                  <Form.Label for="japanese-level">Choose your level of Japanese Study</Form.Label>
-                  <Form.Control as="select" onChange={this.props.handleLevelChange}>
+              <Form.Group controlId="language-select">
+                  <Form.Label for="language-select">Choose your language</Form.Label>
+                  <Form.Control as="select" onChange={this.props.handleLanguageChange}>
                     <option value="">Select an Option</option>
-                    <option value="jlpt_n5">JLPT N5</option>
-                    <option value="jlpt_n4">JLPT N4</option>
-                    <option value="jlpt_n3">JLPT N3</option>
-                    <option value="topik_I">Topik Level I</option>
+                    <option value="korean">Korean</option>
+                    <option value="japanese">Japanese</option>
                   </Form.Control>
                 </Form.Group>
+                {(this.props.language) && 
+                  <Form.Group controlId="level-select">
+                    <Form.Label for="level-select">Choose your level of {this.props.language.charAt(0).toUpperCase() + this.props.language.slice(1)} Study</Form.Label>
+                    
+                    {(this.props.language == 'korean') &&
+                      <Form.Control as="select" onChange={this.props.handleLevelChange}>
+                        <option value="">Select an Option</option>
+                        <option value="1">Topik Level I</option>
+                      </Form.Control>
+                    }
+                    {(this.props.language == 'japanese') &&
+                      <Form.Control as="select" onChange={this.props.handleLevelChange}>
+                        <option value="">Select an Option</option>
+                        <option value="5">JLPT N5</option>
+                        <option value="4">JLPT N4</option>
+                        <option value="3">JLPT N3</option>
+                      </Form.Control>
+                    }
+                  </Form.Group>
+                }
+                
                 {
-                  this.props.numberOfLessons ?
-                    <Form.Group controlId="japanese-lesson">
-                      <Form.Label for="japanese-lesson">Choose your lesson</Form.Label>
+                  (this.props.numberOfLessons && this.props.level) &&
+                    <Form.Group controlId="lesson-select">
+                      <Form.Label for="lesson-select">Choose your lesson</Form.Label>
                       <Form.Control as="select" onChange={this.props.handleLessonChange}>
                         <option value="">Select an Option</option>
                         {
                           this.props.numberOfLessons.map((lesson) => {
-                            return <option value={lesson}> Lesson {lesson} </option>
+                            return <option value={lesson}> {lesson} </option>
                           })
                         }
                       </Form.Control>
-                    </Form.Group> :
-                    < br />
+                    </Form.Group>
                 }
                 <Button onClick={this.props.submitChanges} variant="primary">
                   Submit

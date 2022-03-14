@@ -58,7 +58,8 @@ class FlashCardSpace extends React.Component {
       cardOrder: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
       cardOrderCounter: 0,
       nextIndex: 0,
-      error: false
+      error: false,
+      language: null
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleKanji = this.handleKanji.bind(this);
@@ -67,6 +68,7 @@ class FlashCardSpace extends React.Component {
     this.selectNextCard = this.selectNextCard.bind(this);
     this.checkAnswer = this.checkAnswer.bind(this);
     this.getFlashCards = this.getFlashCards.bind(this);
+    this.handleLanguageChange = this.handleLanguageChange.bind(this);
     this.handleLevelChange = this.handleLevelChange.bind(this);
     this.handleLessonChange = this.handleLessonChange.bind(this);
     this.showList = this.showList.bind(this);
@@ -246,14 +248,21 @@ class FlashCardSpace extends React.Component {
     }
   }
 
-
+  handleLanguageChange(event) {
+    this.setState({
+      language: event.target.value,
+      level: null,
+      lesson: null
+    });
+  }
 
   handleLevelChange(event) {
     this.setState({
-      level: event.target.value
+      level: event.target.value,
+      lesson: null
     }, () => {
 
-      fetch('/api/japanese/' + this.state.level + '/info', {
+      fetch(`/api/${this.state.language}/${this.state.level}/info`, {
         method:'GET',
         headers: {'x-access-token': localStorage.getItem('token')}
       })
@@ -281,30 +290,59 @@ class FlashCardSpace extends React.Component {
 
       // use fetch to fetch cards from API
 
-      fetch('/api/japanese/' + this.state.level + '/' + this.state.lesson, {
-        method:'GET',
-        headers: {'x-access-token': localStorage.getItem('token')}
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
-          this.setState({
-            japaneseCard: data,
-            finished: false,
-            input: '',
-            score: 0
-          }, () => {
-            cardOrder: this.setQuizCardOrder();
+      if(this.state.lesson == 'all'){
+        fetch(`/api/${this.state.language}/${this.state.level}/all`, {
+          method:'GET',
+          headers: {'x-access-token': localStorage.getItem('token')}
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
             this.setState({
-              questionId: this.state.japaneseCard[0].id,
-              answerKana: this.state.japaneseCard[0].kana,
-              answerKanji: this.state.japaneseCard[0].kanji,
-              answerEng: this.state.japaneseCard[0].eng
-
+              japaneseCard: data,
+              finished: false,
+              input: '',
+              score: 0
+            }, () => {
+              cardOrder: this.setQuizCardOrder();
+              this.setState({
+                questionId: this.state.japaneseCard[0].id,
+                answerKana: this.state.japaneseCard[0].kana,
+                answerKanji: this.state.japaneseCard[0].kanji,
+                answerEng: this.state.japaneseCard[0].eng
+  
+              });
             });
-          });
-        }
-      );
+          }
+        );
+      } else {
+        fetch(`/api/${this.state.language}/${this.state.level}/${this.state.lesson}`, {
+          method:'GET',
+          headers: {'x-access-token': localStorage.getItem('token')}
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            this.setState({
+              japaneseCard: data,
+              finished: false,
+              input: '',
+              score: 0
+            }, () => {
+              cardOrder: this.setQuizCardOrder();
+              this.setState({
+                questionId: this.state.japaneseCard[0].id,
+                answerKana: this.state.japaneseCard[0].kana,
+                answerKanji: this.state.japaneseCard[0].kanji,
+                answerEng: this.state.japaneseCard[0].eng
+  
+              });
+            });
+          }
+        );
+      }
+
+      
 
 
 
@@ -382,7 +420,7 @@ class FlashCardSpace extends React.Component {
             </div>
           </Col>
         </Row>
-        <CardLinks submitChanges={this.getFlashCards} handleLevelChange={this.handleLevelChange} handleLessonChange={this.handleLessonChange} level={this.state.level} numberOfLessons={this.state.numberOfLessons}/>
+        <CardLinks submitChanges={this.getFlashCards} handleLanguageChange={this.handleLanguageChange} handleLevelChange={this.handleLevelChange} handleLessonChange={this.handleLessonChange} language={this.state.language} level={this.state.level} numberOfLessons={this.state.numberOfLessons}/>
       </Container>
     );
   }
