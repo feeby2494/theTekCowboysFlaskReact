@@ -76,6 +76,9 @@ class FlashCardSpace extends React.Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
 
   }
+
+
+
   showList(event) {
     this.setState({
       displayList: !this.state.displayList
@@ -115,11 +118,14 @@ class FlashCardSpace extends React.Component {
 
     this.setState({
       cardOrderCounter: this.state.cardOrderCounter + 1,
-      nextIndex: this.state.cardOrder[this.state.cardOrderCounter],
-      questionId: this.state.japaneseCard[this.state.cardOrder[this.state.cardOrderCounter]].id,
-      answerKanji: this.state.japaneseCard[this.state.cardOrder[this.state.cardOrderCounter]].kanji,
-      answerKana: this.state.japaneseCard[this.state.cardOrder[this.state.cardOrderCounter]].kana,
-      answerEng: this.state.japaneseCard[this.state.cardOrder[this.state.cardOrderCounter]].eng,
+    }, () => {
+      this.setState({
+        nextIndex: this.state.cardOrder[this.state.cardOrderCounter],
+        questionId: this.state.japaneseCard[this.state.cardOrder[this.state.cardOrderCounter]].id,
+        answerKanji: this.state.japaneseCard[this.state.cardOrder[this.state.cardOrderCounter]].kanji,
+        answerKana: this.state.japaneseCard[this.state.cardOrder[this.state.cardOrderCounter]].kana,
+        answerEng: this.state.japaneseCard[this.state.cardOrder[this.state.cardOrderCounter]].eng,
+      });
     });
 
   }
@@ -129,6 +135,7 @@ class FlashCardSpace extends React.Component {
 
     // Using Fisher-Yates Shuffle Algorithm to make array of indexs for quiz cards in randomized order
     for(let i = originalArray.length; --i > 0; i--) {
+      // This was why the first card in the array was always set to zero index
       randomIndex = Math.floor(Math.random() * (i + 1));
       temp = originalArray[randomIndex];
       originalArray[randomIndex] = originalArray[i];
@@ -140,10 +147,11 @@ class FlashCardSpace extends React.Component {
   }
   setQuizCardOrder(event) {
     let cardOrder = Array.from(Array(this.state.japaneseCard.length).keys());
-    console.log(cardOrder)
     cardOrder = this.shuffleQuizOrder(cardOrder);
+    console.log(`card order has been set: \n${cardOrder}`)
     this.setState({
-      cardOrder: cardOrder
+      cardOrder: cardOrder,
+      nextIndex: cardOrder[1]
     });
   }
 
@@ -160,12 +168,13 @@ class FlashCardSpace extends React.Component {
     //   this.inputFocus.current.focus();
     // };
 
-    if(this.state.nextIndex === this.state.cardOrder[this.state.japaneseCard.length -2]) {
+    if(this.state.nextIndex === this.state.cardOrder[this.state.japaneseCard.length - 1]) {
       this.setState({
           finished: true,
           cardOrderCounter: 0,
           nextIndex: 0,
-          input: ''
+          input: '',
+          score: this.state.score + 1
         });
     } else {
 
@@ -323,23 +332,26 @@ class FlashCardSpace extends React.Component {
           .then((response) => response.json())
           .then((data) => {
             console.log(data);
+            
             this.setState({
               japaneseCard: data,
               finished: false,
               input: '',
-              score: 0
+              score: 0,
             }, () => {
-              cardOrder: this.setQuizCardOrder();
-              this.setState({
-                questionId: this.state.japaneseCard[0].id,
-                answerKana: this.state.japaneseCard[0].kana,
-                answerKanji: this.state.japaneseCard[0].kanji,
-                answerEng: this.state.japaneseCard[0].eng
-  
-              });
+              this.setQuizCardOrder();   
             });
           }
-        );
+        )
+        .then(() => {
+          this.setState({
+            questionId: this.state.japaneseCard[this.state.cardOrder[0]].id,
+            answerKana: this.state.japaneseCard[this.state.cardOrder[0]].kana,
+            answerKanji: this.state.japaneseCard[this.state.cardOrder[0]].kanji,
+            answerEng: this.state.japaneseCard[this.state.cardOrder[0]].eng
+
+        });
+        });
       }
 
       
@@ -363,7 +375,15 @@ class FlashCardSpace extends React.Component {
   componentDidMount(){
     // Will get flashcards from API; Might have buttons with eventhandlers change flashcards too
     //this.getFlashCards;
+    // this.getFlashCards();
   }
+
+  componentDidUpdate(){
+    // if(this.state.cardOrder){
+    //   this.setQuizCardOrder();
+    // }
+  }
+
   handleKeyPress(event){
     if (event.key === 'Enter') {
       console.log('Pressed enter key');

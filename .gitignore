@@ -23,6 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 #Flask API backend
+api/api/data/todo.db
 ./api/venv
 ./api/__pycache__
 ./api_old/__pycache__/
