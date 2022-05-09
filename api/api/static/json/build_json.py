@@ -14,7 +14,8 @@ def build_json(csv_file):
             new_word['id'] = line[0]
             new_word['kana'] = line[2]
             new_word['eng'] = line[3]
-            new_word['part_of_speech'] = line[4]
+            if line[4]:
+                new_word['part_of_speech'] = line[4]
             list_of_words.append(new_word)
     f.close()
     return list_of_words

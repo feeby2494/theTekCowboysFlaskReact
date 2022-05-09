@@ -422,7 +422,10 @@ class FlashCardSpace extends React.Component {
                 className="text-center">
                   { this.state.finished ? finished : this.state.answerKanji ? hasKanji : noKanji }
               </h2>
-
+              { this.state.finished ? 
+              
+              <></> : 
+              
               <JapaneseInputWindow
                 error={this.state.error}
                 handleKeyPress={this.handleKeyPress}
@@ -433,6 +436,8 @@ class FlashCardSpace extends React.Component {
                 handleKana={this.handleKana}
                 input={this.state.input}
               />
+              
+              }
               {
                 this.state.answerKanji && <p>You need a Japanese keyboard for this.</p>
               }

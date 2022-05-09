@@ -30,6 +30,7 @@ class CardLinks extends React.Component {
                       <Form.Control as="select" onChange={this.props.handleLevelChange}>
                         <option value="">Select an Option</option>
                         <option value="1">Topik Level I</option>
+                        <option value="2">Topik Level II</option>
                       </Form.Control>
                     }
                     {(this.props.language == 'japanese') &&
