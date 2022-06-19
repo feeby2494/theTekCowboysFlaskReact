@@ -26,9 +26,9 @@ class UserHome extends Component {
       public_id: '',
       error: null,
       showAdminToast: false,
+      generalLedgerLines: null,
       newLineForLedger: {
         id: null,
-        wo: null,
         desc: null,
         part_number: null,
         type: null,
@@ -45,17 +45,21 @@ class UserHome extends Component {
         extra_fees: null,
         part_expenses: null,
         seller: null,
+        created_by: null,
         date: null
       }
     }
     this.getUserInfo = this.getUserInfo.bind(this);
     this.showHideAdminToast = this.showHideAdminToast.bind(this);
     this.handleNewLineItemChange = this.handleNewLineItemChange.bind(this);
+    this.getGeneralLedgerLines = this.getGeneralLedgerLines.bind(this);
+    this.postGeneralLedgerLine = this.postGeneralLedgerLine.bind(this);
   }
 
   getUserInfo(personId) {
     fetch(`/api/user/${personId}`,{
         method:'GET',
+        'Content-Type':'application/json',
         headers: {'x-access-token': localStorage.getItem('token')}
     })
       .then((res) => res.json())
@@ -100,9 +104,51 @@ class UserHome extends Component {
     // this.setState(newState);
   }
 
+  getGeneralLedgerLines = () => {
+    fetch(`/api/general_ledger_all`,{
+      method:'GET',
+      headers: {'x-access-token': localStorage.getItem('token')}
+  })
+    .then((res) => res.json())
+    .then((response) => {
+      console.log(response);
+      this.setState({
+        generalLedgerLines : response
+      });
+    })
+    .catch((error) => {
+      console.log(error);
+      this.setState({
+        error: error
+      });
+    });
+  }
+
+  postGeneralLedgerLine = () => {
+    fetch(`/api/general_ledger_one`, {
+      method: 'POST',
+      body: JSON.stringify(this.state.newLineForLedger),
+      headers: {'x-access-token': localStorage.getItem('token')}
+    })
+    .then((res) => res.json())
+    .then((response) => {
+      console.log(response);
+      this.setState({
+        generalLedgerLines : response
+      });
+    })
+    .catch((error) => {
+      console.log(error);
+      this.setState({
+        error: error
+      });
+    });
+  }
+
   componentDidMount(){
     console.log(this.props.match.params)
     this.getUserInfo(this.props.match.params.personId);
+    this.getGeneralLedgerLines();
   }
 
   render() {
@@ -171,10 +217,9 @@ class UserHome extends Component {
                 return (
                   <Col className="col-sm-6 col-lg-4">
                     <Form.Group xs={12} controlId={col + ".control"}>
-                      <Form.Label htmlFor={col}>{col}</Form.Label>
+                      <Form.Label>{col[0]}</Form.Label>
                       <Form.Control
                         type="text"
-                        id={col}
                         aria-describedby={col + "aria"}
                         name={col} 
                         className="mb-3" 
@@ -189,7 +234,7 @@ class UserHome extends Component {
                 );
               })
             }
-          <Button>Add New Line</Button>
+          <Button onClick={this.postGeneralLedgerLine}>Add New Line</Button>
         </Form>
         <Row>
           <Col xs={12}>
@@ -210,11 +255,23 @@ class UserHome extends Component {
           <Table striped bordered hover size="sm" responsive>
             <thead>
               <tr>
+                {/* {
+                  (this.state.generalLedgerLines) 
+                  
+                  ? 
+                    Object.keys(this.state.generalLedgerLines["1"]).map((col) => {
+                      return (<th>{col}</th>);
+                    })
+                  :
+                    Object.keys(this.state.newLineForLedger).map((col) => {
+                      return (<th>{col}</th>);
+                    })
+                    
+                } */}
                 {
                   Object.keys(this.state.newLineForLedger).map((col) => {
                     return (<th>{col}</th>);
                   })
-                  
                 }
               </tr>
             </thead>
@@ -240,32 +297,31 @@ class UserHome extends Component {
                 }
                 
               </tr> */}
-              <tr>
-                <td>1</td>
-                <td></td>
-                <td>A1466 battery</td>
-                <td>A1466</td>
-                <td>part</td>
-                <td>28.96</td>
-                <td></td>
-                <td>-28.96</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>28.96</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td colSpan={2}>Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
+              {
+                  (this.state.generalLedgerLines) 
+                  
+                  ? 
+                    Object.keys(this.state.generalLedgerLines).map((rowKey, index) => {
+                      let rowValue = this.state.generalLedgerLines[rowKey]
+                      console.log(rowValue)
+
+                      return (
+                        <tr>
+                          <td>{rowKey}</td>
+                          {
+                            Object.values(this.state.generalLedgerLines[rowKey]).map((col) => {
+                              return (<td>{col}</td>);
+                            })
+                          }
+                        </tr>
+                      );
+                    })
+                  :
+                    Object.keys(this.state.newLineForLedger).map((col) => {
+                      return (<th></th>);
+                    })
+                    
+                }
             </tbody>
           </Table>
         </Row>

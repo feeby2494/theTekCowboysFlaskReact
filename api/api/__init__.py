@@ -33,6 +33,7 @@ import api.jwt_token.routes
 import api.point.routes
 import api.todo.routes
 import api.vocab.routes
+import api.general_ledger.routes
 
 if __name__ == '__main__':
     app.run(debug=True)
