@@ -47,37 +47,24 @@ export default class Home extends Component {
     }
 
     getVideosFromBackend(playlistId, localStateVar) {
-
-        /*
-        
-            This will get videos from my backend API;
-            I will have a script that gets videos for these playlists every week,
-            then it will either update a json or DB,
-            then when the Google API Quata is reached,
-            this method will be used instead to get the videos,
-            from a static source on my own API.
-
-            Have not made this yet and not using, just a copy of other method.
-        
-        */
-
         const ytHeaders = {
-            'Accept': 'application/json'
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
         }
 
-        fetch(`https://youtube.googleapis.com/youtube/v3/playlists?part=snippet&part=player&id=${playlistId}&key=${process.env.REACT_APP_YT_API_KEY}`, {
+        fetch(`http://127.0.0.1:5000/api/videos/${playlistId}`, {
             method: 'GET',
             headers: ytHeaders,
         })
         .then( res => res.json())
         .then((data) => {
             let varName = `${localStateVar}`;
-            console.log(localStateVar)
+            console.log(data)
             this.setState({
                 [`${varName}`] : data,
                 message: ''
             })
-            console.log(this.state.e110CorollaVideos)
+            console.log(this.state[localStateVar])
         })
     }
 
@@ -85,9 +72,13 @@ export default class Home extends Component {
         fetch('http://127.0.0.1:5000/api/home', { method: 'get', mode: 'no-cors', })
         .then( res => res.text())
         .then(res=>this.setState({message:res}))
-        .then(this.getVideos('PLq3f8HX2eMEOKTcBfY37BfTixHiLi9K1e', 'e110CorollaVideos'))
-        .then(this.getVideos('PLq3f8HX2eMEPx3TTxOyJCCwlLRDPL-zTv', 'e170CorollaVideos'))
-        .then(this.getVideos('PLq3f8HX2eMEMzZWjfwIS07nAQMLzrzcpJ', 'fg1CorollaVideos'))
+        .then(this.getVideosFromBackend('e110_corolla_videos', 'e110CorollaVideos'))
+        .then(this.getVideosFromBackend('e170_corolla_videos', 'e170CorollaVideos'))
+        .then(this.getVideosFromBackend('fg1_civic_videos', 'fg1CivicVideos'))
+        .then(console.log(this.state.e110CorollaVideos))
+        // .then(this.getVideos('PLq3f8HX2eMEOKTcBfY37BfTixHiLi9K1e', 'e110CorollaVideos'))
+        // .then(this.getVideos('PLq3f8HX2eMEPx3TTxOyJCCwlLRDPL-zTv', 'e170CorollaVideos'))
+        // .then(this.getVideos('PLq3f8HX2eMEMzZWjfwIS07nAQMLzrzcpJ', 'fg1CorollaVideos'))
         
     }
     render(){
@@ -106,7 +97,7 @@ export default class Home extends Component {
                 </Row>
                 <RenderPlaylist videos={this.state.e110CorollaVideos} />
                 <RenderPlaylist videos={this.state.e170CorollaVideos} />
-                <RenderPlaylist videos={this.state.fg1CorollaVideos} />
+                <RenderPlaylist videos={this.state.fg1CivicVideos} />
             </Container>
         )
     }
