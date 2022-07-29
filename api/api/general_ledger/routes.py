@@ -15,7 +15,7 @@ def dateSerializer(o):
 
 @app.route('/api/general_ledger_all', methods=['GET'])
 @token_required
-def general_ledger():
+def general_ledger(current_user):
 
     if request.method == "GET":
 
