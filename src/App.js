@@ -83,8 +83,8 @@ class App extends Component {
 
        <Switch>
 
-          <Route path="/flashcards" exact component={FlashCardSpace} />
           <Route path="/" exact component={Home} />
+          <Route path="/flashcards" exact component={FlashCardSpace} />
           <Route path="/secret" component={withAuth(Secret)} />
           <Route path="/login" >
             <Login  history={this.props.history} loggedIn={this.state.loggedIn}/>

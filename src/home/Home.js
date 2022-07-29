@@ -3,6 +3,8 @@ import parse from "html-react-parser";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Card from 'react-bootstrap/Card';
+import WebServiceEnqueryForm from '../web_services/WebServiceEnqueryForm';
 
 export default class Home extends Component {
     constructor(){
@@ -84,20 +86,46 @@ export default class Home extends Component {
     render(){
         return(
             <Container>
-                <Row className="my-3 w-100">
+                <Row>
                     <Col>
                         { 
                             (!this.state.e110CorollaVideos)
                             ?
-                                <h2>{this.state.message}</h2>
+                                <h2 className='text-center'>{this.state.message}</h2>
                             :
                                 <></>
                         }
                     </Col>
                 </Row>
-                <RenderPlaylist videos={this.state.e110CorollaVideos} />
-                <RenderPlaylist videos={this.state.e170CorollaVideos} />
-                <RenderPlaylist videos={this.state.fg1CivicVideos} />
+                <Card className='row mt-3'>
+                    <Card.Header>
+                        <h2 className='h2 text-center my-2'>Youtube Videos</h2>
+                    </Card.Header>
+                    <Card.Body>
+                        { 
+                            (!this.state.e110CorollaVideos)
+                            ?
+                                <h2 className='text-center'>{this.state.message}</h2>
+                            :
+                            <Row>
+                                <RenderPlaylist  videos={this.state.e110CorollaVideos} loading="Loading"/>
+                                <RenderPlaylist  videos={this.state.e170CorollaVideos} loading="Loading"/>
+                                <RenderPlaylist  videos={this.state.fg1CivicVideos} loading="Loading"/>
+                            </Row>
+                        }  
+                    </Card.Body>  
+                </Card>
+                <Row className="my-3">
+                    <Card>
+                        <Card.Header>
+                            <h2 className='h2 text-center my-2'>Web Development Services</h2>
+                        </Card.Header>
+                        <Card.Body>
+                            <p>Let me help you set up your own application online. From blogs to ecomernce sites, I can help you start a scaleable web application that's customized to your needs and expandable in the future.</p>
+                        </Card.Body>  
+                    <WebServiceEnqueryForm />
+                    </Card>
+                </Row>
             </Container>
         )
     }
@@ -108,30 +136,40 @@ const RenderPlaylist = (props) => {
     
   
     return (
-        <Row className="my-3">
-                    {
-                        (props.videos)
-                        ?
-                            (props.videos.error)
-                            ?
-                                <Col lg={6}>{props.videos.error.errors[0].message}</Col>
-                            :
-                                
-                                props.videos.items.map((video) => {
-                                    return (
-                                        <Col lg={6}>
-                                            <h2>{video.snippet.title}</h2>
-                                            {parse(video.player.embedHtml)}
-                                        </Col>
-                                    )
-                                })
-                                   
-                        :
-                            <></>
+        
+                (props.videos)
+                ?
+                    (props.videos.error)
+                    ?
+                        <Col lg={6}>{props.videos.error.errors[0].message}</Col>
+                    :
                         
-                    }
-        </Row>
+                        props.videos.items.map((video) => {
+                            return (
+                                <Col lg={6}>
+                                    <h2>{video.snippet.title}</h2>
+                                    <div className=''>
+                                        {parse(video.player.embedHtml)}
+                                    </div>
+                                </Col>
+                            )
+                        })
+                            
+                :
+                    <></>
+                        
+        
         
     )
   }
+
+const ColoredLine = ({ color }) => (
+    <hr
+        style={{
+            color: color,
+            backgroundColor: color,
+            height: 1
+        }}
+    />
+);
   

@@ -22,7 +22,7 @@ class Navigation extends React.Component {
       } else {
         this.setState({ loggedIn: false });
       }
-    }, 5000);
+    }, 1000);
 
 
     }
@@ -33,6 +33,8 @@ class Navigation extends React.Component {
 
 
   }
+
+  
 
 
 
@@ -82,9 +84,16 @@ class Navigation extends React.Component {
 
             {
               this.state.loggedIn ?
-              <Nav.Link href="/logout">logout</Nav.Link>
+              <>
+                <Nav.Link href="/logout">logout</Nav.Link> 
+                <Nav.Link href={'/' + localStorage.getItem('public_id')}>User Home</Nav.Link>
+                
+              </>
               :
-              <Nav.Link href="/login">Login</Nav.Link>
+              <>
+                <Nav.Link href="/login">Login</Nav.Link>
+                <Nav.Link href="/register">Register</Nav.Link>
+              </>
             }
 
             {
@@ -92,7 +101,7 @@ class Navigation extends React.Component {
               <p>{localStorage.getItem('token')}</p>
 
             }
-            <Nav.Link href="/register">Register</Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Navbar>
