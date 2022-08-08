@@ -52,6 +52,7 @@ export default class Home extends Component {
         const ytHeaders = {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
+            'mode': 'no-cors',
         }
 
         fetch(`http://127.0.0.1:5000/api/videos/${playlistId}`, {
