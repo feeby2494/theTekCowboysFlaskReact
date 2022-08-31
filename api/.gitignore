@@ -1,3 +1,10 @@
 /venv
 /__pycache__
 /data
+api/__pycache__/__init__.cpython-39.pyc
+api/jwt_token/__pycache__/
+api/point/__pycache__/
+api/todo/__pycache__/
+api/user/__pycache__/
+api/vocab/__pycache__/
+api/.env
