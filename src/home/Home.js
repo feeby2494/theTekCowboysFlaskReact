@@ -173,4 +173,3 @@ const ColoredLine = ({ color }) => (
         }}
     />
 );
-  
