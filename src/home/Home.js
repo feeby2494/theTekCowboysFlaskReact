@@ -1,3 +1,4 @@
+/* global gapi */
 import React,{Component} from 'react';
 import parse from "html-react-parser";
 import Container from 'react-bootstrap/Container';
@@ -16,6 +17,8 @@ export default class Home extends Component {
             fg1CivicVideos: null
             
         }
+        
+        
     }
 
       //old Corolla Videos = PLq3f8HX2eMEOKTcBfY37BfTixHiLi9K1e
