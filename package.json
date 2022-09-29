@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "html-react-parser": "^2.0.0",
     "jwt-decode": "^3.1.2",
     "postcss": "^8.3.5",
     "postcss-safe-parser": "^5.0.2",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-api": "cd api && venv/bin/flask run --no-debugger",
+    "start-api": "cd api && venv/bin/python wsgi.py --no-debugger",
     "start-api-dev": "cd api && source ./venv/bin/activate && export FLASK_DEBUG=1 && export FLASK_APP=api.py && flask run --no-debugger",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -6,6 +6,17 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import WebServiceEnqueryForm from '../web_services/WebServiceEnqueryForm';
 
+
+/*
+
+Unsolvable issue: On mobile devices these videos are failed to fetch. This makes no sense and I cannot begin
+to understand this issue. Aparently there's nobody else in the world that has this issue, so I don't know where to
+start. Simple Problems are my achilles' heel and keeps me out of the bussiness. 
+
+*/
+
+
+
 export default class Home extends Component {
     constructor(){
         super();

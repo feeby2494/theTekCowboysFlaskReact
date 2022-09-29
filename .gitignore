@@ -37,3 +37,5 @@ api/api/data/todo.db
 #Random project thats not supposed to be here
 /qoute-machine
 /home_inventory_system
+.env
+api/api/.env
