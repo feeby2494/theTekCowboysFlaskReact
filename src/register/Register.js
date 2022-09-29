@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Alert } from 'react-bootstrap';
 
 export default class Login extends Component {
     constructor(){
@@ -12,7 +13,9 @@ export default class Login extends Component {
             username:'',
             email:'',
             password:'',
-            name: ''
+            name: '',
+            passwordMatch: true,
+            passwordMatchInput: ''
         };
     }
 
@@ -25,20 +28,26 @@ export default class Login extends Component {
 
     onSubmit =(e)=>{
         e.preventDefault();
-        fetch('/api/register',{
+
+        if(this.state.password == this.state.passwordMatchInput) {
+          fetch('/api/register',{
             method:'POST',
             body: JSON.stringify(this.state),
             headers:{
                 'Content-Type':'application/json'
             }
-        })
-        .then(res=>res.json())
-        .then(user_token=>{
-            let { token } = user_token;
-            localStorage.setItem('token', token);
-            this.props.history.push('/');
-
-        })
+          })
+          .then(res=>res.json())
+          .then(user_token=>{
+              let { token } = user_token;
+              localStorage.setItem('token', token);
+              this.props.history.push('/');
+          });
+        } else {
+          this.setState({
+            passwordMatch: false
+          });
+        }
     }
     render(){
         return(
@@ -75,17 +84,39 @@ export default class Login extends Component {
                           </Form.Control>
                         </Form.Group>
                       </Col>
-                      <Col lg={3} className="">
+                    </Row>
+                    <Row>
+                    <Col lg={6} className="">
                         <Form.Group controlId="password-input">
                           <Form.Label for="password-input">Password:</Form.Label>
                           <Form.Control as="input" type="password"  autoComplete="true" name="password" placeholder="Enter password" value={this.state.password} onChange={this.handleInputChange}>
                           </Form.Control>
                         </Form.Group>
                       </Col>
-
+                      <Col lg={6} className="">
+                        <Form.Group controlId="password-input-match">
+                          <Form.Label for="password-input-match">Password Check:</Form.Label>
+                          <Form.Control as="input" type="password"  autoComplete="true" name="passwordMatchInput" placeholder="Enter password again" value={this.state.passwordMatchInput} onChange={this.handleInputChange}>
+                          </Form.Control>
+                        </Form.Group>
+                      </Col>
                     </Row>
                     <Row>
-
+                      <Col>
+                        {
+                          ( this.state.password == "" || this.state.passwordMatchInput == "" )
+                            ?
+                              <></>
+                            :
+                              ( this.state.password === this.state.passwordMatchInput )
+                              ?
+                                <Alert>Passwords match!</Alert>
+                              :
+                                <Alert variant={'danger'}>Passwords don't match!</Alert>
+                        }
+                      </Col>
+                    </Row>
+                    <Row>
                       <Col style={{ display: 'flex', justifyContent: 'flex-end' }}>
                         <Button className="mr-4" onClick={this.onSubmit} type="submit" value="Register" variant="info">Register</Button> {' '}
                       </Col>

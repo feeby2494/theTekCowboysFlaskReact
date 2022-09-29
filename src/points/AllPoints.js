@@ -13,7 +13,6 @@ import Form from 'react-bootstrap/Form';
 
 class AllPoints extends React.Component {
   constructor(props){
-      // What the fuck is going on? I can't add any props.
       super(props);
 
     this.state = {
@@ -32,7 +31,9 @@ class AllPoints extends React.Component {
       categoriesList: null,
       languagesList: null,
       filterLanguage: 'all',
-      filterCategory: 'all'
+      filterCategory: 'all',
+      errorBool: false,
+      errorMessage: null
 
     }
     this.handleTabChange = this.handleTabChange.bind(this);
@@ -118,6 +119,13 @@ class AllPoints extends React.Component {
         languagesList: data[2]
       })
     })
+    .catch(err => {
+      console.log(err)
+      this.setState({
+        errorMessage: `Error: ${err}`,
+        errorBool: true,
+      });
+    });
 
   }
   getPoints = (event) => {
@@ -210,6 +218,8 @@ class AllPoints extends React.Component {
               example1={this.state.example1}
               example2={this.state.example2}
               example3={this.state.example3}
+              errorBool={this.errorBool}
+              errorMessage={this.errorMessage}
             />
             <AllPointsByFilter
               japaneseCard={this.state.japaneseCard}
@@ -235,3 +245,10 @@ class AllPoints extends React.Component {
   }
 
 export default AllPoints;
+
+// New Component with Auth higher Order Component to require login before adding point.
+
+
+// TODO: Possible to still see all other points, but when addPoint button clicked, then it will require a login?
+
+// const AddPointWithAuth = withAuth(AddPoint);

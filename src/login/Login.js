@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Alert } from 'react-bootstrap';
 
 class Login extends Component {
     constructor(props){
@@ -14,7 +15,9 @@ class Login extends Component {
         this.state={
             username:'',
             password:'',
-            nextUrl: ''
+            nextUrl: '',
+            errorMessage: null,
+            errorBool: false
         };
     }
 
@@ -68,6 +71,13 @@ class Login extends Component {
           //return <Redirect to={'/' + jwt_decode(data.token).public_id}/>
 
         })
+        .catch(err => {
+          console.log(err)
+          this.setState({
+            errorMessage: `Error: ${err}`,
+            errorBool: true
+          });
+        });
 
 
     }
@@ -99,7 +109,7 @@ class Login extends Component {
                         </Form.Control>
                       </Form.Group>
                     </Col>
-
+                    { (this.state.errorBool) && <Alert variant={'danger'}>{this.state.errorMessage}</Alert>}
                   </Row>
                   <Row>
 

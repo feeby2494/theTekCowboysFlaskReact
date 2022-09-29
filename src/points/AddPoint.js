@@ -4,8 +4,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Alert from 'react-bootstrap/Alert';
 
 import '../App.css';
+import withAuth from 'hoc/withAuth';
 
 const AddPoint = (props) => {
   const [show, setShow] = useState(false);
@@ -72,8 +74,14 @@ const AddPoint = (props) => {
 
 
 
-
-
+            {
+              /* TODO: add in verification for post request */
+              (props.errorBool) 
+              ?
+                <Alert>{props.errorMessage}</Alert>
+              :
+                ''
+            }
             <Button variant="primary" type="submit" onClick={props.submitNewPoint}>
               Submit
             </Button>
@@ -93,4 +101,4 @@ const AddPoint = (props) => {
   );
 }
 
-export default AddPoint;
+export default withAuth(AddPoint);
