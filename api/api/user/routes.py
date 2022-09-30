@@ -3,6 +3,7 @@ from api.jwt_token.__token_required__ import token_required
 from flask import Response, request
 import json
 from .models import User
+from .address.models import Address
 from sqlalchemy import exc
 import uuid
 from werkzeug.security import check_password_hash

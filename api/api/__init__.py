@@ -5,27 +5,43 @@ from flask_cors import CORS, cross_origin
 from flask_sqlalchemy  import SQLAlchemy
 import uuid
 
+import psycopg2
+
 from dotenv import load_dotenv
 # from flask_bcrypt import Bcrypt
 from flask_migrate import Migrate
 
 load_dotenv()
 
-app = Flask(__name__)
+# Application Factory
+db = SQLAlchemy()
+migrate = Migrate()
 
-# take care od CORS
-cors = CORS(app)
-app.config['CORS_HEADERS'] = 'Content-Type'
+def create_app():
+    """Application-factory pattern"""
+    app = Flask(__name__)
 
-# Don't forget to change this SECRET_KEY and SQLALCHEMY_DATABASE_URI and put in sepearte file or .env file and have git ignore it
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('FLASK_DB')
+     # take care od CORS
+    cors = CORS(app)
+    app.config['CORS_HEADERS'] = 'Content-Type'
 
-# init DB
-db = SQLAlchemy(app)
+    # Don't forget to change this SECRET_KEY and SQLALCHEMY_DATABASE_URI and put in sepearte file or .env file and have git ignore it
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('FLASK_DB')
 
-# init Migrate
-migrate = Migrate(app, db)
+    db.init_app(app)
+    migrate.init_app(app, db)
+    return app
+
+create_app()
+
+
+
+# # init DB
+# db = SQLAlchemy(app)
+
+# # init Migrate
+# migrate = Migrate(app, db)
 
 # Importing API and View modules
 import api.user.routes

@@ -8,7 +8,11 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+<<<<<<< HEAD
     "html-react-parser": "^2.0.0",
+=======
+    "html-react-parser": "^3.0.4",
+>>>>>>> cc00f3a (Added alot of routes and models, but ran into issue runnign migrations.)
     "jwt-decode": "^3.1.2",
     "postcss": "^8.3.5",
     "postcss-safe-parser": "^5.0.2",
