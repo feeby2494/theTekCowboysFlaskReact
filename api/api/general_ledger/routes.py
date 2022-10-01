@@ -3,7 +3,7 @@ from api.jwt_token.__token_required__ import token_required
 from flask import request, Response, redirect, url_for
 import json
 from .models import Ledger_line_item
-from api.user.models import User
+from api.site_user.models import SiteUser
 from sqlalchemy import exc
 from api.jwt_token.__token_required__ import token_required
 import datetime
@@ -96,7 +96,7 @@ def general_ledger_crud(current_user):
 
     if request.method == "POST":
 
-        user_id = User.query.filter_by(public_id=current_user.public_id).first().id 
+        user_id = SiteUser.query.filter_by(public_id=current_user.public_id).first().id 
         data = request.get_json(force=True)
         print(data)
         new_desc = data['desc']

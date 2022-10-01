@@ -10,7 +10,7 @@ class Point(db.Model):
     example1 = db.Column(db.String)
     example2 = db.Column(db.String)
     example3 = db.Column(db.String)
-    created_by = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    created_by = db.Column(db.Integer, db.ForeignKey("site_user.id"), nullable=False)
     date_created = db.Column(db.Date,  nullable=False)
     element_list = db.relationship('Element', backref='point', lazy=True)
     # category_list = db.relationship('Category', backref='point', lazy=True)

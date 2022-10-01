@@ -3,7 +3,7 @@ from .models import Todo
 from api.jwt_token.__token_required__ import token_required
 from flask import Response, request
 import json
-from api.user.models import User
+from api.site_user.models import SiteUser
 from sqlalchemy import exc
 
 @app.route('/api/todo', methods=['GET'])
@@ -53,7 +53,7 @@ def create_todo(current_user):
 
     """
 
-    user_id = User.query.filter_by(public_id=current_user.public_id).first().id
+    user_id = SiteUser.query.filter_by(public_id=current_user.public_id).first().id
     data = request.get_json()
     text = data['text']
 

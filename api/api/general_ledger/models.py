@@ -1,5 +1,4 @@
 import datetime
-from email.policy import default
 from api import db
 
 class Ledger_line_item(db.Model):
@@ -21,7 +20,7 @@ class Ledger_line_item(db.Model):
     extra_fees = db.Column(db.Float)
     part_expenses = db.Column(db.Float)
     seller = db.Column(db.String)
-    created_by = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    created_by = db.Column(db.Integer, db.ForeignKey("site_user.id"), nullable=False)
     date = db.Column(db.DateTime, default=datetime.datetime.now,  nullable=False)
 
     def get_all_items(self):
