@@ -1,7 +1,7 @@
-from api import app
+from api.api import app
 from flask import Response
 import json
-from api.jwt_token.__token_required__ import token_required
+from .__token_required__ import token_required
 
 @app.route('/api/checktoken', methods=['GET'])
 @token_required

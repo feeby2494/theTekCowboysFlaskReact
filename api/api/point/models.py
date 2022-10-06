@@ -1,4 +1,4 @@
-from api import db
+from api.api import db
 
 class Point(db.Model):
     __tablename__ = "point"

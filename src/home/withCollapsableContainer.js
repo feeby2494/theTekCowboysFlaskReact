@@ -35,3 +35,5 @@ export function withCollapsableContainer(OriginalReactComponent) {
     }
  
 }
+
+export default withCollapsableContainer;

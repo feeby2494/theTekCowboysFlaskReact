@@ -1,10 +1,5 @@
 import React,{Component, useState} from 'react';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Alert from 'react-bootstrap/Alert';
+import {Modal, Button, Form, Row, Col, Alert} from 'react-bootstrap';
 
 import '../App.css';
 import withAuth from 'hoc/withAuth';

@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = "Backend for jamielynn.dev"
+authors = ["feeby2494 <toby2494@hotmail.com>"]
+readme = "README.md"
+
+packages = [
+    { include = "api" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

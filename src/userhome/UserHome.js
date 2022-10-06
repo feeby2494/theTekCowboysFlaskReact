@@ -9,6 +9,9 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
+import MailInRepairCards from "repair_admin/MailInRepairCards";
+import { withCollapsableContainer } from 'home/withCollapsableContainer';
+import RowWithHeading from 'components/RowWithHeading';
 
 
 class UserHome extends Component {
@@ -27,6 +30,15 @@ class UserHome extends Component {
       error: null,
       showAdminToast: false,
       generalLedgerLines: null,
+      repairsInProgress: null,
+      repairsCompleted: null,
+      repairErrorMessage: null,
+      repairErrorBool: false,
+      repairsAll: null,
+      showRepairsInProgress: false,
+      showRepairsCompleted: false,
+      showRepairsAll: false,
+      currentDeviceID: 0,
       newLineForLedger: {
         id: null,
         desc: null,
@@ -54,8 +66,133 @@ class UserHome extends Component {
     this.handleNewLineItemChange = this.handleNewLineItemChange.bind(this);
     this.getGeneralLedgerLines = this.getGeneralLedgerLines.bind(this);
     this.postGeneralLedgerLine = this.postGeneralLedgerLine.bind(this);
+    this.getRepairsInProgress = this.getRepairsInProgress.bind(this);
+    this.getRepairsCompleted = this.getRepairsCompleted.bind(this);
+    this.getRepairsAll = this.getRepairsAll.bind(this);
+    this.setRepairComplete = this.setRepairComplete.bind(this);
+    this.handleRepairsInProgress = this.handleRepairsInProgress.bind(this);
+    this.handleRepairsCompleted = this.handleRepairsCompleted.bind(this);
+    this.handleRepairsAll = this.handleRepairsAll.bind(this);
+    this.handleCurrentDeviceID = this.handleCurrentDeviceID.bind(this);
+    this.componentDidMount = this.componentDidMount.bind(this)
+
+    
   }
 
+  getRepairsInProgress(currentState) {
+    // if(currentState.showAdmin){
+      const headers = {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'mode': 'no-cors',
+      }
+
+      fetch(`http://127.0.0.1:5000/api/mail_in_repair_in_progress`, {
+            method: 'GET',
+            headers: headers,
+        })
+        .then(res=>res.json())
+        .then((response) => {
+          console.log(response);
+          this.setState({
+            repairsInProgress: response
+          });
+        })
+        .catch(err => {
+            console.log(err)
+            this.setState({
+              repairErrorMessage: `Error: ${err}`,
+              repairErrorBool: true,
+            });
+        });
+    // }
+  }
+
+  getRepairsCompleted() {
+    const headers = {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'mode': 'no-cors',
+    }
+
+    fetch(`http://127.0.0.1:5000/api/mail_in_repair_completed`, {
+          method: 'GET',
+          headers: headers,
+    })
+    .then(res=>res.json())
+    .then((response) => {
+      console.log(response);
+      this.setState({
+        repairsCompleted: response
+      });
+    })
+    .catch(err => {
+        console.log(err)
+        this.setState({
+          repairErrorMessage: `Error: ${err}`,
+          repairErrorBool: true,
+        });
+    });
+  }
+
+  getRepairsAll() {
+    const headers = {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'mode': 'no-cors',
+    }
+
+    fetch(`http://127.0.0.1:5000/api/mail_in_repair`, {
+          method: 'GET',
+          headers: headers,
+    })
+    .then(res=>res.json())
+    .then((response) => {
+      console.log(Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == false))
+      this.setState({
+        repairsAll: Object.keys(response).map((key, index) => {return response[key]}),
+        repairsCompleted: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == true),
+        repairsInProgress: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == false)
+      });
+    })
+    .catch(err => {
+        console.log(err)
+        this.setState({
+          repairErrorMessage: `Error: ${err}`,
+          repairErrorBool: true,
+        });
+    });
+  }
+
+  setRepairComplete() {
+    const headers = {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+      'mode': 'no-cors',
+    }
+
+    fetch(`http://127.0.0.1:5000/api/mail_in_repair/${this.state.currentDeviceID}/complete`, {
+          method: 'PATCH',
+          headers: headers,
+    })
+    // .then(res=>res.json())
+    // .then((response) => {
+    //   this.setState({
+    //     repairsAll: Object.keys(response).map((key, index) => {return response[key]}),
+    //     repairsCompleted: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == true),
+    //     repairsInProgress: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == false)
+    //   });
+    // })
+    .catch(err => {
+        console.log(err)
+        this.setState({
+          repairErrorMessage: `Error: ${err}`,
+          repairErrorBool: true,
+        });
+    });
+  };
+
+  // Called before component mounting
   getUserInfo(personId) {
     fetch(`/api/user/${personId}`,{
         method:'GET',
@@ -66,12 +203,17 @@ class UserHome extends Component {
       .then((response) => {
         console.log(response);
         this.setState({
-          username: response[personId].username,
-          email: response[personId].email,
-          public_id: response[personId].public_id,
-          showAdmin: response[personId].admin,
-          showAdminToast: true
-        });
+          username : response[personId].username,
+          email : response[personId].email,
+          public_id : response[personId].public_id,
+          showAdmin : response[personId].admin,
+          showAdminToast : true
+        })
+        this.state.username = response[personId].username;
+        this.state.email = response[personId].email;
+        this.state.public_id = response[personId].public_id;
+        this.state.showAdmin = response[personId].admin;
+        this.state.showAdminToast = true;
       })
       .catch((error) => {
         console.log(error);
@@ -80,9 +222,6 @@ class UserHome extends Component {
         });
       });
   }
-
-
-
 
   showHideAdminToast(event) {
     this.setState({
@@ -148,14 +287,38 @@ class UserHome extends Component {
     });
   }
 
-  componentDidMount(){
-    console.log(this.props.match.params)
-    this.getUserInfo(this.props.match.params.personId);
-    this.getGeneralLedgerLines();
+  handleRepairsInProgress(event){
+    this.setState({
+      showRepairsInProgress: !this.state.showRepairsInProgress
+    })
+  }
+  handleRepairsCompleted(event){
+    this.setState({
+      showRepairsCompleted: !this.state.showRepairsCompleted
+    })
+  }
+  handleRepairsAll(event){
+    this.setState({
+      showRepairsAll: !this.state.showRepairsAll
+    })
   }
 
-  render() {
+  handleCurrentDeviceID(event){
+    this.setState({
+      currentDeviceID: event.target.id
+    })
+  }  
 
+  componentDidMount(){
+    this.getUserInfo(this.props.match.params.personId);
+    this.getGeneralLedgerLines();
+    this.getRepairsAll(this.state);
+    
+  }
+
+ 
+
+  render() {
 
     return (
       <Container>
@@ -197,7 +360,43 @@ class UserHome extends Component {
                 <p>Big ones</p>
             }
           </Col>
-        </Row> 
+        </Row>
+        <CollapsableMailInRepairCardsInProgress
+          componentTitle="Repairs In Progress"
+          button_text="Show Repairs In Progress"
+          id_name="repairs_in_progress" 
+          showContent={this.state.showRepairsInProgress} 
+          handleShowContent={this.handleRepairsInProgress}
+          repairList={this.state.repairsInProgress}
+          setRepairComplete={this.setRepairComplete}
+          handleCurrentDeviceID={this.handleCurrentDeviceID}
+          currentDeviceID={this.state.currentDeviceID}
+          getRepairsAll={this.getRepairsAll}
+        />
+        <CollapsableMailInRepairCardsCompleted
+          componentTitle="Repairs Completed"
+          button_text="Show Repairs Completed"
+          id_name="repairs_completed" 
+          showContent={this.state.showRepairsCompleted} 
+          handleShowContent={this.handleRepairsCompleted}
+          repairList={this.state.repairsCompleted}
+          setRepairComplete={this.setRepairComplete}
+          handleCurrentDeviceID={this.handleCurrentDeviceID}
+          currentDeviceID={this.state.currentDeviceID}
+          getRepairsAll={this.getRepairsAll}
+        />
+        <CollapsableMailInRepairCardsAll
+          componentTitle="All Repairs"
+          button_text="Show All Repairs"
+          id_name="repairs_all" 
+          showContent={this.state.showRepairsAll} 
+          handleShowContent={this.handleRepairsAll}
+          repairList={this.state.repairsAll}
+          setRepairComplete={this.setRepairComplete}
+          handleCurrentDeviceID={this.handleCurrentDeviceID}
+          currentDeviceID={this.state.currentDeviceID}
+          getRepairsAll={this.getRepairsAll}
+        />
         <Row>
           <Col xs={12}>
             <hr className="my-4">
@@ -332,5 +531,11 @@ class UserHome extends Component {
     );
   }
 }
+
+// Enhanced Higher Order Components
+const CollapsableMailInRepairCardsInProgress = withCollapsableContainer(MailInRepairCards);
+const CollapsableMailInRepairCardsCompleted = withCollapsableContainer(MailInRepairCards);
+const CollapsableMailInRepairCardsAll = withCollapsableContainer(MailInRepairCards);
+
 
 export default UserHome;

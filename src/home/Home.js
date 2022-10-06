@@ -139,7 +139,7 @@ export default class Home extends Component {
         }
         
         
-        fetch(`http://127.0.0.1:5000/api/web_service`, {
+        fetch(`http://127.0.0.1:5000/api/mail_in_web`, {
             method: 'POST',
             body: JSON.stringify(submitObject),
             headers: headers,
@@ -182,7 +182,7 @@ export default class Home extends Component {
             repair_user_public_id: public_id
         }
         
-        fetch(`http://127.0.0.1:5000/api/repair`, {
+        fetch(`http://127.0.0.1:5000/api/mail_in_repair`, {
             method: 'POST',
             body: JSON.stringify(submitObject),
             headers: headers,

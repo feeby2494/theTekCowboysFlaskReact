@@ -1,4 +1,4 @@
-from api import db
+from api.api import db
 import datetime
 
 class Mail_In_Repair(db.Model):
@@ -18,6 +18,7 @@ class Mail_In_Repair(db.Model):
     repair_model = db.Column(db.String)
     repair_serial = db.Column(db.String)
     repair_issue = db.Column(db.String)
+    repair_completed = db.Column(db.Boolean, default=False)
     repair_date_submitted = db.Column(db.DateTime, default=datetime.datetime.now,  nullable=False)
     repair_date_received = db.Column(db.DateTime)
     repair_date_completed = db.Column(db.DateTime)

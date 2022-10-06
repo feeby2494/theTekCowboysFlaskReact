@@ -8,14 +8,7 @@ import uuid
 import psycopg2
 
 # Importing API and View modules
-import api.site_user.routes
-import api.jwt_token.routes
-import api.point.routes
-import api.todo.routes
-import api.vocab.routes
-import api.general_ledger.routes
-import api.videos.routes
-import api.mail_in_service.routes
+
 
 from dotenv import load_dotenv
 # from flask_bcrypt import Bcrypt
@@ -66,7 +59,14 @@ db = SQLAlchemy(app)
 # # # init Migrate
 migrate = Migrate(app, db)
 
-
+import api.api.site_user.routes
+import api.api.jwt_token.routes
+import api.api.point.routes
+import api.api.todo.routes
+import api.api.vocab.routes
+import api.api.general_ledger.routes
+import api.api.videos.routes
+import api.api.mail_in_service.routes
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,9 +1,9 @@
-from api import app, db
+from api.api import app, db
 from .models import Todo
-from api.jwt_token.__token_required__ import token_required
+from api.api.jwt_token.__token_required__ import token_required
 from flask import Response, request
 import json
-from api.site_user.models import SiteUser
+from api.api.site_user.models import SiteUser
 from sqlalchemy import exc
 
 @app.route('/api/todo', methods=['GET'])

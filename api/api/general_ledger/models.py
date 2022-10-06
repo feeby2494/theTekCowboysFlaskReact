@@ -1,5 +1,5 @@
 import datetime
-from api import db
+from api.api import db
 
 class Ledger_line_item(db.Model):
     __tablename__ = "ledger_line_item"

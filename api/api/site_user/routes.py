@@ -1,5 +1,5 @@
-from api import app, db
-from api.jwt_token.__token_required__ import token_required
+from api.api import app, db
+from api.api.jwt_token.__token_required__ import token_required
 from flask import Response, request
 import json
 from .models import SiteUser, Address
