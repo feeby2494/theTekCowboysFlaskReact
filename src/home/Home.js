@@ -5,6 +5,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import WebServiceCard from 'web_services/WebServiceCard';
 import RepairCard from '../repair/RepairCard';
 import { withCollapsableContainer } from './withCollapsableContainer';
+// import OffCanvesOrderStatus from 'components/OffCanvesOrderStatus';
 
 // Main Component for homepage
 export default class Home extends Component {
@@ -233,12 +234,12 @@ export default class Home extends Component {
                     <Col lg={1}></Col>
                     <Col lg={10}>
                         <Container>
-                            <Row>
+                            {/* <Row>
                                 <Col>
                                 <h3>Test</h3>
                                 <Button onClick={this.getUserInfo}>Get User Info in Console</Button>
                                 </Col>
-                            </Row>
+                            </Row> */}
                             <Row>
                                 <Col>
                                     { 

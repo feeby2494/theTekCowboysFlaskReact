@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import { Card, Container, Row, Col, Alert } from 'react-bootstrap';
 import RepairForm from './RepairForm';
+import ShippingInstructions from 'components/ShippingInstructions';
 
 const RepairCard = (props) => {
     return (
@@ -10,7 +11,9 @@ const RepairCard = (props) => {
                 </Card.Header>
                 <Card.Body>
                     <p>Mail in your broken laptop, phone, or tablet. Quates are provided before starting repairs. No Fix fees are $30. If quates rejected, then I will send it back for free!</p>
+                    <ShippingInstructions />
                 </Card.Body>
+                
                 <Container>
                     <Row>
                         <Col lg={3}>
