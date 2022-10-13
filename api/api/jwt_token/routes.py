@@ -1,4 +1,4 @@
-from api.api import app
+from api import app
 from flask import Response
 import json
 from .__token_required__ import token_required

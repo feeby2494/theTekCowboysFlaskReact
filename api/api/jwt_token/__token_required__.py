@@ -1,7 +1,7 @@
-from api.api import app
+from api import app
 from functools import wraps
 from flask import Response, request
-from api.api.site_user.models import SiteUser
+from api.site_user.models import SiteUser
 import jwt
 import json
 

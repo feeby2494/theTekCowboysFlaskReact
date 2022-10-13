@@ -1,9 +1,9 @@
-from api.api import app, db
+from api import app, db
 from flask import request, Response, redirect, url_for
 import json
 from .models import Element, Point
 from sqlalchemy import exc
-from api.api.jwt_token.__token_required__ import token_required
+from api.jwt_token.__token_required__ import token_required
 import datetime
 
 

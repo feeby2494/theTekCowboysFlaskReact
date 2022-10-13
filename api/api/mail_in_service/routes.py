@@ -1,9 +1,9 @@
 from crypt import methods
-from api.api import app, db
+from api import app, db
 from flask import request, Response
 import json
 from .models import Mail_In_Repair, Mail_In_Web
-from api.api.site_user.models import SiteUser
+from api.site_user.models import SiteUser
 import datetime
 from sqlalchemy import exc
 
@@ -56,10 +56,7 @@ def mail_in_repair():
         data = request.get_json(force=True)
         if data['repair_user_public_id']:
             user_id = db.session.query(SiteUser).filter_by(public_id=data['repair_user_public_id']).first().id 
-        else:
-            user_id = 0
 
-        try:
             new_repair = Mail_In_Repair(
                 repair_first_name = data['repair_first_name'],
                 repair_last_name = data['repair_last_name'],
@@ -77,6 +74,28 @@ def mail_in_repair():
                 repair_issue = data['repair_issue'],
                 repair_user_id = user_id
             )
+        else:
+            user_id = 1
+
+            new_repair = Mail_In_Repair(
+                repair_first_name = data['repair_first_name'],
+                repair_last_name = data['repair_last_name'],
+                repair_email = data['repair_email'],
+                repair_phone = data['repair_phone'],
+                repair_address_line_one = data['repair_address_line_one'],
+                repair_address_line_two = data['repair_address_line_two'],
+                repair_address_city = data['repair_address_city'],
+                repair_address_state = data['repair_address_state'],
+                repair_address_postal_code = data['repair_address_postal_code'],
+                repair_address_country = data['repair_address_country'],
+                repair_brand = data['repair_brand'],
+                repair_model = data['repair_model'],
+                repair_serial = data['repair_serial'],
+                repair_issue = data['repair_issue'],
+                repair_user_id = user_id
+            )
+
+        try:
 
             db.session.add(new_repair)
             db.session.commit()

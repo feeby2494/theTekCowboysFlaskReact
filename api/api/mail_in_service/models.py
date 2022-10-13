@@ -1,4 +1,4 @@
-from api.api import db
+from api import db
 import datetime
 
 class Mail_In_Repair(db.Model):

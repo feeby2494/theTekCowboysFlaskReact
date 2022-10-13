@@ -1,4 +1,4 @@
-from api.api import db, app
+from api import db, app
 import datetime
 import jwt
 from werkzeug.security import generate_password_hash, check_password_hash

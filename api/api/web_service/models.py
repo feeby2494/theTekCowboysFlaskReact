@@ -1,4 +1,4 @@
-from api.api import db, app
+from api import db, app
 from sqlalchemy import exc
 import datetime
 import jwt

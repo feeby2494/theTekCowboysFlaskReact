@@ -1,5 +1,5 @@
 from random import randint
-from api.api import app
+from api import app
 from flask import Response
 import json
 import os
