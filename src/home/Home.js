@@ -53,7 +53,7 @@ export default class Home extends Component {
         this.getUserInfo = this.getUserInfo.bind(this);
         
         // ComponentWillMount: 
-        fetch('http://127.0.0.1:5000/api/home', { method: 'get', mode: 'no-cors', })
+        fetch('/api/home', { method: 'get', mode: 'no-cors', })
         .then( res => res.text())
         .then(res=>this.setState({message:res}))
         .then(this.getVideosFromBackend('e110_corolla_videos', 'e110CorollaVideos'))
@@ -97,7 +97,7 @@ export default class Home extends Component {
             'mode': 'no-cors',
         }
         if (!this.state[localStateVar]) {
-                fetch(`http://127.0.0.1:5000/api/videos/${playlistId}`, {
+                fetch(`/api/videos/${playlistId}`, {
                 method: 'GET',
                 headers: ytHeaders,
             })
@@ -140,7 +140,7 @@ export default class Home extends Component {
         }
         
         
-        fetch(`http://127.0.0.1:5000/api/mail_in_web`, {
+        fetch(`/api/mail_in_web`, {
             method: 'POST',
             body: JSON.stringify(submitObject),
             headers: headers,
@@ -183,7 +183,7 @@ export default class Home extends Component {
             repair_user_public_id: public_id
         }
         
-        fetch(`http://127.0.0.1:5000/api/mail_in_repair`, {
+        fetch(`/api/mail_in_repair`, {
             method: 'POST',
             body: JSON.stringify(submitObject),
             headers: headers,
@@ -339,6 +339,17 @@ const RenderPlaylist = (props) => {
 const Portfolio = (props) => {
     return (
         <>
+            <Col lg={4}>
+                <Card bg={"light"} text={"dark"} className="my-3">
+                    <Card.Header>
+                        <h2>the Tek Cowboys - Online Mail-in Repair Web Application</h2>
+                    </Card.Header>
+                    <Card.Body>
+                        <p>Wordpress site with a plugin that embeds a static site built with react.js. This react app is a form that connects to the admin Rest API. There's another stack built also with react that allows techs to see the submited repairs from the wordpress plugin. The Rest API stores the submitted repairs in a Postgresql database and is written with the Flask web frameword in Python3.</p>
+                        <Button href="https://thetekcowboys.com" variant="primary">Visit Wordpress front-end</Button>
+                    </Card.Body>
+                </Card>
+            </Col>
             <Col lg={4}>
                 <Card bg={"light"} text={"dark"} className="my-3">
                     <Card.Header>
