@@ -3,39 +3,31 @@ import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
+import {connect} from "react-redux";
+import {logged_in_status, logged_out_status} from "./store/action";
 
 class Navigation extends React.Component {
   constructor(props){
       super(props);
-      this.state = {
-        loggedIn : false,
-      };
-
         this.handleLoggedIn = this.handleLoggedIn.bind(this);
   }
 
+  handleLoggedIn = () => {
+    const token = localStorage.getItem('token')
+    if (token) {
+      this.props.dispatch(logged_in_status());
+    } else {
+      this.props.dispatch(logged_out_status());
+    }
+  };
+
   componentDidMount() {
     setInterval(() => {
-      const token = localStorage.getItem('token') ? localStorage.getItem('token') : null;
-      if (token) {
-        this.setState({ loggedIn: true });
-      } else {
-        this.setState({ loggedIn: false });
-      }
+      this.handleLoggedIn();
     }, 1000);
 
 
     }
-
-  handleLoggedIn =(e)=>{
-
-
-
-
-  }
-
-  
-
 
 
   render(){
@@ -83,7 +75,7 @@ class Navigation extends React.Component {
             */}
 
             {
-              this.state.loggedIn ?
+              (this.props.loggedIn === true) ?
               <>
                 <Nav.Link href="/logout">logout</Nav.Link> 
                 <Nav.Link href={'/' + localStorage.getItem('public_id')}>User Home</Nav.Link>
@@ -96,11 +88,7 @@ class Navigation extends React.Component {
               </>
             }
 
-            {
-              this.state.status &&
-              <p>{localStorage.getItem('token')}</p>
-
-            }
+            
             
           </Nav>
         </Navbar.Collapse>
@@ -109,4 +97,9 @@ class Navigation extends React.Component {
   }
 }
 
-export default Navigation;
+const mapStateToProps = state => {
+  const loggedIn = state.loggedIn;
+  return {loggedIn};
+};
+
+export default connect(mapStateToProps)(Navigation);

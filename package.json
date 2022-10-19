@@ -16,10 +16,13 @@
     "react": "^16.13.1",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^8.0.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
     "react-table": "^7.7.0",
     "react-validation": "^3.0.7",
+    "redux": "^4.2.0",
+    "shopify-buy": "^2.17.0",
     "wanakana": "^4.0.2"
   },
   "scripts": {
