@@ -169,6 +169,6 @@ def login():
 
     if check_password_hash(user.password, auth.password):
         token = user.encode_auth_token( user.public_id )
-        return Response(json.dumps({'token' : token }), mimetype='application/json')
+        return Response(json.dumps({'token' : token , 'admin': user.admin}), mimetype='application/json')
 
     return Response(json.dumps({'message' : 'Wrong password.'}), mimetype='application/json'), 401, {'WWW-Authenticate' : 'Basic realm="Login required!"'}

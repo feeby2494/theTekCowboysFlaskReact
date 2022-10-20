@@ -43,9 +43,9 @@ class Navigation extends React.Component {
             <Nav.Link href="/">Home</Nav.Link>
 
             <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link href="/admin">Admin</Nav.Link>
 
-
-            <NavDropdown title="Travel Preparation" id="basic-nav-dropdown">
+            {/* <NavDropdown title="Travel Preparation" id="basic-nav-dropdown">
 
               <NavDropdown.Item href="/flashcards">Learn Japanese or Korean Vocab</NavDropdown.Item>
               <NavDropdown.Item href="/genki_one">Genki I Grammar Study</NavDropdown.Item>
@@ -54,9 +54,10 @@ class Navigation extends React.Component {
               { /*
               <NavDropdown.Item href="#action/3.4">Work and Study Opportunities</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Living in Korea</NavDropdown.Item>
-              */
+              
               }
-            </NavDropdown>
+              </NavDropdown> 
+            */}
             {/*
               <NavDropdown title="Local Culture" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">DFW Korean Spots</NavDropdown.Item>

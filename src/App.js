@@ -18,6 +18,7 @@ import WebProjectService from './services/web_project/WebProjectService';
 import GenkiOne from './japanese/GenkiOne';
 import GenkiOneSpecificPoint from './japanese/GenkiOneSpecificPoint';
 import AllPoints from "points/AllPoints";
+import RepairAdmin from "repair_admin/RepairAdmin";
 
 
 // Need to go mod all the services to get the right things from API
@@ -100,6 +101,7 @@ class App extends Component {
           <Route path="/genki_one" component ={GenkiOne}/>
           <Route path="/genki_one/:id" component ={GenkiOneSpecificPoint}/>
           <Route path="/points" component ={AllPoints}/>
+          <Route path="/admin" component ={withAuth(RepairAdmin)}/>
           <Route path="/:personId" component ={UserHome}/>
 
 

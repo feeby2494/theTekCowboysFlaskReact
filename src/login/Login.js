@@ -57,16 +57,19 @@ class Login extends Component {
             return res.json();
         })
         .then(data => {
-          // Ahhh, Stupid Javascript. I said wait for user to be set in localStorage, what dumb ass
-
           localStorage.setItem('token', data.token);
           localStorage.setItem('public_id', jwt_decode(data.token).public_id);
-          sessionStorage["test1"] = "Lorem ipsum";
- // I really hate Javascript, this shit deosn't make any sense
-          let nextUrl = '/' + jwt_decode(data.token).public_id;
-          console.log(nextUrl)
-          console.log(this.props)
-          console.log(localStorage.getItem('token'))
+          
+          // Setting url depending on if user is admin, which means they are tech or site admin,
+          // Will create tech bool, and other bools to route login to right area
+          // Want to create extra HOC before these routes load to block if something is wrong with user
+          let nextUrl = '/';         
+
+          (data.admin == true) ?
+            nextUrl = '/admin'
+          :
+            nextUrl = '/' + jwt_decode(data.token).public_id
+        
           this.props.history.push(nextUrl);
           //return <Redirect to={'/' + jwt_decode(data.token).public_id}/>
 
