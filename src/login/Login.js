@@ -69,7 +69,7 @@ class Login extends Component {
             nextUrl = '/admin'
           :
             nextUrl = '/' + jwt_decode(data.token).public_id
-        
+          console.log(jwt_decode(data.token).public_id)
           this.props.history.push(nextUrl);
           //return <Redirect to={'/' + jwt_decode(data.token).public_id}/>
 

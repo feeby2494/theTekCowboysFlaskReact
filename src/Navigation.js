@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import {connect} from "react-redux";
 import {logged_in_status, logged_out_status} from "./store/action";
+import jwt_decode from "jwt-decode";
 
 class Navigation extends React.Component {
   constructor(props){
@@ -13,9 +14,15 @@ class Navigation extends React.Component {
   }
 
   handleLoggedIn = () => {
-    const token = localStorage.getItem('token')
+    const token = localStorage.getItem('token');
+    let decodedToken = jwt_decode(token);
+    let currentDate = new Date();
     if (token) {
-      this.props.dispatch(logged_in_status());
+      if (decodedToken.exp * 1000 < currentDate.getTime()) {
+        this.props.dispatch(logged_out_status());
+      } else {
+        this.props.dispatch(logged_in_status());
+      }
     } else {
       this.props.dispatch(logged_out_status());
     }

@@ -310,7 +310,7 @@ class RepairAdmin extends Component {
   }  
 
   componentDidMount(){
-    this.getUserInfo(this.props.match.params.personId);
+    // this.getUserInfo(this.props.match.params.personId);
     this.getGeneralLedgerLines();
     this.getRepairsAll(this.state);
     
@@ -324,42 +324,6 @@ class RepairAdmin extends Component {
       <Container>
         <Row className="my-3">
           <Link to="/">Back to homepage</Link>
-        </Row>
-        <Row className="my-3">
-          <Col>
-            <Toast  onClose={this.showHideAdminToast}>
-              <Toast.Header>
-                <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
-                <strong className="mr-auto">Hello, {this.state.username}!</strong>
-                <small>Current User Info</small>
-              </Toast.Header>
-              <Toast.Body>
-                <p>username: {this.state.username}</p>
-                <p>email: {this.state.email}</p>
-                <p>public_id: {this.state.public_id}</p>
-              </Toast.Body>
-            </Toast>
-          </Col>
-          <Col>
-            {
-              (this.state.showAdmin) 
-              
-              ? 
-                (this.state.showAdminToast) && 
-                  <Toast  onClose={this.showHideAdminToast}>
-                    <Toast.Header>
-                      <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
-                      <strong className="mr-auto">Admin</strong>
-                      <small></small>
-                    </Toast.Header>
-                    <Toast.Body>Hello, {this.state.username}. You're an admin!</Toast.Body>
-                  </Toast>
-                
-                
-              :
-                <p>Big ones</p>
-            }
-          </Col>
         </Row>
         <CollapsableMailInRepairCardsInProgress
           componentTitle="Repairs In Progress"

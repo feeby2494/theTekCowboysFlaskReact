@@ -2,17 +2,19 @@ import React,{Component} from 'react';
 import jwt_decode from "jwt-decode";
 import {Redirect} from 'react-router-dom';
 
-const withAuth = (ComponentInside) => {
+const withAdmin = (ComponentInside) => {
  return class extends Component {
     constructor(){
         super();
         this.state={
-            loading:true,
-            redirect:false,
+            loading: true,
+            redirect: false,
+            isAdmin: false,
             currentPublicId: localStorage.getItem('public_id')
         };
+        this.checkUserAdmin = this.checkUserAdmin.bind(this); 
     }
-    componentDidMount() {
+    checkUserAdmin() {
       const myHeaders = new Headers();
 
       myHeaders.append('Content-Type', 'application/json');
@@ -26,10 +28,26 @@ const withAuth = (ComponentInside) => {
         })
           .then(res => {
             if (res.status === 200) {
-              this.setState({ loading: false });
+              this.setState({ 
+                loading: false
+            });
             } else {
               const error = new Error(res.error);
               throw error;
+            }
+            return res.json();
+          })
+          .then(data => {
+            if (data[this.state.currentPublicId].admin === true) {
+                console.log("User is admin and can continue to proceed.")
+                this.setState({
+                    isAdmin: true
+                });
+            } else {
+                console.log("User is not Admin! Cannot be here!")
+                this.setState({
+                    loading: false, redirect: true 
+                })
             }
           })
           .catch(err => {
@@ -37,10 +55,19 @@ const withAuth = (ComponentInside) => {
             this.setState({ loading: false, redirect: true });
           });
       }
+      // response[personId].admin;
 
+      componentDidMount() {
+        console.log(this.state.currentPublicId);
+        if(this.state.currentPublicId){
+            this.checkUserAdmin();
+        }
+      }
 
     render(){
         const{loading, redirect} = this.state;
+        
+        
         if(loading){
             return null;
         }
@@ -53,4 +80,4 @@ const withAuth = (ComponentInside) => {
 }
 
 
-export default withAuth;
+export default withAdmin;

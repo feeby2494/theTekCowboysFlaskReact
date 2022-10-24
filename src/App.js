@@ -7,6 +7,7 @@ import Home from './home/Home';
 import Login from './login/Login';
 import Secret from './secret/Secret';
 import withAuth from './hoc/withAuth';
+import withAdmin from './hoc/withAdmin';
 import Logout from './logout/Logout';
 import Register from './register/Register';
 import UserHome from './userhome/UserHome';
@@ -101,7 +102,7 @@ class App extends Component {
           <Route path="/genki_one" component ={GenkiOne}/>
           <Route path="/genki_one/:id" component ={GenkiOneSpecificPoint}/>
           <Route path="/points" component ={AllPoints}/>
-          <Route path="/admin" component ={withAuth(RepairAdmin)}/>
+          <Route path="/admin" component ={withAdmin(RepairAdmin)}/>
           <Route path="/:personId" component ={UserHome}/>
 
 
