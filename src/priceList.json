@@ -1,0 +1,41 @@
+{
+    "samsung_devices": 
+    [
+        {
+            "name": "Galexy S8",
+            "repairs": 
+                {
+                    "LCD/Glass": 150,
+                    "Battey": 80
+                }
+        },
+        {
+            "name": "Galexy S21",
+            "repairs": 
+                {
+                    "LCD/Glass": 205,
+                    "Battey": 85
+                }
+        }
+    ],
+    "apple_devices": 
+        [
+            {
+                "name": "iPad 10.5 Pro",
+                "repairs": 
+                    {
+                        "LCD/Glass": 150,
+                        "Battey": 80
+                    }
+            },
+            {
+                "name": "Macbook Air 2013-2017 A1466",
+                "repairs": 
+                    {
+                        "LCD/Glass": 150,
+                        "Battey": 80,
+                        "LogicBoard": 200
+                    }
+            }
+        ]
+}
