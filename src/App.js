@@ -20,6 +20,7 @@ import GenkiOne from './japanese/GenkiOne';
 import GenkiOneSpecificPoint from './japanese/GenkiOneSpecificPoint';
 import AllPoints from "points/AllPoints";
 import RepairAdmin from "repair_admin/RepairAdmin";
+import { PriceList } from 'PriceList';
 
 
 // Need to go mod all the services to get the right things from API
@@ -86,7 +87,7 @@ class App extends Component {
        <Switch>
 
           <Route path="/" exact component={Home} />
-          <Route path="/flashcards" exact component={FlashCardSpace} />
+          {/* <Route path="/flashcards" exact component={FlashCardSpace} /> */}
           <Route path="/secret" component={withAuth(Secret)} />
           <Route path="/login" >
             <Login  history={this.props.history} loggedIn={this.state.loggedIn}/>
@@ -96,12 +97,13 @@ class App extends Component {
           </Route>
           <Route path="/register" component ={Register}/>
           <Route path="/about" exact component={About} />
+          <Route path="/price_list" component={PriceList} />
           <Route path="/device_repair" exact component={RepairService} />
-          <Route path="/language_tutoring" exact component={TutoringLanguageService} />
+          {/* <Route path="/language_tutoring" exact component={TutoringLanguageService} /> */}
           <Route path="/web_project" exact component={WebProjectService} />
-          <Route path="/genki_one" component ={GenkiOne}/>
+          {/* <Route path="/genki_one" component ={GenkiOne}/>
           <Route path="/genki_one/:id" component ={GenkiOneSpecificPoint}/>
-          <Route path="/points" component ={AllPoints}/>
+          <Route path="/points" component ={AllPoints}/> */}
           <Route path="/admin" component ={withAdmin(RepairAdmin)}/>
           <Route path="/:personId" component ={UserHome}/>
 

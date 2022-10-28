@@ -48,7 +48,7 @@ class Navigation extends React.Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-
+            <Nav.Link href="/price_list">Price List</Nav.Link>
             <Nav.Link href="/about">About Us</Nav.Link>
             <Nav.Link href="/admin">Admin</Nav.Link>
 

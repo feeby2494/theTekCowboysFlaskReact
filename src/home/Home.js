@@ -5,6 +5,7 @@ import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import WebServiceCard from 'web_services/WebServiceCard';
 import RepairCard from '../repair/RepairCard';
 import { withCollapsableContainer } from './withCollapsableContainer';
+import { HomeCarousel } from 'components/HomeCarousel';
 // import OffCanvesOrderStatus from 'components/OffCanvesOrderStatus';
 
 // Main Component for homepage
@@ -240,7 +241,7 @@ export default class Home extends Component {
                                 <Button onClick={this.getUserInfo}>Get User Info in Console</Button>
                                 </Col>
                             </Row> */}
-                            <Row>
+                            {/* <Row>
                                 <Col>
                                     { 
                                         (!this.state.e110CorollaVideos)
@@ -250,8 +251,8 @@ export default class Home extends Component {
                                             <></>
                                     }
                                 </Col>
-                            </Row>  
-                            <CollapsableVideoList
+                            </Row>   */}
+                            {/* <CollapsableVideoList
                                 componentTitle="Youtube Videos" 
                                 button_text="Show Videos" 
                                 id_name="videos" 
@@ -261,7 +262,8 @@ export default class Home extends Component {
                                 e170CorollaVideos={this.state.e170CorollaVideos} 
                                 fg1CivicVideos={this.state.fg1CivicVideos} 
                                 message={this.state.message}>
-                            </CollapsableVideoList>   
+                            </CollapsableVideoList>    */}
+                            <HomeCarousel />
                             <WebServiceCard 
                                 handleInputChange={this.handleInputChange}
                                 web_service_first_name={this.state.web_service_first_name}
