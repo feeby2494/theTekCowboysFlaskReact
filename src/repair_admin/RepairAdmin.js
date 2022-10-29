@@ -10,7 +10,7 @@ import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup';
 import FormControl from 'react-bootstrap/FormControl';
 import MailInRepairCards from "./MailInRepairCards";
-import { withCollapsableContainer } from 'home/withCollapsableContainer';
+import { withCollapsableContainer } from 'hoc/withCollapsableContainer';
 import RowWithHeading from 'components/RowWithHeading';
 
 

@@ -4,8 +4,9 @@ import parse from "html-react-parser";
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import WebServiceCard from 'web_services/WebServiceCard';
 import RepairCard from '../repair/RepairCard';
-import { withCollapsableContainer } from './withCollapsableContainer';
+import { withCollapsableContainer } from '../hoc/withCollapsableContainer';
 import { HomeCarousel } from 'components/HomeCarousel';
+import { withSmallCollContainer } from '../hoc/withSmallCollContainer';
 // import OffCanvesOrderStatus from 'components/OffCanvesOrderStatus';
 
 // Main Component for homepage
@@ -420,8 +421,8 @@ const VideoList = (props) => {
 }
 
 // Enhanced Higher Order Components
-const CollapsablePortfolio = withCollapsableContainer(Portfolio);
-const CollapsableVideoList = withCollapsableContainer(VideoList);
+const CollapsablePortfolio = withSmallCollContainer(Portfolio);
+const CollapsableVideoList = withSmallCollContainer(VideoList);
   
 
 

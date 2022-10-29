@@ -31,7 +31,7 @@ const WebServiceInquiryForm = (props) => {
 
   return (
     <Col className='my-2'>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="info" onClick={handleShow}>
         Web Inquiry
       </Button>
 
@@ -81,7 +81,7 @@ const WebServiceInquiryForm = (props) => {
                 <Form.Label>Phone (only for last resort)</Form.Label>
                 <Form.Control name="web_service_phone" value={props.web_service_phone} type="phone" placeholder="Phone Number" onChange={props.handleInputChange}/>
               </Form.Group>
-              <Button onClick={handleStepTwo}>Continue</Button>
+              <Button variant="info" onClick={handleStepTwo}>Continue</Button>
             </Form>
           }
           {
@@ -95,8 +95,8 @@ const WebServiceInquiryForm = (props) => {
                 <Form.Label>Extra Details</Form.Label>
                 <Form.Control name="web_service_extra_details" value={props.web_service_extra_details} as="textarea" rows={3} onChange={props.handleInputChange}/>
               </Form.Group>
-              <Button variant="danger" className="mr-3" onClick={handleStepOne}>Go Back</Button>
-              <Button variant="primary" onClick={submitData}>Submit</Button>
+              <Button variant="warning" className="mr-3" onClick={handleStepOne}>Go Back</Button>
+              <Button variant="success" onClick={submitData}>Submit</Button>
             </Form>
           }
         </Modal.Body>

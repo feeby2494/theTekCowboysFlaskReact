@@ -38,7 +38,7 @@ const RepairForm = (props) => {
 
   return (
     <Col className="my-2">
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="info" onClick={handleShow}>
         Mail-In Repair
       </Button>
 
@@ -93,7 +93,7 @@ const RepairForm = (props) => {
                 <Form.Control name="repair_phone" value={props.repair_phone} type="phone" placeholder="Phone Number" onChange={props.handleInputChange}/>
               </Form.Group>
               </Form>
-              <Button className="mr-3" onClick={handleStepTwo}>Continue</Button>
+              <Button variant="info" className="mr-3" onClick={handleStepTwo}>Continue</Button>
             </>
           }
           {
@@ -116,8 +116,8 @@ const RepairForm = (props) => {
                 <Form.Control name="repair_address_country" value={props.repair_address_country} type="name" onChange={props.handleInputChange}/>
                 </Form.Group>
               </Form>
-              <Button variant="danger" className="mr-3" onClick={handleStepOne}>Go Back</Button>
-              <Button onClick={handleStepThree}>Continue</Button>
+              <Button variant="warning" className="mr-3" onClick={handleStepOne}>Go Back</Button>
+              <Button variant="info" onClick={handleStepThree}>Continue</Button>
             </>
           }
           {
@@ -138,7 +138,7 @@ const RepairForm = (props) => {
                 <Form.Control name="repair_issue" value={props.repair_issue} as="textarea" rows={3} onChange={props.handleInputChange}/>
                 </Form.Group>
               </Form>
-              <Button variant="danger" className="mr-3" onClick={handleStepTwo}>Go Back</Button>
+              <Button variant="warning" className="mr-3" onClick={handleStepTwo}>Go Back</Button>
               <Button variant="success" type="submit" onClick={submitRepairObject}>Submit</Button>
             </>
           }

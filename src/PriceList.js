@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Accordion, Card, Button, Tabs, Tab, Nav, Col, Row, Sonnet, Container, NavDropdown, Table} from 'react-bootstrap';
-import { withCollapsableContainer } from './home/withCollapsableContainer';
+import { Accordion, Card, Button, Tabs, Tab, Nav, Col, Row, Sonnet, Container, Dropdown, NavDropdown, Table} from 'react-bootstrap';
+import { withCollapsableContainer } from './hoc/withCollapsableContainer';
+import { withSmallCollContainer } from './hoc/withSmallCollContainer';
 
 
 
@@ -25,24 +26,27 @@ export const PriceList = () => {
 }
 
 
-const AppleDevices = withCollapsableContainer((props) => {
+const AppleDevices = withSmallCollContainer((props) => {
     return (
         <Tab.Container id="left-tabs-example" defaultActiveKey="first" className="mt-3">
-            <Col sm={3} className="mt-3">
-            <Nav variant="pills" className="flex-column">
-                <NavDropdown title="Apple Prices" id="basic-nav-dropdown">
+            <Col md={3} className="mt-3">
+                <Dropdown>
+                    <Dropdown.Toggle variant="light" title="Apple Prices" id="apple-price-dropdown">
+                        Apple Devices
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
                     <input type="text" />
                     {
                         props.priceListJson["apple_devices"].map((dev) => {
                             return (
-                                <NavDropdown.Item eventKey={dev.name}>{dev.name}</NavDropdown.Item>
+                                <Dropdown.Item eventKey={dev.name}>{dev.name}</Dropdown.Item>
                             );
                         })
                     }
-                </NavDropdown>      
-            </Nav>
+                    </Dropdown.Menu>
+                </Dropdown>
             </Col>
-            <Col sm={9} className="mt-3">
+            <Col md={9} className="mt-3">
             <Tab.Content>
                 {
                     props.priceListJson["apple_devices"].map((dev) => {
@@ -73,57 +77,34 @@ const AppleDevices = withCollapsableContainer((props) => {
                         );
                     })
                 }
-                <Tab.Pane eventKey="first">
-                    <h5>iPad 10.5 Pro</h5>
-                    <Table striped bordered hover size="sm">
-                        <thead>
-                            <tr>
-                            <th>Repair</th>
-                            <th>Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>LCD</td>
-                                <td>$150</td>
-                            </tr>
-                            <tr>
-                                <td>Battery</td>
-                                <td>$70</td>
-                            </tr>
-                        </tbody>
-                    </Table>
-                </Tab.Pane>
-                <Tab.Pane eventKey="second">
-                    <div>
-                    LCD: $150
-                </div>
-                </Tab.Pane>
             </Tab.Content>
             </Col>
         </Tab.Container>
     );
 });
 
-const SamsungDevices = withCollapsableContainer((props) => {
+const SamsungDevices = withSmallCollContainer((props) => {
     return (
         <Tab.Container id="left-tabs-example" defaultActiveKey="first" className="mt-3">
   
-            <Col sm={3} className="mt-3">
-            <Nav variant="pills" className="flex-column">
-                <NavDropdown title="Samsung Prices" id="basic-nav-dropdown">
+            <Col md={3} className="mt-3">
+                <Dropdown>
+                    <Dropdown.Toggle variant="light" title="Samsung Prices" id="samsung-price-dropdown">
+                        Samsung Devices
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
                     <input type="text" />
                     {
                         props.priceListJson["samsung_devices"].map((dev) => {
                             return (
-                                <NavDropdown.Item eventKey={dev.name}>{dev.name}</NavDropdown.Item>
+                                <Dropdown.Item eventKey={dev.name}>{dev.name}</Dropdown.Item>
                             );
                         })
                     }
-                </NavDropdown>      
-            </Nav>
+                    </Dropdown.Menu>
+                </Dropdown>
             </Col>
-            <Col sm={9} className="mt-3">
+            <Col md={9} className="mt-3">
             <Tab.Content>
                 {
                     props.priceListJson["samsung_devices"].map((dev) => {
