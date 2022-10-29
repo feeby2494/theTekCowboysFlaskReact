@@ -20,7 +20,22 @@ export const PriceList = () => {
 
             <SamsungDevices priceListJson={priceListJson} componentTitle="Samsung Devices" button_text="Show Samsung Prices" id_name="samsung-prices" showContent={showSamsung} handleShowContent={handleShowSamsung} />
             <AppleDevices priceListJson={priceListJson} componentTitle="Apple Devices" button_text="Show Apple Prices" id_name="apple-prices" showContent={showApple} handleShowContent={handleShowApple} />
-
+            <div className="my-5 d-block d-md-none">
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            </div>
         </Container>
     );
 }
@@ -34,15 +49,55 @@ const AppleDevices = withSmallCollContainer((props) => {
                     <Dropdown.Toggle variant="light" title="Apple Prices" id="apple-price-dropdown">
                         Apple Devices
                     </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                    <input type="text" />
-                    {
-                        props.priceListJson["apple_devices"].map((dev) => {
-                            return (
-                                <Dropdown.Item eventKey={dev.name}>{dev.name}</Dropdown.Item>
-                            );
-                        })
-                    }
+                    <Dropdown.Menu className='row'>
+                    <Table className='mb-2' size="sm" striped>
+                            <tbody className='d-none d-sm-block'>
+                                {
+                                    props.priceListJson["apple_devices"].map(( dev, index) => index % 3 != 0?null:(
+                                        
+                                        
+                                        <tr>
+                                            <td>
+                                                <Dropdown.Item eventKey={dev.name}>{dev.name}</Dropdown.Item>
+                                            </td> 
+                                            { props.priceListJson["apple_devices"][index + 1] &&
+                                                <td>
+                                                    <Dropdown.Item eventKey={props.priceListJson["apple_devices"][index + 1].name}>{props.priceListJson["samsung_devices"][index + 1].name}</Dropdown.Item>
+                                                </td> 
+                                            }
+                                            { props.priceListJson["apple_devices"][index + 2] && 
+                                                <td>
+                                                    <Dropdown.Item eventKey={props.priceListJson["apple_devices"][index + 2].name}>{props.priceListJson["samsung_devices"][index + 2].name}</Dropdown.Item>
+                                                </td> 
+                                            } 
+                                        </tr>
+                                        
+                                    ))
+                                }
+                            </tbody>
+                            <tbody className='d-block d-sm-none'>
+                              
+                                    {
+                                        props.priceListJson["apple_devices"].map(( dev, index) => index % 2 != 0?null:(
+                                            
+                                            
+                                            <tr>
+                                                <td>
+                                                    <Dropdown.Item eventKey={dev.name}>{dev.name}</Dropdown.Item>
+                                                </td> 
+                                                { props.priceListJson["apple_devices"][index + 1] &&
+                                                    <td>
+                                                        <Dropdown.Item eventKey={props.priceListJson["apple_devices"][index + 1].name}>{props.priceListJson["samsung_devices"][index + 1].name}</Dropdown.Item>
+                                                    </td> 
+                                                }
+                                            </tr>
+                                          
+                                        ))
+                                    }
+                                    
+                            
+                            </tbody>
+                        </Table>
                     </Dropdown.Menu>
                 </Dropdown>
             </Col>
@@ -92,15 +147,55 @@ const SamsungDevices = withSmallCollContainer((props) => {
                     <Dropdown.Toggle variant="light" title="Samsung Prices" id="samsung-price-dropdown">
                         Samsung Devices
                     </Dropdown.Toggle>
-                    <Dropdown.Menu>
-                    <input type="text" />
-                    {
-                        props.priceListJson["samsung_devices"].map((dev) => {
-                            return (
-                                <Dropdown.Item eventKey={dev.name}>{dev.name}</Dropdown.Item>
-                            );
-                        })
-                    }
+                    <Dropdown.Menu className='mb-4 '>
+                        <Table className='mb-2' size="sm" striped>
+                            <tbody className='d-none d-sm-block'>
+                                {
+                                    props.priceListJson["samsung_devices"].map(( dev, index) => index % 3 != 0?null:(
+                                        
+                                        
+                                        <tr>
+                                            <td>
+                                                <Dropdown.Item eventKey={dev.name}>{dev.name}</Dropdown.Item>
+                                            </td> 
+                                            { props.priceListJson["samsung_devices"][index + 1] &&
+                                                <td>
+                                                    <Dropdown.Item eventKey={props.priceListJson["samsung_devices"][index + 1].name}>{props.priceListJson["samsung_devices"][index + 1].name}</Dropdown.Item>
+                                                </td> 
+                                            }
+                                            { props.priceListJson["samsung_devices"][index + 2] && 
+                                                <td>
+                                                    <Dropdown.Item eventKey={props.priceListJson["samsung_devices"][index + 2].name}>{props.priceListJson["samsung_devices"][index + 2].name}</Dropdown.Item>
+                                                </td> 
+                                            } 
+                                        </tr>
+                                        
+                                    ))
+                                }
+                            </tbody>
+                            <tbody className='d-block d-sm-none'>
+                              
+                                    {
+                                        props.priceListJson["samsung_devices"].map(( dev, index) => index % 2 != 0?null:(
+                                            
+                                            
+                                            <tr>
+                                                <td>
+                                                    <Dropdown.Item eventKey={dev.name}>{dev.name}</Dropdown.Item>
+                                                </td> 
+                                                { props.priceListJson["samsung_devices"][index + 1] &&
+                                                    <td>
+                                                        <Dropdown.Item eventKey={props.priceListJson["samsung_devices"][index + 1].name}>{props.priceListJson["samsung_devices"][index + 1].name}</Dropdown.Item>
+                                                    </td> 
+                                                }
+                                            </tr>
+                                          
+                                        ))
+                                    }
+                                    
+                            
+                            </tbody>
+                        </Table>
                     </Dropdown.Menu>
                 </Dropdown>
             </Col>

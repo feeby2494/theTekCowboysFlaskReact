@@ -2,19 +2,395 @@
     "samsung_devices": 
     [
         {
-            "name": "Galexy S8",
+            "name": "Galaxy S4",
             "repairs": 
                 {
-                    "LCD/Glass": 150,
-                    "Battey": 80
+                    "LCD/Glass": 80,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
                 }
         },
         {
-            "name": "Galexy S21",
+            "name": "Galaxy S5",
             "repairs": 
                 {
-                    "LCD/Glass": 205,
-                    "Battey": 85
+                    "LCD/Glass": 80,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S6",
+            "repairs": 
+                {
+                    "LCD/Glass": 80,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S6 Edge+ Plus",
+            "repairs": 
+                {
+                    "LCD/Glass": 0,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S7 Active",
+            "repairs": 
+                {
+                    "LCD/Glass": 0,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S7",
+            "repairs": 
+                {
+                    "LCD/Glass": 90,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S7 Edge",
+            "repairs": 
+                {
+                    "LCD/Glass": 130,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S8",
+            "repairs": 
+                {
+                    "LCD/Glass": 150,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S8 Plus",
+            "repairs": 
+                {
+                    "LCD/Glass": 150,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S9",
+            "repairs": 
+                {
+                    "LCD/Glass": 130,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S9 Plus",
+            "repairs": 
+                {
+                    "LCD/Glass": 150,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S10e",
+            "repairs": 
+                {
+                    "LCD/Glass": 130,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S10",
+            "repairs": 
+                {
+                    "LCD/Glass": 200,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S10 Plus",
+            "repairs": 
+                {
+                    "LCD/Glass": 220,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S10 5G",
+            "repairs": 
+                {
+                    "LCD/Glass": 240,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S10 Lite",
+            "repairs": 
+                {
+                    "LCD/Glass": 0,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S20 UW",
+            "repairs": 
+                {
+                    "LCD/Glass": 230,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S20",
+            "repairs": 
+                {
+                    "LCD/Glass": 210,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S20 Plus",
+            "repairs": 
+                {
+                    "LCD/Glass": 250,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S20 Ultra",
+            "repairs": 
+                {
+                    "LCD/Glass": 230,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S20 FE",
+            "repairs": 
+                {
+                    "LCD/Glass": 140,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S21 FE",
+            "repairs": 
+                {
+                    "LCD/Glass": 190,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S21",
+            "repairs": 
+                {
+                    "LCD/Glass": 180,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S21 Plus",
+            "repairs": 
+                {
+                    "LCD/Glass": 180,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S21 Ultra",
+            "repairs": 
+                {
+                    "LCD/Glass": 280,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S22",
+            "repairs": 
+                {
+                    "LCD/Glass": 0,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S22 Plus",
+            "repairs": 
+                {
+                    "LCD/Glass": 230,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
+                }
+        },
+        {
+            "name": "Galaxy S22 Ultra",
+            "repairs": 
+                {
+                    "LCD/Glass": 300,
+                    "Battey": 50,
+                    "Front Camera": 40,
+                    "Rear Camera": 40,
+                    "Motherboard": 150,
+                    "Flat-Fee": 30,
+                    "Daughterboard": 40,
+                    "Charong Port": 65
                 }
         }
     ],
