@@ -1,6 +1,6 @@
 import React, {Component, useState, useEffect} from 'react';
 import { Alert, Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
-import RepairModal from './RapairModal';
+import RepairModal from './RepairModal';
 
 const MailInRepairCards = (props) => {
     // const [show, setShowSingleRepair] = useState(false);

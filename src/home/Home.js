@@ -7,7 +7,6 @@ import RepairCard from '../repair/RepairCard';
 import { withCollapsableContainer } from '../hoc/withCollapsableContainer';
 import { HomeCarousel } from 'components/HomeCarousel';
 import { withSmallCollContainer } from '../hoc/withSmallCollContainer';
-import { Background } from 'components/Background';
 // import OffCanvesOrderStatus from 'components/OffCanvesOrderStatus';
 
 // Main Component for homepage

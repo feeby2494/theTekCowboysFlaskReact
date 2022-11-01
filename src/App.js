@@ -21,7 +21,7 @@ import GenkiOneSpecificPoint from './japanese/GenkiOneSpecificPoint';
 import AllPoints from "points/AllPoints";
 import RepairAdmin from "repair_admin/RepairAdmin";
 import { PriceList } from 'PriceList';
-import { Background } from "./components/Background";
+import { withBackground } from "./hoc/withBackground";
 
 
 
@@ -68,8 +68,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" id='wrapper'>
-        <BrowserRouter className="forground">
+      <div className="App">
+        <BrowserRouter >
           <Navigation />
           <div className="flex-container">
 
@@ -118,9 +118,7 @@ class App extends Component {
           </div>
           <Footer />
         </BrowserRouter>
-        <Background className="background"> 
-          
-        </Background>
+        
         
 
       </div>

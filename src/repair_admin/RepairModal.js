@@ -1,5 +1,6 @@
 import React,{Component, useEffect, useState} from 'react';
-import {Modal, Button, Form, Row, Col, Alert} from 'react-bootstrap';
+import { Modal, Button, Form, Row, Col, Alert } from 'react-bootstrap';
+
 
 import '../App.css';
 import withAuth from 'hoc/withAuth';

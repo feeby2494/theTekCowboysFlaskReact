@@ -1,5 +1,5 @@
-import React,{Component, useState} from 'react';
-import {Modal, Button, Form, Row, Col, Toast } from 'react-bootstrap';
+import React,{ useState} from 'react';
+import { Modal, Button, Form, Row, Col, Toast } from 'react-bootstrap';
 
 import '../App.css';
 
@@ -9,6 +9,9 @@ const RepairForm = (props) => {
   const [showStepTwo, setShowStepTwo] = useState(false);
   const [showStepThree, setShowStepThree] = useState(false);
   const [showPublic, setShowPublic] = useState(true);
+  const [errors, setErrors] = useState([]);
+  const [required, setRequired] = useState(false);
+  const [pattern, setPattern] = useState("");
   const handlePublic = () => {
     setShowPublic(false);
     console.log("handle close for toast")
@@ -28,12 +31,78 @@ const RepairForm = (props) => {
     setShowStepTwo(false);
     setShowStepThree(true);
   };
+  
   const submitRepairObject = () => {
-    props.submitRepair();
+
+    
+    submitRepair();
     handleClose();
+    
+    
   }
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  
+
+  // State for repair form
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [addressLineOne, setAddressLineOne] = useState("");
+  const [addressLineTwo, setAddressLineTwo] = useState("");
+  const [addressCity, setAddressCity] = useState("");
+  const [addressState, setAddressState] = useState("");
+  const [addressPostalCode, setAddressPostalCode] = useState("");
+  const [addressCountry, setAddressCountry] = useState("");
+  const [brand, setBrand] = useState("");
+  const [model, setModel] = useState("");
+  const [serial, setSerial] = useState("");
+  const [issue, setIssue] = useState("");
+
+  const submitRepair = () => {
+    const headers = {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'mode': 'no-cors',
+    }
+
+    const public_id = localStorage.getItem('public_id');
+
+    const submitObject = {
+        repair_first_name: firstName,
+        repair_last_name: lastName,
+        repair_email: email,
+        repair_phone: phone,
+        repair_address_line_one: addressLineOne,
+        repair_address_line_two: addressLineTwo,
+        repair_address_city: addressCity,
+        repair_address_state: addressState,
+        repair_address_postal_code: addressPostalCode,
+        repair_address_country: addressCountry,
+        repair_brand: brand,
+        repair_model: model,
+        repair_serial: serial,
+        repair_issue: issue,
+        repair_user_public_id: public_id
+    }
+    
+    fetch(`/api/mail_in_repair`, {
+        method: 'POST',
+        body: JSON.stringify(submitObject),
+        headers: headers,
+    })
+    .then(res=>res.json())
+    .catch(err => {
+        console.log(err)
+        this.setState({
+          repairErrorMessage: `Error: ${err}`,
+          repairErrorBool: true,
+        });
+    });
+    
+}
 
 
   return (
@@ -71,6 +140,7 @@ const RepairForm = (props) => {
                 </Toast.Body>
             </Toast>
           }
+          {errors.repair_email && <span>Email is required</span>}
           {
             (showStepOne) &&
             <>
@@ -80,17 +150,17 @@ const RepairForm = (props) => {
               <Form className='repair-step-one-form'>
                 <Form.Group className="mb-3" controlId="RepairFormModal.FullName">
                 <Form.Label>First Name</Form.Label>
-                <Form.Control name="repair_first_name" value={props.repair_first_name} type="name" placeholder="First Name" onChange={props.handleInputChange}/>
+                <Form.Control name="firstName" value={firstName} type="name" placeholder="First Name" onChange={(e) => setFirstName(e.target.value)}/>
                 <Form.Label>Last Name</Form.Label>
-                <Form.Control name="repair_last_name" value={props.repair_last_name} type="name" placeholder="Last Name" onChange={props.handleInputChange}/>
+                <Form.Control name="lastName" value={lastName} type="name" placeholder="Last Name" onChange={(e) => setLastName(e.target.value)}/>
               </Form.Group>
               <Form.Group className="mb-3" controlId="RepairFormModal.Email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control name="repair_email" value={props.repair_email} type="email" placeholder="Email" onChange={props.handleInputChange}/>
+                <Form.Control required={true} pattern={/^\S+@\S+$/i } name="email" value={email} type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
               </Form.Group>
               <Form.Group className="mb-3" controlId="RepairFormModal.Phone">
                 <Form.Label>Phone (only for last resort)</Form.Label>
-                <Form.Control name="repair_phone" value={props.repair_phone} type="phone" placeholder="Phone Number" onChange={props.handleInputChange}/>
+                <Form.Control name="phone" value={phone} type="phone" placeholder="Phone Number" onChange={(e) => setPhone(e.target.value)}/>
               </Form.Group>
               </Form>
               <Button variant="info" className="mr-3" onClick={handleStepTwo}>Continue</Button>
@@ -103,17 +173,17 @@ const RepairForm = (props) => {
               <Form>
                 <Form.Group className="mb-3" controlId="RepairFormModal.Address">
                 <Form.Label>Address Line One:</Form.Label>
-                <Form.Control name="repair_address_line_one" value={props.repair_address_line_one} type="name" rows={1} onChange={props.handleInputChange}/>
+                <Form.Control name="addressLineOne" value={addressLineOne} type="name" rows={1} onChange={(e) => setAddressLineOne(e.target.value)}/>
                 <Form.Label>Address Line Two:</Form.Label>
-                <Form.Control name="repair_address_line_two" value={props.repair_address_line_two} type="name" rows={1} onChange={props.handleInputChange}/>
+                <Form.Control name="addressLineTwo" value={addressLineTwo} type="name" rows={1} onChange={(e) => setAddressLineTwo(e.target.value)}/>
                 <Form.Label>Address City:</Form.Label>
-                <Form.Control name="repair_address_city" value={props.repair_address_city} type="name" onChange={props.handleInputChange}/>
+                <Form.Control name="addressCity" value={addressCity} type="name" onChange={(e) => setAddressCity(e.target.value)}/>
                 <Form.Label>Address State:</Form.Label>
-                <Form.Control name="repair_address_state" value={props.repair_address_state} type="name" onChange={props.handleInputChange}/>
+                <Form.Control name="addressState" value={addressState} type="name" onChange={(e) => setAddressState(e.target.value)}/>
                 <Form.Label>Address PostalCode:</Form.Label>
-                <Form.Control name="repair_address_postal_code" value={props.repair_address_postal_code} type="name" onChange={props.handleInputChange}/>
+                <Form.Control name="addressPostalCode" value={addressPostalCode} type="name" onChange={(e) => setAddressPostalCode(e.target.value)}/>
                 <Form.Label>Address Country:</Form.Label>
-                <Form.Control name="repair_address_country" value={props.repair_address_country} type="name" onChange={props.handleInputChange}/>
+                <Form.Control name="addressCountry" value={addressCountry} type="name" onChange={(e) => setAddressCountry(e.target.value)}/>
                 </Form.Group>
               </Form>
               <Button variant="warning" className="mr-3" onClick={handleStepOne}>Go Back</Button>
@@ -127,15 +197,15 @@ const RepairForm = (props) => {
               <Form>
                 <Form.Group className="mb-3" controlId="RepairFormModal.DeviceInfo">
                   <Form.Label>Brand</Form.Label>
-                  <Form.Control name="repair_brand" value={props.repair_brand} type="name" placeholder="Brand" onChange={props.handleInputChange}/>
+                  <Form.Control name="brand" value={brand} type="name" placeholder="Brand" onChange={(e) => setBrand(e.target.value)}/>
                   <Form.Label>Model</Form.Label>
-                  <Form.Control name="repair_model" value={props.repair_model} type="name" placeholder="Model" onChange={props.handleInputChange}/>
+                  <Form.Control name="model" value={model} type="name" placeholder="Model" onChange={(e) => setModel(e.target.value)}/>
                   <Form.Label>Serial Number</Form.Label>
-                  <Form.Control name="repair_serial" value={props.repair_serial} type="name" placeholder="Serial" onChange={props.handleInputChange}/>
+                  <Form.Control name="serial" value={serial} type="name" placeholder="Serial" onChange={(e) => setSerial(e.target.value)}/>
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="RepairFormModal.Issue">
                 <Form.Label>Issue:</Form.Label>
-                <Form.Control name="repair_issue" value={props.repair_issue} as="textarea" rows={3} onChange={props.handleInputChange}/>
+                <Form.Control name="issue" value={issue} as="textarea" rows={3} onChange={(e) => setIssue(e.target.value)}/>
                 </Form.Group>
               </Form>
               <Button variant="warning" className="mr-3" onClick={handleStepTwo}>Go Back</Button>
