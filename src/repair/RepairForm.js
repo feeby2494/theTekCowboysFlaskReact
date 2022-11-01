@@ -9,9 +9,8 @@ const RepairForm = (props) => {
   const [showStepTwo, setShowStepTwo] = useState(false);
   const [showStepThree, setShowStepThree] = useState(false);
   const [showPublic, setShowPublic] = useState(true);
-  const [errors, setErrors] = useState([]);
-  const [required, setRequired] = useState(false);
-  const [pattern, setPattern] = useState("");
+  const [errors, setErrors] = useState('');
+  const [okToSubmit, setOkToSubmit] = useState(false);
   const handlePublic = () => {
     setShowPublic(false);
     console.log("handle close for toast")
@@ -32,11 +31,27 @@ const RepairForm = (props) => {
     setShowStepThree(true);
   };
   
+  const handleEmailValidation = (value) => {
+    if (!email.match(/^\S+@\S+$/) || !email) {
+      setEmail(value);
+      setErrors('Need valid Email!');
+      setOkToSubmit(false);
+      console.log('email false!');
+    } else {
+      setEmail(value);
+      setErrors('');
+      setOkToSubmit(true);
+      console.log('email Good!');
+    }
+  }
+
   const submitRepairObject = () => {
 
+    if (okToSubmit) {
+      submitRepair();
+      handleClose();
+    }
     
-    submitRepair();
-    handleClose();
     
     
   }
@@ -96,10 +111,7 @@ const RepairForm = (props) => {
     .then(res=>res.json())
     .catch(err => {
         console.log(err)
-        this.setState({
-          repairErrorMessage: `Error: ${err}`,
-          repairErrorBool: true,
-        });
+        setErrors(`Error: ${err}`);
     });
     
 }
@@ -140,7 +152,7 @@ const RepairForm = (props) => {
                 </Toast.Body>
             </Toast>
           }
-          {errors.repair_email && <span>Email is required</span>}
+          {errors && <span>{errors}</span>}
           {
             (showStepOne) &&
             <>
@@ -156,7 +168,7 @@ const RepairForm = (props) => {
               </Form.Group>
               <Form.Group className="mb-3" controlId="RepairFormModal.Email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control required={true} pattern={/^\S+@\S+$/i } name="email" value={email} type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
+                <Form.Control  name="email" value={email} type="email" placeholder="Email" onChange={(e) => handleEmailValidation(e.target.value)}/>
               </Form.Group>
               <Form.Group className="mb-3" controlId="RepairFormModal.Phone">
                 <Form.Label>Phone (only for last resort)</Form.Label>
