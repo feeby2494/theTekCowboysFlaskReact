@@ -21,6 +21,8 @@ import GenkiOneSpecificPoint from './japanese/GenkiOneSpecificPoint';
 import AllPoints from "points/AllPoints";
 import RepairAdmin from "repair_admin/RepairAdmin";
 import { PriceList } from 'PriceList';
+import { Background } from "./components/Background";
+
 
 
 // Need to go mod all the services to get the right things from API
@@ -66,60 +68,60 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <BrowserRouter>
-        <Navigation />
-       <div className="flex-container">
+      <div className="App" id='wrapper'>
+        <BrowserRouter className="forground">
+          <Navigation />
+          <div className="flex-container">
 
-       {this.state.showAdmin && (
-         <li className="nav-item">
-            You are logged in, {this.state.currentUser.username}!
-            And you're an Admin!
-         </li>
-       )}
+            {this.state.showAdmin && (
+              <li className="nav-item">
+                You are logged in, {this.state.currentUser.username}!
+                And you're an Admin!
+              </li>
+            )}
 
-       {this.state.currentUser && (
-         <li className="nav-item">
-            You are logged in, {this.state.currentUser.username}!
-         </li>
-       )}
+            {this.state.currentUser && (
+              <li className="nav-item">
+                You are logged in, {this.state.currentUser.username}!
+              </li>
+            )}
 
-       <Switch>
+            <Switch>
 
-          <Route path="/" exact component={Home} />
-          {/* <Route path="/flashcards" exact component={FlashCardSpace} /> */}
-          <Route path="/secret" component={withAuth(Secret)} />
-          <Route path="/login" >
-            <Login  history={this.props.history} loggedIn={this.state.loggedIn}/>
-          </Route>
-          <Route path="/logout">
-              <Logout history={this.props.history} loggedIn={this.state.loggedIn}/>
-          </Route>
-          <Route path="/register" component ={Register}/>
-          <Route path="/about" exact component={About} />
-          <Route path="/price_list" component={PriceList} />
-          <Route path="/device_repair" exact component={RepairService} />
-          {/* <Route path="/language_tutoring" exact component={TutoringLanguageService} /> */}
-          <Route path="/web_project" exact component={WebProjectService} />
-          {/* <Route path="/genki_one" component ={GenkiOne}/>
-          <Route path="/genki_one/:id" component ={GenkiOneSpecificPoint}/>
-          <Route path="/points" component ={AllPoints}/> */}
-          <Route path="/admin" component ={withAdmin(RepairAdmin)}/>
-          <Route path="/:personId" component ={UserHome}/>
-
-
-
-
-       </Switch>
-       </div>
-       <div className="clearfix mb-5">
-        <br />
-        <br />
-        <br />
-        <br />
-       </div>
-       <Footer />
-       </BrowserRouter>
+              <Route path="/" exact component={Home} />
+              {/* <Route path="/flashcards" exact component={FlashCardSpace} /> */}
+              <Route path="/secret" component={withAuth(Secret)} />
+              <Route path="/login" >
+                <Login  history={this.props.history} loggedIn={this.state.loggedIn}/>
+              </Route>
+              <Route path="/logout">
+                  <Logout history={this.props.history} loggedIn={this.state.loggedIn}/>
+              </Route>
+              <Route path="/register" component ={Register}/>
+              <Route path="/about" exact component={About} />
+              <Route path="/price_list" component={PriceList} />
+              <Route path="/device_repair" exact component={RepairService} />
+              {/* <Route path="/language_tutoring" exact component={TutoringLanguageService} /> */}
+              <Route path="/web_project" exact component={WebProjectService} />
+              {/* <Route path="/genki_one" component ={GenkiOne}/>
+              <Route path="/genki_one/:id" component ={GenkiOneSpecificPoint}/>
+              <Route path="/points" component ={AllPoints}/> */}
+              <Route path="/admin" component ={withAdmin(RepairAdmin)}/>
+              <Route path="/:personId" component ={UserHome}/>
+            </Switch>
+          </div>
+          <div className="clearfix mb-5">
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
+          <Footer />
+        </BrowserRouter>
+        <Background className="background"> 
+          
+        </Background>
+        
 
       </div>
     );

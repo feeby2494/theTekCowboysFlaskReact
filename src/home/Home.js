@@ -7,6 +7,7 @@ import RepairCard from '../repair/RepairCard';
 import { withCollapsableContainer } from '../hoc/withCollapsableContainer';
 import { HomeCarousel } from 'components/HomeCarousel';
 import { withSmallCollContainer } from '../hoc/withSmallCollContainer';
+import { Background } from 'components/Background';
 // import OffCanvesOrderStatus from 'components/OffCanvesOrderStatus';
 
 // Main Component for homepage
@@ -265,6 +266,9 @@ export default class Home extends Component {
                                 message={this.state.message}>
                             </CollapsableVideoList>    */}
                             <HomeCarousel />
+                            
+                            
+                            
                             <WebServiceCard 
                                 handleInputChange={this.handleInputChange}
                                 web_service_first_name={this.state.web_service_first_name}
