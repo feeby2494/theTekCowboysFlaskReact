@@ -41,6 +41,10 @@
   max-height: 300px;
 }
 
+.carousel-img {
+  max-height: 20%;
+}
+
 @media (max-width: 700px) {
 
   .footer {

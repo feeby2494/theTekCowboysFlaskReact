@@ -1,43 +1,66 @@
-import { Carousel } from "react-bootstrap";
+import { Carousel, Image} from "react-bootstrap";
 
 export const HomeCarousel = () => {
+
+  const civic_repair = `${process.env.PUBLIC_URL}/civic_repair.jpg`;
+  const mobile_solar_battery_1 = `${process.env.PUBLIC_URL}/mobile_solar_battery_1.jpg`;
+  const mobile_solar_battery_2 = `${process.env.PUBLIC_URL}/mobile_solar_battery_2.jpg`;
+  const ipad_repair = `${process.env.PUBLIC_URL}/ipad_repair.jpg`;
+  const electronic_lab_workbench_1 = `${process.env.PUBLIC_URL}/electronic_lab_workbench_1.jpg`;
+  const electronic_lab_workbench_2 = `${process.env.PUBLIC_URL}/electronic_lab_workbench_2.jpg`;
 
   return (
     <Carousel className="row mt-3 p-5">
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
+        <Image
+          fluid
+          rounded
+          className="d-block w-100 carousel-img"
+          src= {electronic_lab_workbench_1}
+          alt="My electronic lab workbench"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>My Electronic Lab Workbench</h3>
+          <p>This is where the magic happens. This is my workbench for electronic repair and building.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <Image
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
+          src={ipad_repair}
+          alt="IPad in the process of being repaired"
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Apple Mobile Device Repair</h3>
+          <p>With 5 years of Apple device repair under my belt, I prefer quality over production numbers and enjoy deep problems.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <Image
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
+          src={mobile_solar_battery_2}
+          alt="Inside of the mobile battery pack I made."
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Love building things like mobile solar battery packs.</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            My goal is to build systems off the grid that provide useful automation to users.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <Image
+          className="d-block w-100"
+          src={civic_repair}
+          alt="Repairing and modifiying my Honda Civic."
+        />
+
+        <Carousel.Caption>
+          <h3>Love Automotive Repair and Modification.</h3>
+          <p>
+            Gearhead by birth, I love lightweight, slow cars. I modify them and see how much I can get out of them.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
