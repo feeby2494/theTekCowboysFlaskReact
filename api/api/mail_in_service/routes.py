@@ -6,6 +6,7 @@ from .models import Mail_In_Repair, Mail_In_Web
 from api.site_user.models import SiteUser
 import datetime
 from sqlalchemy import exc
+from api.automation.send_email import send, generate_then_send
 
 # Helper Methods
 def dateSerializer(o):
@@ -104,10 +105,18 @@ def mail_in_repair():
             #repairs = db.session.query(Mail_In_Repair).all()
             repairs = db.session.query(Mail_In_Repair, SiteUser).join(SiteUser).all()
 
-            for repair in repairs:
-                print(repair["Mail_In_Repair"].id)
+            # for repair in repairs:
+            #     print(repair["Mail_In_Repair"].id)
 
             repair_list = get_updated_mail_in_repairs(repairs)
+
+            # Send email notifing of new order:
+            sender = "toby2494.development@gmail.com"
+            recipient = "toby2494@gmail.com"
+            email_body = ""
+            for item in data:
+                email_body += f"{item}: {data[item]}\n"
+            generate_then_send(app, sender, recipient,f"Received new Order From: {data['repair_email']}", email_body, None)
 
             return Response(json.dumps(repair_list), mimetype='application/json')
         except exc.IntegrityError as e:
@@ -156,6 +165,8 @@ def mail_in_repair_complete(id):
             print(repair["Mail_In_Repair"].id)
 
         repair_list = get_updated_mail_in_repairs(repairs)
+
+
 
         return Response(json.dumps(repair_list), mimetype='application/json')
     except exc.IntegrityError as e:
