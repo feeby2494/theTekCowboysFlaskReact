@@ -55,12 +55,12 @@ export default class Home extends Component {
         this.getUserInfo = this.getUserInfo.bind(this);
         
         // ComponentWillMount: 
-        fetch('/api/home', { method: 'get', mode: 'no-cors', })
-        .then( res => res.text())
-        .then(res=>this.setState({message:res}))
-        .then(this.getVideosFromBackend('e110_corolla_videos', 'e110CorollaVideos'))
-        .then(this.getVideosFromBackend('e170_corolla_videos', 'e170CorollaVideos'))
-        .then(this.getVideosFromBackend('fg1_civic_videos', 'fg1CivicVideos'))
+        // fetch('/api/home', { method: 'get', mode: 'no-cors', })
+        // .then( res => res.text())
+        // .then(res=>this.setState({message:res}))
+        // .then(this.getVideosFromBackend('e110_corolla_videos', 'e110CorollaVideos'))
+        // .then(this.getVideosFromBackend('e170_corolla_videos', 'e170CorollaVideos'))
+        // .then(this.getVideosFromBackend('fg1_civic_videos', 'fg1CivicVideos'))
 
     }
 
