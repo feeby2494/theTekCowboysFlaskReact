@@ -8,6 +8,8 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Alert } from 'react-bootstrap';
+import {logged_in_status} from "../store/action";
+import {connect} from "react-redux";
 
 class Login extends Component {
     constructor(props){
@@ -59,6 +61,7 @@ class Login extends Component {
         .then(data => {
           localStorage.setItem('token', data.token);
           localStorage.setItem('public_id', jwt_decode(data.token).public_id);
+          this.props.dispatch(logged_in_status());
           
           // Setting url depending on if user is admin, which means they are tech or site admin,
           // Will create tech bool, and other bools to route login to right area
@@ -136,5 +139,9 @@ class Login extends Component {
         )
     }
 }
+const mapStateToProps = state => {
+  const loggedIn = state.loggedIn;
+  return {loggedIn};
+};
 
-export default withRouter(Login)
+export default connect(mapStateToProps)(withRouter(Login));

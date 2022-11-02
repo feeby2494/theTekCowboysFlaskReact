@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import {withRouter} from 'react-router'; // OM!!! This gives me back history on this.props!!!!!
+import {logged_out_status} from "../store/action";
+import {connect} from "react-redux";
 
 class Logout extends Component {
 
@@ -14,6 +16,7 @@ class Logout extends Component {
           message = "Logout Successful";
           localStorage.removeItem('token');
           localStorage.removeItem('public_id');
+          this.props.dispatch(logged_out_status());
         }else{
           message = "Please login."
         }
@@ -32,5 +35,9 @@ class Logout extends Component {
       }
 }
 
+const mapStateToProps = state => {
+  const loggedIn = state.loggedIn;
+  return {loggedIn};
+};
 
-export default withRouter(Logout)
+export default connect(mapStateToProps)(withRouter(Logout));
