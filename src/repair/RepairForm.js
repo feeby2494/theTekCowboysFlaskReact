@@ -124,7 +124,12 @@ const RepairForm = (props) => {
         'mode': 'no-cors',
     }
 
-    const public_id = localStorage.getItem('public_id');
+    // Getting "Invalid Token Speciafied Error"; seeing if these calls to localstorage are causing it
+    const public_id = null;
+    if (localStorage.getItem('public_id')){
+      public_id = localStorage.getItem('public_id');
+    }
+    
 
     const submitObject = {
         repair_first_name: firstName,

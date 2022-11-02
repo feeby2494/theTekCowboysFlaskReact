@@ -118,8 +118,10 @@ export default class Home extends Component {
     }
 
     getUserInfo(event){
-        console.log(localStorage.getItem('public_id'))
-        console.log(localStorage.getItem('token'))
+        if (localStorage.getItem('public_id')){
+            console.log(localStorage.getItem('public_id'))
+            console.log(localStorage.getItem('token'))
+        }
     }
 
     submitWebProject(event){
@@ -129,7 +131,11 @@ export default class Home extends Component {
             'mode': 'no-cors',
         }
 
-        const public_id = localStorage.getItem('public_id');
+        const public_id = null;
+        if (localStorage.getItem('public_id')){
+            const public_id = localStorage.getItem('public_id');
+        }
+        
  
         const submitObject = {
             web_service_first_name: this.state.web_service_first_name,
@@ -165,7 +171,10 @@ export default class Home extends Component {
             'mode': 'no-cors',
         }
 
-        const public_id = localStorage.getItem('public_id');
+        const public_id = null;
+        if (localStorage.getItem('public_id')){
+            const public_id = localStorage.getItem('public_id');
+        }
 
         const submitObject = {
             repair_first_name: this.state.repair_first_name,
