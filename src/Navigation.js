@@ -15,9 +15,10 @@ class Navigation extends React.Component {
 
   handleLoggedIn = () => {
     const token = localStorage.getItem('token');
-    let decodedToken = jwt_decode(token);
     let currentDate = new Date();
     if (token) {
+      let decodedToken = jwt_decode(token);
+      
       if (decodedToken.exp * 1000 < currentDate.getTime()) {
         this.props.dispatch(logged_out_status());
       } else {
@@ -25,7 +26,9 @@ class Navigation extends React.Component {
       }
     } else {
       this.props.dispatch(logged_out_status());
-    }
+    } 
+    
+    
   };
 
   componentDidMount() {

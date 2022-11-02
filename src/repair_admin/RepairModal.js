@@ -24,7 +24,7 @@ const RepairModal = (props) => {
 
   
 
-   useEffect(() => {
+   useEffect((props) => {
       if(completed !== props.deviceCompleted) {
         props.setRepairComplete()
         
