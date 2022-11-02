@@ -21,22 +21,25 @@ const RepairForm = (props) => {
     setShowPublic(false);
     console.log("handle close for toast")
   }
-  const handleStepOne = () => {
+  const handleStepOne = (e) => {
+    e.preventDefault();
     setShowStepOne(true);
     setShowStepTwo(false);
     setShowStepThree(false);
   };
   const handleStepTwo = (e) => {
+    e.preventDefault();
     handleValidationContact(e);
-    if (validatedContact) {
+    if ( e.currentTarget.checkValidity() === true ) {
       setShowStepOne(false);
       setShowStepTwo(true);
       setShowStepThree(false);
     }
   };
   const handleStepThree = (e) => {
+    e.preventDefault();
     handleValidationAddress(e);
-    if (validatedAddress) {
+    if ( e.currentTarget.checkValidity() === true ) {
       setShowStepOne(false)
       setShowStepTwo(false);
       setShowStepThree(true);
@@ -48,9 +51,9 @@ const RepairForm = (props) => {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
-    }
-
+    } 
     setValidatedAddress(true);
+    event.preventDefault();
   };
 
   const handleValidationContact = (event) => {
@@ -58,9 +61,10 @@ const RepairForm = (props) => {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
-    }
-
+    } 
     setValidatedContact(true);
+    event.preventDefault();
+    
   };
 
   // Check if email is wrong; don't need, but good double check before submission and checks against regex pattern
