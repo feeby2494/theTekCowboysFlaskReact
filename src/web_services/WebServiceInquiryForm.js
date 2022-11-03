@@ -4,6 +4,8 @@ import {Modal, Button, Form, Row, Col, Toast} from 'react-bootstrap';
 import '../App.css';
 
 const WebServiceInquiryForm = (props) => {
+  // This is just used to toggle on feedback; not used to check if form input is valiadted!
+  const [validatedContact, setValidatedContact] = useState(false);
   const [show, setShow] = useState(false);
   const [showStepOne, setShowStepOne] = useState(true);
   const [showStepTwo, setShowStepTwo] = useState(false);
@@ -16,9 +18,13 @@ const WebServiceInquiryForm = (props) => {
     setShowStepOne(true);
     setShowStepTwo(false);
   };
-  const handleStepTwo = () => {
-    setShowStepOne(false);
-    setShowStepTwo(true);
+  const handleStepTwo = (e) => {
+    e.preventDefault();
+    handleValidationContact(e);
+    if ( e.currentTarget.checkValidity() === true ) {
+      setShowStepOne(false);
+      setShowStepTwo(true);
+    } 
   };
   const submitData = () => {
     props.submitWebProject();
@@ -27,7 +33,16 @@ const WebServiceInquiryForm = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-
+  const handleValidationContact = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    } 
+    setValidatedContact(true);
+    event.preventDefault();
+    
+  }
 
   return (
     <Col className='my-2'>
@@ -66,22 +81,34 @@ const WebServiceInquiryForm = (props) => {
           }
           {
             (showStepOne) && 
-            <Form>
+            <Form noValidate validated={validatedContact} onSubmit={handleStepTwo}>
               <Form.Group className="mb-3" controlId="WebProjectEnqueryFormModal.FullName">
                 <Form.Label>First Name</Form.Label>
-                <Form.Control name="web_service_first_name" value={props.web_service_first_name} type="name" placeholder="First Name" onChange={props.handleInputChange}/>
+                <Form.Control name="web_service_first_name" value={props.web_service_first_name} type="name" placeholder="First Name" onChange={props.handleInputChange} required/>
+                <Form.Control.Feedback type="invalid">
+                    Make up any name, but we still need something!
+                  </Form.Control.Feedback>
                 <Form.Label>Last Name</Form.Label>
-                <Form.Control name="web_service_last_name" value={props.web_service_last_name} type="name" placeholder="Last Name" onChange={props.handleInputChange}/>
+                <Form.Control name="web_service_last_name" value={props.web_service_last_name} type="name" placeholder="Last Name" onChange={props.handleInputChange} required/>
+                <Form.Control.Feedback type="invalid">
+                    Make up any name, but we still need something!
+                  </Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3" controlId="WebProjectEnqueryFormModal.Email">
                 <Form.Label>Email</Form.Label>
-                <Form.Control name="web_service_email" value={props.web_service_email} type="email" placeholder="Email" onChange={props.handleInputChange}/>
+                <Form.Control name="web_service_email" value={props.web_service_email} type="email" placeholder="Email" onChange={props.handleInputChange} required/>
+                <Form.Control.Feedback type="invalid">
+                  Without email, we can't even contact you!
+                </Form.Control.Feedback>
               </Form.Group>
               <Form.Group className="mb-3" controlId="WebProjectEnqueryFormModal.Phone">
                 <Form.Label>Phone (only for last resort)</Form.Label>
-                <Form.Control name="web_service_phone" value={props.web_service_phone} type="phone" placeholder="Phone Number" onChange={props.handleInputChange}/>
+                <Form.Control name="web_service_phone" value={props.web_service_phone} type="phone" placeholder="Phone Number" onChange={props.handleInputChange} required/>
+                <Form.Control.Feedback type="invalid">
+                  No, I don't want you phone number (I hate talking on the phone!), but in emergency situations you never know.
+                </Form.Control.Feedback>
               </Form.Group>
-              <Button variant="info" onClick={handleStepTwo}>Continue</Button>
+              <Button variant="info" type="submit">Continue</Button>
             </Form>
           }
           {
