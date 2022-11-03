@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './App.css';
 import VocabList from './VocabList';
 import JapaneseInputWindow from './JapaneseInputWindow';
@@ -299,7 +299,7 @@ class FlashCardSpace extends React.Component {
 
       // use fetch to fetch cards from API
 
-      if(this.state.lesson == 'all'){
+      if(this.state.lesson === 'all'){
         fetch(`/api/${this.state.language}/${this.state.level}/all`, {
           method:'GET',
           headers: {'x-access-token': localStorage.getItem('token')}

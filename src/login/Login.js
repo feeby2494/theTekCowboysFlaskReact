@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import jwt_decode from "jwt-decode";
-import { Redirect} from 'react-router-dom';
 import {withRouter} from 'react-router'; // OM!!! This gives me back history on this.props!!!!!
 import Button from 'react-bootstrap/Button';
 // import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -68,7 +67,7 @@ class Login extends Component {
           // Want to create extra HOC before these routes load to block if something is wrong with user
           let nextUrl = '/';         
 
-          (data.admin == true) ?
+          (data.admin === true) ?
             nextUrl = '/admin'
           :
             nextUrl = '/' + jwt_decode(data.token).public_id

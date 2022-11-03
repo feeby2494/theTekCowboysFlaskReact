@@ -26,14 +26,14 @@ class CardLinks extends React.Component {
                   <Form.Group controlId="level-select">
                     <Form.Label for="level-select">Choose your level of {this.props.language.charAt(0).toUpperCase() + this.props.language.slice(1)} Study</Form.Label>
                     
-                    {(this.props.language == 'korean') &&
+                    {(this.props.language === 'korean') &&
                       <Form.Control as="select" onChange={this.props.handleLevelChange}>
                         <option value="">Select an Option</option>
                         <option value="1">Topik Level I</option>
                         <option value="2">Topik Level II</option>
                       </Form.Control>
                     }
-                    {(this.props.language == 'japanese') &&
+                    {(this.props.language === 'japanese') &&
                       <Form.Control as="select" onChange={this.props.handleLevelChange}>
                         <option value="">Select an Option</option>
                         <option value="5">JLPT N5</option>

@@ -1,9 +1,5 @@
-import React,{Component, useEffect, useState} from 'react';
-import { Modal, Button, Form, Row, Col, Alert } from 'react-bootstrap';
-
-
-import '../App.css';
-import withAuth from 'hoc/withAuth';
+import React,{ useEffect, useState} from 'react';
+import { Modal, Button, Row, Col } from 'react-bootstrap';
 
 const RepairModal = (props) => {
   const [show, setShow] = useState(false);
@@ -18,19 +14,21 @@ const RepairModal = (props) => {
     }
   };
   const handleShow = (event) => {
+    console.log("modal should open")
+    console.log("Event for single repair modal", event)
     setShow(true);
     props.handleCurrentDeviceID(event);
   };
 
   
 
-   useEffect((props) => {
+   useEffect(() => {
       if(completed !== props.deviceCompleted) {
         props.setRepairComplete()
         
         
       }
-    }, [props.deviceCompleted, props.getRepairsAll, completed]);
+    }, [ completed ]);
   
 
 
@@ -53,7 +51,7 @@ const RepairModal = (props) => {
          </Row>
             
                 
-        {completed == props.deviceCompleted ? 'equal' : 'not equal'}
+        {completed === props.deviceCompleted ? 'equal' : 'not equal'}
          {props.elementIDName}
 
 

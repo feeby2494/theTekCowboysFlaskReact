@@ -1,6 +1,5 @@
-import React, { Component, useEffect} from 'react';
+import React, { Component } from 'react';
 import { Route, Switch, BrowserRouter} from 'react-router-dom';
-import FlashCardSpace from './FlashCardSpace';
 import Navigation from './Navigation'
 import './App.css';
 import Home from './home/Home';
@@ -14,14 +13,9 @@ import UserHome from './userhome/UserHome';
 import Footer from './footer/Footer';
 import About from './about/About';
 import RepairService from './services/device_repair/RepairService';
-import TutoringLanguageService from './services/language_tutoring/TutoringLanguageService';
 import WebProjectService from './services/web_project/WebProjectService';
-import GenkiOne from './japanese/GenkiOne';
-import GenkiOneSpecificPoint from './japanese/GenkiOneSpecificPoint';
-import AllPoints from "points/AllPoints";
 import RepairAdmin from "repair_admin/RepairAdmin";
 import { PriceList } from 'PriceList';
-import { withBackground } from "./hoc/withBackground";
 
 
 

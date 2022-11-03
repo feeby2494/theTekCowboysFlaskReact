@@ -1,18 +1,13 @@
-import React, { useState, useEffect, Component } from "react";
-import { Link, BrowserRouter as Router, Route } from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Toast from 'react-bootstrap/Toast';
 import Table from 'react-bootstrap/Table';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
-import FormControl from 'react-bootstrap/FormControl';
 import MailInRepairCards from "./MailInRepairCards";
 import { withCollapsableContainer } from 'hoc/withCollapsableContainer';
-import RowWithHeading from 'components/RowWithHeading';
-
 
 class RepairAdmin extends Component {
 
@@ -80,7 +75,8 @@ class RepairAdmin extends Component {
   }
 
   getRepairsInProgress(currentState) {
-    // if(currentState.showAdmin){
+    // if(currentState.showAdmin){ 
+    // Don't remember what this was for and might not need it.
       const headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
@@ -148,11 +144,11 @@ class RepairAdmin extends Component {
     })
     .then(res=>res.json())
     .then((response) => {
-      console.log(Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == false))
+      console.log(Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed === false))
       this.setState({
         repairsAll: Object.keys(response).map((key, index) => {return response[key]}),
-        repairsCompleted: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == true),
-        repairsInProgress: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == false)
+        repairsCompleted: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed === true),
+        repairsInProgress: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed === false)
       });
     })
     .catch(err => {
@@ -209,11 +205,6 @@ class RepairAdmin extends Component {
           showAdmin : response[personId].admin,
           showAdminToast : true
         })
-        this.state.username = response[personId].username;
-        this.state.email = response[personId].email;
-        this.state.public_id = response[personId].public_id;
-        this.state.showAdmin = response[personId].admin;
-        this.state.showAdminToast = true;
       })
       .catch((error) => {
         console.log(error);

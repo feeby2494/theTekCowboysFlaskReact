@@ -1,11 +1,5 @@
 import React,{ useState} from 'react';
-import { Modal, Button, Form, Row, Col, Toast, Alert } from 'react-bootstrap';
-
-import '../App.css';
-
-
-
-  
+import { Modal, Button, Form, Col, Toast, Alert } from 'react-bootstrap';
 
 const RepairForm = (props) => {
   const [validatedAddress, setValidatedAddress] = useState(false);
@@ -125,7 +119,7 @@ const RepairForm = (props) => {
     }
 
     // Getting "Invalid Token Speciafied Error"; seeing if these calls to localstorage are causing it
-    const public_id = null;
+    var public_id = null;
     if (localStorage.getItem('public_id')){
       public_id = localStorage.getItem('public_id');
     }

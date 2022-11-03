@@ -1,10 +1,6 @@
 import { useState } from 'react';
-import { Accordion, Card, Button, Tabs, Tab, Nav, Col, Row, Sonnet, Container, Dropdown, NavDropdown, Table} from 'react-bootstrap';
-import { withCollapsableContainer } from './hoc/withCollapsableContainer';
+import { Tab, Col, Container, Dropdown, Table} from 'react-bootstrap';
 import { withSmallCollContainer } from './hoc/withSmallCollContainer';
-
-
-
 
 export const PriceList = () => {
     const [showSamsung, setShowSamsung] = useState(false);
@@ -53,7 +49,7 @@ const AppleDevices = withSmallCollContainer((props) => {
                     <Table className='mb-2' size="sm" striped>
                             <tbody className='d-none d-sm-block'>
                                 {
-                                    props.priceListJson["apple_devices"].map(( dev, index) => index % 3 != 0?null:(
+                                    props.priceListJson["apple_devices"].map(( dev, index) => index % 3 !== 0?null:(
                                         
                                         
                                         <tr>
@@ -78,7 +74,7 @@ const AppleDevices = withSmallCollContainer((props) => {
                             <tbody className='d-block d-sm-none'>
                               
                                     {
-                                        props.priceListJson["apple_devices"].map(( dev, index) => index % 2 != 0?null:(
+                                        props.priceListJson["apple_devices"].map(( dev, index) => index % 2 !== 0?null:(
                                             
                                             
                                             <tr>
@@ -151,7 +147,7 @@ const SamsungDevices = withSmallCollContainer((props) => {
                         <Table className='mb-2' size="sm" striped>
                             <tbody className='d-none d-sm-block'>
                                 {
-                                    props.priceListJson["samsung_devices"].map(( dev, index) => index % 3 != 0?null:(
+                                    props.priceListJson["samsung_devices"].map(( dev, index) => index % 3 !== 0?null:(
                                         
                                         
                                         <tr>
@@ -176,7 +172,7 @@ const SamsungDevices = withSmallCollContainer((props) => {
                             <tbody className='d-block d-sm-none'>
                               
                                     {
-                                        props.priceListJson["samsung_devices"].map(( dev, index) => index % 2 != 0?null:(
+                                        props.priceListJson["samsung_devices"].map(( dev, index) => index % 2 !== 0?null:(
                                             
                                             
                                             <tr>

@@ -1,10 +1,7 @@
-/* global gapi */
 import React,{Component} from 'react';
-import parse from "html-react-parser";
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import WebServiceCard from 'web_services/WebServiceCard';
 import RepairCard from '../repair/RepairCard';
-import { withCollapsableContainer } from '../hoc/withCollapsableContainer';
 import { HomeCarousel } from 'components/HomeCarousel';
 import { withSmallCollContainer } from '../hoc/withSmallCollContainer';
 // import OffCanvesOrderStatus from 'components/OffCanvesOrderStatus';
@@ -131,9 +128,9 @@ export default class Home extends Component {
             'mode': 'no-cors',
         }
 
-        const public_id = null;
+        var public_id = null;
         if (localStorage.getItem('public_id')){
-            const public_id = localStorage.getItem('public_id');
+            public_id = localStorage.getItem('public_id');
         }
         
  
@@ -320,36 +317,6 @@ export default class Home extends Component {
 }
 
 // Helper Components
-const RenderPlaylist = (props) => {
-    
-  
-    return (
-        
-                (props.videos)
-                ?
-                    (props.videos.error)
-                    ?
-                        <Col lg={6}>{props.videos.error.errors[0].message}</Col>
-                    :
-                        
-                        props.videos.items.map((video) => {
-                            return (
-                                <Col lg={6}>
-                                    <h2>{video.snippet.title}</h2>
-                                    <div className=''>
-                                        {parse(video.player.embedHtml)}
-                                    </div>
-                                </Col>
-                            )
-                        })
-                            
-                :
-                    <></>
-                        
-        
-        
-    )
-}
 
 const Portfolio = (props) => {
     return (
@@ -402,39 +369,8 @@ const Portfolio = (props) => {
     )
 }
 
-const ColoredLine = ({ color }) => (
-    <hr
-        style={{
-            color: color,
-            backgroundColor: color,
-            height: 1
-        }}
-    />
-);
-
-
-
-const VideoList = (props) => {
-    return (
-        <>
-            { 
-                (!props.e110CorollaVideos)
-                ?
-                    <h2 className='text-center'>{props.message}</h2>
-                :
-                <Row>
-                    <RenderPlaylist  videos={props.e110CorollaVideos} loading="Loading"/>
-                    <RenderPlaylist  videos={props.e170CorollaVideos} loading="Loading"/>
-                    <RenderPlaylist  videos={props.fg1CivicVideos} loading="Loading"/>
-                </Row>
-            }  
-        </>
-    )
-}
-
 // Enhanced Higher Order Components
 const CollapsablePortfolio = withSmallCollContainer(Portfolio);
-const CollapsableVideoList = withSmallCollContainer(VideoList);
   
 
 

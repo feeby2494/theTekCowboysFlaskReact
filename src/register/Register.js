@@ -29,7 +29,7 @@ export default class Login extends Component {
     onSubmit =(e)=>{
         e.preventDefault();
 
-        if(this.state.password == this.state.passwordMatchInput) {
+        if(this.state.password === this.state.passwordMatchInput) {
           fetch('/api/register',{
             method:'POST',
             body: JSON.stringify(this.state),
@@ -104,7 +104,7 @@ export default class Login extends Component {
                     <Row>
                       <Col>
                         {
-                          ( this.state.password == "" || this.state.passwordMatchInput == "" )
+                          ( this.state.password === "" || this.state.passwordMatchInput === "" )
                             ?
                               <></>
                             :

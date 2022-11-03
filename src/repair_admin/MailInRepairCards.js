@@ -1,5 +1,5 @@
-import React, {Component, useState, useEffect} from 'react';
-import { Alert, Container, Row, Col, Card, ListGroup } from 'react-bootstrap';
+import React from 'react';
+import { Col, Card, ListGroup } from 'react-bootstrap';
 import RepairModal from './RepairModal';
 
 const MailInRepairCards = (props) => {

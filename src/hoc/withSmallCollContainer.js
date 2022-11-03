@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Button, Card, Col } from 'react-bootstrap';
+import { Row, Button, Card } from 'react-bootstrap';
 
 export function withSmallCollContainer(OriginalReactComponent) {
 

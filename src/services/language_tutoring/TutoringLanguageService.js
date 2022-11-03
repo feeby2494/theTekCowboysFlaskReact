@@ -1,10 +1,6 @@
 import React,{Component} from 'react';
-import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Nav from 'react-bootstrap/Nav';
+import { Row, Col, Card } from 'react-bootstrap';
+
 
 export default class About extends Component {
   constructor(props){

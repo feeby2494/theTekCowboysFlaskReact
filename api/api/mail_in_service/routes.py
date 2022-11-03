@@ -7,6 +7,7 @@ from api.site_user.models import SiteUser
 import datetime
 from sqlalchemy import exc
 from api.automation.send_email import send, generate_then_send
+from api.jwt_token.__token_required__ import token_required
 
 # Helper Methods
 def dateSerializer(o):
@@ -122,6 +123,19 @@ def mail_in_repair():
         except exc.IntegrityError as e:
             db.session.rollback()
             return Response(json.dumps({'message' : f'ERROR: Cannot create new repair. Due to ERROR: {e}'}), mimetype='application/json')
+
+@app.route('/api/mail_in_repair_by_user', methods=['GET'])
+@token_required
+def mail_in_repair_in_progress_by_user(current_user):
+
+
+    #repairs = db.session.query(Mail_In_Repair).all()
+    repairs = db.session.query(Mail_In_Repair, SiteUser).filter(SiteUser.id == current_user.id).join(SiteUser).all()
+
+    repair_list = get_updated_mail_in_repairs(repairs)
+
+    print(repair_list)
+    return Response(json.dumps(repair_list), mimetype='application/json')
 
 
 @app.route('/api/mail_in_repair_in_progress', methods=['GET'])

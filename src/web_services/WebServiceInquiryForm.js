@@ -1,5 +1,5 @@
-import React,{Component, useState} from 'react';
-import {Modal, Button, Form, Row, Col, Toast} from 'react-bootstrap';
+import React,{ useState } from 'react';
+import {Modal, Button, Form, Col, Toast} from 'react-bootstrap';
 
 import '../App.css';
 
