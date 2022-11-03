@@ -206,7 +206,7 @@ def mail_in_web():
         if data['web_service_user_public_id']:
             user_id = db.session.query(SiteUser).filter_by(public_id=data['web_service_user_public_id']).first().id 
         else:
-            user_id = 0
+            user_id = 1
 
         try:
             new_web_service = Mail_In_Web(
