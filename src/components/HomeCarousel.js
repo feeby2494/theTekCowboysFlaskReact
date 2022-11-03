@@ -2,12 +2,12 @@ import { Carousel, Image} from "react-bootstrap";
 
 export const HomeCarousel = () => {
 
-  const civic_repair = `${process.env.PUBLIC_URL}/civic_repair_short.jpg`;
-  const mobile_solar_battery_1 = `${process.env.PUBLIC_URL}/mobile_solar_battery_1.jpg`;
-  const mobile_solar_battery_2 = `${process.env.PUBLIC_URL}/mobile_solar_battery_2_short.jpg`;
-  const ipad_repair = `${process.env.PUBLIC_URL}/ipad_repair_short.jpg`;
-  const electronic_lab_workbench_1 = `${process.env.PUBLIC_URL}/electronic_lab_workbench_1_short.jpg`;
-  const electronic_lab_workbench_2 = `${process.env.PUBLIC_URL}/electronic_lab_workbench_2.jpg`;
+  const civic_repair = `${process.env.PUBLIC_URL}/civic_repair_comp.jpg`;
+  // const mobile_solar_battery_1 = `${process.env.PUBLIC_URL}/mobile_solar_battery_1.jpg`;
+  const mobile_solar_battery_2 = `${process.env.PUBLIC_URL}/mobile_solar_battery_2_comp.jpg`;
+  const ipad_repair = `${process.env.PUBLIC_URL}/ipad_repair_comp.jpg`;
+  const electronic_lab_workbench_1 = `${process.env.PUBLIC_URL}/electronic_lab_workbench_1_comp.jpg`;
+  // const electronic_lab_workbench_2 = `${process.env.PUBLIC_URL}/electronic_lab_workbench_2.jpg`;
 
   return (
     <Carousel variant="dark" className="row mt-3 mb-0">

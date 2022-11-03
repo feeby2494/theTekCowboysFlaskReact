@@ -10,7 +10,7 @@ export default class About extends Component {
 
     render(){
 
-      const profileImage = `${process.env.PUBLIC_URL}/profile.jpg`;
+      const profileImage = `${process.env.PUBLIC_URL}/profile_comp.jpg`;
         return(
             <Container>
               <Row className="mt-md-5 mt-3">
@@ -31,7 +31,7 @@ export default class About extends Component {
                   </ListGroup>
                 </Col>
                 <Col lg={1} md={1} className="hidden-sm"></Col>
-                <Col lg={5} md={4} sm={12}>
+                <Col lg={5} md={4} sm={12} className="mt-3 mt-md-0">
                   <Image className="profile-img mx-auto d-block" roundedCircle thumbnail fluid src={profileImage} />
                 </Col>
               </Row>
