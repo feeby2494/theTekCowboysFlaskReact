@@ -44,6 +44,17 @@
 .carousel-img {
   max-height: 20%;
 }
+
+.carousel-caption-backgound {
+  /* background-color: rgba(239, 226, 82, 0.70); */
+  background-color: rgba(51, 58, 64, 0.80);
+  border-radius: 25px;
+}
+
+.carousel-caption-backgound > :is(h3) {
+  text-shadow: 0.5px 0.5px;
+}
+
 #wrapper {
   position: relative;
 }

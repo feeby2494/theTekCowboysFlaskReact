@@ -19,7 +19,7 @@ export const HomeCarousel = () => {
           src= {electronic_lab_workbench_1}
           alt="My electronic lab workbench"
         />
-        <Carousel.Caption>
+        <Carousel.Caption className="carousel-caption-backgound">
           <h3>My Electronic Lab Workbench</h3>
           <p>This is where the magic happens. This is my workbench for electronic repair and building.</p>
         </Carousel.Caption>
@@ -33,7 +33,7 @@ export const HomeCarousel = () => {
           alt="IPad in the process of being repaired"
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption className="carousel-caption-backgound">
           <h3>Apple Mobile Device Repair</h3>
           <p>With 5 years of Apple device repair under my belt, I prefer quality over production numbers and enjoy deep problems.</p>
         </Carousel.Caption>
@@ -47,7 +47,7 @@ export const HomeCarousel = () => {
           alt="Inside of the mobile battery pack I made."
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption className="carousel-caption-backgound">
           <h3>Love building things like mobile solar battery packs.</h3>
           <p>
             My goal is to build systems off the grid that provide useful automation to users.
@@ -63,7 +63,7 @@ export const HomeCarousel = () => {
           alt="Repairing and modifiying my Honda Civic."
         />
 
-        <Carousel.Caption>
+        <Carousel.Caption className="carousel-caption-backgound">
           <h3>Love Automotive Repair and Modification.</h3>
           <p>
             Gearhead by birth, I love lightweight, slow cars. I modify them and see how much I can get out of them.
