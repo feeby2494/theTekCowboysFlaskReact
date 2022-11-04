@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import MailInRepairCards from "../repair_admin/MailInRepairCards";
+import { Container, Row, Col } from "react-bootstrap";
+import CustomerRepairCards from "./CustomerRepairCards";
 import { withCollapsableContainer } from 'hoc/withCollapsableContainer';
+import { withSmallCollContainer } from 'hoc/withSmallCollContainer';
 
 
 
@@ -22,8 +23,7 @@ export const UserHome = (props) => {
   const [public_id, setPublic_id] = useState(null);
   const [showAdmin, setShowAdmin] = useState(null);
 
-  // for current repair card
-  const [currentDeviceID, setCurrentDeviceID] = useState("");
+
 
   const getUserInfo = (personId) => {
     fetch(`/api/user/${personId}`,{
@@ -70,9 +70,7 @@ export const UserHome = (props) => {
     });
   }
 
-  const handleCurrentDeviceID = (event) => {
-    setCurrentDeviceID(event.target.id);
-  }  
+ 
 
   if (!public_id){
     getUserInfo(props.match.params.personId);
@@ -88,18 +86,22 @@ export const UserHome = (props) => {
  
 
   // Enhanced Higher Order Components
-  const CollapsableMailInRepairCardsInProgress = withCollapsableContainer(MailInRepairCards);
-  const CollapsableMailInRepairCardsCompleted = withCollapsableContainer(MailInRepairCards);
-  const CollapsableMailInRepairCardsAll = withCollapsableContainer(MailInRepairCards);
+  const CollapsableMailInRepairCardsInProgress = withSmallCollContainer(CustomerRepairCards);
+  const CollapsableMailInRepairCardsCompleted = withSmallCollContainer(CustomerRepairCards);
+  const CollapsableMailInRepairCardsAll = withSmallCollContainer(CustomerRepairCards);
 
 
   return(
     <Container>
-      <Row className="my-3">
-        { username && <h2>Welcome, {username}!</h2> }
-        <p>Here are the repairs you currenty have submitted organized by completed, in-progress, and all.</p>
-        <p>Remember it's possible to submit repairs without being logged in. If you need to have a repair 
+      <Row className="my-3 align-items-center">
+        <Col sm={12} md={4} >
+          { username && <h2>Welcome, {username}!</h2> }
+        </Col>
+        <Col sm={12} md={8}>
+          <p>Here are the repairs you currenty have submitted organized by completed, in-progress, and all.</p>
+          <p>Remember it's possible to submit repairs without being logged in. If you need to have a repair 
           changed to your username, then please contact me at: <a href="mailto:toby2494@gmail.com">toby2494@gmail.com</a></p>
+        </Col>
       </Row>
       <CollapsableMailInRepairCardsInProgress
           componentTitle="Repairs In Progress"
@@ -110,8 +112,6 @@ export const UserHome = (props) => {
             setShowRepairsInProgress(!showRepairsInProgress)
           }}
           repairList={repairsInProgress}
-          handleCurrentDeviceID={handleCurrentDeviceID}
-          currentDeviceID={currentDeviceID}
         />
         <CollapsableMailInRepairCardsCompleted
           componentTitle="Repairs Completed"
@@ -122,8 +122,6 @@ export const UserHome = (props) => {
             setShowRepairsCompleted(!showRepairsCompleted)
           }}
           repairList={repairsCompleted}
-          handleCurrentDeviceID={handleCurrentDeviceID}
-          currentDeviceID={currentDeviceID}
         />
         <CollapsableMailInRepairCardsAll
           componentTitle="All Repairs"
@@ -134,8 +132,6 @@ export const UserHome = (props) => {
             setShowRepairsAll(!showRepairsAll)
           }}
           repairList={repairsAll}
-          handleCurrentDeviceID={handleCurrentDeviceID}
-          currentDeviceID={currentDeviceID} 
         />
     </Container>
   );
