@@ -14,21 +14,23 @@ class Navigation extends React.Component {
   }
 
   handleLoggedIn = () => {
-    const token = localStorage.getItem('token');
-    let currentDate = new Date();
-    if (token) {
-      let decodedToken = jwt_decode(token);
-      
-      if (decodedToken.exp * 1000 < currentDate.getTime()) {
-        this.props.dispatch(logged_out_status());
-      } else {
-        this.props.dispatch(logged_in_status());
-      }
+    if (localStorage.getItem('token') === undefined) {
+      localStorage.removeItem('token');
     } else {
-      this.props.dispatch(logged_out_status());
-    } 
-    
-    
+      const token = localStorage.getItem('token');
+      let currentDate = new Date();
+      if (token) {
+        let decodedToken = jwt_decode(token);
+        
+        if (decodedToken.exp * 1000 < currentDate.getTime()) {
+          this.props.dispatch(logged_out_status());
+        } else {
+          this.props.dispatch(logged_in_status());
+        }
+      } else {
+        this.props.dispatch(logged_out_status());
+      } 
+    }
   };
 
   // What's happening is that the token is being handled before it is set in localstorage
