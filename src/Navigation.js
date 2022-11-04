@@ -31,10 +31,15 @@ class Navigation extends React.Component {
     
   };
 
+  // What's happening is that the token is being handled before it is set in localstorage
+
   componentDidMount() {
-    setInterval(() => {
-      this.handleLoggedIn();
-    }, 1000);
+    if(localStorage.getItem('token')){
+      setInterval(() => {
+        this.handleLoggedIn();
+      }, 1000);
+    }
+    
 
 
     }

@@ -5,8 +5,10 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Alert } from 'react-bootstrap';
+import {logged_in_status} from "../store/action";
+import {connect} from "react-redux";
 
-export default class Login extends Component {
+class Register extends Component {
     constructor(){
         super();
         this.state={
@@ -39,8 +41,10 @@ export default class Login extends Component {
           })
           .then(res=>res.json())
           .then(user_token=>{
+            // Warning: navigation is checking for token before it's set
               let { token } = user_token;
               localStorage.setItem('token', token);
+              this.props.dispatch(logged_in_status());
               this.props.history.push('/');
           });
         } else {
@@ -129,3 +133,10 @@ export default class Login extends Component {
           );
     }
 }
+
+const mapStateToProps = state => {
+  const loggedIn = state.loggedIn;
+  return {loggedIn};
+};
+
+export default connect(mapStateToProps)(withRouter(Register));

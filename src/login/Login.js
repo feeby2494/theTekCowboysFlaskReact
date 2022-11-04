@@ -58,6 +58,7 @@ class Login extends Component {
             return res.json();
         })
         .then(data => {
+          // Warning: navigation is checking for token before it's set
           localStorage.setItem('token', data.token);
           localStorage.setItem('public_id', jwt_decode(data.token).public_id);
           this.props.dispatch(logged_in_status());
