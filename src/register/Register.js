@@ -139,4 +139,4 @@ const mapStateToProps = state => {
   return {loggedIn};
 };
 
-export default connect(mapStateToProps)(withRouter(Register));
+export default connect(mapStateToProps)(Register);
