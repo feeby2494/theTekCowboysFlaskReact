@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col';
 import { Alert } from 'react-bootstrap';
 import {logged_in_status} from "../store/action";
 import {connect} from "react-redux";
+import jwt_decode from "jwt-decode";
+import {withRouter} from 'react-router';
 
 class Register extends Component {
     constructor(){
@@ -40,13 +42,40 @@ class Register extends Component {
             }
           })
           .then(res=>res.json())
-          .then(user_token=>{
+          .then(data => {
             // Warning: navigation is checking for token before it's set
-              let { token } = user_token;
-              localStorage.setItem('token', token);
-              this.props.dispatch(logged_in_status());
-              this.props.history.push('/');
+            localStorage.setItem('token', data.token);
+            localStorage.setItem('public_id', jwt_decode(data.token).public_id);
+            this.props.dispatch(logged_in_status());
+            
+            // Setting url depending on if user is admin, which means they are tech or site admin,
+            // Will create tech bool, and other bools to route login to right area
+            // Want to create extra HOC before these routes load to block if something is wrong with user
+            let nextUrl = '/';         
+  
+            (data.admin === true) ?
+              nextUrl = '/admin'
+            :
+              nextUrl = '/' + jwt_decode(data.token).public_id
+            console.log(jwt_decode(data.token).public_id)
+            this.props.history.push(nextUrl);
+            //return <Redirect to={'/' + jwt_decode(data.token).public_id}/>
+  
+          })
+          .catch(err => {
+            console.log(err)
+            this.setState({
+              errorMessage: `Error: ${err}`,
+              errorBool: true
+            });
           });
+          // .then(user_token=>{
+          //   // Warning: navigation is checking for token before it's set
+          //     let { token } = user_token;
+          //     localStorage.setItem('token', token);
+          //     this.props.dispatch(logged_in_status());
+          //     this.props.history.push('/');
+          // });
         } else {
           this.setState({
             passwordMatch: false

@@ -77,8 +77,9 @@ def create_user(current_user):
         new_user = SiteUser(public_id=str(uuid.uuid4()), username=data['username'], name = data['name'], email=data['email'], password=data['password'], admin=False)
         db.session.add(new_user)
         db.session.commit()
-
-        return Response(json.dumps({'message' : f'New user, {data["username"]}, created'}), mimetype='application/json')
+        # Do I want a brand new user to get a token and logged in right away? Or should I add email verification step in?
+        token = new_user.encode_auth_token( new_user.public_id )
+        return Response(json.dumps({'message' : f'New user, {data["username"]}, created', 'token' : token , 'admin': new_user.admin}), mimetype='application/json')
     except exc.IntegrityError as e:
         db.session.rollback()
         return Response(json.dumps({'message' : f'ERROR: Cannot create user: {data["username"]}. Due to ERROR: {e}'}), mimetype='application/json')
@@ -91,8 +92,9 @@ def self_register():
         new_user = SiteUser(public_id=str(uuid.uuid4()), username=data['username'], name = data['name'], email=data['email'], password=data['password'], admin=False)
         db.session.add(new_user)
         db.session.commit()
-
-        return Response(json.dumps({'message' : f'New user, {data["username"]}, created'}), mimetype='application/json')
+        # Do I want a brand new user to get a token and logged in right away? Or should I add email verification step in?
+        token = new_user.encode_auth_token( new_user.public_id )
+        return Response(json.dumps({'message' : f'New user, {data["username"]}, created', 'token' : token , 'admin': new_user.admin}), mimetype='application/json')
     except exc.IntegrityError as e:
         db.session.rollback()
         return Response(json.dumps({'message' : f'ERROR: Cannot create user: {data["username"]}. Due to ERROR: {e}'}), mimetype='application/json')
