@@ -59,7 +59,6 @@ export const UserHome = (props) => {
     })
     .then(res=>res.json())
     .then((response) => {
-      console.log(Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed === false))
       setRepairsAll(Object.keys(response).map((key, index) => {return response[key]}));
       setRepairsCompleted(Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed === true));
       setRepairsInProgress(Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed === false)); 
@@ -75,12 +74,16 @@ export const UserHome = (props) => {
     setCurrentDeviceID(event.target.id);
   }  
 
+  if (!public_id){
+    getUserInfo(props.match.params.personId);
+  }
+
   useEffect(() => {
-    if(repairsAll === null) {
-      getUserInfo(props.match.params.personId);
-      getRepairs(); 
-    }
-  }, [ props.match.params.personId, repairsAll]);
+    
+    
+    getRepairs(); 
+  
+  }, [ ]);
 
  
 
