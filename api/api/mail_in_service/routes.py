@@ -128,7 +128,8 @@ def mail_in_repair():
 @token_required
 def mail_in_repair_in_progress_by_user(current_user):
 
-
+    if current_user.id == 1:
+        return Response(json.dumps({"message" : "You have no orders, Were you logged in when making an order?"}), mimetype='application/json')
     #repairs = db.session.query(Mail_In_Repair).all()
     repairs = db.session.query(Mail_In_Repair, SiteUser).filter(SiteUser.id == current_user.id).join(SiteUser).all()
 
