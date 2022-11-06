@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Table from 'react-bootstrap/Table';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import MailInRepairCards from "./MailInRepairCards";
+import AdminRepairCards from "../components/AdminRepairCards";
 import { withCollapsableContainer } from 'hoc/withCollapsableContainer';
 
 class RepairAdmin extends Component {
@@ -18,6 +18,7 @@ class RepairAdmin extends Component {
     this.state = {
       // showModerator: false,
       showAdmin: false,
+      deviceCompleted: null,
       currentUser: undefined,
       username: '',
       email: '',
@@ -61,8 +62,6 @@ class RepairAdmin extends Component {
     this.handleNewLineItemChange = this.handleNewLineItemChange.bind(this);
     this.getGeneralLedgerLines = this.getGeneralLedgerLines.bind(this);
     this.postGeneralLedgerLine = this.postGeneralLedgerLine.bind(this);
-    this.getRepairsInProgress = this.getRepairsInProgress.bind(this);
-    this.getRepairsCompleted = this.getRepairsCompleted.bind(this);
     this.getRepairsAll = this.getRepairsAll.bind(this);
     this.setRepairComplete = this.setRepairComplete.bind(this);
     this.handleRepairsInProgress = this.handleRepairsInProgress.bind(this);
@@ -70,65 +69,8 @@ class RepairAdmin extends Component {
     this.handleRepairsAll = this.handleRepairsAll.bind(this);
     this.handleCurrentDeviceID = this.handleCurrentDeviceID.bind(this);
     this.componentDidMount = this.componentDidMount.bind(this)
-
+    this.handleDeviceCompleted = this.handleDeviceCompleted.bind(this)
     
-  }
-
-  getRepairsInProgress(currentState) {
-    // if(currentState.showAdmin){ 
-    // Don't remember what this was for and might not need it.
-      const headers = {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'mode': 'no-cors',
-      }
-
-      fetch(`http://127.0.0.1:5000/api/mail_in_repair_in_progress`, {
-            method: 'GET',
-            headers: headers,
-        })
-        .then(res=>res.json())
-        .then((response) => {
-          console.log(response);
-          this.setState({
-            repairsInProgress: response
-          });
-        })
-        .catch(err => {
-            console.log(err)
-            this.setState({
-              repairErrorMessage: `Error: ${err}`,
-              repairErrorBool: true,
-            });
-        });
-    // }
-  }
-
-  getRepairsCompleted() {
-    const headers = {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'mode': 'no-cors',
-    }
-
-    fetch(`http://127.0.0.1:5000/api/mail_in_repair_completed`, {
-          method: 'GET',
-          headers: headers,
-    })
-    .then(res=>res.json())
-    .then((response) => {
-      console.log(response);
-      this.setState({
-        repairsCompleted: response
-      });
-    })
-    .catch(err => {
-        console.log(err)
-        this.setState({
-          repairErrorMessage: `Error: ${err}`,
-          repairErrorBool: true,
-        });
-    });
   }
 
   getRepairsAll() {
@@ -171,14 +113,8 @@ class RepairAdmin extends Component {
           method: 'PATCH',
           headers: headers,
     })
-    // .then(res=>res.json())
-    // .then((response) => {
-    //   this.setState({
-    //     repairsAll: Object.keys(response).map((key, index) => {return response[key]}),
-    //     repairsCompleted: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == true),
-    //     repairsInProgress: Object.keys(response).map((key, index) => {return response[key]}).filter(obj => obj.repair_completed == false)
-    //   });
-    // })
+    .then(this.setState({}))
+    .then(() => this.getRepairsAll())
     .catch(err => {
         console.log(err)
         this.setState({
@@ -296,14 +232,21 @@ class RepairAdmin extends Component {
 
   handleCurrentDeviceID(event){
     this.setState({
-      currentDeviceID: event.target.id
-    })
+        currentDeviceID: event.target.id
+      });
   }  
+
+  handleDeviceCompleted(){
+    this.setState({
+      deviceCompleted: this.state.repairsAll.find(item => item.id === Number(this.state.currentDeviceID)).repair_completed
+    })
+  }
 
   componentDidMount(){
     // this.getUserInfo(this.props.match.params.personId);
     this.getGeneralLedgerLines();
     this.getRepairsAll(this.state);
+    
     
   }
 
@@ -324,9 +267,11 @@ class RepairAdmin extends Component {
           handleShowContent={this.handleRepairsInProgress}
           repairList={this.state.repairsInProgress}
           setRepairComplete={this.setRepairComplete}
+          deviceCompleted={this.deviceCompleted}
           handleCurrentDeviceID={this.handleCurrentDeviceID}
           currentDeviceID={this.state.currentDeviceID}
           getRepairsAll={this.getRepairsAll}
+          handleDeviceCompleted={this.handleDeviceCompleted}
         />
         <CollapsableMailInRepairCardsCompleted
           componentTitle="Repairs Completed"
@@ -336,9 +281,11 @@ class RepairAdmin extends Component {
           handleShowContent={this.handleRepairsCompleted}
           repairList={this.state.repairsCompleted}
           setRepairComplete={this.setRepairComplete}
+          deviceCompleted={this.deviceCompleted}
           handleCurrentDeviceID={this.handleCurrentDeviceID}
           currentDeviceID={this.state.currentDeviceID}
           getRepairsAll={this.getRepairsAll}
+          handleDeviceCompleted={this.handleDeviceCompleted}
         />
         <CollapsableMailInRepairCardsAll
           componentTitle="All Repairs"
@@ -348,9 +295,11 @@ class RepairAdmin extends Component {
           handleShowContent={this.handleRepairsAll}
           repairList={this.state.repairsAll}
           setRepairComplete={this.setRepairComplete}
+          deviceCompleted={this.deviceCompleted}
           handleCurrentDeviceID={this.handleCurrentDeviceID}
           currentDeviceID={this.state.currentDeviceID}
           getRepairsAll={this.getRepairsAll}
+          handleDeviceCompleted={this.handleDeviceCompleted}
         />
         <Row>
           <Col xs={12}>
@@ -488,9 +437,9 @@ class RepairAdmin extends Component {
 }
 
 // Enhanced Higher Order Components
-const CollapsableMailInRepairCardsInProgress = withCollapsableContainer(MailInRepairCards);
-const CollapsableMailInRepairCardsCompleted = withCollapsableContainer(MailInRepairCards);
-const CollapsableMailInRepairCardsAll = withCollapsableContainer(MailInRepairCards);
+const CollapsableMailInRepairCardsInProgress = withCollapsableContainer(AdminRepairCards);
+const CollapsableMailInRepairCardsCompleted = withCollapsableContainer(AdminRepairCards);
+const CollapsableMailInRepairCardsAll = withCollapsableContainer(AdminRepairCards);
 
 
 export default RepairAdmin;

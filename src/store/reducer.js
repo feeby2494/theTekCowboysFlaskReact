@@ -1,7 +1,8 @@
 import {LOGGED_IN_STATUS, LOGGED_OUT_STATUS} from "./action";
 
 const initialState = {
-    loggedIn: false
+    loggedIn: false,
+    currentDeviceID: 1
 };
 
 const reducer = (state = initialState, action) => {

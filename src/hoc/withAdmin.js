@@ -61,6 +61,11 @@ const withAdmin = (ComponentInside) => {
         console.log(this.state.currentPublicId);
         if(this.state.currentPublicId){
             this.checkUserAdmin();
+        } else {
+          this.setState({
+            redirect: true,
+            loading: false,
+          });
         }
       }
 
