@@ -31,6 +31,9 @@ class Navigation extends React.Component {
         this.props.dispatch(logged_out_status());
       } 
     }
+    if (localStorage.getItem('token') === undefined) {
+      localStorage.removeItem('token');
+    }
   };
 
   // What's happening is that the token is being handled before it is set in localstorage
