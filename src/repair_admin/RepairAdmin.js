@@ -7,7 +7,7 @@ import Table from 'react-bootstrap/Table';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import AdminRepairCards from "../components/AdminRepairCards";
-import { withCollapsableContainer } from 'hoc/withCollapsableContainer';
+import { withCollapsableAdminContainer } from 'hoc/withCollapsableAdminContainer';
 
 class RepairAdmin extends Component {
 
@@ -272,6 +272,7 @@ class RepairAdmin extends Component {
           currentDeviceID={this.state.currentDeviceID}
           getRepairsAll={this.getRepairsAll}
           handleDeviceCompleted={this.handleDeviceCompleted}
+          
         />
         <CollapsableMailInRepairCardsCompleted
           componentTitle="Repairs Completed"
@@ -286,6 +287,7 @@ class RepairAdmin extends Component {
           currentDeviceID={this.state.currentDeviceID}
           getRepairsAll={this.getRepairsAll}
           handleDeviceCompleted={this.handleDeviceCompleted}
+          
         />
         <CollapsableMailInRepairCardsAll
           componentTitle="All Repairs"
@@ -300,6 +302,7 @@ class RepairAdmin extends Component {
           currentDeviceID={this.state.currentDeviceID}
           getRepairsAll={this.getRepairsAll}
           handleDeviceCompleted={this.handleDeviceCompleted}
+          
         />
         <Row>
           <Col xs={12}>
@@ -437,9 +440,9 @@ class RepairAdmin extends Component {
 }
 
 // Enhanced Higher Order Components
-const CollapsableMailInRepairCardsInProgress = withCollapsableContainer(AdminRepairCards);
-const CollapsableMailInRepairCardsCompleted = withCollapsableContainer(AdminRepairCards);
-const CollapsableMailInRepairCardsAll = withCollapsableContainer(AdminRepairCards);
+const CollapsableMailInRepairCardsInProgress = withCollapsableAdminContainer(AdminRepairCards);
+const CollapsableMailInRepairCardsCompleted = withCollapsableAdminContainer(AdminRepairCards);
+const CollapsableMailInRepairCardsAll = withCollapsableAdminContainer(AdminRepairCards);
 
 
 export default RepairAdmin;

@@ -37,19 +37,19 @@ const CustomerRepairCards = (props) => {
                 props.repairList && props.repairList.map((repair) => {
                     return (
                         <Col md={4} className="my-2">
-                            <Card>
+                            <Card border="light" >
                                 <Card.Header as="h5">{repair.repair_brand}-{repair.repair_model} | id: {repair.id}</Card.Header>
                                 <Card.Body>
                                     <Card.Text>
                                         <h5>Device Info:</h5>
-                                        <ListGroup variant="flush">
-                                            <ListGroup.Item>Serial: {repair.repair_serial}</ListGroup.Item>
-                                            <ListGroup.Item>Brand-Model: {repair.repair_brand}-{repair.repair_model}</ListGroup.Item>
-                                            <ListGroup.Item>Issue: {repair.repair_issue}</ListGroup.Item>
+                                        <ListGroup variant="flush" >
+                                            <ListGroup.Item variant="light">Serial: {repair.repair_serial}</ListGroup.Item>
+                                            <ListGroup.Item variant="light">Brand-Model: {repair.repair_brand}-{repair.repair_model}</ListGroup.Item>
+                                            <ListGroup.Item variant="light">Issue: {repair.repair_issue}</ListGroup.Item>
                                         </ListGroup>
                                         
                                         <Col  className="my-2">
-                                          <Button id={repair.id} variant="light" onClick={(event) => {
+                                          <Button variant="outline-danger" id={repair.id}  onClick={(event) => {
                                             props.handleCurrentDeviceID(event);
                                             handleShow();
                                       
@@ -69,7 +69,7 @@ const CustomerRepairCards = (props) => {
                                                           {(props.repairList.find(item => item.id === Number(props.currentDeviceID))) &&
                                                             <>
                                                               <p>Repair Finished: {props.repairList.find(item => item.id === Number(props.currentDeviceID)).repair_completed ? "True" : "False"}</p>
-                                                              <Button onClick={() => {
+                                                              <Button variant="outline-danger" onClick={() => {
                                                                 setCurrentCompleted(!currentCompleted)
                                                                 props.setRepairComplete()
                                                                 
@@ -96,7 +96,7 @@ const CustomerRepairCards = (props) => {
                                               </Row>
                                             </Modal.Body>
                                             <Modal.Footer>
-                                                <Button variant="secondary" onClick={() => {
+                                                <Button variant="danger" onClick={() => {
                                                     handleClose();
                                                     
                                                     

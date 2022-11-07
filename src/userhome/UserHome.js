@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CustomerRepairCards from "../components/CustomerRepairCards";
-import { withCollapsableContainer } from 'hoc/withCollapsableContainer';
 import { withSmallCollContainer } from 'hoc/withSmallCollContainer';
 
 
