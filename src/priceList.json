@@ -1,5 +1,5 @@
 {
-    "samsung_devices": 
+    "samsung_phones": 
     [
         {
             "name": "Galaxy S4",
@@ -394,7 +394,7 @@
                 }
         }
     ],
-    "apple_devices": 
+    "apple_phones": 
         [
             {
                 "name": "iPhone 14 Pro Max",
