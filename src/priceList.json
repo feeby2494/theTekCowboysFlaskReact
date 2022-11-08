@@ -397,20 +397,430 @@
     "apple_devices": 
         [
             {
-                "name": "iPad 10.5 Pro",
+                "name": "iPhone 14 Pro Max",
                 "repairs": 
                     {
-                        "LCD/Glass": 150,
-                        "Battey": 80
+                        "LCD/Glass": 0,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 40,
+                        "Motherboard": 190,
+                        "Flat-Fee": 50,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
                     }
             },
             {
-                "name": "Macbook Air 2013-2017 A1466",
+                "name": "iPhone 14 Pro",
                 "repairs": 
                     {
-                        "LCD/Glass": 150,
-                        "Battey": 80,
-                        "LogicBoard": 200
+                        "LCD/Glass": 0,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 40,
+                        "Motherboard": 190,
+                        "Flat-Fee": 50,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 14 Plus",
+                "repairs": 
+                    {
+                        "LCD/Glass": 0,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 40,
+                        "Motherboard": 190,
+                        "Flat-Fee": 50,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 14",
+                "repairs": 
+                    {
+                        "LCD/Glass": 0,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 40,
+                        "Motherboard": 190,
+                        "Flat-Fee": 50,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 13 Pro Max",
+                "repairs": 
+                    {
+                        "LCD/Glass": 390,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 120,
+                        "Motherboard": 190,
+                        "Flat-Fee": 50,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 13 Pro",
+                "repairs": 
+                    {
+                        "LCD/Glass": 370,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 120,
+                        "Motherboard": 190,
+                        "Flat-Fee": 50,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 13",
+                "repairs": 
+                    {
+                        "LCD/Glass": 140,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 80,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 13 Mini",
+                "repairs": 
+                    {
+                        "LCD/Glass": 130,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 80,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 12 Pro Max",
+                "repairs": 
+                    {
+                        "LCD/Glass": 140,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 120,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 12 Pro",
+                "repairs": 
+                    {
+                        "LCD/Glass": 100,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 120,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 12",
+                "repairs": 
+                    {
+                        "LCD/Glass": 100,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 80,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 12 Mini",
+                "repairs": 
+                    {
+                        "LCD/Glass": 100,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 80,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 11 Pro Max",
+                "repairs": 
+                    {
+                        "LCD/Glass": 100,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 120,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 11 Pro",
+                "repairs": 
+                    {
+                        "LCD/Glass": 90,
+                        "OLED/Glass": 120,
+                        "Battey": 50,
+                        "Front Camera": 40,
+                        "Rear Camera": 120,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 40,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 11",
+                "repairs": 
+                    {
+                        "LCD/Glass": 80,
+                        "Battey": 40,
+                        "Front Camera": 40,
+                        "Rear Camera": 80,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone XS Max",
+                "repairs": 
+                    {
+                        "LCD/Glass": 90,
+                        "OLED/Glass": 120,
+                        "Highest Quality OLED/Glass": 140,
+                        "Battey": 40,
+                        "Front Camera": 40,
+                        "Rear Camera": 80,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone XS",
+                "repairs": 
+                    {
+                        "LCD/Glass": 80,
+                        "OLED/Glass": 110,
+                        "Highest Quality OLED/Glass": 120,
+                        "Battey": 40,
+                        "Front Camera": 40,
+                        "Rear Camera": 80,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone XR",
+                "repairs": 
+                    {
+                        "LCD/Glass": 80,
+                        "Battey": 40,
+                        "Front Camera": 30,
+                        "Rear Camera": 70,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone X",
+                "repairs": 
+                    {
+                        "LCD/Glass": 80,
+                        "OLED/Glass": 100,
+                        "Highest Quality OLED/Glass": 110,
+                        "Battey": 40,
+                        "Front Camera": 30,
+                        "Rear Camera": 70,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone X",
+                "repairs": 
+                    {
+                        "LCD/Glass": 70,
+                        "Battey": 40,
+                        "Front Camera": 30,
+                        "Rear Camera": 70,
+                        "Motherboard": 190,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 65
+                    }
+            },
+            {
+                "name": "iPhone 8 Plus",
+                "repairs": 
+                    {
+                        "LCD/Glass": 70,
+                        "Battey": 40,
+                        "Front Camera": 30,
+                        "Rear Camera": 60,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 55
+                    }
+            },
+            {
+                "name": "iPhone 8",
+                "repairs": 
+                    {
+                        "LCD/Glass": 70,
+                        "Battey": 40,
+                        "Front Camera": 30,
+                        "Rear Camera": 60,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 55
+                    }
+            },
+            {
+                "name": "iPhone 7 Plus",
+                "repairs": 
+                    {
+                        "LCD/Glass": 70,
+                        "Battey": 40,
+                        "Front Camera": 30,
+                        "Rear Camera": 50,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 50
+                    }
+            },
+            {
+                "name": "iPhone 7",
+                "repairs": 
+                    {
+                        "LCD/Glass": 60,
+                        "Battey": 40,
+                        "Front Camera": 30,
+                        "Rear Camera": 40,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 50
+                    }
+            },
+            {
+                "name": "iPhone 6S Plus",
+                "repairs": 
+                    {
+                        "LCD/Glass": 60,
+                        "Battey": 40,
+                        "Front Camera": 30,
+                        "Rear Camera": 30,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 50
+                    }
+            },
+            {
+                "name": "iPhone 6S",
+                "repairs": 
+                    {
+                        "LCD/Glass": 60,
+                        "Battey": 40,
+                        "Front Camera": 30,
+                        "Rear Camera": 30,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 50
+                    }
+            },
+            {
+                "name": "iPhone 6 Plus",
+                "repairs": 
+                    {
+                        "LCD/Glass": 60,
+                        "Battey": 30,
+                        "Front Camera": 30,
+                        "Rear Camera": 30,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 50
+                    }
+            },
+            {
+                "name": "iPhone 6",
+                "repairs": 
+                    {
+                        "LCD/Glass": 60,
+                        "Battey": 30,
+                        "Front Camera": 30,
+                        "Rear Camera": 30,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 50
+                    }
+            },
+            {
+                "name": "iPhone SE",
+                "repairs": 
+                    {
+                        "LCD/Glass": 60,
+                        "Battey": 30,
+                        "Front Camera": 30,
+                        "Rear Camera": 30,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 50
+                    }
+            },
+            {
+                "name": "iPhone 5/5S",
+                "repairs": 
+                    {
+                        "LCD/Glass": 60,
+                        "Battey": 30,
+                        "Front Camera": 30,
+                        "Rear Camera": 30,
+                        "Motherboard": 150,
+                        "Flat-Fee": 30,
+                        "Daughterboard": 30,
+                        "Charging Port": 50
                     }
             }
         ]
