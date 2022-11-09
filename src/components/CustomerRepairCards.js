@@ -65,7 +65,7 @@ const CustomerRepairCards = (props) => {
                                                   <Col xs={12}>
                                                       {currentDeviceID && 
                                                         <>
-                                                          <p>Repair Finished: {props.repairList.find(item => item.id === Number(currentDeviceID)).completed ? "True": "False"}</p>
+                                                          <p>Repair Finished: {props.repairList.find(item => item.id === Number(currentDeviceID)).repair_completed ? "True": "False"}</p>
                                                           <p>Serial: {
                                                             props.repairList.find(item => item.id === Number(currentDeviceID)).repair_serial
                                                           }</p>
