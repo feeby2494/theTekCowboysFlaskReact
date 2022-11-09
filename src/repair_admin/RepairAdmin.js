@@ -80,7 +80,7 @@ class RepairAdmin extends Component {
       'mode': 'no-cors',
     }
 
-    fetch(`http://127.0.0.1:5000/api/mail_in_repair`, {
+    fetch(`/api/mail_in_repair`, {
           method: 'GET',
           headers: headers,
     })
@@ -109,7 +109,7 @@ class RepairAdmin extends Component {
       'mode': 'no-cors',
     }
 
-    fetch(`http://127.0.0.1:5000/api/mail_in_repair/${this.state.currentDeviceID}/complete`, {
+    fetch(`/api/mail_in_repair/${this.state.currentDeviceID}/complete`, {
           method: 'PATCH',
           headers: headers,
     })

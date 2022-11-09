@@ -52,7 +52,7 @@ export const UserHome = (props) => {
       'x-access-token': localStorage.getItem('token')
     }
 
-    fetch(`http://127.0.0.1:5000/api/mail_in_repair_by_user`, {
+    fetch(`/api/mail_in_repair_by_user`, {
           method: 'GET',
           headers: headers,
     })
