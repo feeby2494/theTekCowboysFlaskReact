@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CustomerRepairCards from "../components/CustomerRepairCards";
 import { withSmallCollContainer } from 'hoc/withSmallCollContainer';
-
+import { Link } from "react-router-dom";
 
 
 export const UserHome = (props) => {
@@ -92,6 +92,9 @@ export const UserHome = (props) => {
 
   return(
     <Container>
+      <Row className="my-3">
+          <Link className="btn btn-info" to="/">Back to homepage</Link>
+        </Row>
       <Row className="my-3 align-items-center">
         <Col sm={12} md={4} >
           { username && <h2>Welcome, {username}!</h2> }
