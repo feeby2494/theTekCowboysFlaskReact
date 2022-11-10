@@ -1,6 +1,6 @@
 {
-  "name": "japanese-study",
-  "version": "0.1.0",
+  "name": "seolynn-mail-in-repair_services",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

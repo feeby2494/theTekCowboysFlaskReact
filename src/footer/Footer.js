@@ -29,13 +29,8 @@ export default class Footer extends Component {
 
                 </Col>
                 <Col >
-                  {/* <!-- Grid column -->*/}
-                    {/* <!-- Content -->*/}
-
-                    <hr className="d-md-none  pb-2" />
-                  {/* <!-- Grid column -->*/}
-
-
+                  <p>Service Contact: <a href="mailto:toby2494@gmail.com">toby2494@gmail</a></p>
+                  {/* <hr className="d-md-none  pb-2" /> */}
                 </Col>
               </Row>
             </Container>
