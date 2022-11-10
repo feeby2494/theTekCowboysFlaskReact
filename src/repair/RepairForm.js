@@ -237,29 +237,29 @@ const RepairForm = (props) => {
               <Form noValidate validated={validatedAddress} onSubmit={handleStepThree}>
                 <Form.Group className="mb-3" controlId="RepairFormModal.Address">
                 <Form.Label>Address Line One:</Form.Label>
-                <Form.Control name="addressLineOne" value={addressLineOne} type="name" rows={1} onChange={(e) => setAddressLineOne(e.target.value)} required/>
+                <Form.Control placeholder="Address Line 1" name="addressLineOne" value={addressLineOne} type="name" rows={1} onChange={(e) => setAddressLineOne(e.target.value)} required/>
                 <Form.Control.Feedback type="invalid">
                   Address line one: Street Address
                 </Form.Control.Feedback>
                 <Form.Label>Address Line Two:</Form.Label>
-                <Form.Control name="addressLineTwo" value={addressLineTwo} type="name" rows={1} onChange={(e) => setAddressLineTwo(e.target.value)}/>
+                <Form.Control placeholder="Address Line 2" name="addressLineTwo" value={addressLineTwo} type="name" rows={1} onChange={(e) => setAddressLineTwo(e.target.value)}/>
                 <Form.Label>Address City:</Form.Label>
-                <Form.Control name="addressCity" value={addressCity} type="name" onChange={(e) => setAddressCity(e.target.value)} required/>
+                <Form.Control placeholder="City" name="addressCity" value={addressCity} type="name" onChange={(e) => setAddressCity(e.target.value)} required/>
                 <Form.Control.Feedback type="invalid">
                   City Required
                 </Form.Control.Feedback>
                 <Form.Label>Address State:</Form.Label>
-                <Form.Control name="addressState" value={addressState} type="name" onChange={(e) => setAddressState(e.target.value)} required/>
+                <Form.Control placeholder="State" name="addressState" value={addressState} type="name" onChange={(e) => setAddressState(e.target.value)} required/>
                 <Form.Control.Feedback type="invalid">
                   State or Province Required
                 </Form.Control.Feedback>
                 <Form.Label>Address PostalCode:</Form.Label>
-                <Form.Control name="addressPostalCode" value={addressPostalCode} type="name" onChange={(e) => setAddressPostalCode(e.target.value)} required/>
+                <Form.Control placeholder="Postal/Zip code" name="addressPostalCode" value={addressPostalCode} type="name" onChange={(e) => setAddressPostalCode(e.target.value)} required/>
                 <Form.Control.Feedback type="invalid">
                   Postal or Zip Code Required
                 </Form.Control.Feedback>
                 <Form.Label>Address Country:</Form.Label>
-                <Form.Control name="addressCountry" value={addressCountry} type="name" onChange={(e) => setAddressCountry(e.target.value)} required/>
+                <Form.Control placeholder="Nation of Residence" name="addressCountry" value={addressCountry} type="name" onChange={(e) => setAddressCountry(e.target.value)} required/>
                 <Form.Control.Feedback type="invalid">
                   Nation of Residence Required
                 </Form.Control.Feedback>
