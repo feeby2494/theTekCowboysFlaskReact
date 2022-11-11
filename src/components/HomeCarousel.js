@@ -19,9 +19,13 @@ export const HomeCarousel = () => {
           src= {electronic_lab_workbench_1}
           alt="My electronic lab workbench"
         />
-        <Carousel.Caption className="carousel-caption-backgound">
-          <h3>My Electronic Lab Workbench</h3>
-          <p>This is where the magic happens. This is my workbench for electronic repair and building.</p>
+        <Carousel.Caption className="carousel-caption-backgound d-sm-none">
+          <h3 className="h5">My Electronic Lab Workbench</h3>
+          <p className="p small">This is where the magic happens. This is my workbench for electronic repair and building.</p>
+        </Carousel.Caption>
+        <Carousel.Caption className="carousel-caption-backgound d-none d-sm-block">
+          <h3 className="">My Electronic Lab Workbench</h3>
+          <p className="">This is where the magic happens. This is my workbench for electronic repair and building.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -33,9 +37,13 @@ export const HomeCarousel = () => {
           alt="IPad in the process of being repaired"
         />
 
-        <Carousel.Caption className="carousel-caption-backgound">
-          <h3>Apple Mobile Device Repair</h3>
-          <p>With 5 years of Apple device repair under my belt, I prefer quality over production numbers and enjoy deep problems.</p>
+        <Carousel.Caption className="carousel-caption-backgound d-sm-none">
+          <h3 className="h5">Apple Mobile Device Repair</h3>
+          <p className="p small">With 5 years of Apple device repair under my belt, I prefer quality over production numbers and enjoy deep problems.</p>
+        </Carousel.Caption>
+        <Carousel.Caption className="carousel-caption-backgound d-none d-sm-block">
+          <h3 className="">Apple Mobile Device Repair</h3>
+          <p className="">With 5 years of Apple device repair under my belt, I prefer quality over production numbers and enjoy deep problems.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -47,11 +55,13 @@ export const HomeCarousel = () => {
           alt="Inside of the mobile battery pack I made."
         />
 
-        <Carousel.Caption className="carousel-caption-backgound">
-          <h3>Love building things like mobile solar battery packs.</h3>
-          <p>
-            My goal is to build systems off the grid that provide useful automation to users.
-          </p>
+        <Carousel.Caption className="carousel-caption-backgound d-sm-none">
+          <h3 className="h5">Love building things like mobile solar battery packs.</h3>
+          <p className="p small">My goal is to build systems off the grid that provide useful automation to users.</p>
+        </Carousel.Caption>
+        <Carousel.Caption className="carousel-caption-backgound d-none d-sm-block">
+          <h3 className="">Love building things like mobile solar battery packs.</h3>
+          <p className="">My goal is to build systems off the grid that provide useful automation to users.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -63,11 +73,13 @@ export const HomeCarousel = () => {
           alt="Repairing and modifiying my Honda Civic."
         />
 
-        <Carousel.Caption className="carousel-caption-backgound">
-          <h3>Love Automotive Repair and Modification.</h3>
-          <p>
-            Gearhead by birth, I love lightweight, slow cars. I modify them and see how much I can get out of them.
-          </p>
+        <Carousel.Caption className="carousel-caption-backgound d-sm-none">
+          <h3 className="h5">Love Automotive Repair and Modification.</h3>
+          <p className="p small">Gearhead by birth, I love lightweight, slow cars. I modify them and see how much I can get out of them.</p>
+        </Carousel.Caption>
+        <Carousel.Caption className="carousel-caption-backgound d-none d-sm-block">
+          <h3 className="">Love Automotive Repair and Modification.</h3>
+          <p className="">Gearhead by birth, I love lightweight, slow cars. I modify them and see how much I can get out of them.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
