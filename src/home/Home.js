@@ -273,21 +273,6 @@ export default class Home extends Component {
                             </CollapsableVideoList>    */}
                             {/* <HomeCarousel /> */}
                             <HomeIntroduction />
-                            
-                            
-                            
-                            <WebServiceCard 
-                                handleInputChange={this.handleInputChange}
-                                web_service_first_name={this.state.web_service_first_name}
-                                web_service_last_name={this.state.web_service_last_name}
-                                web_service_email={this.state.web_service_email}
-                                web_service_phone={this.state.web_service_phone}
-                                web_service_project_explanation={this.state.web_service_project_explanation}
-                                web_service_extra_details={this.state.web_service_extra_details}
-                                webServiceErrorMessage={this.state.webServiceErrorMessage}
-                                webServiceErrorBool={this.state.webServiceErrorBool}
-                                submitWebProject={this.submitWebProject}
-                            />
                             <RepairCard 
                                 handleInputChange={this.handleInputChange}
                                 repair_first_name={this.state.repair_first_name}
@@ -307,6 +292,18 @@ export default class Home extends Component {
                                 repairErrorBool={this.state.repairErrorBool}
                                 repairErrorMessage={this.state.repairErrorMessage}
                                 submitRepair={this.submitRepair}
+                            />
+                            <WebServiceCard 
+                                handleInputChange={this.handleInputChange}
+                                web_service_first_name={this.state.web_service_first_name}
+                                web_service_last_name={this.state.web_service_last_name}
+                                web_service_email={this.state.web_service_email}
+                                web_service_phone={this.state.web_service_phone}
+                                web_service_project_explanation={this.state.web_service_project_explanation}
+                                web_service_extra_details={this.state.web_service_extra_details}
+                                webServiceErrorMessage={this.state.webServiceErrorMessage}
+                                webServiceErrorBool={this.state.webServiceErrorBool}
+                                submitWebProject={this.submitWebProject}
                             />
                             <CollapsablePortfolio componentTitle="Portfolio" button_text="Show Portfolio" id_name="portfolio" showContent={this.state.showPortfolio} handleShowContent={this.handlePortfolio}/>
                         </Container>
