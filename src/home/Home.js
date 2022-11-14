@@ -4,6 +4,7 @@ import WebServiceCard from 'web_services/WebServiceCard';
 import RepairCard from '../repair/RepairCard';
 import { HomeCarousel } from 'components/HomeCarousel';
 import { withSmallCollContainer } from '../hoc/withSmallCollContainer';
+import { HomeIntroduction } from 'components/HomeIntroduction';
 // import OffCanvesOrderStatus from 'components/OffCanvesOrderStatus';
 
 // Main Component for homepage
@@ -270,7 +271,8 @@ export default class Home extends Component {
                                 fg1CivicVideos={this.state.fg1CivicVideos} 
                                 message={this.state.message}>
                             </CollapsableVideoList>    */}
-                            <HomeCarousel />
+                            {/* <HomeCarousel /> */}
+                            <HomeIntroduction />
                             
                             
                             
