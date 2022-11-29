@@ -29,7 +29,12 @@ export default class Footer extends Component {
 
                 </Col>
                 <Col >
-                  <p>Service Contact: <a href="mailto:toby2494@gmail.com">toby2494@gmail</a></p>
+                  <p>
+                  Email: <a class="mr-2" href="mailto:toby2494@gmail.com">toby2494@gmail.com</a>
+                  Phone: <a href="tel:19724409156">1-972-440-9156</a>
+                  </p>
+                    
+                  
                   {/* <hr className="d-md-none  pb-2" /> */}
                 </Col>
               </Row>
