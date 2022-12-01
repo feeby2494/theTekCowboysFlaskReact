@@ -2,7 +2,7 @@ from crypt import methods
 from api import app, db
 from flask import request, Response
 import json
-from .models import Mail_In_Repair, Mail_In_Web
+from .models import Mail_In_Repair, Mail_In_Web, Work_Order, Repair, Customer_Contact, Customer_Address
 from api.site_user.models import SiteUser
 import datetime
 from sqlalchemy import exc
@@ -14,9 +14,16 @@ def dateSerializer(o):
     if isinstance(o, datetime.datetime):
         return o.__str__()
 
+def get_user_id(data):
+    user_id = 1 # if user is not logged in; make them a generic user in DB
+    if data['repair_user_public_id']: # if user is logged in
+        user_id = db.session.query(SiteUser).filter_by(public_id=data['repair_user_public_id']).first().id 
+    return user_id
+
 def get_updated_mail_in_repairs(repairs):
     repair_list = {}
-    
+
+    # repair["Mail_In_Repair"].id refers to a joined sql query; this is where the "Mail_In_Repair" vs "Site_User" comes from (name of joined tables)
     for repair in repairs:
         repair_list[repair["Mail_In_Repair"].id] = {}
         repair_list[repair["Mail_In_Repair"].id]["id"] = repair["Mail_In_Repair"].id
@@ -40,6 +47,173 @@ def get_updated_mail_in_repairs(repairs):
         repair_list[repair["Mail_In_Repair"].id]["repair_user_public_id"] = repair["SiteUser"].public_id
         repair_list[repair["Mail_In_Repair"].id]["repair_username"] = repair["SiteUser"].username
     return repair_list
+
+def build_one_repair(repair, work_order_id, user_id):
+    try:
+        new_repair = Repair(
+            brand = repair['brand'],
+            model = repair['model'],
+            serial = repair['serial'],
+            issue = repair['issue'],
+            user_id = user_id,
+            work_order_id = work_order_id
+        )
+    except Exception as err:
+        print(f'Cannot build Repair for device serial: {repair["repair_serial"]} due to: {err}')
+    return new_repair
+
+def build_repairs(data, work_order_id, user_id):
+    
+    ### ONLY FOR DETRACT APP'S ITEMS ###
+    itemList = []
+    
+    # many repairs
+    if len(data["repairs"]) > 1:
+        try:
+            for repair in data['repairs']:
+                new_repair = build_one_repair(repair, work_order_id, user_id)
+                db.session.add(new_repair)
+                db.session.commit()
+
+                itemList.append({
+                    "sku": f"{new_repair.serial}",
+                    "description": f"{new_repair.brand}-{new_repair.model}\nIssue: {new_repair.issue}",
+                    "quantity": 1
+                })
+        except Exception as err:
+            print(f'Cannot build Repairs due to: {err}')
+    # one repair
+    if len(data["repairs"]) == 1:
+        try:
+            new_repair = build_one_repair(data['repairs'][0], work_order_id, user_id)
+            db.session.add(new_repair)
+            db.session.commit()
+
+            itemList.append({
+                "sku": f"{new_repair.serial}",
+                "description": f"{new_repair.brand}-{new_repair.model}\nIssue: {new_repair.issue}",
+                "quantity": 1
+            })
+        except Exception as err:
+            print(f'Cannot build Repair due to: {err}')
+    # zero repair
+    if len(data["repairs"]) < 1:
+        try:
+            empty_repair = {
+                'brand': 'none',
+                'model': 'none',
+                'serial': 'none',
+                'issue': 'none',
+            }
+            for repair in data['repairs']:
+                new_repair = build_one_repair(empty_repair, work_order_id, user_id)
+                db.session.add(new_repair)
+                db.session.commit()
+
+                itemList.append({
+                    "sku": f"{new_repair.serial}",
+                    "description": f"{new_repair.brand}-{new_repair.model}\nIssue: {new_repair.issue}",
+                    "quantity": 1
+                })
+        except Exception as err:
+            print(f'Cannot build Repairs due to: {err}')
+    return itemList # Need to return a list of repairs to use in Detract app to populate the 'Items'
+    
+
+def get_updated_work_orders(work_orders):
+    work_order_list = {}
+    
+    # repair["Mail_In_Repair"].id refers to a joined sql query; this is where the "Mail_In_Repair" vs "Site_User" comes from (name of joined tables)
+    for order in work_orders:
+        work_order_list[order["Work_Order"].id] = {}
+        work_order_list[order["Work_Order"].id]["id"] = order["Work_order"].id
+        work_order_list[order["Work_Order"].id]["completed"] = order["Work_order"].completed
+        work_order_list[order["Work_Order"].id]["submitted_date"] = dateSerializer(order["Work_order"].submitted_date)
+        work_order_list[order["Work_Order"].id]["delivery_method"] = order["Work_order"].delivery_method
+        work_order_list[order["Work_Order"].id]["collection_date"] = dateSerializer(order["Work_order"].collection_date)
+        work_order_list[order["Work_Order"].id]["user_id"] = order["Work_order"].user_id
+        work_order_list[order["Work_Order"].id]["repair_list"] = order["Work_order"].repair_list 
+    return work_order_list
+
+def build_wo(wo_data, user_id):
+    try:
+        new_wo = Work_Order(
+            delivery_method = wo_data["delivery_method"],
+            collection_date = dateSerializer(wo_data["collection_date"]),
+            user_id = user_id
+        )
+        db.session.add(new_wo)
+        db.session.commit()
+    except Exception as err:
+        print(f'Cannot build Work Order due to: {err}')
+    
+    return new_wo # should be able to access id column by: new_wo.id after commiting
+
+def create_cust_contact(data, user_id, work_order_id):
+    try:
+        cust_contact = Customer_Contact(
+            first_name = data['first_name'],
+            last_name = data['last_name'],
+            email = data['email'],
+            phone = data['phone'],
+            user_id = user_id,
+            work_order_id = work_order_id
+        )
+        db.session.add(cust_contact)
+        db.session.commit()
+    except Exception as err:
+        print(f'Cannot build Customer Contact due to: {err}')
+    return cust_contact
+
+def create_cust_address(data, user_id, work_order_id):
+    try:
+        cust_address = Customer_Address(
+            street_line_one = data['street_line_one'],
+            street_line_two = data['street_line_two'],
+            city = data['city'],
+            state = data['state'],
+            postal_code = data['postal_code'],
+            country = data['country'],
+            user_id = user_id,
+            work_order_id = work_order_id
+        )
+        db.session.add(cust_address)
+        db.session.commit()
+    except Exception as err:
+        print(f'Cannot build Customer Address due to: {err}')
+    return cust_address
+
+# This will be the new "repair submission" that makes a work order and all the repairs in one batch
+@app.route('/api/work_order', methods=['GET', 'POST'])
+def work_order():
+    if request.method == "GET":
+        work_orders = db.session.query(Work_Order, SiteUser).join(SiteUser).all()
+        work_order_list = get_updated_work_orders(work_orders)
+        
+        return Response(json.dumps(work_order_list), mimetype='application/json')
+    
+    if request.method == "POST":
+        # Don't remember why I had to pass force=True as an argument
+        data = request.get_json(force=True)
+        user_id = get_user_id(data) # get user id
+        new_wo = build_wo(data, user_id) # build work order
+
+        # build each repair or repairs tied to work_order and user; Also returns 'items' list for DETRACT APP
+        itemList = build_repairs(data, new_wo.id, user_id) 
+
+        # need to create the Customer Address and Customer Constact
+        cust_contact = create_cust_contact(data['cutomer_contact'])
+        cust_address = create_cust_address(data['customer_address'])
+
+        # if date['delivery_method'] is local, then start post request to DETRACT APP with work_order and itemList
+
+        
+        
+        
+        
+         
+        
+    
 
 @app.route('/api/mail_in_repair', methods=['GET', 'POST'])
 def mail_in_repair():
