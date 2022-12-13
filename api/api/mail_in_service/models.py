@@ -36,6 +36,7 @@ class Repair(db.Model):
 ################# Customer Contact: ###
 class Customer_Contact(db.Model):
     __tablename__ = "customer_contact"
+    id = db.Column(db.Integer, primary_key=True)
     first_name = db.Column(db.String)
     last_name = db.Column(db.String)
     email = db.Column(db.String)
@@ -49,6 +50,7 @@ class Customer_Contact(db.Model):
 ################# Customer Address: ###
 class Customer_Address(db.Model):
     __tablename__ = "customer_address"
+    id = db.Column(db.Integer, primary_key=True)
     street_line_one = db.Column(db.String)
     street_line_two = db.Column(db.String)
     city = db.Column(db.String)
