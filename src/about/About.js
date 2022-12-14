@@ -21,12 +21,15 @@ export default class About extends Component {
               </Row>
               <Row className="mt-md-5 mt-2">
                 <Col lg={6} md={7} sm={12} className="text-start">
-                  <h5>Services Provided:</h5>
+                  <h5>Mailing Address:</h5>
+                  <ListGroup variant="flush">
+                    <ListGroup.Item>513 Grace Ln</ListGroup.Item>
+                    <ListGroup.Item>Coppell, TX 75019</ListGroup.Item>
+                  </ListGroup>
+                  <h5 className='mt-3'>Services Provided:</h5>
                   <ListGroup variant="flush">
                     <ListGroup.Item>Full Stack Web Development</ListGroup.Item>
                     <ListGroup.Item>Micro Electronic Repair</ListGroup.Item>
-                    <ListGroup.Item>Educational Development</ListGroup.Item>
-                    <ListGroup.Item>Microcontroller Automation</ListGroup.Item>
                     <ListGroup.Item>Automotive Performance</ListGroup.Item>
                   </ListGroup>
                 </Col>
@@ -34,6 +37,9 @@ export default class About extends Component {
                 <Col lg={5} md={4} sm={12} className="mt-3 mt-md-0">
                   <Image className="profile-img mx-auto d-block" roundedCircle thumbnail fluid src={profileImage} />
                 </Col>
+              </Row>
+              <Row className="mt-md-5 mt-2">
+              
               </Row>
             </Container>
         )
