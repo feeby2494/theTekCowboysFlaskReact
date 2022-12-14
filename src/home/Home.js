@@ -43,7 +43,11 @@ export default class Home extends Component {
             repair_issue: '',
             repairErrorBool: false,
             repairErrorMessage: null,
-            repairUser: null
+            repairUser: null,
+            linkEbayMBBoards: "https://www.ebay.com/itm/234527578091?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=tebdRjHwQBi&sssrc=2566055&ssuid=tebdRjHwQBi&widget_ver=artemis&media=COPY",
+            linkEbayIPBoards: "https://www.ebay.com/itm/234619696165?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=tebdRjHwQBi&sssrc=2566055&ssuid=tebdRjHwQBi&widget_ver=artemis&media=COPY",
+            linkEbayIPCP: "https://www.ebay.com/itm/234820277889?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=tebdRjHwQBi&sssrc=2524149&ssuid=tebdRjHwQBi&widget_ver=artemis&media=COPY",
+            linkEbayIPTS: "https://www.ebay.com/itm/234820285845?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=tebdRjHwQBi&sssrc=2524149&ssuid=tebdRjHwQBi&widget_ver=artemis&media=COPY"
         }
         this.handlePortfolio = this.handlePortfolio.bind(this);
         this.handleVideos = this.handleVideos.bind(this);
@@ -272,7 +276,12 @@ export default class Home extends Component {
                                 message={this.state.message}>
                             </CollapsableVideoList>    */}
                             {/* <HomeCarousel /> */}
-                            <HomeIntroduction />
+                            <HomeIntroduction 
+                                linkEbayMBBoards={this.state.linkEbayMBBoards}
+                                linkEbayIPBoards={this.state.linkEbayIPBoards}
+                                linkEbayIPCP={this.state.linkEbayIPCP}
+                                linkEbayIPTS={this.state.linkEbayIPTS}
+                            />
                             <RepairCard 
                                 handleInputChange={this.handleInputChange}
                                 repair_first_name={this.state.repair_first_name}
