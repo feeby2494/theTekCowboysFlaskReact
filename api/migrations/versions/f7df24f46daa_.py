@@ -21,16 +21,16 @@ def upgrade():
     op.create_foreign_key(None, 'address', 'site_user', ['user_id'], ['id'])
     op.drop_constraint('ledger_line_item_created_by_fkey', 'ledger_line_item', type_='foreignkey')
     op.create_foreign_key(None, 'ledger_line_item', 'site_user', ['created_by'], ['id'])
-    op.add_column('mail_in_repair', sa.Column('repair_date_received', sa.DateTime(), nullable=True))
-    op.add_column('mail_in_repair', sa.Column('repair_date_completed', sa.DateTime(), nullable=True))
+    # op.add_column('mail_in_repair', sa.Column('repair_date_received', sa.DateTime(), nullable=True))
+    # op.add_column('mail_in_repair', sa.Column('repair_date_completed', sa.DateTime(), nullable=True))
     op.drop_constraint('mail_in_repair_repair_user_id_fkey', 'mail_in_repair', type_='foreignkey')
     op.create_foreign_key(None, 'mail_in_repair', 'site_user', ['repair_user_id'], ['id'])
     op.drop_constraint('mail_in_web_web_service_user_id_fkey', 'mail_in_web', type_='foreignkey')
     op.create_foreign_key(None, 'mail_in_web', 'site_user', ['web_service_user_id'], ['id'])
-    op.drop_constraint('point_created_by_fkey', 'point', type_='foreignkey')
-    op.create_foreign_key(None, 'point', 'site_user', ['created_by'], ['id'])
-    op.drop_constraint('todo_user_id_fkey', 'todo', type_='foreignkey')
-    op.create_foreign_key(None, 'todo', 'site_user', ['user_id'], ['id'])
+    # op.drop_constraint('point_created_by_fkey', 'point', type_='foreignkey')
+    # op.create_foreign_key(None, 'point', 'site_user', ['created_by'], ['id'])
+    # op.drop_constraint('todo_user_id_fkey', 'todo', type_='foreignkey')
+    # op.create_foreign_key(None, 'todo', 'site_user', ['user_id'], ['id'])
     # ### end Alembic commands ###
 
 

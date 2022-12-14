@@ -70,7 +70,7 @@ def upgrade():
     sa.ForeignKeyConstraint(['work_order_id'], ['work_order.id'], ),
     sa.PrimaryKeyConstraint('id')
     )
-    op.drop_table('user')
+    # op.drop_table('user')
     op.add_column('mail_in_repair', sa.Column('work_order_id', sa.Integer(), nullable=True))
     op.create_foreign_key(None, 'mail_in_repair', 'work_order', ['work_order_id'], ['id'])
     # ### end Alembic commands ###
