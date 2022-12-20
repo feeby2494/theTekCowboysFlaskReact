@@ -13,7 +13,7 @@ export const HomeIntroduction = (props) => {
         </Col>
         <Col md="6">
           <h3>Special Offers:</h3>
-          <a href={props.linkEbayMBBoards}><Button className="mb-2" variant="success">$80 Macbook Board Repairs on Ebay!</Button></a>
+          <a href={props.linkEbayMBBoards}><Button className="mb-2" variant="success">$150 Macbook Board Repairs on Ebay!</Button></a>
           <a href={props.linkEbayIPBoards}><Button className="mb-2" variant="success">$80 iPad Board Repairs on Ebay!</Button></a>
           <a href={props.linkEbayIPCP}><Button className="mb-2" variant="success">$65 iPad Charging Port Repairs on Ebay!</Button></a>
           <a href={props.linkEbayIPTS}><Button variant="success">$80 iPad Tristar Replacement on Ebay!</Button></a>
