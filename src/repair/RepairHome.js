@@ -17,7 +17,7 @@ const RepairHome = (props) => {
                     <Container>
                         <Row>
                             <Col lg={12}>
-                                <div className="col-12 shadow mb-5 bg-white rounded mt-3">
+                                <div className="w-100 shadow mb-5 bg-white rounded mt-3">
                                     <Accordion className="" defaultActiveKey="1">
                                         <Accordion.Toggle className='btn btn-info w-100' eventKey="1" onClick={handleShow}>
                                             Repair Details (Click to Hide)
