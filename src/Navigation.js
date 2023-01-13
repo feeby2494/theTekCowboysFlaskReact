@@ -61,56 +61,29 @@ class Navigation extends React.Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/price_list">Price List</Nav.Link>
-            <Nav.Link href="/about">About Us</Nav.Link>
-            <Nav.Link href="/admin">Admin</Nav.Link>
-
-            {/* <NavDropdown title="Travel Preparation" id="basic-nav-dropdown">
-
-              <NavDropdown.Item href="/flashcards">Learn Japanese or Korean Vocab</NavDropdown.Item>
-              <NavDropdown.Item href="/genki_one">Genki I Grammar Study</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/points">Points</NavDropdown.Item>
-              { /*
-              <NavDropdown.Item href="#action/3.4">Work and Study Opportunities</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Living in Korea</NavDropdown.Item>
-              
+            <Nav.Link href="/repair">Repair</Nav.Link>
+            <NavDropdown className="col align-self-end" title="More Info" id="dropdown-nav-info">
+              <NavDropdown.Item href="/about">About Us</NavDropdown.Item>
+              <NavDropdown.Item href="/price_list">Price List</NavDropdown.Item>  
+            </NavDropdown> 
+            
+            <NavDropdown className="col align-self-end" title="User Managment" id="dropdown-nav-user">
+              {
+                (this.props.loggedIn === true) ?
+                <>
+                  <NavDropdown.Item href="/logout">logout</NavDropdown.Item> 
+                  <NavDropdown.Item href={'/' + localStorage.getItem('public_id')}>User Home</NavDropdown.Item>
+                  
+                </>
+                :
+                <>
+                  <NavDropdown.Item href="/login">Login</NavDropdown.Item>
+                  <NavDropdown.Item href="/register">Register</NavDropdown.Item>
+                </>
               }
-              </NavDropdown> 
-            */}
-            {/*
-              <NavDropdown title="Local Culture" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">DFW Korean Spots</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">DFW Japanese Spots</NavDropdown.Item>
-                <NavDropdown.Divider />
-
-              </NavDropdown>
-            */}
-            {/*
-              <NavDropdown title="Services" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/device_repair">Device Repair</NavDropdown.Item>
-                <NavDropdown.Item href="/language_tutoring">Language Tutoring</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/web_project">Web Projects</NavDropdown.Item>
-              </NavDropdown>
-            */}
-
-            {
-              (this.props.loggedIn === true) ?
-              <>
-                <Nav.Link href="/logout">logout</Nav.Link> 
-                <Nav.Link href={'/' + localStorage.getItem('public_id')}>User Home</Nav.Link>
-                
-              </>
-              :
-              <>
-                <Nav.Link href="/login">Login</Nav.Link>
-                <Nav.Link href="/register">Register</Nav.Link>
-              </>
-            }
-
-            
-            
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/admin">Admin</NavDropdown.Item>
+            </NavDropdown> 
           </Nav>
         </Navbar.Collapse>
       </Navbar>

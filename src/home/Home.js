@@ -6,6 +6,8 @@ import { HomeCarousel } from 'components/HomeCarousel';
 import { withSmallCollContainer } from '../hoc/withSmallCollContainer';
 import { HomeIntroduction } from 'components/HomeIntroduction';
 // import OffCanvesOrderStatus from 'components/OffCanvesOrderStatus';
+import RepairHome from 'repair/RepairHome';
+import RepairAccordion from 'repair/RepairAccordion';
 
 // Main Component for homepage
 export default class Home extends Component {
@@ -234,10 +236,6 @@ export default class Home extends Component {
 
     componentDidMount(){
         
-        //.then(console.log(this.state.e110CorollaVideos))
-        // .then(this.getVideos('PLq3f8HX2eMEOKTcBfY37BfTixHiLi9K1e', 'e110CorollaVideos'))
-        // .then(this.getVideos('PLq3f8HX2eMEPx3TTxOyJCCwlLRDPL-zTv', 'e170CorollaVideos'))
-        // .then(this.getVideos('PLq3f8HX2eMEMzZWjfwIS07nAQMLzrzcpJ', 'fg1CorollaVideos'))
         
     }
     render(){
@@ -247,42 +245,13 @@ export default class Home extends Component {
                     <Col lg={1}></Col>
                     <Col lg={10}>
                         <Container>
-                            {/* <Row>
-                                <Col>
-                                <h3>Test</h3>
-                                <Button onClick={this.getUserInfo}>Get User Info in Console</Button>
-                                </Col>
-                            </Row> */}
-                            {/* <Row>
-                                <Col>
-                                    { 
-                                        (!this.state.e110CorollaVideos)
-                                        ?
-                                            <h2 className='text-center'>{this.state.message}</h2>
-                                        :
-                                            <></>
-                                    }
-                                </Col>
-                            </Row>   */}
-                            {/* <CollapsableVideoList
-                                componentTitle="Youtube Videos" 
-                                button_text="Show Videos" 
-                                id_name="videos" 
-                                showContent={this.state.showVideos} 
-                                handleShowContent={this.handleVideos}
-                                e110CorollaVideos={this.state.e110CorollaVideos} 
-                                e170CorollaVideos={this.state.e170CorollaVideos} 
-                                fg1CivicVideos={this.state.fg1CivicVideos} 
-                                message={this.state.message}>
-                            </CollapsableVideoList>    */}
-                            {/* <HomeCarousel /> */}
                             <HomeIntroduction 
                                 linkEbayMBBoards={this.state.linkEbayMBBoards}
                                 linkEbayIPBoards={this.state.linkEbayIPBoards}
                                 linkEbayIPCP={this.state.linkEbayIPCP}
                                 linkEbayIPTS={this.state.linkEbayIPTS}
                             />
-                            <RepairCard 
+                            {/* <RepairCard 
                                 handleInputChange={this.handleInputChange}
                                 repair_first_name={this.state.repair_first_name}
                                 repair_last_name={this.state.repair_last_name}
@@ -301,20 +270,30 @@ export default class Home extends Component {
                                 repairErrorBool={this.state.repairErrorBool}
                                 repairErrorMessage={this.state.repairErrorMessage}
                                 submitRepair={this.submitRepair}
-                            />
-                            <WebServiceCard 
+                            /> */}
+                            <RepairAccordion
                                 handleInputChange={this.handleInputChange}
-                                web_service_first_name={this.state.web_service_first_name}
-                                web_service_last_name={this.state.web_service_last_name}
-                                web_service_email={this.state.web_service_email}
-                                web_service_phone={this.state.web_service_phone}
-                                web_service_project_explanation={this.state.web_service_project_explanation}
-                                web_service_extra_details={this.state.web_service_extra_details}
-                                webServiceErrorMessage={this.state.webServiceErrorMessage}
-                                webServiceErrorBool={this.state.webServiceErrorBool}
-                                submitWebProject={this.submitWebProject}
+                                repair_first_name={this.state.repair_first_name}
+                                repair_last_name={this.state.repair_last_name}
+                                repair_email={this.state.repair_email}
+                                repair_phone={this.state.repair_phone}
+                                repair_address_line_one={this.state.repair_address_line_one}
+                                repair_address_line_two={this.state.repair_address_line_two}
+                                repair_address_city={this.state.repair_address_city}
+                                repair_address_state={this.state.repair_address_state}
+                                repair_address_postal_code={this.state.repair_address_postal_code}
+                                repair_address_country={this.state.repair_address_country}
+                                repair_brand={this.state.repair_brand}
+                                repair_model={this.state.repair_model}
+                                repair_serial={this.state.repair_serial}
+                                repair_issue={this.state.repair_issue}
+                                repairErrorBool={this.state.repairErrorBool}
+                                repairErrorMessage={this.state.repairErrorMessage}
+                                submitRepair={this.submitRepair}
+                                
                             />
-                            <CollapsablePortfolio componentTitle="Portfolio" button_text="Show Portfolio" id_name="portfolio" showContent={this.state.showPortfolio} handleShowContent={this.handlePortfolio}/>
+                            
+                            
                         </Container>
                     </Col>
                     <Col lg={1}></Col>

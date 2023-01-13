@@ -61,7 +61,6 @@ def mail_in_repair():
     if request.method == "POST":
 
         data = request.get_json(force=True)
-        print(f"user_id set to Null in js and is {data['repair_user_public_id']} in Python")
         if data['repair_user_public_id']:
             user_id = db.session.query(SiteUser).filter_by(public_id=data['repair_user_public_id']).first().id 
 

@@ -158,8 +158,8 @@ const RepairForm = (props) => {
 
 
   return (
-    <Col className="my-2">
-      <Button variant="info" onClick={handleShow}>
+    <div className="col-md-6">
+      <Button variant="info" className='w-100' onClick={handleShow}>
         Mail-In Repair
       </Button>
 
@@ -168,7 +168,7 @@ const RepairForm = (props) => {
           <Modal.Title>Mail-In Repair Form</Modal.Title>
         </Modal.Header>
         <Modal.Body className="text-center">
-          {
+          {/* {
             showPublic && 
             <Toast onClose={handlePublic}>
                 <Toast.Header>
@@ -191,7 +191,7 @@ const RepairForm = (props) => {
                   }
                 </Toast.Body>
             </Toast>
-          }
+          } */}
           {errors && <Alert variant="danger"><span>{errors}</span></Alert>}
           {
             (showStepOne) &&
@@ -299,7 +299,7 @@ const RepairForm = (props) => {
           </Button>
         </Modal.Footer>
       </Modal>
-    </Col>
+    </div>
   );
 }
 

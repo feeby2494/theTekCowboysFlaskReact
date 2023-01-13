@@ -5,7 +5,7 @@ import WebServiceInquiryForm from './WebServiceInquiryForm';
 
 const WebServiceCard = (props) => {
     return (
-            <Card className="row mt-3">
+            <Card className="row shadow mb-5 bg-white rounded mt-3">
                 <Card.Header>
                     <h2 className='h2 text-center my-2'>Web Development Services</h2>
                 </Card.Header>

@@ -9,31 +9,25 @@ const ShippingInstructions = (props) => {
             <Row>
                 <Col sm={4}>
                     <Card>
-                        <Card.Header>
-                            Step One:
-                        </Card.Header>
                         <Card.Body>
+                            <h4>Step One:</h4>
                             <p>Fill out the Mail-In Repair Form and hit submit.</p>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col sm={4}>
                     <Card>
-                        <Card.Header>
-                            Step Two:
-                        </Card.Header>
                         <Card.Body>
-                            <p>Check your email for shipping address, label, and instructions.</p>
+                            <h4>Step Two:</h4>
+                            <p>Check your email for shipping instructions.</p>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col sm={4}>
                     <Card>
-                        <Card.Header>
-                            Step Three:
-                        </Card.Header>
                         <Card.Body>
-                            <p>Ship to us, we will email you a price qoute after we diagnosis your device.</p>
+                            <h4>Step Three:</h4>
+                            <p>Ship to us, wait for our price qoute.</p>
                         </Card.Body>
                     </Card>
                 </Col>

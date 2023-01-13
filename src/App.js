@@ -16,6 +16,7 @@ import RepairService from './services/device_repair/RepairService';
 import WebProjectService from './services/web_project/WebProjectService';
 import RepairAdmin from "repair_admin/RepairAdmin";
 import { PriceList } from 'PriceList';
+import RepairHome from 'repair/RepairHome';
 
 
 
@@ -43,23 +44,6 @@ class App extends Component {
   }
 
 
-
-
-// Can't use this hook in classes
-// useEffect(() => {
-//     window.addEventListener('storage', () => {
-//       this.setState({
-//         currentToken: localStorage.getItem('token')
-//       });
-//     });
-//   }, [])
-
-// Where the hell did changeLoggedInStatus() go?
-
-
-
-
-
   render() {
     return (
       <div className="App">
@@ -83,7 +67,6 @@ class App extends Component {
             <Switch>
 
               <Route path="/" exact component={Home} />
-              {/* <Route path="/flashcards" exact component={FlashCardSpace} /> */}
               <Route path="/secret" component={withAuth(Secret)} />
               <Route path="/login" >
                 <Login  history={this.props.history} loggedIn={this.state.loggedIn}/>
@@ -94,12 +77,9 @@ class App extends Component {
               <Route path="/register" component ={Register}/>
               <Route path="/about" exact component={About} />
               <Route path="/price_list" component={PriceList} />
+              <Route path="/repair" component={RepairHome} />
               <Route path="/device_repair" exact component={RepairService} />
-              {/* <Route path="/language_tutoring" exact component={TutoringLanguageService} /> */}
               <Route path="/web_project" exact component={WebProjectService} />
-              {/* <Route path="/genki_one" component ={GenkiOne}/>
-              <Route path="/genki_one/:id" component ={GenkiOneSpecificPoint}/>
-              <Route path="/points" component ={AllPoints}/> */}
               <Route path="/admin" component ={withAdmin(RepairAdmin)}/>
               <Route path="/:personId" component ={UserHome}/>
             </Switch>

@@ -12,7 +12,7 @@ export function withSmallCollContainer(OriginalReactComponent) {
        render() {
  
         return (
-            <Card className='row mt-3'>
+            <Card className='row shadow p-3 mb-5 bg-white rounded mt-3'>
                 <Card.Body className='container align-items-center'>   
                     <Row>
                         <h2 className='h4 mb-1 col-md-6 text-center'>{this.props.componentTitle}</h2>
