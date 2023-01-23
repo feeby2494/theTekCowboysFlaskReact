@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import { Route, Switch, BrowserRouter} from 'react-router-dom';
-import Navigation from './Navigation'
+import Navigation from './components/navigation/Navigation'
 import './App.css';
-import Home from './home/Home';
-import Login from './login/Login';
-import Secret from './secret/Secret';
+import Home from './views/home/Home';
+import Login from './views/login/Login';
+import Secret from './views/secret/Secret';
 import withAuth from './hoc/withAuth';
 import withAdmin from './hoc/withAdmin';
-import Logout from './logout/Logout';
-import Register from './register/Register';
-import UserHome from './userhome/UserHome';
-import Footer from './footer/Footer';
-import About from './about/About';
-import RepairService from './services/device_repair/RepairService';
-import WebProjectService from './services/web_project/WebProjectService';
-import RepairAdmin from "repair_admin/RepairAdmin";
-import { PriceList } from 'PriceList';
-import RepairHome from 'repair/RepairHome';
+import Logout from './views/logout/Logout';
+import Register from './views/register/Register';
+import UserHome from './views/userhome/UserHome';
+import Footer from './components/footer/Footer';
+import About from './views/about/About';
+
+import RepairAdmin from "views/repair_admin/RepairAdmin";
+import { PriceList } from 'views/price_list/PriceList';
+import RepairHome from 'views/repair/RepairHome';
 
 
 
@@ -78,8 +77,7 @@ class App extends Component {
               <Route path="/about" exact component={About} />
               <Route path="/price_list" component={PriceList} />
               <Route path="/repair" component={RepairHome} />
-              <Route path="/device_repair" exact component={RepairService} />
-              <Route path="/web_project" exact component={WebProjectService} />
+              
               <Route path="/admin" component ={withAdmin(RepairAdmin)}/>
               <Route path="/:personId" component ={UserHome}/>
             </Switch>
