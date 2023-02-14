@@ -34,31 +34,37 @@ def get_user_id(data):
 
 def get_updated_mail_in_repairs(repairs):
     repair_list = {}
-
+    
     # repair["Mail_In_Repair"].id refers to a joined sql query; this is where the "Mail_In_Repair" vs "Site_User" comes from (name of joined tables)
     for repair in repairs:
         repair_list[repair["Mail_In_Repair"].id] = {}
-        repair_list[repair["Mail_In_Repair"].id]["id"] = repair["Mail_In_Repair"].id
-        repair_list[repair["Mail_In_Repair"].id]["repair_first_name"] = repair["Mail_In_Repair"].repair_first_name
-        repair_list[repair["Mail_In_Repair"].id]["repair_last_name"] = repair["Mail_In_Repair"].repair_last_name
-        repair_list[repair["Mail_In_Repair"].id]["repair_email"] = repair["Mail_In_Repair"].repair_email
-        repair_list[repair["Mail_In_Repair"].id]["repair_phone"] = repair["Mail_In_Repair"].repair_phone
-        repair_list[repair["Mail_In_Repair"].id]["repair_address_line_one"] = repair["Mail_In_Repair"].repair_address_line_one
-        repair_list[repair["Mail_In_Repair"].id]["repair_address_line_two"] = repair["Mail_In_Repair"].repair_address_line_two
-        repair_list[repair["Mail_In_Repair"].id]["repair_address_city"] = repair["Mail_In_Repair"].repair_address_city
-        repair_list[repair["Mail_In_Repair"].id]["repair_address_state"] = repair["Mail_In_Repair"].repair_address_state
-        repair_list[repair["Mail_In_Repair"].id]["repair_address_postal_code"] = repair["Mail_In_Repair"].repair_address_postal_code
-        repair_list[repair["Mail_In_Repair"].id]["repair_address_country"] = repair["Mail_In_Repair"].repair_address_country
-        repair_list[repair["Mail_In_Repair"].id]["repair_brand"] = repair["Mail_In_Repair"].repair_brand
-        repair_list[repair["Mail_In_Repair"].id]["repair_model"] = repair["Mail_In_Repair"].repair_model
-        repair_list[repair["Mail_In_Repair"].id]["repair_serial"] = repair["Mail_In_Repair"].repair_serial
-        repair_list[repair["Mail_In_Repair"].id]["repair_issue"] = repair["Mail_In_Repair"].repair_issue
-        repair_list[repair["Mail_In_Repair"].id]["repair_date_submitted"] = dateSerializer(repair["Mail_In_Repair"].repair_date_submitted)
-        repair_list[repair["Mail_In_Repair"].id]["repair_completed"] = repair["Mail_In_Repair"].repair_completed
-        repair_list[repair["Mail_In_Repair"].id]["repair_user_id"] = repair["Mail_In_Repair"].repair_user_id
-        repair_list[repair["Mail_In_Repair"].id]["repair_user_public_id"] = repair["SiteUser"].public_id
-        repair_list[repair["Mail_In_Repair"].id]["repair_username"] = repair["SiteUser"].username
+        repair_object = repair_list[repair["Mail_In_Repair"].id]
+
+        # print(list(repair["Mail_In_Repair"]))
+
+        # repair_object = {key: repair["Mail_In_Repair"][key] for key in repair["Mail_In_Repair"]}
+        repair_object["id"] = repair["Mail_In_Repair"].id
+        repair_object["repair_first_name"] = repair["Mail_In_Repair"].repair_first_name
+        repair_object["repair_last_name"] = repair["Mail_In_Repair"].repair_last_name
+        repair_object["repair_email"] = repair["Mail_In_Repair"].repair_email
+        repair_object["repair_phone"] = repair["Mail_In_Repair"].repair_phone
+        repair_object["repair_address_line_one"] = repair["Mail_In_Repair"].repair_address_line_one
+        repair_object["repair_address_line_two"] = repair["Mail_In_Repair"].repair_address_line_two
+        repair_object["repair_address_city"] = repair["Mail_In_Repair"].repair_address_city
+        repair_object["repair_address_state"] = repair["Mail_In_Repair"].repair_address_state
+        repair_object["repair_address_postal_code"] = repair["Mail_In_Repair"].repair_address_postal_code
+        repair_object["repair_address_country"] = repair["Mail_In_Repair"].repair_address_country
+        repair_object["repair_brand"] = repair["Mail_In_Repair"].repair_brand
+        repair_object["repair_model"] = repair["Mail_In_Repair"].repair_model
+        repair_object["repair_serial"] = repair["Mail_In_Repair"].repair_serial
+        repair_object["repair_issue"] = repair["Mail_In_Repair"].repair_issue
+        repair_object["repair_date_submitted"] = dateSerializer(repair["Mail_In_Repair"].repair_date_submitted)
+        repair_object["repair_completed"] = repair["Mail_In_Repair"].repair_completed
+        repair_object["repair_user_id"] = repair["Mail_In_Repair"].repair_user_id
+        repair_object["repair_user_public_id"] = repair["SiteUser"].public_id
+        repair_object["repair_username"] = repair["SiteUser"].username
     return repair_list
+    
 
 def build_one_repair(repair, work_order_id, user_id):
     try:

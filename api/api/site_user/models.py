@@ -1,3 +1,4 @@
+from turtle import pos
 from api import db, app
 import datetime
 import jwt
@@ -11,6 +12,7 @@ class SiteUser(db.Model):
     username = db.Column(db.String(127), unique=True)
     name = db.Column(db.String(127), unique=False)
     email = db.Column(db.String(100), unique=True)
+    phone = db.Column(db.String(127), unique=False)
     password = db.Column(db.String(512)) #This field was too short for password field
     admin = db.Column(db.Boolean)
     registered_on = db.Column(db.DateTime, nullable=False)
@@ -68,14 +70,19 @@ class SiteUser(db.Model):
 class Address(db.Model):
     __tablename__ = "address"
     id = db.Column(db.Integer, primary_key=True)
-    first_name = db.Column(db.String(127), unique=False)
-    last_name = db.Column(db.String(127), unique=False)
-    address_email = db.Column(db.String(100), unique=False)
-    address_phone = db.Column(db.String(127), unique=False)
-    address_line_one = db.Column(db.String(127), unique=False)
-    address_line_two = db.Column(db.String(127), unique=False)
-    address_city = db.Column(db.String(80), unique=False)
-    address_state = db.Column(db.String(50), unique=False)
-    address_postal_code = db.Column(db.String(50), unique=False)
-    address_country = db.Column(db.String(80), unique=False)
+    line_one = db.Column(db.String(127), unique=False)
+    line_two = db.Column(db.String(127), unique=False)
+    city = db.Column(db.String(80), unique=False)
+    state = db.Column(db.String(50), unique=False)
+    postal_code = db.Column(db.String(50), unique=False)
+    country = db.Column(db.String(80), unique=False)
     user_id = db.Column(db.Integer, db.ForeignKey('site_user.id'), nullable=False)
+
+    def __init__(self, line_one, line_two, city, state, postal_code, country, user_id):
+        self.line_one = line_one
+        self.line_two = line_two
+        self.city = city
+        self.state = state
+        self.postal_code = postal_code
+        self.country = country
+        self.user_id = user_id

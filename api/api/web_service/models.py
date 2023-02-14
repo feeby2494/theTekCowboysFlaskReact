@@ -2,30 +2,28 @@ from api import db, app
 from sqlalchemy import exc
 import datetime
 import jwt
+from api.site_user import SiteUser, Address, Contact
 
-class Web_service(db.Model):
+class Web_Order(db.Model):
+    __tablename__ = "web_order"
     id = db.Column(db.Integer, primary_key=True)
-    first_name = db.Column(db.String(127), unique=False)
-    last_name = db.Column(db.String(127), unique=False)
-    email = db.Column(db.String(100), unique=False)
-    phone = db.Column(db.String(127), unique=False)
-    project_explanation = db.Column(db.String(1000), unique=False)
-    extra_details = db.Column(db.String(1000), unique=False)
+    submitted_on = db.Column(db.DateTime)
+    user_id = db.Column(db.Integer, db.ForeignKey('site_user.id'), nullable=False)
+    project_list = db.relationship('Project', backref='web_order', lazy=True)
 
-    def __init__(self, first_name, last_name, email, phone, project_explanation, extra_details):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.email = email
-        self.phone = phone
-        self.project_explanation = project_explanation
-        self.extra_details = extra_details
+    def __init__(self, user_id):
         self.submitted_on = datetime.datetime.now()
+        self.user_id = user_id
 
     def __repr__(self):
-        return f'\
-            First Name: {self.first_name}\n\
-            Last Name: {self.last_name}\n\
-            Email: {self.email}\n\
-            Project Explanation: {self.project_explanation}\n\
-            Extra Details: {self.extra_details}\n\
-        '
+        return f'{[project for project in self.project_list]}'
+
+    
+
+class Project(db.Modal):
+    id = db.Column(db.Integer, primary_key=True)
+    wordpress = db.Column(db.Boolean, unique=False)
+    project_explanation = db.Column(db.String(1000), unique=False)
+    extra_details = db.Column(db.String(1000), unique=False)
+    web_order_id = db.Column(db.Integer, db.ForeignKey('web_order.id'), nullable=False)
+

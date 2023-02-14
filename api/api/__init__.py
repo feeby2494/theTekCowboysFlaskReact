@@ -25,7 +25,13 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 # Don't forget to change this SECRET_KEY and SQLALCHEMY_DATABASE_URI and put in sepearte file or .env file and have git ignore it
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('FLASK_DB')
+print(os.environ.get('FLASK_ENV'))
+if(os.environ.get('FLASK_ENV') == "development"):
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DEV_LOCAL_DB')
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('FLASK_DB')
+
+print(app.config['SQLALCHEMY_DATABASE_URI'])
 
 
 
@@ -67,6 +73,7 @@ import api.vocab.routes
 import api.general_ledger.routes
 import api.videos.routes
 import api.mail_in_service.routes
+import api.web_service.routes
 
 if __name__ == '__main__':
     app.run(debug=True)
