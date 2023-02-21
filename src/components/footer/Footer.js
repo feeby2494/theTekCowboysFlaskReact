@@ -26,7 +26,14 @@ export default class Footer extends Component {
                 <Col >
                   {/* <!-- Grid column -->*/}
                     {/* <!-- Content -->*/}
-                    <h5 className="text-uppercase">Seolynn</h5>
+                    <img
+                      style={{ height: 30, background: `rgba(248, 249, 250, 0.3)` }}
+                      src={`${process.env.PUBLIC_URL}/seolynn_name_ver_3_hr.gif`}
+                      
+                      thumbnail
+                      fluid>
+                      
+                    </img>
                   {/* <!-- Grid column -->*/}
 
 
