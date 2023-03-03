@@ -39,13 +39,6 @@ def work_order():
 
         return Response(json.dumps({"message": "success", "detrack_items": itemList}), mimetype='application/json')
         
-        
-        
-        
-         
-        
-    
-
 @app.route('/api/mail_in_repair', methods=['GET', 'POST'])
 def mail_in_repair():
 
@@ -192,8 +185,6 @@ def mail_in_repair_complete(id):
     except exc.IntegrityError as e:
         db.session.rollback()
         return Response(json.dumps({'message' : f'ERROR: Cannot create new repair. Due to ERROR: {e}'}), mimetype='application/json')
-
-
 
 @app.route('/api/mail_in_web', methods=['GET', 'POST'])
 def mail_in_web():

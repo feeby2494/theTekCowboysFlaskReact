@@ -10,7 +10,6 @@ def dateSerializer(o):
     if isinstance(o, datetime.datetime):
         return o.__str__()
 
-
 def get_user_id(data):
    
     try:
@@ -137,7 +136,6 @@ def build_repairs(data, work_order_id, user_id):
             print(f'Cannot build Repairs due to: {err}')
     return itemList # Need to return a list of repairs to use in Detract app to populate the 'Items'
     
-
 def get_updated_work_orders(work_orders):
     work_order_list = {}
     
