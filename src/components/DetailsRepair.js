@@ -5,7 +5,8 @@ const DetailsRepair = (props) => {
 
     return (
         <Card className="text-center row mt-3 mt-sm-4">
-            <Card.Header className='h3'>Advantages of Seolynn Repair</Card.Header>
+            <Card.Header className='h3 d-block d-sm-none'>Advantages of Seolynn Repair</Card.Header>
+            <Card.Header className='h1 d-none d-sm-block'>Advantages of Seolynn Repair</Card.Header>
             <Card.Body>
                 <Row className='d-none d-sm-flex'>
                     <Col sm="4">
