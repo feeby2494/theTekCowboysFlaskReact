@@ -10,7 +10,7 @@ export const HomeCarousel = () => {
   // const electronic_lab_workbench_2 = `${process.env.PUBLIC_URL}/electronic_lab_workbench_2.jpg`;
 
   return (
-    <Carousel variant="dark" className="row mt-3 mb-0">
+    <Carousel variant="dark" className="row mt-3 mt-sm-4 mb-0">
       <Carousel.Item>
         <Image
           fluid

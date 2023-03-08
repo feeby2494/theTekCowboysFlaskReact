@@ -4,18 +4,18 @@ import { Col, Card, ListGroup, Row } from 'react-bootstrap';
 const DetailsRepair = (props) => {
 
     return (
-        <Card className="text-center row mt-3">
-            <Card.Header>Advantages of Seolynn Repair</Card.Header>
+        <Card className="text-center row mt-3 mt-sm-4">
+            <Card.Header className='h3'>Advantages of Seolynn Repair</Card.Header>
             <Card.Body>
-                <Row>
+                <Row className='d-none d-sm-flex'>
                     <Col sm="4">
-                        <img style={{ height: 176 }}  src={`${process.env.PUBLIC_URL}/electronic_lab_workbench_1_comp.jpg`} className="img-thumbnail" thumbnail fluid></img>
+                        <img  style={{ height: 176 ,"object-fit": "cover" }} src={`${process.env.PUBLIC_URL}/electronic_lab_workbench_1_comp.jpg`} className=" img-responsive img-thumbnail" thumbnail fluid></img>
                     </Col>
                     <Col sm="4">
-                        <img style={{ height: 176 }} src={`${process.env.PUBLIC_URL}/electronic_lab_workbench_2_comp.jpg`} className="img-thumbnail" thumbnail fluid></img>
+                        <img style={{ height: 176 ,"object-fit": "cover" }} src={`${process.env.PUBLIC_URL}/electronic_lab_workbench_2_comp.jpg`} className="d-sm-block img-thumbnail" thumbnail fluid></img>
                     </Col> 
                     <Col sm="4">
-                        <img style={{ height: 176 }} src={`${process.env.PUBLIC_URL}/ipad_repair_comp.jpg`} className="img-thumbnail" thumbnail fluid></img>
+                        <img style={{ height: 176 ,"object-fit": "cover" }} src={`${process.env.PUBLIC_URL}/ipad_repair_comp.jpg`} className="d-sm-block img-thumbnail" thumbnail fluid></img>
                     </Col>
                 </Row>
                 
@@ -27,6 +27,17 @@ const DetailsRepair = (props) => {
                     <ListGroup.Item>Willing to meet face to face in the Dallas area</ListGroup.Item>
                     <ListGroup.Item>Highest Quality repairs only</ListGroup.Item>
                 </ListGroup>
+                <Row className='d-block d-sm-none'>
+                    <Col sm="4">
+                        <img  style={{ "object-fit": "cover" }} src={`${process.env.PUBLIC_URL}/electronic_lab_workbench_1_comp.jpg`} className=" img-responsive img-thumbnail" thumbnail fluid></img>
+                    </Col>
+                    <Col sm="4">
+                        <img style={{ "object-fit": "cover" }} src={`${process.env.PUBLIC_URL}/electronic_lab_workbench_2_comp.jpg`} className="d-sm-block img-thumbnail" thumbnail fluid></img>
+                    </Col> 
+                    <Col sm="4">
+                        <img style={{ "object-fit": "cover" }} src={`${process.env.PUBLIC_URL}/ipad_repair_comp.jpg`} className="d-sm-block img-thumbnail" thumbnail fluid></img>
+                    </Col>
+                </Row>
             </Card.Body>
         </Card>
     )
