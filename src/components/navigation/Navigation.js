@@ -54,7 +54,7 @@ class Navigation extends React.Component {
       <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Brand href="/">
           <img
-            style={{ height: 50, background: `rgba(52, 58, 64, 0.3)` }}
+            style={{ height: 40, background: `rgba(52, 58, 64, 0.3)` }}
             src={`${process.env.PUBLIC_URL}/seolynn_name_ver_3_hr.gif`}
             
             thumbnail
