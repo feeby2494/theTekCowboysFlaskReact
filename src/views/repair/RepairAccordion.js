@@ -1,5 +1,5 @@
 import React,{ useState} from 'react';
-import { Accordion, Button, Form, Col, Toast, Alert, Card } from 'react-bootstrap';
+import { Accordion, Button, Form, Alert, Card } from 'react-bootstrap';
 
 const RepairAccordion = (props) => {
   const [validatedAddress, setValidatedAddress] = useState(false);
@@ -162,39 +162,17 @@ const RepairAccordion = (props) => {
   return (
       <div className="shadow mb-5 bg-white rounded mt-3">
         <Accordion className="" defaultActiveKey="0">
-            <Accordion.Toggle className='btn btn-info w-100' eventKey="0" onClick={handleShow}>
+            <Accordion.Item  eventKey="0" onClick={handleShow}>
+              <Accordion.Header className='text-center w-100'>
                 Mail-In Repair (Click to hide form)
-            </Accordion.Toggle>
-            <Accordion.Collapse show={show} onHide={handleClose} eventKey="0">
-            <Card border="light">
+              </Accordion.Header>
+              <Accordion.Body>
+              <Card border="light">
                 <Card.Header closeButton>
                 <Card.Title>Mail-In Repair Form</Card.Title>
                 </Card.Header>
                 <Card.Body className="text-center">
-                {/* {
-                    showPublic && 
-                    <Toast onClose={handlePublic}>
-                        <Toast.Header>
-                        <img src="holder.js/20x20?text=%20" className="rounded mr-2" alt="" />
-                        
-                        <small>Logged In?</small>
-                    </Toast.Header>
-                        <Toast.Body>
-                        {
-                            (localStorage.getItem('public_id'))
-                            ?
-                            <>
-                                <p>You are logged in and your public_id is: {localStorage.getItem('public_id')}. You may close this and procced.</p>
-                            </>
-                            :
-                            <>
-                                <p>If you are registered as a user, then please login before submitting a repair.</p> 
-                                <Button href="\login">Login</Button>
-                            </>
-                        }
-                        </Toast.Body>
-                    </Toast>
-                } */}
+                
                 {errors && <Alert variant="danger"><span>{errors}</span></Alert>}
                 {
                     (showStepOne) &&
@@ -299,7 +277,8 @@ const RepairAccordion = (props) => {
                 <Card.Footer>
                 </Card.Footer>
                 </Card>
-            </Accordion.Collapse>
+              </Accordion.Body>
+            </Accordion.Item>
         </Accordion>
       </div>
   );
