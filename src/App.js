@@ -17,6 +17,8 @@ import RepairAdmin from "views/repair_admin/RepairAdmin";
 import { PriceList } from 'views/price_list/PriceList';
 import RepairHome from 'views/repair/RepairHome';
 
+import RepairMultiDevice from 'views/repair/RepairMultiDevice';
+
 
 
 // Need to go mod all the services to get the right things from API
@@ -77,7 +79,7 @@ class App extends Component {
               <Route path="/about" exact component={About} />
               <Route path="/price_list" component={PriceList} />
               <Route path="/repair" component={RepairHome} />
-              
+              <Route path="/repair-multi" component={RepairMultiDevice} />
               <Route path="/admin" component ={withAdmin(RepairAdmin)}/>
               <Route path="/:personId" component ={UserHome}/>
             </Switch>
