@@ -1,10 +1,13 @@
 import React,{ useState} from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Alert } from 'react-bootstrap';
 import FormAddress from './FormAddress';
 import FormContact from './FormContact';
 import FormDevice from './FormDevice';
 
 const FormOrder = (props) => {
+
+    // Show an error if request fails
+    const [errors, setErrors] = useState('');
 
     // Clear everything after submission:
     const clearAll = (e) => {
@@ -26,6 +29,9 @@ const FormOrder = (props) => {
             "model": "",
             "issue": ""
         }]);
+        setErrors('');
+        setValidatedAddress(false);
+        setValidatedContact(false);
     }
 
     // Taking care of contact:
@@ -36,9 +42,10 @@ const FormOrder = (props) => {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
-        } 
-        setValidatedContact(true);
-        event.preventDefault();     
+        } else if (form.checkValidity() === true){
+            setValidatedContact(true);
+            event.preventDefault(); 
+        }   
     };
 
     const [contact, setContact] = useState({
@@ -63,12 +70,14 @@ const FormOrder = (props) => {
 
     const handleValidationAddress = (event) => {
         const form = event.currentTarget;
+        console.log(form)
         if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        } 
-        setValidatedAddress(true);
-        event.preventDefault();      
+            event.preventDefault();
+            event.stopPropagation();
+        } else if (form.checkValidity() === true) {
+            setValidatedAddress(true);
+            event.preventDefault();
+        }    
     };
 
     const [address, setAddress] = useState({
@@ -161,20 +170,54 @@ const FormOrder = (props) => {
 
     // Handle submission
     const submitOrder = (e) => {
+        
         handleValidationContact(e);
         handleValidationAddress(e);
-        
-        if(validatedAddress && validatedContact){
-            console.log({...contact, ...address, "repairs": repairForms})
 
-            // then clear form and flash Sucess Message
-            clearAll();
+
+        if (validatedAddress && validatedContact) {
+
+            const headers = {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'mode': 'no-cors',
+            }
+
+            // // Getting "Invalid Token Speciafied Error"; seeing if these calls to localstorage are causing it
+            // var public_id = null;
+            // if (localStorage.getItem('public_id')){
+            //     public_id = localStorage.getItem('public_id');
+            // }
+
+            const submitObject = {...contact, ...address, "repairs": repairForms}
+
+            console.log(submitObject)
+
+            fetch('/api/repair-mulit', {
+                method: 'POST',
+                body: JSON.stringify(submitObject),
+                headers: headers,
+            })
+            .then(res => {
+                res.json()
+                if (res.status == 200) {
+                    // then clear form and flash Sucess Message
+                    clearAll();
+                }
+            })
+            .catch(err => {
+                console.log(err)
+                setErrors(`Error: ${err}`);
+            });
+            
+            
         }
     }
 
   return (
     <div className="col">
         <div className='container'>
+        {errors && <Alert variant="danger"><span>{errors}</span></Alert>}
         <div className='row'>
                 <FormContact
                     validatedContact={validatedContact}

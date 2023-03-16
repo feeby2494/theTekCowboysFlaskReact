@@ -3,7 +3,9 @@ from api import db, app
 import datetime
 import jwt
 from werkzeug.security import generate_password_hash, check_password_hash
-
+from api.todo.models import Todo
+from api.point.models import Point
+from api import UserMixin, LoginManager, current_user, login, admin, ModelView, db, admin
 
 class SiteUser(db.Model):
     __tablename__ = "site_user"
@@ -86,3 +88,22 @@ class Address(db.Model):
         self.postal_code = postal_code
         self.country = country
         self.user_id = user_id
+
+
+
+# Admin Login Setup
+
+@login.user_loader
+def load_user(user_id):
+    return SiteUser.query.get(user_id)
+
+
+
+# Admin Panel setup
+class SiteUserModelView(ModelView):
+    def is_accessible(self):
+        return not current_user.is_authenticated
+
+# add Admin views for models
+admin.add_view(SiteUserModelView(SiteUser, db.session))
+admin.add_view(SiteUserModelView(Address, db.session))

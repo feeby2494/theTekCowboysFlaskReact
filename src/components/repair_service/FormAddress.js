@@ -6,7 +6,7 @@ const FormAddress = (props) => {
     return (
             <div className="col">
                 <h3>Mail Address</h3>
-                <Form className="container" noValidate validated={props.validatedAddress} onSubmit={props.handleSubmit}>
+                <Form className="container" validated={props.validatedAddress} onSubmit={props.handleSubmit}>
                     <Form.Group className="mb-3 row" controlId="RepairFormModal.Address.Street">
                         <div className='col-md-6'>
                             <Form.Label>Street Line One:</Form.Label>

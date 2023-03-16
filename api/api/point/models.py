@@ -30,3 +30,6 @@ class Element(db.Model):
 #     id = db.Column(db.Integer, primary_key=True)
 #     point_id = db.Column(db.Integer, db.ForeignKey("point.id"), nullable=False)
 #     category = db.Column(db.String, nullable=False)
+
+# admin.add_view(ModelView(Point, db.session))
+# admin.add_view(ModelView(Element, db.session))
