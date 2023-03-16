@@ -13,7 +13,7 @@ const RepairMultiDevice = (props) => {
                     <Container>
                         <Row>
                             <Col lg={12}>
-                                <div className="w-100 shadow mb-2 bg-white rounded mt-3">
+                                <div className="w-100 mb-2 bg-white rounded mt-3">
                                     <FormOrder />
                                 </div>
                             </Col>

@@ -1,8 +1,62 @@
 import React,{ useState} from 'react';
 import { Button, Form } from 'react-bootstrap';
 import FormAddress from './FormAddress';
+import FormContact from './FormContact';
+import FormDevice from './FormDevice';
 
 const FormOrder = (props) => {
+
+    // Clear everything after submission:
+    const clearAll = (e) => {
+        setContact({
+            "name": "",
+            "email": ""
+        });
+        setAddress({
+            "lineOne": "",
+            "lineTwo": "",
+            "city": "",
+            "state": "",
+            "postalCode": "",
+            "country": ""
+        });
+        setRepairForms([{
+            "id": 0,
+            "brand": "",
+            "model": "",
+            "issue": ""
+        }]);
+    }
+
+    // Taking care of contact:
+    const [validatedContact, setValidatedContact] = useState(false);
+
+    const handleValidationContact = (event) => {
+        const form = event.currentTarget;
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        } 
+        setValidatedContact(true);
+        event.preventDefault();     
+    };
+
+    const [contact, setContact] = useState({
+        "name": "",
+        "email": ""
+    });
+
+    const handleContactName = (value) => {
+        let contactTemp = {...contact};
+        contactTemp["name"] = value;
+        setContact(contactTemp);
+    }
+
+    const handleContactEmail = (value) => {
+        let contactTemp = {...contact};
+        contactTemp["email"] = value;
+        setContact(contactTemp);
+    }
 
     // Taking care of address:
     const [validatedAddress, setValidatedAddress] = useState(false);
@@ -14,8 +68,7 @@ const FormOrder = (props) => {
           event.stopPropagation();
         } 
         setValidatedAddress(true);
-        event.preventDefault();
-        
+        event.preventDefault();      
     };
 
     const [address, setAddress] = useState({
@@ -108,15 +161,28 @@ const FormOrder = (props) => {
 
     // Handle submission
     const submitOrder = (e) => {
+        handleValidationContact(e);
         handleValidationAddress(e);
-        if(validatedAddress){
-            console.log({...address, "repairs": repairForms})
+        
+        if(validatedAddress && validatedContact){
+            console.log({...contact, ...address, "repairs": repairForms})
+
+            // then clear form and flash Sucess Message
+            clearAll();
         }
     }
 
   return (
     <div className="col">
         <div className='container'>
+        <div className='row'>
+                <FormContact
+                    validatedContact={validatedContact}
+                    contact={contact} 
+                    handleContactName={handleContactName}
+                    handleContactEmail={handleContactEmail}
+                />
+            </div>
             <div className='row'>
                 <FormAddress 
                     validatedAddress={validatedAddress}
@@ -129,31 +195,23 @@ const FormOrder = (props) => {
                     handleAddressCountry={handleAddressCountry}
                 />
             </div>
+            <div className='row'>
+                <h3 className='col-12'>Devices</h3>
                 
-            { repairForms && repairForms.map((repair, index) => {
-                return (
-                    <div className='row'>
-                        <div className='col-12'>
-                            <Form.Group className="mb-3" controlId={`device-brand${index}`}/>
-                            <Form.Label>Brand:</Form.Label>
-                            <Form.Control placeholder="" name={`device-brand${index}`} value={repair.brand} type="name" rows={1} onChange={(e) => handleRepairBrand(e.target.value, index)}/>
-                        
-                            <Form.Group className="mb-3" controlId={`device-model${index}`}/>
-                            <Form.Label>Model:</Form.Label>
-                            <Form.Control placeholder="" name={`device-model${index}`} value={repair.model} type="name" rows={1} onChange={(e) => handleRepairModel(e.target.value, index)}/>
-
-                            <Form.Group className="mb-3" controlId={`device-issue${index}`}/>
-                            <Form.Label>Issue:</Form.Label>
-                            <Form.Control placeholder="" name={`device-issue${index}`} value={repair.issue} type="name" rows={1} onChange={(e) => handleRepairIssue(e.target.value, index)}/>
-                        </div>
-                        <div className='col-12 my-3'>
-                            <Button className="mx-2" onClick={addRepair}>Add One More Repair</Button>
-                            <Button className="mx-2" onClick={(e, index) => removeCertainRepair(e.target.value, index)}>Remove this Repair</Button>
-                        </div>
-                    </div>
-                )
-            }) }
-
+                { repairForms && repairForms.map((repair, index) => {
+                    return (
+                        <FormDevice 
+                            index={index}
+                            repair={repair}
+                            handleRepairBrand={handleRepairBrand}
+                            handleRepairModel={handleRepairModel}
+                            handleRepairIssue={handleRepairIssue}
+                            addRepair={addRepair}
+                            removeCertainRepair={removeCertainRepair}
+                        />
+                    )
+                }) }
+            </div>
             { repairForms.length < 1 &&
                 <Button className="row" onClick={addRepair}>Add a Repair</Button>
             }
