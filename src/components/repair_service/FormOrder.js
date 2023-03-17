@@ -240,7 +240,7 @@ const FormOrder = (props) => {
             </div>
             <div className='row'>
                 <h3 className='col-12'>Devices</h3>
-                
+
                 { repairForms && repairForms.map((repair, index) => {
                     return (
                         <FormDevice 
@@ -256,7 +256,7 @@ const FormOrder = (props) => {
                 }) }
             </div>
             { repairForms.length < 1 &&
-                <Button className="row" onClick={addRepair}>Add a Repair</Button>
+                <Button className="row my-3" onClick={addRepair}>Add a Repair</Button>
             }
             <div className='row'>
                 <Button onClick={submitOrder}>Submit Order</Button>
