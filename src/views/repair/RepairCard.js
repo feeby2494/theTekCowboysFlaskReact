@@ -7,7 +7,7 @@ import ShippingInstructions from 'components/ShippingInstructions';
 
 const RepairCard = (props) => {
     return (
-            <Card className="row shadow mb-5 bg-white rounded mt-3">
+            <Card className="row mb-5 bg-white rounded mt-3">
                 <Card.Body className='container align-items-center'>
                     <Row>
                         <div className='h4 col-md-6 text-center'>

@@ -160,10 +160,10 @@ const RepairAccordion = (props) => {
 
 
   return (
-      <div className="shadow mb-5 bg-white rounded mt-3">
+      <div className="mb-5 bg-white rounded mt-3">
         <Accordion className="" defaultActiveKey="0">
             <Accordion.Item  eventKey="0" onClick={handleShow}>
-              <Accordion.Header className='text-center w-100'>
+              <Accordion.Header>
                 Mail-In Repair (Click to hide form)
               </Accordion.Header>
               <Accordion.Body>

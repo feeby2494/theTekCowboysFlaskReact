@@ -24,8 +24,12 @@ const FormDevice = (props) => {
                     </Form.Group>
                 </div>   
                 <div className='row my-3'>
-                    <Button className="mx-2" onClick={props.addRepair}>Add One More Repair</Button>
-                    <Button className="mx-2" onClick={(e, index) => props.removeCertainRepair(e.target.value, index)}>Remove this Repair</Button>
+                    <div className='col-md-6'>
+                        <Button className="mx-2 my-2 w-100" onClick={props.addRepair}>Add One More Repair</Button>
+                    </div>
+                    <div className='col-md-6'>
+                        <Button className="mx-2 my-2 w-100" onClick={(e, index) => props.removeCertainRepair(e.target.value, index)}>Remove this Repair</Button>
+                    </div>
                 </div>
             </div>
         </div>
