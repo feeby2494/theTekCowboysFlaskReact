@@ -3,8 +3,19 @@ import { Button, Alert } from 'react-bootstrap';
 import FormAddress from './FormAddress';
 import FormContact from './FormContact';
 import FormDevice from './FormDevice';
+import { useParams } from "react-router-dom";
 
 const FormOrder = (props) => {
+
+    // Get user id
+    const { personId } = useParams();
+
+    // for current user info
+    const [error, setError] = useState(null); // error message for user
+    const [username, setUsername] = useState(null);
+    const [email, setEmail] = useState(null);
+    const [public_id, setPublic_id] = useState(null);
+    const [showAdmin, setShowAdmin] = useState(null);
 
     // Show an error if request fails
     const [errors, setErrors] = useState('');
@@ -181,6 +192,7 @@ const FormOrder = (props) => {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
                 'mode': 'no-cors',
+                'x-access-token': localStorage.getItem('token')
             }
 
             // // Getting "Invalid Token Speciafied Error"; seeing if these calls to localstorage are causing it
@@ -193,7 +205,7 @@ const FormOrder = (props) => {
 
             console.log(submitObject)
 
-            fetch('/api/repair-mulit', {
+            fetch('/api/repair-multi', {
                 method: 'POST',
                 body: JSON.stringify(submitObject),
                 headers: headers,
@@ -213,6 +225,33 @@ const FormOrder = (props) => {
             
         }
     }
+
+    // Getting user token and making sure it's not expired first
+    const getUserInfo = (personId) => {
+        fetch(`/api/user/${personId}`,{
+            method:'GET',
+            'Content-Type':'application/json',
+            headers: {'x-access-token': localStorage.getItem('token')}
+        })
+        .then((res) => res.json())
+        .then((response) => {
+            console.log(response);
+            setUsername(response[personId].username);
+            setEmail(response[personId].email);
+            setPublic_id(response[personId].public_id);
+            setShowAdmin(response[personId].admin);
+        })
+        .catch((error) => {
+            console.log(error);
+            setError(error);
+        });
+    }
+
+    // Getting user token and id first
+    if (!public_id){
+        getUserInfo(personId);
+    }
+
 
   return (
     <div className="col">

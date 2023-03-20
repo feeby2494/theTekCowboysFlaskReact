@@ -1,4 +1,4 @@
-from api import db
+from api import db, admin, current_user, ModelView
 import datetime
 from api.site_user.models import SiteUser
 
@@ -39,9 +39,21 @@ class Device(db.Model):
     issue = db.Column(db.String(255), unique=False)
     serial_number = db.Column(db.String(127), unique=False)
     completed = db.Column(db.Boolean, default=False)
-    received_by = db.Column(db.DateTime, nullable=False)
+    received_by = db.Column(db.DateTime, nullable=True)
     finished_by = db.Column(db.DateTime)
     work_order_id = db.Column(db.Integer, db.ForeignKey("order.id"), nullable=False)
 
     def __str__(self):
         return f"{self.brand}-{self.model}-{self.issue}"
+    
+
+# Admin Panel setup
+class RepairServiceModelView(ModelView):
+    def is_accessible(self):
+        return not current_user.is_authenticated
+
+# add Admin views for models
+admin.add_view(RepairServiceModelView(OrderContact, db.session))
+admin.add_view(RepairServiceModelView(OrderAddress, db.session))
+admin.add_view(RepairServiceModelView(Order, db.session))
+admin.add_view(RepairServiceModelView(Device, db.session))

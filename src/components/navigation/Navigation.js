@@ -66,16 +66,16 @@ class Navigation extends React.Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <NavDropdown className="col align-self-end" title="My Services" id="dropdown-nav-services">
+            <NavDropdown className="col" title="My Services" id="dropdown-nav-services">
               <NavDropdown.Item href="/repair">Mail-In Repair</NavDropdown.Item>
                
             </NavDropdown> 
-            <NavDropdown className="col align-self-end" title="More Info" id="dropdown-nav-info">
+            <NavDropdown className="col" title="More Info" id="dropdown-nav-info">
               <NavDropdown.Item href="/about">About Us</NavDropdown.Item>
               <NavDropdown.Item href="/price_list">Price List</NavDropdown.Item>  
             </NavDropdown> 
             
-            <NavDropdown className="col align-self-end" title="User Managment" id="dropdown-nav-user">
+            <NavDropdown className="col" title="User Managment" id="dropdown-nav-user">
               {
                 (this.props.loggedIn === true) ?
                 <>

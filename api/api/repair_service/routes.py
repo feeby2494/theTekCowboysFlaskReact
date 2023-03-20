@@ -4,15 +4,18 @@ from flask import Response, request
 import json
 from .models import Order, Device, OrderAddress, OrderContact
 from sqlalchemy import exc
+from api.jwt_token.__token_required__ import token_required
+from api.site_user.models import SiteUser
 
-from api.helpers import get_or_create
+from api.helpers import get_or_create, dateSerializer
 
-
-@app.route('/api/repair-mulit', methods=['POST'])
-def multi_repair():
+# I want the user to log in first!
+@app.route('/api/repair-multi', methods=['POST'])
+@token_required
+def multi_repair_submit(current_user):
 
     """
-        Accept order with multiple devices for non-users
+        Accept order with multiple devices for users logged in
     """
     try:
         # Get data from request
@@ -44,7 +47,7 @@ def multi_repair():
         db.session.commit()
         
         # Build Order, then save
-        new_order = Order(contact=contact.id, address=address.id)
+        new_order = Order(contact=contact.id, address=address.id, user_id=current_user.id,)
         db.session.add(new_order)
         db.session.commit()
 
@@ -74,3 +77,49 @@ def multi_repair():
     except exc.IntegrityError as e:
         db.session.rollback()
         return Response(json.dumps({'message' : f'ERROR: Cannot create new repair. Due to ERROR: {e}'}), mimetype='application/json')
+    
+@app.route('/api/repair-multi', methods=['GET'])
+@token_required
+def multi_repair_order_list(current_user):
+    """
+        Accept order with multiple devices for non-users
+    """
+
+    try:
+        orders = []
+        userOrders = db.session.query(Order, SiteUser, OrderContact, OrderAddress, Device).filter(SiteUser.id == current_user.id).join(SiteUser).filter(OrderContact.id == Order.contact).join(OrderContact).filter(OrderAddress.id == Order.address).join(OrderAddress).filter(Device.work_order_id == Order.id).join(Device).all()
+
+        for order in list(userOrders):
+            # temp_device_list = []
+
+            # for device in list(order["Device"]):
+            #     temp_device = {}
+            #     temp_device["id"] = device.id
+            #     temp_device["brand"] = device.brand
+            #     temp_device["model"] = device.model
+            #     temp_device["issue"] = device.issue
+                
+            #     temp_device_list.append(temp_device)
+
+            temp_order = {}
+            temp_order["id"] = order["Order"].id
+            temp_order["submitted_date"] = dateSerializer(order["Order"].submitted_date)
+            temp_order["contact"] = {"name" : order["OrderContact"].name,
+                                     "email" : order["OrderContact"].email}
+            temp_order["address"] = {"line_one" : order["OrderAddress"].line_one, 
+                                     "line_two" : order["OrderAddress"].line_two, 
+                                     "city" : order["OrderAddress"].city,
+                                     "state" : order["OrderAddress"].state,
+                                     "postal_code" : order["OrderAddress"].postal_code,
+                                     "country" : order["OrderAddress"].country}
+            temp_order["user_id"] = order["Order"].user_id
+            temp_order["username"] = order["SiteUser"].username
+            orders.append(temp_order)
+            print(order["Device"])
+
+        return Response(json.dumps(orders), mimetype='application/json')
+    except exc.IntegrityError as e:
+        db.session.rollback()
+        return Response(json.dumps({'message' : f'ERROR: Cannot get all orders from user. Logged in? Due to ERROR: {e}'}), mimetype='application/json')
+    
+

@@ -14,7 +14,7 @@ class SiteUser(db.Model):
     username = db.Column(db.String(127), unique=True)
     name = db.Column(db.String(127), unique=False)
     email = db.Column(db.String(100), unique=True)
-    phone = db.Column(db.String(127), unique=False)
+    phone = db.Column(db.String(127), unique=False, nullable=True)
     password = db.Column(db.String(512)) #This field was too short for password field
     admin = db.Column(db.Boolean)
     registered_on = db.Column(db.DateTime, nullable=False)

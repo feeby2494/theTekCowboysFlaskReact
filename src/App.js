@@ -18,6 +18,7 @@ import { PriceList } from 'views/price_list/PriceList';
 import RepairHome from 'views/repair/RepairHome';
 
 import RepairMultiDevice from 'views/repair/RepairMultiDevice';
+import UserOrderListView from 'views/repair/UserOrderListView';
 
 
 
@@ -79,9 +80,14 @@ class App extends Component {
               <Route path="/about" exact component={About} />
               <Route path="/price_list" component={PriceList} />
               <Route path="/repair" component={RepairHome} />
-              <Route path="/repair-multi" component={RepairMultiDevice} />
+              
               <Route path="/admin" component ={withAdmin(RepairAdmin)}/>
+              
+              <Route path="/:personId/order-submit" component={RepairMultiDevice} />
+              <Route path="/:personId/order-list" component={UserOrderListView} />
               <Route path="/:personId" component ={UserHome}/>
+              
+              <Route path="/" exact component={Home} />
             </Switch>
           </div>
           <div className="clearfix mb-5">
