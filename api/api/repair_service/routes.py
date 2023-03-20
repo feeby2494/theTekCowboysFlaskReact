@@ -6,8 +6,9 @@ from .models import Order, Device, OrderAddress, OrderContact
 from sqlalchemy import exc
 from api.jwt_token.__token_required__ import token_required
 from api.site_user.models import SiteUser
+from api.decorators import asyncThread
 
-from api.helpers import get_or_create, dateSerializer
+from api.helpers import get_or_create, dateSerializer, makeTempDevice, makeTempOrder, makeTempDevice
 
 # I want the user to log in first!
 @app.route('/api/repair-multi', methods=['POST'])
@@ -87,6 +88,8 @@ def multi_repair_order_list(current_user):
 
     try:
         orders = []
+
+
         userOrders = db.session.query(Order, SiteUser, OrderContact, OrderAddress, Device).filter(SiteUser.id == current_user.id).join(SiteUser).filter(OrderContact.id == Order.contact).join(OrderContact).filter(OrderAddress.id == Order.address).join(OrderAddress).filter(Device.work_order_id == Order.id).join(Device).all()
 
         for order in list(userOrders):
@@ -121,5 +124,44 @@ def multi_repair_order_list(current_user):
     except exc.IntegrityError as e:
         db.session.rollback()
         return Response(json.dumps({'message' : f'ERROR: Cannot get all orders from user. Logged in? Due to ERROR: {e}'}), mimetype='application/json')
-    
 
+
+@app.route('/api/repair-multi/<current_order_id>', methods=['GET'])
+@token_required
+def multi_repair_single_order(current_user, current_order_id):
+    """
+        Accept order with multiple devices for non-users
+    """
+
+    try:
+        current_order = db.session.query(Order).filter(Order.id == current_order_id).all()
+        devices_from_order = db.session.query(Device).filter(Device.work_order_id == current_order_id).all()
+
+        order_info = list(map(makeTempOrder, list(current_order)))
+
+        device_list = list(map(makeTempDevice, list(devices_from_order)))
+        
+        print(device_list)
+        return Response(json.dumps({"devices" : device_list, "order" : order_info}), mimetype='application/json')
+
+    except exc.IntegrityError as e:
+        db.session.rollback()
+        return Response(json.dumps({'message' : f'ERROR: Cannot get info for this one order from user. Logged in? Due to ERROR: {e}'}), mimetype='application/json')
+
+@app.route('/api/repair-multi/<current_order_id>/<current_repair_id>', methods=['GET'])
+@token_required
+def multi_repair_single_device(current_user, current_order_id, current_repair_id):
+    """
+        Accept order with multiple devices for non-users
+    """
+
+    try:
+        device = db.session.query(Device).filter(Device.id == current_repair_id, Device.work_order_id == current_order_id).all()
+
+        device_info = list(map(makeTempDevice, list(device)))
+        
+        return Response(json.dumps({"device" : device_info}), mimetype='application/json')
+
+    except exc.IntegrityError as e:
+        db.session.rollback()
+        return Response(json.dumps({'message' : f'ERROR: Cannot get info for this one order from user. Logged in? Due to ERROR: {e}'}), mimetype='application/json')
