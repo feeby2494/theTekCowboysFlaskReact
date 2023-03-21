@@ -1,6 +1,6 @@
 import React,{ useState, useEffect} from 'react';
 import { Button, Alert } from 'react-bootstrap';
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 
 const UserOrderList = (props) => {
@@ -81,38 +81,37 @@ const UserOrderList = (props) => {
         <div className="col">
             <div className='container'>
                 <div className='row'>
-                    {
-                        orders.map(order => {
-                            return (
-                                <div className='col-md-6 card'>
-                                    <div className='container'>
-                                        <div className='row'>
-                                            <h4>Order ID: {order.id}</h4>
-                                            <p>Submitted: {order.submitted_date}</p>
-                                        </div>
-                                        <div className='row'>
-                                            <h4 className='col-12'>Contact</h4>
-                                            <p className='col-12'>Name: {order.contact.name}</p>
-                                            <p className='col-12'>Email: {order.contact.email}</p>
-                                        </div>
-                                        <div className='row'>
-                                            <h4 className='col-12'>Address : </h4>
-                                        </div>
-                                        <div className='row'>
-                                            <p className='col'>{order.address.line_one}</p>
-                                            {order.address.line_two.length > 1 && <p className='col'>{order.address.line_two}</p>}
-                                            <p className='col'>{order.address.city}, </p> 
-                                            <p className='col'>{order.address.state}</p>
-                                        </div>
-                                        <div className='row'>
-                                            <p className='col-3'>{order.address.postal_code}</p>
-                                            <p className='col-3'>{order.address.country}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            );
-                        })
-                    }
+
+                    <div className='row table-responsive'>
+                        <h5 className='col-12 text-center my-2'>Orders:</h5>
+                        <table className='table col-12 mt-2 table-hover'>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Order ID</th>
+                                    <th scope="col">Submission Date</th>
+                                    <th scope="col">Link to Order</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    orders.map(order => {
+                                        return (
+                                            <tr>
+                                                <th scope='row'>{order.id}</th>
+                                                <td>{order.submitted_date}</td>
+                                                <td>
+                                                    <Link to={`/${personId}/order-list/${order.id}`}>
+                                                        To Order Page
+                                                    </Link>
+                                                </td>
+                                            </tr>  
+                                        );
+                                    })
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>  
             </div>
         </div>

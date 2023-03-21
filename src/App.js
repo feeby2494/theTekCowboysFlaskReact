@@ -19,7 +19,8 @@ import RepairHome from 'views/repair/RepairHome';
 
 import RepairMultiDevice from 'views/repair/RepairMultiDevice';
 import UserOrderListView from 'views/repair/UserOrderListView';
-
+import UserOrderSingleView from 'views/repair/UserOrderSingleView';
+import UserDeviceSingleView from 'views/repair/UserDeviceSingleView';
 
 
 // Need to go mod all the services to get the right things from API
@@ -84,7 +85,10 @@ class App extends Component {
               <Route path="/admin" component ={withAdmin(RepairAdmin)}/>
               
               <Route path="/:personId/order-submit" component={RepairMultiDevice} />
+              <Route path="/:personId/order-list/:currentOrderId/:currentDeviceId" component={UserDeviceSingleView} />
+              <Route path="/:personId/order-list/:currentOrderId" component={UserOrderSingleView} />
               <Route path="/:personId/order-list" component={UserOrderListView} />
+              
               <Route path="/:personId" component ={UserHome}/>
               
               <Route path="/" exact component={Home} />

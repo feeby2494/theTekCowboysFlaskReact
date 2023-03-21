@@ -37,5 +37,7 @@ def makeTempDevice(device):
     temp_device["model"] = device.model
     temp_device["issue"] = device.issue
     temp_device["serial_number"] = device.serial_number
+    temp_device["completed"] = device.completed
+    temp_device["finished_by"] = device.finished_by
 
     return temp_device

@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Alert } from "react-bootstrap";
 import CustomerRepairCards from "../../components/CustomerRepairCards";
 import { withSmallCollContainer } from 'hoc/withSmallCollContainer';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { getUserInfo } from "helpers/getUserInfo";
 
 
 export const UserHome = (props) => {
+
+  // For redirect when token is invalid
+  const history = useHistory();
+
   const [showRepairsInProgress, setShowRepairsInProgress] = useState(false); // show repairs in progres bool
   const [showRepairsCompleted, setShowRepairsCompleted] = useState(false); // show repairs completed bool
   const [showRepairsAll, setShowRepairsAll] = useState(false); // show repairs completed bool
@@ -24,25 +29,27 @@ export const UserHome = (props) => {
 
 
 
-  const getUserInfo = (personId) => {
-    fetch(`/api/user/${personId}`,{
-        method:'GET',
-        'Content-Type':'application/json',
-        headers: {'x-access-token': localStorage.getItem('token')}
-    })
-      .then((res) => res.json())
-      .then((response) => {
-        console.log(response);
-        setUsername(response[personId].username);
-        setEmail(response[personId].email);
-        setPublic_id(response[personId].public_id);
-        setShowAdmin(response[personId].admin);
-      })
-      .catch((error) => {
-        console.log(error);
-        setError(error);
-      });
-  }
+  // const getUserInfo = (personId) => {
+  //   fetch(`/api/user/${personId}`,{
+  //       method:'GET',
+  //       'Content-Type':'application/json',
+  //       headers: {'x-access-token': localStorage.getItem('token')}
+  //   })
+  //     .then((res) => res.json())
+  //     .then((response) => {
+  //       console.log(response);
+  //       setUsername(response[personId].username);
+  //       setEmail(response[personId].email);
+  //       setPublic_id(response[personId].public_id);
+  //       setShowAdmin(response[personId].admin);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //       setError(error);
+  //       // Redirect to login   
+  //       history.push('/login')
+  //     });
+  // }
 
   const getRepairs = () => {
     const headers = {
@@ -72,7 +79,20 @@ export const UserHome = (props) => {
  
 
   if (!public_id){
-    getUserInfo(props.match.params.personId);
+    getUserInfo(props.match.params.personId, {
+      "setError": setError,
+      "error": error,
+      "setUsername": setUsername,
+      "username": username,
+      "setEmail": setEmail,
+      "email": email,
+      "setPublic_id": setPublic_id,
+      "public_id": public_id,
+      "showAdmin": showAdmin,
+      "setShowAdmin": setShowAdmin,
+      "history": history
+    });
+    
   }
 
   useEffect(() => {
@@ -93,8 +113,9 @@ export const UserHome = (props) => {
   return(
     <Container>
       <Row className="my-3">
-          <Link className="btn btn-info" to="/">Back to homepage</Link>
-        </Row>
+        <Link className="btn btn-info" to="/">Back to homepage</Link>
+        <Alert>{error}</Alert>
+      </Row>
       <Row className="my-3 align-items-center">
         <Col sm={12} md={4} >
           { username && <h2>Welcome, {username}!</h2> }
