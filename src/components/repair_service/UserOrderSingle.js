@@ -13,7 +13,9 @@ const UserOrderSingle = (props) => {
 
     const [order, setOrder] = useState([]);
     const [devices, setDevices] = useState([]);
-   
+    const [contact, setContact] = useState([]);
+    const [address, setAddress] = useState([]);
+
     // for current user info
     const [error, setError] = useState(null); // error message for user
     const [username, setUsername] = useState(null);
@@ -59,6 +61,8 @@ const UserOrderSingle = (props) => {
         .then((response) => {
             setOrder(response.order)
             setDevices(response.devices)
+            setContact(response.contact)
+            setAddress(response.address)
         })
         .catch(err => {
         console.log(err);
@@ -96,8 +100,34 @@ const UserOrderSingle = (props) => {
                     )
                 })
             }
+            {
+                contact.map(contactItem => {
+                    return (
+                        <div className='row my-2'>
+                            <h4 className='col-12 text-center'>Contact Info:</h4>
+                            <ul class="list-group col-12 list-group-flush">
+                                <li class="list-group-item">{`Name: ${contactItem.name}`}</li>
+                                <li class="list-group-item">{`Email: ${contactItem.email}`}</li>
+                            </ul>
+                        </div>
+                    )
+                })
+            }
+            {
+                address.map(addressItem => {
+                    return (
+                        <div className='row my-2'>
+                            <h4 className='col-12 text-center'>Address Info:</h4>
+                            <ul class="list-group col-12 list-group-flush">
+                                <li class="list-group-item">{`${addressItem.line_one} ${addressItem.line_two}`}</li>
+                                <li class="list-group-item">{`${addressItem.city}, ${addressItem.state} ${addressItem.postal_code} ${addressItem.country}`}</li>
+                            </ul>
+                        </div>
+                    )
+                })
+            }
             <div className='row table-responsive'>
-                <h5 className='col-12 text-center my-2'>Devices on this Order:</h5>
+                <h4 className='col-12 text-center my-2'>Devices on this Order:</h4>
                 <table className='table col-12 mt-2 table-hover'>
                     <thead>
                         <tr>

@@ -140,7 +140,7 @@ export const UserHome = (props) => {
             <div className="row mt-3">
               <div className="card container">
                 <div className="card.body row my-4 mx-1">
-                  <h2 className="text-center col-sm-5">New Repair System</h2>
+                  <h4 className="text-center col-sm-5">New Repair System</h4>
                   <Link className="btn btn-outline-info col-sm-3 me-1" to={`/${personId}/order-list`}>All your Orders</Link>
                   <Link className="btn btn-outline-success col-sm-3" to={`/${personId}/order-submit`}>Submit New Order</Link>
                 </div>

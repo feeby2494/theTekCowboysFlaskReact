@@ -8,7 +8,7 @@ from api.jwt_token.__token_required__ import token_required
 from api.site_user.models import SiteUser
 from api.decorators import asyncThread
 
-from api.helpers import get_or_create, dateSerializer, makeTempDevice, makeTempOrder, makeTempDevice
+from api.helpers import get_or_create, dateSerializer, makeTempDevice, makeTempOrder, makeTempDevice, makeTempAddress, makeTempContact
 
 # I want the user to log in first!
 @app.route('/api/repair-multi', methods=['POST'])
@@ -89,36 +89,14 @@ def multi_repair_order_list(current_user):
     try:
         orders = []
 
-
-        userOrders = db.session.query(Order, SiteUser, OrderContact, OrderAddress, Device).filter(SiteUser.id == current_user.id).join(SiteUser).filter(OrderContact.id == Order.contact).join(OrderContact).filter(OrderAddress.id == Order.address).join(OrderAddress).filter(Device.work_order_id == Order.id).join(Device).all()
+        userOrders = db.session.query(Order).filter(Order.user_id == current_user.id).all()
 
         for order in list(userOrders):
-            # temp_device_list = []
-
-            # for device in list(order["Device"]):
-            #     temp_device = {}
-            #     temp_device["id"] = device.id
-            #     temp_device["brand"] = device.brand
-            #     temp_device["model"] = device.model
-            #     temp_device["issue"] = device.issue
-                
-            #     temp_device_list.append(temp_device)
 
             temp_order = {}
-            temp_order["id"] = order["Order"].id
-            temp_order["submitted_date"] = dateSerializer(order["Order"].submitted_date)
-            temp_order["contact"] = {"name" : order["OrderContact"].name,
-                                     "email" : order["OrderContact"].email}
-            temp_order["address"] = {"line_one" : order["OrderAddress"].line_one, 
-                                     "line_two" : order["OrderAddress"].line_two, 
-                                     "city" : order["OrderAddress"].city,
-                                     "state" : order["OrderAddress"].state,
-                                     "postal_code" : order["OrderAddress"].postal_code,
-                                     "country" : order["OrderAddress"].country}
-            temp_order["user_id"] = order["Order"].user_id
-            temp_order["username"] = order["SiteUser"].username
+            temp_order["id"] = order.id
+            temp_order["submitted_date"] = dateSerializer(order.submitted_date)
             orders.append(temp_order)
-            print(order["Device"])
 
         return Response(json.dumps(orders), mimetype='application/json')
     except exc.IntegrityError as e:
@@ -134,15 +112,31 @@ def multi_repair_single_order(current_user, current_order_id):
     """
 
     try:
-        current_order = db.session.query(Order).filter(Order.id == current_order_id).all()
-        devices_from_order = db.session.query(Device).filter(Device.work_order_id == current_order_id).all()
-
+        # Check for user id to restrict wrong user getting this order
+        current_order = db.session.query(Order).filter(Order.user_id == current_user.id, Order.id == current_order_id).all()
         order_info = list(map(makeTempOrder, list(current_order)))
 
+        # This will keep the wrong user from seeing the devices from anther user
+        if len(order_info) < 1:
+            return Response(json.dumps({"devices" : [], "order" : order_info, "contact" : [], "address" : []}), mimetype='application/json')
+
+        # Get device list on this order
+        devices_from_order = db.session.query(Device).filter(Device.work_order_id == current_order_id).all()
         device_list = list(map(makeTempDevice, list(devices_from_order)))
+
+        # Get Contact on this order
+        current_contact = db.session.query(OrderContact).filter(
+            OrderContact.id == order_info[0]["contact"]
+        ).all()
+        contact_info = list(map(makeTempContact, list(current_contact)))
+
+        # Get Address on this order
+        current_address = db.session.query(OrderAddress).filter(
+            OrderAddress.id == order_info[0]["address"]
+        ).all()
+        address_info = list(map(makeTempAddress, list(current_address)))
         
-        print(device_list)
-        return Response(json.dumps({"devices" : device_list, "order" : order_info}), mimetype='application/json')
+        return Response(json.dumps({"devices" : device_list, "order" : order_info, "contact" : contact_info, "address" : address_info}), mimetype='application/json')
 
     except exc.IntegrityError as e:
         db.session.rollback()
@@ -156,6 +150,15 @@ def multi_repair_single_device(current_user, current_order_id, current_repair_id
     """
 
     try:
+        # Checking if this current order belongs to current user first:
+        # Check for user id to restrict wrong user getting this order
+        current_order = db.session.query(Order).filter(Order.user_id == current_user.id, Order.id == current_order_id).all()
+        order_info = list(map(makeTempOrder, list(current_order)))
+
+        # This will keep the wrong user from seeing the devices from anther user
+        if len(order_info) < 1:
+            return Response(json.dumps({"device" : []}), mimetype='application/json')
+
         device = db.session.query(Device).filter(Device.id == current_repair_id, Device.work_order_id == current_order_id).all()
 
         device_info = list(map(makeTempDevice, list(device)))
