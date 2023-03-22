@@ -10,15 +10,7 @@ const UserOrderSingleView = (props) => {
             <Row>
                 <Col lg={1}></Col>
                 <Col lg={10}>
-                    <Container>
-                        <Row>
-                            <Col lg={12}>
-                                <div className="w-100 mb-2 bg-white rounded mt-3">
-                                    <UserOrderSingle />
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
+                    <UserOrderSingle />   
                 </Col>
                 <Col lg={1}></Col>
             </Row>

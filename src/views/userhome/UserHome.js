@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Alert } from "react-bootstrap";
+import { Container, Row, Col, Alert, Button } from "react-bootstrap";
 import CustomerRepairCards from "../../components/CustomerRepairCards";
 import { withSmallCollContainer } from 'hoc/withSmallCollContainer';
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, useParams } from "react-router-dom";
 import { getUserInfo } from "helpers/getUserInfo";
 
 
@@ -10,6 +10,9 @@ export const UserHome = (props) => {
 
   // For redirect when token is invalid
   const history = useHistory();
+
+  // Get publid-id from url
+  const { personId } = useParams();
 
   const [showRepairsInProgress, setShowRepairsInProgress] = useState(false); // show repairs in progres bool
   const [showRepairsCompleted, setShowRepairsCompleted] = useState(false); // show repairs completed bool
@@ -112,50 +115,79 @@ export const UserHome = (props) => {
 
   return(
     <Container>
-      <Row className="my-3">
-        <Link className="btn btn-info" to="/">Back to homepage</Link>
-        <Alert>{error}</Alert>
+      <Row>
+        <div className="col-lg-1"></div>
+        <div className="col-lg-10">
+          <Container>
+            <Row className="my-3">
+              <Link className="btn btn-info" to="/">Back to homepage</Link>
+              {
+                error && <Alert variant="danger" className="mt-4">{error}</Alert>
+              }
+            </Row>
+            <Row className="my-3 align-items-center">
+              <Col sm={12} md={4} >
+                { username && <h2>Welcome, {username}!</h2> }
+              </Col>
+              <Col sm={12} md={8}>
+                <Alert>
+                  It's recomeneded to use the new order submission feature below as it allows you to submit multiple devices under one order.
+                  Also, you must login to access the updated system. The old submission form is still usable, but has less features and 
+                  creates cunfusion when a user is not logged in. The new system requires you to login and is recomeneded.
+                </Alert>
+              </Col>
+            </Row>
+            <div className="row mt-3">
+              <div className="card container">
+                <div className="card.body row my-4 mx-1">
+                  <h2 className="text-center col-sm-5">New Repair System</h2>
+                  <Link className="btn btn-outline-info col-sm-3 me-1" to={`/${personId}/order-list`}>All your Orders</Link>
+                  <Link className="btn btn-outline-success col-sm-3" to={`/${personId}/order-submit`}>Submit New Order</Link>
+                </div>
+              </div>
+            </div>
+            <Row>
+              <h2 className="text-center mt-5">Old Repair System</h2>
+              <Alert variant="danger">We are currently moving away from the old system of mail-in repairs. Please always login first and use the new submission form above. If you have repairs submitted under old system, then they will be available below.</Alert>
+              <p>Here are the repairs you currenty have submitted organized by completed, in-progress, and all.</p>
+                <p>Remember it's possible to submit repairs without being logged in. If you need to have a repair 
+                changed to your username, then please contact me at: <a href="mailto:toby2494@gmail.com">toby2494@gmail.com</a></p>
+
+            </Row>
+            <CollapsableMailInRepairCardsInProgress
+              componentTitle="Repairs In Progress"
+              button_text="Show Repairs In Progress"
+              id_name="repairs_in_progress" 
+              showContent={showRepairsInProgress} 
+              handleShowContent={() => {
+                setShowRepairsInProgress(!showRepairsInProgress)
+              }}
+              repairList={repairsInProgress}
+            />
+            <CollapsableMailInRepairCardsCompleted
+              componentTitle="Repairs Completed"
+              button_text="Show Repairs Completed"
+              id_name="repairs_completed" 
+              showContent={showRepairsCompleted} 
+              handleShowContent={() => {
+                setShowRepairsCompleted(!showRepairsCompleted)
+              }}
+              repairList={repairsCompleted}
+            />
+            <CollapsableMailInRepairCardsAll
+              componentTitle="All Repairs"
+              button_text="Show All Repairs"
+              id_name="repairs_all" 
+              showContent={showRepairsAll} 
+              handleShowContent={() => {
+                setShowRepairsAll(!showRepairsAll)
+              }}
+              repairList={repairsAll}
+            />
+          </Container>
+        </div>
+        <div className="col-lg-1"></div>
       </Row>
-      <Row className="my-3 align-items-center">
-        <Col sm={12} md={4} >
-          { username && <h2>Welcome, {username}!</h2> }
-        </Col>
-        <Col sm={12} md={8}>
-          <p>Here are the repairs you currenty have submitted organized by completed, in-progress, and all.</p>
-          <p>Remember it's possible to submit repairs without being logged in. If you need to have a repair 
-          changed to your username, then please contact me at: <a href="mailto:toby2494@gmail.com">toby2494@gmail.com</a></p>
-        </Col>
-      </Row>
-      <CollapsableMailInRepairCardsInProgress
-          componentTitle="Repairs In Progress"
-          button_text="Show Repairs In Progress"
-          id_name="repairs_in_progress" 
-          showContent={showRepairsInProgress} 
-          handleShowContent={() => {
-            setShowRepairsInProgress(!showRepairsInProgress)
-          }}
-          repairList={repairsInProgress}
-        />
-        <CollapsableMailInRepairCardsCompleted
-          componentTitle="Repairs Completed"
-          button_text="Show Repairs Completed"
-          id_name="repairs_completed" 
-          showContent={showRepairsCompleted} 
-          handleShowContent={() => {
-            setShowRepairsCompleted(!showRepairsCompleted)
-          }}
-          repairList={repairsCompleted}
-        />
-        <CollapsableMailInRepairCardsAll
-          componentTitle="All Repairs"
-          button_text="Show All Repairs"
-          id_name="repairs_all" 
-          showContent={showRepairsAll} 
-          handleShowContent={() => {
-            setShowRepairsAll(!showRepairsAll)
-          }}
-          repairList={repairsAll}
-        />
     </Container>
   );
 } 

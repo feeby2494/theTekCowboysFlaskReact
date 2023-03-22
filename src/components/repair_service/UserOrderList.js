@@ -78,42 +78,42 @@ const UserOrderList = (props) => {
     }, [ ]);
 
     return (
-        <div className="col">
-            <div className='container'>
-                <div className='row'>
-
-                    <div className='row table-responsive'>
-                        <h5 className='col-12 text-center my-2'>Orders:</h5>
-                        <table className='table col-12 mt-2 table-hover'>
-                            <thead>
-                                <tr>
-                                    <th scope="col">Order ID</th>
-                                    <th scope="col">Submission Date</th>
-                                    <th scope="col">Link to Order</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    orders.map(order => {
-                                        return (
-                                            <tr>
-                                                <th scope='row'>{order.id}</th>
-                                                <td>{order.submitted_date}</td>
-                                                <td>
-                                                    <Link to={`/${personId}/order-list/${order.id}`}>
-                                                        To Order Page
-                                                    </Link>
-                                                </td>
-                                            </tr>  
-                                        );
-                                    })
-                                }
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>  
+        <div className='container'>
+            <div className='row my-3'>
+                <Link className="btn btn-info" to={`/${personId}`}>Back to User Home</Link>
             </div>
+            <div className='row'>
+                <div className='row table-responsive'>
+                    <h5 className='col-12 text-center my-2'>Orders:</h5>
+                    <table className='table col-12 mt-2 table-hover'>
+                        <thead>
+                            <tr>
+                                <th scope="col">Order ID</th>
+                                <th scope="col">Submission Date</th>
+                                <th scope="col">Link to Order</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {
+                                orders.map(order => {
+                                    return (
+                                        <tr>
+                                            <th scope='row'>{order.id}</th>
+                                            <td>{order.submitted_date}</td>
+                                            <td>
+                                                <Link to={`/${personId}/order-list/${order.id}`}>
+                                                    To Order Page
+                                                </Link>
+                                            </td>
+                                        </tr>  
+                                    );
+                                })
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>  
         </div>
     )
 }

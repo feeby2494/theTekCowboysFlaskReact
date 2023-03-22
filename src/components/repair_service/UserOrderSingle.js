@@ -80,57 +80,55 @@ const UserOrderSingle = (props) => {
     }, [ ]);
 
     return (
-        <div className="col">
-            <div className='container'>
-                <div className='row'>
-                    <Link className="btn btn-info" to={`/${personId}/order-list`}>Back to All Orders</Link>
-                </div>
-                {
-                    order.map(order => {
-                        return (
-                            <div className='row my-2'>
-                                <ul class="list-group col-12 list-group-flush">
-                                    <li class="list-group-item">Order ID: {order.id}</li>
-                                    <li class="list-group-item">Submitted: {order.submitted_date}</li>
-                                </ul>
-                            </div>
-                        )
-                    })
-                }
-                <div className='row table-responsive'>
-                    <h5 className='col-12 text-center my-2'>Devices on this Order:</h5>
-                    <table className='table col-12 mt-2 table-hover'>
-                        <thead>
-                            <tr>
-                                <th scope="col">Device ID</th>
-                                <th scope="col">Brand</th>
-                                <th scope="col">Model</th>
-                                <th scope="col">Issue</th>
-                                <th scope="col">Link to Device</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {       
-                                devices.map((device) => {
-                                    return (
-                                        <tr>
-                                            <th scope='row'>{device.id}</th>
-                                            <td>{device.brand}</td>
-                                            <td>{device.model}</td>
-                                            <td>{device.issue}</td>
-                                            <td>
-                                                <Link to={`/${personId}/order-list/${currentOrderId}/${device.id}`}>
-                                                    To Device Page
-                                                </Link>
-                                            </td>
-                                        </tr>
-                                    )
-                                })
-                            } 
-                        </tbody>
-                    </table>
-                </div>   
+        <div className='container'>
+            <div className='row my-3'>
+                <Link className="btn btn-info" to={`/${personId}/order-list`}>Back to All Orders</Link>
             </div>
+            {
+                order.map(order => {
+                    return (
+                        <div className='row my-2'>
+                            <ul class="list-group col-12 list-group-flush">
+                                <li class="list-group-item">Order ID: {order.id}</li>
+                                <li class="list-group-item">Submitted: {order.submitted_date}</li>
+                            </ul>
+                        </div>
+                    )
+                })
+            }
+            <div className='row table-responsive'>
+                <h5 className='col-12 text-center my-2'>Devices on this Order:</h5>
+                <table className='table col-12 mt-2 table-hover'>
+                    <thead>
+                        <tr>
+                            <th scope="col">Device ID</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">Model</th>
+                            <th scope="col">Issue</th>
+                            <th scope="col">Link to Device</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {       
+                            devices.map((device) => {
+                                return (
+                                    <tr>
+                                        <th scope='row'>{device.id}</th>
+                                        <td>{device.brand}</td>
+                                        <td>{device.model}</td>
+                                        <td>{device.issue}</td>
+                                        <td>
+                                            <Link to={`/${personId}/order-list/${currentOrderId}/${device.id}`}>
+                                                To Device Page
+                                            </Link>
+                                        </td>
+                                    </tr>
+                                )
+                            })
+                        } 
+                    </tbody>
+                </table>
+            </div>   
         </div>
     )
 }

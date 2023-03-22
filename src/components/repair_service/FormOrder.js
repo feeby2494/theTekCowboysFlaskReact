@@ -3,7 +3,7 @@ import { Button, Alert } from 'react-bootstrap';
 import FormAddress from './FormAddress';
 import FormContact from './FormContact';
 import FormDevice from './FormDevice';
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const FormOrder = (props) => {
 
@@ -254,9 +254,11 @@ const FormOrder = (props) => {
 
 
   return (
-    <div className="col">
-        <div className='container'>
-        {errors && <Alert variant="danger"><span>{errors}</span></Alert>}
+    <div className='container'>
+        <div className='row my-3'>
+            <Link className="btn btn-info" to={`/${personId}`}>Back to User Home</Link>
+        </div>
+        {errors && <Alert variant="danger row"><span>{errors}</span></Alert>}
         <div className='row'>
                 <FormContact
                     validatedContact={validatedContact}
@@ -264,44 +266,44 @@ const FormOrder = (props) => {
                     handleContactName={handleContactName}
                     handleContactEmail={handleContactEmail}
                 />
-            </div>
-            <div className='row'>
-                <FormAddress 
-                    validatedAddress={validatedAddress}
-                    address={address} 
-                    handleAddressLineOne={handleAddressLineOne}
-                    handleAddressLineTwo={handleAddressLineTwo}
-                    handleAddressCity={handleAddressCity}
-                    handleAddressState={handleAddressState}
-                    handleAddressPostalCode={handleAddressPostalCode}
-                    handleAddressCountry={handleAddressCountry}
-                />
-            </div>
-            <div className='row'>
-                <h3 className='col-12'>Devices</h3>
+        </div>
+        <div className='row'>
+            <FormAddress 
+                validatedAddress={validatedAddress}
+                address={address} 
+                handleAddressLineOne={handleAddressLineOne}
+                handleAddressLineTwo={handleAddressLineTwo}
+                handleAddressCity={handleAddressCity}
+                handleAddressState={handleAddressState}
+                handleAddressPostalCode={handleAddressPostalCode}
+                handleAddressCountry={handleAddressCountry}
+            />
+        </div>
+        <div className='row'>
+            <h3 className='col-12'>Devices</h3>
 
-                { repairForms && repairForms.map((repair, index) => {
-                    return (
-                        <FormDevice 
-                            index={index}
-                            repair={repair}
-                            handleRepairBrand={handleRepairBrand}
-                            handleRepairModel={handleRepairModel}
-                            handleRepairIssue={handleRepairIssue}
-                            addRepair={addRepair}
-                            removeCertainRepair={removeCertainRepair}
-                        />
-                    )
-                }) }
-            </div>
-            { repairForms.length < 1 &&
-                <Button className="row my-3" onClick={addRepair}>Add a Repair</Button>
-            }
-            <div className='row'>
-                <Button onClick={submitOrder}>Submit Order</Button>
-            </div>
+            { repairForms && repairForms.map((repair, index) => {
+                return (
+                    <FormDevice 
+                        index={index}
+                        repair={repair}
+                        handleRepairBrand={handleRepairBrand}
+                        handleRepairModel={handleRepairModel}
+                        handleRepairIssue={handleRepairIssue}
+                        addRepair={addRepair}
+                        removeCertainRepair={removeCertainRepair}
+                    />
+                )
+            }) }
+        </div>
+        { repairForms.length < 1 &&
+            <Button className="row my-3" onClick={addRepair}>Add a Repair</Button>
+        }
+        <div className='row'>
+            <Button onClick={submitOrder}>Submit Order</Button>
         </div>
     </div>
+
   )
 }
 

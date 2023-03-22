@@ -1,5 +1,5 @@
 import React,{ useState} from 'react';
-import { Col, Row, Container, Card, Accordion} from 'react-bootstrap';
+import { Col, Row, Container, Card, Accordion, Alert} from 'react-bootstrap';
 import RepairAccordion from './RepairAccordion';
 
 const RepairHome = (props) => {
@@ -27,6 +27,7 @@ const RepairHome = (props) => {
                                                 <Card border='light'>
                                                     <Card.Header>
                                                         <h2 className='h2'>Local Dallas - Ft Worth Computer and Device Repair</h2>
+                                                        <Alert variant="danger" className="my-3">We are currently moving away from the old system of mail-in repairs. Please always login first and use the new submission form in UserHome.</Alert>
                                                     </Card.Header>
                                                     <Card.Body>
                                                         <p>Meet me local in Coppell.  <a href="mailto:toby2494@gmail.com">Email me</a> if you are local! Please text me before if you want to meet me at my residence for device repair. Address is at my <a href="/about">'About Me'</a> section</p>

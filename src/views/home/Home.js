@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Alert } from 'react-bootstrap';
 import WebServiceCard from 'components/web_services/WebServiceCard';
 import RepairCard from '../repair/RepairCard';
 import { HomeCarousel } from 'components/HomeCarousel';
@@ -237,6 +237,7 @@ export default class Home extends Component {
                     <Col lg={1}></Col>
                     <Col lg={10}>
                         <Container>
+                        <Alert variant="danger" className="row my-3">We are currently moving away from the old system of mail-in repairs. Please always login first and use the new submission form in UserHome.</Alert>
                             {/* <HomeIntroduction 
                                 linkEbayMBBoards={this.state.linkEbayMBBoards}
                                 linkEbayIPBoards={this.state.linkEbayIPBoards}

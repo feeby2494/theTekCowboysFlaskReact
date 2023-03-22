@@ -78,46 +78,45 @@ const UserDeviceSingle = (props) => {
     }, [ ]);
 
     return (
-        <div className="col">
-            <div className='container'>
-                <div className='row'>
-                    <Link className="btn btn-info" to={`/${personId}/order-list/${currentOrderId}`}>Back to Order Page</Link>
-                </div>
-                <div className='row table-responsive'>
-                    <h5 className='col-12 text-center my-2'>Device Details:</h5>
-                    <table className='table col-12 mt-2 table-hover'>
-                        <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Brand</th>
-                                <th scope="col">Model</th>
-                                <th scope="col">Issue</th>
-                                <th scope="col">Serial</th>
-                                <th scope="col">Completed</th>
-                                <th scope="col">Finished By</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {       
-                                device.map((item) => {
-                                    return (
-                                        <tr>
-                                            <th scope='row'>{item.id}</th>
-                                            <td>{item.brand}</td>
-                                            <td>{item.model}</td>
-                                            <td>{item.issue}</td>
-                                            <td>{item.serial_number}</td>
-                                            <td>{item.completed}</td>
-                                            <td>{item.finished_by}</td>
-                                        </tr>
-                                    )
-                                })
-                            }        
-                        </tbody>
-                    </table>
-                </div>
+        <div className='container'>
+            <div className='row my-3'>
+                <Link className="btn btn-info" to={`/${personId}/order-list/${currentOrderId}`}>Back to Order Page</Link>
+            </div>
+            <div className='row table-responsive'>
+                <h5 className='col-12 text-center my-2'>Device Details:</h5>
+                <table className='table col-12 mt-2 table-hover'>
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Brand</th>
+                            <th scope="col">Model</th>
+                            <th scope="col">Issue</th>
+                            <th scope="col">Serial</th>
+                            <th scope="col">Completed</th>
+                            <th scope="col">Finished By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {       
+                            device.map((item) => {
+                                return (
+                                    <tr>
+                                        <th scope='row'>{item.id}</th>
+                                        <td>{item.brand}</td>
+                                        <td>{item.model}</td>
+                                        <td>{item.issue}</td>
+                                        <td>{item.serial_number}</td>
+                                        <td>{item.completed}</td>
+                                        <td>{item.finished_by}</td>
+                                    </tr>
+                                )
+                            })
+                        }        
+                    </tbody>
+                </table>
             </div>
         </div>
+
     )
 }
 
