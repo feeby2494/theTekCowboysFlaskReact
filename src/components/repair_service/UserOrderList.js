@@ -1,9 +1,12 @@
 import React,{ useState, useEffect} from 'react';
 import { Button, Alert } from 'react-bootstrap';
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useHistory } from "react-router-dom";
 
 
 const UserOrderList = (props) => {
+
+    // For redirect when token is invalid
+    const history = useHistory();
 
     // Get user id
     const { personId } = useParams();
@@ -39,6 +42,8 @@ const UserOrderList = (props) => {
         .catch((error) => {
             console.log(error);
             setError(error);
+            // Redirect to login   
+            history.push('/login')
         });
     }
 
@@ -59,8 +64,8 @@ const UserOrderList = (props) => {
             setOrders(response)
         })
         .catch(err => {
-        console.log(err);
-        setErrors(`Error: ${err}`);
+            console.log(err);
+            setErrors(`Error: ${err}`);
         });
     }
 
@@ -71,10 +76,7 @@ const UserOrderList = (props) => {
     }
 
     useEffect(() => {
-        
-        
-        retrieveUserOrderList(); 
-    
+        retrieveUserOrderList()
     }, [ ]);
 
     return (

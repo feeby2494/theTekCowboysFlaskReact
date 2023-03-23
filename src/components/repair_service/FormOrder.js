@@ -3,9 +3,12 @@ import { Button, Alert } from 'react-bootstrap';
 import FormAddress from './FormAddress';
 import FormContact from './FormContact';
 import FormDevice from './FormDevice';
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useHistory } from "react-router-dom";
 
 const FormOrder = (props) => {
+
+    // For redirect when token is invalid
+    const history = useHistory();
 
     // Get user id
     const { personId } = useParams();
@@ -244,6 +247,8 @@ const FormOrder = (props) => {
         .catch((error) => {
             console.log(error);
             setError(error);
+            // Redirect to login   
+            history.push('/login')
         });
     }
 

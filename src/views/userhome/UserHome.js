@@ -99,8 +99,6 @@ export const UserHome = (props) => {
   }
 
   useEffect(() => {
-    
-    
     getRepairs(); 
   
   }, [ ]);

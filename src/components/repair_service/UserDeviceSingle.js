@@ -1,9 +1,12 @@
 import React,{ useState, useEffect} from 'react';
 import { Button, Alert } from 'react-bootstrap';
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useHistory } from "react-router-dom";
 
 
 const UserDeviceSingle = (props) => {
+
+    // For redirect when token is invalid
+    const history = useHistory();
 
     // Get user id and order id
     const { personId, currentOrderId, currentDeviceId } = useParams();
@@ -39,6 +42,8 @@ const UserDeviceSingle = (props) => {
         .catch((error) => {
             console.log(error);
             setError(error);
+            // Redirect to login   
+            history.push('/login')
         });
     }
 
@@ -59,8 +64,10 @@ const UserDeviceSingle = (props) => {
             setDevice(response.device)
         })
         .catch(err => {
-        console.log(err);
-        setErrors(`Error: ${err}`);
+            console.log(err);
+            setErrors(`Error: ${err}`);
+            // Redirect to login   
+            history.push('/login')
         });
     }
 

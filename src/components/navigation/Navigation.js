@@ -67,7 +67,7 @@ class Navigation extends React.Component {
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown className="col" title="My Services" id="dropdown-nav-services">
-              <NavDropdown.Item href="/repair">Mail-In Repair</NavDropdown.Item>
+              <NavDropdown.Item href={`/${localStorage.getItem('public_id')}/order-submit`}>Mail-In Repair</NavDropdown.Item>
                
             </NavDropdown> 
             <NavDropdown className="col" title="More Info" id="dropdown-nav-info">

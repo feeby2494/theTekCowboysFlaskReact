@@ -17,8 +17,8 @@ const RepairHome = (props) => {
                     <Container>
                         <Row>
                             <Col lg={12}>
-                                <div className="w-100 mb-2 rounded mt-3">
-                                    <Accordion className="" defaultActiveKey="1">       
+                                
+                                    <Accordion className="w-100 mb-2 rounded mt-3" defaultActiveKey="1">       
                                         <Accordion.Item  eventKey="1" onClick={handleShow}>
                                             <Accordion.Header className='text-center w-100'>
                                                 Repair Details (Click to Hide)
@@ -41,7 +41,7 @@ const RepairHome = (props) => {
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
-                                </div>
+                                
                             </Col>
                         </Row>
                         <Row>
