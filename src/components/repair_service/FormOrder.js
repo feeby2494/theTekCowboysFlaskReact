@@ -56,10 +56,8 @@ const FormOrder = (props) => {
         if (form.checkValidity() === false) {
           event.preventDefault();
           event.stopPropagation();
-        } else if (form.checkValidity() === true){
-            setValidatedContact(true);
-            event.preventDefault(); 
-        }   
+        }  
+        setValidatedContact(true);
     };
 
     const [contact, setContact] = useState({
@@ -84,14 +82,11 @@ const FormOrder = (props) => {
 
     const handleValidationAddress = (event) => {
         const form = event.currentTarget;
-        console.log(form)
         if (form.checkValidity() === false) {
             event.preventDefault();
             event.stopPropagation();
-        } else if (form.checkValidity() === true) {
-            setValidatedAddress(true);
-            event.preventDefault();
-        }    
+        } 
+        setValidatedAddress(true);
     };
 
     const [address, setAddress] = useState({
@@ -206,28 +201,36 @@ const FormOrder = (props) => {
 
             const submitObject = {...contact, ...address, "repairs": repairForms}
 
-            console.log(submitObject)
-
             fetch('/api/repair-multi', {
                 method: 'POST',
                 body: JSON.stringify(submitObject),
                 headers: headers,
             })
             .then(res => {
-                res.json()
-                if (res.status == 200) {
-                    // then clear form and flash Sucess Message
-                    clearAll();
+                if (res.ok) {
+                    if (res.status == 200) {
+                        // then clear form and flash Sucess Message
+                        clearAll();
+                    }
+                    return res.json();
+                } else {
+                    return res.json().then(data => { 
+                        const error = data['error']
+                        throw Error(error)
+                    })
                 }
+                
             })
+                .then(data => console.log(data))
             .catch(err => {
-                console.log(err)
                 setErrors(`Error: ${err}`);
-            });
-            
-            
+            })
         }
     }
+
+// 
+//                 
+
 
     // Getting user token and making sure it's not expired first
     const getUserInfo = (personId) => {
@@ -270,6 +273,7 @@ const FormOrder = (props) => {
                     contact={contact} 
                     handleContactName={handleContactName}
                     handleContactEmail={handleContactEmail}
+                    handleValidationContact={handleValidationContact}
                 />
         </div>
         <div className='row'>
@@ -282,6 +286,7 @@ const FormOrder = (props) => {
                 handleAddressState={handleAddressState}
                 handleAddressPostalCode={handleAddressPostalCode}
                 handleAddressCountry={handleAddressCountry}
+                handleValidationAddress={handleValidationAddress}  
             />
         </div>
         <div className='row'>
@@ -307,6 +312,7 @@ const FormOrder = (props) => {
         <div className='row'>
             <Button onClick={submitOrder}>Submit Order</Button>
         </div>
+          {errors && <Alert variant="danger row mt-3"><span>{errors}</span></Alert>}
     </div>
 
   )

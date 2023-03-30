@@ -22,6 +22,14 @@ def multi_repair_submit(current_user):
         # Get data from request
         data = request.get_json()
 
+
+        # Test to see if data has empty variables
+        if len(data["name"]) < 1 or len(data['email']) < 1:
+            raise ValueError("Name or Email is blank")
+        if len(data['lineOne']) < 1 or len(data['city']) < 1 or len(data['state']) < 1 or len(data['postalCode']) < 1:
+            raise ValueError("Address is not completly filled out")
+
+
         # check email
         contact = get_or_create(
             db.session,
@@ -75,9 +83,11 @@ def multi_repair_submit(current_user):
 
 
         return Response(json.dumps({'message' : f'Submission was a success!'}), mimetype='application/json')
+    except ValueError as e:
+        return Response(json.dumps({'error' : f'ERROR: Cannot create new repair. Due to ERROR: {e}'}), mimetype='application/json', status=400)
     except exc.IntegrityError as e:
         db.session.rollback()
-        return Response(json.dumps({'message' : f'ERROR: Cannot create new repair. Due to ERROR: {e}'}), mimetype='application/json')
+        return Response(json.dumps({'error' : f'ERROR: Cannot create new repair. Due to ERROR: {e}'}), mimetype='application/json', status=400)
     
 @app.route('/api/repair-multi', methods=['GET'])
 @token_required

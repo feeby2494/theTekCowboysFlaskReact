@@ -6,7 +6,7 @@ const FormContact = (props) => {
     return (
             <div className="col">
                 <h3>Contact Info</h3>
-                <Form className="container" validated={props.validatedContact} onSubmit={props.handleSubmit}>
+                <Form className="container" novalidate validated={props.validatedContact} onSubmit={props.handleValidationContact}>
                     <Form.Group className="mb-3 row" controlId="RepairFormModal.Contact">
                         <div className='col-md-6'>
                             <Form.Label>Name:</Form.Label>
