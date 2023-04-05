@@ -5,7 +5,9 @@ from sqlalchemy import exc
 from api.jwt_token.__token_required__ import token_required
 import datetime
 
-
+from api.automation.send_email import generate_then_send
+from api.site_user.models import SiteUser
+from api.mail_in_service.models import Mail_In_Web
 
 
 @app.route('/api/web_service', methods=['GET', 'POST'])
