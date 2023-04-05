@@ -6,7 +6,7 @@ from .models import Mail_In_Repair, Mail_In_Web, Work_Order, Repair, Customer_Co
 from api.site_user.models import SiteUser
 import datetime
 from sqlalchemy import exc
-from api.automation.send_email import send, generate_then_send
+# from api.automation.send_email import send, generate_then_send
 from api.jwt_token.__token_required__ import token_required
 
 from .serializers_helpers import *
