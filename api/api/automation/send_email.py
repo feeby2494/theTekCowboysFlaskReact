@@ -16,7 +16,7 @@ def send(app, sender, message, recipient):
       """Sends the message to the configured SMTP server."""
       #mail_server = smtplib.SMTP('smtp.gmail.com',587)
       #mail_server.starttls(context=context)
-      mail_server = smtplib.SMTP_SSL('smtp.gmail.com', 587)
+      mail_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 
       mail_server.login(sender, os.environ.get('WEB_APP_GMAIL_PASSWORD'))
       mail_server.sendmail(str(sender), str(recipient), str(message))
