@@ -1,4 +1,3 @@
-from turtle import pos
 from api import db, app
 import datetime
 import jwt
