@@ -78,13 +78,13 @@ def web_service():
                 web_service_list[web_service["Mail_In_Web"].id]["web_service_user_public_id"] = web_service["SiteUser"].public_id
                 web_service_list[web_service["Mail_In_Web"].id]["web_service_username"] = web_service["SiteUser"].username
 
-            # Send email notifing of new order:
-            sender = "toby2494.development@gmail.com"
-            recipient = "toby2494@gmail.com"
-            email_body = ""
-            for item in data:
-                email_body += f"{item}: {data[item]}\n"
-            generate_then_send(app, sender, recipient,f"Received new Web Service Order From: {data['web_service_email']}", email_body, None)
+            # # Send email notifing of new order:
+            # sender = "toby2494.development@gmail.com"
+            # recipient = "toby2494@gmail.com"
+            # email_body = ""
+            # for item in data:
+            #     email_body += f"{item}: {data[item]}\n"
+            # generate_then_send(app, sender, recipient,f"Received new Web Service Order From: {data['web_service_email']}", email_body, None)
 
             return Response(json.dumps(web_service_list), mimetype='application/json')
         except exc.IntegrityError as e:
