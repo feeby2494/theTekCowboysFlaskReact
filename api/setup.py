@@ -12,7 +12,6 @@ setup(
         'general_ledger', 
         'videos', 
         'mail_in_service',
-        'automation',
         'decorators',
         'web_service',
         'repair_service',
