@@ -84,10 +84,10 @@ def multi_repair_submit(current_user):
 
         return Response(json.dumps({'message' : f'Submission was a success!'}), mimetype='application/json')
     except ValueError as e:
-        return Response(json.dumps({'error' : f'ERROR: Cannot create new repair. Due to ERROR: {e}'}), mimetype='application/json', status=400)
+        return Response(json.dumps({'error' : f'Cannot create new repair. Due to: {e}'}), mimetype='application/json', status=400)
     except exc.IntegrityError as e:
         db.session.rollback()
-        return Response(json.dumps({'error' : f'ERROR: Cannot create new repair. Due to ERROR: {e}'}), mimetype='application/json', status=400)
+        return Response(json.dumps({'error' : f'Cannot create new repair. Due to: {e}'}), mimetype='application/json', status=400)
     
 @app.route('/api/repair-multi', methods=['GET'])
 @token_required
@@ -111,7 +111,7 @@ def multi_repair_order_list(current_user):
         return Response(json.dumps(orders), mimetype='application/json')
     except exc.IntegrityError as e:
         db.session.rollback()
-        return Response(json.dumps({'message' : f'ERROR: Cannot get all orders from user. Logged in? Due to ERROR: {e}'}), mimetype='application/json')
+        return Response(json.dumps({'error' : f'Cannot get all orders from user. Logged in? Due to: {e}'}), mimetype='application/json', status=400)
 
 
 @app.route('/api/repair-multi/<current_order_id>', methods=['GET'])
@@ -150,7 +150,7 @@ def multi_repair_single_order(current_user, current_order_id):
 
     except exc.IntegrityError as e:
         db.session.rollback()
-        return Response(json.dumps({'message' : f'ERROR: Cannot get info for this one order from user. Logged in? Due to ERROR: {e}'}), mimetype='application/json')
+        return Response(json.dumps({'error' : f'Cannot get info for this one order from user. Logged in? Due to: {e}'}), mimetype='application/json', status=400)
 
 @app.route('/api/repair-multi/<current_order_id>/<current_repair_id>', methods=['GET'])
 @token_required
@@ -177,4 +177,4 @@ def multi_repair_single_device(current_user, current_order_id, current_repair_id
 
     except exc.IntegrityError as e:
         db.session.rollback()
-        return Response(json.dumps({'message' : f'ERROR: Cannot get info for this one order from user. Logged in? Due to ERROR: {e}'}), mimetype='application/json')
+        return Response(json.dumps({'error' : f'Cannot get info for this one order from user. Logged in? Due to: {e}'}), mimetype='application/json', status=400)
